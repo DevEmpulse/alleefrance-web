@@ -2,6 +2,9 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Montserrat, Open_Sans } from "next/font/google"
 import "./globals.css"
+import { CountryProvider } from "@/components/country-provider"
+import { CountrySelectorModal } from "@/components/country-selector-modal"
+import { CountryIndicator } from "@/components/country-indicator"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -45,7 +48,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${openSans.className} antialiased`}>{children}</body>
+      <body className={`${openSans.className} antialiased`}>
+        <CountryProvider>
+          {children}
+          <CountrySelectorModal />
+          <CountryIndicator />
+        </CountryProvider>
+      </body>
     </html>
   )
 }
