@@ -52,23 +52,21 @@ export function ContactSection() {
             </form>
           </div>
 
-          {/* France Map */}
+          {/* Google Map */}
           <div className="flex items-center justify-center">
-            <svg viewBox="0 0 400 400" className="w-full max-w-md" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M200,50 L220,60 L240,55 L260,65 L280,60 L300,70 L310,90 L320,110 L325,130 L330,150 L328,170 L320,190 L310,210 L300,230 L285,245 L270,255 L250,265 L230,270 L210,268 L190,260 L170,250 L150,235 L135,220 L120,200 L110,180 L105,160 L100,140 L95,120 L100,100 L110,85 L125,70 L145,60 L165,55 L185,52 Z"
-                fill="none"
-                stroke="#1e3a8a"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+            <div className="relative w-full max-w-lg aspect-square rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0!2d4.8357!3d45.7640!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516ae88797%3A0x408ab2ae4bb21f0!2sLyon%2C%20France!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses&hl=es"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="absolute inset-0 w-full h-full"
+                title="Mapa de Lyon, Francia"
               />
-              <ellipse cx="320" cy="300" rx="15" ry="25" fill="none" stroke="#1e3a8a" strokeWidth="2" />
-              <circle cx="200" cy="150" r="5" fill="#ED2939" />
-              <text x="200" y="140" textAnchor="middle" fill="#002654" fontSize="14" fontWeight="bold">
-                Paris
-              </text>
-            </svg>
+            </div>
           </div>
         </div>
       </div>

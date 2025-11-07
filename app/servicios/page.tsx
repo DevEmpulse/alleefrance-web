@@ -80,7 +80,7 @@ const services = [
     ],
     price: "250€",
     duration: "4-8 semanas",
-    link: "/servicios/visa-salarie",
+    link: "/servicios/visas-trabajo",
   },
   {
     id: 4,

@@ -1,19 +1,27 @@
 import { Button } from "@/components/ui/button"
 import { CountryName } from "@/components/country-name"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
-    <section id="inicio" className="relative overflow-hidden pt-16">
+    <section id="inicio" className="relative overflow-hidden">
       {/* Background with Paris Image and Blue Overlay */}
-      <div className="relative" style={{ backgroundColor: "#1e3a8a" }}>
+      <div className="relative min-h-[600px] lg:min-h-[700px] pt-16" style={{ backgroundColor: "#1e3a8a" }}>
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
-          <img
-            src="/person-holding-french-flag-in-front-of-eiffel-towe.jpg"
-            alt="Paris cityscape"
-            className="w-full h-full object-cover opacity-30"
+          <Image
+            src="/hero-lyon.png"
+            alt="Torre Eiffel y río Sena en París - Allée France"
+            fill
+            className="object-cover object-center blur-[0.5px]"
+            priority
+            quality={90}
+            sizes="100vw"
           />
-          <div className="absolute inset-0" style={{ backgroundColor: "rgba(30, 58, 138, 0.85)" }}></div>
+          {/* Overlay azul suave */}
+          <div className="absolute inset-0 bg-blue-700/40 pointer-events-none"></div>
+          {/* Degradado negro en la parte superior */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none"></div>
         </div>
 
         {/* Content */}

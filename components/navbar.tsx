@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -9,6 +9,17 @@ import Image from "next/image"
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY
+      setIsScrolled(scrollPosition > 50)
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const navLinks = [
     { href: "/#inicio", label: "Inicio" },
@@ -16,33 +27,49 @@ export function Navbar() {
   ]
 
   const serviceLinks = [
-    { href: "/servicios/visa-salarie", label: "Visa Salarié" },
-    { href: "/servicios/visa-saisonier", label: "Visa Saisonier" },
+    { href: "/servicios/visas-trabajo", label: "Visas de Trabajo" },
     { href: "/servicios/visa-etudiant", label: "Visa Étudiant" },
     { href: "/servicios", label: "Ver Todos los Servicios", featured: true },
   ]
 
   const otherLinks = [
-    { href: "/#blog", label: "Blog" },
+    { href: "/blog", label: "Blog" },
     { href: "/#guia-visas", label: "Guía de Visas" },
-    { href: "/#faq", label: "FAQ" },
+    { href: "/working-holiday", label: "Working Holiday" },
     { href: "/#contacto", label: "Contacto" },
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+    <nav 
+      className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md border-b border-white/20 transition-all duration-300 ${
+        isScrolled ? "bg-[#1e3a8a]" : "bg-transparent"
+      }`}
+    >
+      <div className="container mx-auto pr-10">
+        <div className="flex items-center justify-between min-h-16 py-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Vtix0eTofgeNjrQ4fneJ7FLj7BQyUU.png"
-              alt="Allée France Logo"
-              width={120}
-              height={60}
-              className="h-12 w-auto"
-              priority
-            />
+          <Link href="/" className="flex items-center gap-3 group shrink-0 mr-8 md:mr-12 transition-all duration-300 hover:scale-105">
+            <div className="relative h-10 w-auto transition-transform duration-300 group-hover:rotate-3">
+              <Image
+                src="/logofondotransparente.png"
+                alt="Allée France Logo"
+                width={100}
+                height={40}
+                className="h-full w-auto object-contain transition-all duration-300"
+                priority
+                style={{ 
+                  mixBlendMode: 'normal',
+                  filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 4px rgba(255, 255, 255, 0.6))'
+                }}
+              />
+            </div>
+            <span className="text-white text-sm md:text-base font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 group-hover:text-blue-300" style={{ 
+              fontFamily: 'var(--font-montserrat), sans-serif', 
+              letterSpacing: '0.1em',
+              textShadow: '0 0 8px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6)'
+            }}>
+              ALLÉE FRANCE
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,12 +78,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="transition-colors font-medium"
-                style={{ color: "#002654" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#ED2939")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#002654")}
+                className="relative cursor-pointer font-medium text-white transition-all duration-300 hover:text-blue-300 group/link"
               >
                 {link.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/link:w-full"></span>
               </Link>
             ))}
 
@@ -66,36 +91,33 @@ export function Navbar() {
               onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
-                className="flex items-center gap-1 transition-colors font-medium"
-                style={{ color: "#002654" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#ED2939")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#002654")}
+                className="relative flex items-center gap-1 font-medium text-white transition-all duration-300 hover:text-blue-300 group/services"
               >
                 Servicios
-                <ChevronDown className="w-4 h-4" />
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''} group-hover/services:translate-y-0.5`} />
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/services:w-full"></span>
               </button>
 
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-100 py-2">
-                  {serviceLinks.map((link) => (
+                <div className="absolute top-full left-0 mt-2 w-56 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200" style={{ backgroundColor: "rgba(30, 58, 138, 0.95)" }}>
+                  {serviceLinks.map((link, index) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="block px-4 py-2 transition-colors font-medium"
+                      className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item"
                       style={{
-                        color: link.featured ? "#ED2939" : "#002654",
+                        color: link.featured ? "#f97316" : "#ffffff",
                         fontWeight: link.featured ? "700" : "500",
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.backgroundColor = "rgba(237, 41, 57, 0.1)"
-                        e.currentTarget.style.color = "#ED2939"
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.backgroundColor = "transparent"
-                        e.currentTarget.style.color = link.featured ? "#ED2939" : "#002654"
+                        animationDelay: `${index * 50}ms`,
                       }}
                     >
-                      {link.label}
+                      <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">
+                        {link.label}
+                      </span>
+                      <span className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-transparent translate-x-[-100%] group-hover/item:translate-x-0 transition-transform duration-300"></span>
+                      {!link.featured && (
+                        <span className="absolute left-0 top-0 bottom-0 w-1 bg-orange-500 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
+                      )}
                     </Link>
                   ))}
                 </div>
@@ -106,33 +128,18 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="transition-colors font-medium"
-                style={{ color: "#002654" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "#ED2939")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "#002654")}
+                className="relative cursor-pointer font-medium text-white transition-all duration-300 hover:text-blue-300 group/link"
               >
                 {link.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/link:w-full"></span>
               </Link>
             ))}
 
-            <Button
-              asChild
-              className="text-white hover:opacity-90"
-              style={{ backgroundColor: "#0055A4" }}
+            <Button 
+              asChild 
+              className="text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
+              style={{ backgroundColor: "#ED2939" }}
             >
-              <Link href="/working-holiday">Working Holiday</Link>
-            </Button>
-
-            <Button
-              asChild
-              variant="outline"
-              className="font-medium border-2 bg-transparent"
-              style={{ borderColor: "#002654", color: "#002654" }}
-            >
-              <Link href="/pagos">Pagar Servicio</Link>
-            </Button>
-
-            <Button asChild className="text-white hover:opacity-90" style={{ backgroundColor: "#ED2939" }}>
               <a href="https://wa.me/33601526171" target="_blank" rel="noopener noreferrer">
                 Consulta Gratis
               </a>
@@ -142,93 +149,80 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2"
-            style={{ color: "#002654" }}
+            className="md:hidden p-2 text-white hover:text-blue-300 transition-all duration-300 hover:rotate-90 active:scale-95"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            {isOpen ? <X size={24} className="transition-transform duration-300" /> : <Menu size={24} className="transition-transform duration-300" />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
-            <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
+          <div className="md:hidden py-4 border-t border-white/20 animate-in slide-in-from-top duration-300">
+            <div className="flex flex-col gap-2">
+              {navLinks.map((link, index) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="transition-colors font-medium py-2"
-                  style={{ color: "#002654" }}
+                  className="relative font-medium py-3 px-4 text-white transition-all duration-300 hover:text-blue-300 hover:bg-white/10 rounded-lg group/mobile"
+                  style={{ animationDelay: `${index * 50}ms` }}
                 >
-                  {link.label}
+                  <span className="relative z-10">{link.label}</span>
+                  <span className="absolute left-0 top-0 bottom-0 w-1 bg-blue-300 scale-y-0 group-hover/mobile:scale-y-100 transition-transform duration-300 rounded-l-lg origin-center"></span>
                 </Link>
               ))}
 
               <div className="py-2">
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full font-medium"
-                  style={{ color: "#002654" }}
+                  className="flex items-center justify-between w-full font-medium py-3 px-4 text-white hover:text-orange-300 hover:bg-white/10 rounded-lg transition-all duration-300"
                 >
                   Servicios
-                  <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`} />
                 </button>
                 {isServicesOpen && (
-                  <div className="mt-2 ml-4 flex flex-col gap-2">
-                    {serviceLinks.map((link) => (
+                  <div className="mt-2 ml-4 flex flex-col gap-1 animate-in fade-in slide-in-from-left duration-200">
+                    {serviceLinks.map((link, index) => (
                       <Link
                         key={link.href}
                         href={link.href}
                         onClick={() => setIsOpen(false)}
-                        className="py-2 text-gray-600 hover:text-gray-900"
+                        className="relative py-2.5 px-4 rounded-lg transition-all duration-300 group/mobile-item"
                         style={{
-                          color: link.featured ? "#ED2939" : "#002654",
+                          color: link.featured ? "#f97316" : "#e5e7eb",
                           fontWeight: link.featured ? "700" : "500",
+                          animationDelay: `${index * 50}ms`,
                         }}
                       >
-                        {link.label}
+                        <span className="relative z-10 transition-all duration-300 group-hover/mobile-item:translate-x-2 inline-block">
+                          {link.label}
+                        </span>
+                        <span className="absolute inset-0 bg-orange-500/10 rounded-lg scale-x-0 group-hover/mobile-item:scale-x-100 transition-transform duration-300 origin-left"></span>
                       </Link>
                     ))}
                   </div>
                 )}
               </div>
 
-              {otherLinks.map((link) => (
+              {otherLinks.map((link, index) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="transition-colors font-medium py-2"
-                  style={{ color: "#002654" }}
+                  className="relative font-medium py-3 px-4 text-white transition-all duration-300 hover:text-blue-300 hover:bg-white/10 rounded-lg group/mobile"
+                  style={{ animationDelay: `${(navLinks.length + index) * 50}ms` }}
                 >
-                  {link.label}
+                  <span className="relative z-10">{link.label}</span>
+                  <span className="absolute left-0 top-0 bottom-0 w-1 bg-blue-300 scale-y-0 group-hover/mobile:scale-y-100 transition-transform duration-300 rounded-l-lg origin-center"></span>
                 </Link>
               ))}
 
-              <Button
-                asChild
-                className="text-white w-full"
-                style={{ backgroundColor: "#0055A4" }}
+              <Button 
+                asChild 
+                className="text-white w-full mt-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
+                style={{ backgroundColor: "#ED2939" }}
               >
-                <Link href="/working-holiday" onClick={() => setIsOpen(false)}>
-                  Working Holiday
-                </Link>
-              </Button>
-
-              <Button
-                asChild
-                variant="outline"
-                className="w-full border-2 bg-transparent"
-                style={{ borderColor: "#002654", color: "#002654" }}
-              >
-                <Link href="/pagos" onClick={() => setIsOpen(false)}>
-                  Pagar Servicio
-                </Link>
-              </Button>
-
-              <Button asChild className="text-white w-full" style={{ backgroundColor: "#ED2939" }}>
                 <a
                   href="https://wa.me/33601526171"
                   target="_blank"

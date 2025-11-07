@@ -2,21 +2,28 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Briefcase, GraduationCap, Plane, MapPin } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
-const services = [
+const featuredServices = [
   {
-    icon: Briefcase,
+    id: "visa-salarie",
     title: "Visa Salarié",
     price: "250€",
     description: "Visa de trabajo para empleados. Tramitación completa con acompañamiento profesional.",
     features: ["Contrato de trabajo", "Autorización OFII", "Documentación completa"],
+    image: "/visa-salarie.png",
+    link: "/servicios/visas-trabajo",
   },
+]
+
+const otherServices = [
   {
     icon: GraduationCap,
     title: "Visa Étudiant",
     price: "250€",
     description: "Estudia en universidades francesas. Asesoría completa para tu proceso académico.",
     features: ["Inscripción universitaria", "Campus France", "Permiso de trabajo parcial"],
+    link: "/servicios/visa-etudiant",
   },
   {
     icon: Plane,
@@ -24,6 +31,7 @@ const services = [
     price: "200€",
     description: "Visa de vacaciones y trabajo temporal. Experiencia internacional en Francia.",
     features: ["Trabajo temporal", "Turismo", "Validez 12 meses"],
+    link: "/servicios",
   },
   {
     icon: MapPin,
@@ -31,6 +39,7 @@ const services = [
     price: "150€",
     description: "Orientación completa para encontrar empleo y establecerte en la capital francesa.",
     features: ["Búsqueda de empleo", "Alojamiento", "Integración cultural"],
+    link: "/servicios",
   },
 ]
 
@@ -54,11 +63,34 @@ export function ServicesSection() {
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">SERVICIOS</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => {
+        {/* All Services */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {/* Featured Services with Images */}
+          {featuredServices.map((service) => (
+            <div key={service.id} className="flex flex-col hover:scale-[1.02] transition-transform duration-300">
+              <div className="relative w-full h-full rounded-lg overflow-hidden mb-4">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 25vw"
+                />
+              </div>
+              <Button
+                className="w-full bg-black text-white border-2 border-white rounded-lg py-3 font-semibold uppercase tracking-wide hover:bg-white hover:text-black transition-all duration-300 text-sm"
+                asChild
+              >
+                <Link href={service.link}>MÁS INFORMACIÓN</Link>
+              </Button>
+            </div>
+          ))}
+
+          {/* Other Services */}
+          {otherServices.map((service, index) => {
             const Icon = service.icon
             return (
-              <Card key={index} className="p-6 bg-white hover:shadow-xl transition-shadow">
+              <Card key={index} className="p-6 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <div className="space-y-4">
                   <div
                     className="w-14 h-14 rounded-lg flex items-center justify-center"
@@ -87,11 +119,11 @@ export function ServicesSection() {
                   </ul>
 
                   <Button
-                    className="w-full text-white font-semibold hover:opacity-90"
+                    className="w-full text-white font-semibold hover:scale-105 transition-transform duration-300"
                     style={{ backgroundColor: "#ED2939" }}
                     asChild
                   >
-                    <Link href="/servicios">Ver más</Link>
+                    <Link href={service.link}>Más información</Link>
                   </Button>
                 </div>
               </Card>
@@ -103,7 +135,7 @@ export function ServicesSection() {
           <Button
             size="lg"
             variant="outline"
-            className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 text-white hover:bg-white hover:text-blue-900 bg-transparent"
+            className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 text-white hover:bg-white hover:text-blue-900 bg-transparent transition-all duration-300 hover:scale-105"
             style={{ borderColor: "white" }}
             asChild
           >

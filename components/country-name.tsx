@@ -13,8 +13,7 @@ export function CountryName({ withEmoji = false, fallback = "Argentina", classNa
   const { country, hydrated } = useCountry()
 
   const displayName = hydrated ? country.name : fallback
-  const displayEmoji = hydrated ? country.emoji : "🌎"
-  const content = withEmoji ? `${displayEmoji} ${displayName}` : displayName
+  const content = withEmoji ? `${displayName}` : displayName
 
   return <span className={cn("inline-flex items-center gap-2 align-middle font-semibold", className)}>{content}</span>
 }

@@ -11,7 +11,7 @@ export function CountryIndicator() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-[90]">
+    <div className="fixed bottom-6 right-6 z-90">
       <Button
         type="button"
         variant="outline"
@@ -19,7 +19,6 @@ export function CountryIndicator() {
         style={{ borderColor: "#002654", color: "#002654" }}
         onClick={openModal}
       >
-        <span className="mr-2">{country.emoji}</span>
         País: {country.name}
       </Button>
     </div>

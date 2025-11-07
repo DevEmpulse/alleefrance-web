@@ -5,16 +5,16 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react"
 const COUNTRY_STORAGE_KEY = "alleefrance-country"
 
 export const COUNTRY_OPTIONS = [
-  { code: "CL", name: "Chile", emoji: "🇨🇱" },
-  { code: "UY", name: "Uruguay", emoji: "🇺🇾" },
-  { code: "AR", name: "Argentina", emoji: "🇦🇷" },
-  { code: "EC", name: "Ecuador", emoji: "🇪🇨" },
-  { code: "MX", name: "México", emoji: "🇲🇽" },
-  { code: "CO", name: "Colombia", emoji: "🇨🇴" },
-  { code: "PE", name: "Perú", emoji: "🇵🇪" },
-  { code: "ES", name: "España", emoji: "🇪🇸" },
-  { code: "GLOBAL", name: "Global", emoji: "🌍" },
-] as const
+  { code: "CL", name: "Chile" },
+  { code: "UY", name: "Uruguay" },
+  { code: "AR", name: "Argentina" },
+  { code: "EC", name: "Ecuador" },
+  { code: "MX", name: "México" },
+  { code: "CO", name: "Colombia" },
+  { code: "PE", name: "Perú" },
+  { code: "ES", name: "España" },
+  { code: "GLOBAL", name: "Global" },
+]
 
 export type CountryOption = (typeof COUNTRY_OPTIONS)[number]
 
@@ -38,28 +38,53 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
   const [hasConfirmed, setHasConfirmed] = useState(false)
   const [hydrated, setHydrated] = useState(false)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
-    const savedCode = typeof window !== "undefined" ? localStorage.getItem(COUNTRY_STORAGE_KEY) : null
-    if (savedCode) {
-      const savedCountry = COUNTRY_OPTIONS.find((option) => option.code === savedCode)
-      if (savedCountry) {
-        setCountry(savedCountry)
-        setHasConfirmed(true)
-      }
-    } else {
-      setIsModalOpen(true)
-    }
-    setHydrated(true)
+    setIsClient(true)
   }, [])
+
+  useEffect(() => {
+    if (!isClient) return
+    try {
+      if (typeof window !== "undefined" && window.localStorage) {
+        const savedCode = localStorage.getItem(COUNTRY_STORAGE_KEY)
+        if (savedCode) {
+          const savedCountry = COUNTRY_OPTIONS.find((option) => option.code === savedCode)
+          if (savedCountry) {
+            setCountry(savedCountry)
+            setHasConfirmed(true)
+          } else {
+            setIsModalOpen(true)
+          }
+        } else {
+          setIsModalOpen(true)
+        }
+      } else {
+        setIsModalOpen(true)
+      }
+    } catch (error) {
+      // Si hay un error al acceder a localStorage (por ejemplo, políticas de seguridad),
+      // simplemente usamos el país por defecto
+      console.warn("No se pudo acceder a localStorage:", error)
+      setIsModalOpen(true)
+    } finally {
+      setHydrated(true)
+    }
+  }, [isClient])
 
   const updateCountry = (code: CountryOption["code"]) => {
     const nextCountry = COUNTRY_OPTIONS.find((option) => option.code === code) ?? defaultCountry
     setCountry(nextCountry)
     setHasConfirmed(true)
     setIsModalOpen(false)
-    if (typeof window !== "undefined") {
-      localStorage.setItem(COUNTRY_STORAGE_KEY, nextCountry.code)
+    try {
+      if (typeof window !== "undefined" && window.localStorage) {
+        localStorage.setItem(COUNTRY_STORAGE_KEY, nextCountry.code)
+      }
+    } catch (error) {
+      // Si hay un error al guardar en localStorage, simplemente lo ignoramos
+      console.warn("No se pudo guardar en localStorage:", error)
     }
   }
 
