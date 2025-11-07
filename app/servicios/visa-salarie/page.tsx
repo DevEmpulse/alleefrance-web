@@ -1,9 +1,16 @@
-import type { Metadata } from "next"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { CheckCircle2, Clock, FileText, Phone, MessageCircle, Calendar } from "lucide-react"
-import { Navbar } from "@/components/navbar"
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import {
+  CheckCircle2,
+  Clock,
+  FileText,
+  Phone,
+  MessageCircle,
+  Calendar,
+} from "lucide-react";
+import { Navbar } from "@/components/navbar";
 
 export const metadata: Metadata = {
   title: "Visa Salarié Francia - Trámite de Visa de Trabajo | Allée France",
@@ -16,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "Asesoría completa para tramitar tu Visa Salarié en Francia. Requisitos, documentación y acompañamiento profesional.",
   },
-}
+};
 
 export default function VisaSalariePage() {
   return (
@@ -25,12 +32,18 @@ export default function VisaSalariePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-6" style={{ backgroundColor: "#002654" }}>
+      <section
+        className="pt-32 pb-16 px-6"
+        style={{ backgroundColor: "#002654" }}
+      >
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Visa Salarié - Visa de Trabajo en Francia</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            Visa Salarié - Visa de Trabajo en Francia
+          </h1>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Tramitá tu visa de trabajo para Francia con acompañamiento profesional. Te guiamos en cada paso del proceso
-            para que puedas trabajar legalmente en Francia.
+            Tramitá tu visa de trabajo para Francia con acompañamiento
+            profesional. Te guiamos en cada paso del proceso para que puedas
+            trabajar legalmente en Francia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -39,7 +52,11 @@ export default function VisaSalariePage() {
               style={{ backgroundColor: "#ED2939" }}
               asChild
             >
-              <a href="https://wa.me/33601526171" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/33601526171"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 CONSULTAR POR WHATSAPP
               </a>
@@ -51,7 +68,11 @@ export default function VisaSalariePage() {
               style={{ color: "#002654" }}
               asChild
             >
-              <a href="https://alleefrancelyon.taplink.ws" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://alleefrancelyon.taplink.ws"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Calendar className="mr-2 h-5 w-5" />
                 AGENDAR ASESORÍA
               </a>
@@ -63,22 +84,30 @@ export default function VisaSalariePage() {
       {/* ¿Qué es la Visa Salarié? */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-6" style={{ color: "#002654" }}>
+          <h2
+            className="text-3xl lg:text-4xl font-bold mb-6"
+            style={{ color: "#002654" }}
+          >
             ¿Qué es la Visa Salarié?
           </h2>
           <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
             <p className="mb-4">
-              La <strong>Visa Salarié</strong> es el permiso que te permite trabajar legalmente en Francia como
-              empleado. Es necesaria para cualquier persona extranjera que desee ejercer una actividad laboral
-              asalariada en territorio francés.
+              La <strong>Visa Salarié</strong> es el permiso que te permite
+              trabajar legalmente en Francia como empleado. Es necesaria para
+              cualquier persona extranjera que desee ejercer una actividad
+              laboral asalariada en territorio francés.
             </p>
             <p className="mb-4">
-              Este tipo de visa está vinculada a una oferta de trabajo específica y requiere que tu empleador francés
-              inicie el proceso de autorización de trabajo ante las autoridades francesas (DIRECCTE).
+              Este tipo de visa está vinculada a una oferta de trabajo
+              específica y requiere que tu empleador francés inicie el proceso
+              de autorización de trabajo ante las autoridades francesas
+              (DIRECCTE).
             </p>
             <p>
-              Una vez aprobada, la Visa Salarié te permite residir y trabajar en Francia durante el período especificado
-              en tu contrato laboral, con posibilidad de renovación y posterior solicitud de residencia permanente.
+              Una vez aprobada, la Visa Salarié te permite residir y trabajar en
+              Francia durante el período especificado en tu contrato laboral,
+              con posibilidad de renovación y posterior solicitud de residencia
+              permanente.
             </p>
           </div>
         </div>
@@ -87,7 +116,10 @@ export default function VisaSalariePage() {
       {/* Requisitos */}
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8" style={{ color: "#002654" }}>
+          <h2
+            className="text-3xl lg:text-4xl font-bold mb-8"
+            style={{ color: "#002654" }}
+          >
             Requisitos para la Visa Salarié
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
@@ -105,9 +137,16 @@ export default function VisaSalariePage() {
               "CV actualizado y carta de motivación",
               "Pago de tasas consulares",
             ].map((req, index) => (
-              <Card key={index} className="p-4 border-l-4" style={{ borderLeftColor: "#ED2939" }}>
+              <Card
+                key={index}
+                className="p-4 border-l-4"
+                style={{ borderLeftColor: "#ED2939" }}
+              >
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: "#ED2939" }} />
+                  <CheckCircle2
+                    className="w-6 h-6 shrink-0 mt-0.5"
+                    style={{ color: "#ED2939" }}
+                  />
                   <p className="text-gray-700 leading-relaxed">{req}</p>
                 </div>
               </Card>
@@ -119,7 +158,10 @@ export default function VisaSalariePage() {
       {/* Proceso Paso a Paso */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8" style={{ color: "#002654" }}>
+          <h2
+            className="text-3xl lg:text-4xl font-bold mb-8"
+            style={{ color: "#002654" }}
+          >
             Proceso Paso a Paso
           </h2>
           <div className="space-y-6">
@@ -161,19 +203,27 @@ export default function VisaSalariePage() {
                   "Una vez aprobada tu visa, podés viajar a Francia. Al llegar, debés validar tu visa y solicitar tu Titre de Séjour.",
               },
             ].map((item, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                className="p-6 hover:shadow-lg transition-shadow"
+              >
                 <div className="flex gap-4">
                   <div
-                    className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 font-bold text-white text-xl"
+                    className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 font-bold text-white text-xl"
                     style={{ backgroundColor: "#ED2939" }}
                   >
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2" style={{ color: "#002654" }}>
+                    <h3
+                      className="text-xl font-bold mb-2"
+                      style={{ color: "#002654" }}
+                    >
                       {item.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                    <p className="text-gray-700 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </Card>
@@ -188,12 +238,17 @@ export default function VisaSalariePage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="p-8">
               <Clock className="w-12 h-12 mb-4" style={{ color: "#ED2939" }} />
-              <h3 className="text-2xl font-bold mb-4" style={{ color: "#002654" }}>
+              <h3
+                className="text-2xl font-bold mb-4"
+                style={{ color: "#002654" }}
+              >
                 Tiempos de Procesamiento
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[140px]">Autorización:</span>
+                  <span className="font-semibold min-w-[140px]">
+                    Autorización:
+                  </span>
                   <span>2-3 meses</span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -201,28 +256,42 @@ export default function VisaSalariePage() {
                   <span>2-4 semanas</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[140px]">Total estimado:</span>
+                  <span className="font-semibold min-w-[140px]">
+                    Total estimado:
+                  </span>
                   <span>3-4 meses</span>
                 </li>
               </ul>
             </Card>
 
             <Card className="p-8">
-              <FileText className="w-12 h-12 mb-4" style={{ color: "#ED2939" }} />
-              <h3 className="text-2xl font-bold mb-4" style={{ color: "#002654" }}>
+              <FileText
+                className="w-12 h-12 mb-4"
+                style={{ color: "#ED2939" }}
+              />
+              <h3
+                className="text-2xl font-bold mb-4"
+                style={{ color: "#002654" }}
+              >
                 Costos Aproximados
               </h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[140px]">Tasa consular:</span>
+                  <span className="font-semibold min-w-[140px]">
+                    Tasa consular:
+                  </span>
                   <span>€99</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[140px]">Seguro médico:</span>
+                  <span className="font-semibold min-w-[140px]">
+                    Seguro médico:
+                  </span>
                   <span>€30-60/mes</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="font-semibold min-w-[140px]">Traducciones:</span>
+                  <span className="font-semibold min-w-[140px]">
+                    Traducciones:
+                  </span>
                   <span>Variable</span>
                 </li>
               </ul>
@@ -237,29 +306,43 @@ export default function VisaSalariePage() {
       {/* Por qué elegirnos */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center" style={{ color: "#002654" }}>
+          <h2
+            className="text-3xl lg:text-4xl font-bold mb-8 text-center"
+            style={{ color: "#002654" }}
+          >
             ¿Por qué elegir Allée France?
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
                 title: "Experiencia Comprobada",
-                description: "+1000 trámites exitosos de visas de trabajo para Francia",
+                description:
+                  "+1000 trámites exitosos de visas de trabajo para Francia",
               },
               {
                 title: "Acompañamiento Total",
-                description: "Te guiamos desde el inicio hasta que obtengas tu Titre de Séjour",
+                description:
+                  "Te guiamos desde el inicio hasta que obtengas tu Titre de Séjour",
               },
               {
                 title: "Atención Personalizada",
-                description: "Cada caso es único. Adaptamos nuestra asesoría a tu situación",
+                description:
+                  "Cada caso es único. Adaptamos nuestra asesoría a tu situación",
               },
             ].map((item, index) => (
-              <Card key={index} className="p-6 text-center hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-bold mb-3" style={{ color: "#002654" }}>
+              <Card
+                key={index}
+                className="p-6 text-center hover:shadow-lg transition-shadow"
+              >
+                <h3
+                  className="text-xl font-bold mb-3"
+                  style={{ color: "#002654" }}
+                >
                   {item.title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed">{item.description}</p>
+                <p className="text-gray-700 leading-relaxed">
+                  {item.description}
+                </p>
               </Card>
             ))}
           </div>
@@ -269,9 +352,12 @@ export default function VisaSalariePage() {
       {/* CTA Final */}
       <section className="py-16 px-6" style={{ backgroundColor: "#002654" }}>
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">Empezá tu proceso de Visa Salarié hoy</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
+            Empezá tu proceso de Visa Salarié hoy
+          </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Contactanos para una asesoría personalizada y comenzá tu camino hacia trabajar en Francia
+            Contactanos para una asesoría personalizada y comenzá tu camino
+            hacia trabajar en Francia
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -280,7 +366,11 @@ export default function VisaSalariePage() {
               style={{ backgroundColor: "#ED2939", color: "white" }}
               asChild
             >
-              <a href="https://wa.me/33601526171" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://wa.me/33601526171"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Phone className="mr-2 h-5 w-5" />
                 +33 6 01 52 61 71
               </a>
@@ -301,7 +391,10 @@ export default function VisaSalariePage() {
       {/* FAQ */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-8" style={{ color: "#002654" }}>
+          <h2
+            className="text-3xl lg:text-4xl font-bold mb-8"
+            style={{ color: "#002654" }}
+          >
             Preguntas Frecuentes
           </h2>
           <div className="space-y-4">
@@ -324,7 +417,10 @@ export default function VisaSalariePage() {
               },
             ].map((faq, index) => (
               <Card key={index} className="p-6">
-                <h3 className="text-lg font-bold mb-2" style={{ color: "#002654" }}>
+                <h3
+                  className="text-lg font-bold mb-2"
+                  style={{ color: "#002654" }}
+                >
                   {faq.q}
                 </h3>
                 <p className="text-gray-700 leading-relaxed">{faq.a}</p>
@@ -334,5 +430,5 @@ export default function VisaSalariePage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
