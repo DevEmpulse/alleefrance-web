@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
+import { useState } from "react";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import {
   Plane,
   Users,
@@ -21,8 +21,8 @@ import {
   HeartPulse,
   MessageCircle,
   Clock,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
 
 const categories = [
   { id: "all", label: "Todos los Servicios" },
@@ -30,7 +30,7 @@ const categories = [
   { id: "administrative", label: "Trámites Administrativos" },
   { id: "consulting", label: "Asesorías" },
   { id: "other", label: "Otros Servicios" },
-]
+];
 
 const services = [
   {
@@ -38,7 +38,8 @@ const services = [
     category: "consulting",
     icon: MessageCircle,
     title: "Asesorías Personalizadas",
-    description: "Resuelve dudas específicas sobre migración en Francia con nuestros expertos.",
+    description:
+      "Resuelve dudas específicas sobre migración en Francia con nuestros expertos.",
     details: [
       "Asesoría express (30 min): Dudas específicas - 30€",
       "Asesoría completa (1h): Revisión integral con resumen escrito - 50€",
@@ -86,7 +87,8 @@ const services = [
     category: "other",
     icon: Shield,
     title: "Seguros de Viaje",
-    description: "Coberturas internacionales para visado en Francia o vacaciones.",
+    description:
+      "Coberturas internacionales para visado en Francia o vacaciones.",
     details: [
       "Asesoría personalizada",
       "Selección de póliza adecuada",
@@ -134,7 +136,8 @@ const services = [
     category: "visas",
     icon: GraduationCap,
     title: "Visa de Estudiante",
-    description: "Campus France e inscripción académica para estudiar en Francia.",
+    description:
+      "Campus France e inscripción académica para estudiar en Francia.",
     details: [
       "Proceso Campus France",
       "Inscripción académica",
@@ -151,7 +154,8 @@ const services = [
     category: "visas",
     icon: Users,
     title: "Reagrupación Familiar",
-    description: "Reúne a tu familia en Francia con todos los trámites necesarios.",
+    description:
+      "Reúne a tu familia en Francia con todos los trámites necesarios.",
     details: [
       "Expediente ante OFII/prefectura",
       "Asesoría sobre vivienda y recursos",
@@ -184,7 +188,11 @@ const services = [
     icon: CheckCircle,
     title: "Validación de Visa",
     description: "Validación en plataforma OFII al llegar a Francia.",
-    details: ["Validación en plataforma OFII", "Regularización de estancia", "Asesoría post-llegada"],
+    details: [
+      "Validación en plataforma OFII",
+      "Regularización de estancia",
+      "Asesoría post-llegada",
+    ],
     price: "15€",
     duration: "Inmediato",
     link: "/#contacto",
@@ -230,7 +238,8 @@ const services = [
     category: "administrative",
     icon: Briefcase,
     title: "Profession Libérale",
-    description: "Cambio o solicitud de estatus para trabajar como independiente.",
+    description:
+      "Cambio o solicitud de estatus para trabajar como independiente.",
     details: [
       "Definición de actividad (APE)",
       "Alta en URSSAF/INPI",
@@ -265,18 +274,25 @@ const services = [
     icon: HeartPulse,
     title: "Seguridad Social",
     description: "Trámite completo para obtener tu carte vitale.",
-    details: ["Formularios CERFA", "Subida de documentos", "Seguimiento del proceso", "Acompañamiento hasta obtención"],
+    details: [
+      "Formularios CERFA",
+      "Subida de documentos",
+      "Seguimiento del proceso",
+      "Acompañamiento hasta obtención",
+    ],
     price: "50€",
     duration: "2-4 semanas",
     link: "/#contacto",
   },
-]
+];
 
 export default function ServiciosPage() {
-  const [selectedCategory, setSelectedCategory] = useState("all")
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   const filteredServices =
-    selectedCategory === "all" ? services : services.filter((service) => service.category === selectedCategory)
+    selectedCategory === "all"
+      ? services
+      : services.filter((service) => service.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -286,11 +302,15 @@ export default function ServiciosPage() {
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
+            <h1
+              className="text-4xl lg:text-5xl font-bold mb-4"
+              style={{ color: "#002654" }}
+            >
               Catálogo de Servicios
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Gestoría Allée France Lyon - Soluciones completas para tu proceso migratorio y administrativo en Francia
+              Gestoría Allée France Lyon - Soluciones completas para tu proceso
+              migratorio y administrativo en Francia
             </p>
           </div>
 
@@ -299,10 +319,14 @@ export default function ServiciosPage() {
             {categories.map((category) => (
               <Button
                 key={category.id}
-                variant={selectedCategory === category.id ? "default" : "outline"}
+                variant={
+                  selectedCategory === category.id ? "default" : "outline"
+                }
                 onClick={() => setSelectedCategory(category.id)}
                 className={`font-medium ${
-                  selectedCategory === category.id ? "text-white" : "bg-white hover:bg-gray-50"
+                  selectedCategory === category.id
+                    ? "text-white"
+                    : "bg-white hover:bg-gray-50"
                 }`}
                 style={
                   selectedCategory === category.id
@@ -318,7 +342,7 @@ export default function ServiciosPage() {
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredServices.map((service) => {
-              const Icon = service.icon
+              const Icon = service.icon;
               return (
                 <Card
                   key={service.id}
@@ -332,12 +356,18 @@ export default function ServiciosPage() {
                         className="w-14 h-14 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform"
                         style={{ backgroundColor: "rgba(237, 41, 57, 0.1)" }}
                       >
-                        <Icon className="w-7 h-7" style={{ color: "#ED2939" }} />
+                        <Icon
+                          className="w-7 h-7"
+                          style={{ color: "#ED2939" }}
+                        />
                       </div>
                       <Badge
                         variant="secondary"
                         className="font-semibold"
-                        style={{ backgroundColor: "rgba(0, 38, 84, 0.1)", color: "#002654" }}
+                        style={{
+                          backgroundColor: "rgba(0, 38, 84, 0.1)",
+                          color: "#002654",
+                        }}
                       >
                         {service.price}
                       </Badge>
@@ -345,10 +375,15 @@ export default function ServiciosPage() {
 
                     {/* Title and Description */}
                     <div>
-                      <h3 className="text-xl font-bold mb-2" style={{ color: "#002654" }}>
+                      <h3
+                        className="text-xl font-bold mb-2"
+                        style={{ color: "#002654" }}
+                      >
                         {service.title}
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-sm">{service.description}</p>
+                      <p className="text-gray-600 leading-relaxed text-sm">
+                        {service.description}
+                      </p>
                     </div>
 
                     {/* Duration */}
@@ -360,13 +395,21 @@ export default function ServiciosPage() {
                     {/* Details List */}
                     <ul className="space-y-2">
                       {service.details.slice(0, 3).map((detail, index) => (
-                        <li key={index} className="flex items-start gap-2 text-sm text-gray-600">
-                          <CheckCircle className="w-4 h-4 mt-0.5 flex-shrink-0" style={{ color: "#ED2939" }} />
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-gray-600"
+                        >
+                          <CheckCircle
+                            className="w-4 h-4 mt-0.5 shrink-0"
+                            style={{ color: "#ED2939" }}
+                          />
                           <span className="leading-relaxed">{detail}</span>
                         </li>
                       ))}
                       {service.details.length > 3 && (
-                        <li className="text-sm text-gray-500 italic">+{service.details.length - 3} más...</li>
+                        <li className="text-sm text-gray-500 italic">
+                          +{service.details.length - 3} más...
+                        </li>
                       )}
                     </ul>
 
@@ -380,19 +423,26 @@ export default function ServiciosPage() {
                     </Button>
                   </div>
                 </Card>
-              )
+              );
             })}
           </div>
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
-            <Card className="p-8 bg-white border-2" style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}>
-              <h2 className="text-2xl font-bold mb-4" style={{ color: "#002654" }}>
+            <Card
+              className="p-8 bg-white border-2"
+              style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}
+            >
+              <h2
+                className="text-2xl font-bold mb-4"
+                style={{ color: "#002654" }}
+              >
                 ¿No encuentras el servicio que necesitas?
               </h2>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto leading-relaxed">
-                Contáctanos para una consulta personalizada. Nuestro equipo de expertos está listo para ayudarte con
-                cualquier trámite migratorio o administrativo en Francia.
+                Contáctanos para una consulta personalizada. Nuestro equipo de
+                expertos está listo para ayudarte con cualquier trámite
+                migratorio o administrativo en Francia.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
@@ -400,7 +450,11 @@ export default function ServiciosPage() {
                   className="text-white hover:opacity-90 font-semibold"
                   style={{ backgroundColor: "#ED2939" }}
                 >
-                  <a href="https://wa.me/33601526171" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://wa.me/33601526171"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Consulta Gratis por WhatsApp
                   </a>
                 </Button>
@@ -420,5 +474,5 @@ export default function ServiciosPage() {
 
       <Footer />
     </div>
-  )
+  );
 }
