@@ -5,6 +5,7 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { CountryName } from "@/components/country-name";
 import {
   Plane,
   Clock,
@@ -157,7 +158,7 @@ export default function WorkingHolidayPage() {
             </div>
             <p className="mt-6 text-sm text-white/70">
               Cupos limitados por país · Te ayudamos a llegar con todo listo
-              desde Argentina.
+              desde <CountryName withEmoji className="text-white/90" />.
             </p>
           </div>
         </section>
@@ -181,7 +182,9 @@ export default function WorkingHolidayPage() {
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Desde Allée France te guiamos en cada etapa: planificación,
-                papeles, entrevista consular y adaptación al llegar. Nos
+                papeles, entrevista consular y adaptación al llegar, con foco en
+                quienes aplican desde{" "}
+                <CountryName withEmoji className="text-[#ED2939]" />. Nos
                 enfocamos en anticipar problemas y fortalecer tu dossier para
                 que puedas aprovechar el cupo anual sin contratiempos.
               </p>
@@ -191,7 +194,11 @@ export default function WorkingHolidayPage() {
                 <Shield className="w-10 h-10 text-[#ED2939]" />
                 <div>
                   <p className="text-sm uppercase tracking-wide text-gray-500">
-                    Cupo argentino estimado
+                    Cupo estimado ·{" "}
+                    <CountryName
+                      withEmoji
+                      className="text-gray-700 text-sm font-semibold uppercase tracking-wide"
+                    />
                   </p>
                   <p
                     className="text-2xl font-bold"
@@ -416,7 +423,9 @@ export default function WorkingHolidayPage() {
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               Te ayudamos a preparar un dossier competitivo, a cumplir con los
               tiempos oficiales y a aterrizar en Francia con un plan claro de
-              alojamiento, trabajo temporal y trámites de instalación.
+              alojamiento, trabajo temporal y trámites de instalación, sin
+              importar que partas desde{" "}
+              <CountryName withEmoji className="text-white font-bold" />.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

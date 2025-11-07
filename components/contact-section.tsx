@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { CountryName } from "@/components/country-name"
 
 export function ContactSection() {
   return (
@@ -16,8 +17,9 @@ export function ContactSection() {
           {/* Contact Form */}
           <div className="space-y-6">
             <p className="text-gray-700 leading-relaxed mb-8">
-              ¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos pondremos en contacto contigo
-              para una consulta inicial gratuita.
+              ¿Listo para comenzar tu proceso migratorio desde{" "}
+              <CountryName withEmoji className="text-[#ED2939]" />? Completa el formulario y nos pondremos en contacto
+              contigo para una consulta inicial gratuita.
             </p>
 
             <form className="space-y-4">

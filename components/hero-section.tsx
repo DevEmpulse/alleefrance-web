@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { CountryName } from "@/components/country-name"
 
 export function HeroSection() {
   return (
@@ -20,7 +21,11 @@ export function HeroSection() {
           <h1 className="text-5xl lg:text-6xl font-bold text-white mb-8 text-balance leading-tight">
             Todo lo que necesitas saber
             <br />
-            para viajar Francia
+            para viajar a Francia desde{" "}
+            <CountryName
+              withEmoji
+              className="inline-flex items-center gap-2 text-[#FEE08B] drop-shadow-sm lg:text-6xl"
+            />
           </h1>
 
           <Button
