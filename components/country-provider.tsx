@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { createContext, useContext, useEffect, useMemo, useState } from "react"
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-const COUNTRY_STORAGE_KEY = "alleefrance-country"
+const COUNTRY_STORAGE_KEY = "alleefrance-country";
 
 export const COUNTRY_OPTIONS = [
   { code: "CL", name: "Chile" },
@@ -12,81 +12,86 @@ export const COUNTRY_OPTIONS = [
   { code: "MX", name: "México" },
   { code: "CO", name: "Colombia" },
   { code: "PE", name: "Perú" },
-  { code: "ES", name: "España" },
+  { code: "EC", name: "Ecuador" },
   { code: "GLOBAL", name: "Global" },
-]
+];
 
-export type CountryOption = (typeof COUNTRY_OPTIONS)[number]
+export type CountryOption = (typeof COUNTRY_OPTIONS)[number];
 
 type CountryContextValue = {
-  country: CountryOption
-  options: CountryOption[]
-  setCountry: (code: CountryOption["code"]) => void
-  hasConfirmed: boolean
-  hydrated: boolean
-  isModalOpen: boolean
-  openModal: () => void
-  closeModal: () => void
-}
+  country: CountryOption;
+  options: CountryOption[];
+  setCountry: (code: CountryOption["code"]) => void;
+  hasConfirmed: boolean;
+  hydrated: boolean;
+  isModalOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
+};
 
-const defaultCountry = COUNTRY_OPTIONS[2] // Argentina por defecto
+const defaultCountry = COUNTRY_OPTIONS[2]; // Argentina por defecto
 
-const CountryContext = createContext<CountryContextValue | undefined>(undefined)
+const CountryContext = createContext<CountryContextValue | undefined>(
+  undefined
+);
 
 export function CountryProvider({ children }: { children: React.ReactNode }) {
-  const [country, setCountry] = useState<CountryOption>(defaultCountry)
-  const [hasConfirmed, setHasConfirmed] = useState(false)
-  const [hydrated, setHydrated] = useState(false)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [isClient, setIsClient] = useState(false)
+  const [country, setCountry] = useState<CountryOption>(defaultCountry);
+  const [hasConfirmed, setHasConfirmed] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+  }, []);
 
   useEffect(() => {
-    if (!isClient) return
+    if (!isClient) return;
     try {
       if (typeof window !== "undefined" && window.localStorage) {
-        const savedCode = localStorage.getItem(COUNTRY_STORAGE_KEY)
+        const savedCode = localStorage.getItem(COUNTRY_STORAGE_KEY);
         if (savedCode) {
-          const savedCountry = COUNTRY_OPTIONS.find((option) => option.code === savedCode)
+          const savedCountry = COUNTRY_OPTIONS.find(
+            (option) => option.code === savedCode
+          );
           if (savedCountry) {
-            setCountry(savedCountry)
-            setHasConfirmed(true)
+            setCountry(savedCountry);
+            setHasConfirmed(true);
           } else {
-            setIsModalOpen(true)
+            setIsModalOpen(true);
           }
         } else {
-          setIsModalOpen(true)
+          setIsModalOpen(true);
         }
       } else {
-        setIsModalOpen(true)
+        setIsModalOpen(true);
       }
     } catch (error) {
       // Si hay un error al acceder a localStorage (por ejemplo, políticas de seguridad),
       // simplemente usamos el país por defecto
-      console.warn("No se pudo acceder a localStorage:", error)
-      setIsModalOpen(true)
+      console.warn("No se pudo acceder a localStorage:", error);
+      setIsModalOpen(true);
     } finally {
-      setHydrated(true)
+      setHydrated(true);
     }
-  }, [isClient])
+  }, [isClient]);
 
   const updateCountry = (code: CountryOption["code"]) => {
-    const nextCountry = COUNTRY_OPTIONS.find((option) => option.code === code) ?? defaultCountry
-    setCountry(nextCountry)
-    setHasConfirmed(true)
-    setIsModalOpen(false)
+    const nextCountry =
+      COUNTRY_OPTIONS.find((option) => option.code === code) ?? defaultCountry;
+    setCountry(nextCountry);
+    setHasConfirmed(true);
+    setIsModalOpen(false);
     try {
       if (typeof window !== "undefined" && window.localStorage) {
-        localStorage.setItem(COUNTRY_STORAGE_KEY, nextCountry.code)
+        localStorage.setItem(COUNTRY_STORAGE_KEY, nextCountry.code);
       }
     } catch (error) {
       // Si hay un error al guardar en localStorage, simplemente lo ignoramos
-      console.warn("No se pudo guardar en localStorage:", error)
+      console.warn("No se pudo guardar en localStorage:", error);
     }
-  }
+  };
 
   const value = useMemo<CountryContextValue>(
     () => ({
@@ -99,17 +104,18 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
       openModal: () => setIsModalOpen(true),
       closeModal: () => setIsModalOpen(false),
     }),
-    [country, hasConfirmed, hydrated, isModalOpen],
-  )
+    [country, hasConfirmed, hydrated, isModalOpen]
+  );
 
-  return <CountryContext.Provider value={value}>{children}</CountryContext.Provider>
+  return (
+    <CountryContext.Provider value={value}>{children}</CountryContext.Provider>
+  );
 }
 
 export function useCountry() {
-  const context = useContext(CountryContext)
+  const context = useContext(CountryContext);
   if (!context) {
-    throw new Error("useCountry debe usarse dentro de CountryProvider")
+    throw new Error("useCountry debe usarse dentro de CountryProvider");
   }
-  return context
+  return context;
 }
-

@@ -1,26 +1,34 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import { X } from "lucide-react"
-import { useCountry } from "@/components/country-provider"
+import { useEffect } from "react";
+import { X } from "lucide-react";
+import { useCountry } from "@/components/country-provider";
 
 export function CountrySelectorModal() {
-  const { options, country, setCountry, isModalOpen, hasConfirmed, hydrated, closeModal } = useCountry()
-  const shouldShow = hydrated && isModalOpen
+  const {
+    options,
+    country,
+    setCountry,
+    isModalOpen,
+    hasConfirmed,
+    hydrated,
+    closeModal,
+  } = useCountry();
+  const shouldShow = hydrated && isModalOpen;
 
   useEffect(() => {
     if (!shouldShow) {
-      return
+      return;
     }
-    const previousOverflow = document.body.style.overflow
-    document.body.style.overflow = "hidden"
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = previousOverflow
-    }
-  }, [shouldShow])
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [shouldShow]);
 
   if (!shouldShow) {
-    return null
+    return null;
   }
 
   return (
@@ -37,18 +45,21 @@ export function CountrySelectorModal() {
         )}
 
         <div className="text-center mb-6">
-          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-gray-400">Personaliza</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.45em] text-gray-400">
+            Personaliza
+          </p>
           <h2 className="mt-3 text-2xl font-bold" style={{ color: "#002654" }}>
             Selecciona tu país
           </h2>
           <p className="mt-2 text-sm text-gray-600">
-            Usamos tu país de origen para ajustar mensajes, ejemplos y tiempos de los trámites.
+            Usamos tu país de origen para ajustar mensajes, ejemplos y tiempos
+            de los trámites.
           </p>
         </div>
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
           {options.map((option) => {
-            const isActive = option.code === country.code
+            const isActive = option.code === country.code;
             return (
               <button
                 key={option.code}
@@ -59,7 +70,7 @@ export function CountrySelectorModal() {
                   isActive ? "border-[#ED2939] shadow-lg" : "border-gray-200",
                 ].join(" ")}
               >
-                <span className="text-3xl mb-2">{option.emoji}</span>
+                <span className="text-3xl mb-2">{option.code}</span>
                 <span
                   className="text-xs font-semibold tracking-wide"
                   style={{ color: isActive ? "#ED2939" : "#002654" }}
@@ -67,11 +78,10 @@ export function CountrySelectorModal() {
                   {option.name.toUpperCase()}
                 </span>
               </button>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
+  );
 }
-
