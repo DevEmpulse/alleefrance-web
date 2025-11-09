@@ -22,7 +22,6 @@ export function Navbar() {
   }, [])
 
   const navLinks = [
-    { href: "/#inicio", label: "Inicio" },
     { href: "/#nosotros", label: "Nosotros" },
   ]
 
@@ -49,7 +48,7 @@ export function Navbar() {
         <div className="flex items-center justify-between min-h-16 py-2">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group shrink-0 mr-8 md:mr-12 transition-all duration-300 hover:scale-105">
-            <div className="relative h-10 w-auto transition-transform duration-300 group-hover:rotate-3">
+            <div className="relative h-10 w-auto transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/logofondotransparente.png"
                 alt="Allée France Logo"
@@ -224,7 +223,7 @@ export function Navbar() {
                 style={{ backgroundColor: "#ED2939" }}
               >
                 <a
-                  href="#seguro"
+                  href="https://wa.me/33601526171"
                   onClick={() => setIsOpen(false)}
                 >
                   Cotizar mi seguro
@@ -242,7 +241,7 @@ export function Navbar() {
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
                 >
-                  Consulta Gratis
+                  Cotizar mi seguro
                 </a>
               </Button>
             </div>

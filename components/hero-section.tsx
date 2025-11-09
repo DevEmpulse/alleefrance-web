@@ -53,7 +53,7 @@ export function HeroSection() {
             sizes="100vw"
           />
           {/* Overlay azul suave */}
-          <div className="absolute inset-0 bg-blue-700/40 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-blue-700/45 pointer-events-none"></div>
           {/* Degradado negro en la parte superior */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none"></div>
         </div>
