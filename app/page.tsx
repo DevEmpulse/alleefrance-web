@@ -5,7 +5,6 @@ import { BenefitsSection } from "@/components/benefits-section"
 import { ServicesSection } from "@/components/services-section"
 import { BlogSection } from "@/components/blog-section"
 import { SuccessStoriesSection } from "@/components/success-stories-section"
-import { VisaGuideSection } from "@/components/visa-guide-section"
 import { TipsSection } from "@/components/tips-section"
 import { InsuranceSection } from "@/components/insurance-section"
 import { FAQSection } from "@/components/faq-section"
@@ -22,7 +21,6 @@ export default function Home() {
       <BenefitsSection />
       <BlogSection />
       <SuccessStoriesSection />
-      <VisaGuideSection />
       <TipsSection />
       <InsuranceSection />
       <FAQSection />

@@ -8,18 +8,18 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Mapa de Francia - Mobile: Visible normalmente */}
         <AnimateOnScroll direction="right" delay={0.2}>
-          <div className="flex items-start justify-end -mt-48 mb-4 sm:hidden -mr-4">
+          <div className="flex items-start justify-end -mt-48 mb-4 sm:hidden -mr-8">
             <img 
               src="/mapitafrancia.png" 
               alt="Mapa de Francia" 
-              className="max-w-xs h-auto -mr-2"
+              className="max-w-xs h-auto -mr-4"
             />
           </div>
         </AnimateOnScroll>
 
         {/* Mapa de Francia - Desktop: Posición original */}
         <AnimateOnScroll direction="right" delay={0.2}>
-          <div className="hidden sm:flex items-start justify-center pl-[650px] lg:-mt-52 z-10">
+          <div className="hidden sm:flex items-start justify-center pl-[750px] lg:pl-[800px] lg:-mt-52 z-10">
             <img 
               src="/mapitafrancia.png" 
               alt="Mapa de Francia" 

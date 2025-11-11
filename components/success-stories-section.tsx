@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { Star, ChevronLeft, ChevronRight } from "lucide-react"
-import { AnimateOnScroll } from "@/components/animate-on-scroll"
+import { AnimateOnScroll } from "./animate-on-scroll"
 
 const testimonials = [
   {
@@ -23,12 +23,6 @@ const testimonials = [
       "Me acompañaron durante todo el proceso. Siempre respondieron mis dudas rápidamente. Muy recomendable.",
     visaType: "Visa Saisonier",
   },
-  {
-    name: "Juan C.",
-    quote:
-      "Gracias a su asesoría conseguí mi visa de trabajo sin problemas. Recomendable 100%.",
-    visaType: "Visa Salarié",
-  },
 ]
 
 export function SuccessStoriesSection() {
@@ -44,16 +38,16 @@ export function SuccessStoriesSection() {
     <section id="casos-exitosos" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <AnimateOnScroll direction="fade" delay={0}>
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
-            <div className="text-center md:text-left">
-              <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-2">Testimonios</p>
-              <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
-                Historias reales, resultados comprobados
-              </h2>
-              <p className="text-lg text-gray-600 max-w-xl">
-                Más de 100 clientes ya lograron su sueño de vivir en Francia con nuestra asesoría. Ellos cuentan cómo fue el proceso.
-              </p>
-            </div>
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
+          <div className="text-center md:text-left">
+            <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-2">Testimonios</p>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
+              Historias reales, resultados comprobados
+            </h2>
+            <p className="text-lg text-gray-600 max-w-xl">
+              Más de 100 clientes ya lograron su sueño de vivir en Francia con nuestra asesoría. Ellos cuentan cómo fue el proceso.
+            </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3">
             <button
@@ -73,13 +67,12 @@ export function SuccessStoriesSection() {
               <ChevronRight className="w-5 h-5 mx-auto" />
             </button>
           </div>
-          </div>
+        </div>
         </AnimateOnScroll>
-
-        <div ref={scrollRef} className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 md:[&::-webkit-scrollbar]:hidden md:[scrollbar-width:none]">
+        <div ref={scrollRef} className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
           {testimonials.map((testimonial, index) => (
-            <AnimateOnScroll key={index} direction="right" delay={index * 0.1} amount={0.1}>
             <article
+              key={index}
               className="min-w-[90%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center bg-white rounded-2xl border border-gray-100 shadow-lg p-6 flex flex-col"
             >
               <div className="flex gap-1 mb-4">
@@ -97,7 +90,6 @@ export function SuccessStoriesSection() {
                 {testimonial.visaType}
               </p>
             </article>
-            </AnimateOnScroll>
           ))}
         </div>
       </div>

@@ -74,7 +74,7 @@ export function ServicesSection() {
           {featuredServices.map((service, index) => (
             <AnimateOnScroll key={service.id} direction="up" delay={index * 0.1}>
               <div className="flex flex-col hover:scale-[1.02] transition-transform duration-300">
-              <div className="relative w-full h-full rounded-lg overflow-hidden mb-4">
+              <div className="relative w-full aspect-3/4 md:aspect-3/4 rounded-lg overflow-hidden mb-4">
                 <Image
                   src={service.image}
                   alt={service.title}

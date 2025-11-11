@@ -74,83 +74,81 @@ export function BlogSection() {
               </h2>
             </div>
 
-          <div className="flex items-center justify-center gap-3">
-            <button
-              type="button"
-              aria-label="Ver anterior"
-              onClick={() => handleScroll("left")}
-              className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
-            >
-              <ChevronLeft className="w-5 h-5 mx-auto" />
-            </button>
-            <button
-              type="button"
-              aria-label="Ver siguiente"
-              onClick={() => handleScroll("right")}
-              className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
-            >
-              <ChevronRight className="w-5 h-5 mx-auto" />
-            </button>
-          </div>
+            <div className="flex items-center justify-center gap-3">
+              <button
+                type="button"
+                aria-label="Ver anterior"
+                onClick={() => handleScroll("left")}
+                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5 mx-auto" />
+              </button>
+              <button
+                type="button"
+                aria-label="Ver siguiente"
+                onClick={() => handleScroll("right")}
+                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+              >
+                <ChevronRight className="w-5 h-5 mx-auto" />
+              </button>
+            </div>
           </div>
         </AnimateOnScroll>
 
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 md:[&::-webkit-scrollbar]:hidden md:[scrollbar-width:none]"
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide"
         >
-          {blogPosts.map((post, index) => (
-            <AnimateOnScroll key={index} direction="left" delay={index * 0.1} amount={0.1}>
-            <Link
-              href={`/blog/${post.slug}`}
-              className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
-            >
-              <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100">
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={post.image || "/placeholder.svg"}
-                    alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+          {blogPosts.map((post) => (
+              <Link
+                href={`/blog/${post.slug}`}
+                className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
+              >
+                <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100">
+                  <div className="relative h-48 overflow-hidden">
+                    <img
+                      src={post.image || "/placeholder.svg"}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
 
-                <div className="p-6 flex flex-col h-full">
-                  <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                    {post.date} · {post.readTime}
-                  </p>
-                  <h3
-                    className="text-lg font-bold mb-3 line-clamp-2"
-                    style={{ color: "#002654" }}
-                  >
-                    {post.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-1">
-                    {post.excerpt}
-                  </p>
-                  <span
-                    className="text-sm font-semibold flex items-center gap-2"
-                    style={{ color: "#ED2939" }}
-                  >
-                    Leer más
-                  </span>
-                </div>
-              </article>
-            </Link>
-            </AnimateOnScroll>
+                  <div className="p-6 flex flex-col h-full">
+                    <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+                      {post.date} · {post.readTime}
+                    </p>
+                    <h3
+                      className="text-lg font-bold mb-3 line-clamp-2"
+                      style={{ color: "#002654" }}
+                    >
+                      {post.title}
+                    </h3>
+                    <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-1">
+                      {post.excerpt}
+                    </p>
+                    <span
+                      className="text-sm font-semibold flex items-center gap-2"
+                      style={{ color: "#ED2939" }}
+                    >
+                      Leer más
+                    </span>
+                  </div>
+                </article>
+              </Link>
           ))}
         </div>
 
         <AnimateOnScroll direction="fade" delay={0.3}>
           <div className="text-center mt-12">
-          <Button
-            size="lg"
-            variant="outline"
-            className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 bg-transparent"
-            style={{ borderColor: "#002654", color: "#002654" }}
-            asChild
-          >
-            <Link href="/blog">VER TODOS LOS ARTÍCULOS</Link>
-          </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 bg-transparent"
+              style={{ borderColor: "#002654", color: "#002654" }}
+              asChild
+            >
+              <Link href="/blog">VER TODOS LOS ARTÍCULOS</Link>
+            </Button>
           </div>
         </AnimateOnScroll>
       </div>
