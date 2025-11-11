@@ -17,14 +17,15 @@ export function CountrySelectorModal() {
   const shouldShow = hydrated && isModalOpen;
 
   useEffect(() => {
-    if (!shouldShow) {
-      return;
+    if (shouldShow) {
+      const previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = previousOverflow || "";
+      };
+    } else {
+      document.body.style.overflow = "";
     }
-    const previousOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = previousOverflow;
-    };
   }, [shouldShow]);
 
   if (!shouldShow) {

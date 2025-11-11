@@ -5,6 +5,8 @@ import { CountryName } from "@/components/country-name"
 import Image from "next/image"
 import Link from "next/link"
 import { useEffect, useState } from "react"
+import { motion } from "framer-motion"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 function AnimatedCounter({ end, duration = 2500, delay = 500 }: { end: number; duration?: number; delay?: number }) {
   const [count, setCount] = useState(0)
@@ -60,16 +62,31 @@ export function HeroSection() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-40 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight"
+          >
             Trabajar y vivir en Francia, sin enredos.
-          </h1>
+          </motion.h1>
           
-          <p className="text-base sm:text-lg lg:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed px-4">
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            className="text-base sm:text-lg lg:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed px-4"
+          >
             Te acompaño paso a paso: Salarié/Saisonnier, VVT, Titres de séjour y asesorías personalizadas.
-          </p>
+          </motion.p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-8 max-w-5xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-8 max-w-5xl mx-auto px-4"
+          >
             <Button
               size="lg"
               className="text-white font-semibold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:opacity-90 transition-opacity shadow-xl w-full sm:w-auto sm:flex-shrink-0"
@@ -102,12 +119,17 @@ export function HeroSection() {
                 Agenda una asesoría
               </a>
             </Button>
-          </div>
+          </motion.div>
         </div>
 
         
         {/* Estadísticas - Desktop: Posicionadas absolutamente en la parte inferior izquierda */}
-        <div className="hidden sm:block sm:bottom-2 absolute left-4 lg:left-16 z-20">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          className="hidden sm:block sm:bottom-2 absolute left-4 lg:left-16 z-20"
+        >
           <div className="bg-white/95 backdrop-blur-sm rounded-2xl px-4 sm:px-6 py-4 sm:py-5">
             <div className="flex flex-col gap-1.5 sm:gap-2">
               <p className="text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wide leading-tight">
@@ -126,10 +148,15 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Estadísticas - Mobile: Sobre la imagen, más arriba */}
-        <div className="block sm:hidden absolute bottom-8 left-3 z-20">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          className="block sm:hidden absolute bottom-8 left-3 z-20"
+        >
           <div className="bg-white/95 backdrop-blur-sm rounded-xl px-3 py-3 w-[140px]">
             <div className="flex flex-col gap-1">
               <p className="text-[10px] font-semibold text-gray-700 uppercase tracking-wide leading-tight">
@@ -148,7 +175,7 @@ export function HeroSection() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Curved Wave Bottom */}
         <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">

@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Accordion,
   AccordionContent,
@@ -5,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { MessageCircle } from "lucide-react";
+import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
 const faqs = [
   {
@@ -33,48 +36,55 @@ export function FAQSection() {
   return (
     <section id="faq" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <h2
-            className="text-4xl lg:text-5xl font-bold mb-4"
-            style={{ color: "#002654" }}
-          >
-            PREGUNTAS FRECUENTES (FAQ)
-          </h2>
-        </div>
-
-        <div className="text-center mb-12">
-          <a
-            href="https://wa.me/33601526171"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-white text-lg transition-opacity hover:opacity-90 shadow-lg"
-            style={{ backgroundColor: "#ED2939" }}
-          >
-            <MessageCircle className="w-6 h-6" />
-            WhatsApp para más consultas
-          </a>
-        </div>
-
-        <Accordion type="single" collapsible className="space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index}`}
-              className="bg-white border-2 rounded-lg px-6 data-[state=open]:border-opacity-100"
-              style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}
+        <AnimateOnScroll direction="fade" delay={0}>
+          <div className="text-center mb-12">
+            <h2
+              className="text-4xl lg:text-5xl font-bold mb-4"
+              style={{ color: "#002654" }}
             >
-              <AccordionTrigger
-                className="text-left font-semibold hover:no-underline py-6"
-                style={{ color: "#002654" }}
-              >
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 leading-relaxed pb-6">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+              PREGUNTAS FRECUENTES (FAQ)
+            </h2>
+          </div>
+        </AnimateOnScroll>
+
+        <AnimateOnScroll direction="fade" delay={0.2}>
+          <div className="text-center mb-12">
+            <a
+              href="https://wa.me/33601526171"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-white text-lg transition-opacity hover:opacity-90 shadow-lg"
+              style={{ backgroundColor: "#ED2939" }}
+            >
+              <MessageCircle className="w-6 h-6" />
+              WhatsApp para más consultas
+            </a>
+          </div>
+        </AnimateOnScroll>
+
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
+              <Accordion type="single" collapsible>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className="bg-white border-2 rounded-lg px-6 data-[state=open]:border-opacity-100"
+                  style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}
+                >
+                  <AccordionTrigger
+                    className="text-left font-semibold hover:no-underline py-6"
+                    style={{ color: "#002654" }}
+                  >
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 leading-relaxed pb-6">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </AnimateOnScroll>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

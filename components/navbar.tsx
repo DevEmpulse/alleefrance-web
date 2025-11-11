@@ -21,6 +21,14 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Asegurar que el scroll no se bloquee cuando el menú móvil está abierto
+  useEffect(() => {
+    if (isOpen) {
+      // No bloquear el scroll en mobile, solo prevenir el scroll del body si es necesario
+      document.body.style.overflow = ""
+    }
+  }, [isOpen])
+
   const navLinks = [
     { href: "/#nosotros", label: "Nosotros" },
   ]
@@ -44,11 +52,11 @@ export function Navbar() {
         isScrolled ? "bg-[#1e3a8a]" : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto pr-10">
-        <div className="flex items-center justify-between min-h-16 py-2">
+      <div className="container mx-auto px-4 md:pr-10">
+        <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group shrink-0 mr-8 md:mr-12 transition-all duration-300 hover:scale-105">
-            <div className="relative h-10 w-auto transition-transform duration-300 group-hover:scale-105">
+          <Link href="/" className="flex items-center gap-1.5 md:gap-3 group shrink-0 mr-2 md:mr-12 transition-all duration-300 hover:scale-105">
+            <div className="relative h-8 w-auto md:h-10 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/logofondotransparente.png"
                 alt="Allée France Logo"
@@ -62,7 +70,7 @@ export function Navbar() {
                 }}
               />
             </div>
-            <span className="text-white text-sm md:text-base font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 group-hover:text-blue-300" style={{ 
+            <span className="text-white text-xs md:text-base font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 group-hover:text-blue-300 hidden sm:inline" style={{ 
               fontFamily: 'var(--font-montserrat), sans-serif', 
               letterSpacing: '0.1em',
               textShadow: '0 0 8px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6)'
@@ -113,7 +121,7 @@ export function Navbar() {
                       <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">
                         {link.label}
                       </span>
-                      <span className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-transparent translate-x-[-100%] group-hover/item:translate-x-0 transition-transform duration-300"></span>
+                      <span className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-transparent -translate-x-full group-hover/item:translate-x-0 transition-transform duration-300"></span>
                       {!link.featured && (
                         <span className="absolute left-0 top-0 bottom-0 w-1 bg-orange-500 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
                       )}
@@ -157,7 +165,7 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-white/20 animate-in slide-in-from-top duration-300">
+          <div className="md:hidden py-4 border-t border-white/20 animate-in slide-in-from-top duration-300 px-4">
             <div className="flex flex-col gap-2">
               {navLinks.map((link, index) => (
                 <Link
@@ -219,24 +227,11 @@ export function Navbar() {
 
               <Button 
                 asChild 
-                className="text-white w-full mt-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
+                className="text-white w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
                 style={{ backgroundColor: "#ED2939" }}
               >
                 <a
-                  href="https://wa.me/33601526171"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Cotizar mi seguro
-                </a>
-              </Button>
-              
-              <Button 
-                asChild 
-                variant="outline"
-                className="text-white w-full mt-2 border-2 border-white/50 transition-all duration-300 hover:scale-[1.02] hover:bg-white/10 active:scale-95" 
-              >
-                <a
-                  href="https://wa.me/33601526171"
+                  href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}

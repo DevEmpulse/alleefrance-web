@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+"use client"
+
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -6,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CountryName } from "@/components/country-name";
+import { CountryProvider } from "@/components/country-provider";
+import { CountrySelectorModal } from "@/components/country-selector-modal";
+import { CountryIndicator } from "@/components/country-indicator";
 import {
   Plane,
   Clock,
@@ -20,18 +24,6 @@ import {
   Backpack,
 } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Working Holiday Francia | Guía Completa de Visas | Allée France",
-  description:
-    "Todo sobre la Visa Working Holiday Francia: requisitos, beneficios, proceso paso a paso y acompañamiento profesional para que vivas y trabajes en Francia durante un año.",
-  keywords:
-    "working holiday francia, visa working holiday, visa vacaciones trabajo francia, requisitos working holiday, vivir en francia con working holiday",
-  openGraph: {
-    title: "Working Holiday Francia | Guía Completa",
-    description:
-      "Descubrí cómo obtener tu visa Working Holiday para Francia con tips, requisitos y acompañamiento profesional de Allée France.",
-  },
-};
 
 const requisitos = [
   "Tener entre 18 y 35 años al momento de aplicar.",
@@ -104,8 +96,9 @@ const documentos = [
 
 export default function WorkingHolidayPage() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
+    <CountryProvider>
+      <div className="min-h-screen bg-white w-full overflow-x-hidden">
+        <Navbar />
 
       <main>
         <section
@@ -459,7 +452,10 @@ export default function WorkingHolidayPage() {
         </section>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+        <CountrySelectorModal />
+        <CountryIndicator />
+      </div>
+    </CountryProvider>
   );
 }

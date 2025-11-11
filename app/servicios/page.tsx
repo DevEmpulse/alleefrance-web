@@ -6,6 +6,8 @@ import { Footer } from "@/components/footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import { motion } from "framer-motion";
 import {
   Plane,
   Users,
@@ -295,13 +297,18 @@ export default function ServiciosPage() {
       : services.filter((service) => service.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 w-full overflow-x-hidden">
       <Navbar />
 
       <main className="pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
-          <div className="text-center mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
             <h1
               className="text-4xl lg:text-5xl font-bold mb-4"
               style={{ color: "#002654" }}
@@ -312,10 +319,11 @@ export default function ServiciosPage() {
               Gestoría Allée France Lyon - Soluciones completas para tu proceso
               migratorio y administrativo en Francia
             </p>
-          </div>
+          </motion.div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <AnimateOnScroll direction="fade" delay={0.2}>
+            <div className="flex flex-wrap justify-center gap-3 mb-12">
             {categories.map((category) => (
               <Button
                 key={category.id}
@@ -337,16 +345,17 @@ export default function ServiciosPage() {
                 {category.label}
               </Button>
             ))}
-          </div>
+            </div>
+          </AnimateOnScroll>
 
           {/* Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredServices.map((service) => {
+            {filteredServices.map((service, index) => {
               const Icon = service.icon;
               return (
-                <Card
-                  key={service.id}
-                  className="p-6 hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-100 group bg-white"
+                <AnimateOnScroll key={service.id} direction="up" delay={index * 0.05}>
+                  <Card
+                    className="p-6 hover:shadow-xl transition-all duration-300 border-2 hover:border-opacity-100 group bg-white"
                   style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}
                 >
                   <div className="space-y-4">
@@ -423,12 +432,14 @@ export default function ServiciosPage() {
                     </Button>
                   </div>
                 </Card>
+                </AnimateOnScroll>
               );
             })}
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-16 text-center">
+          <AnimateOnScroll direction="fade" delay={0.3}>
+            <div className="mt-16 text-center">
             <Card
               className="p-8 bg-white border-2"
               style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}
@@ -468,7 +479,8 @@ export default function ServiciosPage() {
                 </Button>
               </div>
             </Card>
-          </div>
+            </div>
+          </AnimateOnScroll>
         </div>
       </main>
 

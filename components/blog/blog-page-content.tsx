@@ -6,6 +6,8 @@ import { Navbar } from "@/components/navbar"
 import { Button } from "@/components/ui/button"
 import { Calendar, ArrowRight, Clock } from "lucide-react"
 import { BlogNewsletterSection } from "@/components/blog/blog-newsletter-section"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
+import { motion } from "framer-motion"
 
 type BlogPost = {
   title: string
@@ -28,24 +30,37 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
   const filteredPosts = selectedCategory === "Todos" ? posts : posts.filter((post) => post.category === selectedCategory)
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white w-full overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-6" style={{ backgroundColor: "#002654" }}>
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">Blog y Recursos</h1>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl lg:text-5xl font-bold text-white mb-6"
+          >
+            Blog y Recursos
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto"
+          >
             Guías completas, artículos y consejos actualizados sobre migración, visas y vida en Francia. Información
             confiable para tu proceso migratorio.
-          </p>
+          </motion.p>
         </div>
       </section>
 
       {/* Categories Filter */}
-      <section className="py-8 px-6 bg-gray-50 border-b">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-wrap gap-3 justify-center">
+      <AnimateOnScroll direction="fade" delay={0}>
+        <section className="py-8 px-6 bg-gray-50 border-b">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-wrap gap-3 justify-center">
             {categories.map((category) => {
               const isActive = selectedCategory === category
               return (
@@ -64,20 +79,21 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                 </Button>
               )
             })}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimateOnScroll>
 
       {/* Blog Posts Grid */}
       <section className="py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post, index) => (
-              <Link
-                key={index}
-                href={`/blog/${post.slug}`}
-                className="block group focus:outline-none focus-visible:ring-4 focus-visible:ring-red-200 rounded-xl"
-              >
+              <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="block group focus:outline-none focus-visible:ring-4 focus-visible:ring-red-200 rounded-xl"
+                >
                 <article className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full">
                   {/* Image */}
                   <div className="relative h-48 overflow-hidden">
@@ -123,10 +139,12 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                   </div>
                 </article>
               </Link>
+              </AnimateOnScroll>
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <AnimateOnScroll direction="fade" delay={0.3}>
+            <div className="text-center mt-12">
             <Button
               size="lg"
               variant="outline"
@@ -135,15 +153,17 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
             >
               Cargar Más Artículos
             </Button>
-          </div>
+            </div>
+          </AnimateOnScroll>
         </div>
       </section>
 
       <BlogNewsletterSection />
 
       {/* CTA Section */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
+      <AnimateOnScroll direction="fade" delay={0}>
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ color: "#002654" }}>
             ¿Necesitás Asesoría Personalizada?
           </h2>
@@ -173,8 +193,9 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
               </a>
             </Button>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimateOnScroll>
     </div>
   )
 }

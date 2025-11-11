@@ -30,7 +30,7 @@ type CountryContextValue = {
 
 const defaultCountry = COUNTRY_OPTIONS[2]; // Argentina por defecto
 
-const CountryContext = createContext<CountryContextValue | undefined>(
+export const CountryContext = createContext<CountryContextValue | undefined>(
   undefined
 );
 

@@ -1,5 +1,8 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Shield, FileText, Award } from "lucide-react"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 const benefits = [
   {
@@ -35,20 +38,23 @@ export function BenefitsSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">BENEFICIOS</h2>
+        <AnimateOnScroll direction="fade" delay={0}>
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">BENEFICIOS</h2>
+            </div>
+            <div>
+              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">TIPS MIGRATORIOS</h2>
+            </div>
           </div>
-          <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">TIPS MIGRATORIOS</h2>
-          </div>
-        </div>
+        </AnimateOnScroll>
 
         <div className="grid md:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon
             return (
-              <Card key={index} className="p-8 bg-white text-center hover:shadow-xl transition-shadow">
+              <AnimateOnScroll key={index} direction="up" delay={index * 0.15}>
+                <Card className="p-8 bg-white text-center hover:shadow-xl transition-shadow">
                 <div className="space-y-4">
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center mx-auto"
@@ -62,6 +68,7 @@ export function BenefitsSection() {
                   <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
                 </div>
               </Card>
+              </AnimateOnScroll>
             )
           })}
         </div>

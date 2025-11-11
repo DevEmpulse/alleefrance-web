@@ -1,5 +1,8 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { BlogNewsletterSection } from "@/components/blog/blog-newsletter-section"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 export function BlogCTASections() {
   return (
@@ -8,8 +11,9 @@ export function BlogCTASections() {
         description="Recibí alertas de convocatorias, guías actualizadas y recordatorios de plazos clave directamente en tu email."
       />
 
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-4xl mx-auto text-center">
+      <AnimateOnScroll direction="fade" delay={0}>
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4" style={{ color: "#002654" }}>
             ¿Necesitás ayuda con tu visa?
           </h2>
@@ -39,8 +43,9 @@ export function BlogCTASections() {
               </a>
             </Button>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
+      </AnimateOnScroll>
     </>
   )
 }

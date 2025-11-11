@@ -1,6 +1,9 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ShieldCheck, Heart, Plane, Calendar } from "lucide-react"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 const insuranceFeatures = [
   {
@@ -29,24 +32,26 @@ export function InsuranceSection() {
   return (
     <section id="seguro" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
-            Seguro válido para VVT y visados
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Protección completa para tu viaje y estadía en Francia
-          </p>
-        </div>
+        <AnimateOnScroll direction="fade" delay={0}>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
+              Seguro válido para VVT y visados
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Protección completa para tu viaje y estadía en Francia
+            </p>
+          </div>
+        </AnimateOnScroll>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {insuranceFeatures.map((feature, index) => {
             const Icon = feature.icon
             return (
-              <Card
-                key={index}
-                className="p-6 text-center hover:shadow-lg transition-all duration-300"
-                style={{ backgroundColor: "white" }}
-              >
+              <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
+                <Card
+                  className="p-6 text-center hover:shadow-lg transition-all duration-300"
+                  style={{ backgroundColor: "white" }}
+                >
                 <div className="space-y-4">
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center mx-auto"
@@ -62,11 +67,13 @@ export function InsuranceSection() {
                   <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
                 </div>
               </Card>
+              </AnimateOnScroll>
             )
           })}
         </div>
 
-        <div className="text-center">
+        <AnimateOnScroll direction="fade" delay={0.4}>
+          <div className="text-center">
           <Button
             size="lg"
             className="text-white font-semibold tracking-wide text-base px-8 py-6 rounded-full hover:opacity-90 transition-opacity shadow-xl hover:scale-105"
@@ -77,7 +84,8 @@ export function InsuranceSection() {
               Cotizar mi seguro
             </a>
           </Button>
-        </div>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   )

@@ -2,9 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Montserrat, Open_Sans } from "next/font/google"
 import "./globals.css"
-import { CountryProvider } from "@/components/country-provider"
-import { CountrySelectorModal } from "@/components/country-selector-modal"
-import { CountryIndicator } from "@/components/country-indicator"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,8 +28,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className="scroll-smooth">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -48,12 +46,8 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${openSans.className} antialiased`}>
-        <CountryProvider>
-          {children}
-          <CountrySelectorModal />
-          <CountryIndicator />
-        </CountryProvider>
+      <body className={`${openSans.className} antialiased overflow-x-hidden`}>
+        {children}
       </body>
     </html>
   )

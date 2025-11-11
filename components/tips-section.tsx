@@ -1,5 +1,8 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { FileCheck, Clock, Languages, Banknote } from "lucide-react"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 const tips = [
   {
@@ -28,22 +31,24 @@ export function TipsSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
-            Consejos para tu Proceso Migratorio
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Tips esenciales para que tu trámite sea exitoso</p>
-        </div>
+        <AnimateOnScroll direction="fade" delay={0}>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
+              Consejos para tu Proceso Migratorio
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Tips esenciales para que tu trámite sea exitoso</p>
+          </div>
+        </AnimateOnScroll>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {tips.map((tip, index) => {
             const Icon = tip.icon
             return (
-              <Card
-                key={index}
-                className="p-6 text-center hover:shadow-lg transition-all duration-300"
-                style={{ backgroundColor: "white" }}
-              >
+              <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
+                <Card
+                  className="p-6 text-center hover:shadow-lg transition-all duration-300"
+                  style={{ backgroundColor: "white" }}
+                >
                 <div className="space-y-4">
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center mx-auto"
@@ -59,6 +64,7 @@ export function TipsSection() {
                   <p className="text-gray-600 text-sm leading-relaxed">{tip.description}</p>
                 </div>
               </Card>
+              </AnimateOnScroll>
             )
           })}
         </div>

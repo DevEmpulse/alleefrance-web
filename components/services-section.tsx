@@ -1,8 +1,11 @@
+"use client"
+
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Briefcase, GraduationCap, Plane, MapPin } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 const featuredServices = [
   {
@@ -59,16 +62,19 @@ export function ServicesSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">SERVICIOS</h2>
-        </div>
+        <AnimateOnScroll direction="fade" delay={0}>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">SERVICIOS</h2>
+          </div>
+        </AnimateOnScroll>
 
         {/* All Services */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {/* Featured Services with Images */}
-          {featuredServices.map((service) => (
-            <div key={service.id} className="flex flex-col hover:scale-[1.02] transition-transform duration-300">
-              <div className="relative w-full h-full rounded-lg overflow-hidden mb-4">
+          {featuredServices.map((service, index) => (
+            <AnimateOnScroll key={service.id} direction="up" delay={index * 0.1}>
+              <div className="flex flex-col hover:scale-[1.02] transition-transform duration-300">
+              <div className="relative w-full aspect-3/4 md:aspect-3/4 rounded-lg overflow-hidden mb-4">
                 <Image
                   src={service.image}
                   alt={service.title}
@@ -83,14 +89,17 @@ export function ServicesSection() {
               >
                 <Link href={service.link}>MÁS INFORMACIÓN</Link>
               </Button>
-            </div>
+              </div>
+            </AnimateOnScroll>
           ))}
 
           {/* Other Services */}
           {otherServices.map((service, index) => {
+            const serviceIndex = featuredServices.length + index
             const Icon = service.icon
             return (
-              <Card key={index} className="p-6 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <AnimateOnScroll key={index} direction="up" delay={serviceIndex * 0.1}>
+                <Card className="p-6 bg-white hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <div className="space-y-4">
                   <div
                     className="w-14 h-14 rounded-lg flex items-center justify-center"
@@ -127,11 +136,13 @@ export function ServicesSection() {
                   </Button>
                 </div>
               </Card>
+              </AnimateOnScroll>
             )
           })}
         </div>
 
-        <div className="text-center mt-12">
+        <AnimateOnScroll direction="fade" delay={0.4}>
+          <div className="text-center mt-12">
           <Button
             size="lg"
             variant="outline"
@@ -141,7 +152,8 @@ export function ServicesSection() {
           >
             <Link href="/servicios">VER TODOS LOS SERVICIOS</Link>
           </Button>
-        </div>
+          </div>
+        </AnimateOnScroll>
       </div>
 
       {/* Curved Wave Bottom */}

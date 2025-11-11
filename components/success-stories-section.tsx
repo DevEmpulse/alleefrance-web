@@ -2,6 +2,7 @@
 
 import { useRef } from "react"
 import { Star, ChevronLeft, ChevronRight } from "lucide-react"
+import { AnimateOnScroll } from "./animate-on-scroll"
 
 const testimonials = [
   {
@@ -36,6 +37,7 @@ export function SuccessStoriesSection() {
   return (
     <section id="casos-exitosos" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
+        <AnimateOnScroll direction="fade" delay={0}>
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
           <div className="text-center md:text-left">
             <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-2">Testimonios</p>
@@ -66,7 +68,7 @@ export function SuccessStoriesSection() {
             </button>
           </div>
         </div>
-
+        </AnimateOnScroll>
         <div ref={scrollRef} className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
           {testimonials.map((testimonial, index) => (
             <article

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef } from "react"
+import { AnimateOnScroll } from "@/components/animate-on-scroll"
 
 type BlogNewsletterSectionProps = {
   title?: string
@@ -36,9 +37,10 @@ export function BlogNewsletterSection({
   }, [])
 
   return (
-    <section className="py-16 px-6" style={{ backgroundColor: isDark ? "#001b3c" : "#f5f7fb" }}>
-      <div className="max-w-5xl mx-auto">
-        <div className="max-w-2xl mx-auto text-center">
+    <AnimateOnScroll direction="fade" delay={0}>
+      <section className="py-16 px-6" style={{ backgroundColor: isDark ? "#001b3c" : "#f5f7fb" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="max-w-2xl mx-auto text-center">
           <p className="text-sm font-semibold tracking-[0.2em] uppercase mb-4" style={{ color: isDark ? "#9fb5ff" : "#002654" }}>
             {title}
           </p>
@@ -73,7 +75,8 @@ export function BlogNewsletterSection({
             {`Para suscribirte, habilitá JavaScript o escribinos a contacto@alleefrance.com`}
           </noscript>
         </div>
-      </div>
-    </section>
+        </div>
+      </section>
+    </AnimateOnScroll>
   )
 }
