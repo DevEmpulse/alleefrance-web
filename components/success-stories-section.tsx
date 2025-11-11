@@ -22,6 +22,12 @@ const testimonials = [
       "Me acompañaron durante todo el proceso. Siempre respondieron mis dudas rápidamente. Muy recomendable.",
     visaType: "Visa Saisonier",
   },
+  {
+    name: "Juan C.",
+    quote:
+      "Gracias a su asesoría conseguí mi visa de trabajo sin problemas. Recomendable 100%.",
+    visaType: "Visa Salarié",
+  },
 ]
 
 export function SuccessStoriesSection() {
@@ -67,7 +73,7 @@ export function SuccessStoriesSection() {
           </div>
         </div>
 
-        <div ref={scrollRef} className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
+        <div ref={scrollRef} className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 md:[&::-webkit-scrollbar]:hidden md:[scrollbar-width:none]">
           {testimonials.map((testimonial, index) => (
             <article
               key={index}

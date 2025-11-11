@@ -94,7 +94,7 @@ export function BlogSection() {
 
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide"
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 md:[&::-webkit-scrollbar]:hidden md:[scrollbar-width:none]"
         >
           {blogPosts.map((post, index) => (
             <Link
