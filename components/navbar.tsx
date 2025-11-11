@@ -139,7 +139,7 @@ export function Navbar() {
               className="text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
               style={{ backgroundColor: "#ED2939" }}
             >
-              <a href="#seguro">
+              <a href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon" target="_blank" rel="noopener noreferrer">
                 Cotizar mi seguro
               </a>
             </Button>
