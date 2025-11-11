@@ -101,6 +101,7 @@ export function BlogSection() {
         >
           {blogPosts.map((post) => (
               <Link
+                key={post.slug}
                 href={`/blog/${post.slug}`}
                 className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
               >
