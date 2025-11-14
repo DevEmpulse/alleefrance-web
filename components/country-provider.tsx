@@ -48,15 +48,20 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!isClient) return;
     try {
-      if (typeof window !== "undefined" && window.localStorage) {
-        const savedCode = localStorage.getItem(COUNTRY_STORAGE_KEY);
-        if (savedCode) {
-          const savedCountry = COUNTRY_OPTIONS.find(
-            (option) => option.code === savedCode
-          );
-          if (savedCountry) {
-            setCountry(savedCountry);
-            setHasConfirmed(true);
+      if (typeof window !== "undefined" && "localStorage" in window) {
+        const storage = window.localStorage;
+        if (storage && typeof storage.getItem === "function") {
+          const savedCode = storage.getItem(COUNTRY_STORAGE_KEY);
+          if (savedCode) {
+            const savedCountry = COUNTRY_OPTIONS.find(
+              (option) => option.code === savedCode
+            );
+            if (savedCountry) {
+              setCountry(savedCountry);
+              setHasConfirmed(true);
+            } else {
+              setIsModalOpen(true);
+            }
           } else {
             setIsModalOpen(true);
           }
@@ -83,8 +88,11 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
     setHasConfirmed(true);
     setIsModalOpen(false);
     try {
-      if (typeof window !== "undefined" && window.localStorage) {
-        localStorage.setItem(COUNTRY_STORAGE_KEY, nextCountry.code);
+      if (typeof window !== "undefined" && "localStorage" in window) {
+        const storage = window.localStorage;
+        if (storage && typeof storage.setItem === "function") {
+          storage.setItem(COUNTRY_STORAGE_KEY, nextCountry.code);
+        }
       }
     } catch (error) {
       // Si hay un error al guardar en localStorage, simplemente lo ignoramos

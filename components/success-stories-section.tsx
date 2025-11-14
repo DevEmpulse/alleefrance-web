@@ -35,7 +35,7 @@ export function SuccessStoriesSection() {
   }
 
   return (
-    <section id="casos-exitosos" className="py-20 bg-white">
+    <section id="testimonios" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <AnimateOnScroll direction="fade" delay={0}>
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-12">
@@ -49,24 +49,7 @@ export function SuccessStoriesSection() {
             </p>
           </div>
 
-          <div className="flex items-center justify-center gap-3">
-            <button
-              type="button"
-              aria-label="Ver testimonio anterior"
-              onClick={() => handleScroll("left")}
-              className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
-            >
-              <ChevronLeft className="w-5 h-5 mx-auto" />
-            </button>
-            <button
-              type="button"
-              aria-label="Ver testimonio siguiente"
-              onClick={() => handleScroll("right")}
-              className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
-            >
-              <ChevronRight className="w-5 h-5 mx-auto" />
-            </button>
-          </div>
+         
         </div>
         </AnimateOnScroll>
         <div ref={scrollRef} className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
@@ -92,6 +75,26 @@ export function SuccessStoriesSection() {
             </article>
           ))}
         </div>
+        <AnimateOnScroll direction="fade" delay={0}>
+        <div className="flex items-center justify-center gap-3">
+            <button
+              type="button"
+              aria-label="Ver testimonio anterior"
+              onClick={() => handleScroll("left")}
+              className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+            >
+              <ChevronLeft className="w-5 h-5 mx-auto" />
+            </button>
+            <button
+              type="button"
+              aria-label="Ver testimonio siguiente"
+              onClick={() => handleScroll("right")}
+              className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+            >
+              <ChevronRight className="w-5 h-5 mx-auto" />
+            </button>
+          </div>
+          </AnimateOnScroll>
       </div>
     </section>
   )

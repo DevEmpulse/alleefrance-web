@@ -73,25 +73,6 @@ export function BlogSection() {
                 BLOG
               </h2>
             </div>
-
-            <div className="flex items-center justify-center gap-3">
-              <button
-                type="button"
-                aria-label="Ver anterior"
-                onClick={() => handleScroll("left")}
-                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
-              >
-                <ChevronLeft className="w-5 h-5 mx-auto" />
-              </button>
-              <button
-                type="button"
-                aria-label="Ver siguiente"
-                onClick={() => handleScroll("right")}
-                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
-              >
-                <ChevronRight className="w-5 h-5 mx-auto" />
-              </button>
-            </div>
           </div>
         </AnimateOnScroll>
 
@@ -140,6 +121,25 @@ export function BlogSection() {
         </div>
 
         <AnimateOnScroll direction="fade" delay={0.3}>
+          
+        <div className="flex items-center justify-center gap-3">
+              <button
+                type="button"
+                aria-label="Ver anterior"
+                onClick={() => handleScroll("left")}
+                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+              >
+                <ChevronLeft className="w-5 h-5 mx-auto" />
+              </button>
+              <button
+                type="button"
+                aria-label="Ver siguiente"
+                onClick={() => handleScroll("right")}
+                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+              >
+                <ChevronRight className="w-5 h-5 mx-auto" />
+              </button>
+            </div>
           <div className="text-center mt-12">
             <Button
               size="lg"

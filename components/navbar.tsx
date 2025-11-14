@@ -34,15 +34,15 @@ export function Navbar() {
   ]
 
   const serviceLinks = [
-    { href: "/servicios/visas-trabajo", label: "Visas de Trabajo" },
-    { href: "/servicios/visa-etudiant", label: "Visa Étudiant" },
+    { href: "/servicios/visas-trabajo", label: "Visa Salarié/Saisonier" },
+    { href: "/servicios/titre-de-sejour", label: "Titre de Séjour" },
     { href: "/servicios", label: "Ver Todos los Servicios", featured: true },
   ]
 
   const otherLinks = [
     { href: "/blog", label: "Blog" },
-    { href: "/#guia-visas", label: "Guía de Visas" },
     { href: "/working-holiday", label: "Working Holiday" },
+    { href:"/#testimonios", label: "Testimonios" },
     { href: "/#contacto", label: "Contacto" },
   ]
 
@@ -106,16 +106,25 @@ export function Navbar() {
               </button>
 
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-56 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200" style={{ backgroundColor: "rgba(30, 58, 138, 0.95)" }}>
+                <div 
+                  className="absolute top-full left-0 mt-2 w-64 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto" 
+                  style={{ backgroundColor: "rgba(30, 58, 138, 0.95)" }}
+                  onMouseEnter={() => setIsServicesOpen(true)}
+                  onMouseLeave={() => setIsServicesOpen(false)}
+                >
                   {serviceLinks.map((link, index) => (
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item"
+                      className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item cursor-pointer"
                       style={{
                         color: link.featured ? "#f97316" : "#ffffff",
                         fontWeight: link.featured ? "700" : "500",
                         animationDelay: `${index * 50}ms`,
+                      }}
+                      onClick={(e) => {
+                        // Permitir que el click funcione normalmente
+                        setIsServicesOpen(false)
                       }}
                     >
                       <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">

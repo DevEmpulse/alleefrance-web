@@ -30,14 +30,26 @@ const insuranceFeatures = [
 
 export function InsuranceSection() {
   return (
-    <section id="seguro" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="seguro" className="py-20 relative overflow-hidden" style={{ backgroundColor: "#1e3a8a" }}>
+      {/* Curved Wave Top */}
+      <div className="absolute top-0 left-0 right-0 overflow-hidden leading-none">
+        <svg
+          className="relative block w-full h-16 rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,0 C300,100 900,100 1200,0 L1200,120 L0,120 Z" fill="white" />
+        </svg>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <AnimateOnScroll direction="fade" delay={0}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: "#002654" }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
               Seguro válido para VVT y visados
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
               Protección completa para tu viaje y estadía en Francia
             </p>
           </div>
@@ -86,6 +98,18 @@ export function InsuranceSection() {
           </Button>
           </div>
         </AnimateOnScroll>
+      </div>
+
+      {/* Curved Wave Bottom */}
+      <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
+        <svg
+          className="relative block w-full h-16"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,0 C300,100 900,100 1200,0 L1200,120 L0,120 Z" fill="white" />
+        </svg>
       </div>
     </section>
   )
