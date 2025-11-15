@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Briefcase, GraduationCap, Plane, MapPin } from "lucide-react"
+import { MessageCircle } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { AnimateOnScroll } from "@/components/animate-on-scroll"
@@ -17,32 +17,37 @@ const featuredServices = [
     image: "/visa-salarie.png",
     link: "/servicios/visas-trabajo",
   },
+  {
+    id: "working-holiday",
+    title: "Working Holiday",
+    price: "200€",
+    description: "Visa de vacaciones y trabajo. Vive un año en Francia trabajando y viajando.",
+    features: ["Visa 12 meses", "Trabajo temporal", "Explorar Europa"],
+    image: "/working-holiday.png",
+    link: "/working-holiday",
+  },
+  {
+    id: "titre-de-sejour",
+    title: "Titre de Séjour",
+    price: "Desde 150€",
+    description: "Renovación y obtención de permisos de residencia en Francia. Regulariza tu estancia.",
+    features: ["Renovación", "Nueva solicitud", "Acompañamiento completo"],
+    image: "/titre-de-séjour.png",
+    link: "/servicios/titre-de-sejour",
+  },
 ]
 
 const otherServices = [
   {
-    icon: GraduationCap,
-    title: "Visa Étudiant",
-    price: "250€",
-    description: "Estudia en universidades francesas. Asesoría completa para tu proceso académico.",
-    features: ["Inscripción universitaria", "Campus France", "Permiso de trabajo parcial"],
-    link: "/servicios/visa-etudiant",
-  },
-  {
-    icon: Plane,
-    title: "Visa Vacances Travel",
-    price: "200€",
-    description: "Visa de vacaciones y trabajo temporal. Experiencia internacional en Francia.",
-    features: ["Trabajo temporal", "Turismo", "Validez 12 meses"],
-    link: "/servicios",
-  },
-  {
-    icon: MapPin,
-    title: "Guía para Trabajar en París",
-    price: "150€",
-    description: "Orientación completa para encontrar empleo y establecerte en la capital francesa.",
-    features: ["Búsqueda de empleo", "Alojamiento", "Integración cultural"],
-    link: "/servicios",
+    icon: MessageCircle,
+    title: "Asesorías Personalizadas",
+    price: "Desde 30€",
+    description: "Resuelve dudas específicas sobre migración en Francia con nuestros expertos.",
+    features: [
+      "Asesoría express (30 min): Dudas específicas - 30€",
+      "Asesoría completa (1h): Revisión integral con resumen escrito - 50€",
+    ],
+    link: "/#contacto",
   },
 ]
 

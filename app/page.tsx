@@ -1,11 +1,9 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
-import { BenefitsSection } from "@/components/benefits-section"
 import { ServicesSection } from "@/components/services-section"
 import { BlogSection } from "@/components/blog-section"
 import { SuccessStoriesSection } from "@/components/success-stories-section"
-import { TipsSection } from "@/components/tips-section"
 import { InsuranceSection } from "@/components/insurance-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
@@ -18,10 +16,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
-      <BenefitsSection />
       <BlogSection />
       <SuccessStoriesSection />
-      <TipsSection />
       <InsuranceSection />
       <FAQSection />
       <ContactSection />

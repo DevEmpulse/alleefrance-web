@@ -32,7 +32,7 @@ const blogPosts = [
       "Paso a paso para reunir papeles, aplicar a la visa y organizar tus primeros meses en Francia con el programa Working Holiday.",
     date: "8 Marzo 2024",
     readTime: "8 min",
-    image: "/happy-travelers-in-france.jpg",
+    image: "/french-work-visa-documents.jpg",
     category: "Working Holiday",
     slug: "working-holiday-francia",
   },

@@ -72,7 +72,7 @@ export function FAQSection() {
                   style={{ borderColor: "rgba(0, 38, 84, 0.1)" }}
                 >
                   <AccordionTrigger
-                    className="text-left font-semibold hover:no-underline py-6"
+                    className="text-left font-semibold hover:no-underline py-6 cursor-pointer"
                     style={{ color: "#002654" }}
                   >
                     {faq.question}

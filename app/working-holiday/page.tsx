@@ -102,7 +102,7 @@ export default function WorkingHolidayPage() {
 
       <main>
         <section
-          className="pt-32 pb-16 px-6"
+          className="pt-32 pb-8 px-6"
           style={{ backgroundColor: "#002654" }}
         >
           <div className="max-w-5xl mx-auto text-center text-white">
