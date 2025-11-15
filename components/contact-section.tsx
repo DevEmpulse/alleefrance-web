@@ -66,10 +66,8 @@ export function ContactSection() {
 function ContactIntro() {
   return (
     <p className="text-gray-700 leading-relaxed">
-      ¿Listo para comenzar tu proceso migratorio desde{" "}
-      <CountryName withEmoji className="text-[#ED2939]" />? Completa el
-      formulario y nos pondremos en contacto contigo para una consulta inicial
-      gratuita.
+      ¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos
+      pondremos en contacto contigo para una consulta inicial gratuita.
     </p>
   );
 }
