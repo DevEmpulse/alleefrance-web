@@ -1,53 +1,74 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Menu, X, ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import Image from "next/image"
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Image from "next/image";
 
 export function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isServicesOpen, setIsServicesOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const servicesRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY
-      setIsScrolled(scrollPosition > 50)
-    }
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Asegurar que el scroll no se bloquee cuando el menú móvil está abierto
   useEffect(() => {
     if (isOpen) {
       // No bloquear el scroll en mobile, solo prevenir el scroll del body si es necesario
-      document.body.style.overflow = ""
+      document.body.style.overflow = "";
     }
-  }, [isOpen])
+  }, [isOpen]);
 
-  const navLinks = [
-    { href: "/#nosotros", label: "Nosotros" },
-  ]
+  // Cerrar el desplegable de escritorio si se hace click fuera de él
+  useEffect(() => {
+    if (!isServicesOpen) return;
+
+    const isDesktopView =
+      typeof window !== "undefined" &&
+      window.matchMedia("(min-width: 768px)").matches;
+    if (!isDesktopView) return;
+
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        servicesRef.current &&
+        !servicesRef.current.contains(event.target as Node)
+      ) {
+        setIsServicesOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isServicesOpen]);
+
+  const navLinks = [{ href: "/#nosotros", label: "Nosotros" }];
 
   const serviceLinks = [
     { href: "/servicios/visas-trabajo", label: "Visa Salarié/Saisonier" },
     { href: "/servicios/titre-de-sejour", label: "Titre de Séjour" },
     { href: "/servicios", label: "Ver Todos los Servicios", featured: true },
-  ]
+  ];
 
   const otherLinks = [
     { href: "/blog", label: "Blog" },
     { href: "/working-holiday", label: "Working Holiday" },
-    { href:"/#testimonios", label: "Testimonios" },
+    { href: "/#testimonios", label: "Testimonios" },
     { href: "/#contacto", label: "Contacto" },
-  ]
+  ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md border-b border-white/20 transition-all duration-300 ${
         isScrolled ? "bg-[#1e3a8a]" : "bg-transparent"
       }`}
@@ -55,29 +76,47 @@ export function Navbar() {
       <div className="container mx-auto px-4 md:pr-10">
         <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1.5 md:gap-3 group shrink-0 mr-2 md:mr-12 transition-all duration-300 hover:scale-105">
-            <div className="relative h-8 w-auto md:h-10 transition-transform duration-300 group-hover:scale-105">
+          <Link
+            href="/"
+            className="flex items-center gap-2 md:gap-4 group shrink-0 mr-2 md:mr-12 transition-all duration-300 hover:scale-105"
+          >
+            <div className="relative h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105">
               <Image
                 src="/logofondotransparente.png"
                 alt="Allée France Logo"
-                width={100}
-                height={40}
-                className="h-full w-auto object-contain transition-all duration-300"
+                width={140}
+                height={56}
+                className="h-full w-auto object-contain transition-all duration-300 drop-shadow-[0_0_12px_rgba(255,255,255,0.9)]"
                 priority
-                style={{ 
-                  mixBlendMode: 'normal',
-                  filter: 'drop-shadow(0 0 8px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 4px rgba(255, 255, 255, 0.6))'
+                style={{
+                  mixBlendMode: "normal",
+                  filter:
+                    "drop-shadow(0 0 8px rgba(200, 200, 200, 0.8)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.6))",
                 }}
               />
             </div>
-            <span className="text-white text-xs md:text-base font-bold uppercase tracking-wider whitespace-nowrap transition-all duration-300 group-hover:text-blue-300 hidden sm:inline" style={{ 
-              fontFamily: 'var(--font-montserrat), sans-serif', 
-              letterSpacing: '0.1em',
-              textShadow: '0 0 8px rgba(255, 255, 255, 0.8), 0 0 4px rgba(255, 255, 255, 0.6)'
-            }}>
-              ALLÉE FRANCE
+            <span
+              className="hidden md:inline-flex items-center text-white text-base md:text-xl font-black uppercase whitespace-nowrap transition-all duration-300 group-hover:text-blue-300 tracking-[0.08em]"
+              style={{
+                fontFamily: "var(--font-montserrat), sans-serif",
+                textShadow: "0 0 8px rgba(0, 0, 0, 0.4)",
+              }}
+            >
+              <span className="tracking-[0.12em]">ALLÉE</span>
+              <span className="ml-1 tracking-[0.08em]">FRANCE</span>
             </span>
           </Link>
+
+          {/* Mobile Site Name */}
+          <div className="md:hidden flex-1 flex justify-center">
+            <span
+              className="inline-flex items-center text-white text-sm font-black uppercase tracking-[0.08em] drop-shadow-[0_0_6px_rgba(0,0,0,0.45)]"
+              style={{ fontFamily: "var(--font-montserrat), sans-serif" }}
+            >
+              <span className="tracking-[0.12em]">ALLÉE</span>
+              <span className="ml-0.5 tracking-[0.08em]">FRANCE</span>
+            </span>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
@@ -92,25 +131,25 @@ export function Navbar() {
               </Link>
             ))}
 
-            <div
-              className="relative"
-              onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
-            >
+            <div className="relative" ref={servicesRef}>
               <button
+                type="button"
                 className="relative flex items-center gap-1 font-medium text-white transition-all duration-300 hover:text-blue-300 group/services"
+                onClick={() => setIsServicesOpen((prev) => !prev)}
               >
                 Servicios
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''} group-hover/services:translate-y-0.5`} />
+                <ChevronDown
+                  className={`w-4 h-4 transition-transform duration-300 ${
+                    isServicesOpen ? "rotate-180" : ""
+                  } group-hover/services:translate-y-0.5`}
+                />
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/services:w-full"></span>
               </button>
 
               {isServicesOpen && (
-                <div 
-                  className="absolute top-full left-0 mt-2 w-64 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto" 
+                <div
+                  className="absolute top-full left-0 mt-2 w-64 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
                   style={{ backgroundColor: "rgba(30, 58, 138, 0.95)" }}
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   {serviceLinks.map((link, index) => (
                     <Link
@@ -118,21 +157,21 @@ export function Navbar() {
                       href={link.href}
                       className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item cursor-pointer"
                       style={{
-                        color: link.featured ? "#f97316" : "#ffffff",
+                        color: link.featured ? "#93c5fd" : "#ffffff",
                         fontWeight: link.featured ? "700" : "500",
                         animationDelay: `${index * 50}ms`,
                       }}
                       onClick={(e) => {
                         // Permitir que el click funcione normalmente
-                        setIsServicesOpen(false)
+                        setIsServicesOpen(false);
                       }}
                     >
                       <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">
                         {link.label}
                       </span>
-                      <span className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-transparent -translate-x-full group-hover/item:translate-x-0 transition-transform duration-300"></span>
+                      <span className="absolute inset-0 bg-linear-to-r from-blue-400/25 to-transparent -translate-x-full group-hover/item:translate-x-0 transition-transform duration-300"></span>
                       {!link.featured && (
-                        <span className="absolute left-0 top-0 bottom-0 w-1 bg-orange-500 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
+                        <span className="absolute left-0 top-0 bottom-0 w-1 bg-blue-300 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
                       )}
                     </Link>
                   ))}
@@ -151,12 +190,16 @@ export function Navbar() {
               </Link>
             ))}
 
-            <Button 
-              asChild 
-              className="text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
+            <Button
+              asChild
+              className="text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
               style={{ backgroundColor: "#ED2939" }}
             >
-              <a href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Cotizar mi seguro
               </a>
             </Button>
@@ -168,7 +211,11 @@ export function Navbar() {
             className="md:hidden p-2 text-white hover:text-blue-300 transition-all duration-300 hover:rotate-90 active:scale-95"
             aria-label="Toggle menu"
           >
-            {isOpen ? <X size={24} className="transition-transform duration-300" /> : <Menu size={24} className="transition-transform duration-300" />}
+            {isOpen ? (
+              <X size={24} className="transition-transform duration-300" />
+            ) : (
+              <Menu size={24} className="transition-transform duration-300" />
+            )}
           </button>
         </div>
 
@@ -191,11 +238,16 @@ export function Navbar() {
 
               <div className="py-2">
                 <button
-                  onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="flex items-center justify-between w-full font-medium py-3 px-4 text-white hover:text-orange-300 hover:bg-white/10 rounded-lg transition-all duration-300"
+                  type="button"
+                  onClick={() => setIsServicesOpen((prev) => !prev)}
+                  className="flex items-center justify-between w-full font-medium py-3 px-4 text-white hover:text-blue-200 hover:bg-white/10 rounded-lg transition-all duration-300"
                 >
                   Servicios
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`} />
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-300 ${
+                      isServicesOpen ? "rotate-180" : ""
+                    }`}
+                  />
                 </button>
                 {isServicesOpen && (
                   <div className="mt-2 ml-4 flex flex-col gap-1 animate-in fade-in slide-in-from-left duration-200">
@@ -203,10 +255,13 @@ export function Navbar() {
                       <Link
                         key={link.href}
                         href={link.href}
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => {
+                          setIsOpen(false);
+                          setIsServicesOpen(false);
+                        }}
                         className="relative py-2.5 px-4 rounded-lg transition-all duration-300 group/mobile-item"
                         style={{
-                          color: link.featured ? "#f97316" : "#e5e7eb",
+                          color: link.featured ? "#93c5fd" : "#e5e7eb",
                           fontWeight: link.featured ? "700" : "500",
                           animationDelay: `${index * 50}ms`,
                         }}
@@ -214,7 +269,7 @@ export function Navbar() {
                         <span className="relative z-10 transition-all duration-300 group-hover/mobile-item:translate-x-2 inline-block">
                           {link.label}
                         </span>
-                        <span className="absolute inset-0 bg-orange-500/10 rounded-lg scale-x-0 group-hover/mobile-item:scale-x-100 transition-transform duration-300 origin-left"></span>
+                        <span className="absolute inset-0 bg-blue-400/15 rounded-lg scale-x-0 group-hover/mobile-item:scale-x-100 transition-transform duration-300 origin-left"></span>
                       </Link>
                     ))}
                   </div>
@@ -227,16 +282,18 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className="relative font-medium py-3 px-4 text-white transition-all duration-300 hover:text-blue-300 hover:bg-white/10 rounded-lg group/mobile"
-                  style={{ animationDelay: `${(navLinks.length + index) * 50}ms` }}
+                  style={{
+                    animationDelay: `${(navLinks.length + index) * 50}ms`,
+                  }}
                 >
                   <span className="relative z-10">{link.label}</span>
                   <span className="absolute left-0 top-0 bottom-0 w-1 bg-blue-300 scale-y-0 group-hover/mobile:scale-y-100 transition-transform duration-300 rounded-l-lg origin-center"></span>
                 </Link>
               ))}
 
-              <Button 
-                asChild 
-                className="text-white w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95" 
+              <Button
+                asChild
+                className="text-white w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
                 style={{ backgroundColor: "#ED2939" }}
               >
                 <a
@@ -253,5 +310,5 @@ export function Navbar() {
         )}
       </div>
     </nav>
-  )
+  );
 }

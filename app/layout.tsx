@@ -1,36 +1,40 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Montserrat, Open_Sans } from "next/font/google"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Montserrat, Open_Sans } from "next/font/google";
+import "./globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
   display: "swap",
-})
+});
 
 const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
   display: "swap",
-})
+});
 
 export const metadata: Metadata = {
   title: "Allée France - Asesoría Migratoria para Francia",
   description:
     "Asesoría migratoria y acompañamiento integral para obtener tu visa francesa. Especialistas en trámites migratorios hacia Francia.",
   generator: "v0.app",
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+        />
+        <link rel="icon" href="/logo.ico" type="image/x-icon" sizes="64x64" />
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -50,5 +54,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }
