@@ -69,16 +69,18 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md border-b border-white/20 transition-all duration-300 ${
-        isScrolled ? "bg-[#1e3a8a]" : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-4 md:pr-10">
+  className={`fixed top-0 left-0 right-0 z-50 w-full border-b border-white/10 backdrop-blur-md transition-all duration-300 ${
+    isScrolled
+      ? "bg-[#0D1E46] border-b border-white/10"
+      : "bg-transparent"
+  }`}
+>
+      <div className="container mx-auto px-2">
         <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 md:gap-4 group shrink-0 mr-2 md:mr-12 transition-all duration-300 hover:scale-105"
+            className="flex items-center gap-2 md:gap-2 group shrink-0 transition-all duration-300 hover:scale-105"
           >
             <div className="relative h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105">
               <Image
@@ -86,12 +88,10 @@ export function Navbar() {
                 alt="Allée France Logo"
                 width={140}
                 height={56}
-                className="h-full w-auto object-contain transition-all duration-300 drop-shadow-[0_0_12px_rgba(255,255,255,0.9)]"
+                className="h-full w-auto object-contain transition-all duration-300"
                 priority
                 style={{
                   mixBlendMode: "normal",
-                  filter:
-                    "drop-shadow(0 0 8px rgba(200, 200, 200, 0.8)) drop-shadow(0 0 4px rgba(0, 0, 0, 0.6))",
                 }}
               />
             </div>
@@ -119,91 +119,93 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="relative cursor-pointer font-medium text-white transition-all duration-300 hover:text-blue-300 group/link"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/link:w-full"></span>
-              </Link>
-            ))}
-
-            <div className="relative" ref={servicesRef}>
-              <button
-                type="button"
-                className="relative flex items-center gap-1 font-medium text-white transition-all duration-300 hover:text-blue-300 group/services"
-                onClick={() => setIsServicesOpen((prev) => !prev)}
-              >
-                Servicios
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-300 ${
-                    isServicesOpen ? "rotate-180" : ""
-                  } group-hover/services:translate-y-0.5`}
-                />
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/services:w-full"></span>
-              </button>
-
-              {isServicesOpen && (
-                <div
-                  className="absolute top-full left-0 mt-2 w-64 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
-                  style={{ backgroundColor: "rgba(30, 58, 138, 0.95)" }}
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="flex items-center gap-4 -ml-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="relative cursor-pointer font-medium text-white transition-all duration-300 hover:text-blue-300 group/link"
                 >
-                  {serviceLinks.map((link, index) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item cursor-pointer"
-                      style={{
-                        color: link.featured ? "#93c5fd" : "#ffffff",
-                        fontWeight: link.featured ? "700" : "500",
-                        animationDelay: `${index * 50}ms`,
-                      }}
-                      onClick={(e) => {
-                        // Permitir que el click funcione normalmente
-                        setIsServicesOpen(false);
-                      }}
-                    >
-                      <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">
-                        {link.label}
-                      </span>
-                      <span className="absolute inset-0 bg-linear-to-r from-blue-400/25 to-transparent -translate-x-full group-hover/item:translate-x-0 transition-transform duration-300"></span>
-                      {!link.featured && (
-                        <span className="absolute left-0 top-0 bottom-0 w-1 bg-blue-300 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              )}
+                  {link.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/link:w-full"></span>
+                </Link>
+              ))}
+
+              <div className="relative" ref={servicesRef}>
+                <button
+                  type="button"
+                  className="cursor-pointer relative flex items-center gap-1 font-medium text-white transition-all duration-300 hover:text-blue-300 group/services"
+                  onClick={() => setIsServicesOpen((prev) => !prev)}
+                >
+                  Servicios
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-300 ${
+                      isServicesOpen ? "rotate-180" : ""
+                    } group-hover/services:translate-y-0.5`}
+                  />
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/services:w-full"></span>
+                </button>
+
+                {isServicesOpen && (
+                  <div
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 backdrop-blur-md shadow-xl border border-white/20 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
+                    style={{ backgroundColor: "rgba(30, 58, 138, 0.95)" }}
+                  >
+                    {serviceLinks.map((link, index) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item cursor-pointer"
+                        style={{
+                          color: link.featured ? "#93c5fd" : "#ffffff",
+                          fontWeight: link.featured ? "700" : "500",
+                          animationDelay: `${index * 50}ms`,
+                        }}
+                        onClick={(e) => {
+                          // Permitir que el click funcione normalmente
+                          setIsServicesOpen(false);
+                        }}
+                      >
+                        <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">
+                          {link.label}
+                        </span>
+                        <span className="absolute inset-0 bg-linear-to-r from-blue-400/25 to-transparent -translate-x-full group-hover/item:translate-x-0 transition-transform duration-300"></span>
+                        {!link.featured && (
+                          <span className="absolute left-0 top-0 bottom-0 w-1 bg-blue-300 scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
+                        )}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {otherLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="relative cursor-pointer font-medium text-white transition-all duration-300 hover:text-blue-300 group/link"
+                >
+                  {link.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/link:w-full"></span>
+                </Link>
+              ))}
             </div>
-
-            {otherLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="relative cursor-pointer font-medium text-white transition-all duration-300 hover:text-blue-300 group/link"
-              >
-                {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-300 transition-all duration-300 group-hover/link:w-full"></span>
-              </Link>
-            ))}
-
-            <Button
-              asChild
-              className="text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
-              style={{ backgroundColor: "#ED2939" }}
-            >
-              <a
-                href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Cotizar mi seguro
-              </a>
-            </Button>
           </div>
+
+          <Button
+            asChild
+            className="hidden md:inline-flex text-white ml-6 lg:ml-10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
+            style={{ backgroundColor: "#ED2939" }}
+          >
+            <a
+              href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cotizar mi seguro
+            </a>
+          </Button>
 
           {/* Mobile Menu Button */}
           <button
