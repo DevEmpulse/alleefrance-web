@@ -1,19 +1,33 @@
 "use client";
 
 import { useState, type CSSProperties } from "react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
-import { CountryName } from "@/components/country-name";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Tu nombre debe tener al menos 2 caracteres"),
+  name: z
+    .string()
+    .min(2, "Tu nombre y apellido deben tener al menos 2 caracteres"),
   email: z.string().email("Ingresa un correo válido"),
+  country: z.string({
+    required_error: "Selecciona tu país de contacto",
+  }),
+  consultationType: z.string({
+    required_error: "Selecciona el tipo de consulta",
+  }),
   message: z.string().min(10, "Cuéntanos más detalles (mínimo 10 caracteres)"),
   honeypot: z.string().optional(),
 });
@@ -30,6 +44,25 @@ const defaultSubmissionState: SubmissionState = { type: "idle", message: "" };
 const fieldBorderStyles: CSSProperties = {
   borderColor: "rgba(0, 38, 84, 0.2)",
 };
+
+const countryOptions = [
+  "Argentina",
+  "Uruguay",
+  "Colombia",
+  "Chile",
+  "Ecuador",
+  "México",
+  "Otro",
+] as const;
+
+const consultationTypeOptions = [
+  "Visa WH-VVT",
+  "Visa salarie/saisonnier",
+  "Visa vie privée et familiar",
+  "Autorización de trabajo",
+  "Asesoría",
+  "Otros",
+] as const;
 
 export function ContactSection() {
   return (
@@ -81,12 +114,15 @@ function ContactForm() {
     register,
     handleSubmit,
     reset,
+    control,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
       email: "",
+      country: "",
+      consultationType: "",
       message: "",
       honeypot: "",
     },
@@ -94,6 +130,8 @@ function ContactForm() {
 
   const nameError = errors.name?.message;
   const emailError = errors.email?.message;
+  const countryError = errors.country?.message;
+  const consultationTypeError = errors.consultationType?.message;
   const messageError = errors.message?.message;
 
   const resetWithFeedback = (state: SubmissionState) => {
@@ -132,6 +170,8 @@ function ContactForm() {
           access_key: accessKey,
           name: data.name,
           email: data.email,
+          country: data.country,
+          consultation_type: data.consultationType,
           message: data.message,
           subject: "Nuevo mensaje desde alleefrance.com",
           honeypot: data.honeypot ?? "",
@@ -161,7 +201,7 @@ function ContactForm() {
     <form className="space-y-4" onSubmit={handleSubmit(onSubmit)} noValidate>
       <div>
         <Input
-          placeholder="Nombre"
+          placeholder="Nombres y apellidos"
           className="border-2"
           style={fieldBorderStyles}
           autoComplete="name"
@@ -182,6 +222,70 @@ function ContactForm() {
         />
         {emailError && (
           <p className="mt-2 text-sm text-red-600">{emailError}</p>
+        )}
+      </div>
+      <div>
+        <Controller
+          name="country"
+          control={control}
+          render={({ field }) => (
+            <Select
+              value={field.value}
+              onValueChange={field.onChange}
+              name={field.name}
+            >
+              <SelectTrigger
+                className="w-full border-2 justify-between"
+                style={fieldBorderStyles}
+                aria-invalid={errors.country ? "true" : "false"}
+              >
+                <SelectValue placeholder="País de contacto" />
+              </SelectTrigger>
+              <SelectContent>
+                {countryOptions.map((country) => (
+                  <SelectItem key={country} value={country}>
+                    {country}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
+        />
+        {countryError && (
+          <p className="mt-2 text-sm text-red-600">{countryError}</p>
+        )}
+      </div>
+      <div>
+        <Controller
+          name="consultationType"
+          control={control}
+          render={({ field }) => (
+            <Select
+              value={field.value}
+              onValueChange={field.onChange}
+              name={field.name}
+            >
+              <SelectTrigger
+                className="w-full border-2 justify-between"
+                style={fieldBorderStyles}
+                aria-invalid={errors.consultationType ? "true" : "false"}
+              >
+                <SelectValue placeholder="Tipo de consulta (consulta express)" />
+              </SelectTrigger>
+              <SelectContent>
+                {consultationTypeOptions.map((option) => (
+                  <SelectItem key={option} value={option}>
+                    {option}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          )}
+        />
+        {consultationTypeError && (
+          <p className="mt-2 text-sm text-red-600">
+            {consultationTypeError}
+          </p>
         )}
       </div>
       <div>
