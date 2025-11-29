@@ -150,6 +150,9 @@ export function WorkingHolidayCountryPage({
       ? "Requisitos principales del programa"
       : `Requisitos principales para ${config.name}`;
 
+  const whatsappConsultLink =
+    "https://wa.me/33601526171?text=Hola%20All%C3%A9e%20France,%20quiero%20saber%20qu%C3%A9%20visa%20me%20conviene%20para%20Francia.";
+
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
       <Navbar />
@@ -403,7 +406,8 @@ export function WorkingHolidayCountryPage({
                 {config.insuranceNote}
               </p>
               <p className="mt-4 text-sm text-white/70">
-                Sin este seguro válido, el consulado no acepta el dossier ni emite la visa.
+                Sin este seguro válido, el consulado no acepta el dossier ni
+                emite la visa.
               </p>
               <div className="mt-6 flex flex-col items-center gap-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">
@@ -454,12 +458,13 @@ export function WorkingHolidayCountryPage({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Cotizar seguro aprobado por el consulado
+                  Cotiza tu seguro
                 </a>
               </Button>
               <p className="text-sm text-white/80 max-w-2xl">
-                Te entregamos el certificado en minutos y lo dejamos listo para adjuntar en France-Visas
-                o imprimirlo junto a tu OFII. Además, gestionamos las extensiones o reembolsos si cambiás tus fechas.
+                Te entregamos el certificado en minutos y lo dejamos listo para
+                adjuntar en France-Visas o imprimirlo junto a tu OFII. Además,
+                gestionamos las extensiones o reembolsos si cambiás tus fechas.
               </p>
             </div>
           </div>
@@ -478,7 +483,7 @@ export function WorkingHolidayCountryPage({
                 <Card key={paso.title} className="p-6 flex gap-4 items-start">
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg"
-                    style={{ backgroundColor: "#ED2939" }}
+                    style={{ backgroundColor: "var(--chart-2)" }}
                   >
                     {index + 1}
                   </div>
@@ -495,6 +500,46 @@ export function WorkingHolidayCountryPage({
                   </div>
                 </Card>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-6 bg-[#002654] text-white">
+          <div className="max-w-5xl mx-auto text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              ¿Listo para postularte?
+            </h2>
+            <p className="text-white/80 text-lg leading-relaxed mb-8">
+              Te ayudamos a preparar un dossier competitivo, cumplir con los tiempos oficiales y aterrizar en Francia con un plan claro de
+              alojamiento, trabajo temporal y trámites de instalación, sin importar que partas desde {audienceLabel}.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                size="lg"
+                className="text-white font-semibold hover:opacity-90"
+                style={{ backgroundColor: "#ED2939" }}
+                asChild
+              >
+                <a
+                  href="https://wa.me/33601526171"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Plane className="w-5 h-5 mr-2" />
+                  Empezar mi Working Holiday
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
+                asChild
+              >
+                <Link href="/#contacto">
+                  <Globe className="w-5 h-5 mr-2" />
+                  Hablar con el equipo
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
@@ -577,16 +622,13 @@ export function WorkingHolidayCountryPage({
           </div>
         </section>
 
-        <section className="py-16 px-6 bg-[#002654] text-white">
+        <section className="py-16 px-6 bg-[#0F2354] text-white">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              ¿Listo para postularte?
+              ¿Cuál visa es la adecuada para vos?
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Te ayudamos a preparar un dossier competitivo, cumplir con los
-              tiempos oficiales y aterrizar en Francia con un plan claro de
-              alojamiento, trabajo temporal y trámites de instalación, sin
-              importar que partas desde {audienceLabel}.
+              Contactanos para una asesoría personalizada y descubrí cuál es la mejor opción según tus planes, tiempos y país de origen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -595,13 +637,9 @@ export function WorkingHolidayCountryPage({
                 style={{ backgroundColor: "#ED2939" }}
                 asChild
               >
-                <a
-                  href="https://wa.me/33601526171"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Plane className="w-5 h-5 mr-2" />
-                  Empezar mi Working Holiday
+                <a href={whatsappConsultLink} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Envíanos un WhatsApp
                 </a>
               </Button>
               <Button
@@ -610,14 +648,15 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href="/#contacto">
+                <Link href="/servicios">
                   <Globe className="w-5 h-5 mr-2" />
-                  Hablar con el equipo
+                  Ver más servicios
                 </Link>
               </Button>
             </div>
           </div>
         </section>
+
       </main>
 
       <Footer />
@@ -655,7 +694,10 @@ function CountryGrid({ onSelect }: CountryGridProps) {
                 onClick={() => onSelect(country.code)}
               >
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-3xl font-bold" style={{ color: "#002654" }}>
+                  <span
+                    className="text-3xl font-bold"
+                    style={{ color: "#002654" }}
+                  >
                     {country.label}
                   </span>
                   <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
