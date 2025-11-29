@@ -163,6 +163,8 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
           {filteredServices.map((service) => {
             const Icon = iconMap[service.icon];
             const whatsappLink = buildWhatsAppLink(service.title);
+            const ctaLink = service.link || whatsappLink;
+            const isExternal = ctaLink.startsWith("http");
             return (
               <motion.div
                 key={service.id}
@@ -172,11 +174,11 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
                 className="h-full"
               >
                 <Card
-                  className="group relative h-full overflow-hidden rounded-2xl border border-slate-100
+                  className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-slate-100
                              bg-white/95 p-6 shadow-md transition-all duration-300
                              hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div className="relative space-y-5">
+                  <div className="relative flex h-full flex-col space-y-5">
                     {/* Icono + precio */}
                     <div className="flex items-start justify-between">
                       <div
@@ -205,7 +207,7 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
 
                     {/* Detalles */}
                     <ul className="space-y-2.5">
-                      {service.details.slice(0, 3).map((detail, index) => (
+                      {service.details.map((detail, index) => (
                         <li
                           key={index}
                           className="flex items-start gap-2 text-sm text-gray-700"
@@ -214,27 +216,24 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
                           <span className="leading-relaxed">{detail}</span>
                         </li>
                       ))}
-                      {service.details.length > 3 && (
-                        <li className="text-sm text-gray-500">
-                          +{service.details.length - 3} más…
-                        </li>
-                      )}
                     </ul>
 
                     {/* CTA */}
-                    <Button
-                      asChild
-                      className="mt-2 w-full rounded-full bg-[#ED2939] font-semibold text-white
-                                 shadow-md transition-all hover:bg-[#d42032] hover:shadow-lg"
-                    >
-                      <Link
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <div className="pt-2 mt-auto">
+                      <Button
+                        asChild
+                        className="w-full rounded-full bg-[#ED2939] font-semibold text-white
+                                   shadow-md transition-all hover:bg-[#d42032] hover:shadow-lg"
                       >
-                        Solicitar este servicio
-                      </Link>
-                    </Button>
+                        {isExternal ? (
+                          <a href={ctaLink} target="_blank" rel="noopener noreferrer">
+                            Solicitar este servicio
+                          </a>
+                        ) : (
+                          <Link href={ctaLink}>Solicitar este servicio</Link>
+                        )}
+                      </Button>
+                    </div>
                   </div>
                 </Card>
               </motion.div>
