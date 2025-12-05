@@ -6,7 +6,7 @@ import { useRef, ReactNode } from "react"
 interface AnimateOnScrollProps {
   children: ReactNode
   delay?: number
-  direction?: "up" | "down" | "left" | "right" | "fade"
+  direction?: "up" | "down" | "left" | "right" | "fade" | "zoom"
   className?: string
   amount?: number
 }
@@ -41,6 +41,10 @@ export function AnimateOnScroll({
     fade: {
       hidden: { opacity: 0 },
       visible: { opacity: 1 },
+    },
+    zoom: {
+      hidden: { opacity: 0, scale: 0.8 },
+      visible: { opacity: 1, scale: 1 },
     },
   }
 

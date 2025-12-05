@@ -162,16 +162,7 @@ export function ServicesSection() {
       </div>
 
       {/* Curved Wave Bottom */}
-      <div className="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-16"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path d="M0,0 C300,100 900,100 1200,0 L1200,120 L0,120 Z" fill="white" />
-        </svg>
-      </div>
+      
     </section>
   )
 }
