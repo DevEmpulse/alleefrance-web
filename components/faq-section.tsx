@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { MessageCircle } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
 const faqs = [
@@ -56,7 +56,7 @@ export function FAQSection() {
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-white text-lg transition-opacity hover:opacity-90 shadow-lg"
               style={{ backgroundColor: "#ED2939" }}
             >
-              <MessageCircle className="w-6 h-6" />
+              <SiWhatsapp className="w-6 h-6" />
               WhatsApp para más consultas
             </a>
           </div>

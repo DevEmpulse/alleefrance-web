@@ -20,9 +20,9 @@ import {
   Briefcase,
   Heart,
   Shield,
-  MessageCircle,
   Backpack,
 } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import {
   PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES,
   WORKING_HOLIDAY_COUNTRIES,
@@ -184,7 +184,7 @@ export function WorkingHolidayCountryPage({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
+                  <SiWhatsapp className="w-5 h-5 mr-2" />
                   Consultar por WhatsApp
                 </a>
               </Button>
@@ -641,7 +641,7 @@ export function WorkingHolidayCountryPage({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
+                  <SiWhatsapp className="w-5 h-5 mr-2" />
                   Envíanos un WhatsApp
                 </a>
               </Button>

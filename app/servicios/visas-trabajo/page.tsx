@@ -7,7 +7,6 @@ import {
   CheckCircle2,
   Clock,
   FileText,
-  MessageCircle,
   Calendar,
   Briefcase,
   Sprout,
@@ -17,6 +16,7 @@ import {
   AlertTriangle,
   Euro,
 } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { Navbar } from "@/components/navbar";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { Footer } from "@/components/footer";
@@ -67,7 +67,7 @@ export default function VisasTrabajoPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
+                <SiWhatsapp className="mr-2 h-5 w-5" />
                 CONSULTAR POR WHATSAPP
               </a>
             </Button>
@@ -98,7 +98,7 @@ export default function VisasTrabajoPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-6 py-4 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                <MessageCircle className="w-6 h-6" />
+                <SiWhatsapp className="w-6 h-6" />
                 <span>Únete a la Comunidad Salarié / Saisonnier</span>
               </a>
             </div>
@@ -450,7 +450,7 @@ export default function VisasTrabajoPage() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105"
                           >
-                            <MessageCircle className="w-6 h-6" />
+                            <SiWhatsapp className="w-6 h-6" />
                             UNIRME AHORA
                         </a>
                       </div>
@@ -483,7 +483,7 @@ export default function VisasTrabajoPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <MessageCircle className="mr-2 h-5 w-5" />
+                      <SiWhatsapp className="mr-2 h-5 w-5" />
                       CONSULTAR AHORA
                     </a>
                   </Button>

@@ -2,10 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, Clock3, MessageCircle } from "lucide-react";
+import { ShieldCheck, Clock3 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import { SiWhatsapp } from "react-icons/si";
 
 const stats = [
   {
@@ -21,7 +22,7 @@ const stats = [
     color: "var(--flag-red)",
   },
   {
-    icon: MessageCircle,
+    icon: SiWhatsapp,
     value: "Asesoría",
     label: "Personalizada",
     color: "var(--navy-blue)",
@@ -36,7 +37,7 @@ export function AboutSection() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         <AnimateOnScroll direction="right" delay={0.2}>
-          <div className="hidden sm:block absolute right-0 -top-72 w-[340px] md:w-[420px] lg:w-[520px] pointer-events-none z-40">
+          <div className="hidden sm:block absolute -right-12 md:-right-16 lg:-right-20 -top-72 w-[340px] md:w-[420px] lg:w-[520px] pointer-events-none z-40">
             <img
               src="/mapitafrancia.png"
               alt="Mapa de Francia"
@@ -46,11 +47,11 @@ export function AboutSection() {
         </AnimateOnScroll>
 
         <AnimateOnScroll direction="right" delay={0.2}>
-          <div className="flex sm:hidden justify-end -mt-48 mb-16 pr-8 z-40">
+          <div className="flex sm:hidden justify-end -mt-48 mb-16 pr-4 z-40">
             <img
               src="/mapitafrancia.png"
               alt="Mapa de Francia"
-              className="w-80 h-auto drop-shadow-xl translate-x-10"
+              className="w-80 h-auto drop-shadow-xl translate-x-16"
             />
           </div>
         </AnimateOnScroll>
@@ -125,9 +126,9 @@ export function AboutSection() {
           </AnimateOnScroll>
 
           <AnimateOnScroll direction="right" delay={0.15}>
-            <div className="relative w-full max-w-md mx-auto z-0">
+            <div className="relative w-full max-w-[280px] sm:max-w-md mx-auto z-0">
               <div
-                className="absolute -inset-8 md:-inset-10 z-0 pointer-events-none"
+                className="absolute -inset-4 sm:-inset-8 md:-inset-10 z-0 pointer-events-none"
                 style={{
                   background:
                     "linear-gradient(140deg, rgba(0,85,164,0.24), rgba(0,38,84,0.1))",
@@ -137,7 +138,7 @@ export function AboutSection() {
                 }}
               />
               <div
-                className="absolute -inset-4 md:-inset-6 z-10 pointer-events-none"
+                className="absolute -inset-2 sm:-inset-4 md:-inset-6 z-10 pointer-events-none"
                 style={{
                   background:
                     "radial-gradient(circle at 18% 28%, rgba(0,85,164,0.18), transparent 48%), radial-gradient(circle at 78% 82%, rgba(237,41,57,0.16), transparent 44%), radial-gradient(circle at 65% 20%, rgba(0,38,84,0.12), transparent 38%)",
@@ -146,7 +147,7 @@ export function AboutSection() {
                 }}
               />
               <div
-                className="absolute -left-12 -top-6 h-24 w-32 z-20 pointer-events-none"
+                className="absolute -left-6 sm:-left-12 -top-3 sm:-top-6 h-12 w-16 sm:h-24 sm:w-32 z-20 pointer-events-none"
                 style={{
                   background:
                     "linear-gradient(120deg, rgba(0,85,164,0.22), rgba(0,38,84,0.08))",
@@ -156,7 +157,7 @@ export function AboutSection() {
                 aria-hidden
               />
               <div
-                className="absolute -right-12 bottom-2 h-24 w-36 z-20 pointer-events-none"
+                className="absolute -right-6 sm:-right-12 bottom-1 sm:bottom-2 h-12 w-18 sm:h-24 sm:w-36 z-20 pointer-events-none"
                 style={{
                   background:
                     "linear-gradient(150deg, rgba(0,85,164,0.42), rgba(0,38,84,0.16))",
@@ -166,7 +167,7 @@ export function AboutSection() {
                 aria-hidden
               />
               <div
-                className="absolute left-[-8%] right-[-8%] -bottom-12 h-20 z-20 pointer-events-none"
+                className="absolute left-[-4%] sm:left-[-8%] right-[-4%] sm:right-[-8%] -bottom-6 sm:-bottom-12 h-10 sm:h-20 z-20 pointer-events-none"
                 style={{
                   background:
                     "linear-gradient(90deg, rgba(0,85,164,0.7), rgba(0,38,84,0.9))",
@@ -198,26 +199,26 @@ export function AboutSection() {
 
         <AnimateOnScroll direction="up" delay={0.1}>
           <div className="mt-10 rounded-2xl border border-gray-100/80 bg-white shadow-[0_20px_60px_rgba(0,38,84,0.08)]">
-            <div className="grid gap-6 sm:gap-4 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-100/80">
+            <div className="flex flex-row sm:grid sm:grid-cols-3 gap-1.5 sm:gap-4 px-2 sm:px-0 py-3 sm:py-0 sm:divide-x divide-gray-100/80">
               {stats.map(({ icon: Icon, value, label, color }) => (
                 <div
                   key={label}
-                  className="flex items-center gap-4 px-6 py-6 sm:py-8"
+                  className="flex items-center gap-1.5 sm:gap-4 px-2 sm:px-6 py-2 sm:py-8 flex-1 sm:flex-none justify-center"
                 >
                   <div
-                    className="h-12 w-12 rounded-full flex items-center justify-center"
+                    className="h-6 w-6 sm:h-12 sm:w-12 rounded-full flex items-center justify-center flex-shrink-0"
                     style={{ backgroundColor: "rgba(0, 38, 84, 0.06)", color }}
                   >
-                    <Icon className="w-6 h-6" />
+                    <Icon className="w-3 h-3 sm:w-6 sm:h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p
-                      className="text-2xl font-bold leading-tight"
+                      className="text-sm sm:text-2xl font-bold leading-tight"
                       style={{ color: "var(--navy-blue)" }}
                     >
                       {value}
                     </p>
-                    <p className="text-sm text-gray-600 font-medium">{label}</p>
+                    <p className="text-[10px] sm:text-sm text-gray-600 font-medium leading-tight">{label}</p>
                   </div>
                 </div>
               ))}

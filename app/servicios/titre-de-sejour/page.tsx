@@ -9,12 +9,12 @@ import {
   Clock,
   FileText,
   Phone,
-  MessageCircle,
   Calendar,
   Shield,
   RefreshCw,
   UserCheck,
 } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
@@ -58,7 +58,7 @@ export default function TitreDeSejourPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
+                <SiWhatsapp className="mr-2 h-5 w-5" />
                 CONSULTAR POR WHATSAPP
               </a>
             </Button>
