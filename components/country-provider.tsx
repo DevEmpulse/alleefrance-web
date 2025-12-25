@@ -25,11 +25,19 @@ export type CountryOption = {
   code: WorkingHolidayCountryCode;
   name: string;
   label: string;
+  flagSrc?: string;
+  flagScale?: number;
 };
 
 const COUNTRY_OPTIONS: CountryOption[] = COUNTRY_ORDER.map((code) => {
   const data = WORKING_HOLIDAY_COUNTRIES[code];
-  return { code, name: data.name, label: data.label };
+  return {
+    code,
+    name: data.name,
+    label: data.label,
+    flagSrc: data.flagSrc,
+    flagScale: data.flagScale,
+  };
 });
 
 const defaultCountry =

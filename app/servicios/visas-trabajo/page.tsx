@@ -1,23 +1,29 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
   CheckCircle2,
   Clock,
   FileText,
-  Phone,
-  MessageCircle,
   Calendar,
   Briefcase,
   Sprout,
   Scale,
+  Link as LinkIcon,
+  CheckCircle,
+  AlertTriangle,
+  Euro,
 } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import { Navbar } from "@/components/navbar";
+import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import { Footer } from "@/components/footer";
 
 export default function VisasTrabajoPage() {
+  const [selectedVisa, setSelectedVisa] = useState<"salarie" | "saisonnier">("salarie");
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -33,7 +39,6 @@ export default function VisasTrabajoPage() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        {/* Overlay para mejorar legibilidad */}
         <div 
           className="absolute inset-0" 
           style={{ backgroundColor: "rgba(0, 38, 84, 0.85)" }}
@@ -47,9 +52,10 @@ export default function VisasTrabajoPage() {
             Visas de Trabajo en Francia
           </h1>
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Conocé las opciones de visas de trabajo disponibles en Francia: Visa Salarié para empleo permanente y Visa Saisonier para trabajo temporal estacional.
+            Descubre las dos vías principales para trabajar legalmente: <br/>
+            <strong>Visa Salarié</strong> (Estabilidad a largo plazo) y <strong>Visa Saisonnier</strong> (Trabajo por temporadas).
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button
               size="lg"
               className="font-semibold tracking-wide text-white hover:opacity-90"
@@ -61,7 +67,7 @@ export default function VisasTrabajoPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <MessageCircle className="mr-2 h-5 w-5" />
+                <SiWhatsapp className="mr-2 h-5 w-5" />
                 CONSULTAR POR WHATSAPP
               </a>
             </Button>
@@ -82,491 +88,447 @@ export default function VisasTrabajoPage() {
               </a>
             </Button>
           </div>
-        </div>
-      </section>
-
-    
-
-      {/* Información Resumida de Cada Visa */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl lg:text-4xl font-bold mb-12 text-center"
-            style={{ color: "#002654" }}
-          >
-            Información de Cada Visa
-          </h2>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {/* Visa Salarié Resumen */}
-            <Card className="p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Briefcase className="w-10 h-10" style={{ color: "#ED2939" }} />
-                <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Visa Salarié
-                </h3>
-              </div>
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                La Visa Salarié es el permiso que te permite trabajar legalmente en Francia como empleado. Está vinculada a una oferta de trabajo específica y requiere que tu empleador francés inicie el proceso de autorización de trabajo ante las autoridades francesas (DIRECCTE).
-              </p>
-              
-              <div className="space-y-3 mb-4">
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Requisitos Principales:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Contrato de trabajo con empresa francesa</li>
-                    <li>• Autorización DIRECCTE aprobada</li>
-                    <li>• Pasaporte vigente</li>
-                    <li>• Certificados profesionales</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Tiempos:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Autorización: 2-3 meses</li>
-                    <li>• Visa: 2-4 semanas</li>
-                    <li>• Total: 3-4 meses</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Ventajas:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Empleo estable y renovable</li>
-                    <li>• Camino a residencia permanente</li>
-                    <li>• Reagrupación familiar posible</li>
-                    <li>• Salario según contrato</li>
-                  </ul>
-                </div>
-              </div>
-            </Card>
-
-            {/* Visa Saisonier Resumen */}
-            <Card className="p-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Sprout className="w-10 h-10" style={{ color: "#002654" }} />
-                <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Visa Saisonier
-                </h3>
-              </div>
-              <p className="text-gray-700 mb-4 leading-relaxed">
-                La Visa Saisonier te permite trabajar en Francia durante períodos específicos del año (3-6 meses) en sectores que requieren mano de obra estacional como agricultura, turismo y hostelería. Es ideal para experiencia laboral internacional y mejorar tu francés.
-              </p>
-              
-              <div className="space-y-3 mb-4">
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Requisitos Principales:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Contrato de trabajo temporal</li>
-                    <li>• Pasaporte vigente</li>
-                    <li>• No requiere autorización DIRECCTE</li>
-                    <li>• Reserva de pasaje ida y vuelta</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Tiempos:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Visa: 2-4 semanas</li>
-                    <li>• Duración: 3-6 meses</li>
-                    <li>• Renovación: Anual</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Ventajas:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Proceso más rápido</li>
-                    <li>• Renovable anualmente</li>
-                    <li>• Alojamiento a veces incluido</li>
-                    <li>• Experiencia internacional</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Sectores:</h4>
-                  <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Agricultura (Marzo-Octubre)</li>
-                    <li>• Turismo de Invierno (Dic-Abr)</li>
-                    <li>• Turismo de Verano (May-Sep)</li>
-                  </ul>
-                </div>
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-        {/* Comparación de Visas */}
-        <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl lg:text-4xl font-bold mb-8 text-center"
-            style={{ color: "#002654" }}
-          >
-            Comparación: Visa Salarié vs Visa Saisonier
-          </h2>
-          
-          {/* Tabla Comparativa */}
-          <div className="overflow-x-auto mb-12">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr>
-                  <th className="border-2 p-4 text-left font-bold" style={{ borderColor: "#002654", backgroundColor: "#f9fafb" }}>
-                    Característica
-                  </th>
-                  <th className="border-2 p-4 text-center font-bold" style={{ borderColor: "#002654", backgroundColor: "#ED2939", color: "white" }}>
-                    Visa Salarié
-                  </th>
-                  <th className="border-2 p-4 text-center font-bold" style={{ borderColor: "#002654", backgroundColor: "#002654", color: "white" }}>
-                    Visa Saisonier
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Tipo de Trabajo
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Empleo permanente o contrato largo plazo
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Trabajo temporal/estacional (3-6 meses)
-                  </td>
-                </tr>
-                <tr style={{ backgroundColor: "#f9fafb" }}>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Duración
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Generalmente 1 año renovable
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    3-6 meses por temporada
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Autorización de Trabajo
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Requiere autorización DIRECCTE (2-3 meses)
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    No requiere autorización DIRECCTE
-                  </td>
-                </tr>
-                <tr style={{ backgroundColor: "#f9fafb" }}>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Tiempo de Procesamiento
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    3-4 meses total
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    2-4 semanas
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Renovación
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Renovable, camino a residencia permanente
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Renovable anualmente para temporadas
-                  </td>
-                </tr>
-                <tr style={{ backgroundColor: "#f9fafb" }}>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Sector
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Cualquier sector profesional
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Agricultura, turismo, hostelería
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Reagrupación Familiar
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Sí, una vez establecido
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    No (visa individual)
-                  </td>
-                </tr>
-                <tr style={{ backgroundColor: "#f9fafb" }}>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Salario
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Según contrato (generalmente SMIC o superior)
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    SMIC mínimo (€11.65/hora, ~€1,766/mes)
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Alojamiento
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    A cargo del trabajador
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    A veces incluido por el empleador
-                  </td>
-                </tr>
-                <tr style={{ backgroundColor: "#f9fafb" }}>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Experiencia Requerida
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Generalmente sí, según el puesto
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    No siempre necesaria
-                  </td>
-                </tr>
-                <tr>
-                  <td className="border-2 p-4 font-semibold" style={{ borderColor: "#e5e7eb" }}>
-                    Ideal Para
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Profesionales que buscan establecerse en Francia
-                  </td>
-                  <td className="border-2 p-4 text-center" style={{ borderColor: "#e5e7eb" }}>
-                    Jóvenes que buscan experiencia temporal y cultural
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* Ventajas Comparadas */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl lg:text-4xl font-bold mb-8 text-center"
-            style={{ color: "#002654" }}
-          >
-            Ventajas de Cada Visa
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Ventajas Visa Salarié */}
-            <Card className="p-6">
-              <h3
-                className="text-xl font-bold mb-4 text-center"
-                style={{ color: "#ED2939" }}
-              >
-                Ventajas Visa Salarié
-              </h3>
-              <div className="space-y-3">
-                {[
-                  {
-                    title: "Experiencia Comprobada",
-                    description: "+1000 trámites exitosos de visas de trabajo para Francia",
-                  },
-                  {
-                    title: "Acompañamiento Total",
-                    description: "Te guiamos desde el inicio hasta que obtengas tu Titre de Séjour",
-                  },
-                  {
-                    title: "Atención Personalizada",
-                    description: "Cada caso es único. Adaptamos nuestra asesoría a tu situación",
-                  },
-                ].map((item, index: number) => (
-                  <div key={index}>
-                    <h4 className="font-semibold mb-1" style={{ color: "#002654" }}>
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-gray-700">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
-            
-            {/* Ventajas Visa Saisonier */}
-            <Card className="p-6">
-              <h3
-                className="text-xl font-bold mb-4 text-center"
-                style={{ color: "#002654" }}
-              >
-                Ventajas Visa Saisonier
-              </h3>
-              <div className="space-y-3">
-                {[
-                  {
-                    title: "Proceso Más Rápido",
-                    description: "Menos requisitos que otras visas de trabajo, aprobación en 2-4 semanas",
-                  },
-                  {
-                    title: "Renovación Anual",
-                    description: "Podés volver cada año al mismo empleador, construyendo experiencia",
-                  },
-                  {
-                    title: "Experiencia Internacional",
-                    description: "Mejorá tu francés, conocé la cultura y sumá experiencia laboral europea",
-                  },
-                  {
-                    title: "Alojamiento Incluido",
-                    description: "Muchos empleadores ofrecen alojamiento, reduciendo tus gastos",
-                  },
-                  {
-                    title: "Salario Garantizado",
-                    description: "Cobrás el salario mínimo francés (SMIC) o superior según el sector",
-                  },
-                  {
-                    title: "Puerta a Otras Visas",
-                    description: "La experiencia puede ayudarte a conseguir visas de trabajo permanente",
-                  },
-                ].map((item, index: number) => (
-                  <div key={index}>
-                    <h4 className="font-semibold mb-1" style={{ color: "#002654" }}>
-                      {item.title}
-                    </h4>
-                    <p className="text-sm text-gray-700">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Final */}
-      <section className="py-16 px-6" style={{ backgroundColor: "#002654" }}>
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            ¿Cuál visa es la adecuada para vos?
-          </h2>
-          <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Contactanos para una asesoría personalizada y descubrí cuál es la mejor opción para tu situación
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="font-semibold tracking-wide hover:opacity-90"
-              style={{ backgroundColor: "#ED2939", color: "white" }}
-              asChild
-            >
+          {/* Comunidad WhatsApp */}
+          <AnimateOnScroll direction="fade" delay={0.3}>
+            <div className="flex justify-center">
               <a
-                href="https://wa.me/33601526171"
+                href="https://chat.whatsapp.com/Jp7yTFyDhAM3i4dhHW0m8Z"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-6 py-4 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                <Phone className="mr-2 h-5 w-5" />
-                +33 6 01 52 61 71
+                <SiWhatsapp className="w-6 h-6" />
+                <span>Únete a la Comunidad Salarié / Saisonnier</span>
               </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="font-semibold tracking-wide bg-white hover:bg-gray-50"
-              style={{ color: "#002654" }}
-              asChild
-            >
-              <Link href="/#contacto">VER MÁS SERVICIOS</Link>
-            </Button>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+
+      {/* Sección Comparativa Lado a Lado */}
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <AnimateOnScroll direction="fade" delay={0.1}>
+            <div className="text-center mb-16">
+              <h2
+                className="text-3xl lg:text-4xl font-bold mb-4"
+                style={{ color: "#002654" }}
+              >
+                Comparativa y Proceso
+              </h2>
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                Analiza paso a paso cuál es la opción ideal para tu perfil profesional.
+              </p>
+            </div>  
+          </AnimateOnScroll>
+          <p className="text-center text-gray-700 mb-8">Elige una visa para ver el proceso completo</p>
+          {/* Selector de Visa para Mobile */}
+          <div className="lg:hidden mb-8">
+            <div className="flex gap-2 bg-gray-100 p-1 rounded-lg">
+              <button
+                onClick={() => setSelectedVisa("salarie")}
+                className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-md font-semibold transition-all duration-200 ${
+                  selectedVisa === "salarie"
+                    ? "bg-white text-[#002654] shadow-md"
+                    : "text-gray-600 hover:text-[#002654]"
+                }`}
+              >
+                <Briefcase className="w-5 h-5" />
+                <span>Salarié</span>
+              </button>
+              <button
+                onClick={() => setSelectedVisa("saisonnier")}
+                className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-md font-semibold transition-all duration-200 ${
+                  selectedVisa === "saisonnier"
+                    ? "bg-white text-[#ED2939] shadow-md"
+                    : "text-gray-600 hover:text-[#ED2939]"
+                }`}
+              >
+                <Sprout className="w-5 h-5" />
+                <span>Saisonnier</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 relative">
+            
+            {/* Divisor vertical para pantallas grandes */}
+            <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gray-200 transform -translate-x-1/2"></div>
+
+            {/* ================= COLUMNA IZQUIERDA: VISA SALARIÉ ================= */}
+            <div className={`space-y-8 ${selectedVisa !== "salarie" ? "hidden lg:block" : ""}`}>
+              <div className="text-center mb-8 lg:sticky lg:top-24 bg-white/95 backdrop-blur z-20 py-4 border-b border-gray-100">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-3" style={{ backgroundColor: "rgba(0, 38, 84, 0.1)" }}>
+                  <Briefcase className="w-5 h-5" style={{ color: "#002654" }} />
+                  <span className="text-sm font-bold uppercase tracking-wide" style={{ color: "#002654" }}>
+                    Visa Salarié
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
+                  Permanente (CDI/CDD)
+                </h3>
+              </div>
+
+              {/* Paso 1: DEFINICION */}
+              <AnimateOnScroll direction="right" delay={0.1}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#002654" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#002654" }}>1</span>
+                    <h4 className="font-bold text-lg text-gray-800">Definición y Alcance</h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Es un permiso de residencia y trabajo destinado a personas contratadas mediante un <strong>CDI</strong> (indefinido) o <strong>CDD de larga duración</strong>.
+                  </p>
+                  <div className="bg-blue-50 p-3 rounded text-sm text-[#002654]">
+                    <strong>Valor principal:</strong> Estabilidad, claridad jurídica y proyección a largo plazo (residencia).
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Paso 2: OFERTA */}
+              <AnimateOnScroll direction="right" delay={0.2}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#002654" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#002654" }}>2</span>
+                    <h4 className="font-bold text-lg text-gray-800">Oferta y Métier en Tension</h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Se requiere una oferta formal vinculada a un <strong>código ROME</strong>. Si el puesto está en la lista de <em>Métiers en Tension</em> (escasez de personal), el proceso es <strong>más ágil</strong>.
+                  </p>
+                  <a href="https://www.legifrance.gouv.fr" target="_blank" className="text-xs text-blue-600 hover:underline flex items-center gap-1">
+                    <LinkIcon className="w-3 h-3" /> Consultar lista regional (Légifrance)
+                  </a>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Paso 3: FRANCE TRAVAIL */}
+              <AnimateOnScroll direction="right" delay={0.3}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#002654" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#002654" }}>3</span>
+                    <h4 className="font-bold text-lg text-gray-800">Publicación (France Travail)</h4>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <AlertTriangle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
+                    <div className="text-sm text-gray-600">
+                      <p className="mb-2">
+                        Si el oficio <strong>NO</strong> está en tensión, es obligatorio publicar la oferta por <strong>21 días</strong> en France Travail para control del mercado laboral.
+                      </p>
+                      <p className="text-xs bg-gray-100 p-2 rounded">
+                        <strong>Importante:</strong> Cualquier modificación reinicia el contador de 21 días.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Paso 4: PROCEDIMIENTO */}
+              <AnimateOnScroll direction="right" delay={0.4}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#002654" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#002654" }}>4</span>
+                    <h4 className="font-bold text-lg text-gray-800">Tiempos y ANEF</h4>
+                  </div>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li className="flex gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-[#002654]" />
+                      <span>Plataforma: Ministerio del Interior (ANEF).</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Clock className="w-4 h-4 text-[#002654]" />
+                      <span>Revisión autorización: <strong>2 a 8 semanas</strong>.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <FileText className="w-4 h-4 text-[#002654]" />
+                      <span>Emisión visa (Consulado): <strong>~15 días</strong>.</span>
+                    </li>
+                  </ul>
+                </div>
+              </AnimateOnScroll>
+
+               {/* Paso 5: VALIDACION */}
+               <AnimateOnScroll direction="right" delay={0.5}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#002654" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#002654" }}>5</span>
+                    <h4 className="font-bold text-lg text-gray-800">Validación en Francia</h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Al llegar, es <strong>obligatorio</strong> validar la visa online, registrarse en seguridad social y activar derechos laborales.
+                  </p>
+                  <div className="flex items-center gap-2 text-sm font-semibold text-green-700 bg-green-50 p-2 rounded">
+                    <CheckCircle className="w-4 h-4" />
+                    Renovable hacia residencia larga duración.
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+            </div>
+
+            {/* ================= COLUMNA DERECHA: VISA SAISONNIER ================= */}
+            <div className={`space-y-8 ${selectedVisa !== "saisonnier" ? "hidden lg:block" : ""}`}>
+              <div className="text-center mb-8 lg:sticky lg:top-24 bg-white/95 backdrop-blur z-20 py-4 border-b border-gray-100">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-3" style={{ backgroundColor: "rgba(237, 41, 57, 0.1)" }}>
+                  <Sprout className="w-5 h-5" style={{ color: "#ED2939" }} />
+                  <span className="text-sm font-bold uppercase tracking-wide" style={{ color: "#ED2939" }}>
+                    Visa Saisonnier
+                  </span>
+                </div>
+                <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
+                  Estacional (3 a 6 meses)
+                </h3>
+              </div>
+
+              {/* Paso 1: DEFINICION */}
+              <AnimateOnScroll direction="left" delay={0.1}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#ED2939" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#ED2939" }}>1</span>
+                    <h4 className="font-bold text-lg text-gray-800">Definición y Alcance</h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Para trabajos estacionales (Hotelería, Agro, Turismo, Ski) con contratos de <strong>3 a 6 meses</strong>.
+                  </p>
+                  <div className="bg-red-50 p-3 rounded text-sm text-[#ED2939]">
+                    <strong>Limitación:</strong> No otorga derecho anual. Máximo 6 meses de trabajo por año. Renovable por 3 años consecutivos.
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Paso 2: OFERTA */}
+              <AnimateOnScroll direction="left" delay={0.2}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#ED2939" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#ED2939" }}>2</span>
+                    <h4 className="font-bold text-lg text-gray-800">Sectores Estacionales</h4>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-2">
+                    Muchos oficios estacionales pertenecen a <em>Métiers en Tension</em>, especialmente en regiones turísticas, facilitando la aprobación.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-2">
+                    {["Hotelería", "Restauración", "Montaña", "Agro"].map(tag => (
+                      <span key={tag} className="text-xs bg-gray-100 px-2 py-1 rounded border border-gray-200">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Paso 3: FRANCE TRAVAIL */}
+              <AnimateOnScroll direction="left" delay={0.3}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#ED2939" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#ED2939" }}>3</span>
+                    <h4 className="font-bold text-lg text-gray-800">Publicación (Excepción)</h4>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
+                    <div className="text-sm text-gray-600">
+                      <p className="mb-2">
+                        En la mayoría de casos estacionales (alta demanda), <strong>NO es necesario</strong> publicar la oferta por 3 semanas.
+                      </p>
+                      <p className="text-xs text-gray-500">
+                        *Solo si el oficio no es estacional ni está en tensión, se requieren los 21 días.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+              {/* Paso 4: PROCEDIMIENTO */}
+              <AnimateOnScroll direction="left" delay={0.4}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#ED2939" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#ED2939" }}>4</span>
+                    <h4 className="font-bold text-lg text-gray-800">Tiempos y ANEF</h4>
+                  </div>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li className="flex gap-2">
+                      <CheckCircle2 className="w-4 h-4 text-[#ED2939]" />
+                      <span>Plataforma: ANEF Empleadores.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <Clock className="w-4 h-4 text-[#ED2939]" />
+                      <span>Revisión autorización: <strong>2 a 8 semanas</strong>.</span>
+                    </li>
+                    <li className="flex gap-2">
+                      <FileText className="w-4 h-4 text-[#ED2939]" />
+                      <span>Emisión visa: <strong>~15 días</strong>.</span>
+                    </li>
+                  </ul>
+                </div>
+              </AnimateOnScroll>
+
+               {/* Paso 5: VALIDACION */}
+               <AnimateOnScroll direction="left" delay={0.5}>
+                <div className="bg-white rounded-xl p-6 shadow-md border-l-4 hover:shadow-lg transition-all" style={{ borderLeftColor: "#ED2939" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold text-sm" style={{ backgroundColor: "#ED2939" }}>5</span>
+                    <h4 className="font-bold text-lg text-gray-800">Validación y Costo</h4>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="bg-gray-50 p-2 rounded text-sm border border-gray-200">
+                        <span className="font-bold text-[#002654]">Menos de 3 meses:</span> NO se valida. Sin trámites extra.
+                    </div>
+                    <div className="bg-gray-50 p-2 rounded text-sm border border-gray-200">
+                        <span className="font-bold text-[#002654]">3 a 6 meses:</span> Validación obligatoria + Carte de Séjour Saisonnier.
+                    </div>
+                    <div className="flex items-center gap-2 text-sm font-bold text-green-700 bg-green-50 p-2 rounded">
+                        <Euro className="w-4 h-4" />
+                        Costo de emisión: 0€ (Gratuito).
+                    </div>
+                  </div>
+                </div>
+              </AnimateOnScroll>
+
+            </div>
+          </div>
+
+          {/* Pasos 6 y 7 Compartidos - Ancho completo */}
+          <div className="mt-16 space-y-8">
+            {/* Paso 6: ACOMPAÑAMIENTO */}
+            <AnimateOnScroll direction="up" delay={0.6}>
+              <div className="relative group">
+                <div className="bg-gradient-to-br from-white via-gray-50 to-white rounded-xl p-6 md:p-10 shadow-lg border-t-4 hover:shadow-2xl transition-all duration-300 relative overflow-hidden"
+                  style={{ borderTopColor: "#002654" }}>
+                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-[#002654] via-[#002654] to-[#002654]/30"></div>
+                  
+                  <div className="relative z-10 pl-4">
+                    <div className="flex flex-col md:flex-row items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-xl shadow-md bg-[#002654]">
+                          <span className="text-3xl font-bold text-white">6</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-4">
+                          <CheckCircle2 className="w-8 h-8" style={{ color: "#002654" }} />
+                          <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
+                            ACOMPAÑAMIENTO PROFESIONAL
+                          </h3>
+                        </div>
+                        <div className="text-base text-gray-700 leading-relaxed space-y-3">
+                          <p>
+                            En <strong>Allée France Lyon</strong> te acompaño personalmente. Soy <strong>Jio</strong>, especialista en trámites migratorios, con <strong>más de 400 procesos exitosos</strong>.
+                          </p>
+                          <p>
+                            Trabajamos en coordinación directa con tu empleador (desde pequeños negocios familiares hasta grandes empresas) para asegurar un expediente limpio, completo y aprobado en tiempo récord.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimateOnScroll>
+
+            {/* Paso 7: COMUNIDAD */}
+            <AnimateOnScroll direction="up" delay={0.7}>
+              <div className="relative group">
+                <div className="bg-gradient-to-br from-[#002654] via-[#003d7a] to-[#ED2939] rounded-xl p-6 md:p-10 shadow-2xl border-t-4 hover:scale-[1.01] transition-all duration-300 text-white relative overflow-hidden"
+                  style={{ borderTopColor: "#25D366" }}>
+                  <div className="absolute left-0 top-0 bottom-0 w-2 bg-gradient-to-b from-[#25D366] via-[#25D366] to-[#25D366]/50"></div>
+                  
+                  <div className="relative z-10 pl-4">
+                    <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center w-20 h-20 rounded-xl bg-white/20 backdrop-blur-sm border-2 border-white/30 shadow-lg">
+                          <span className="text-3xl font-bold text-white">7</span>
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl font-bold text-white mb-2">
+                          COMUNIDAD SALARIÉ / SAISONNIER
+                        </h3>
+                        <p className="text-lg text-white/95 leading-relaxed mb-6">
+                          No estás solo en este proceso. Únete a nuestra comunidad de WhatsApp para compartir experiencias y consejos.
+                        </p>
+                        <a
+                            href="https://chat.whatsapp.com/Jp7yTFyDhAM3i4dhHW0m8Z"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20BA5A] text-white rounded-full font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+                          >
+                            <SiWhatsapp className="w-6 h-6" />
+                            UNIRME AHORA
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          </div>
+
+          {/* CTA Final */}
+          <AnimateOnScroll direction="up" delay={0.8}>
+            <div className="mt-16 text-center">
+              <div className="bg-white rounded-2xl p-8 shadow-xl border-2" style={{ borderColor: "#002654" }}>
+                <h3 className="text-2xl font-bold mb-3" style={{ color: "#002654" }}>
+                  ¿Listo para comenzar tu proceso?
+                </h3>
+                <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+                  Gestionamos procesos limpios, completos y aprobables. Evita errores y retrasos.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button
+                    size="lg"
+                    className="font-semibold tracking-wide text-white hover:opacity-90 shadow-lg"
+                    style={{ backgroundColor: "#ED2939" }}
+                    asChild
+                  >
+                    <a
+                      href="https://wa.me/33601526171"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <SiWhatsapp className="mr-2 h-5 w-5" />
+                      CONSULTAR AHORA
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* FAQ Resumen */}
+      <section className="py-16 px-6 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-10 text-center" style={{ color: "#002654" }}>
+            Diferencias Clave Resumidas
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="p-6 border-t-4" style={{ borderTopColor: "#002654" }}>
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Briefcase className="w-5 h-5 text-[#002654]" /> Visa Salarié
+              </h3>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 mt-0.5"/> <span>Para CDI o CDD Largo.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 mt-0.5"/> <span>Permite residencia a largo plazo.</span></li>
+                <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-orange-500 mt-0.5"/> <span>Publicación de 21 días obligatoria si no es "en tension".</span></li>
+                <li className="flex items-start gap-2"><Euro className="w-4 h-4 text-gray-500 mt-0.5"/> <span>Tiene tasas consulares estándar.</span></li>
+              </ul>
+            </Card>
+
+            <Card className="p-6 border-t-4" style={{ borderTopColor: "#ED2939" }}>
+              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <Sprout className="w-5 h-5 text-[#ED2939]" /> Visa Saisonnier
+              </h3>
+              <ul className="space-y-3 text-sm text-gray-700">
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 mt-0.5"/> <span>Contratos de 3 a 6 meses.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 mt-0.5"/> <span>Generalmente NO requiere publicación de 21 días.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-green-600 mt-0.5"/> <span><strong>Costo 0€</strong> (Gratuita).</span></li>
+                <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-orange-500 mt-0.5"/> <span>Limitada a 6 meses por año.</span></li>
+              </ul>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* FAQ Comparadas */}
-      <section className="py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl lg:text-4xl font-bold mb-8 text-center"
-            style={{ color: "#002654" }}
-          >
-            Preguntas Frecuentes
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* FAQ Visa Salarié */}
-            <div>
-              <h3
-                className="text-2xl font-bold mb-4 text-center"
-                style={{ color: "#ED2939" }}
-              >
-                Visa Salarié
-              </h3>
-              <div className="space-y-4">
-                {[
-                  {
-                    q: "¿Puedo cambiar de empleador con una Visa Salarié?",
-                    a: "Sí, pero necesitás solicitar una nueva autorización de trabajo con el nuevo empleador. Te ayudamos con todo el proceso de cambio.",
-                  },
-                  {
-                    q: "¿Mi familia puede acompañarme?",
-                    a: "Sí, podés solicitar reagrupación familiar una vez que estés establecido en Francia. Asesoramos también en este proceso.",
-                  },
-                  {
-                    q: "¿Cuánto tiempo puedo quedarme en Francia?",
-                    a: "La duración depende de tu contrato de trabajo. Generalmente se otorga por 1 año renovable, con posibilidad de residencia permanente después de 5 años.",
-                  },
-                  {
-                    q: "¿Necesito hablar francés?",
-                    a: "No es obligatorio para la visa, pero es altamente recomendable. Muchos empleadores lo requieren y facilita tu integración.",
-                  },
-                ].map((faq, index: number) => (
-                  <Card key={index} className="p-4">
-                    <h4
-                      className="text-sm font-bold mb-2"
-                      style={{ color: "#002654" }}
-                    >
-                      {faq.q}
-                    </h4>
-                    <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-            
-            {/* FAQ Visa Saisonier */}
-            <div>
-              <h3
-                className="text-2xl font-bold mb-4 text-center"
-                style={{ color: "#002654" }}
-              >
-                Visa Saisonier
-              </h3>
-              <div className="space-y-4">
-                {[
-                  {
-                    q: "¿Necesito experiencia previa?",
-                    a: "No siempre. Muchos trabajos agrícolas y de hostelería no requieren experiencia previa, solo disposición para trabajar.",
-                  },
-                  {
-                    q: "¿Puedo extender mi estadía?",
-                    a: "La visa es por el período del contrato (máximo 6 meses). Podés renovar para la próxima temporada o solicitar otro tipo de visa.",
-                  },
-                  {
-                    q: "¿El empleador proporciona alojamiento?",
-                    a: "Muchos empleadores sí, especialmente en agricultura y turismo. Esto se especifica en el contrato de trabajo.",
-                  },
-                  {
-                    q: "¿Puedo llevar a mi familia?",
-                    a: "La Visa Saisonier es individual. Tu familia necesitaría sus propias visas (turista u otra categoría).",
-                  },
-                ].map((faq, index: number) => (
-                  <Card key={index} className="p-4">
-                    <h4
-                      className="text-sm font-bold mb-2"
-                      style={{ color: "#002654" }}
-                    >
-                      {faq.q}
-                    </h4>
-                    <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   );
 }

@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
-import { Instagram, MessageCircle } from "lucide-react";
+import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
 
 const formSchema = z.object({
   name: z
@@ -327,30 +327,22 @@ function ContactForm() {
   );
 }
 
-function TikTokIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 48 48" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M37.52 11.51c-1.9-1.1-3.38-2.77-4.05-4.61-.43-1.19-.58-2.39-.58-3.44h-5.38v24.3c0 3.09-2.52 5.6-5.63 5.6-3.11 0-5.63-2.51-5.63-5.6 0-3.09 2.52-5.6 5.63-5.6.43 0 .85.05 1.26.15v-5.66c-.41-.05-.83-.08-1.25-.08-6.13 0-11.1 4.89-11.1 10.92 0 6.03 4.97 10.92 11.1 10.92 6.13 0 11.1-4.89 11.1-10.92V17.6c2.06 1.51 4.57 2.41 7.34 2.41v-5.76c-.78 0-1.97-.46-3.08-1.03Z" />
-    </svg>
-  );
-}
-
 function SocialButtons() {
   const socials = [
     {
       href: "https://instagram.com/alleefrancelyon",
       label: "Instagram",
-      icon: <Instagram className="w-5 h-5" />,
+      icon: <SiInstagram className="w-5 h-5" />,
     },
     {
       href: "https://wa.me/33601526171",
       label: "WhatsApp",
-      icon: <MessageCircle className="w-5 h-5" />,
+      icon: <SiWhatsapp className="w-5 h-5" />,
     },
     {
       href: "https://www.tiktok.com/@alleefrancelyon",
       label: "TikTok",
-      icon: <TikTokIcon className="w-5 h-5" />,
+      icon: <SiTiktok className="w-5 h-5" />,
     },
   ];
 

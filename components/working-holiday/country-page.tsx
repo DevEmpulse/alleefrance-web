@@ -20,9 +20,9 @@ import {
   Briefcase,
   Heart,
   Shield,
-  MessageCircle,
   Backpack,
 } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 import {
   PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES,
   WORKING_HOLIDAY_COUNTRIES,
@@ -184,7 +184,7 @@ export function WorkingHolidayCountryPage({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
+                  <SiWhatsapp className="w-5 h-5 mr-2" />
                   Consultar por WhatsApp
                 </a>
               </Button>
@@ -194,11 +194,7 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <a
-                  href="https://alleefrancelyon.taplink.ws"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/#contacto" rel="noopener noreferrer">
                   <Calendar className="w-5 h-5 mr-2" />
                   Reservar Asesoría
                 </a>
@@ -510,8 +506,10 @@ export function WorkingHolidayCountryPage({
               ¿Listo para postularte?
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Te ayudamos a preparar un dossier competitivo, cumplir con los tiempos oficiales y aterrizar en Francia con un plan claro de
-              alojamiento, trabajo temporal y trámites de instalación, sin importar que partas desde {audienceLabel}.
+              Te ayudamos a preparar un dossier competitivo, cumplir con los
+              tiempos oficiales y aterrizar en Francia con un plan claro de
+              alojamiento, trabajo temporal y trámites de instalación, sin
+              importar que partas desde {audienceLabel}.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -628,7 +626,8 @@ export function WorkingHolidayCountryPage({
               ¿Cuál visa es la adecuada para vos?
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Contactanos para una asesoría personalizada y descubrí cuál es la mejor opción según tus planes, tiempos y país de origen.
+              Contactanos para una asesoría personalizada y descubrí cuál es la
+              mejor opción según tus planes, tiempos y país de origen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -637,8 +636,12 @@ export function WorkingHolidayCountryPage({
                 style={{ backgroundColor: "#ED2939" }}
                 asChild
               >
-                <a href={whatsappConsultLink} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5 mr-2" />
+                <a
+                  href={whatsappConsultLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SiWhatsapp className="w-5 h-5 mr-2" />
                   Envíanos un WhatsApp
                 </a>
               </Button>
@@ -656,7 +659,6 @@ export function WorkingHolidayCountryPage({
             </div>
           </div>
         </section>
-
       </main>
 
       <Footer />
@@ -687,29 +689,48 @@ function CountryGrid({ onSelect }: CountryGridProps) {
           {PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map((code) => {
             const country = WORKING_HOLIDAY_COUNTRIES[code];
             const quotaLabel = country.quotaText ?? "Cupo oficial";
+            const isLastCard =
+              code ===
+              PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES[
+                PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.length - 1
+              ];
             return (
               <button
                 key={country.code}
-                className="rounded-2xl border-2 border-gray-200 p-5 text-left transition-all hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ED2939]"
+                className={[
+                  "rounded-2xl border-2 border-gray-200 p-5 text-left transition-all hover:-translate-y-1 hover:shadow-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-[#ED2939] cursor-pointer",
+                  "flex h-full flex-col",
+                  isLastCard ? "lg:col-start-2" : "",
+                ].join(" ")}
                 onClick={() => onSelect(country.code)}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <span
-                    className="text-3xl font-bold"
-                    style={{ color: "#002654" }}
-                  >
-                    {country.label}
-                  </span>
+                <div className="flex items-center gap-4">
+                  {country.flagSrc ? (
+                    <Image
+                      src={country.flagSrc}
+                      alt={`Bandera de ${country.name}`}
+                      width={48}
+                      height={48}
+                      className="h-12 w-12 rounded-full object-cover shadow-sm"
+                      style={{
+                        transform: country.flagScale
+                          ? `scale(${country.flagScale})`
+                          : undefined,
+                      }}
+                    />
+                  ) : null}
                   <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">
                     {quotaLabel}
                   </span>
                 </div>
-                <p className="text-base font-semibold mb-2 text-gray-900">
-                  {country.name}
-                </p>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {country.heroSubtitle}
-                </p>
+                <div className="mt-4 flex-1">
+                  <p className="text-base font-semibold mb-2 text-gray-900">
+                    {country.name}
+                  </p>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+                    {country.heroSubtitle}
+                  </p>
+                </div>
               </button>
             );
           })}

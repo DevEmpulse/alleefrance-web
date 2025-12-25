@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MessageCircle } from "lucide-react"
+import { ArrowRight, Sparkles } from "lucide-react" // Agregué iconos para los botones
 import Link from "next/link"
 import Image from "next/image"
 import { AnimateOnScroll } from "@/components/animate-on-scroll"
@@ -11,60 +11,35 @@ const featuredServices = [
   {
     id: "visa-salarie",
     title: "Visa Salarié",
-    price: "250€",
-    description: "Visa de trabajo para empleados. Tramitación completa con acompañamiento profesional.",
-    features: ["Contrato de trabajo", "Autorización OFII", "Documentación completa"],
     image: "/visa-salarie.png",
     link: "/servicios/visas-trabajo",
   },
   {
     id: "working-holiday",
     title: "Working Holiday",
-    price: "200€",
-    description: "Visa de vacaciones y trabajo. Vive un año en Francia trabajando y viajando.",
-    features: ["Visa 12 meses", "Trabajo temporal", "Explorar Europa"],
     image: "/working-holiday.png",
     link: "/working-holiday",
   },
   {
     id: "titre-de-sejour",
     title: "Titre de Séjour",
-    price: "Desde 150€",
-    description: "Renovación y obtención de permisos de residencia en Francia. Regulariza tu estancia.",
-    features: ["Renovación", "Nueva solicitud", "Acompañamiento completo"],
     image: "/titre-de-séjour.png",
     link: "/servicios/titre-de-sejour",
   },
   { 
     id:"necesitas-aseoria",
     title: "Necesitas Asesoría",
-    price: "Desde 30€",
-    description: "Resuelve dudas específicas sobre migración en Francia con nuestros expertos.",
-    features: ["Asesoría express (30 min): Dudas específicas - 30€", "Asesoría completa (1h): Revisión integral con resumen escrito - 50€"],
     image: "/servicio_asesoria.png",
     link: "https://wa.me/33601526171",
   },
 ]
 
-const otherServices = [
-  {
-    icon: MessageCircle,
-    title: "Asesorías Personalizadas",
-    price: "Desde 30€",
-    description: "Resuelve dudas específicas sobre migración en Francia con nuestros expertos.",
-    features: [
-      "Asesoría express (30 min): Dudas específicas - 30€",
-      "Asesoría completa (1h): Revisión integral con resumen escrito - 50€",
-    ],
-    link: "/#contacto",
-  },
-]
-
 export function ServicesSection() {
   return (
-    <section id="servicios" className="py-20 relative overflow-hidden" style={{ backgroundColor: "#1e3a8a" }}>
+    <section id="servicios" className="py-24 relative overflow-hidden" style={{ backgroundColor: "#1e3a8a" }}>
+      
       {/* Curved Wave Top */}
-      <div className="absolute top-0 left-0 right-0 overflow-hidden leading-none">
+      <div className="absolute top-0 left-0 right-0 overflow-hidden leading-none z-0">
         <svg
           className="relative block w-full h-16 rotate-180"
           xmlns="http://www.w3.org/2000/svg"
@@ -76,60 +51,83 @@ export function ServicesSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
+        
+        {/* Header de Sección */}
         <AnimateOnScroll direction="fade" delay={0}>
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">SERVICIOS</h2>
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-tight">
+              Nuestros Servicios
+            </h2>
+            <p className="text-blue-200 max-w-2xl mx-auto text-lg">
+              Elige el trámite que necesitas y déjanos guiarte en tu camino hacia Francia.
+            </p>
           </div>
         </AnimateOnScroll>
 
-        {/* All Services */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {/* Featured Services with Images */}
+        {/* Grid de Servicios (Flyers) */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {featuredServices.map((service, index) => (
             <AnimateOnScroll key={service.id} direction="up" delay={index * 0.1}>
-              <div className="flex flex-col hover:scale-[1.02] transition-transform duration-300">
-              <div className="relative w-full aspect-3/4 md:aspect-3/4 rounded-lg overflow-hidden mb-4">
+              
+              {/* Card Container unificado */}
+              <div className="group relative w-full aspect-[3/4] rounded-2xl overflow-hidden bg-white shadow-2xl transition-all duration-500 hover:shadow-blue-900/50 hover:-translate-y-2">
+                
+                {/* Imagen con Zoom suave */}
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 25vw"
                 />
-              </div>
-              <Button
-                className="w-full bg-black text-white border-2 border-white rounded-lg py-3 font-semibold uppercase tracking-wide hover:bg-white hover:text-black transition-all duration-300 text-sm"
-                asChild
-              >
-                {service.id === "necesitas-aseoria" ? (
-                  <a href={service.link} target="_blank" rel="noopener noreferrer">CONTACTAR</a>
-                ) : (
-                  <Link href={service.link}>MÁS INFORMACIÓN</Link>
-                )}
-              </Button>
+
+                {/* Overlay Oscuro al hacer Hover (Mejora lectura del botón) - Solo en desktop */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" />
+
+                {/* Botón que desliza desde abajo - Visible en mobile, hover en desktop */}
+                <div className="absolute inset-x-6 bottom-6 translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-300 ease-out">
+                  <Button
+                    className="w-full bg-white text-[#1e3a8a] hover:bg-blue-50 font-bold py-4 md:py-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-200 transition-all"
+                    asChild
+                  >
+                    {service.id === "necesitas-aseoria" ? (
+                      <a href={service.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                        CONTACTAR
+                        <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+                      </a>
+                    ) : (
+                      <Link href={service.link} className="flex items-center justify-center gap-2">
+                        MÁS INFORMACIÓN
+                        <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+                      </Link>
+                    )}
+                  </Button>
+                </div>
+
               </div>
             </AnimateOnScroll>
           ))}
-
         </div>
 
+        {/* Botón "Ver Todos" */}
         <AnimateOnScroll direction="fade" delay={0.4}>
-          <div className="text-center mt-12">
-          <Button
-            size="lg"
-            variant="outline"
-            className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 text-white hover:bg-white hover:text-blue-900 bg-transparent transition-all duration-300 hover:scale-105"
-            style={{ borderColor: "white" }}
-            asChild
-          >
-            <Link href="/servicios">VER TODOS LOS SERVICIOS</Link>
-          </Button>
+          <div className="text-center">
+            <Button
+              size="lg"
+              variant="outline"
+              className="group font-semibold tracking-wide text-base px-10 py-6 rounded-full border-2 text-white hover:bg-white hover:text-[#1e3a8a] bg-transparent transition-all duration-300 hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.2)]"
+              style={{ borderColor: "rgba(255,255,255,0.4)" }}
+              asChild
+            >
+              <Link href="/servicios" className="flex items-center gap-2">
+                VER TODOS LOS SERVICIOS
+                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </Button>
           </div>
         </AnimateOnScroll>
       </div>
 
-      {/* Curved Wave Bottom */}
-      
     </section>
   )
 }

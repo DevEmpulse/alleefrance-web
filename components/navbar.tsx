@@ -102,7 +102,7 @@ export function Navbar() {
   return (
     <nav
   className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md transition-all duration-300 ${
-    isScrolled
+    isScrolled || isOpen
       ? "bg-white border-b border-gray-200 shadow-sm"
       : "bg-transparent border-b border-white/10"
   }`}
@@ -129,13 +129,13 @@ export function Navbar() {
             </div>
             <span
               className={`hidden md:inline-flex items-center text-base md:text-xl font-black uppercase whitespace-nowrap transition-all duration-300 tracking-[0.08em] ${
-                isScrolled 
+                isScrolled || isOpen
                   ? "text-[#1E3A8A] group-hover:text-[#2563EB]" 
                   : "text-white group-hover:text-blue-300"
               }`}
               style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
-                textShadow: !isScrolled ? "0 0 8px rgba(0, 0, 0, 0.4)" : "none",
+                textShadow: !isScrolled && !isOpen ? "0 0 8px rgba(0, 0, 0, 0.4)" : "none",
               }}
             >
               <span className="tracking-[0.12em]">ALLÉE</span>
@@ -147,11 +147,11 @@ export function Navbar() {
           <div className="md:hidden flex-1 flex justify-center">
             <span
               className={`inline-flex items-center text-sm font-black uppercase tracking-[0.08em] ${
-                isScrolled ? "text-[#1E3A8A]" : "text-white"
+                isScrolled || isOpen ? "text-[#1E3A8A]" : "text-white"
               }`}
               style={{ 
                 fontFamily: "var(--font-montserrat), sans-serif",
-                textShadow: !isScrolled ? "0 0 6px rgba(0, 0, 0, 0.45)" : "none",
+                textShadow: !isScrolled && !isOpen ? "0 0 6px rgba(0, 0, 0, 0.45)" : "none",
               }}
             >
               <span className="tracking-[0.12em]">ALLÉE</span>
@@ -346,8 +346,8 @@ export function Navbar() {
           <button
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 transition-all duration-300 hover:rotate-90 active:scale-95 ${
-              isScrolled 
-                ? "text-gray-800 hover:text-[#2563EB]" 
+              isScrolled || isOpen
+                ? "text-[#1E3A8A] hover:text-[#2563EB]" 
                 : "text-white hover:text-blue-300"
             }`}
             aria-label="Toggle menu"

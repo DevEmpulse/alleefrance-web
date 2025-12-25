@@ -12,6 +12,8 @@ export interface WorkingHolidayCountryConfig {
   code: WorkingHolidayCountryCode;
   name: string;
   label: string;
+  flagSrc?: string;
+  flagScale?: number;
   heroTitle: string;
   heroSubtitle: string;
   quotaText?: string;
@@ -59,6 +61,7 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "ar",
       name: "Argentina",
       label: "AR",
+      flagSrc: "/bandera-arg.png",
       heroTitle:
         "Tu guía completa para la Visa Working Holiday Francia (Argentina)",
       heroSubtitle:
@@ -90,6 +93,7 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "cl",
       name: "Chile",
       label: "CL",
+      flagSrc: "/bandera-chile.png",
       heroTitle:
         "Visa Working Holiday Francia para chilenos: calendario y requisitos 2025",
       heroSubtitle:
@@ -121,6 +125,8 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "uy",
       name: "Uruguay",
       label: "UY",
+      flagSrc: "/bandera-uruguay.png",
+      flagScale: 1.12,
       heroTitle:
         "Working Holiday Francia para uruguayos con cupos reducidos",
       heroSubtitle:
@@ -152,6 +158,7 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "mx",
       name: "México",
       label: "MX",
+      flagSrc: "/bandera-mex.png",
       heroTitle: "Working Holiday Francia desde México paso a paso",
       heroSubtitle:
         "Coordinamos tu solicitud con la red consular francesa en Ciudad de México: checklist financiero, traducciones y envío digital del dossier.",
@@ -182,6 +189,8 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "ec",
       name: "Ecuador",
       label: "EC",
+      flagSrc: "/bandera-ecuador.png",
+      flagScale: 1.12,
       heroTitle: "Visa Working Holiday Francia para ecuatorianos",
       heroSubtitle:
         "Guiamos la preparación de documentos en Quito o Guayaquil, con foco en fondos certificados y antecedentes con apostilla.",
@@ -212,6 +221,8 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "co",
       name: "Colombia",
       label: "CO",
+      flagSrc: "/bandera-colombia.png",
+      flagScale: 1.12,
       heroTitle: "Working Holiday Francia para colombianos",
       heroSubtitle:
         "Armamos tu aplicación con soporte en Bogotá y Medellín: fondos certificados, France-Visas y simulación de entrevista.",
@@ -242,6 +253,8 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       code: "pe",
       name: "Perú",
       label: "PE",
+      flagSrc: "/bandera-peru.png",
+      flagScale: 1.12,
       heroTitle: "Working Holiday Francia desde Perú",
       heroSubtitle:
         "Checklist exclusivo para postulantes peruanos: documentación bancaria en soles, apostillas y coordinación con el consulado en Lima.",

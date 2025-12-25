@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { ServicesCatalog } from "@/components/servicios/services-catalog";
 import { personas, services } from "@/lib/services-data";
-import { Calendar, MessageCircle } from "lucide-react";
+import { Calendar } from "lucide-react";
+import { SiWhatsapp } from "react-icons/si";
 
 export default function ServiciosPage() {
   return (
@@ -67,7 +68,7 @@ export default function ServiciosPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <MessageCircle className="w-5 h-5 mr-2" />
+                      <SiWhatsapp className="w-5 h-5 mr-2" />
                       Consultar por WhatsApp
                     </a>
                   </Button>

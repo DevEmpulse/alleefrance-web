@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import { X } from "lucide-react";
 import { useCountry } from "@/components/country-provider";
 import type { WorkingHolidayCountryCode } from "@/lib/working-holiday-countries";
@@ -81,7 +82,20 @@ export function CountrySelectorModal({ onSelect }: CountrySelectorModalProps) {
                   isActive ? "border-[#ED2939] shadow-lg" : "border-gray-200",
                 ].join(" ")}
               >
-                <span className="text-3xl mb-2">{option.label}</span>
+                {option.flagSrc ? (
+                  <Image
+                    src={option.flagSrc}
+                    alt={`Bandera de ${option.name}`}
+                    width={56}
+                    height={56}
+                    className="mb-3 h-14 w-14 rounded-full object-cover shadow-sm"
+                    style={{
+                      transform: option.flagScale
+                        ? `scale(${option.flagScale})`
+                        : undefined,
+                    }}
+                  />
+                ) : null}
                 <span
                   className="text-xs font-semibold tracking-wide"
                   style={{ color: isActive ? "#ED2939" : "#002654" }}
