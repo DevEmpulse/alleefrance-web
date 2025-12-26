@@ -123,7 +123,7 @@ export default function VisasTrabajoPage() {
               </p>
             </div>  
           </AnimateOnScroll>
-          <p className="text-center text-gray-700 mb-8">Elige una visa para ver el proceso completo</p>
+          <p className="text-center text-gray-700 mb-8 md:hidden">Elige una visa para ver el proceso completo</p>
           {/* Selector de Visa para Mobile */}
           <div className="lg:hidden mb-8">
             <div className="flex gap-2 bg-gray-100 p-1 rounded-lg">

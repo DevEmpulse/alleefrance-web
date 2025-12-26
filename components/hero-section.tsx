@@ -46,7 +46,7 @@ export function HeroSection() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0">
           <Image
-            src="/hero-lyon.png"
+            src="/hero-lyon.jpg"
             alt="Torre Eiffel y río Sena en París - Allée France"
             fill
             className="object-cover object-center blur-[0.5px]"
