@@ -2,6 +2,7 @@ import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
+import { WorkingHolidaySection } from "@/components/working-holiday-section"
 import { BlogSection } from "@/components/blog-section"
 import { SuccessStoriesSection } from "@/components/success-stories-section"
 import { InsuranceSection } from "@/components/insurance-section"
@@ -16,6 +17,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <ServicesSection />
+      <WorkingHolidaySection />
       <InsuranceSection />
       <BlogSection />
       <SuccessStoriesSection />
