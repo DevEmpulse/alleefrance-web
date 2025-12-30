@@ -151,8 +151,8 @@ export function OtherDestinationsCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="-left-6 h-12 w-12 border border-white/10 bg-white/10 text-white shadow-lg backdrop-blur hover:bg-white/20 cursor-pointer [&>svg]:h-6 [&>svg]:w-6" />
-      <CarouselNext className="-right-6 h-12 w-12 border border-white/10 bg-white/10 text-white shadow-lg backdrop-blur hover:bg-white/20 cursor-pointer [&>svg]:h-6 [&>svg]:w-6" />
+      <CarouselPrevious className="left-3 h-12 w-12 border border-white/10 bg-white/10 text-white shadow-lg backdrop-blur hover:bg-white/20 cursor-pointer [&>svg]:h-6 [&>svg]:w-6 md:-left-6" />
+      <CarouselNext className="right-3 h-12 w-12 border border-white/10 bg-white/10 text-white shadow-lg backdrop-blur hover:bg-white/20 cursor-pointer [&>svg]:h-6 [&>svg]:w-6 md:-right-6" />
     </Carousel>
   );
 }
