@@ -9,6 +9,7 @@ import { InsuranceSection } from "@/components/insurance-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { homeFaqs } from "@/data/home-faqs"
 
 export default function Home() {
   return (
@@ -21,7 +22,10 @@ export default function Home() {
       <InsuranceSection />
       <BlogSection />
       <SuccessStoriesSection />
-      <FAQSection />
+      <FAQSection
+        title="Preguntas Frecuentes (FAQ)"
+        data={homeFaqs}
+      />
       <ContactSection />
       <Footer />
     </main>
