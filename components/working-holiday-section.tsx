@@ -9,7 +9,10 @@ import { ArrowRight, CheckCircle2, Star } from "lucide-react";
 
 export function WorkingHolidaySection() {
   return (
-    <section className="relative overflow-hidden bg-[#002590]">
+    <section
+      id="working-holiday-section"
+      className="relative overflow-hidden bg-[#002590]"
+    >
       <div className="pointer-events-none absolute top-0 left-0 h-20 w-full bg-linear-to-b from-[#002590] to-transparent" />
       <div className="pointer-events-none absolute bottom-0 left-0 h-24 w-full bg-linear-to-t from-[#002590] to-transparent" />
       <div className="pointer-events-none absolute -right-24 top-8 h-80 w-80 rounded-full bg-blue-300/15 blur-[120px]" />
