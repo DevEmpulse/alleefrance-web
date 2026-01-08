@@ -188,17 +188,17 @@ export function Footer() {
             </p>
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center sm:justify-end text-xs sm:text-sm order-1 sm:order-2">
               <Link
-                href="/#contacto"
+                href="/politica-de-privacidad"
                 className="text-gray-400 hover:text-white transition-colors duration-300 px-2 py-1 rounded"
               >
-                Contacto
+                Política de privacidad
               </Link>
               <span className="text-gray-600 hidden sm:inline">•</span>
               <Link
-                href="/#faq"
+                href="/terminos-y-condiciones"
                 className="text-gray-400 hover:text-white transition-colors duration-300 px-2 py-1 rounded"
               >
-                FAQ
+                Términos y condiciones
               </Link>
             </div>
           </div>
