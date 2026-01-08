@@ -5,6 +5,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
+import { HiShieldCheck } from "react-icons/hi2";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -65,7 +66,7 @@ export function Navbar() {
   const otherLinks = [
     { href: "/servicios/visas-trabajo", label: "Visa Salarié/Saisonier" },
     { href: "/#working-holiday-section", label: "Working Holiday" },
-    { href: "/blog/visa-estudiante-francia", label: "Visa estudiantes" },
+    { href: "/servicios/visa-etudiant", label: "Visa estudiantes" },
     { href: "/#contacto", label: "Contacto" },
   ];
 
@@ -262,14 +263,16 @@ export function Navbar() {
 
           <Button
             asChild
-            className="hidden md:inline-flex text-white ml-6 lg:ml-10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
+            className="hidden md:inline-flex text-white ml-6 lg:ml-10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
             style={{ backgroundColor: "#ED2939" }}
           >
             <a
               href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
               target="_blank"
               rel="noopener noreferrer"
+              className="flex items-center gap-2"
             >
+              <HiShieldCheck className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
               Cotizar mi seguro
             </a>
           </Button>
@@ -399,7 +402,7 @@ export function Navbar() {
 
               <Button
                 asChild
-                className="text-white w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
+                className="text-white w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
                 style={{ backgroundColor: "#ED2939" }}
               >
                 <a
@@ -407,7 +410,9 @@ export function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2"
                 >
+                  <HiShieldCheck className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
                   Cotizar mi seguro
                 </a>
               </Button>
