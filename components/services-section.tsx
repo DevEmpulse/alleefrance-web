@@ -90,6 +90,23 @@ export function ServicesSection() {
             >
               {/* Card Container unificado */}
               <div className="group relative w-full aspect-3/4 rounded-2xl overflow-hidden bg-white shadow-2xl transition-all duration-500 hover:shadow-blue-900/50 hover:-translate-y-2 cursor-pointer">
+                {/* Link que cubre toda la card */}
+                {service.id === "necesitas-aseoria" ? (
+                  <a
+                    href={service.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 z-20"
+                    aria-label={service.title}
+                  />
+                ) : (
+                  <Link
+                    href={service.link}
+                    className="absolute inset-0 z-20"
+                    aria-label={service.title}
+                  />
+                )}
+
                 {/* Imagen con Zoom suave */}
                 <Image
                   src={service.image}
@@ -99,42 +116,22 @@ export function ServicesSection() {
                   sizes="(max-width: 768px) 100vw, 25vw"
                 />
 
-                {/* Overlay Oscuro al hacer Hover (Mejora lectura del botón) - Solo en desktop */}
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/50 to-transparent opacity-70 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300" />
+                {/* Overlay Oscuro - Siempre visible en la parte inferior para el botón */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 transition-opacity duration-300" />
 
                 {/* Texto descriptivo en hover */}
-                <div className="absolute inset-x-6 bottom-24 z-10 opacity-0 transition-opacity duration-300 md:group-hover:opacity-100 pointer-events-none">
-                  <p className="text-base font-semibold text-white/95 drop-shadow-sm">
+                <div className="absolute inset-x-6 bottom-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <p className="text-base font-semibold text-white drop-shadow-md">
                     {service.description}
                   </p>
                 </div>
 
-                {/* Botón que desliza desde abajo - Visible en mobile, hover en desktop */}
-                <div className="absolute inset-x-6 bottom-6 translate-y-0 opacity-100 md:translate-y-8 md:opacity-0 md:group-hover:translate-y-0 md:group-hover:opacity-100 transition-all duration-300 ease-out">
-                  <Button
-                    className="w-full bg-white text-[#1e3a8a] hover:bg-blue-50 font-bold py-4 md:py-6 rounded-xl shadow-lg border-2 border-transparent hover:border-blue-200 transition-all"
-                    asChild
-                  >
-                    {service.id === "necesitas-aseoria" ? (
-                      <a
-                        href={service.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-2"
-                      >
-                        CONTACTAR
-                        <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
-                      </a>
-                    ) : (
-                      <Link
-                        href={service.link}
-                        className="flex items-center justify-center gap-2"
-                      >
-                        MÁS INFORMACIÓN
-                        <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
-                      </Link>
-                    )}
-                  </Button>
+                {/* Botón siempre visible (visual, el click lo maneja el link superior) */}
+                <div className="absolute inset-x-6 bottom-6 z-10 pointer-events-none">
+                  <div className="w-full bg-white text-[#1e3a8a] text-sm font-bold py-2.5 md:py-3 rounded-xl shadow-lg border-2 border-transparent group-hover:border-blue-200 transition-all flex items-center justify-center gap-2">
+                    {service.id === "necesitas-aseoria" ? "CONTACTAR" : "MÁS INFORMACIÓN"}
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </div>
                 </div>
               </div>
             </AnimateOnScroll>

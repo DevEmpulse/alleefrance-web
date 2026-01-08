@@ -25,7 +25,7 @@ interface FAQSectionProps {
 
 const isHtmlString = (value: string) => /<\/?[a-z][\s\S]*>/i.test(value);
 
-export function FAQSection({ title, description, data }: FAQSectionProps) {
+export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
   const [searchValue, setSearchValue] = useState("");
   const categories = useMemo(() => {
     return Array.from(
