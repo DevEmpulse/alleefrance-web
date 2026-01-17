@@ -29,6 +29,7 @@ interface FAQSectionProps {
   description?: string;
   data: FAQItem[];
   allowedCategories?: string[];
+  defaultCategory?: string;
 }
 
 const isHtmlString = (value: string) => /<\/?[a-z][\s\S]*>/i.test(value);
@@ -38,6 +39,7 @@ export function FAQSection({
   description,
   data = [],
   allowedCategories,
+  defaultCategory,
 }: FAQSectionProps) {
   const [searchValue, setSearchValue] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
@@ -73,13 +75,22 @@ export function FAQSection({
       return left.localeCompare(right, "es");
     });
   }, [allowedCategories, data]);
-  const [activeCategory, setActiveCategory] = useState(categories[0] ?? "");
+  const [activeCategory, setActiveCategory] = useState(() => {
+    if (defaultCategory && categories.includes(defaultCategory)) {
+      return defaultCategory;
+    }
+    return categories[0] ?? "";
+  });
 
   useEffect(() => {
+    if (defaultCategory && categories.includes(defaultCategory)) {
+      setActiveCategory(defaultCategory);
+      return;
+    }
     if (!activeCategory || !categories.includes(activeCategory)) {
       setActiveCategory(categories[0] ?? "");
     }
-  }, [activeCategory, categories]);
+  }, [activeCategory, categories, defaultCategory]);
 
   useEffect(() => {
     setVisibleCount(6);

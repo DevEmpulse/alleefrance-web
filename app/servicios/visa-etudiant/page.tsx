@@ -314,18 +314,25 @@ export default function VisaEtudiantPage() {
               ].map((item, idx) => (
                 <AnimateOnScroll key={idx} direction="up" delay={idx * 0.1}>
                   <div
-                    className={`relative flex items-center gap-8 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
+                    className={`relative flex items-center gap-8 ${
+                      idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                   >
                     {/* Contenido */}
                     <div className="flex-1 ml-12 md:ml-0">
                       <div
-                        className={`bg-white p-6 rounded-2xl shadow-md border-l-4 border-[#002654] ${idx % 2 === 0 ? "md:text-right md:border-l-0 md:border-r-4" : ""}`}
+                        className={`bg-white p-6 rounded-2xl shadow-md border-l-4 border-[#002654] ${
+                          idx % 2 === 0
+                            ? "md:text-right md:border-l-0 md:border-r-4"
+                            : ""
+                        }`}
                       >
-                        <div
-                          className={`text-4xl font-bold text-slate-100 mb-2 select-none ${idx % 2 === 0 ? "md:hidden" : ""}`}
-                        >
+                        {/* --- CORRECCIÓN AQUÍ --- */}
+                        {/* Se eliminó la condición que ocultaba el número y se ajustó el color */}
+                        <div className="text-5xl font-bold text-[#002654]/10 mb-2 select-none">
                           {item.step}
                         </div>
+
                         <h3 className="text-xl font-bold text-[#002654] mb-2">
                           {item.title}
                         </h3>
@@ -340,7 +347,7 @@ export default function VisaEtudiantPage() {
 
                     {/* Espacio vacío para balancear el flex en desktop */}
                     <div className="flex-1 hidden md:block text-center md:px-8">
-                      <span className="text-6xl font-bold text-slate-100 opacity-50">
+                      <span className="text-8xl font-bold text-slate-200 opacity-40 select-none">
                         {item.step}
                       </span>
                     </div>
@@ -529,6 +536,7 @@ export default function VisaEtudiantPage() {
         title="Preguntas Frecuentes"
         description="Resuelve tus dudas sobre la visa de estudiante"
         allowedCategories={studentFaqCategories}
+        defaultCategory="Estudios"
         data={studentFaqs}
       />
 
