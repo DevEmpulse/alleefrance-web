@@ -599,3 +599,10 @@ export const ALL_FAQS: FAQItem[] = [
     category: ["Saisonnier: Chile", "Trámites"],
   },
 ];
+
+export const getFaqsByCategories = (categories: string[]) => {
+  const categorySet = new Set(categories);
+  return ALL_FAQS.filter((faq) =>
+    faq.category.some((category) => categorySet.has(category))
+  );
+};
