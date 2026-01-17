@@ -9,7 +9,7 @@ import { InsuranceSection } from "@/components/insurance-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
-import { homeFaqs } from "@/data/home-faqs"
+import { ALL_FAQS } from "@/data/faqs"
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <SuccessStoriesSection />
       <FAQSection
         title="Preguntas Frecuentes (FAQ)"
-        data={homeFaqs}
+        data={ALL_FAQS}
       />
       <ContactSection />
       <Footer />

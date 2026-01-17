@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Accordion,
@@ -7,6 +7,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { SiWhatsapp } from "react-icons/si";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useEffect, useMemo, useState } from "react";
@@ -14,7 +21,7 @@ import { useEffect, useMemo, useState } from "react";
 export interface FAQItem {
   question: string;
   answer: string;
-  category: string;
+  category: string[];
 }
 
 interface FAQSectionProps {
@@ -27,14 +34,19 @@ const isHtmlString = (value: string) => /<\/?[a-z][\s\S]*>/i.test(value);
 
 export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
   const [searchValue, setSearchValue] = useState("");
-  const categories = useMemo(() => {
-    return Array.from(
-      new Set(data.map((item) => item.category).filter(Boolean))
-    );
+  const [visibleCount, setVisibleCount] = useState(6);
+  const categories = useMemo<string[]>(() => {
+    const unique = new Set<string>();
+    data.forEach((item) => {
+      item.category.forEach((category) => {
+        if (category) {
+          unique.add(category);
+        }
+      });
+    });
+    return Array.from(unique);
   }, [data]);
-  const [activeCategory, setActiveCategory] = useState(
-    categories[0] ?? ""
-  );
+  const [activeCategory, setActiveCategory] = useState(categories[0] ?? "");
 
   useEffect(() => {
     if (!activeCategory || !categories.includes(activeCategory)) {
@@ -42,11 +54,15 @@ export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
     }
   }, [activeCategory, categories]);
 
+  useEffect(() => {
+    setVisibleCount(6);
+  }, [activeCategory, searchValue]);
+
   const normalizedSearch = searchValue.trim().toLowerCase();
   const filteredFaqs = useMemo(() => {
     return data.filter((item) => {
       const matchesCategory = activeCategory
-        ? item.category === activeCategory
+        ? item.category.includes(activeCategory)
         : true;
       const matchesSearch = normalizedSearch
         ? item.question.toLowerCase().includes(normalizedSearch) ||
@@ -56,10 +72,11 @@ export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
       return matchesCategory && matchesSearch;
     });
   }, [activeCategory, data, normalizedSearch]);
+  const displayedFaqs = filteredFaqs.slice(0, visibleCount);
 
   return (
     <section id="faq" className="py-20 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <AnimateOnScroll direction="fade" delay={0}>
           <div className="text-center mb-12">
             <h2
@@ -91,26 +108,25 @@ export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
 
         <div className="space-y-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div className="flex flex-wrap gap-2" role="tablist">
-              {categories.map((category) => {
-                const isActive = category === activeCategory;
-                return (
-                  <button
-                    key={category}
-                    type="button"
-                    role="tab"
-                    aria-selected={isActive}
-                    onClick={() => setActiveCategory(category)}
-                    className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
-                      isActive
-                        ? "bg-[#002654] text-white border-[#002654]"
-                        : "bg-white text-[#002654] border-[#002654]/20 hover:border-[#002654]/60"
-                    }`}
-                  >
-                    {category}
-                  </button>
-                );
-              })}
+            <div className="w-full md:w-auto">
+              <Select
+                value={activeCategory}
+                onValueChange={(value) => setActiveCategory(value)}
+              >
+                <SelectTrigger className="w-full md:w-64">
+                  <SelectValue placeholder="Seleccionar categoría" />
+                </SelectTrigger>
+                <SelectContent>
+                  {categories.map((category) => {
+                    const categoryLabel = String(category);
+                    return (
+                      <SelectItem key={categoryLabel} value={categoryLabel}>
+                        {categoryLabel}
+                      </SelectItem>
+                    );
+                  })}
+                </SelectContent>
+              </Select>
             </div>
             <div className="w-full md:max-w-xs">
               <Input
@@ -126,10 +142,10 @@ export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
               No encontramos resultados con esos filtros.
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {filteredFaqs.map((faq, index) => (
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {displayedFaqs.map((faq, index) => (
                 <AnimateOnScroll
-                  key={`${faq.category}-${faq.question}`}
+                  key={`${faq.question}-${faq.category.join("|")}`}
                   direction="up"
                   delay={index * 0.1}
                 >
@@ -162,6 +178,17 @@ export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
               ))}
             </div>
           )}
+          {visibleCount < filteredFaqs.length ? (
+            <button
+              type="button"
+              onClick={() =>
+                setVisibleCount((count) => Math.min(count + 6, filteredFaqs.length))
+              }
+              className="text-[#002654] font-semibold hover:underline mt-8 flex items-center justify-center w-full cursor-pointer"
+            >
+              Ver más preguntas de {activeCategory} (+{filteredFaqs.length - visibleCount})
+            </button>
+          ) : null}
         </div>
       </div>
     </section>

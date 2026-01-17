@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import {
   type CarouselApi,
   Carousel,
@@ -12,91 +13,27 @@ import {
 import { Card } from "@/components/ui/card";
 
 const otherDestinations = [
-  {
-    name: "Alemania",
-    flag: "🇩🇪",
-    gradient: "from-amber-200 via-orange-200 to-rose-200",
-  },
-  {
-    name: "Andorra",
-    flag: "🇦🇩",
-    gradient: "from-sky-200 via-blue-200 to-indigo-200",
-  },
-  {
-    name: "Australia",
-    flag: "🇦🇺",
-    gradient: "from-rose-200 via-orange-200 to-yellow-200",
-  },
-  {
-    name: "Austria",
-    flag: "🇦🇹",
-    gradient: "from-red-200 via-rose-200 to-orange-200",
-  },
-  {
-    name: "Corea",
-    flag: "🇰🇷",
-    gradient: "from-indigo-200 via-slate-200 to-rose-200",
-  },
-  {
-    name: "Dinamarca",
-    flag: "🇩🇰",
-    gradient: "from-rose-200 via-pink-200 to-orange-100",
-  },
-  {
-    name: "Eslovaquia",
-    flag: "🇸🇰",
-    gradient: "from-sky-200 via-blue-200 to-emerald-200",
-  },
-  {
-    name: "España",
-    flag: "🇪🇸",
-    gradient: "from-amber-200 via-yellow-200 to-rose-200",
-  },
-  {
-    name: "Holanda",
-    flag: "🇳🇱",
-    gradient: "from-orange-200 via-rose-200 to-sky-200",
-  },
-  {
-    name: "Hungría",
-    flag: "🇭🇺",
-    gradient: "from-emerald-200 via-teal-200 to-rose-200",
-  },
-  {
-    name: "Irlanda",
-    flag: "🇮🇪",
-    gradient: "from-emerald-200 via-lime-200 to-amber-200",
-  },
-  {
-    name: "Japón",
-    flag: "🇯🇵",
-    gradient: "from-rose-200 via-pink-200 to-slate-200",
-  },
-  {
-    name: "Noruega",
-    flag: "🇳🇴",
-    gradient: "from-blue-200 via-indigo-200 to-slate-200",
-  },
-  {
-    name: "Nueva Zelanda",
-    flag: "🇳🇿",
-    gradient: "from-sky-200 via-indigo-200 to-emerald-200",
-  },
-  {
-    name: "Polonia",
-    flag: "🇵🇱",
-    gradient: "from-rose-200 via-slate-200 to-amber-200",
-  },
-  {
-    name: "Portugal",
-    flag: "🇵🇹",
-    gradient: "from-emerald-200 via-lime-200 to-rose-200",
-  },
-  {
-    name: "Suecia",
-    flag: "🇸🇪",
-    gradient: "from-sky-200 via-blue-200 to-amber-200",
-  },
+  { name: "Alemania", image: "/countries/Alemania.webp" },
+  { name: "Andorra", image: "/countries/Andorra.webp" },
+  { name: "Australia", image: "/countries/Australia.webp" },
+  { name: "Austria", image: "/countries/Austria.webp" },
+  { name: "Canada", image: "/countries/Canada.webp" },
+  { name: "Corea del Sur", image: "/countries/Corea-del-Sur.webp" },
+  { name: "Dinamarca", image: "/countries/Dinamarca.webp" },
+  { name: "Eslovaquia", image: "/countries/Eslovaquia.webp" },
+  { name: "España", image: "/countries/Espana.webp" },
+  { name: "Holanda", image: "/countries/Paises-Bajos.webp" },
+  { name: "Hungría", image: "/countries/Hungria.webp" },
+  { name: "Irlanda", image: "/countries/Irlanda.webp" },
+  { name: "Japón", image: "/countries/Japon.webp" },
+  { name: "Mexico", image: "/countries/Mexico.webp" },
+  { name: "Noruega", image: "/countries/Noruega.webp" },
+  { name: "Nueva Zelanda", image: "/countries/Nueva-Zelanda.webp" },
+  { name: "Polonia", image: "/countries/Polonia.webp" },
+  { name: "Portugal", image: "/countries/Portugal.webp" },
+  { name: "Reino Unido", image: "/countries/Reino-Unido.webp" },
+  { name: "Suecia", image: "/countries/Suecia.webp" },
+  { name: "Estados Unidos", image: "/countries/USA.webp" },
 ];
 
 export function OtherDestinationsCarousel() {
@@ -127,22 +64,20 @@ export function OtherDestinationsCarousel() {
             className="pl-6 basis-60 sm:basis-[260px] lg:basis-[280px]"
           >
             <Card className="overflow-hidden rounded-3xl border border-white/10 bg-blue-800/50 shadow-xl backdrop-blur transition-transform duration-300 hover:-translate-y-1">
-              <div
-                className={`relative h-28 bg-linear-to-br ${destination.gradient}`}
-              >
-                <div className="absolute inset-0 bg-[#0b1c4a]/30" />
-                <div className="absolute inset-0">
-                  <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-white/30 blur-lg" />
-                  <div className="absolute bottom-4 left-4 h-10 w-32 rounded-full bg-white/30" />
-                </div>
+              <div className="relative h-36 bg-[#0b1c4a]/40">
+                {destination.image ? (
+                  <Image
+                    src={destination.image}
+                    alt={`Destino ${destination.name}`}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-linear-to-br from-blue-400/30 via-blue-500/10 to-indigo-500/20" />
+                )}
+                <div className="absolute inset-0 bg-linear-to-t from-[#0b1c4a]/70 via-transparent to-transparent" />
               </div>
-              <div className="flex items-center gap-3 px-5 py-5">
-                <span
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-2xl shadow-inner"
-                  aria-hidden="true"
-                >
-                  {destination.flag}
-                </span>
+              <div className="px-5 py-5">
                 <p className="text-lg font-semibold text-white">
                   {destination.name}
                 </p>
