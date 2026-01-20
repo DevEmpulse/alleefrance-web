@@ -1,9 +1,4 @@
-import {
-  Shield,
-  MapPin,
-  Phone,
-  ChevronRight,
-} from "lucide-react";
+import { Shield, MapPin, Phone, ChevronRight } from "lucide-react";
 import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,14 +10,18 @@ export function Footer() {
       style={{ backgroundColor: "#002654" }}
     >
       {/* Decorative top border with gradient */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-white/30 to-transparent"></div>
 
       {/* Background pattern overlay */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px"
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
+            backgroundSize: "40px 40px",
+          }}
+        ></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
@@ -33,7 +32,7 @@ export function Footer() {
             <Link href="/" className="inline-flex items-center gap-3 group">
               <div className="relative h-12 sm:h-14 w-auto transition-transform duration-300 group-hover:scale-105">
                 <Image
-                  src="/logofondotransparente.png"
+                  src="/logo-AF.png"
                   alt="Allée France Logo"
                   width={140}
                   height={56}
@@ -127,9 +126,14 @@ export function Footer() {
                   className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg shrink-0"
                   style={{ backgroundColor: "rgba(237, 41, 57, 0.2)" }}
                 >
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: "#ED2939" }} />
+                  <Phone
+                    className="w-5 h-5 sm:w-6 sm:h-6"
+                    style={{ color: "#ED2939" }}
+                  />
                 </div>
-                <span className="text-sm sm:text-base font-medium">+33 6 01 52 61 71</span>
+                <span className="text-sm sm:text-base font-medium">
+                  +33 6 01 52 61 71
+                </span>
               </a>
 
               <div className="flex items-start gap-3 text-gray-300">
@@ -137,7 +141,10 @@ export function Footer() {
                   className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0"
                   style={{ backgroundColor: "rgba(237, 41, 57, 0.2)" }}
                 >
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: "#ED2939" }} />
+                  <MapPin
+                    className="w-5 h-5 sm:w-6 sm:h-6"
+                    style={{ color: "#ED2939" }}
+                  />
                 </div>
                 <span className="text-sm sm:text-base pt-2">Lyon, Francia</span>
               </div>

@@ -34,7 +34,12 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
         />
-        <link rel="icon" href="/logo.ico" type="image/x-icon" sizes="64x64" />
+        <link
+          rel="icon"
+          href="/logo-AF.ico"
+          type="image/x-icon"
+          sizes="64x64"
+        />
         <style
           dangerouslySetInnerHTML={{
             __html: `
