@@ -40,9 +40,9 @@ import { SiWhatsapp } from "react-icons/si";
 const beneficios = [
   {
     icon: Plane,
-    title: "Viví un año en Francia",
+    title: "Viví un año en el destino elegido",
     description:
-      "Residí 12 meses con libertad para moverte por todo el territorio francés y el Espacio Schengen.",
+      "Residí hasta 12 meses con libertad para trabajar, viajar y sumar experiencia internacional.",
   },
   {
     icon: Briefcase,
@@ -52,15 +52,15 @@ const beneficios = [
   },
   {
     icon: Globe,
-    title: "Explorar Europa",
+    title: "Explorar nuevos países",
     description:
-      "Usá Francia como base para viajar y conocer otros países europeos durante tus vacaciones.",
+      "Combiná trabajo y turismo para conocer nuevas culturas mientras sostenés tu viaje.",
   },
   {
     icon: Heart,
-    title: "Inmersión cultural",
+    title: "Inmersión cultural real",
     description:
-      "Mejorá tu francés, hacé amistades internacionales y conocé de cerca el estilo de vida francés.",
+      "Mejorá el idioma, hacé amistades internacionales y viví el día a día local.",
   },
 ];
 
@@ -88,11 +88,11 @@ const pasos = [
 ];
 
 const documentos = [
-  "Formulario OFII completo y firmado.",
-  "CV y carta de motivación en francés o inglés.",
+  "Pasaporte vigente y formularios oficiales completos.",
+  "CV y carta de motivación según destino.",
   "Comprobante de fondos (extractos bancarios o certificados).",
-  "Reserva aérea ida y vuelta o fondos equivalentes.",
-  "Seguro médico internacional (cobertura mínima €30.000).",
+  "Reserva aérea o fondos equivalentes.",
+  "Seguro médico internacional por toda la estadía.",
   "Certificado de antecedentes penales apostillado.",
 ];
 
@@ -101,13 +101,13 @@ const insuranceFeatures = [
     icon: Shield,
     title: "Cobertura Schengen 24/7",
     description:
-      "Atención médica, hospitalización y repatriación con respaldo internacional durante los 12 meses del programa.",
+      "Atención médica, hospitalización y repatriación con respaldo internacional durante el programa.",
   },
   {
     icon: Globe,
-    title: "Documentación en francés",
+    title: "Documentación consular",
     description:
-      "Certificado oficial y carta personalizada para presentar en tu consulado o subir a France-Visas sin rechazos.",
+      "Certificado oficial y carta personalizada para presentar en tu consulado o plataforma oficial.",
   },
   {
     icon: Heart,
@@ -151,6 +151,35 @@ const destinationCatalog = [
   { name: "USA", image: "/countries/USA.webp" },
   { name: "Francia", image: "/hero-lyon.jpg" },
 ];
+
+const destinationImageMap: Record<string, string> = {
+  Alemania: "/countries/Alemania.webp",
+  Australia: "/countries/Australia.webp",
+  Austria: "/countries/Austria.webp",
+  Canadá: "/countries/Canada.webp",
+  Canada: "/countries/Canada.webp",
+  "Corea del Sur": "/countries/Corea-del-Sur.webp",
+  Dinamarca: "/countries/Dinamarca.webp",
+  España: "/countries/Espana.webp",
+  Francia: "/hero-lyon.jpg",
+  Irlanda: "/countries/Irlanda.webp",
+  Japón: "/countries/Japon.webp",
+  Noruega: "/countries/Noruega.webp",
+  "Nueva Zelanda": "/countries/Nueva-Zelanda.webp",
+  Polonia: "/countries/Polonia.webp",
+  Portugal: "/countries/Portugal.webp",
+  Suecia: "/countries/Suecia.webp",
+  "Reino Unido": "/countries/Reino-Unido.webp",
+  "Países Bajos": "/countries/Paises-Bajos.webp",
+  Hungría: "/countries/Hungria.webp",
+  México: "/countries/Mexico.webp",
+};
+
+const normalizeDestinationName = (value: string) =>
+  value.replace(/\s*\(.*?\)\s*/g, "").trim();
+
+const getDestinationImage = (value: string) =>
+  destinationImageMap[normalizeDestinationName(value)];
 
 const insuranceHighlights = [
   {
@@ -578,23 +607,6 @@ type WorkingHolidayCountryPageProps = {
   showCountryGrid?: boolean;
 };
 
-const countryPageFaqs = getFaqsByCategories([
-  "Errores Frecuentes",
-  "Seguros",
-  "Trabajo",
-  "WH: General",
-  "WH: Argentina",
-  "WH: Chile",
-]);
-const countryPageFaqCategories = [
-  "Errores Frecuentes",
-  "Seguros",
-  "Trabajo",
-  "WH: General",
-  "WH: Argentina",
-  "WH: Chile",
-];
-
 export function WorkingHolidayCountryPage({
   config,
   showCountryGrid = false,
@@ -618,13 +630,13 @@ export function WorkingHolidayCountryPage({
     navigateToCountry(code);
   };
 
-  const requirementsTitle =
-    config.code === "global"
-      ? "Requisitos principales del programa"
-      : `Requisitos principales para ${config.name}`;
-
-  const whatsappConsultLink =
-    "https://wa.me/33601526171?text=Hola%20All%C3%A9e%20France,%20quiero%20saber%20qu%C3%A9%20visa%20me%20conviene%20para%20Francia.";
+  const requirementsTitle = "Requisitos de postulación";
+  const showAcademicAlert = config.code === "pe" || config.code === "ec";
+  const faqCategories = ["WH: General", "Seguros", `WH: ${config.name}`];
+  const faqItems = getFaqsByCategories(faqCategories);
+  const whatsappConsultLink = `https://wa.me/33601526171?text=${encodeURIComponent(
+    `Hola, soy de ${config.name} y me interesa una Working Holiday.`
+  )}`;
 
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
@@ -637,7 +649,7 @@ export function WorkingHolidayCountryPage({
         >
           <div className="max-w-5xl mx-auto text-center text-white">
             <Badge className="mb-6 bg-white/10 text-white border-white/20 uppercase tracking-widest">
-              Working Holiday Francia 2025
+              Working Holiday {config.name}
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
               {config.heroTitle}
@@ -653,7 +665,7 @@ export function WorkingHolidayCountryPage({
                 asChild
               >
                 <a
-                  href="https://wa.me/33601526171"
+                  href={whatsappConsultLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -684,6 +696,72 @@ export function WorkingHolidayCountryPage({
           <CountryGrid onSelect={handleGridSelection} />
         ) : null}
 
+        <section className="py-16 px-6 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gray-400 mb-3">
+                  Destinos para {config.name}
+                </p>
+                <h2
+                  className="text-3xl lg:text-4xl font-bold"
+                  style={{ color: "#002654" }}
+                >
+                  Elegí tu próximo destino
+                </h2>
+              </div>
+              <p className="text-gray-600 max-w-lg">
+                Estos son los programas Working Holiday disponibles para tu
+                pasaporte. Te ayudamos a comparar requisitos y tiempos reales.
+              </p>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {config.destinations.map((destination) => {
+                const normalizedDestination =
+                  normalizeDestinationName(destination);
+                const imageSrc = getDestinationImage(destination);
+                const isUpcoming = destination
+                  .toLowerCase()
+                  .includes("próximamente");
+                return (
+                  <div
+                    key={destination}
+                    className="rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="relative h-32 bg-gray-100">
+                      {imageSrc ? (
+                        <>
+                          <Image
+                            src={imageSrc}
+                            alt={`Destino ${normalizedDestination}`}
+                            fill
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
+                        </>
+                      ) : (
+                        <div className="absolute inset-0 bg-linear-to-br from-[#0F2354] via-[#193B7A] to-[#2E4EA1] flex items-center justify-center">
+                          <span className="text-white/80 text-sm font-semibold text-center px-4">
+                            {normalizedDestination}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <p className="text-base font-semibold text-[#002654]">
+                        {destination}
+                      </p>
+                      <p className="text-sm text-gray-500">
+                        {isUpcoming ? "Próximamente" : "Programas activos"}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 px-6">
           <div className="max-w-5xl mx-auto grid gap-10 lg:grid-cols-[3fr,2fr] items-center">
             <div>
@@ -691,20 +769,20 @@ export function WorkingHolidayCountryPage({
                 className="text-3xl lg:text-4xl font-bold mb-6"
                 style={{ color: "#002654" }}
               >
-                ¿Qué es la Visa Working Holiday Francia?
+                ¿Qué es la Visa Working Holiday?
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                La Visa Vacaciones y Trabajo (Programme Vacances-Travail)
-                permite a jóvenes de {audienceLabel} residir en Francia durante
-                12 meses con libertad para trabajar de forma temporal y recorrer
-                el país. Es una excelente oportunidad para mejorar el idioma,
-                financiar tu experiencia y vivir una inmersión cultural total.
+                La Working Holiday permite a jóvenes de {audienceLabel} residir
+                en el exterior por hasta 12 meses con libertad para trabajar de
+                forma temporal y recorrer el país elegido. Es una excelente
+                oportunidad para mejorar el idioma, financiar tu experiencia y
+                vivir una inmersión cultural total.
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Desde Allée France te guiamos en cada etapa: planificación,
-                papeles, entrevista consular y adaptación al llegar. Nos
+                papeles, turnos consulares y adaptación al llegar. Nos
                 enfocamos en anticipar problemas y fortalecer tu dossier para
-                que puedas aprovechar el cupo anual sin contratiempos.
+                que puedas aprovechar los cupos sin contratiempos.
               </p>
             </div>
             <Card className="p-6 bg-gray-50 border border-gray-100 shadow-sm">
@@ -784,6 +862,16 @@ export function WorkingHolidayCountryPage({
                 cupos anuales. Estos son los requisitos que revisamos juntos
                 antes de enviar tu dossier:
               </p>
+              {showAcademicAlert ? (
+                <Card className="mb-6 border border-amber-200 bg-amber-50/80">
+                  <div className="flex items-start gap-3 p-4">
+                    <div className="mt-1 h-2.5 w-2.5 rounded-full bg-amber-500" />
+                    <p className="text-sm text-amber-900">
+                      Requiere estudios superiores y/o inglés.
+                    </p>
+                  </div>
+                </Card>
+              ) : null}
               <div className="space-y-4">
                 {config.requisitos.map((req) => (
                   <Card
@@ -992,7 +1080,7 @@ export function WorkingHolidayCountryPage({
                 asChild
               >
                 <a
-                  href="https://wa.me/33601526171"
+                  href={whatsappConsultLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1096,8 +1184,8 @@ export function WorkingHolidayCountryPage({
         <FAQSection
           title="Preguntas frecuentes sobre Working Holiday"
           description="Resolvemos dudas clave sobre requisitos, seguros, trabajo y errores frecuentes en la postulación."
-          allowedCategories={countryPageFaqCategories}
-          data={countryPageFaqs}
+          allowedCategories={faqCategories}
+          data={faqItems}
         />
 
         <section className="py-16 px-6 bg-[#0F2354] text-white">
