@@ -28,31 +28,69 @@ interface FAQSectionProps {
   title: string;
   description?: string;
   data: FAQItem[];
+  allowedCategories?: string[];
+  defaultCategory?: string;
 }
 
 const isHtmlString = (value: string) => /<\/?[a-z][\s\S]*>/i.test(value);
 
-export function FAQSection({ title, description, data = [] }: FAQSectionProps) {
+export function FAQSection({
+  title,
+  description,
+  data = [],
+  allowedCategories,
+  defaultCategory,
+}: FAQSectionProps) {
   const [searchValue, setSearchValue] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
   const categories = useMemo<string[]>(() => {
     const unique = new Set<string>();
+    const allowedSet = allowedCategories ? new Set(allowedCategories) : null;
     data.forEach((item) => {
       item.category.forEach((category) => {
-        if (category) {
+        if (category && (!allowedSet || allowedSet.has(category))) {
           unique.add(category);
         }
       });
     });
-    return Array.from(unique);
-  }, [data]);
-  const [activeCategory, setActiveCategory] = useState(categories[0] ?? "");
+    const preferredOrder = [
+      "WH: General",
+      "WH: Argentina",
+      "WH: Chile",
+      "Saisonnier: General",
+      "Saisonnier: Argentina",
+      "Saisonnier: Chile",
+    ];
+    const preferredIndex = new Map(
+      preferredOrder.map((value, index) => [value, index])
+    );
+    return Array.from(unique).sort((left, right) => {
+      const leftIndex = preferredIndex.get(left);
+      const rightIndex = preferredIndex.get(right);
+      if (leftIndex !== undefined && rightIndex !== undefined) {
+        return leftIndex - rightIndex;
+      }
+      if (leftIndex !== undefined) return 1;
+      if (rightIndex !== undefined) return -1;
+      return left.localeCompare(right, "es");
+    });
+  }, [allowedCategories, data]);
+  const [activeCategory, setActiveCategory] = useState(() => {
+    if (defaultCategory && categories.includes(defaultCategory)) {
+      return defaultCategory;
+    }
+    return categories[0] ?? "";
+  });
 
   useEffect(() => {
+    if (defaultCategory && categories.includes(defaultCategory)) {
+      setActiveCategory(defaultCategory);
+      return;
+    }
     if (!activeCategory || !categories.includes(activeCategory)) {
       setActiveCategory(categories[0] ?? "");
     }
-  }, [activeCategory, categories]);
+  }, [activeCategory, categories, defaultCategory]);
 
   useEffect(() => {
     setVisibleCount(6);

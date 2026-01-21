@@ -598,4 +598,97 @@ export const ALL_FAQS: FAQItem[] = [
       "La coherencia total. Si contrato, seguro y perfil encajan sin contradicciones, el expediente avanza rápido.",
     category: ["Saisonnier: Chile", "Trámites"],
   },
+  // --- ESTUDIOS ---
+  {
+    question: "¿Los estudiantes latinoamericanos tienen requisitos diferentes?",
+    answer:
+      "No, los criterios son los mismos para todos los estudiantes internacionales. Sin embargo, los procedimientos administrativos pueden variar según el país (por ejemplo, la validación de Campus France es obligatoria en muchos países de América Latina).",
+    category: ["Estudios", "Trámites"],
+  },
+  {
+    question: "¿Cuánto dinero necesito demostrar?",
+    answer:
+      "Como mínimo, necesitas demostrar 615 euros por mes de estadía, o su equivalente anual. Para un año completo, esto representa aproximadamente 7.380 euros. Puedes combinar varias fuentes: cuenta propia, sponsor familiar, becas, contratos de trabajo futuro, etc.",
+    category: ["Estudios", "Trámites"],
+  },
+  {
+    question: "¿Puedo trabajar con visa de estudiante?",
+    answer:
+      "Sí, la visa de estudiante te permite trabajar hasta 964 horas por año (equivalente a aproximadamente 60% de tiempo completo). Esto te permite complementar tus ingresos durante tus estudios.",
+    category: ["Estudios", "Trabajo"],
+  },
+  {
+    question: "¿Es obligatorio tener seguro médico?",
+    answer:
+      "Sí, es obligatorio contar con un seguro médico al menos para el inicio de la estadía en Francia. Una vez en Francia, deberás inscribirte en la sécurité sociale estudiantil (seguro social para estudiantes internacionales).",
+    category: ["Estudios", "Seguros"],
+  },
+  {
+    question: "¿Puedo aplicar sin haber terminado mis estudios previos?",
+    answer:
+      "Sí, es posible siempre que tu trayectoria académica y la nueva formación sean coherentes con tu perfil. Por ejemplo, un estudiante que está por terminar el bachillerato puede aplicar a una formación universitaria, siempre que demuestre coherencia en su proyecto.",
+    category: ["Estudios", "General"],
+  },
+  {
+    question: "¿Puedo aplicar solo con preinscripción?",
+    answer:
+      "Sí, en muchos casos es posible aplicar con una attestation de pré-inscription (preinscripción). Debe ser oficial, emitida por la institución educativa, y contener información detallada sobre el programa, duración y condiciones.",
+    category: ["Estudios", "Documentación"],
+  },
+  {
+    question: "¿Qué pasa si mi proyecto de estudios no es coherente?",
+    answer:
+      "Un proyecto académico incoherente es una de las causas principales de rechazo. Tus estudios deben tener sentido dentro de tu trayectoria académica y profesional. La administración francesa evalúa la coherencia entre tu perfil, tus estudios previos y tu nuevo proyecto de formación.",
+    category: ["Estudios", "Errores Frecuentes"],
+  },
+  {
+    question: "¿Necesito nivel de francés obligatorio?",
+    answer:
+      "Depende del tipo de formación. Para cursos de francés, generalmente no se exige nivel previo. Para licenciaturas o másters, generalmente se requiere nivel B2 (DELF, TCF) o equivalente. Algunos programas en inglés pueden requerir IELTS o TOEFL.",
+    category: ["Estudios", "Documentación"],
+  },
+  {
+    question: "¿Puedo aplicar con cursos de idiomas?",
+    answer:
+      "Sí, siempre que el curso tenga al menos 20 horas semanales, sea de una escuela reconocida y tenga duración suficiente. Los cursos intensivos de francés son una opción válida para obtener la visa de estudiante.",
+    category: ["Estudios", "General"],
+  },
+  {
+    question: "¿Puedo trabajar tiempo completo con visa de estudiante?",
+    answer:
+      "No, no está permitido trabajar tiempo completo con visa de estudiante. El límite es de 964 horas por año. Trabajar más horas podría poner en riesgo tu estatus de estudiante.",
+    category: ["Estudios", "Trabajo"],
+  },
+  {
+    question: "¿Qué pasa si mis recursos económicos no están justificados?",
+    answer:
+      "Si los recursos económicos no están debidamente justificados, el consulado puede solicitar documentos adicionales, generar retrasos en el proceso, o incluso rechazar la solicitud. Es fundamental presentar documentación clara y oficial.",
+    category: ["Estudios", "Errores Frecuentes"],
+  },
+  {
+    question: "¿Puedo renovar la visa de estudiante en Francia?",
+    answer:
+      "Sí, puedes renovar tu visa de estudiante en Francia siempre que continúes estudiando, mantengas tu progreso académico y sigas cumpliendo con los requisitos de recursos económicos. La renovación se hace a través de ANEF.",
+    category: ["Estudios", "Trámites"],
+  },
+  {
+    question: "¿Puedo cambiar de estatus después de estudiar?",
+    answer:
+      "Sí, en algunos casos es posible cambiar de estatus después de terminar tus estudios. Esto depende del diploma obtenido, tu proyecto profesional y la coherencia con tus estudios. Por ejemplo, puedes pasar a visa de trabajo (Salarié) si encuentras un empleo que corresponda a tu perfil.",
+    category: ["Estudios", "Trámites"],
+  },
+  {
+    question:
+      "¿La visa de estudiante es un camino directo para quedarme en Francia?",
+    answer:
+      "No, la visa de estudiante es temporal y está vinculada a un proyecto académico específico. Para permanecer en Francia después de terminar tus estudios, necesitarás nuevas condiciones legales (por ejemplo, visa de trabajo, visa de emprendedor, reagrupación familiar, etc.).",
+    category: ["Estudios", "General"],
+  },
 ];
+
+export const getFaqsByCategories = (categories: string[]) => {
+  const categorySet = new Set(categories);
+  return ALL_FAQS.filter((faq) =>
+    faq.category.some((category) => categorySet.has(category))
+  );
+};

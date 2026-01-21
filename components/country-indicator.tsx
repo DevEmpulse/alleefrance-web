@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { useCountry } from "@/components/country-provider"
-import { Button } from "@/components/ui/button"
+import { useCountry } from "@/components/country-provider";
+import { Button } from "@/components/ui/button";
 
 export function CountryIndicator() {
-  const { country, hydrated, openModal } = useCountry()
+  const { country, hydrated, openModal } = useCountry();
 
   if (!hydrated) {
-    return null
+    return null;
   }
 
   return (
@@ -15,13 +15,12 @@ export function CountryIndicator() {
       <Button
         type="button"
         variant="outline"
-        className="bg-white shadow-lg border-2 text-sm font-semibold"
+        className="bg-white shadow-lg border-2 text-sm font-semibold cursor-pointer"
         style={{ borderColor: "#002654", color: "#002654" }}
         onClick={openModal}
       >
         País: {country.name}
       </Button>
     </div>
-  )
+  );
 }
-

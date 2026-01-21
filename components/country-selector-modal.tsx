@@ -49,7 +49,7 @@ export function CountrySelectorModal({ onSelect }: CountrySelectorModalProps) {
         {hasConfirmed && (
           <button
             aria-label="Cerrar selector de país"
-            className="absolute right-4 top-4 text-gray-500 transition-colors hover:text-gray-800"
+            className="absolute right-4 top-4 text-gray-500 transition-colors hover:text-gray-800 cursor-pointer"
             onClick={closeModal}
           >
             <X className="h-5 w-5" />
@@ -78,7 +78,7 @@ export function CountrySelectorModal({ onSelect }: CountrySelectorModalProps) {
                 onClick={() => handleSelect(option.code)}
                 className={[
                   "flex flex-col items-center justify-center rounded-2xl border-2 p-4 text-center transition-all",
-                  "hover:-translate-y-1 hover:shadow-lg",
+                  "hover:-translate-y-1 hover:shadow-lg cursor-pointer",
                   isActive ? "border-[#ED2939] shadow-lg" : "border-gray-200",
                 ].join(" ")}
               >

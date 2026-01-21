@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CountryProvider } from "@/components/country-provider";
-import { WorkingHolidayCountryPage } from "@/components/working-holiday/country-page";
+import { WorkingHolidayCountryPage } from "@/components/working-holiday/working-holiday-country";
 import {
   PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES,
   WORKING_HOLIDAY_COUNTRIES,

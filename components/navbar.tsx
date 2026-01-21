@@ -53,13 +53,15 @@ export function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isServicesOpen]);
 
-
   const navLinks = [{ href: "/#nosotros", label: "Nosotros" }];
 
   const serviceLinks = [
     { href: "/servicios/titre-de-sejour", label: "Titre de Séjour" },
     { href: "/servicios/passeport-talent", label: "Visa Passeport Talent" },
-    { href: "/servicios/declaracion-impuestos", label: "Declaración de impuestos" },
+    {
+      href: "/servicios/declaracion-impuestos",
+      label: "Declaración de impuestos",
+    },
     { href: "/servicios", label: "Ver Todos los Servicios", featured: true },
   ];
 
@@ -72,12 +74,12 @@ export function Navbar() {
 
   return (
     <nav
-  className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md transition-all duration-300 ${
-    isScrolled || isOpen
-      ? "bg-white border-b border-gray-200 shadow-sm"
-      : "bg-transparent border-b border-white/10"
-  }`}
->
+      className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md transition-all duration-300 ${
+        isScrolled || isOpen
+          ? "bg-white border-b border-gray-200 shadow-sm"
+          : "bg-transparent border-b border-white/10"
+      }`}
+    >
       <div className="container mx-auto px-2">
         <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
           {/* Logo */}
@@ -87,7 +89,7 @@ export function Navbar() {
           >
             <div className="relative h-10 w-auto md:h-12 transition-transform duration-300 group-hover:scale-105">
               <Image
-                src="/logofondotransparente.png"
+                src="/logo-AF.png"
                 alt="Allée France Logo"
                 width={140}
                 height={56}
@@ -101,12 +103,15 @@ export function Navbar() {
             <span
               className={`hidden md:inline-flex items-center text-base md:text-xl font-black uppercase whitespace-nowrap transition-all duration-300 tracking-[0.08em] ${
                 isScrolled || isOpen
-                  ? "text-[#1E3A8A] group-hover:text-[#2563EB]" 
+                  ? "text-[#1E3A8A] group-hover:text-[#2563EB]"
                   : "text-white group-hover:text-blue-300"
               }`}
               style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
-                textShadow: !isScrolled && !isOpen ? "0 0 8px rgba(0, 0, 0, 0.4)" : "none",
+                textShadow:
+                  !isScrolled && !isOpen
+                    ? "0 0 8px rgba(0, 0, 0, 0.4)"
+                    : "none",
               }}
             >
               <span className="tracking-[0.12em]">ALLÉE</span>
@@ -120,9 +125,12 @@ export function Navbar() {
               className={`inline-flex items-center text-sm font-black uppercase tracking-[0.08em] ${
                 isScrolled || isOpen ? "text-[#1E3A8A]" : "text-white"
               }`}
-              style={{ 
+              style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
-                textShadow: !isScrolled && !isOpen ? "0 0 6px rgba(0, 0, 0, 0.45)" : "none",
+                textShadow:
+                  !isScrolled && !isOpen
+                    ? "0 0 6px rgba(0, 0, 0, 0.45)"
+                    : "none",
               }}
             >
               <span className="tracking-[0.12em]">ALLÉE</span>
@@ -138,15 +146,17 @@ export function Navbar() {
                   key={link.href}
                   href={link.href}
                   className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
-                    isScrolled 
-                      ? "text-gray-800 hover:text-[#2563EB]" 
+                    isScrolled
+                      ? "text-gray-800 hover:text-[#2563EB]"
                       : "text-white hover:text-blue-300"
                   }`}
                 >
                   {link.label}
-                  <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
-                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                  }`}></span>
+                  <span
+                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                      isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                    }`}
+                  ></span>
                 </Link>
               ))}
 
@@ -154,8 +164,8 @@ export function Navbar() {
                 <button
                   type="button"
                   className={`cursor-pointer relative flex items-center gap-1 font-medium transition-all duration-300 group/services ${
-                    isScrolled 
-                      ? "text-gray-800 hover:text-[#2563EB]" 
+                    isScrolled
+                      ? "text-gray-800 hover:text-[#2563EB]"
                       : "text-white hover:text-blue-300"
                   }`}
                   onClick={() => setIsServicesOpen((prev) => !prev)}
@@ -166,15 +176,15 @@ export function Navbar() {
                       isServicesOpen ? "rotate-180" : ""
                     } group-hover/services:translate-y-0.5`}
                   />
-                  <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/services:w-full ${
-                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                  }`}></span>
+                  <span
+                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/services:w-full ${
+                      isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                    }`}
+                  ></span>
                 </button>
 
                 {isServicesOpen && (
-                  <div
-                    className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white backdrop-blur-md shadow-xl border border-gray-200 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto"
-                  >
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white backdrop-blur-md shadow-xl border border-gray-200 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto">
                     {serviceLinks.map((link, index) => (
                       <Link
                         key={link.href}
@@ -206,57 +216,65 @@ export function Navbar() {
               <Link
                 href={otherLinks[0].href}
                 className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
-                  isScrolled 
-                    ? "text-gray-800 hover:text-[#2563EB]" 
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
                 }`}
               >
                 {otherLinks[0].label}
-                <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
-                  isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                }`}></span>
+                <span
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
+                ></span>
               </Link>
 
               <Link
                 href={otherLinks[1].href}
                 className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
-                  isScrolled 
-                    ? "text-gray-800 hover:text-[#2563EB]" 
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
                 }`}
               >
                 {otherLinks[1].label}
-                <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
-                  isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                }`}></span>
+                <span
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
+                ></span>
               </Link>
 
               <Link
                 href={otherLinks[2].href}
                 className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
-                  isScrolled 
-                    ? "text-gray-800 hover:text-[#2563EB]" 
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
                 }`}
               >
                 {otherLinks[2].label}
-                <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
-                  isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                }`}></span>
+                <span
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
+                ></span>
               </Link>
 
               <Link
                 href={otherLinks[3].href}
                 className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
-                  isScrolled 
-                    ? "text-gray-800 hover:text-[#2563EB]" 
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
                 }`}
               >
                 {otherLinks[3].label}
-                <span className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
-                  isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                }`}></span>
+                <span
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
+                ></span>
               </Link>
             </div>
           </div>
@@ -282,7 +300,7 @@ export function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             className={`md:hidden p-2 transition-all duration-300 hover:rotate-90 active:scale-95 ${
               isScrolled || isOpen
-                ? "text-[#1E3A8A] hover:text-[#2563EB]" 
+                ? "text-[#1E3A8A] hover:text-[#2563EB]"
                 : "text-white hover:text-blue-300"
             }`}
             aria-label="Toggle menu"
