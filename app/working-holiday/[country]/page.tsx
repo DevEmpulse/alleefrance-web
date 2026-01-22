@@ -38,6 +38,30 @@ export async function generateMetadata({
   return {
     title: config.seoTitle,
     description: config.seoDescription,
+    keywords: [
+      `working holiday francia ${config.name.toLowerCase()}`,
+      `visa francia ${config.name.toLowerCase()}`,
+      `trabajar en francia ${config.name.toLowerCase()}`,
+      "working holiday",
+      "visa vacaciones trabajo francia",
+    ],
+    openGraph: {
+      title: config.seoTitle,
+      description: config.seoDescription,
+      url: `https://alleefrance.com/working-holiday/${config.code}`,
+      type: "website",
+      images: [
+        {
+          url: "/hero-lyon.jpg",
+          width: 1200,
+          height: 630,
+          alt: `Working Holiday Francia para ${config.name}`,
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://alleefrance.com/working-holiday/${config.code}`,
+    },
   };
 }
 

@@ -11,7 +11,7 @@ import { SiWhatsapp } from "react-icons/si";
 const stats = [
   {
     icon: ShieldCheck,
-    value: "+400",
+    value: "+700",
     label: "Casos exitosos",
     gradient: "from-blue-500 to-blue-700",
   },

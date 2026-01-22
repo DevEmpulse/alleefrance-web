@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -8,6 +9,30 @@ import { ServicesCatalog } from "@/components/servicios/services-catalog";
 import { personas, services } from "@/lib/services-data";
 import { Calendar } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+
+export const metadata: Metadata = {
+  title: "Servicios de Asesoría Migratoria Francia | Visas y Trámites",
+  description:
+    "Catálogo completo de servicios migratorios para Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday, Titre de Séjour, reagrupación familiar y más. +700 casos exitosos.",
+  keywords: [
+    "servicios migratorios francia",
+    "asesoría visa francia",
+    "trámites migratorios francia",
+    "gestoría visa francia",
+    "visa trabajo francia",
+    "visa estudiante francia",
+  ],
+  openGraph: {
+    title: "Servicios de Asesoría Migratoria Francia | Allée France",
+    description:
+      "Catálogo completo de servicios migratorios para Francia. Visa de trabajo, estudios y residencia con expertos.",
+    url: "https://alleefrance.com/servicios",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://alleefrance.com/servicios",
+  },
+};
 
 export default function ServiciosPage() {
   return (

@@ -133,72 +133,6 @@ export function WorkingHolidayCountryPage({
           <CountryGrid onSelect={handleGridSelection} />
         ) : null}
 
-        <section className="py-16 px-6 bg-gray-50">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gray-400 mb-3">
-                  Destinos para {config.name}
-                </p>
-                <h2
-                  className="text-3xl lg:text-4xl font-bold"
-                  style={{ color: "#002654" }}
-                >
-                  Elegí tu próximo destino
-                </h2>
-              </div>
-              <p className="text-gray-600 max-w-lg">
-                Estos son los programas Working Holiday disponibles para tu
-                pasaporte. Te ayudamos a comparar requisitos y tiempos reales.
-              </p>
-            </div>
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {config.destinations.map((destination) => {
-                const normalizedDestination =
-                  normalizeDestinationName(destination);
-                const imageSrc = getDestinationImage(destination);
-                const isUpcoming = destination
-                  .toLowerCase()
-                  .includes("próximamente");
-                return (
-                  <div
-                    key={destination}
-                    className="rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg"
-                  >
-                    <div className="relative h-32 bg-gray-100">
-                      {imageSrc ? (
-                        <>
-                          <Image
-                            src={imageSrc}
-                            alt={`Destino ${normalizedDestination}`}
-                            fill
-                            className="object-cover"
-                          />
-                          <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
-                        </>
-                      ) : (
-                        <div className="absolute inset-0 bg-linear-to-br from-[#0F2354] via-[#193B7A] to-[#2E4EA1] flex items-center justify-center">
-                          <span className="text-white/80 text-sm font-semibold text-center px-4">
-                            {normalizedDestination}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                    <div className="p-4">
-                      <p className="text-base font-semibold text-[#002654]">
-                        {destination}
-                      </p>
-                      <p className="text-sm text-gray-500">
-                        {isUpcoming ? "Próximamente" : "Programas activos"}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         <section className="py-16 px-6">
           <div className="max-w-5xl mx-auto grid gap-10 lg:grid-cols-[3fr,2fr] items-center">
             <div>
@@ -611,6 +545,72 @@ export function WorkingHolidayCountryPage({
                   </ul>
                 </Card>
               ) : null}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-6 bg-[#F8F9FC]">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gray-400 mb-3">
+                  Destinos para {config.name}
+                </p>
+                <h2
+                  className="text-3xl lg:text-4xl font-bold"
+                  style={{ color: "#002654" }}
+                >
+                  Elegí tu próximo destino
+                </h2>
+              </div>
+              <p className="text-gray-600 max-w-lg">
+                Estos son los programas Working Holiday disponibles para tu
+                pasaporte. Te ayudamos a comparar requisitos y tiempos reales.
+              </p>
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {config.destinations.map((destination) => {
+                const normalizedDestination =
+                  normalizeDestinationName(destination);
+                const imageSrc = getDestinationImage(destination);
+                const isUpcoming = destination
+                  .toLowerCase()
+                  .includes("próximamente");
+                return (
+                  <div
+                    key={destination}
+                    className="rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg"
+                  >
+                    <div className="relative h-32 bg-gray-100">
+                      {imageSrc ? (
+                        <>
+                          <Image
+                            src={imageSrc}
+                            alt={`Destino ${normalizedDestination}`}
+                            fill
+                            className="object-cover"
+                          />
+                          <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
+                        </>
+                      ) : (
+                        <div className="absolute inset-0 bg-linear-to-br from-[#0F2354] via-[#193B7A] to-[#2E4EA1] flex items-center justify-center">
+                          <span className="text-white/80 text-sm font-semibold text-center px-4">
+                            {normalizedDestination}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="p-4">
+                      <p className="text-base font-semibold text-[#002654]">
+                        {destination}
+                      </p>
+                      <p className="text-sm text-gray-500">
+                        {isUpcoming ? "Próximamente" : "Programas activos"}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>

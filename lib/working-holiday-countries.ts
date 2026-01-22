@@ -46,9 +46,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       ],
       insuranceNote:
         "Ofrecemos el seguro exigido por consulados y programas Working Holiday con emisión inmediata y certificado para tu dossier.",
-      seoTitle: "Working Holiday Global para Latinoamérica",
+      seoTitle: "Working Holiday Francia 2025 | Requisitos, Cupos y Asesoría",
       seoDescription:
-        "Información centralizada sobre Working Holiday para jóvenes latinoamericanos. Requisitos, cupos y pasos clave.",
+        "Guía completa Working Holiday Francia para latinoamericanos. Requisitos actualizados, cupos por país y asesoría experta. ¡Viví y trabajá en Francia!",
     },
     ar: {
       code: "ar",
@@ -89,9 +89,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
         "Australia: Apertura 1 de Julio",
         "Nueva Zelanda: Septiembre (Fecha variable)",
       ],
-      seoTitle: "Working Holiday para Argentinos 2025/2026",
+      seoTitle: "Working Holiday Francia Argentinos 2025: Requisitos y Guía",
       seoDescription:
-        "Destinos, requisitos y fechas clave para argentinos que aplican a Working Holiday.",
+        "Working Holiday Francia para argentinos: sin cupo anual, requisitos, fondos necesarios y proceso completo. +500 casos exitosos. Asesoría personalizada.",
     },
     cl: {
       code: "cl",
@@ -133,9 +133,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
         "Canadá IEC: Rondas de invitación todo el año",
         "Nueva Zelanda: Octubre",
       ],
-      seoTitle: "Working Holiday para Chilenos 2025/2026",
+      seoTitle: "Working Holiday Francia Chilenos 2025: Cupos y Requisitos",
       seoDescription:
-        "Destinos, requisitos y fechas clave para chilenos que aplican a Working Holiday.",
+        "Working Holiday Francia para chilenos: 400 cupos anuales, requisitos, documentación y fechas de apertura. Asesoría experta para asegurar tu lugar.",
     },
     uy: {
       code: "uy",
@@ -170,9 +170,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
         "Nueva Zelanda: Agosto",
         "Reino Unido: Enero y Julio (Ballot)",
       ],
-      seoTitle: "Working Holiday para Uruguayos 2025/2026",
+      seoTitle: "Working Holiday Francia Uruguayos 2025: Guía Completa",
       seoDescription:
-        "Destinos, requisitos y fechas clave para uruguayos que aplican a Working Holiday.",
+        "Working Holiday Francia para uruguayos: requisitos, documentación y proceso paso a paso. Accedé también a Reino Unido y Australia.",
     },
     mx: {
       code: "mx",
@@ -200,9 +200,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       insuranceNote:
         "Requisito excluyente: Póliza de seguro internacional con repatriación sanitaria.",
       keyDates: ["Canadá IEC: Apertura a inicio de año", "Francia: Todo el año"],
-      seoTitle: "Working Holiday para Mexicanos 2025/2026",
+      seoTitle: "Working Holiday Francia Mexicanos 2025: Requisitos y Proceso",
       seoDescription:
-        "Destinos, requisitos y fechas clave para mexicanos que aplican a Working Holiday.",
+        "Working Holiday Francia para mexicanos: requisitos actualizados, documentación y asesoría profesional. Tu oportunidad de vivir en Francia.",
     },
     ec: {
       code: "ec",
@@ -224,9 +224,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       insuranceNote:
         "Seguro de salud internacional obligatorio para la aplicación consular.",
       keyDates: ["Australia: Apertura 1 de Julio"],
-      seoTitle: "Working Holiday para Ecuatorianos 2025/2026",
+      seoTitle: "Working Holiday Francia Ecuatorianos 2025: Guía y Requisitos",
       seoDescription:
-        "Destinos, requisitos y fechas clave para ecuatorianos que aplican a Working Holiday.",
+        "Working Holiday Francia y Australia para ecuatorianos: requisitos específicos, nivel de inglés y proceso de aplicación con expertos.",
     },
     co: {
       code: "co",
@@ -248,9 +248,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
       insuranceNote:
         "Francia exige certificado de seguro médico por 1 año para aprobar la visa.",
       keyDates: ["Francia: Se renuevan cupos en Enero"],
-      seoTitle: "Working Holiday para Colombianos 2025/2026",
+      seoTitle: "Working Holiday Francia Colombianos 2025: Cupos y Requisitos",
       seoDescription:
-        "Destinos, requisitos y fechas clave para colombianos que aplican a Working Holiday.",
+        "Working Holiday Francia para colombianos: 400 cupos, requisitos, fechas de apertura y acompañamiento profesional. Tu puerta a Europa.",
     },
     pe: {
       code: "pe",
@@ -284,9 +284,9 @@ const COUNTRY_DATA: Record<WorkingHolidayCountryCode, WorkingHolidayCountryConfi
         "Australia: Apertura 1 de Julio",
         "Nueva Zelanda: Fecha variable",
       ],
-      seoTitle: "Working Holiday para Peruanos 2025/2026",
+      seoTitle: "Working Holiday Francia Peruanos 2025: Requisitos y Guía",
       seoDescription:
-        "Destinos, requisitos y fechas clave para peruanos que aplican a Working Holiday.",
+        "Working Holiday Francia y Australia para peruanos: 1.500 cupos Australia, requisitos y proceso completo con asesoría experta.",
     },
   };
 
