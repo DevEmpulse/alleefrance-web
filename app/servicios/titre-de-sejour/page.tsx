@@ -1,14 +1,11 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { FAQSection, type FAQItem } from "@/components/faq-section";
 import {
   CheckCircle2,
   Clock,
   FileText,
-  Phone,
   Calendar,
   Shield,
   RefreshCw,
@@ -17,6 +14,45 @@ import {
 import { SiWhatsapp } from "react-icons/si";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+
+const titreDeSejourFaqs: FAQItem[] = [
+  {
+    question: "¿Cuándo debo renovar mi Titre de Séjour?",
+    answer:
+      "Debes iniciar el proceso de renovación 2-3 meses antes de que expire tu título actual. Esto asegura que tengas tiempo suficiente para completar todos los trámites.",
+    category: ["Titre de Séjour"],
+  },
+  {
+    question: "¿Puedo trabajar mientras espero la renovación?",
+    answer:
+      "Sí, mientras tu solicitud esté en trámite y tengas el récépissé (recibo de solicitud), puedes continuar trabajando legalmente.",
+    category: ["Titre de Séjour"],
+  },
+  {
+    question: "¿Qué pasa si mi Titre de Séjour expira?",
+    answer:
+      "Si tu título expira antes de renovarlo, puedes estar en situación irregular. Es importante iniciar el proceso con anticipación. Te ayudamos a evitar esta situación.",
+    category: ["Titre de Séjour"],
+  },
+  {
+    question: "¿Puedo cambiar de tipo de Titre de Séjour?",
+    answer:
+      "Sí, es posible cambiar de tipo (por ejemplo, de Étudiant a Salarié), pero requiere un proceso específico. Te asesoramos sobre los requisitos y pasos necesarios.",
+    category: ["Titre de Séjour"],
+  },
+  {
+    question: "¿Cuánto tiempo tarda el proceso?",
+    answer:
+      "El tiempo varía según el tipo y la prefectura, generalmente entre 3-6 semanas. Con nuestra ayuda, optimizamos el proceso para evitar retrasos.",
+    category: ["Titre de Séjour"],
+  },
+  {
+    question: "¿Necesito hablar francés para el trámite?",
+    answer:
+      "No es obligatorio, pero es recomendable. Nosotros te acompañamos en todas las comunicaciones con las autoridades francesas.",
+    category: ["Titre de Séjour"],
+  },
+];
 
 export default function TitreDeSejourPage() {
   return (
@@ -59,7 +95,7 @@ export default function TitreDeSejourPage() {
                 rel="noopener noreferrer"
               >
                 <SiWhatsapp className="mr-2 h-5 w-5" />
-                CONSULTAR POR WHATSAPP
+                Consultar por WhatsApp
               </a>
             </Button>
             <Button
@@ -69,14 +105,10 @@ export default function TitreDeSejourPage() {
               style={{ color: "#002654" }}
               asChild
             >
-              <a
-                href="https://alleefrancelyon.taplink.ws"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/#contacto">
                 <Calendar className="mr-2 h-5 w-5" />
-                AGENDAR ASESORÍA
-              </a>
+                Agendar asesoría
+              </Link>
             </Button>
           </div>
         </div>
@@ -423,12 +455,12 @@ export default function TitreDeSejourPage() {
               asChild
             >
               <a
-                href="https://wa.me/33601526171"
+                href="https://wa.me/33601526171?text=Hola%2C%20necesito%20ayuda%20con%20mi%20Titre%20de%20S%C3%A9jour."
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Phone className="mr-2 h-5 w-5" />
-                +33 6 01 52 61 71
+                <SiWhatsapp className="mr-2 h-5 w-5" />
+                Consultar por WhatsApp
               </a>
             </Button>
             <Button
@@ -444,58 +476,14 @@ export default function TitreDeSejourPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl lg:text-4xl font-bold mb-8 text-center"
-            style={{ color: "#002654" }}
-          >
-            Preguntas Frecuentes
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              {
-                q: "¿Cuándo debo renovar mi Titre de Séjour?",
-                a: "Debes iniciar el proceso de renovación 2-3 meses antes de que expire tu título actual. Esto asegura que tengas tiempo suficiente para completar todos los trámites.",
-              },
-              {
-                q: "¿Puedo trabajar mientras espero la renovación?",
-                a: "Sí, mientras tu solicitud esté en trámite y tengas el récépissé (recibo de solicitud), puedes continuar trabajando legalmente.",
-              },
-              {
-                q: "¿Qué pasa si mi Titre de Séjour expira?",
-                a: "Si tu título expira antes de renovarlo, puedes estar en situación irregular. Es importante iniciar el proceso con anticipación. Te ayudamos a evitar esta situación.",
-              },
-              {
-                q: "¿Puedo cambiar de tipo de Titre de Séjour?",
-                a: "Sí, es posible cambiar de tipo (por ejemplo, de Étudiant a Salarié), pero requiere un proceso específico. Te asesoramos sobre los requisitos y pasos necesarios.",
-              },
-              {
-                q: "¿Cuánto tiempo tarda el proceso?",
-                a: "El tiempo varía según el tipo y la prefectura, generalmente entre 3-6 semanas. Con nuestra ayuda, optimizamos el proceso para evitar retrasos.",
-              },
-              {
-                q: "¿Necesito hablar francés para el trámite?",
-                a: "No es obligatorio, pero es recomendable. Nosotros te acompañamos en todas las comunicaciones con las autoridades francesas.",
-              },
-            ].map((faq, index: number) => (
-              <Card key={index} className="p-4">
-                <h4
-                  className="text-sm font-bold mb-2"
-                  style={{ color: "#002654" }}
-                >
-                  {faq.q}
-                </h4>
-                <p className="text-sm text-gray-700 leading-relaxed">{faq.a}</p>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <FAQSection
+        title="Preguntas Frecuentes"
+        description="Resolvemos dudas clave sobre renovación, requisitos y tiempos del Titre de Séjour."
+        allowedCategories={["Titre de Séjour"]}
+        data={titreDeSejourFaqs}
+      />
 
       <Footer />
     </div>
   );
 }
-

@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,9 +9,7 @@ import { HiShieldCheck } from "react-icons/hi2";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const servicesRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,39 +29,7 @@ export function Navbar() {
     }
   }, [isOpen]);
 
-  // Cerrar el desplegable de escritorio si se hace click fuera de él
-  useEffect(() => {
-    if (!isServicesOpen) return;
-
-    const isDesktopView =
-      typeof window !== "undefined" &&
-      window.matchMedia("(min-width: 768px)").matches;
-    if (!isDesktopView) return;
-
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        servicesRef.current &&
-        !servicesRef.current.contains(event.target as Node)
-      ) {
-        setIsServicesOpen(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [isServicesOpen]);
-
   const navLinks = [{ href: "/#nosotros", label: "Nosotros" }];
-
-  const serviceLinks = [
-    { href: "/servicios/titre-de-sejour", label: "Titre de Séjour" },
-    { href: "/servicios/passeport-talent", label: "Visa Passeport Talent" },
-    {
-      href: "/servicios/declaracion-impuestos",
-      label: "Declaración de impuestos",
-    },
-    { href: "/servicios", label: "Ver Todos los Servicios", featured: true },
-  ];
 
   const otherLinks = [
     { href: "/servicios/visas-trabajo", label: "Visa Salarié/Saisonier" },
@@ -160,58 +126,21 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <div className="relative" ref={servicesRef}>
-                <button
-                  type="button"
-                  className={`cursor-pointer relative flex items-center gap-1 font-medium transition-all duration-300 group/services ${
-                    isScrolled
-                      ? "text-gray-800 hover:text-[#2563EB]"
-                      : "text-white hover:text-blue-300"
+              <Link
+                href="/servicios"
+                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
+                    : "text-white hover:text-blue-300"
+                }`}
+              >
+                Servicios
+                <span
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
                   }`}
-                  onClick={() => setIsServicesOpen((prev) => !prev)}
-                >
-                  Servicios
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-300 ${
-                      isServicesOpen ? "rotate-180" : ""
-                    } group-hover/services:translate-y-0.5`}
-                  />
-                  <span
-                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/services:w-full ${
-                      isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
-                  ></span>
-                </button>
-
-                {isServicesOpen && (
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-64 bg-white backdrop-blur-md shadow-xl border border-gray-200 py-2 rounded-lg animate-in fade-in slide-in-from-top-2 duration-200 pointer-events-auto">
-                    {serviceLinks.map((link, index) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        className="relative block px-4 py-2.5 transition-all duration-300 font-medium overflow-hidden group/item cursor-pointer"
-                        style={{
-                          color: link.featured ? "#2563EB" : "#1e293b",
-                          fontWeight: link.featured ? "700" : "500",
-                          animationDelay: `${index * 50}ms`,
-                        }}
-                        onClick={(e) => {
-                          // Permitir que el click funcione normalmente
-                          setIsServicesOpen(false);
-                        }}
-                      >
-                        <span className="relative z-10 transition-all duration-300 group-hover/item:translate-x-2 inline-block">
-                          {link.label}
-                        </span>
-                        <span className="absolute inset-0 bg-blue-50 -translate-x-full group-hover/item:translate-x-0 transition-transform duration-300"></span>
-                        {!link.featured && (
-                          <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#2563EB] scale-y-0 group-hover/item:scale-y-100 transition-transform duration-300 origin-center"></span>
-                        )}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+                ></span>
+              </Link>
 
               <Link
                 href={otherLinks[0].href}
@@ -330,45 +259,17 @@ export function Navbar() {
                 </Link>
               ))}
 
-              <div className="py-2">
-                <button
-                  type="button"
-                  onClick={() => setIsServicesOpen((prev) => !prev)}
-                  className="flex items-center justify-between w-full font-medium py-3 px-4 text-gray-800 hover:text-[#2563EB] hover:bg-blue-50 rounded-lg transition-all duration-300"
-                >
-                  Servicios
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-300 ${
-                      isServicesOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {isServicesOpen && (
-                  <div className="mt-2 ml-4 flex flex-col gap-1 animate-in fade-in slide-in-from-left duration-200">
-                    {serviceLinks.map((link, index) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => {
-                          setIsOpen(false);
-                          setIsServicesOpen(false);
-                        }}
-                        className="relative py-2.5 px-4 rounded-lg transition-all duration-300 group/mobile-item"
-                        style={{
-                          color: link.featured ? "#2563EB" : "#1e293b",
-                          fontWeight: link.featured ? "700" : "500",
-                          animationDelay: `${index * 50}ms`,
-                        }}
-                      >
-                        <span className="relative z-10 transition-all duration-300 group-hover/mobile-item:translate-x-2 inline-block">
-                          {link.label}
-                        </span>
-                        <span className="absolute inset-0 bg-blue-50 rounded-lg scale-x-0 group-hover/mobile-item:scale-x-100 transition-transform duration-300 origin-left"></span>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
+              <Link
+                href="/servicios"
+                onClick={() => setIsOpen(false)}
+                className="relative font-medium py-3 px-4 text-gray-800 transition-all duration-300 hover:text-[#2563EB] hover:bg-blue-50 rounded-lg group/mobile"
+                style={{
+                  animationDelay: `${navLinks.length * 50}ms`,
+                }}
+              >
+                <span className="relative z-10">Servicios</span>
+                <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#2563EB] scale-y-0 group-hover/mobile:scale-y-100 transition-transform duration-300 rounded-l-lg origin-center"></span>
+              </Link>
 
               <Link
                 href={otherLinks[0].href}
