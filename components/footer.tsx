@@ -66,7 +66,6 @@ export function Footer() {
               {[
                 { href: "/#servicios", label: "Servicios" },
                 { href: "/#casos-exitosos", label: "Casos Exitosos" },
-                { href: "/#guia-visas", label: "Guía de Visas" },
                 { href: "/#seguro", label: "Seguro de Viaje" },
                 { href: "/#faq", label: "Preguntas Frecuentes" },
               ].map((link) => (
@@ -188,12 +187,36 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700/50 pt-6 sm:pt-8 mt-6 sm:mt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
-            <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 min-h-[44px] sm:min-h-0">
+            <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1 shrink-0">
               © {new Date().getFullYear()} Allée France. Todos los derechos
               reservados.
             </p>
-            <div className="flex flex-wrap gap-3 sm:gap-4 justify-center sm:justify-end text-xs sm:text-sm order-1 sm:order-2">
+
+            {/* Hecho por Empulse - centro en desktop, último en mobile */}
+            <a
+              href="https://empulse.site"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-2 text-gray-400 hover:text-white transition-colors duration-300 text-xs sm:text-sm order-3 sm:order-2 shrink-0 relative py-1"
+            >
+              <span>Hecho por</span>
+              <Image
+                src="/logoEmpuse.svg"
+                alt="Empulse"
+                width={24}
+                height={24}
+                className="h-5 w-5 sm:h-6 sm:w-6 object-contain opacity-80 group-hover:opacity-100 transition-opacity"
+              />
+              <span className="font-medium">Empulse</span>
+              {/* Hover line animation */}
+              <span
+                className="absolute bottom-0 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 ease-out"
+                aria-hidden
+              />
+            </a>
+
+            <div className="flex flex-wrap gap-3 sm:gap-4 justify-center sm:justify-end text-xs sm:text-sm order-1 sm:order-3">
               <Link
                 href="/politica-de-privacidad"
                 className="text-gray-400 hover:text-white transition-colors duration-300 px-2 py-1 rounded"
