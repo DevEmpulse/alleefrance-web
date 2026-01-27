@@ -50,7 +50,7 @@ export function WorkingHolidayGlobalLanding() {
               "radial-gradient(circle at 10% 10%, rgba(237,41,57,0.18), transparent 45%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.12), transparent 40%), linear-gradient(135deg, #001C45 0%, #002654 55%, #0b1c4a 100%)",
           }}
         >
-          <div className="absolute -top-24 right-10 h-64 w-64 rounded-full bg-[#ED2939]/20 blur-3xl" />
+          <div className="absolute -top-24 right-10 h-64 w-64 rounded-full bg-[#DC1F2E]/20 blur-3xl" />
           <div className="absolute -bottom-20 left-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
 
           <div className="relative max-w-5xl mx-auto text-center">
@@ -68,8 +68,8 @@ export function WorkingHolidayGlobalLanding() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   size="lg"
-                  className="text-white font-semibold hover:opacity-90"
-                  style={{ backgroundColor: "#ED2939" }}
+                  className="text-white font-bold hover:opacity-90"
+                  style={{ backgroundColor: "#DC1F2E" }}
                   asChild
                 >
                   <a href="#origen">Seleccionar país de origen</a>
@@ -149,7 +149,7 @@ export function WorkingHolidayGlobalLanding() {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#ED2939]">
+                  <div className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#DC1F2E]">
                     Explorar guía
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </div>
@@ -236,7 +236,7 @@ export function WorkingHolidayGlobalLanding() {
                     <div className="flex items-start gap-3">
                       <div
                         className="mt-1 h-2 w-2 rounded-full"
-                        style={{ backgroundColor: "#ED2939" }}
+                        style={{ backgroundColor: "#DC1F2E" }}
                       />
                       <p className="text-gray-700">{item}</p>
                     </div>
@@ -261,8 +261,8 @@ export function WorkingHolidayGlobalLanding() {
               </p>
               <Button
                 size="lg"
-                className="w-full text-white font-semibold hover:opacity-90"
-                style={{ backgroundColor: "#ED2939" }}
+                className="w-full text-white font-bold hover:opacity-90"
+                style={{ backgroundColor: "#DC1F2E" }}
                 asChild
               >
                 <a
@@ -333,8 +333,8 @@ export function WorkingHolidayGlobalLanding() {
               </div>
               <Button
                 size="lg"
-                className="text-white font-semibold px-8 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
-                style={{ backgroundColor: "#ED2939" }}
+                className="text-white font-bold px-8 py-6 rounded-full shadow-2xl hover:scale-105 transition-transform"
+                style={{ backgroundColor: "#DC1F2E" }}
                 asChild
               >
                 <a
@@ -372,8 +372,8 @@ export function WorkingHolidayGlobalLanding() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="text-white font-semibold hover:opacity-90"
-                style={{ backgroundColor: "#ED2939" }}
+                className="text-white font-bold hover:opacity-90"
+                style={{ backgroundColor: "#DC1F2E" }}
                 asChild
               >
                 <a

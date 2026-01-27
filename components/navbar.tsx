@@ -210,8 +210,8 @@ export function Navbar() {
 
           <Button
             asChild
-            className="hidden md:inline-flex text-white ml-6 lg:ml-10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
-            style={{ backgroundColor: "#ED2939" }}
+            className="hidden md:inline-flex font-bold text-white ml-6 lg:ml-10 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
+            style={{ backgroundColor: "#DC1F2E" }}
           >
             <a
               href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
@@ -321,8 +321,8 @@ export function Navbar() {
 
               <Button
                 asChild
-                className="text-white w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
-                style={{ backgroundColor: "#ED2939" }}
+                className="text-white font-bold w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
+                style={{ backgroundColor: "#DC1F2E" }}
               >
                 <a
                   href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"

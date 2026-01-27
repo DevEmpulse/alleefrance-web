@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa"; // Usamos React Icons para consistencia exacta
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
@@ -78,7 +78,7 @@ export function BlogSection() {
               </h2>
             </div>
 
-            {/* Botones de Navegación (Escritorio) - Idénticos a SuccessStories */}
+            {/* Botones de Navegación (Escritorio) */}
             <div className="hidden md:flex gap-3">
               <button
                 type="button"
@@ -136,7 +136,8 @@ export function BlogSection() {
                   </p>
                   <span
                     className="text-sm font-semibold flex items-center gap-2 mt-auto"
-                    style={{ color: "#ED2939" }}
+                    // CAMBIO AQUÍ: Se reemplazó #ED2939 por #DC1F2E para cumplir contraste AA (4.5:1)
+                    style={{ color: "#DC1F2E" }}
                   >
                     Leer más
                   </span>
@@ -148,7 +149,7 @@ export function BlogSection() {
 
         <AnimateOnScroll direction="fade" delay={0.3}>
           <div className="flex flex-col items-center justify-center mt-12 gap-6">
-            {/* Navegación Móvil (Idéntica a SuccessStories) */}
+            {/* Navegación Móvil */}
             <div className="flex md:hidden gap-4">
               <button
                 onClick={() => handleScroll("left")}

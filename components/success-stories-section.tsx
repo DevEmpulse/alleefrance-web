@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-// Importamos los iconos desde react-icons como pediste
 import { FcGoogle } from "react-icons/fc";
 import {
   FaStar,
@@ -11,7 +10,6 @@ import {
 } from "react-icons/fa";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
-// Datos reales transcritos de tus capturas
 const testimonials = [
   {
     name: "Carla Behrens",
@@ -134,7 +132,8 @@ export function SuccessStoriesSection() {
                   <p className="font-bold text-gray-900 leading-none">
                     {testimonial.name}
                   </p>
-                  <span className="text-xs text-gray-400 font-medium">
+                  {/* CAMBIO DE COLOR AQUÍ: de text-gray-400 a text-gray-600 para accesibilidad */}
+                  <span className="text-xs text-gray-600 font-medium">
                     {testimonial.date}
                   </span>
                 </div>
@@ -165,14 +164,14 @@ export function SuccessStoriesSection() {
             <div className="flex md:hidden gap-4">
               <button
                 onClick={() => handleScroll("left")}
-                aria-label="Ver anterior"
+                aria-label="Ver opinion anterior"
                 className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
                 <FaChevronLeft />
               </button>
               <button
                 onClick={() => handleScroll("right")}
-                aria-label="Ver siguiente"
+                aria-label="Ver opinion siguiente"
                 className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
                 <FaChevronRight />
