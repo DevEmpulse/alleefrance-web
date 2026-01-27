@@ -237,6 +237,7 @@ function ContactForm() {
             >
               <SelectTrigger
                 className="w-full border-2 justify-between"
+                aria-label="Selecciona tu pais"
                 style={fieldBorderStyles}
                 aria-invalid={errors.country ? "true" : "false"}
               >
@@ -268,6 +269,7 @@ function ContactForm() {
             >
               <SelectTrigger
                 className="w-full border-2 justify-between"
+                aria-label="Selecciona tipo de consulta"
                 style={fieldBorderStyles}
                 aria-invalid={errors.consultationType ? "true" : "false"}
               >
@@ -284,9 +286,7 @@ function ContactForm() {
           )}
         />
         {consultationTypeError && (
-          <p className="mt-2 text-sm text-red-600">
-            {consultationTypeError}
-          </p>
+          <p className="mt-2 text-sm text-red-600">{consultationTypeError}</p>
         )}
       </div>
       <div>

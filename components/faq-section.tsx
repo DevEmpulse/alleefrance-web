@@ -151,7 +151,11 @@ export function FAQSection({
                 value={activeCategory}
                 onValueChange={(value) => setActiveCategory(value)}
               >
-                <SelectTrigger className="w-full md:w-64">
+                {/* Corrección de Accesibilidad: aria-label agregado */}
+                <SelectTrigger
+                  className="w-full md:w-64"
+                  aria-label="Filtrar por categoría"
+                >
                   <SelectValue placeholder="Seleccionar categoría" />
                 </SelectTrigger>
                 <SelectContent>
@@ -167,10 +171,12 @@ export function FAQSection({
               </Select>
             </div>
             <div className="w-full md:max-w-xs">
+              {/* Corrección de Accesibilidad: aria-label agregado */}
               <Input
                 placeholder="Buscar preguntas..."
                 value={searchValue}
                 onChange={(event) => setSearchValue(event.target.value)}
+                aria-label="Buscar preguntas"
               />
             </div>
           </div>
@@ -220,11 +226,14 @@ export function FAQSection({
             <button
               type="button"
               onClick={() =>
-                setVisibleCount((count) => Math.min(count + 6, filteredFaqs.length))
+                setVisibleCount((count) =>
+                  Math.min(count + 6, filteredFaqs.length)
+                )
               }
               className="text-[#002654] font-semibold hover:underline mt-8 flex items-center justify-center w-full cursor-pointer"
             >
-              Ver más preguntas de {activeCategory} (+{filteredFaqs.length - visibleCount})
+              Ver más preguntas de {activeCategory} (+
+              {filteredFaqs.length - visibleCount})
             </button>
           ) : null}
         </div>
