@@ -59,7 +59,8 @@ export default function ServiciosPage() {
 
                 {/* Microcopy de ayuda */}
                 <p className="mt-4 text-sm lg:text-base text-white/80">
-                  ¿No sabés por dónde empezar? Te recomendamos agendar una asesoría.
+                  ¿No sabés por dónde empezar? Te recomendamos agendar una
+                  asesoría.
                 </p>
 
                 {/* Botones principales */}
@@ -72,7 +73,7 @@ export default function ServiciosPage() {
                     asChild
                   >
                     <a
-                      href="https://alleefrancelyon.taplink.ws"
+                      href="/contacto"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -115,9 +116,7 @@ export default function ServiciosPage() {
           {/* CTA FINAL */}
           <AnimateOnScroll direction="fade" delay={0.3}>
             <div className="mt-16 text-center">
-              <Card
-                className="border border-slate-100 bg-white rounded-2xl p-8 shadow-md lg:p-10"
-              >
+              <Card className="border border-slate-100 bg-white rounded-2xl p-8 shadow-md lg:p-10">
                 <h2 className="mb-4 text-2xl font-bold text-[#002654]">
                   ¿No encuentras el servicio que necesitas?
                 </h2>
@@ -146,9 +145,7 @@ export default function ServiciosPage() {
                     className="border-2 bg-white font-semibold text-[#002654] px-8 py-6 rounded-full hover:bg-gray-50 transition-colors"
                     style={{ borderColor: "#002654" }}
                   >
-                    <Link href="/#contacto">
-                      Formulario de contacto
-                    </Link>
+                    <Link href="/#contacto">Formulario de contacto</Link>
                   </Button>
                 </div>
               </Card>

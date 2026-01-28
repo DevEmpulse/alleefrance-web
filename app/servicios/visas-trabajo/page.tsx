@@ -91,11 +91,7 @@ export default function VisasTrabajoPage() {
               style={{ color: "#002654" }}
               asChild
             >
-              <a
-                href="https://alleefrancelyon.taplink.ws"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="/#contacto" target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 AGENDAR ASESORÍA
               </a>

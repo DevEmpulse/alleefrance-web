@@ -115,7 +115,7 @@ export const destinationCatalog = [
   { name: "Portugal", image: "/countries/Portugal.webp" },
   { name: "Suecia", image: "/countries/Suecia.webp" },
   { name: "USA", image: "/countries/USA.webp" },
-  { name: "Francia", image: "/hero-lyon.jpg" },
+  { name: "Francia", image: "/hero-lyon.webp" },
 ];
 
 export const destinationImageMap: Record<string, string> = {
@@ -127,7 +127,7 @@ export const destinationImageMap: Record<string, string> = {
   "Corea del Sur": "/countries/Corea-del-Sur.webp",
   Dinamarca: "/countries/Dinamarca.webp",
   España: "/countries/Espana.webp",
-  Francia: "/hero-lyon.jpg",
+  Francia: "/hero-lyon.webp",
   Irlanda: "/countries/Irlanda.webp",
   Japón: "/countries/Japon.webp",
   Noruega: "/countries/Noruega.webp",
