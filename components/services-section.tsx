@@ -29,7 +29,7 @@ const featuredServices = [
   {
     id: "titre-de-sejour",
     title: "Titre de Séjour",
-    image: "/titre-de-séjour.webp",
+    image: "/titre-de-sejour.webp",
     link: "/servicios/titre-de-sejour",
     description:
       "Regulariza tu residencia con asesoría personalizada y seguimiento.",

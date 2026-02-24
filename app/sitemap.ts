@@ -1,3 +1,4 @@
+export const dynamic = "force-static";
 import { MetadataRoute } from "next";
 import { PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES } from "@/lib/working-holiday-countries";
 
@@ -57,7 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
-    })
+    }),
   );
 
   // Blog posts
