@@ -1,10 +1,18 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { CountrySelectorModal } from "@/components/country-selector-modal";
+import dynamic from "next/dynamic";
 import { CountryIndicator } from "@/components/country-indicator";
 import { useCountry } from "@/components/country-provider";
 import type { WorkingHolidayCountryCode } from "@/lib/working-holiday-countries";
+
+const CountrySelectorModal = dynamic(
+  () =>
+    import("@/components/country-selector-modal").then(
+      (mod) => mod.CountrySelectorModal
+    ),
+  { ssr: false }
+);
 
 export function WorkingHolidayGlobalClient() {
   const router = useRouter();

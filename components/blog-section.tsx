@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
@@ -77,80 +77,100 @@ export function BlogSection() {
                 BLOG
               </h2>
             </div>
+
+            {/* Botones de Navegación (Escritorio) */}
+            <div className="hidden md:flex gap-3">
+              <button
+                type="button"
+                aria-label="Ver artículo anterior"
+                onClick={() => handleScroll("left")}
+                className="cursor-pointer w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-[#002654] hover:text-white hover:border-[#002654] transition-all shadow-sm"
+              >
+                <FaChevronLeft className="text-lg" />
+              </button>
+              <button
+                type="button"
+                aria-label="Ver artículo siguiente"
+                onClick={() => handleScroll("right")}
+                className="cursor-pointer w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-[#002654] hover:text-white hover:border-[#002654] transition-all shadow-sm"
+              >
+                <FaChevronRight className="text-lg" />
+              </button>
+            </div>
           </div>
         </AnimateOnScroll>
 
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide"
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0"
         >
           {blogPosts.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
-              >
-                <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100">
-                  <div className="relative h-48 overflow-hidden">
-                    <img
-                      src={post.image || "/placeholder.svg"}
-                      alt={post.alt}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
+            >
+              <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100 flex flex-col">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={post.image || "/placeholder.svg"}
+                    alt={post.alt}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
 
-                  <div className="p-6 flex flex-col h-full">
-                    <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                      {post.date} · {post.readTime}
-                    </p>
-                    <h3
-                      className="text-lg font-bold mb-3 line-clamp-2"
-                      style={{ color: "#002654" }}
-                    >
-                      {post.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-1">
-                      {post.excerpt}
-                    </p>
-                    <span
-                      className="text-sm font-semibold flex items-center gap-2"
-                      style={{ color: "#ED2939" }}
-                    >
-                      Leer más
-                    </span>
-                  </div>
-                </article>
-              </Link>
+                <div className="p-6 flex flex-col flex-1">
+                  <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+                    {post.date} · {post.readTime}
+                  </p>
+                  <h3
+                    className="text-lg font-bold mb-3 line-clamp-2"
+                    style={{ color: "#002654" }}
+                  >
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2 flex-1">
+                    {post.excerpt}
+                  </p>
+                  <span
+                    className="text-sm font-semibold flex items-center gap-2 mt-auto"
+                    // CAMBIO AQUÍ: Se reemplazó #ED2939 por #DC1F2E para cumplir contraste AA (4.5:1)
+                    style={{ color: "#DC1F2E" }}
+                  >
+                    Leer más
+                  </span>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
 
         <AnimateOnScroll direction="fade" delay={0.3}>
-          
-        <div className="flex items-center justify-center gap-3">
+          <div className="flex flex-col items-center justify-center mt-12 gap-6">
+            {/* Navegación Móvil */}
+            <div className="flex md:hidden gap-4">
               <button
-                type="button"
-                aria-label="Ver anterior"
                 onClick={() => handleScroll("left")}
-                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+                aria-label="Ver anterior"
+                className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
-                <ChevronLeft className="w-5 h-5 mx-auto" />
+                <FaChevronLeft className="text-gray-600" />
               </button>
               <button
-                type="button"
-                aria-label="Ver siguiente"
                 onClick={() => handleScroll("right")}
-                className="w-12 h-12 rounded-full border border-gray-200 text-gray-600 hover:text-white hover:bg-[#002654] transition-colors"
+                aria-label="Ver siguiente"
+                className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
-                <ChevronRight className="w-5 h-5 mx-auto" />
+                <FaChevronRight className="text-gray-600" />
               </button>
             </div>
-          <div className="text-center mt-12">
+
             <Button
               size="lg"
               variant="outline"
-              className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 bg-transparent"
+              className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg border-2 bg-transparent hover:bg-slate-50"
               style={{ borderColor: "#002654", color: "#002654" }}
               asChild
             >

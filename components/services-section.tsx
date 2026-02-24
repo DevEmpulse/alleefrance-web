@@ -29,7 +29,7 @@ const featuredServices = [
   {
     id: "titre-de-sejour",
     title: "Titre de Séjour",
-    image: "/titre-de-séjour.webp",
+    image: "/titre-de-sejour.webp",
     link: "/servicios/titre-de-sejour",
     description:
       "Regulariza tu residencia con asesoría personalizada y seguimiento.",
@@ -122,7 +122,7 @@ export function ServicesSection() {
                 />
 
                 {/* Overlay Oscuro - Siempre visible en la parte inferior para el botón */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent opacity-80 transition-opacity duration-300" />
 
                 {/* Texto descriptivo en hover */}
                 <div className="absolute inset-x-6 bottom-24 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -134,7 +134,9 @@ export function ServicesSection() {
                 {/* Botón siempre visible (visual, el click lo maneja el link superior) */}
                 <div className="absolute inset-x-6 bottom-6 z-10 pointer-events-none">
                   <div className="w-full bg-white text-[#1e3a8a] text-sm font-bold py-2.5 md:py-3 rounded-xl shadow-lg border-2 border-transparent group-hover:border-blue-200 transition-all flex items-center justify-center gap-2">
-                    {service.id === "necesitas-aseoria" ? "CONTACTAR" : "MÁS INFORMACIÓN"}
+                    {service.id === "necesitas-aseoria"
+                      ? "CONTACTAR"
+                      : "MÁS INFORMACIÓN"}
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </div>
                 </div>

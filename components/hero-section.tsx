@@ -91,8 +91,8 @@ export function HeroSection() {
             {/* CTA Principal */}
             <Button
               size="lg"
-              className="text-white font-semibold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
-              style={{ backgroundColor: "#ED2939" }}
+              className="text-white font-bold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
+              style={{ backgroundColor: "#DC1F2E" }}
               asChild
             >
               <Link href="/servicios/visas-trabajo">
@@ -114,7 +114,7 @@ export function HeroSection() {
             {/* CTA WhatsApp */}
             <Button
               size="lg"
-              className="bg-[#25D366] text-white font-semibold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-[#22c55e] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
+              className="bg-[#25D366] text-[#002654] font-bold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-[#22c55e] hover:text-[#002654] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
               asChild
             >
               <a href="https://wa.me/33601526171" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
@@ -142,7 +142,7 @@ export function HeroSection() {
                 por más de 2 años
               </p>
               <div className="flex items-baseline gap-0.5 sm:gap-1 flex-wrap">
-                <span className="text-xl sm:text-3xl lg:text-4xl font-bold leading-none" style={{ color: "#ED2939" }}>
+                <span className="text-xl sm:text-3xl lg:text-4xl font-bold leading-none" style={{ color: "#DC1F2E" }}>
                   <AnimatedCounter end={700} duration={2500} />
                 </span>
                 <span className="text-[10px] sm:text-sm lg:text-base font-semibold text-gray-700 leading-tight">

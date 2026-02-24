@@ -89,7 +89,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html
+      lang="es"
+      className={`${montserrat.variable} ${openSans.variable} scroll-smooth`}
+    >
       <head>
         <meta
           name="viewport"
@@ -184,22 +187,10 @@ export default function RootLayout({
             }),
           }}
         />
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-            :root {
-              --font-montserrat: ${montserrat.style.fontFamily};
-              --font-open-sans: ${openSans.style.fontFamily};
-            }
-            h1, h2, h3, h4, h5, h6 {
-              font-family: var(--font-montserrat), sans-serif;
-              font-weight: 700;
-            }
-          `,
-          }}
-        />
       </head>
-      <body className={`${openSans.className} antialiased overflow-x-hidden`}>
+      <body
+        className={`${openSans.className} antialiased overflow-x-hidden`}
+      >
         {children}
       </body>
     </html>

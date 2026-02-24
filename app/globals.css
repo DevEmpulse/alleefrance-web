@@ -135,6 +135,18 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
+    font-family: var(--font-open-sans), "Open Sans", system-ui, -apple-system,
+      sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-montserrat), "Montserrat", system-ui, -apple-system,
+      sans-serif;
+    font-weight: 700;
   }
 }
 

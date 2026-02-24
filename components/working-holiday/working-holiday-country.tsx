@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CountrySelectorModal } from "@/components/country-selector-modal";
 import { CountryIndicator } from "@/components/country-indicator";
 import { FAQSection } from "@/components/faq-section";
 import { useCountry } from "@/components/country-provider";
@@ -38,6 +38,14 @@ import {
   getDestinationImage,
   normalizeDestinationName,
 } from "@/components/working-holiday/working-holiday-content";
+
+const CountrySelectorModal = dynamic(
+  () =>
+    import("@/components/country-selector-modal").then(
+      (mod) => mod.CountrySelectorModal
+    ),
+  { ssr: false }
+);
 
 type WorkingHolidayCountryPageProps = {
   config: WorkingHolidayCountryConfig;
