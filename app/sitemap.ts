@@ -64,7 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts
   const blogPosts = [
     {
-      url: `${baseUrl}/blog/visa-saisonier-salarie`,
+      url: `${baseUrl}/blog/visa-saisonnier-salarie`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.7,

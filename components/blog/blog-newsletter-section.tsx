@@ -70,11 +70,8 @@ export function BlogNewsletterSection({
           ref={formContainerRef}
           className="mt-10 mx-auto max-w-2xl convertkit-wrapper"
           aria-live="polite"
-        >
-          <noscript>
-            {`Para suscribirte, habilitá JavaScript o escribinos a contacto@alleefrance.com`}
-          </noscript>
-        </div>
+          suppressHydrationWarning
+        />
         </div>
       </section>
     </AnimateOnScroll>

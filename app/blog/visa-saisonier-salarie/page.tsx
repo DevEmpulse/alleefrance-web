@@ -4,9 +4,9 @@ import { BlogCTASections } from "@/components/blog/blog-cta"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Visa Saisonier o Salarié en Francia 2024 | Allée France",
+  title: "Visa saisonnier o Salarié en Francia 2024 | Allée France",
   description:
-    "Checklist completa para postular a la visa Saisonier o Salarié en Francia: requisitos, contrato, plazos, documentación y consejos prácticos.",
+    "Checklist completa para postular a la visa saisonnier o Salarié en Francia: requisitos, contrato, plazos, documentación y consejos prácticos.",
 }
 
 const heroImage = "/seasonal-worker-in-french-vineyard.webp"
@@ -40,7 +40,7 @@ const sectors = [
   },
 ]
 
-export default function VisaSaisonierSalariePage() {
+export default function VisasaisonnierSalariePage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
@@ -57,7 +57,7 @@ export default function VisaSaisonierSalariePage() {
         <div className="absolute inset-0" style={{ backgroundColor: "rgba(0, 38, 84, 0.85)" }} />
         <div className="max-w-4xl mx-auto text-center text-white relative z-10">
           <p className="uppercase tracking-[0.3em] text-sm mb-4 text-white/70">Visas de Trabajo</p>
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Visa Saisonier o Salarié: Guía 2024</h1>
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6">Visa saisonnier o Salarié: Guía 2024</h1>
           <p className="text-xl leading-relaxed mb-6">
             Cómo conseguir un contrato temporal, preparar tu dossier y presentar la visa sin cometer los errores que más rechazos generan.
           </p>
@@ -68,7 +68,7 @@ export default function VisaSaisonierSalariePage() {
         <div className="max-w-4xl mx-auto space-y-12">
           <article className="space-y-8">
             <h2 className="text-3xl font-bold" style={{ color: "#002654" }}>
-              ¿Qué cubre la visa Saisonier / Salarié?
+              ¿Qué cubre la visa saisonnier / Salarié?
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Permite trabajar en Francia entre 3 y 6 meses (renovable hasta 9) en sectores con demanda temporal. La empresa francesa

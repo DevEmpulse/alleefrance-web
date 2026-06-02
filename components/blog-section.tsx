@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
@@ -11,6 +12,26 @@ export function BlogSection() {
 
   const blogPosts = [
     {
+      title: "Bancos físicos vs bancos virtuales en Francia: ¿cuál es la mejor opción para inmigrantes?",
+      excerpt:
+        "Wise, Revolut, N26, Qonto o banco tradicional: descubrí cuál se adapta mejor a tu situación migratoria.",
+      date: "2 Jun 2026",
+      readTime: "12 min",
+      image: "/bancos-france-inmigrantes.webp",
+      alt: "Tarjetas de bancos virtuales como Revolut, Wise y N26 con Torre Eiffel - Guía bancos para inmigrantes en Francia",
+      slug: "bancos-fisicos-vs-virtuales-francia",
+    },
+    {
+      title: "¿Qué es una eSIM y por qué es tan útil hoy en día?",
+      excerpt:
+        "La guía que todo latinoamericano debería leer antes de aterrizar en Francia. Conectividad desde el primer minuto.",
+      date: "2 Jun 2026",
+      readTime: "8 min",
+      image: "/esim-guide-france.webp",
+      alt: "Guía eSIM para latinoamericanos llegando a Francia - Conectividad sin tarjeta física",
+      slug: "esim-guia-latinoamericanos-francia",
+    },
+    {
       title: "Visa Saisonnier o Salarié: Guía Completa 2025",
       excerpt:
         "Checklist de requisitos, cronograma y tips para conseguir un contrato temporal sin rechazos en el consulado.",
@@ -18,7 +39,7 @@ export function BlogSection() {
       readTime: "9 min",
       image: "/seasonal-worker-in-french-vineyard.webp",
       alt: "Trabajador estacional en viñedo francés - Guía visa Saisonnier y Salarié Francia",
-      slug: "visa-saisonier-salarie",
+      slug: "visa-saisonnier-salarie",
     },
     {
       title: "Working Holiday Francia: Checklist para Argentinos 2025",
@@ -112,12 +133,13 @@ export function BlogSection() {
             >
               <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100 flex flex-col">
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={post.image || "/placeholder.svg"}
+                  <Image
+                    src={post.image}
                     alt={post.alt}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 85vw, (max-width: 768px) 60vw, (max-width: 1024px) 45vw, 30vw"
                     loading="lazy"
-                    decoding="async"
                   />
                 </div>
 

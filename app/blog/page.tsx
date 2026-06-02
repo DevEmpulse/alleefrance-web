@@ -30,6 +30,26 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    title: "Bancos físicos vs bancos virtuales en Francia: ¿cuál es la mejor opción para inmigrantes?",
+    excerpt:
+      "Wise, Revolut, N26, Qonto o banco tradicional: descubrí cuál se adapta mejor a tu situación migratoria en Francia.",
+    date: "2 Junio 2026",
+    readTime: "12 min",
+    image: "/bancos-france-inmigrantes.webp",
+    category: "Finanzas",
+    slug: "bancos-fisicos-vs-virtuales-francia",
+  },
+  {
+    title: "¿Qué es una eSIM y por qué es tan útil hoy en día?",
+    excerpt:
+      "La guía que todo latinoamericano debería leer antes de aterrizar en Francia. Conectividad activa desde el momento en que aterrizas.",
+    date: "2 Junio 2026",
+    readTime: "8 min",
+    image: "/esim-guide-france.webp",
+    category: "Conectividad",
+    slug: "esim-guia-latinoamericanos-francia",
+  },
+  {
     title: "Visa Saisonnier o Salarié: Guía Completa 2026",
     excerpt:
       "Requisitos, contratos, tiempos y consejos clave para conseguir un permiso Saisonnier o Salarié temporal en Francia sin sobresaltos.",
@@ -37,7 +57,7 @@ const blogPosts = [
     readTime: "9 min",
     image: "/seasonal-worker-in-french-vineyard.webp",
     category: "Visas de Trabajo",
-    slug: "visa-saisonier-salarie",
+    slug: "visa-saisonnier-salarie",
   },
   {
     title: "Working Holiday Francia: Checklist para Argentinos 2025",
@@ -71,7 +91,8 @@ const blogPosts = [
   },
 ]
 
-const categories = ["Todos", "Visas de Trabajo", "Working Holiday", "Visas de Estudiante", "Idioma y Cultura"]
+const categories = ["Todos", "Finanzas", "Conectividad", "Visas de Trabajo", "Working Holiday", "Visas de Estudiante", "Idioma y Cultura"]
+
 
 export default function BlogPage() {
   return (
