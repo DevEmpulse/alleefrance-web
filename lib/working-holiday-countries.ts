@@ -102,7 +102,7 @@ const COUNTRY_DATA: Record<
     flagSrc: "/bandera-chile.webp",
     heroTitle: "Working Holiday para Chilenos",
     heroSubtitle:
-      "Tu pasaporte te abre las puertas de Europa, Oceanía y Norteamérica. Aprovechá los convenios exclusivos con Canadá y Alianza del Pacífico.",
+      "Tu pasaporte te abre las puertas de Europa, Oceanía y Norteamérica. Aprovecha los convenios exclusivos con Canadá y Alianza del Pacífico.",
     quotaText: "18 Acuerdos vigentes",
     destinations: [
       "Australia",
@@ -211,7 +211,7 @@ const COUNTRY_DATA: Record<
     flagScale: 1.12,
     heroTitle: "Working Holiday para Ecuatorianos",
     heroSubtitle:
-      "Australia y Francia abren sus puertas. Prepará tu aplicación con expertos.",
+      "Australia y Francia abren sus puertas. prepara tu aplicación con expertos.",
     quotaText: "2 Destinos principales",
     destinations: ["Australia", "Francia"],
     requisitos: [

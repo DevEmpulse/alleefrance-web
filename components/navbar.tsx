@@ -32,7 +32,7 @@ export function Navbar() {
   const navLinks = [{ href: "/#nosotros", label: "Nosotros" }];
 
   const otherLinks = [
-    { href: "/servicios/visas-trabajo", label: "Visa Salarié/Saisonnier" },
+    { href: "/servicios/visas-trabajo", label: "Visa Salarié / Saisonnier" },
     { href: "/#working-holiday-section", label: "Working Holiday" },
     { href: "/servicios/visa-etudiant", label: "Visa estudiantes" },
     { href: "/#contacto", label: "Contacto" },
@@ -40,10 +40,11 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md transition-all duration-300 ${isScrolled || isOpen
-        ? "bg-white border-b border-gray-200 shadow-sm"
-        : "bg-transparent border-b border-white/10"
-        }`}
+      className={`fixed top-0 left-0 right-0 z-50 w-full backdrop-blur-md transition-all duration-300 ${
+        isScrolled || isOpen
+          ? "bg-white border-b border-gray-200 shadow-sm"
+          : "bg-transparent border-b border-white/10"
+      }`}
     >
       <div className="container mx-auto px-2">
         <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
@@ -66,10 +67,11 @@ export function Navbar() {
               />
             </div>
             <span
-              className={`hidden md:inline-flex items-center text-base md:text-xl font-black uppercase whitespace-nowrap transition-all duration-300 tracking-[0.08em] ${isScrolled || isOpen
-                ? "text-[#1E3A8A] group-hover:text-[#2563EB]"
-                : "text-white group-hover:text-blue-300"
-                }`}
+              className={`hidden md:inline-flex items-center text-base md:text-xl font-black uppercase whitespace-nowrap transition-all duration-300 tracking-[0.08em] ${
+                isScrolled || isOpen
+                  ? "text-[#1E3A8A] group-hover:text-[#2563EB]"
+                  : "text-white group-hover:text-blue-300"
+              }`}
               style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
                 textShadow:
@@ -86,8 +88,9 @@ export function Navbar() {
           {/* Mobile Site Name */}
           <div className="md:hidden flex-1 flex justify-center">
             <span
-              className={`inline-flex items-center text-sm font-black uppercase tracking-[0.08em] ${isScrolled || isOpen ? "text-[#1E3A8A]" : "text-white"
-                }`}
+              className={`inline-flex items-center text-sm font-black uppercase tracking-[0.08em] ${
+                isScrolled || isOpen ? "text-[#1E3A8A]" : "text-white"
+              }`}
               style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
                 textShadow:
@@ -108,86 +111,98 @@ export function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${isScrolled
-                    ? "text-gray-800 hover:text-[#2563EB]"
-                    : "text-white hover:text-blue-300"
-                    }`}
+                  className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                    isScrolled
+                      ? "text-gray-800 hover:text-[#2563EB]"
+                      : "text-white hover:text-blue-300"
+                  }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                      }`}
+                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                      isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                    }`}
                   ></span>
                 </Link>
               ))}
 
               <Link
                 href="/servicios"
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${isScrolled
-                  ? "text-gray-800 hover:text-[#2563EB]"
-                  : "text-white hover:text-blue-300"
-                  }`}
+                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
+                    : "text-white hover:text-blue-300"
+                }`}
               >
                 Servicios
                 <span
-                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
                 ></span>
               </Link>
 
               <Link
                 href={otherLinks[0].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${isScrolled
-                  ? "text-gray-800 hover:text-[#2563EB]"
-                  : "text-white hover:text-blue-300"
-                  }`}
+                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
+                    : "text-white hover:text-blue-300"
+                }`}
               >
                 {otherLinks[0].label}
                 <span
-                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
                 ></span>
               </Link>
 
               <Link
                 href={otherLinks[1].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${isScrolled
-                  ? "text-gray-800 hover:text-[#2563EB]"
-                  : "text-white hover:text-blue-300"
-                  }`}
+                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
+                    : "text-white hover:text-blue-300"
+                }`}
               >
                 {otherLinks[1].label}
                 <span
-                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
                 ></span>
               </Link>
 
               <Link
                 href={otherLinks[2].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${isScrolled
-                  ? "text-gray-800 hover:text-[#2563EB]"
-                  : "text-white hover:text-blue-300"
-                  }`}
+                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
+                    : "text-white hover:text-blue-300"
+                }`}
               >
                 {otherLinks[2].label}
                 <span
-                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
                 ></span>
               </Link>
 
               <Link
                 href={otherLinks[3].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${isScrolled
-                  ? "text-gray-800 hover:text-[#2563EB]"
-                  : "text-white hover:text-blue-300"
-                  }`}
+                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                  isScrolled
+                    ? "text-gray-800 hover:text-[#2563EB]"
+                    : "text-white hover:text-blue-300"
+                }`}
               >
                 {otherLinks[3].label}
                 <span
-                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
+                  className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
+                    isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
+                  }`}
                 ></span>
               </Link>
             </div>
@@ -212,10 +227,11 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 transition-all duration-300 hover:rotate-90 active:scale-95 ${isScrolled || isOpen
-              ? "text-[#1E3A8A] hover:text-[#2563EB]"
-              : "text-white hover:text-blue-300"
-              }`}
+            className={`md:hidden p-2 transition-all duration-300 hover:rotate-90 active:scale-95 ${
+              isScrolled || isOpen
+                ? "text-[#1E3A8A] hover:text-[#2563EB]"
+                : "text-white hover:text-blue-300"
+            }`}
             aria-label="Toggle menu"
           >
             {isOpen ? (

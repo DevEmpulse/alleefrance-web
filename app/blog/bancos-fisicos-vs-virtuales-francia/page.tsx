@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { Navbar } from "@/components/navbar"
-import { BlogCTASections } from "@/components/blog/blog-cta"
-import { Footer } from "@/components/footer"
-import { AnimateOnScroll } from "@/components/animate-on-scroll"
-import { motion } from "framer-motion"
+import { Navbar } from "@/components/navbar";
+import { BlogCTASections } from "@/components/blog/blog-cta";
+import { Footer } from "@/components/footer";
+import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import { motion } from "framer-motion";
 
-const heroImage = "/bancos-france-inmigrantes.webp"
+const heroImage = "/bancos-france-inmigrantes.webp";
 
 const bancosTradicionales = [
   "BNP Paribas",
@@ -14,13 +14,13 @@ const bancosTradicionales = [
   "Crédit Agricole",
   "La Banque Postale",
   "CIC",
-]
+];
 
 const ventajasFisicos = [
   {
     title: "Reconocimiento institucional",
     detail:
-      "Muchos organismos públicos, arrendadores y empleadores prefieren o exigen una cuenta en un banco \"tradicional\", especialmente para la domiciliación de salario o el pago de alquiler mediante cheque.",
+      'Muchos organismos públicos, arrendadores y empleadores prefieren o exigen una cuenta en un banco "tradicional", especialmente para la domiciliación de salario o el pago de alquiler mediante cheque.',
   },
   {
     title: "Acceso a productos financieros completos",
@@ -37,7 +37,7 @@ const ventajasFisicos = [
     detail:
       "Para personas que prefieren gestionar sus finanzas cara a cara, tener un asesor asignado puede ser un punto a favor.",
   },
-]
+];
 
 const desventajasFisicos = [
   {
@@ -65,7 +65,7 @@ const desventajasFisicos = [
     detail:
       "Desde la solicitud hasta recibir la tarjeta pueden pasar 2 a 4 semanas.",
   },
-]
+];
 
 const neobancos = [
   {
@@ -87,9 +87,10 @@ const neobancos = [
       "La tarjeta física tiene un costo de emisión.",
       "Las funciones más avanzadas requieren el plan de pago.",
     ],
-    idealPara: "Personas que envían o reciben dinero del extranjero con frecuencia y buscan el mejor tipo de cambio.",
+    idealPara:
+      "Personas que envían o reciben dinero del extranjero con frecuencia y buscan el mejor tipo de cambio.",
     affiliate: {
-      label: "Abrí tu cuenta Wise →",
+      label: "Abre tu cuenta Wise →",
       url: "https://wise.com/invite/ahpc/jiovannyalis",
     },
   },
@@ -141,7 +142,7 @@ const neobancos = [
     idealPara:
       "Cualquier persona que llega a Francia y necesita una cuenta operativa de inmediato, con buenas condiciones para el uso cotidiano y los beneficios de un sistema de recompensas real.",
     affiliate: {
-      label: "Abrí tu cuenta Revolut →",
+      label: "Abre tu cuenta Revolut →",
       url: "https://revolut.com/referral/?referral-code=jiovannyali!MAY2-26-AR-RPB-H2&geo-redirect",
     },
   },
@@ -197,7 +198,7 @@ const neobancos = [
       url: "https://share.global66.com/JIOSAN2",
     },
   },
-]
+];
 
 const cuandoUsar = [
   {
@@ -208,7 +209,7 @@ const cuandoUsar = [
   },
   {
     icon: "📋",
-    title: "Si ya llevás tiempo en Francia y tenés estatus estable",
+    title: "Si ya llevás tiempo en Francia y tienes estatus estable",
     detail:
       "Considerá complementar tu cuenta virtual con una cuenta en un banco tradicional. Algunos trámites oficiales, solicitudes de crédito o arrendamientos de largo plazo pueden facilitarse con un banco físico de respaldo.",
   },
@@ -218,7 +219,7 @@ const cuandoUsar = [
     detail:
       "Usar ambos: un neobanco para la operativa diaria y las transferencias internacionales, y un banco tradicional cuando el proceso burocrático lo exija.",
   },
-]
+];
 
 export default function BancosPage() {
   return (
@@ -235,7 +236,10 @@ export default function BancosPage() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0" style={{ backgroundColor: "rgba(0, 38, 84, 0.88)" }} />
+        <div
+          className="absolute inset-0"
+          style={{ backgroundColor: "rgba(0, 38, 84, 0.88)" }}
+        />
         <div className="max-w-4xl mx-auto text-center text-white relative z-10">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -277,21 +281,27 @@ export default function BancosPage() {
       {/* Content */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto space-y-16">
-
           {/* Intro */}
           <AnimateOnScroll direction="up" delay={0}>
             <article className="space-y-5">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Si estás llegando a Francia como inmigrante y te preguntás qué banco abrir, la respuesta corta es:{" "}
-                <strong>un banco virtual es casi siempre la mejor opción para empezar.</strong> Los bancos virtuales
-                en Francia como Wise, Revolut y Qonto ofrecen apertura de cuenta 100% en línea, sin necesidad de un
-                domicilio francés consolidado ni de un contrato de trabajo previo, con tarifas mucho más bajas que los
-                bancos tradicionales y con interfaces disponibles en varios idiomas.
+                Si estás llegando a Francia como inmigrante y te preguntás qué
+                banco abrir, la respuesta corta es:{" "}
+                <strong>
+                  un banco virtual es casi siempre la mejor opción para empezar.
+                </strong>{" "}
+                Los bancos virtuales en Francia como Wise, Revolut y Qonto
+                ofrecen apertura de cuenta 100% en línea, sin necesidad de un
+                domicilio francés consolidado ni de un contrato de trabajo
+                previo, con tarifas mucho más bajas que los bancos tradicionales
+                y con interfaces disponibles en varios idiomas.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                En cambio, los bancos físicos como BNP Paribas, Société Générale o Crédit Agricole suelen exigir
-                documentación extensa, citas presenciales y, en muchos casos, rechazan solicitudes de personas con
-                estatus migratorio reciente o en proceso de regularización. Conocer las diferencias entre ambos modelos
+                En cambio, los bancos físicos como BNP Paribas, Société Générale
+                o Crédit Agricole suelen exigir documentación extensa, citas
+                presenciales y, en muchos casos, rechazan solicitudes de
+                personas con estatus migratorio reciente o en proceso de
+                regularización. Conocer las diferencias entre ambos modelos
                 puede ahorrarte semanas de trámites y muchos dolores de cabeza.
               </p>
             </article>
@@ -301,18 +311,23 @@ export default function BancosPage() {
           <AnimateOnScroll direction="up" delay={0.1}>
             <article className="space-y-5">
               <h2 className="text-3xl font-bold" style={{ color: "#002654" }}>
-                El sistema bancario en Francia: lo que nadie te explica antes de llegar
+                El sistema bancario en Francia: lo que nadie te explica antes de
+                llegar
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Francia tiene un sistema bancario sólido y bien regulado, pero también notoriamente burocrático. Abrir
-                una cuenta bancaria en un banco tradicional puede convertirse en una misión casi imposible durante los
-                primeros meses de estadía, precisamente cuando más la necesitás.
+                Francia tiene un sistema bancario sólido y bien regulado, pero
+                también notoriamente burocrático. Abrir una cuenta bancaria en
+                un banco tradicional puede convertirse en una misión casi
+                imposible durante los primeros meses de estadía, precisamente
+                cuando más la necesitás.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Para cobrar un salario, pagar un alquiler, recibir transferencias del exterior o simplemente sobrevivir
-                económicamente en Francia, necesitás una cuenta bancaria. Pero conseguirla puede ser el primer
-                obstáculo con el que chocás. Aquí es donde la distinción entre bancos físicos y bancos virtuales se
-                vuelve crucial.
+                Para cobrar un salario, pagar un alquiler, recibir
+                transferencias del exterior o simplemente sobrevivir
+                económicamente en Francia, necesitás una cuenta bancaria. Pero
+                conseguirla puede ser el primer obstáculo con el que chocás.
+                Aquí es donde la distinción entre bancos físicos y bancos
+                virtuales se vuelve crucial.
               </p>
             </article>
           </AnimateOnScroll>
@@ -325,7 +340,10 @@ export default function BancosPage() {
               </h2>
 
               <div className="p-5 rounded-2xl bg-gray-50 border border-gray-100">
-                <h3 className="text-lg font-semibold mb-3" style={{ color: "#002654" }}>
+                <h3
+                  className="text-lg font-semibold mb-3"
+                  style={{ color: "#002654" }}
+                >
                   Los más conocidos
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -343,27 +361,47 @@ export default function BancosPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold flex items-center gap-2" style={{ color: "#002654" }}>
+                  <h3
+                    className="text-xl font-semibold flex items-center gap-2"
+                    style={{ color: "#002654" }}
+                  >
                     <span className="text-green-500">✓</span> Ventajas
                   </h3>
                   <div className="space-y-3">
                     {ventajasFisicos.map((v) => (
-                      <div key={v.title} className="p-4 rounded-xl bg-green-50 border border-green-100">
-                        <p className="font-semibold text-sm text-green-800 mb-1">{v.title}</p>
-                        <p className="text-gray-600 text-sm leading-relaxed">{v.detail}</p>
+                      <div
+                        key={v.title}
+                        className="p-4 rounded-xl bg-green-50 border border-green-100"
+                      >
+                        <p className="font-semibold text-sm text-green-800 mb-1">
+                          {v.title}
+                        </p>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {v.detail}
+                        </p>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold flex items-center gap-2" style={{ color: "#002654" }}>
+                  <h3
+                    className="text-xl font-semibold flex items-center gap-2"
+                    style={{ color: "#002654" }}
+                  >
                     <span className="text-red-500">✗</span> Desventajas
                   </h3>
                   <div className="space-y-3">
                     {desventajasFisicos.map((d) => (
-                      <div key={d.title} className="p-4 rounded-xl bg-red-50 border border-red-100">
-                        <p className="font-semibold text-sm text-red-800 mb-1">{d.title}</p>
-                        <p className="text-gray-600 text-sm leading-relaxed">{d.detail}</p>
+                      <div
+                        key={d.title}
+                        className="p-4 rounded-xl bg-red-50 border border-red-100"
+                      >
+                        <p className="font-semibold text-sm text-red-800 mb-1">
+                          {d.title}
+                        </p>
+                        <p className="text-gray-600 text-sm leading-relaxed">
+                          {d.detail}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -378,15 +416,20 @@ export default function BancosPage() {
               Bancos virtuales en Francia: los mejores para inmigrantes
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Los neobancos operan completamente en línea, sin sucursales físicas. Estos son los más utilizados por
-              la comunidad latinoamericana en Francia:
+              Los neobancos operan completamente en línea, sin sucursales
+              físicas. Estos son los más utilizados por la comunidad
+              latinoamericana en Francia:
             </p>
           </AnimateOnScroll>
 
           {/* Cards de neobancos */}
           <div className="space-y-8">
             {neobancos.map((neo, index) => (
-              <AnimateOnScroll key={neo.name} direction="up" delay={index * 0.08}>
+              <AnimateOnScroll
+                key={neo.name}
+                direction="up"
+                delay={index * 0.08}
+              >
                 <div
                   className="rounded-2xl overflow-hidden border shadow-sm"
                   style={{ borderColor: `${neo.color}30` }}
@@ -400,7 +443,10 @@ export default function BancosPage() {
                       <span className="text-3xl">{neo.emoji}</span>
                       <div>
                         <div className="flex items-center gap-2">
-                          <h3 className="text-2xl font-bold" style={{ color: neo.color }}>
+                          <h3
+                            className="text-2xl font-bold"
+                            style={{ color: neo.color }}
+                          >
                             {neo.name}
                           </h3>
                           {"badge" in neo && neo.badge && (
@@ -420,22 +466,36 @@ export default function BancosPage() {
                   {/* Body */}
                   <div className="p-6 grid md:grid-cols-2 gap-6">
                     <div>
-                      <p className="text-sm font-semibold text-green-700 uppercase tracking-wide mb-3">✓ Ventajas</p>
+                      <p className="text-sm font-semibold text-green-700 uppercase tracking-wide mb-3">
+                        ✓ Ventajas
+                      </p>
                       <ul className="space-y-2">
                         {neo.ventajas.map((v) => (
-                          <li key={v} className="flex gap-2 text-sm text-gray-700 leading-relaxed">
-                            <span className="text-green-500 mt-0.5 flex-shrink-0">•</span>
+                          <li
+                            key={v}
+                            className="flex gap-2 text-sm text-gray-700 leading-relaxed"
+                          >
+                            <span className="text-green-500 mt-0.5 shrink-0">
+                              •
+                            </span>
                             {v}
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-sm font-semibold text-red-700 uppercase tracking-wide mb-3">✗ Desventajas</p>
+                      <p className="text-sm font-semibold text-red-700 uppercase tracking-wide mb-3">
+                        ✗ Desventajas
+                      </p>
                       <ul className="space-y-2">
                         {neo.desventajas.map((d) => (
-                          <li key={d} className="flex gap-2 text-sm text-gray-700 leading-relaxed">
-                            <span className="text-red-400 mt-0.5 flex-shrink-0">•</span>
+                          <li
+                            key={d}
+                            className="flex gap-2 text-sm text-gray-700 leading-relaxed"
+                          >
+                            <span className="text-red-400 mt-0.5 shrink-0">
+                              •
+                            </span>
                             {d}
                           </li>
                         ))}
@@ -446,10 +506,16 @@ export default function BancosPage() {
                   {/* Footer */}
                   <div
                     className="px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-t"
-                    style={{ backgroundColor: neo.bgColor, borderColor: neo.color + "20" }}
+                    style={{
+                      backgroundColor: neo.bgColor,
+                      borderColor: neo.color + "20",
+                    }}
                   >
                     <p className="text-sm text-gray-600">
-                      <span className="font-semibold" style={{ color: neo.color }}>
+                      <span
+                        className="font-semibold"
+                        style={{ color: neo.color }}
+                      >
                         Ideal para:{" "}
                       </span>
                       {neo.idealPara}
@@ -459,7 +525,7 @@ export default function BancosPage() {
                         href={neo.affiliate.url}
                         target="_blank"
                         rel="noopener noreferrer sponsored"
-                        className="flex-shrink-0 text-sm font-bold px-4 py-2 rounded-lg text-white transition-opacity hover:opacity-85"
+                        className="shrink-0 text-sm font-bold px-4 py-2 rounded-lg text-white transition-opacity hover:opacity-85"
                         style={{ backgroundColor: neo.color }}
                       >
                         {neo.affiliate.label}
@@ -475,22 +541,30 @@ export default function BancosPage() {
           <AnimateOnScroll direction="up" delay={0.1}>
             <div
               className="p-6 rounded-2xl"
-              style={{ background: "linear-gradient(135deg, #191c1f 0%, #2d3436 100%)" }}
+              style={{
+                background: "linear-gradient(135deg, #191c1f 0%, #2d3436 100%)",
+              }}
             >
-              <p className="text-xs uppercase tracking-widest text-white/50 mb-2">Beneficio destacado</p>
+              <p className="text-xs uppercase tracking-widest text-white/50 mb-2">
+                Beneficio destacado
+              </p>
               <h2 className="text-2xl font-bold text-white mb-4">
                 ¿Por qué los RevPoints de Revolut valen la pena?
               </h2>
               <p className="text-white/80 leading-relaxed mb-4">
-                Uno de los aspectos más interesantes de Revolut para quienes recién llegan a Francia es su programa
-                de recompensas. Cada vez que pagás con tu tarjeta Revolut, acumulás RevPoints. Estos puntos se pueden
-                canjear directamente en la plataforma por descuentos en compras, productos de marcas seleccionadas,
+                Uno de los aspectos más interesantes de Revolut para quienes
+                recién llegan a Francia es su programa de recompensas. Cada vez
+                que pagás con tu tarjeta Revolut, acumulás RevPoints. Estos
+                puntos se pueden canjear directamente en la plataforma por
+                descuentos en compras, productos de marcas seleccionadas,
                 cashback o acceso a experiencias.
               </p>
               <p className="text-white/80 leading-relaxed">
-                Para alguien que está construyendo su vida desde cero en un nuevo país, cada compra cotidiana —desde
-                el supermercado hasta el transporte— se convierte en una oportunidad de acumular valor. No es un
-                sistema exagerado, pero es real, funcional y se integra de forma natural al uso diario de la cuenta.
+                Para alguien que está construyendo su vida desde cero en un
+                nuevo país, cada compra cotidiana —desde el supermercado hasta
+                el transporte— se convierte en una oportunidad de acumular
+                valor. No es un sistema exagerado, pero es real, funcional y se
+                integra de forma natural al uso diario de la cuenta.
               </p>
               <a
                 href="https://revolut.com/referral/?referral-code=jiovannyali!MAY2-26-AR-RPB-H2&geo-redirect"
@@ -498,7 +572,7 @@ export default function BancosPage() {
                 rel="noopener noreferrer sponsored"
                 className="inline-block mt-5 text-sm font-bold px-5 py-2.5 rounded-lg bg-white text-black hover:bg-gray-100 transition-colors"
               >
-                Abrí tu cuenta Revolut y empezá a acumular →
+                Abre tu cuenta Revolut y empieza a acumular →
               </a>
             </div>
           </AnimateOnScroll>
@@ -511,10 +585,20 @@ export default function BancosPage() {
               </h2>
               <div className="grid md:grid-cols-3 gap-5">
                 {cuandoUsar.map((item) => (
-                  <div key={item.title} className="p-5 rounded-2xl border border-gray-100 shadow-sm bg-white h-full">
+                  <div
+                    key={item.title}
+                    className="p-5 rounded-2xl border border-gray-100 shadow-sm bg-white h-full"
+                  >
                     <span className="text-3xl block mb-3">{item.icon}</span>
-                    <p className="font-bold text-sm mb-2" style={{ color: "#002654" }}>{item.title}</p>
-                    <p className="text-gray-600 text-sm leading-relaxed">{item.detail}</p>
+                    <p
+                      className="font-bold text-sm mb-2"
+                      style={{ color: "#002654" }}
+                    >
+                      {item.title}
+                    </p>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {item.detail}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -528,15 +612,18 @@ export default function BancosPage() {
                 Conclusión
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                El sistema bancario en Francia puede parecer un laberinto al principio, pero hoy existen herramientas
-                reales que lo hacen mucho más accesible. Los bancos virtuales han democratizado el acceso financiero
-                para inmigrantes, y opciones como Wise, Qonto y Revolut ofrecen soluciones concretas según cada
-                perfil y necesidad.
+                El sistema bancario en Francia puede parecer un laberinto al
+                principio, pero hoy existen herramientas reales que lo hacen
+                mucho más accesible. Los bancos virtuales han democratizado el
+                acceso financiero para inmigrantes, y opciones como Wise, Qonto
+                y Revolut ofrecen soluciones concretas según cada perfil y
+                necesidad.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Si buscás empezar rápido, con una cuenta funcional desde el primer día y beneficios que se acumulan
-                con cada gasto cotidiano, Revolut es difícilmente superable como punto de entrada al sistema
-                financiero francés.
+                Si buscas empezar rápido, con una cuenta funcional desde el
+                primer día y beneficios que se acumulan con cada gasto
+                cotidiano, Revolut es difícilmente superable como punto de
+                entrada al sistema financiero francés.
               </p>
             </article>
           </AnimateOnScroll>
@@ -545,11 +632,16 @@ export default function BancosPage() {
           <AnimateOnScroll direction="up" delay={0.1}>
             <div
               className="p-6 rounded-2xl text-center space-y-4"
-              style={{ backgroundColor: "#f0f4fb", border: "1px solid #00265420" }}
+              style={{
+                backgroundColor: "#f0f4fb",
+                border: "1px solid #00265420",
+              }}
             >
-              <p className="text-sm uppercase tracking-widest text-gray-500">Empezá hoy</p>
+              <p className="text-sm uppercase tracking-widest text-gray-500">
+                empieza hoy
+              </p>
               <h3 className="text-xl font-bold" style={{ color: "#002654" }}>
-                Usá mis enlaces y empezá a acumular beneficios desde el Día 1
+                Usa mis enlaces y empieza a acumular beneficios desde el Día 1
               </h3>
               <div className="flex flex-wrap justify-center gap-3 pt-2">
                 <a
@@ -582,12 +674,11 @@ export default function BancosPage() {
               </div>
             </div>
           </AnimateOnScroll>
-
         </div>
       </section>
 
       <BlogCTASections />
       <Footer />
     </div>
-  )
+  );
 }

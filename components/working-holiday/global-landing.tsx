@@ -37,7 +37,7 @@ const workingHolidayFaqCategories = [
 const OtherDestinationsCarousel = dynamic(
   () =>
     import("@/components/working-holiday/other-destinations-carousel").then(
-      (mod) => mod.OtherDestinationsCarousel
+      (mod) => mod.OtherDestinationsCarousel,
     ),
   {
     loading: () => (
@@ -46,7 +46,7 @@ const OtherDestinationsCarousel = dynamic(
         aria-hidden="true"
       />
     ),
-  }
+  },
 );
 
 const FAQSection = dynamic(
@@ -57,7 +57,7 @@ const FAQSection = dynamic(
         Cargando preguntas frecuentes...
       </section>
     ),
-  }
+  },
 );
 
 export function WorkingHolidayGlobalLanding() {
@@ -86,8 +86,8 @@ export function WorkingHolidayGlobalLanding() {
               Viví y Trabajá en el mundo.
             </h1>
             <p className="text-lg lg:text-xl text-white/85 leading-relaxed mb-8 max-w-3xl mx-auto">
-              Tu nacionalidad es tu pasaporte a nuevas oportunidades. Elegí tu
-              país de origen, encontrá destinos disponibles y armá una
+              Tu nacionalidad es tu pasaporte a nuevas oportunidades. Elige tu
+              país de origen, encontrá destinos disponibles y arma una
               estrategia realista para viajar, trabajar y aprender.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -138,7 +138,7 @@ export function WorkingHolidayGlobalLanding() {
                 Tu ruta empieza acá
               </h2>
               <p className="text-gray-600 max-w-3xl mx-auto">
-                Elegí tu nacionalidad para acceder a requisitos, tiempos de
+                Elige tu nacionalidad para acceder a requisitos, tiempos de
                 apertura y recomendaciones específicas para tu postulación.
               </p>
             </div>
@@ -194,11 +194,11 @@ export function WorkingHolidayGlobalLanding() {
                   className="text-3xl lg:text-4xl font-bold"
                   style={{ color: "#002654" }}
                 >
-                  Elegí dónde querés vivir la experiencia
+                  Elige dónde querés vivir la experiencia
                 </h2>
               </div>
               <p className="text-gray-600 max-w-lg">
-                Seleccioná un destino para descubrir requisitos, cupos y
+                Selecciona un destino para descubrir requisitos, cupos y
                 oportunidades laborales vigentes en cada país.
               </p>
             </div>

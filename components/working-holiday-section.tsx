@@ -60,7 +60,7 @@ export function WorkingHolidaySection() {
                 <ul className="mt-6 space-y-2 text-slate-200 sm:space-y-3">
                   {[
                     "Gestión integral de visa",
-                    "Alojamiento y empleo garantizado",
+                    "Orientación para búsqueda de alojamiento y empleo",
                     "Comunidad exclusiva de viajeros",
                   ].map((item) => (
                     <li
@@ -86,7 +86,7 @@ export function WorkingHolidaySection() {
                       href="/working-holiday"
                       className="flex items-center gap-2"
                     >
-                      Comenzá tu viaje
+                      Comienza tu viaje
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>

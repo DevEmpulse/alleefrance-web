@@ -17,8 +17,8 @@ export default function TerminosYCondicionesPage() {
             </h1>
             <p className="mt-4 text-base sm:text-lg text-white/90 leading-relaxed">
               Bienvenido/a a Allée France Lyon. Al acceder y utilizar
-              alleefrance.com (en adelante, “el Sitio”), aceptás estos términos y
-              condiciones de uso.
+              alleefrance.com (en adelante, “el Sitio”), aceptás estos términos
+              y condiciones de uso.
             </p>
           </div>
         </section>
@@ -148,9 +148,11 @@ export default function TerminosYCondicionesPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#002654]">10. Contacto</h2>
+                <h2 className="text-2xl font-bold text-[#002654]">
+                  10. Contacto
+                </h2>
                 <p className="leading-relaxed">
-                  Si tenés consultas sobre estos términos, escribinos a{" "}
+                  Si tienes consultas sobre estos términos, escribenos a{" "}
                   <a
                     href="mailto:contacto@alleefrance.com"
                     className="font-semibold text-[#002654] underline-offset-4 hover:underline"

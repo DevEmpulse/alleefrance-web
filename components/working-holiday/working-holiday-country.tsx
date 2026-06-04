@@ -42,9 +42,9 @@ import {
 const CountrySelectorModal = dynamic(
   () =>
     import("@/components/country-selector-modal").then(
-      (mod) => mod.CountrySelectorModal
+      (mod) => mod.CountrySelectorModal,
     ),
-  { ssr: false }
+  { ssr: false },
 );
 
 type WorkingHolidayCountryPageProps = {
@@ -80,7 +80,7 @@ export function WorkingHolidayCountryPage({
   const faqCategories = ["WH: General", "Seguros", `WH: ${config.name}`];
   const faqItems = getFaqsByCategories(faqCategories);
   const whatsappConsultLink = `https://wa.me/33601526171?text=${encodeURIComponent(
-    `Hola, soy de ${config.name} y me interesa una Working Holiday.`
+    `Hola, soy de ${config.name} y me interesa una Working Holiday.`,
   )}`;
 
   return (
@@ -159,9 +159,9 @@ export function WorkingHolidayCountryPage({
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
                 Desde Allée France te guiamos en cada etapa: planificación,
-                papeles, turnos consulares y adaptación al llegar. Nos
-                enfocamos en anticipar problemas y fortalecer tu dossier para
-                que puedas aprovechar los cupos sin contratiempos.
+                papeles, turnos consulares y adaptación al llegar. Nos enfocamos
+                en anticipar problemas y fortalecer tu dossier para que puedas
+                aprovechar los cupos sin contratiempos.
               </p>
             </div>
             <Card className="p-6 bg-gray-50 border border-gray-100 shadow-sm">
@@ -171,7 +171,10 @@ export function WorkingHolidayCountryPage({
                   <p className="text-sm uppercase tracking-wide text-gray-500">
                     Cupo estimado · {config.label}
                   </p>
-                  <p className="text-2xl font-bold" style={{ color: "#002654" }}>
+                  <p
+                    className="text-2xl font-bold"
+                    style={{ color: "#002654" }}
+                  >
                     {config.quotaText ?? "Cupo oficial a confirmar"}
                   </p>
                 </div>
@@ -515,15 +518,15 @@ export function WorkingHolidayCountryPage({
                 </h3>
                 <ul className="space-y-4 text-gray-700 leading-relaxed">
                   <li>
-                    Ordená el dossier según el checklist oficial. Usamos
+                    Ordena el dossier según el checklist oficial. Usamos
                     separadores para agilizar la revisión.
                   </li>
                   <li>
-                    Tené listos comprobantes impresos y digitales en un pendrive
+                    Ten listos comprobantes impresos y digitales en un pendrive
                     o carpeta en la nube.
                   </li>
                   <li>
-                    Prepará respuestas claras sobre tu plan de viaje,
+                    prepara respuestas claras sobre tu plan de viaje,
                     alojamiento, fondos y objetivos.
                   </li>
                   <li>
@@ -568,7 +571,7 @@ export function WorkingHolidayCountryPage({
                   className="text-3xl lg:text-4xl font-bold"
                   style={{ color: "#002654" }}
                 >
-                  Elegí tu próximo destino
+                  Elige tu próximo destino
                 </h2>
               </div>
               <p className="text-gray-600 max-w-lg">
@@ -633,7 +636,7 @@ export function WorkingHolidayCountryPage({
         <section className="py-16 px-6 bg-[#0F2354] text-white">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              ¿Cuál visa es la adecuada para vos?
+              ¿Cuál visa es la adecuada para ti?
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               Contactanos para una asesoría personalizada y descubrí cuál es la

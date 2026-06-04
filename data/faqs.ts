@@ -5,7 +5,7 @@ export const ALL_FAQS: FAQItem[] = [
   {
     question: "¿Cuánto tarda una autorización de trabajo?",
     answer:
-      "El promedio va de 8 a 12 semanas, dependiendo del puesto, de la prefectura y de la carga de trabajo del Ministère de l’Intérieur. Podés acortar demoras enviando el expediente completo desde el inicio y respondiendo rápido a los pedidos de información.",
+      "El promedio va de 8 a 12 semanas, dependiendo del puesto, de la prefectura y de la carga de trabajo del Ministère de l’Intérieur. Puedes acortar demoras enviando el expediente completo desde el inicio y respondiendo rápido a los pedidos de información.",
     category: ["Trámites", "General"],
   },
   {
@@ -689,6 +689,6 @@ export const ALL_FAQS: FAQItem[] = [
 export const getFaqsByCategories = (categories: string[]) => {
   const categorySet = new Set(categories);
   return ALL_FAQS.filter((faq) =>
-    faq.category.some((category) => categorySet.has(category))
+    faq.category.some((category) => categorySet.has(category)),
   );
 };

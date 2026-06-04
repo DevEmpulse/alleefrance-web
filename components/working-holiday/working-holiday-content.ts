@@ -24,19 +24,19 @@ export const beneficios = [
     icon: Briefcase,
     title: "Trabajar legalmente",
     description:
-      "Podés realizar empleos temporales para financiar tu estadía y sumar experiencia internacional en tu CV.",
+      "Puedes realizar empleos temporales para financiar tu estadía y sumar experiencia internacional en tu CV.",
   },
   {
     icon: Globe,
     title: "Explorar nuevos países",
     description:
-      "Combiná trabajo y turismo para conocer nuevas culturas mientras sostenés tu viaje.",
+      "Combina trabajo y turismo para conocer nuevas culturas mientras sostienes tu viaje.",
   },
   {
     icon: Heart,
     title: "Inmersión cultural real",
     description:
-      "Mejorá el idioma, hacé amistades internacionales y viví el día a día local.",
+      "Mejora el idioma, haz amistades internacionales y viví el día a día local.",
   },
 ];
 

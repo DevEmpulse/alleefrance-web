@@ -1,6 +1,6 @@
-import type { Metadata } from "next"
-import { BlogPageContent } from "@/components/blog/blog-page-content"
-import { Footer } from "@/components/footer"
+import type { Metadata } from "next";
+import { BlogPageContent } from "@/components/blog/blog-page-content";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Blog de Migración a Francia | Guías, Visas y Consejos 2025",
@@ -26,11 +26,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://alleefrance.com/blog",
   },
-}
+};
 
 const blogPosts = [
   {
-    title: "Bancos físicos vs bancos virtuales en Francia: ¿cuál es la mejor opción para inmigrantes?",
+    title:
+      "Bancos físicos vs bancos virtuales en Francia: ¿cuál es la mejor opción para inmigrantes?",
     excerpt:
       "Wise, Revolut, N26, Qonto o banco tradicional: descubrí cuál se adapta mejor a tu situación migratoria en Francia.",
     date: "2 Junio 2026",
@@ -72,7 +73,7 @@ const blogPosts = [
   {
     title: "Visa de Estudiante Francia 2025: Campus France y Consulado",
     excerpt:
-      "Organizá tu calendario desde la búsqueda de programas hasta la llegada a Francia, con checklists y documentos imprescindibles.",
+      "Organiza tu calendario desde la búsqueda de programas hasta la llegada a Francia, con checklists y documentos imprescindibles.",
     date: "5 Enero 2025",
     readTime: "10 min",
     image: "/student-studying-in-paris.webp",
@@ -89,10 +90,17 @@ const blogPosts = [
     category: "Idioma y Cultura",
     slug: "aprender-frances-recursos",
   },
-]
+];
 
-const categories = ["Todos", "Finanzas", "Conectividad", "Visas de Trabajo", "Working Holiday", "Visas de Estudiante", "Idioma y Cultura"]
-
+const categories = [
+  "Todos",
+  "Finanzas",
+  "Conectividad",
+  "Visas de Trabajo",
+  "Working Holiday",
+  "Visas de Estudiante",
+  "Idioma y Cultura",
+];
 
 export default function BlogPage() {
   return (
@@ -100,5 +108,5 @@ export default function BlogPage() {
       <BlogPageContent posts={blogPosts} categories={categories} />
       <Footer />
     </>
-  )
+  );
 }

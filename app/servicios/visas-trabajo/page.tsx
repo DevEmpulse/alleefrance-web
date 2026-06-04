@@ -593,7 +593,7 @@ export default function VisasTrabajoPage() {
                             En <strong>Allée France Lyon</strong> te acompaño
                             personalmente. Soy <strong>Jio</strong>,
                             especialista en trámites migratorios, con{" "}
-                            <strong>más de 400 procesos exitosos</strong>.
+                            <strong>más de 700 procesos exitosos</strong>.
                           </p>
                           <p>
                             Trabajamos en coordinación directa con tu empleador

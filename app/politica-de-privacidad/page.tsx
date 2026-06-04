@@ -12,7 +12,9 @@ export default function PoliticaDePrivacidadPage() {
           style={{ backgroundColor: "#002654" }}
         >
           <div className="mx-auto max-w-4xl text-center text-white">
-            <h1 className="text-4xl font-bold lg:text-5xl">Política de Privacidad</h1>
+            <h1 className="text-4xl font-bold lg:text-5xl">
+              Política de Privacidad
+            </h1>
             <p className="mt-4 text-base sm:text-lg text-white/90 leading-relaxed">
               Allée France Lyon opera alleefrance.com (en adelante, “el Sitio”).
               Respetamos tu privacidad y nos comprometemos a protegerla a través
@@ -83,25 +85,27 @@ export default function PoliticaDePrivacidadPage() {
                   medios, salvo que se mencione expresamente en esta política.
                 </p>
                 <p className="leading-relaxed">
-                  Si hacés clic en un enlace y abandonás el Sitio, no somos
+                  Si haces clic en un enlace y abandonás el Sitio, no somos
                   responsables por las prácticas de privacidad de terceros.
                   Recomendamos revisar las políticas de esos sitios.
                 </p>
                 <p className="leading-relaxed">
-                  Si no estás de acuerdo con nuestras prácticas, podés optar por
-                  no utilizar el Sitio. Al acceder o utilizar el Sitio, aceptás
-                  esta política.
+                  Si no estás de acuerdo con nuestras prácticas, puedes optar
+                  por no utilizar el Sitio. Al acceder o utilizar el Sitio,
+                  aceptás esta política.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#002654]">2. Cookies</h2>
+                <h2 className="text-2xl font-bold text-[#002654]">
+                  2. Cookies
+                </h2>
                 <p className="leading-relaxed">
                   El Sitio utiliza cookies para recopilar información y mejorar
-                  la navegación. Podés configurar tu navegador para rechazar
-                  todas las cookies o para que te avise cuando se envía una.
-                  Tené en cuenta que algunas partes del Sitio podrían no
-                  funcionar correctamente si desactivás las cookies.
+                  la navegación. Puedes configurar tu navegador para rechazar
+                  todas las cookies o para que te avise cuando se envía una. Ten
+                  en cuenta que algunas partes del Sitio podrían no funcionar
+                  correctamente si desactivás las cookies.
                 </p>
               </div>
 
@@ -131,7 +135,9 @@ export default function PoliticaDePrivacidadPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#002654]">4. Seguridad</h2>
+                <h2 className="text-2xl font-bold text-[#002654]">
+                  4. Seguridad
+                </h2>
                 <p className="leading-relaxed">
                   Implementamos medidas razonables de seguridad para proteger
                   tus datos personales y reducir riesgos de pérdida, acceso no
@@ -153,10 +159,12 @@ export default function PoliticaDePrivacidadPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-[#002654]">6. Contacto</h2>
+                <h2 className="text-2xl font-bold text-[#002654]">
+                  6. Contacto
+                </h2>
                 <p className="leading-relaxed">
-                  Si querés acceder, rectificar o eliminar información personal
-                  o realizar consultas sobre esta política, escribinos a{" "}
+                  Si quieres acceder, rectificar o eliminar información personal
+                  o realizar consultas sobre esta política, escribenos a{" "}
                   <a
                     href="mailto:contacto@alleefrance.com"
                     className="font-semibold text-[#002654] underline-offset-4 hover:underline"
