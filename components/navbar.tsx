@@ -53,11 +53,11 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-2">
-        <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
+        <div className="flex items-center justify-between min-h-14 lg:min-h-16 py-2">
           {/* Logo */}
-          <div className="flex md:flex-1 justify-start">
+          <div className="flex lg:flex-1 justify-start">
             <Link href={localizedHomeHref} className="inline-flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
-              <div className="relative h-10 md:h-12 w-auto flex items-center">
+              <div className="relative h-10 lg:h-12 w-auto flex items-center">
                 <Image
                   src="/logo-AF.webp"
                   alt="Allée France"
@@ -68,7 +68,7 @@ export function Navbar() {
                 />
               </div>
               <span
-                className={`hidden md:block text-base md:text-lg font-black uppercase tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
+                className={`hidden lg:block text-base lg:text-lg font-black uppercase tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
                   isScrolled || isOpen 
                     ? "text-[#002654] group-hover:text-[#2563EB]" 
                     : "text-white group-hover:text-blue-300"
@@ -83,7 +83,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile Site Name */}
-          <div className="md:hidden absolute left-1/2 -translate-x-1/2 pointer-events-none flex justify-center">
+          <div className="lg:hidden absolute left-1/2 -translate-x-1/2 pointer-events-none flex justify-center">
             <span
               className={`text-base font-black uppercase tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
                 isScrolled || isOpen ? "text-[#002654]" : "text-white"
@@ -97,7 +97,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex justify-center">
+          <div className="hidden lg:flex justify-center">
             <div className="flex items-center gap-4">
               {navLinks.map((link) => (
                 <Link
@@ -200,7 +200,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="hidden md:flex md:flex-1 items-center justify-end gap-4">
+          <div className="hidden lg:flex lg:flex-1 items-center justify-end gap-4">
             <LanguageSwitcher isScrolled={isScrolled} />
             <Button
               asChild
@@ -222,7 +222,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 transition-all duration-300 hover:rotate-90 active:scale-95 ${
+            className={`lg:hidden p-2 transition-all duration-300 hover:rotate-90 active:scale-95 ${
               isScrolled || isOpen
                 ? "text-[#1E3A8A] hover:text-[#2563EB]"
                 : "text-white hover:text-blue-300"
@@ -239,7 +239,7 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200 animate-in slide-in-from-top duration-300 px-4">
+          <div className="lg:hidden py-4 border-t border-gray-200 animate-in slide-in-from-top duration-300 px-4">
             <div className="flex flex-col gap-2">
               {navLinks.map((link, index) => (
                 <Link
