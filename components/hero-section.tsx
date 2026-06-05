@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SiWhatsapp } from "react-icons/si";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 function AnimatedCounter({
   end,
@@ -117,7 +118,7 @@ export function HeroSection() {
               asChild
             >
               <a
-                href="https://wa.me/33601526171"
+                href={buildWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2"

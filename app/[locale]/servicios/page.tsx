@@ -10,6 +10,7 @@ import { getPersonas, getServices } from "@/lib/services-data";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Calendar } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
@@ -109,7 +110,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
                     asChild
                   >
                     <a
-                      href="https://wa.me/33601526171"
+                      href={buildWhatsAppLink()}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -149,7 +150,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
                     style={{ backgroundColor: "#ED2939" }}
                   >
                     <a
-                      href="https://wa.me/33601526171"
+                      href={buildWhatsAppLink()}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

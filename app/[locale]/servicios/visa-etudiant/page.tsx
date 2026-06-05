@@ -27,6 +27,7 @@ import { getFaqsByCategories } from "@/data/faqs";
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 export default function VisaEtudiantPage() {
 
@@ -83,7 +84,7 @@ export default function VisaEtudiantPage() {
               asChild
             >
               <a
-                href="https://wa.me/33601526171"
+                href={buildWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -491,7 +492,7 @@ export default function VisaEtudiantPage() {
                     asChild
                   >
                     <a
-                      href="https://wa.me/33601526171"
+                      href={buildWhatsAppLink()}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

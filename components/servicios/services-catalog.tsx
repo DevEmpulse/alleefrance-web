@@ -31,6 +31,7 @@ import type {
 } from "@/lib/services-data";
 import type { LucideIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { buildWhatsAppLink as buildBaseWhatsAppLink } from "@/lib/utils";
 
 type ServicesCatalogProps = {
   personas: Persona[];
@@ -75,11 +76,9 @@ const iconMap: Record<IconName, LucideIcon> = {
   HeartPulse,
 };
 
-const WHATSAPP_NUMBER = "33601526171";
-
 const buildWhatsAppLink = (serviceTitle: string) => {
   const message = `Hola, me interesa el servicio "${serviceTitle}" y quiero recibir más información.`;
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  return buildBaseWhatsAppLink(message);
 };
 
 export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {

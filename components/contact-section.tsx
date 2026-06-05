@@ -18,6 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
 import { useTranslations } from "next-intl";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 const getFormSchema = (t: any) => z.object({
   name: z
@@ -363,7 +364,7 @@ function SocialButtons() {
       icon: <SiInstagram className="w-5 h-5" />,
     },
     {
-      href: "https://wa.me/33601526171",
+      href: buildWhatsAppLink(),
       label: "WhatsApp",
       icon: <SiWhatsapp className="w-5 h-5" />,
     },

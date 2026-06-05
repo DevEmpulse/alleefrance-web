@@ -18,6 +18,7 @@ import { SiWhatsapp } from "react-icons/si";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 export interface FAQItem {
   question: string;
@@ -183,7 +184,7 @@ export function FAQSection({
         <AnimateOnScroll direction="fade" delay={0.2}>
           <div className="text-center mb-12">
             <a
-              href="https://wa.me/33601526171"
+              href={buildWhatsAppLink()}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-white text-lg transition-opacity hover:opacity-90 shadow-lg"
