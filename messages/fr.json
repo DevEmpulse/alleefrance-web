@@ -2455,6 +2455,170 @@
       }
     }
   },
+  "TitreDeSejourPage": {
+    "hero": {
+      "title": "Titre de Séjour - Permis de séjour en France",
+      "subtitle": "Besoin de renouveler ou de demander votre Titre de Séjour ? Nous vous accompagnons tout au long du processus pour régulariser votre séjour en France.",
+      "whatsappCta": "Consulter par WhatsApp",
+      "advisorCta": "Planifier un conseil"
+    },
+    "types": {
+      "title": "Types de Titre de Séjour",
+      "salarie": {
+        "title": "Salarié",
+        "description": "Pour les travailleurs ayant un contrat de travail en France. Renouvellement annuel lié à votre emploi.",
+        "requirementsTitle": "Conditions :",
+        "requirements": [
+          "Contrat de travail en cours",
+          "Justificatifs de revenus",
+          "Justificatif de domicile",
+          "Assurance maladie"
+        ],
+        "priceTitle": "Tarif :",
+        "price": "250 €",
+        "durationTitle": "Délai :",
+        "duration": "3-6 semaines"
+      },
+      "saisonnier": {
+        "title": "Saisonnier",
+        "description": "Pour les travailleurs saisonniers. Renouvellement annuel pour chaque saison de travail.",
+        "requirementsTitle": "Conditions :",
+        "requirements": [
+          "Contrat de travail saisonnier",
+          "Justificatifs de revenus",
+          "Justificatif de domicile",
+          "Assurance maladie"
+        ],
+        "priceTitle": "Tarif :",
+        "price": "150 €",
+        "durationTitle": "Délai :",
+        "duration": "3-6 semaines"
+      },
+      "etudiant": {
+        "title": "Étudiant",
+        "description": "Pour les étudiants inscrits dans des établissements d'enseignement français. Renouvellement annuel pendant vos études.",
+        "requirementsTitle": "Conditions :",
+        "requirements": [
+          "Inscription académique en cours",
+          "Justificatifs de ressources",
+          "Justificatif de domicile",
+          "Assurance maladie"
+        ],
+        "priceTitle": "Tarif :",
+        "price": "150 €",
+        "durationTitle": "Délai :",
+        "duration": "3-6 semaines"
+      }
+    },
+    "process": {
+      "title": "Procédure de Renouvellement ou de Demande",
+      "renewal": {
+        "title": "Renouvellement",
+        "description": "Si vous avez déjà un Titre de Séjour et devez le renouveler, nous vous aidons tout au long de la procédure.",
+        "stepsTitle": "Étapes :",
+        "steps": [
+          "Examen des documents actuels",
+          "Préparation d'un dossier complet",
+          "Demande sur la plateforme ANEF",
+          "Accompagnement en préfecture",
+          "Suivi jusqu'à l'obtention"
+        ]
+      },
+      "newRequest": {
+        "title": "Nouvelle Demande",
+        "description": "S'il s'agit de votre première demande de Titre de Séjour, nous vous guidons dès le départ.",
+        "stepsTitle": "Étapes :",
+        "steps": [
+          "Évaluation de votre situation",
+          "Conseil sur le type de titre",
+          "Rassemblement des documents requis",
+          "Préparation du dossier",
+          "Accompagnement complet"
+        ]
+      }
+    },
+    "documents": {
+      "title": "Documents Requis",
+      "basic": {
+        "title": "Documents de Base",
+        "items": [
+          "Passeport en cours de validité",
+          "Titre de Séjour actuel (en cas de renouvellement)",
+          "Photos d'identité récentes",
+          "Justificatif de domicile",
+          "Justificatifs de revenus",
+          "Assurance maladie",
+          "Formulaires CERFA complétés"
+        ]
+      },
+      "specific": {
+        "title": "Documents Spécifiques par Type",
+        "salarie": {
+          "title": "Salarié :",
+          "items": [
+            "Contrat de travail",
+            "3 derniers bulletins de salaire",
+            "Attestation de l'employeur"
+          ]
+        },
+        "etudiant": {
+          "title": "Étudiant :",
+          "items": [
+            "Certificat d'inscription",
+            "Justificatifs de ressources financières",
+            "Certificat d'assiduité / relevés de notes"
+          ]
+        },
+        "saisonnier": {
+          "title": "Saisonnier :",
+          "items": [
+            "Contrat saisonnier",
+            "Justificatifs de revenus",
+            "Attestation de l'employeur"
+          ]
+        }
+      }
+    },
+    "advantages": {
+      "title": "Pourquoi nous choisir ?",
+      "items": [
+        {
+          "title": "Expérience Prouvée",
+          "description": "+500 dossiers de renouvellement et de demande de Titre de Séjour réussis"
+        },
+        {
+          "title": "Accompagnement Complet",
+          "description": "Nous vous guidons de la préparation à l'obtention de votre titre"
+        },
+        {
+          "title": "Conseil Personnalisé",
+          "description": "Chaque dossier est unique. Nous adaptons notre conseil à votre situation spécifique"
+        },
+        {
+          "title": "Connaissances Actualisées",
+          "description": "Nous sommes à jour sur les changements de réglementations et de procédures"
+        },
+        {
+          "title": "Gain de Temps",
+          "description": "Nous évitons les erreurs courantes qui ralentissent le processus"
+        },
+        {
+          "title": "Assistance Continue",
+          "description": "Nous restons disponibles pour répondre à vos questions tout au long du processus"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Besoin de renouveler ou de demander votre Titre de Séjour ?",
+      "subtitle": "Contactez-nous pour un conseil personnalisé et découvrez comment nous pouvons vous aider à régulariser votre séjour en France.",
+      "whatsapp": "Consulter par WhatsApp",
+      "moreServices": "VOIR PLUS DE SERVICES"
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "description": "Nous répondons aux questions essentielles sur le renouvellement, les conditions et les délais du Titre de Séjour."
+    }
+  },
   "WorkingHolidayPage": {
     "global": {
       "badge": "Working Holiday Global",

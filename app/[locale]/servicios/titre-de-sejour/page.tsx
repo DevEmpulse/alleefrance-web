@@ -1,4 +1,4 @@
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -16,56 +16,18 @@ import { SiWhatsapp } from "react-icons/si";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
-const titreDeSejourFaqs: FAQItem[] = [
-  {
-    question: "¿Cuándo debo renovar mi Titre de Séjour?",
-    answer:
-      "Debes iniciar el proceso de renovación 2-3 meses antes de que expire tu título actual. Esto asegura que tengas tiempo suficiente para completar todos los trámites.",
-    category: ["Titre de Séjour"],
-  },
-  {
-    question: "¿Puedo trabajar mientras espero la renovación?",
-    answer:
-      "Sí, mientras tu solicitud esté en trámite y tengas el récépissé (recibo de solicitud), puedes continuar trabajando legalmente.",
-    category: ["Titre de Séjour"],
-  },
-  {
-    question: "¿Qué pasa si mi Titre de Séjour expira?",
-    answer:
-      "Si tu título expira antes de renovarlo, puedes estar en situación irregular. Es importante iniciar el proceso con anticipación. Te ayudamos a evitar esta situación.",
-    category: ["Titre de Séjour"],
-  },
-  {
-    question: "¿Puedo cambiar de tipo de Titre de Séjour?",
-    answer:
-      "Sí, es posible cambiar de tipo (por ejemplo, de Étudiant a Salarié), pero requiere un proceso específico. Te asesoramos sobre los requisitos y pasos necesarios.",
-    category: ["Titre de Séjour"],
-  },
-  {
-    question: "¿Cuánto tiempo tarda el proceso?",
-    answer:
-      "El tiempo varía según el tipo y la prefectura, generalmente entre 3-6 semanas. Con nuestra ayuda, optimizamos el proceso para evitar retrasos.",
-    category: ["Titre de Séjour"],
-  },
-  {
-    question: "¿Necesito hablar francés para el trámite?",
-    answer:
-      "No es obligatorio, pero es recomendable. Nosotros te acompañamos en todas las comunicaciones con las autoridades francesas.",
-    category: ["Titre de Séjour"],
-  },
-];
-
-import { useLocale } from "next-intl";
-
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
 }
-
 
 export default async function TitreDeSejourPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
   const locale = p.locale;
+
+  const t = await getTranslations("TitreDeSejourPage");
+  const tFaq = await getTranslations("FAQData");
+  const titreDeSejourFaqs = tFaq.raw("titreDeSejour") as FAQItem[];
 
   return (
     <div className="min-h-screen bg-white">
@@ -89,10 +51,10 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
             <Shield className="w-16 h-16 text-white" />
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Titre de Séjour - Permisos de Residencia en Francia
+            {t("hero.title")}
           </h1>
           <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-            ¿Necesitas renovar o solicitar tu Titre de Séjour? Te acompañamos en todo el proceso para regularizar tu estancia en Francia.
+            {t("hero.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -107,7 +69,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
                 rel="noopener noreferrer"
               >
                 <SiWhatsapp className="mr-2 h-5 w-5" />
-                Consultar por WhatsApp
+                {t("hero.whatsappCta")}
               </a>
             </Button>
             <Button
@@ -119,7 +81,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
             >
               <Link href={`/${locale}#contacto`}>
                 <Calendar className="mr-2 h-5 w-5" />
-                Agendar asesoría
+                {t("hero.advisorCta")}
               </Link>
             </Button>
           </div>
@@ -133,7 +95,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
             className="text-3xl lg:text-4xl font-bold mb-12 text-center"
             style={{ color: "#002654" }}
           >
-            Tipos de Titre de Séjour
+            {t("types.title")}
           </h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -142,30 +104,29 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               <div className="flex items-center gap-3 mb-4">
                 <Shield className="w-10 h-10" style={{ color: "#ED2939" }} />
                 <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Salarié
+                  {t("types.salarie.title")}
                 </h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Para trabajadores con contrato de trabajo en Francia. Renovación anual vinculada a tu empleo.
+                {t("types.salarie.description")}
               </p>
               
               <div className="space-y-3 mb-4">
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Requisitos:</h4>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.salarie.requirementsTitle")}</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Contrato de trabajo vigente</li>
-                    <li>• Justificantes de ingresos</li>
-                    <li>• Comprobante de alojamiento</li>
-                    <li>• Seguro médico</li>
+                    {(t.raw("types.salarie.requirements") as string[]).map((req: string, idx: number) => (
+                      <li key={idx}>• {req}</li>
+                    ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Precio:</h4>
-                  <p className="text-sm text-gray-700">250€</p>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.salarie.priceTitle")}</h4>
+                  <p className="text-sm text-gray-700">{t("types.salarie.price")}</p>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Tiempo:</h4>
-                  <p className="text-sm text-gray-700">3-6 semanas</p>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.salarie.durationTitle")}</h4>
+                  <p className="text-sm text-gray-700">{t("types.salarie.duration")}</p>
                 </div>
               </div>
             </Card>
@@ -175,30 +136,29 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               <div className="flex items-center gap-3 mb-4">
                 <RefreshCw className="w-10 h-10" style={{ color: "#002654" }} />
                 <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Saisonnier
+                  {t("types.saisonnier.title")}
                 </h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Para trabajadores estacionales. Renovación anual para cada temporada de trabajo.
+                {t("types.saisonnier.description")}
               </p>
               
               <div className="space-y-3 mb-4">
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Requisitos:</h4>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.saisonnier.requirementsTitle")}</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Contrato de trabajo estacional</li>
-                    <li>• Justificantes de ingresos</li>
-                    <li>• Comprobante de alojamiento</li>
-                    <li>• Seguro médico</li>
+                    {(t.raw("types.saisonnier.requirements") as string[]).map((req: string, idx: number) => (
+                      <li key={idx}>• {req}</li>
+                    ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Precio:</h4>
-                  <p className="text-sm text-gray-700">150€</p>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.saisonnier.priceTitle")}</h4>
+                  <p className="text-sm text-gray-700">{t("types.saisonnier.price")}</p>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Tiempo:</h4>
-                  <p className="text-sm text-gray-700">3-6 semanas</p>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.saisonnier.durationTitle")}</h4>
+                  <p className="text-sm text-gray-700">{t("types.saisonnier.duration")}</p>
                 </div>
               </div>
             </Card>
@@ -208,30 +168,29 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               <div className="flex items-center gap-3 mb-4">
                 <UserCheck className="w-10 h-10" style={{ color: "#ED2939" }} />
                 <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Étudiant
+                  {t("types.etudiant.title")}
                 </h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Para estudiantes inscritos en instituciones educativas francesas. Renovación anual durante tus estudios.
+                {t("types.etudiant.description")}
               </p>
               
               <div className="space-y-3 mb-4">
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Requisitos:</h4>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.etudiant.requirementsTitle")}</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Inscripción académica vigente</li>
-                    <li>• Justificantes de recursos</li>
-                    <li>• Comprobante de alojamiento</li>
-                    <li>• Seguro médico</li>
+                    {(t.raw("types.etudiant.requirements") as string[]).map((req: string, idx: number) => (
+                      <li key={idx}>• {req}</li>
+                    ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Precio:</h4>
-                  <p className="text-sm text-gray-700">150€</p>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.etudiant.priceTitle")}</h4>
+                  <p className="text-sm text-gray-700">{t("types.etudiant.price")}</p>
                 </div>
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Tiempo:</h4>
-                  <p className="text-sm text-gray-700">3-6 semanas</p>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("types.etudiant.durationTitle")}</h4>
+                  <p className="text-sm text-gray-700">{t("types.etudiant.duration")}</p>
                 </div>
               </div>
             </Card>
@@ -246,7 +205,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
             className="text-3xl lg:text-4xl font-bold mb-8 text-center"
             style={{ color: "#002654" }}
           >
-            Proceso de Renovación o Solicitud
+            {t("process.title")}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -255,37 +214,23 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               <div className="flex items-center gap-3 mb-4">
                 <RefreshCw className="w-10 h-10" style={{ color: "#ED2939" }} />
                 <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Renovación
+                  {t("process.renewal.title")}
                 </h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Si ya tienes un Titre de Séjour y necesitas renovarlo, te ayudamos con todo el proceso.
+                {t("process.renewal.description")}
               </p>
               
               <div className="space-y-3">
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Pasos:</h4>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("process.renewal.stepsTitle")}</h4>
                   <ul className="text-sm text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Revisión de documentos actuales</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Preparación de dossier completo</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Solicitud en plataforma ANEF</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Acompañamiento en prefectura</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Seguimiento hasta obtención</span>
-                    </li>
+                    {(t.raw("process.renewal.steps") as string[]).map((step: string, idx: number) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
+                        <span>{step}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -296,37 +241,23 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               <div className="flex items-center gap-3 mb-4">
                 <FileText className="w-10 h-10" style={{ color: "#002654" }} />
                 <h3 className="text-2xl font-bold" style={{ color: "#002654" }}>
-                  Nueva Solicitud
+                  {t("process.newRequest.title")}
                 </h3>
               </div>
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Si es tu primera vez solicitando un Titre de Séjour, te guiamos desde el inicio.
+                {t("process.newRequest.description")}
               </p>
               
               <div className="space-y-3">
                 <div>
-                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>Pasos:</h4>
+                  <h4 className="font-bold mb-2" style={{ color: "#002654" }}>{t("process.newRequest.stepsTitle")}</h4>
                   <ul className="text-sm text-gray-700 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Evaluación de tu situación</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Asesoría sobre tipo de título</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Reunión de documentos necesarios</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Preparación de dossier</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
-                      <span>Acompañamiento completo</span>
-                    </li>
+                    {(t.raw("process.newRequest.steps") as string[]).map((step: string, idx: number) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
+                        <span>{step}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -342,24 +273,16 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
             className="text-3xl lg:text-4xl font-bold mb-8 text-center"
             style={{ color: "#002654" }}
           >
-            Documentación Necesaria
+            {t("documents.title")}
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-4" style={{ color: "#002654" }}>
-                Documentos Básicos
+                {t("documents.basic.title")}
               </h3>
               <ul className="space-y-3">
-                {[
-                  "Pasaporte vigente",
-                  "Titre de Séjour actual (si renuevas)",
-                  "Fotografías recientes",
-                  "Comprobante de alojamiento",
-                  "Justificantes de ingresos",
-                  "Seguro médico",
-                  "Formularios CERFA completos",
-                ].map((doc, index) => (
+                {(t.raw("documents.basic.items") as string[]).map((doc: string, index: number) => (
                   <li key={index} className="flex items-start gap-2 text-gray-700">
                     <CheckCircle2 className="w-5 h-5 mt-0.5 text-[#ED2939]" />
                     <span>{doc}</span>
@@ -370,31 +293,31 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
 
             <Card className="p-6">
               <h3 className="text-xl font-bold mb-4" style={{ color: "#002654" }}>
-                Documentos Específicos por Tipo
+                {t("documents.specific.title")}
               </h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2" style={{ color: "#002654" }}>Salarié:</h4>
+                  <h4 className="font-semibold mb-2" style={{ color: "#002654" }}>{t("documents.specific.salarie.title")}</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Contrato de trabajo</li>
-                    <li>• Últimas 3 nóminas</li>
-                    <li>• Certificado de empleador</li>
+                    {(t.raw("documents.specific.salarie.items") as string[]).map((item: string, idx: number) => (
+                      <li key={idx}>• {item}</li>
+                    ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2" style={{ color: "#002654" }}>Étudiant:</h4>
+                  <h4 className="font-semibold mb-2" style={{ color: "#002654" }}>{t("documents.specific.etudiant.title")}</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Certificado de inscripción</li>
-                    <li>• Justificantes de recursos</li>
-                    <li>• Certificado de asistencia</li>
+                    {(t.raw("documents.specific.etudiant.items") as string[]).map((item: string, idx: number) => (
+                      <li key={idx}>• {item}</li>
+                    ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2" style={{ color: "#002654" }}>Saisonnier:</h4>
+                  <h4 className="font-semibold mb-2" style={{ color: "#002654" }}>{t("documents.specific.saisonnier.title")}</h4>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>• Contrato estacional</li>
-                    <li>• Justificantes de ingresos</li>
-                    <li>• Certificado de empleador</li>
+                    {(t.raw("documents.specific.saisonnier.items") as string[]).map((item: string, idx: number) => (
+                      <li key={idx}>• {item}</li>
+                    ))}
                   </ul>
                 </div>
               </div>
@@ -410,35 +333,10 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
             className="text-3xl lg:text-4xl font-bold mb-8 text-center"
             style={{ color: "#002654" }}
           >
-            ¿Por qué elegirnos?
+            {t("advantages.title")}
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: "Experiencia Comprobada",
-                description: "+500 trámites exitosos de renovación y solicitud de Titre de Séjour",
-              },
-              {
-                title: "Acompañamiento Total",
-                description: "Te guiamos desde la preparación hasta la obtención de tu título",
-              },
-              {
-                title: "Atención Personalizada",
-                description: "Cada caso es único. Adaptamos nuestra asesoría a tu situación específica",
-              },
-              {
-                title: "Conocimiento Actualizado",
-                description: "Estamos al día con los cambios en normativas y procedimientos",
-              },
-              {
-                title: "Ahorro de Tiempo",
-                description: "Evitamos errores comunes que retrasan el proceso",
-              },
-              {
-                title: "Soporte Continuo",
-                description: "Estamos disponibles para resolver dudas durante todo el proceso",
-              },
-            ].map((item, index: number) => (
+            {(t.raw("advantages.items") as Array<{ title: string; description: string }>).map((item, index: number) => (
               <Card key={index} className="p-6">
                 <h3 className="font-semibold mb-2 text-lg" style={{ color: "#002654" }}>
                   {item.title}
@@ -454,10 +352,10 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
       <section className="py-16 px-6" style={{ backgroundColor: "#002654" }}>
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-            ¿Necesitas renovar o solicitar tu Titre de Séjour?
+            {t("cta.title")}
           </h2>
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Contactanos para una asesoría personalizada y descubrí cómo podemos ayudarte a regularizar tu estancia en Francia
+            {t("cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -472,7 +370,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
                 rel="noopener noreferrer"
               >
                 <SiWhatsapp className="mr-2 h-5 w-5" />
-                Consultar por WhatsApp
+                {t("cta.whatsapp")}
               </a>
             </Button>
             <Button
@@ -482,15 +380,15 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}/servicios`}>VER MÁS SERVICIOS</Link>
+              <Link href={`/${locale}/servicios`}>{t("cta.moreServices")}</Link>
             </Button>
           </div>
         </div>
       </section>
 
       <FAQSection
-        title="Preguntas Frecuentes"
-        description="Resolvemos dudas clave sobre renovación, requisitos y tiempos del Titre de Séjour."
+        title={t("faq.title")}
+        description={t("faq.description")}
         allowedCategories={["Titre de Séjour"]}
         data={titreDeSejourFaqs}
       />

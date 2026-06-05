@@ -2455,6 +2455,170 @@
       }
     }
   },
+  "TitreDeSejourPage": {
+    "hero": {
+      "title": "Titre de Séjour - Residence Permits in France",
+      "subtitle": "Need to renew or apply for your Titre de Séjour? We accompany you through the entire process to regularize your stay in France.",
+      "whatsappCta": "Consult via WhatsApp",
+      "advisorCta": "Schedule a consultation"
+    },
+    "types": {
+      "title": "Types of Titre de Séjour",
+      "salarie": {
+        "title": "Salarié",
+        "description": "For workers with an employment contract in France. Annual renewal linked to your employment.",
+        "requirementsTitle": "Requirements:",
+        "requirements": [
+          "Valid employment contract",
+          "Proof of income",
+          "Proof of accommodation",
+          "Health insurance"
+        ],
+        "priceTitle": "Price:",
+        "price": "250€",
+        "durationTitle": "Time:",
+        "duration": "3-6 weeks"
+      },
+      "saisonnier": {
+        "title": "Saisonnier",
+        "description": "For seasonal workers. Annual renewal for each work season.",
+        "requirementsTitle": "Requirements:",
+        "requirements": [
+          "Seasonal employment contract",
+          "Proof of income",
+          "Proof of accommodation",
+          "Health insurance"
+        ],
+        "priceTitle": "Price:",
+        "price": "150€",
+        "durationTitle": "Time:",
+        "duration": "3-6 weeks"
+      },
+      "etudiant": {
+        "title": "Étudiant",
+        "description": "For students enrolled in French educational institutions. Annual renewal during your studies.",
+        "requirementsTitle": "Requirements:",
+        "requirements": [
+          "Valid academic enrollment",
+          "Proof of resources",
+          "Proof of accommodation",
+          "Health insurance"
+        ],
+        "priceTitle": "Price:",
+        "price": "150€",
+        "durationTitle": "Time:",
+        "duration": "3-6 weeks"
+      }
+    },
+    "process": {
+      "title": "Renewal or Application Process",
+      "renewal": {
+        "title": "Renewal",
+        "description": "If you already have a Titre de Séjour and need to renew it, we help you with the whole process.",
+        "stepsTitle": "Steps:",
+        "steps": [
+          "Review of current documents",
+          "Preparation of a complete dossier",
+          "Application on the ANEF platform",
+          "Accompaniment to the prefecture",
+          "Follow-up until issuance"
+        ]
+      },
+      "newRequest": {
+        "title": "New Application",
+        "description": "If it is your first time applying for a Titre de Séjour, we guide you from the start.",
+        "stepsTitle": "Steps:",
+        "steps": [
+          "Evaluation of your situation",
+          "Advice on the type of permit",
+          "Gathering necessary documents",
+          "Dossier preparation",
+          "Full accompaniment"
+        ]
+      }
+    },
+    "documents": {
+      "title": "Required Documents",
+      "basic": {
+        "title": "Basic Documents",
+        "items": [
+          "Valid passport",
+          "Current Titre de Séjour (if renewing)",
+          "Recent passport photos",
+          "Proof of accommodation",
+          "Proof of income",
+          "Health insurance",
+          "Completed CERFA forms"
+        ]
+      },
+      "specific": {
+        "title": "Specific Documents by Type",
+        "salarie": {
+          "title": "Salarié:",
+          "items": [
+            "Employment contract",
+            "Last 3 pay slips",
+            "Employer certificate"
+          ]
+        },
+        "etudiant": {
+          "title": "Étudiant:",
+          "items": [
+            "Enrollment certificate",
+            "Proof of financial resources",
+            "Certificate of attendance / transcript"
+          ]
+        },
+        "saisonnier": {
+          "title": "Saisonnier:",
+          "items": [
+            "Seasonal contract",
+            "Proof of income",
+            "Employer certificate"
+          ]
+        }
+      }
+    },
+    "advantages": {
+      "title": "Why choose us?",
+      "items": [
+        {
+          "title": "Proven Experience",
+          "description": "+500 successful renewal and application processes for Titre de Séjour"
+        },
+        {
+          "title": "Total Accompaniment",
+          "description": "We guide you from preparation to obtaining your permit"
+        },
+        {
+          "title": "Personalized Attention",
+          "description": "Each case is unique. We adapt our advice to your specific situation"
+        },
+        {
+          "title": "Updated Knowledge",
+          "description": "We are up-to-date with changes in regulations and procedures"
+        },
+        {
+          "title": "Time Saving",
+          "description": "We avoid common mistakes that delay the process"
+        },
+        {
+          "title": "Continuous Support",
+          "description": "We are available to answer questions throughout the entire process"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Need to renew or apply for your Titre de Séjour?",
+      "subtitle": "Contact us for a personalized consultation and discover how we can help you regularize your stay in France",
+      "whatsapp": "Consult via WhatsApp",
+      "moreServices": "VIEW MORE SERVICES"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "We resolve key questions about renewal, requirements, and processing times for the Titre de Séjour."
+    }
+  },
   "WorkingHolidayPage": {
     "global": {
       "badge": "Working Holiday Global",
