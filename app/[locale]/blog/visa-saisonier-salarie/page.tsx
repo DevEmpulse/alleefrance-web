@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VisasaisonnierSalariePage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.visa-saisonnier-salarie");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.visa-saisonnier-salarie" });
 
   const timeline = t.raw("timeline") as Array<{ month: string; detail: string }>;
   const documents = t.raw("docs") as string[];

@@ -27,7 +27,7 @@ export async function generateMetadata({
 export default async function PoliticaDePrivacidadPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("PrivacyPolicy");
+  const t = await getTranslations({ locale, namespace: "PrivacyPolicy" });
 
   const purposes = t.raw("sections.1.purposes") as string[];
   const list = t.raw("sections.3.list") as string[];

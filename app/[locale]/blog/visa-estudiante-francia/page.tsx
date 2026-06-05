@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VisaEstudianteFranciaPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.visa-estudiante-francia");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.visa-estudiante-francia" });
 
   const milestones = t.raw("milestones") as Array<{ title: string; detail: string }>;
   const funding = t.raw("funding") as Array<{ label: string; note: string }>;

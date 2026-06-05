@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function EsimGuiaPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.esim-guia-latinoamericanos-francia");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.esim-guia-latinoamericanos-francia" });
 
   const ventajas = t.raw("ventajas") as Array<{ icon: string; title: string; detail: string }>;
   const operadoresFranceses = t.raw("operadoresFranceses") as Array<{ name: string; detail: string }>;

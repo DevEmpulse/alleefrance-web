@@ -28,7 +28,7 @@ export async function generateMetadata({
 export default async function TerminosYCondicionesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("TermsAndConditions");
+  const t = await getTranslations({ locale, namespace: "TermsAndConditions" });
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden bg-gray-50">

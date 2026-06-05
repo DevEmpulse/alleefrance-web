@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function BancosPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.bancos-fisicos-vs-virtuales-francia");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.bancos-fisicos-vs-virtuales-francia" });
 
   const bancosTradicionales = t.raw("bancosTradicionales") as string[];
   const ventajasFisicos = t.raw("ventajasFisicos") as Array<{ title: string; detail: string }>;

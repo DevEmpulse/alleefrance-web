@@ -1,3 +1,5 @@
+"use client";
+
 import { Shield, MapPin, Phone, ChevronRight } from "lucide-react";
 import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
 import Image from "next/image";

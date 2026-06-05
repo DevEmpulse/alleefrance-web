@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function AprenderFrancesRecursosPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.aprender-frances-recursos");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.aprender-frances-recursos" });
 
   const pillars = t.raw("pillars") as Array<{ title: string; detail: string }>;
   const resources = t.raw("resources") as Array<{ name: string; note: string }>;

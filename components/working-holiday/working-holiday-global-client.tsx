@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 import dynamic from "next/dynamic";
 import { CountryIndicator } from "@/components/country-indicator";
 import { useCountry } from "@/components/country-provider";
@@ -16,15 +17,16 @@ const CountrySelectorModal = dynamic(
 
 export function WorkingHolidayGlobalClient() {
   const router = useRouter();
+  const locale = useLocale();
   const { setCountry } = useCountry();
 
   const handleOriginSelect = (code: WorkingHolidayCountryCode) => {
     setCountry(code);
     if (code === "global") {
-      router.push("/working-holiday");
+      router.push(`/${locale}/working-holiday`);
       return;
     }
-    router.push(`/working-holiday/${code}`);
+    router.push(`/${locale}/working-holiday/${code}`);
   };
 
   return (

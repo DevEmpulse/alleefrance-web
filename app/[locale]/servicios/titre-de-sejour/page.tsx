@@ -25,8 +25,8 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
   setRequestLocale(p.locale);
   const locale = p.locale;
 
-  const t = await getTranslations("TitreDeSejourPage");
-  const tFaq = await getTranslations("FAQData");
+  const t = await getTranslations({ locale: p.locale, namespace: "TitreDeSejourPage" });
+  const tFaq = await getTranslations({ locale: p.locale, namespace: "FAQData" });
   const titreDeSejourFaqs = tFaq.raw("titreDeSejour") as FAQItem[];
 
   return (

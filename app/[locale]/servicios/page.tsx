@@ -51,8 +51,8 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
   const p = await params;
   setRequestLocale(p.locale);
 
-  const t = await getTranslations("ServicesData");
-  const tPage = await getTranslations("ServicesPage");
+  const t = await getTranslations({ locale: p.locale, namespace: "ServicesData" });
+  const tPage = await getTranslations({ locale: p.locale, namespace: "ServicesPage" });
   const personas = getPersonas(t);
   const services = getServices(t);
 

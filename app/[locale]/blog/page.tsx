@@ -46,7 +46,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   const p = await params;
   setRequestLocale(p.locale);
   
-  const t = await getTranslations("Blog.index");
+  const t = await getTranslations({ locale: p.locale, namespace: "Blog.index" });
   const blogPosts = t.raw("posts") as any[];
   const categories = t.raw("categories") as string[];
 

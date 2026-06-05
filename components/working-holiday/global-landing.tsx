@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -56,6 +58,7 @@ const OtherDestinationsCarousel = dynamic(
 const FAQSection = dynamic(
   () => import("@/components/faq-section").then((mod) => mod.FAQSection),
   {
+    ssr: false,
     loading: () => (
       <section className="py-20 text-center text-sm text-gray-500">
         {/* Loading text rendered by parent */}

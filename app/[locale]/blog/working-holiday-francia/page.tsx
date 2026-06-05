@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function WorkingHolidayFranciaPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.working-holiday-francia");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.working-holiday-francia" });
 
   const checklist = t.raw("checklist") as string[];
   const funds = t.raw("funds") as string[];
