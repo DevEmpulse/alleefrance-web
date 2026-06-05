@@ -591,6 +591,12 @@
       "Templates and checklists"
     ]
   },
+  "BlogCTA": {
+    "title": "Need help with your visa?",
+    "description": "Our team can review your case, prepare your dossier, and accompany you to the consular appointment.",
+    "whatsapp": "Write via WhatsApp",
+    "book": "Book a consultation"
+  },
   "Blog": {
     "index": {
       "categories": [

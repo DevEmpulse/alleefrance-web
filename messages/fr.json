@@ -591,6 +591,12 @@
       "Modèles et listes de contrôle"
     ]
   },
+  "BlogCTA": {
+    "title": "Besoin d'aide avec votre visa ?",
+    "description": "Notre équipe peut examiner votre dossier, le préparer et vous accompagner jusqu'au rendez-vous consulaire.",
+    "whatsapp": "Écrire par WhatsApp",
+    "book": "Réserver une consultation"
+  },
   "Blog": {
     "index": {
       "categories": [

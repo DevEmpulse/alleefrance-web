@@ -591,6 +591,12 @@
       "Plantillas y checklists"
     ]
   },
+  "BlogCTA": {
+    "title": "¿Necesitás ayuda con tu visa?",
+    "description": "Nuestro equipo puede revisar tu caso, preparar tu dossier y acompañarte hasta la cita consular.",
+    "whatsapp": "Escribir por WhatsApp",
+    "book": "Reservar asesoría"
+  },
   "Blog": {
     "index": {
       "categories": [
