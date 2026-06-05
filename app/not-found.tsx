@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import messages from "@/messages/es.json";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 export default function NotFound() {
   setRequestLocale("es");
@@ -74,13 +75,13 @@ export default function NotFound() {
                         asChild
                         className="bg-[#ED2939] hover:bg-[#ED2939]/90 text-white px-6 py-5 text-base rounded-2xl shadow-lg shadow-red-900/40"
                       >
-                        <Link
-                          href="https://wa.me/33601526171"
+                        <a
+                          href={buildWhatsAppLink()}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
                           Envíanos un WhatsApp
-                        </Link>
+                        </a>
                       </Button>
                     </div>
                   </div>

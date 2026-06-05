@@ -5,6 +5,7 @@ import { BlogNewsletterSection } from "@/components/blog/blog-newsletter-section
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 export function BlogCTASections() {
   const locale = useLocale();
@@ -43,7 +44,7 @@ export function BlogCTASections() {
                 asChild
               >
                 <a
-                  href="https://wa.me/33601526171"
+                  href={buildWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

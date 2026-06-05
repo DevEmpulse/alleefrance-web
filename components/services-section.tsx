@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 type ServiceId = "visa-salarie" | "working-holiday" | "titre-de-sejour" | "necesitas-aseoria";
 
@@ -91,7 +92,9 @@ export function ServicesSection() {
           {featuredServices.map((service, index) => {
             const title = t(`items.${service.id}.title`);
             const isExternal = service.link.startsWith("http");
-            const finalLink = isExternal ? service.link : `/${locale}${service.link}/`;
+            const finalLink = isExternal
+              ? (service.link.includes("wa.me") ? buildWhatsAppLink() : service.link)
+              : `/${locale}${service.link}/`;
             const imageSrc = service.images[locale] ?? service.images.es;
             const aspectClass = locale === "es" ? "aspect-3/4" : "aspect-square";
 

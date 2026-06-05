@@ -31,6 +31,7 @@ import {
   Shield,
 } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+import { buildWhatsAppLink } from "@/lib/utils";
 import {
   getDestinationImage,
   normalizeDestinationName,
@@ -78,9 +79,9 @@ export function WorkingHolidayCountryPage({
   const showAcademicAlert = config.code === "pe" || config.code === "ec";
   const faqCategories = ["WH: General", "Seguros", `WH: ${config.name}`];
   const faqItems = getFaqsByCategories(faqCategories);
-  const whatsappConsultLink = `https://wa.me/33601526171?text=${encodeURIComponent(
+  const whatsappConsultLink = buildWhatsAppLink(
     `Hola, soy de ${tCountry(`${config.code}.name`)} y me interesa una Working Holiday.`,
-  )}`;
+  );
 
   const checklistIcons = [MapPin, Clock, Backpack, Shield];
 

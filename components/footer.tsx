@@ -3,6 +3,7 @@ import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -163,7 +164,7 @@ export function Footer() {
                   <SiInstagram className="w-5 h-5 sm:w-6 sm:h-6" />
                 </a>
                 <a
-                  href="https://wa.me/33601526171"
+                  href={buildWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-white hover:scale-110 active:scale-95 transition-all duration-300 hover:shadow-xl"

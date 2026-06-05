@@ -20,6 +20,7 @@ import {
   Globe,
   Plane,
 } from "lucide-react";
+import { buildWhatsAppLink } from "@/lib/utils";
 
 const workingHolidayFaqs = getFaqsByCategories([
   "WH: General",
@@ -290,7 +291,7 @@ export function WorkingHolidayGlobalLanding() {
                 asChild
               >
                 <a
-                  href="https://wa.me/33601526171"
+                  href={buildWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -400,7 +401,7 @@ export function WorkingHolidayGlobalLanding() {
                 asChild
               >
                 <a
-                  href="https://wa.me/33601526171"
+                  href={buildWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

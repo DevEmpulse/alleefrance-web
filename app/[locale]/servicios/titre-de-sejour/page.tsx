@@ -13,6 +13,7 @@ import {
   UserCheck,
 } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
+import { buildWhatsAppLink } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
@@ -64,7 +65,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               asChild
             >
               <a
-                href="https://wa.me/33601526171"
+                href={buildWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -365,7 +366,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               asChild
             >
               <a
-                href="https://wa.me/33601526171?text=Hola%2C%20necesito%20ayuda%20con%20mi%20Titre%20de%20S%C3%A9jour."
+                href={buildWhatsAppLink("Hola, necesito ayuda con mi Titre de Séjour.")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
