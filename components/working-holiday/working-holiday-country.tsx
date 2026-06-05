@@ -528,16 +528,20 @@ export function WorkingHolidayCountryPage({
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {(tCountry.has(`${config.code}.destinations`) ? tCountry.raw(`${config.code}.destinations`) as string[] : config.destinations).map((destination) => {
-                const normalizedDestination =
-                  normalizeDestinationName(destination);
-                const imageSrc = getDestinationImage(destination);
-                const isUpcoming = destination
-                  .toLowerCase()
-                  .includes("próximamente");
+              {config.destinations.map((originalDest, idx) => {
+                const localDestinations = tCountry.has(`${config.code}.destinations`)
+                  ? (tCountry.raw(`${config.code}.destinations`) as string[])
+                  : config.destinations;
+                const destination = localDestinations[idx] || originalDest;
+                const normalizedDestination = normalizeDestinationName(destination);
+                // Usamos el destino original en español para buscar la imagen
+                const imageSrc = getDestinationImage(originalDest);
+                const isUpcoming = destination.toLowerCase().includes("próximamente") || 
+                                   destination.toLowerCase().includes("coming soon") || 
+                                   destination.toLowerCase().includes("bientôt");
                 return (
                   <div
-                    key={destination}
+                    key={originalDest}
                     className="rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-sm transition-transform hover:-translate-y-1 hover:shadow-lg"
                   >
                     <div className="relative h-32 bg-gray-100">
