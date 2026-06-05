@@ -56,36 +56,43 @@ export function Navbar() {
         <div className="flex items-center justify-between min-h-14 md:min-h-16 py-2">
           {/* Logo */}
           <div className="flex md:flex-1 justify-start">
-            <Link href={localizedHomeHref} className="inline-flex items-center gap-3 group">
-              <div className="relative h-10 w-auto">
+            <Link href={localizedHomeHref} className="inline-flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
+              <div className="relative h-10 md:h-12 w-auto flex items-center">
                 <Image
                   src="/logo-AF.webp"
-                  alt={t("logoAlt")}
-                  width={110}
-                  height={40}
-                  className="h-full w-auto object-contain"
+                  alt="Allée France"
+                  width={70}
+                  height={70}
+                  className="h-full w-auto object-contain drop-shadow-md"
                   priority
                 />
               </div>
+              <span
+                className={`hidden md:block text-base md:text-lg font-black uppercase tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
+                  isScrolled || isOpen 
+                    ? "text-[#002654] group-hover:text-[#2563EB]" 
+                    : "text-white group-hover:text-blue-300"
+                }`}
+                style={{
+                  fontFamily: "var(--font-montserrat), sans-serif",
+                }}
+              >
+                ALLÉE FRANCE
+              </span>
             </Link>
           </div>
 
           {/* Mobile Site Name */}
-          <div className="md:hidden flex-1 flex justify-center">
+          <div className="md:hidden absolute left-1/2 -translate-x-1/2 pointer-events-none flex justify-center">
             <span
-              className={`inline-flex items-center text-sm font-black uppercase tracking-[0.08em] ${
-                isScrolled || isOpen ? "text-[#1E3A8A]" : "text-white"
+              className={`text-base font-black uppercase tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
+                isScrolled || isOpen ? "text-[#002654]" : "text-white"
               }`}
               style={{
                 fontFamily: "var(--font-montserrat), sans-serif",
-                textShadow:
-                  !isScrolled && !isOpen
-                    ? "0 0 6px rgba(0, 0, 0, 0.45)"
-                    : "none",
               }}
             >
-              <span className="tracking-[0.12em]">ALLÉE</span>
-              <span className="ml-0.5 tracking-[0.08em]">FRANCE</span>
+              ALLÉE FRANCE
             </span>
           </div>
 
