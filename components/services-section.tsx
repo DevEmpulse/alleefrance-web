@@ -7,28 +7,46 @@ import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-const featuredServices = [
+type ServiceId = "visa-salarie" | "working-holiday" | "titre-de-sejour" | "necesitas-aseoria";
+
+const featuredServices: Array<{ id: ServiceId; images: Record<string, string>; link: string }> = [
   {
     id: "visa-salarie",
-    image: "/visa-salarie.webp",
+    images: {
+      es: "/visa-salarie.webp",
+      en: "/visa-salarie-en.webp",
+      fr: "/visa-salarie-fr.webp",
+    },
     link: "/servicios/visas-trabajo",
   },
   {
     id: "working-holiday",
-    image: "/working-holiday.webp",
+    images: {
+      es: "/working-holiday.webp",
+      en: "/working-holiday-en.webp",
+      fr: "/working-holiday-fr.webp",
+    },
     link: "/working-holiday",
   },
   {
     id: "titre-de-sejour",
-    image: "/titre-de-sejour.webp",
+    images: {
+      es: "/titre-de-sejour.webp",
+      en: "/titre-de-sejour-en.webp",
+      fr: "/titre-de-sejour-fr.webp",
+    },
     link: "/servicios/titre-de-sejour",
   },
   {
     id: "necesitas-aseoria",
-    image: "/servicio_asesoria.webp",
+    images: {
+      es: "/servicio_asesoria.webp",
+      en: "/servicio_asesoria-en.webp",
+      fr: "/servicio_asesoria-fr.webp",
+    },
     link: "https://wa.me/33601526171",
   },
-] as const;
+];
 
 export function ServicesSection() {
   const t = useTranslations("Services");
@@ -74,6 +92,8 @@ export function ServicesSection() {
             const title = t(`items.${service.id}.title`);
             const isExternal = service.link.startsWith("http");
             const finalLink = isExternal ? service.link : `/${locale}${service.link}/`;
+            const imageSrc = service.images[locale] ?? service.images.es;
+            const aspectClass = locale === "es" ? "aspect-3/4" : "aspect-square";
 
             return (
               <AnimateOnScroll
@@ -81,7 +101,7 @@ export function ServicesSection() {
                 direction="up"
                 delay={index * 0.1}
               >
-                <div className="group relative w-full aspect-3/4 rounded-2xl overflow-hidden bg-white shadow-2xl transition-all duration-500 hover:shadow-blue-900/50 hover:-translate-y-2 cursor-pointer">
+                <div className={`group relative w-full ${aspectClass} rounded-2xl overflow-hidden bg-white shadow-2xl transition-all duration-500 hover:shadow-blue-900/50 hover:-translate-y-2 cursor-pointer`}>
                   {isExternal ? (
                     <a
                       href={finalLink}
@@ -99,7 +119,7 @@ export function ServicesSection() {
                   )}
 
                   <Image
-                    src={service.image}
+                    src={imageSrc}
                     alt={t(`items.${service.id}.alt`)}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
