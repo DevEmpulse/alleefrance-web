@@ -71,7 +71,11 @@ export function BlogSection() {
           {blogPosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/${locale}/blog/${post.slug}`}
+              href={
+                post.slug === "visa-saisonnier-salarie"
+                  ? `/${locale}/servicios/visas-trabajo/`
+                  : `/${locale}/blog/${post.slug}`
+              }
               className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
             >
               <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100 flex flex-col">
