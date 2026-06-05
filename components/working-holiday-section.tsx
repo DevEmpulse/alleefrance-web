@@ -1,13 +1,19 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { OtherDestinationsCarousel } from "@/components/working-holiday/other-destinations-carousel";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Star } from "lucide-react";
+import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image";
+import Link from "next/link";
 
 export function WorkingHolidaySection() {
+  const t = useTranslations("WorkingHoliday");
+  const locale = useLocale();
+  const year = new Date().getFullYear();
+  const benefits = [t("benefit1"), t("benefit2"), t("benefit3")];
+
   return (
     <section
       id="working-holiday-section"
@@ -21,7 +27,7 @@ export function WorkingHolidaySection() {
       <div className="relative flex min-h-[520px] items-center overflow-hidden md:min-h-[600px]">
         <Image
           src="/Fondo-WH.webp"
-          alt="Jóvenes latinoamericanos disfrutando Working Holiday en Francia - Visa vacaciones y trabajo"
+          alt={t("imageAlt")}
           fill
           priority
           className="absolute inset-0 z-0 object-cover object-[75%_top] contrast-105 saturate-105 sm:object-[70%_top] lg:object-[center_right]"
@@ -34,11 +40,11 @@ export function WorkingHolidaySection() {
             <AnimateOnScroll direction="left">
               <div>
                 <span className="inline-flex items-center rounded-full border border-blue-300/30 bg-blue-500/10 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.28em] text-blue-200 sm:text-xs sm:tracking-widest">
-                  EDICIÓN {new Date().getFullYear()}
+                  {t("edition", { year })}
                 </span>
                 <h2 className="mt-5 text-3xl font-extrabold leading-tight text-white sm:text-5xl lg:text-6xl">
                   <span className="relative inline-block sm:whitespace-nowrap">
-                    Tu Working Holiday
+                    {t("titleStart")}
                     <svg
                       className="absolute -bottom-1 left-0 h-2 w-full text-[#ED2939]/30"
                       viewBox="0 0 200 8"
@@ -54,15 +60,12 @@ export function WorkingHolidaySection() {
                       />
                     </svg>
                   </span>{" "}
-                  en <span className="text-[#ED2939]">Francia</span> empieza
-                  acá.
+                  {t("titleMiddle")}{" "}
+                  <span className="text-[#ED2939]">{t("titleCountry")}</span>{" "}
+                  {t("titleEnd")}
                 </h2>
                 <ul className="mt-6 space-y-2 text-slate-200 sm:space-y-3">
-                  {[
-                    "Gestión integral de visa",
-                    "Orientación para búsqueda de alojamiento y empleo",
-                    "Comunidad exclusiva de viajeros",
-                  ].map((item) => (
+                  {benefits.map((item) => (
                     <li
                       key={item}
                       className="flex items-center gap-3 text-sm sm:text-base"
@@ -74,7 +77,7 @@ export function WorkingHolidaySection() {
                 </ul>
                 <div className="mt-6 flex items-center gap-2 text-sm font-semibold text-blue-100">
                   <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
-                  Más de 300 visas aprobadas
+                  {t("approved")}
                 </div>
                 <div className="mt-7">
                   <Button
@@ -83,10 +86,10 @@ export function WorkingHolidaySection() {
                     asChild
                   >
                     <Link
-                      href="/working-holiday"
+                      href={`/${locale}/working-holiday`}
                       className="flex items-center gap-2"
                     >
-                      Comienza tu viaje
+                      {t("cta")}
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </Link>
                   </Button>
@@ -102,11 +105,10 @@ export function WorkingHolidaySection() {
           <AnimateOnScroll direction="fade">
             <div className="text-center">
               <h3 className="mt-3 text-3xl font-bold text-white">
-                Otros destinos Working Holiday
+                {t("otherTitle")}
               </h3>
               <p className="mt-3 text-lg text-blue-100/90">
-                Explorá alternativas disponibles para residentes de
-                Latinoamérica.
+                {t("otherDescription")}
               </p>
             </div>
           </AnimateOnScroll>
@@ -123,7 +125,7 @@ export function WorkingHolidaySection() {
               className="bg-red-600 px-8 py-5 text-base font-semibold text-white shadow-lg transition-all hover:bg-red-700 hover:shadow-xl"
               asChild
             >
-              <Link href="/working-holiday">Ver más destinos</Link>
+              <Link href={`/${locale}/working-holiday`}>{t("viewMore")}</Link>
             </Button>
           </div>
         </AnimateOnScroll>

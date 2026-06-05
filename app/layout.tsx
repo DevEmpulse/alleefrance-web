@@ -77,9 +77,7 @@ export const metadata: Metadata = {
       "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +700 casos exitosos.",
     images: ["/hero-lyon.webp"],
   },
-  alternates: {
-    canonical: "https://alleefrance.com",
-  },
+
   category: "Immigration Services",
 };
 

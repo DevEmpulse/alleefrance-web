@@ -17,23 +17,31 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
+import { useTranslations } from "next-intl";
 
-const formSchema = z.object({
+const getFormSchema = (t: any) => z.object({
   name: z
     .string()
-    .min(2, "Tu nombre y apellido deben tener al menos 2 caracteres"),
-  email: z.string().email("Ingresa un correo válido"),
+    .min(2, t("validation.name")),
+  email: z.string().email(t("validation.email")),
   country: z.string({
-    required_error: "Selecciona tu país de contacto",
+    required_error: t("validation.country"),
   }),
   consultationType: z.string({
-    required_error: "Selecciona el tipo de consulta",
+    required_error: t("validation.consultation"),
   }),
-  message: z.string().min(10, "Cuéntanos más detalles (mínimo 10 caracteres)"),
+  message: z.string().min(10, t("validation.message")),
   honeypot: z.string().optional(),
 });
 
-type ContactFormValues = z.infer<typeof formSchema>;
+type ContactFormValues = {
+  name: string;
+  email: string;
+  country: string;
+  consultationType: string;
+  message: string;
+  honeypot?: string;
+};
 
 type SubmissionState = {
   type: "idle" | "success" | "error";
@@ -65,7 +73,28 @@ const consultationTypeOptions = [
   "Otros",
 ] as const;
 
+const countryKeys: Record<string, string> = {
+  "Argentina": "argentina",
+  "Uruguay": "uruguay",
+  "Colombia": "colombia",
+  "Chile": "chile",
+  "Ecuador": "ecuador",
+  "México": "mexico",
+  "Otro": "other",
+};
+
+const consultationKeys: Record<string, string> = {
+  "Visa WH-VVT": "wh",
+  "Visa salarie/saisonnier": "work",
+  "Visa vie privée et familiar": "private",
+  "Autorización de trabajo": "authorization",
+  "Asesoría": "advice",
+  "Otros": "other",
+};
+
 export function ContactSection() {
+  const t = useTranslations("Contact");
+
   return (
     <section id="contacto" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-6">
@@ -75,7 +104,7 @@ export function ContactSection() {
               className="text-4xl lg:text-5xl font-bold mb-4"
               style={{ color: "#002654" }}
             >
-              CONTACTO
+              {t("title")}
             </h2>
           </div>
         </AnimateOnScroll>
@@ -98,15 +127,16 @@ export function ContactSection() {
 }
 
 function ContactIntro() {
+  const t = useTranslations("Contact");
   return (
     <p className="text-gray-700 leading-relaxed">
-      ¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos
-      pondremos en contacto contigo para una consulta inicial gratuita.
+      {t("intro")}
     </p>
   );
 }
 
 function ContactForm() {
+  const t = useTranslations("Contact");
   const [submissionState, setSubmissionState] = useState<SubmissionState>(
     defaultSubmissionState
   );
@@ -118,7 +148,7 @@ function ContactForm() {
     control,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(getFormSchema(t)),
     defaultValues: {
       name: "",
       email: "",
@@ -146,7 +176,7 @@ function ContactForm() {
     if (data.honeypot && data.honeypot.trim().length > 0) {
       resetWithFeedback({
         type: "success",
-        message: "¡Gracias! Nos pondremos en contacto contigo a la brevedad.",
+        message: t("success"),
       });
       return;
     }
@@ -154,8 +184,7 @@ function ContactForm() {
     if (!accessKey) {
       setSubmissionState({
         type: "error",
-        message:
-          "No se pudo enviar el formulario. Falta configurar NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY.",
+        message: t("missingKey"),
       });
       return;
     }
@@ -174,7 +203,7 @@ function ContactForm() {
           country: data.country,
           consultation_type: data.consultationType,
           message: data.message,
-          subject: "Nuevo mensaje desde alleefrance.com",
+          subject: t("subject"),
           honeypot: data.honeypot ?? "",
         }),
       });
@@ -186,14 +215,13 @@ function ContactForm() {
 
       resetWithFeedback({
         type: "success",
-        message: "¡Gracias! Nos pondremos en contacto contigo a la brevedad.",
+        message: t("success"),
       });
     } catch (error) {
       console.error("Contact form error", error);
       setSubmissionState({
         type: "error",
-        message:
-          "Ocurrió un error al enviar el formulario. Intenta nuevamente en unos minutos.",
+        message: t("error"),
       });
     }
   };
@@ -202,7 +230,7 @@ function ContactForm() {
     <form className="space-y-4" onSubmit={handleSubmit(onSubmit)} noValidate>
       <div>
         <Input
-          placeholder="Nombres y apellidos"
+          placeholder={t("namePlaceholder")}
           className="border-2"
           style={fieldBorderStyles}
           autoComplete="name"
@@ -214,7 +242,7 @@ function ContactForm() {
       <div>
         <Input
           type="email"
-          placeholder="Email"
+          placeholder={t("emailPlaceholder")}
           className="border-2"
           style={fieldBorderStyles}
           autoComplete="email"
@@ -237,16 +265,16 @@ function ContactForm() {
             >
               <SelectTrigger
                 className="w-full border-2 justify-between"
-                aria-label="Selecciona tu pais"
+                aria-label={t("countryLabel")}
                 style={fieldBorderStyles}
                 aria-invalid={errors.country ? "true" : "false"}
               >
-                <SelectValue placeholder="País de contacto" />
+                <SelectValue placeholder={t("countryPlaceholder")} />
               </SelectTrigger>
               <SelectContent>
                 {countryOptions.map((country) => (
                   <SelectItem key={country} value={country}>
-                    {country}
+                    {t(`countries.${countryKeys[country]}`)}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -269,16 +297,16 @@ function ContactForm() {
             >
               <SelectTrigger
                 className="w-full border-2 justify-between"
-                aria-label="Selecciona tipo de consulta"
+                aria-label={t("consultationLabel")}
                 style={fieldBorderStyles}
                 aria-invalid={errors.consultationType ? "true" : "false"}
               >
-                <SelectValue placeholder="Tipo de consulta (consulta express)" />
+                <SelectValue placeholder={t("consultationPlaceholder")} />
               </SelectTrigger>
               <SelectContent>
                 {consultationTypeOptions.map((option) => (
                   <SelectItem key={option} value={option}>
-                    {option}
+                    {t(`consultationTypes.${consultationKeys[option]}`)}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -291,7 +319,7 @@ function ContactForm() {
       </div>
       <div>
         <Textarea
-          placeholder="Mensaje"
+          placeholder={t("messagePlaceholder")}
           rows={5}
           className="border-2"
           style={fieldBorderStyles}
@@ -318,7 +346,7 @@ function ContactForm() {
         style={{ backgroundColor: "#ED2939" }}
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Enviando..." : "Enviar mensaje"}
+        {isSubmitting ? t("submitting") : t("submit")}
       </Button>
 
       <StatusMessage state={submissionState} />
@@ -388,6 +416,7 @@ function StatusMessage({ state }: { state: SubmissionState }) {
 }
 
 function ContactMap() {
+  const t = useTranslations("Contact");
   return (
     <div className="flex items-center justify-center">
       <div className="relative w-full max-w-lg aspect-square rounded-lg overflow-hidden shadow-lg">
@@ -400,7 +429,7 @@ function ContactMap() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="absolute inset-0 h-full w-full"
-          title="Mapa de Lyon, Francia"
+          title={t("mapTitle")}
         />
       </div>
     </div>

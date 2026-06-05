@@ -17,6 +17,7 @@ import {
 import { SiWhatsapp } from "react-icons/si";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useEffect, useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export interface FAQItem {
   question: string;
@@ -41,12 +42,62 @@ export function FAQSection({
   allowedCategories,
   defaultCategory,
 }: FAQSectionProps) {
+  const t = useTranslations("FAQHome");
+  const tData = useTranslations("FAQData");
+
+  const getCategoryLabel = (cat: string) => {
+    try {
+      const categoriesObj = t.raw("categories") as Record<string, string>;
+      return categoriesObj[cat] || cat;
+    } catch {
+      return cat;
+    }
+  };
+
+  const faqSource = useMemo(() => {
+    try {
+      const isTds = allowedCategories?.includes("Titre de Séjour") || 
+                    data.some(item => item.category.includes("Titre de Séjour"));
+      if (isTds) {
+        return tData.raw("titreDeSejour") as FAQItem[];
+      }
+      return tData.raw("items") as FAQItem[];
+    } catch {
+      return data;
+    }
+  }, [data, allowedCategories, tData]);
+
+  const displayTitle = useMemo(() => {
+    if (title === "Preguntas Frecuentes (FAQ)" || title === "Preguntas Frecuentes") {
+      if (allowedCategories?.includes("Titre de Séjour")) {
+        return t("tdsTitle");
+      }
+      return t("title");
+    }
+    if (title === "Preguntas frecuentes sobre Working Holiday") return t("whTitle");
+    if (title === "Preguntas Frecuentes: Visas de Trabajo") return t("workTitle");
+    if (title === "Preguntas Frecuentes: Visa de Estudiante") return t("studentTitle");
+    if (title === "Preguntas Frecuentes: Titre de Séjour") return t("tdsTitle");
+    return title;
+  }, [title, allowedCategories, t]);
+
+  const displayDescription = useMemo(() => {
+    if (!description) return undefined;
+    if (description === "Resolvemos dudas clave sobre requisitos, seguros, trabajo y errores frecuentes en la postulación.") return t("whDescCountry");
+    if (description === "Resolvé dudas clave sobre requisitos, seguros, trabajo y tiempos de aplicación.") return t("whDescGlobal");
+    if (description === "Resolvemos tus dudas sobre contratos, requisitos estacionales y seguros para trabajar legalmente en Francia.") return t("workDesc");
+    if (description === "Resolvemos tus dudas sobre requisitos, solvencia económica, Campus France y trabajo a tiempo parcial.") return t("studentDesc");
+    if (description === "Resolvemos tus dudas sobre renovación, cambio de estatus y acompañamiento." || 
+        description === "Resolvemos dudas clave sobre renovación, requisitos y tiempos del Titre de Séjour.") return t("tdsDesc");
+    return description;
+  }, [description, t]);
+
   const [searchValue, setSearchValue] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
   const categories = useMemo<string[]>(() => {
     const unique = new Set<string>();
     const allowedSet = allowedCategories ? new Set(allowedCategories) : null;
-    data.forEach((item) => {
+    faqSource.forEach((item) => {
       item.category.forEach((category) => {
         if (category && (!allowedSet || allowedSet.has(category))) {
           unique.add(category);
@@ -74,7 +125,7 @@ export function FAQSection({
       if (rightIndex !== undefined) return -1;
       return left.localeCompare(right, "es");
     });
-  }, [allowedCategories, data]);
+  }, [allowedCategories, faqSource]);
   const [activeCategory, setActiveCategory] = useState(() => {
     if (defaultCategory && categories.includes(defaultCategory)) {
       return defaultCategory;
@@ -98,7 +149,7 @@ export function FAQSection({
 
   const normalizedSearch = searchValue.trim().toLowerCase();
   const filteredFaqs = useMemo(() => {
-    return data.filter((item) => {
+    return faqSource.filter((item) => {
       const matchesCategory = activeCategory
         ? item.category.includes(activeCategory)
         : true;
@@ -109,7 +160,7 @@ export function FAQSection({
 
       return matchesCategory && matchesSearch;
     });
-  }, [activeCategory, data, normalizedSearch]);
+  }, [activeCategory, faqSource, normalizedSearch]);
   const displayedFaqs = filteredFaqs.slice(0, visibleCount);
 
   return (
@@ -121,10 +172,10 @@ export function FAQSection({
               className="text-4xl lg:text-5xl font-bold mb-4"
               style={{ color: "#002654" }}
             >
-              {title}
+              {displayTitle}
             </h2>
-            {description ? (
-              <p className="text-gray-600 max-w-2xl mx-auto">{description}</p>
+            {displayDescription ? (
+              <p className="text-gray-600 max-w-2xl mx-auto">{displayDescription}</p>
             ) : null}
           </div>
         </AnimateOnScroll>
@@ -139,7 +190,7 @@ export function FAQSection({
               style={{ backgroundColor: "#ED2939" }}
             >
               <SiWhatsapp className="w-6 h-6" />
-              WhatsApp para más consultas
+              {t("whatsapp")}
             </a>
           </div>
         </AnimateOnScroll>
@@ -154,16 +205,16 @@ export function FAQSection({
                 {/* Corrección de Accesibilidad: aria-label agregado */}
                 <SelectTrigger
                   className="w-full md:w-64"
-                  aria-label="Filtrar por categoría"
+                  aria-label={t("filterLabel")}
                 >
-                  <SelectValue placeholder="Seleccionar categoría" />
+                  <SelectValue placeholder={t("categoryPlaceholder")} />
                 </SelectTrigger>
                 <SelectContent>
                   {categories.map((category) => {
                     const categoryLabel = String(category);
                     return (
                       <SelectItem key={categoryLabel} value={categoryLabel}>
-                        {categoryLabel}
+                        {getCategoryLabel(categoryLabel)}
                       </SelectItem>
                     );
                   })}
@@ -173,17 +224,17 @@ export function FAQSection({
             <div className="w-full md:max-w-xs">
               {/* Corrección de Accesibilidad: aria-label agregado */}
               <Input
-                placeholder="Buscar preguntas..."
+                placeholder={t("searchPlaceholder")}
                 value={searchValue}
                 onChange={(event) => setSearchValue(event.target.value)}
-                aria-label="Buscar preguntas"
+                aria-label={t("searchLabel")}
               />
             </div>
           </div>
 
           {filteredFaqs.length === 0 ? (
             <div className="text-center text-gray-500 py-10">
-              No encontramos resultados con esos filtros.
+              {t("empty")}
             </div>
           ) : (
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -232,8 +283,7 @@ export function FAQSection({
               }
               className="text-[#002654] font-semibold hover:underline mt-8 flex items-center justify-center w-full cursor-pointer"
             >
-              Ver más preguntas de {activeCategory} (+
-              {filteredFaqs.length - visibleCount})
+              {t("showMore", { category: getCategoryLabel(activeCategory), count: filteredFaqs.length - visibleCount })}
             </button>
           ) : null}
         </div>

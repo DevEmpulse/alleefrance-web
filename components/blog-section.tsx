@@ -6,72 +6,15 @@ import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import { useTranslations, useLocale } from "next-intl";
 
 export function BlogSection() {
+  const t = useTranslations("BlogHome");
+  const locale = useLocale();
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const blogPosts = [
-    {
-      title: "Bancos físicos vs bancos virtuales en Francia: ¿cuál es la mejor opción para inmigrantes?",
-      excerpt:
-        "Wise, Revolut, N26, Qonto o banco tradicional: descubrí cuál se adapta mejor a tu situación migratoria.",
-      date: "2 Jun 2026",
-      readTime: "12 min",
-      image: "/bancos-france-inmigrantes.webp",
-      alt: "Tarjetas de bancos virtuales como Revolut, Wise y N26 con Torre Eiffel - Guía bancos para inmigrantes en Francia",
-      slug: "bancos-fisicos-vs-virtuales-francia",
-    },
-    {
-      title: "¿Qué es una eSIM y por qué es tan útil hoy en día?",
-      excerpt:
-        "La guía que todo latinoamericano debería leer antes de aterrizar en Francia. Conectividad desde el primer minuto.",
-      date: "2 Jun 2026",
-      readTime: "8 min",
-      image: "/esim-guide-france.webp",
-      alt: "Guía eSIM para latinoamericanos llegando a Francia - Conectividad sin tarjeta física",
-      slug: "esim-guia-latinoamericanos-francia",
-    },
-    {
-      title: "Visa Saisonnier o Salarié: Guía Completa 2025",
-      excerpt:
-        "Checklist de requisitos, cronograma y tips para conseguir un contrato temporal sin rechazos en el consulado.",
-      date: "15 Ene 2025",
-      readTime: "9 min",
-      image: "/seasonal-worker-in-french-vineyard.webp",
-      alt: "Trabajador estacional en viñedo francés - Guía visa Saisonnier y Salarié Francia",
-      slug: "visa-saisonnier-salarie",
-    },
-    {
-      title: "Working Holiday Francia: Checklist para Argentinos 2025",
-      excerpt:
-        "Documentos, presupuesto y plan de llegada para aprovechar los cupos Working Holiday sin contratiempos.",
-      date: "10 Ene 2025",
-      readTime: "8 min",
-      image: "/french-work-visa-documents.webp",
-      alt: "Documentos para visa Working Holiday Francia - Checklist completo para argentinos",
-      slug: "working-holiday-francia",
-    },
-    {
-      title: "Visa de Estudiante: Admisión, Campus France y Consulado",
-      excerpt:
-        "Roadmap para armar tu dossier, financiarte y activar tu visa VLS-TS Étudiant al llegar a Francia.",
-      date: "5 Ene 2025",
-      readTime: "10 min",
-      image: "/student-studying-in-paris.webp",
-      alt: "Estudiante latinoamericano estudiando en París Francia - Guía visa estudiante",
-      slug: "visa-estudiante-francia",
-    },
-    {
-      title: "Aprender Francés: Recursos y Métodos para Progresar Rápido",
-      excerpt:
-        "Plan de 9 meses combinando apps, clases e inmersión para lograr el nivel B1/B2 que exigen las visas.",
-      date: "2 Ene 2025",
-      readTime: "7 min",
-      image: "/person-learning-french-language.webp",
-      alt: "Persona aprendiendo francés - Recursos y métodos para nivel B1 B2 visa Francia",
-      slug: "aprender-frances-recursos",
-    },
-  ];
+  const tBlog = useTranslations("Blog.index");
+  const blogPosts = tBlog.raw("posts") as any[];
 
   const handleScroll = (direction: "left" | "right") => {
     if (!scrollRef.current) return;
@@ -89,13 +32,13 @@ export function BlogSection() {
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between mb-10">
             <div className="text-center md:text-left">
               <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-2">
-                Recursos recientes
+                {t("eyebrow")}
               </p>
               <h2
                 className="text-4xl lg:text-5xl font-bold"
                 style={{ color: "#002654" }}
               >
-                BLOG
+                {t("title")}
               </h2>
             </div>
 
@@ -103,7 +46,7 @@ export function BlogSection() {
             <div className="hidden md:flex gap-3">
               <button
                 type="button"
-                aria-label="Ver artículo anterior"
+                aria-label={t("previousArticle")}
                 onClick={() => handleScroll("left")}
                 className="cursor-pointer w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-[#002654] hover:text-white hover:border-[#002654] transition-all shadow-sm"
               >
@@ -111,7 +54,7 @@ export function BlogSection() {
               </button>
               <button
                 type="button"
-                aria-label="Ver artículo siguiente"
+                aria-label={t("nextArticle")}
                 onClick={() => handleScroll("right")}
                 className="cursor-pointer w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-[#002654] hover:text-white hover:border-[#002654] transition-all shadow-sm"
               >
@@ -128,14 +71,14 @@ export function BlogSection() {
           {blogPosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/blog/${post.slug}`}
+              href={`/${locale}/blog/${post.slug}`}
               className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
             >
               <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100 flex flex-col">
                 <div className="relative h-48 overflow-hidden">
                   <Image
                     src={post.image}
-                    alt={post.alt}
+                    alt={post.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 640px) 85vw, (max-width: 768px) 60vw, (max-width: 1024px) 45vw, 30vw"
@@ -161,7 +104,7 @@ export function BlogSection() {
                     // CAMBIO AQUÍ: Se reemplazó #ED2939 por #DC1F2E para cumplir contraste AA (4.5:1)
                     style={{ color: "#DC1F2E" }}
                   >
-                    Leer más
+                    {t("readMore")}
                   </span>
                 </div>
               </article>
@@ -175,14 +118,14 @@ export function BlogSection() {
             <div className="flex md:hidden gap-4">
               <button
                 onClick={() => handleScroll("left")}
-                aria-label="Ver anterior"
+                aria-label={t("previous")}
                 className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
                 <FaChevronLeft className="text-gray-600" />
               </button>
               <button
                 onClick={() => handleScroll("right")}
-                aria-label="Ver siguiente"
+                aria-label={t("next")}
                 className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
                 <FaChevronRight className="text-gray-600" />
@@ -196,7 +139,7 @@ export function BlogSection() {
               style={{ borderColor: "#002654", color: "#002654" }}
               asChild
             >
-              <Link href="/blog">VER TODOS LOS ARTÍCULOS</Link>
+              <Link href={`/${locale}/blog`}>{t("viewAll")}</Link>
             </Button>
           </div>
         </AnimateOnScroll>

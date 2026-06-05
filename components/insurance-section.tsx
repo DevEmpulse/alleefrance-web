@@ -5,39 +5,42 @@ import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ShieldCheck, Heart, Plane, Calendar, Users, CheckCircle2, Star } from "lucide-react"
 import { AnimateOnScroll } from "@/components/animate-on-scroll"
-
-const insuranceFeatures = [
-  {
-    icon: Heart,
-    title: "Enfermedad",
-    description: "Cobertura médica completa ante cualquier síntoma o enfermedad.",
-    color: "text-rose-400",
-    bg: "bg-rose-500/20",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Hospitalización",
-    description: "Protección total en gastos de internación y tratamientos.",
-    color: "text-blue-300",
-    bg: "bg-blue-500/20",
-  },
-  {
-    icon: Plane,
-    title: "Repatriación",
-    description: "Servicio sanitario de regreso inmediato en caso de emergencia.",
-    color: "text-emerald-300",
-    bg: "bg-emerald-500/20",
-  },
-  {
-    icon: Calendar,
-    title: "Toda la estadía",
-    description: "Cobertura 24/7 durante tu tiempo en Francia y la Zona Schengen.",
-    color: "text-amber-300",
-    bg: "bg-amber-500/20",
-  },
-]
+import { useTranslations } from "next-intl"
 
 export function InsuranceSection() {
+  const t = useTranslations("Insurance")
+
+  const insuranceFeatures = [
+    {
+      icon: Heart,
+      title: t("features.illness.title"),
+      description: t("features.illness.description"),
+      color: "text-rose-400",
+      bg: "bg-rose-500/20",
+    },
+    {
+      icon: ShieldCheck,
+      title: t("features.hospitalization.title"),
+      description: t("features.hospitalization.description"),
+      color: "text-blue-300",
+      bg: "bg-blue-500/20",
+    },
+    {
+      icon: Plane,
+      title: t("features.repatriation.title"),
+      description: t("features.repatriation.description"),
+      color: "text-emerald-300",
+      bg: "bg-emerald-500/20",
+    },
+    {
+      icon: Calendar,
+      title: t("features.stay.title"),
+      description: t("features.stay.description"),
+      color: "text-amber-300",
+      bg: "bg-amber-500/20",
+    },
+  ]
+
   return (
     <section
       id="seguro"
@@ -57,12 +60,12 @@ export function InsuranceSection() {
           <div className="flex justify-center mb-4 md:mb-6">
             <div className="inline-flex items-center gap-2 md:gap-3 bg-white/15 backdrop-blur-md border-2 border-white/20 rounded-full px-4 md:px-5 py-2 md:py-2.5 shadow-lg">
               <span className="text-xs md:text-sm font-bold uppercase tracking-wider text-white">
-                Partner Oficial
+                {t("partner")}
               </span>
               <div className="h-4 w-[1px] bg-white/30"></div>
               <Image
                   src="/ATV_logo-naranja-blanco.webp"
-                  alt="Asegura tu Viaje - Partner oficial de seguros de viaje para visa Schengen Francia"
+                  alt={t("partnerAlt")}
                   width={100}
                   height={25}
                   className="h-5 md:h-6 w-auto object-contain brightness-0 invert"
@@ -76,13 +79,13 @@ export function InsuranceSection() {
         <AnimateOnScroll direction="fade" delay={0.1}>
           <div className="text-center mb-6 md:mb-8">
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 md:mb-3 text-white tracking-tight">
-              Tu visa aprobada,<br className="hidden md:block" /> 
+              {t("titleLine1")}<br className="hidden md:block" /> 
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-white">
-                tu viaje protegido.
+                {t("titleLine2")}
               </span>
             </h2>
             <p className="text-base md:text-lg text-blue-100/80 max-w-2xl mx-auto leading-relaxed">
-              El seguro obligatorio para entrar a Europa. Cumple con todos los requisitos consulares.
+              {t("description")}
             </p>
           </div>
         </AnimateOnScroll>
@@ -132,7 +135,7 @@ export function InsuranceSection() {
                 <div className="relative h-[280px] md:h-[320px] lg:h-[360px] w-full">
                    <Image
                     src="/twopersonhappy.webp"
-                    alt="Viajeros latinoamericanos felices en Europa con seguro de viaje Schengen"
+                    alt={t("imageAlt")}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
@@ -150,7 +153,7 @@ export function InsuranceSection() {
                       </div>
                       <div>
                         <p className="text-xl md:text-2xl font-bold text-white leading-none">+10k</p>
-                        <p className="text-[10px] md:text-xs text-blue-200 uppercase tracking-wide mt-0.5 md:mt-1">Viajeros Asegurados</p>
+                        <p className="text-[10px] md:text-xs text-blue-200 uppercase tracking-wide mt-0.5 md:mt-1">{t("insuredTravelers")}</p>
                       </div>
                     </div>
 
@@ -163,7 +166,7 @@ export function InsuranceSection() {
                       </div>
                       <div>
                         <p className="text-xl md:text-2xl font-bold text-white leading-none">4.9/5</p>
-                        <p className="text-[10px] md:text-xs text-blue-200 uppercase tracking-wide mt-0.5 md:mt-1">Valoración Promedio</p>
+                        <p className="text-[10px] md:text-xs text-blue-200 uppercase tracking-wide mt-0.5 md:mt-1">{t("averageRating")}</p>
                       </div>
                     </div>
 
@@ -188,7 +191,7 @@ export function InsuranceSection() {
                 rel="noopener noreferrer"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  Cotizar mi Seguro Ahora
+                  {t("cta")}
                   <Plane className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
                 </span>
               </a>
@@ -196,7 +199,7 @@ export function InsuranceSection() {
             
             <p className="mt-3 md:mt-4 text-xs md:text-sm text-blue-200/60 flex items-center gap-1.5">
               <ShieldCheck className="w-3 h-3 md:w-4 md:h-4" />
-              Certificado oficial enviado a tu email al instante
+              {t("certificate")}
             </p>
           </div>
         </AnimateOnScroll>

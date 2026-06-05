@@ -1,0 +1,2858 @@
+{
+  "LocaleLayout": {
+    "title": "Allée France",
+    "description": "Specialized immigration consultancy in France for Latin Americans."
+  },
+  "Navbar": {
+    "logoAlt": "Allée France - Immigration Consultancy France for Latin Americans",
+    "about": "About Us",
+    "services": "Services",
+    "workVisa": "Salarié / Saisonnier Visa",
+    "workingHoliday": "Working Holiday",
+    "studentVisa": "Student Visa",
+    "contact": "Contact",
+    "quoteInsurance": "Quote my insurance",
+    "changeLanguage": "Change language",
+    "toggleMenu": "Toggle menu"
+  },
+  "Hero": {
+    "imageAlt": "View of Lyon, France - Allée France accompanies you in your immigration project",
+    "title": "Your project in France, with professional accompaniment",
+    "subtitle": "I accompany you step by step: Salarié/Saisonnier, VVT, Titres de séjour and personalized consultancies.",
+    "workVisaCta": "I want my Salarié/Saisonnier visa",
+    "workingHolidayCta": "Working Holiday Visa (VVT)",
+    "whatsappCta": "Schedule a consultation",
+    "statsTitle": "Market Leader",
+    "statsSubtitle": "for over 2 years",
+    "statsLabel": "successful cases"
+  },
+  "About": {
+    "mapAlt": "Map of France with the main cities to emigrate: Paris, Lyon, Marseille",
+    "titlePrefix": "Expert guide in visas and procedures to",
+    "titleHighlight": "live and work",
+    "titleSuffix": "in France",
+    "paragraph1": "At Allée France we are specialists in immigration procedures for France and we guide those who wish to live, work or study in this country.",
+    "paragraph2Prefix": "More than",
+    "paragraph2Strong": "700 successful processes",
+    "paragraph2Suffix": "guarantee our experience in work authorizations, Salarié visa, Saisonnier visa, student visa and family reunification.",
+    "paragraph3": "We help people from Latin America and the world to realize their immigration project to France with clear advice, step-by-step accompaniment and a personalized strategy according to your objective: employment, studies or residence.",
+    "paragraph4": "We offer specialized advice not only for France, but also for other destinations where you wish to study, live or work, always with the same level of precision and results.",
+    "quote": "Your project is not a procedure: it is your future.",
+    "mission": "And our mission is to make it possible.",
+    "servicesCta": "Our services",
+    "contactCta": "Contact us",
+    "stats": {
+      "cases": "Successful cases",
+      "experience": "Years of experience",
+      "adviceValue": "Advice",
+      "adviceLabel": "Personalized"
+    }
+  },
+  "Services": {
+    "title": "Our Services",
+    "description": "Choose the procedure you need and let us guide you on your path to France.",
+    "moreInfo": "MORE INFORMATION",
+    "contact": "CONTACT",
+    "viewAll": "VIEW ALL SERVICES",
+    "items": {
+      "visa-salarie": {
+        "title": "Salarié Visa",
+        "description": "Complete management for your work visa and file preparation.",
+        "alt": "Salarié Visa France Service - CDI and CDD work contract for foreigners"
+      },
+      "working-holiday": {
+        "title": "Working Holiday",
+        "description": "Comprehensive support to live and work in France for a season.",
+        "alt": "Working Holiday Visa France - Work and holiday program for young Latin Americans"
+      },
+      "titre-de-sejour": {
+        "title": "Titre de Séjour",
+        "description": "Regularize your residence with personalized advice and tracking.",
+        "alt": "Titre de Séjour France - Residence permit and renewal for foreigners"
+      },
+      "necesitas-aseoria": {
+        "title": "Need Advice?",
+        "description": "Contact us via WhatsApp and we will answer your questions in minutes.",
+        "alt": "Personalized immigration advice France - WhatsApp consultation with experts"
+      }
+    }
+  },
+  "WorkingHoliday": {
+    "edition": "EDITION {year}",
+    "titleStart": "Your Working Holiday",
+    "titleMiddle": "in",
+    "titleCountry": "France",
+    "titleEnd": "starts here.",
+    "imageAlt": "Young Latin Americans enjoying Working Holiday in France - Work and holiday visa",
+    "benefit1": "Comprehensive visa management",
+    "benefit2": "Guidance for housing and job search",
+    "benefit3": "Exclusive travelers community",
+    "approved": "Over 300 visas approved",
+    "cta": "Start your journey",
+    "otherTitle": "Other Working Holiday destinations",
+    "otherDescription": "Explore alternative options available for Latin American residents.",
+    "viewMore": "See more destinations"
+  },
+  "Insurance": {
+    "partner": "Official Partner",
+    "partnerAlt": "Asegura tu Viaje - Official travel insurance partner for Schengen visa France",
+    "titleLine1": "Your visa approved,",
+    "titleLine2": "your trip protected.",
+    "description": "The mandatory insurance to enter Europe. Complies with all consular requirements.",
+    "imageAlt": "Happy Latin American travelers in Europe with Schengen travel insurance",
+    "insuredTravelers": "Insured Travelers",
+    "averageRating": "Average Rating",
+    "cta": "Quote my Insurance Now",
+    "certificate": "Official certificate sent to your email instantly",
+    "features": {
+      "illness": {
+        "title": "Illness",
+        "description": "Complete medical coverage for any symptom or illness."
+      },
+      "hospitalization": {
+        "title": "Hospitalization",
+        "description": "Total protection for hospitalization and treatment expenses."
+      },
+      "repatriation": {
+        "title": "Repatriation",
+        "description": "Immediate sanitary return service in case of emergency."
+      },
+      "stay": {
+        "title": "Entire Stay",
+        "description": "24/7 coverage during your time in France and the Schengen Area."
+      }
+    }
+  },
+  "BlogHome": {
+    "eyebrow": "Recent resources",
+    "title": "BLOG",
+    "previousArticle": "View previous article",
+    "nextArticle": "View next article",
+    "previous": "View previous",
+    "next": "View next",
+    "readMore": "Read more",
+    "viewAll": "VIEW ALL ARTICLES"
+  },
+  "SuccessStories": {
+    "title": "Real stories, proven results",
+    "description": "The peace of mind knowing you are in expert hands. This is how they experienced it:",
+    "previous": "View previous review",
+    "next": "View next review",
+    "googleCta": "See the +40 reviews on Google",
+    "date": "2 weeks ago"
+  },
+  "FAQHome": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "whTitle": "Frequently Asked Questions about Working Holiday",
+    "workTitle": "Frequently Asked Questions: Work Visas",
+    "studentTitle": "Frequently Asked Questions: Student Visa",
+    "tdsTitle": "Frequently Asked Questions: Titre de Séjour",
+    "whDescCountry": "We solve key doubts about requirements, insurance, work, and frequent application mistakes.",
+    "whDescGlobal": "We solve key doubts about requirements, insurance, work, and application timelines.",
+    "workDesc": "We answer your questions about contracts, seasonal requirements, and insurance to work legally in France.",
+    "studentDesc": "We answer your questions about requirements, financial solvency, Campus France, and part-time work.",
+    "tdsDesc": "We answer your questions about renewal, change of status, and support.",
+    "whatsapp": "WhatsApp for more inquiries",
+    "filterLabel": "Filter by category",
+    "categoryPlaceholder": "Select category",
+    "searchPlaceholder": "Search questions...",
+    "searchLabel": "Search questions",
+    "empty": "We couldn't find any results with those filters.",
+    "showMore": "See more {category} questions (+{count})",
+    "categories": {
+      "Trámites": "Procedures",
+      "General": "General",
+      "Seguros": "Insurance",
+      "Asesoría": "Consulting",
+      "WH: General": "WH: General",
+      "WH: Argentina": "WH: Argentina",
+      "WH: Chile": "WH: Chile",
+      "Trabajo": "Work",
+      "Estudios": "Studies",
+      "Documentación": "Documentation",
+      "Errores Frecuentes": "Common Mistakes",
+      "Saisonnier: General": "Saisonnier: General",
+      "Saisonnier: Argentina": "Saisonnier: Argentina",
+      "Saisonnier: Chile": "Saisonnier: Chile",
+      "Titre de Séjour": "Titre de Séjour"
+    }
+  },
+  "Contact": {
+    "title": "CONTACT",
+    "intro": "Ready to start your immigration process? Fill out the form and we will contact you for a free initial consultation.",
+    "namePlaceholder": "Full Name",
+    "emailPlaceholder": "Email",
+    "countryLabel": "Select your country",
+    "countryPlaceholder": "Country of contact",
+    "consultationLabel": "Select type of consultation",
+    "consultationPlaceholder": "Type of consultation (express consultation)",
+    "messagePlaceholder": "Message",
+    "submitting": "Submitting...",
+    "submit": "Send message",
+    "success": "Thank you! We will get in touch with you shortly.",
+    "missingKey": "Could not send the form. NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY is missing.",
+    "error": "An error occurred while sending the form. Please try again in a few minutes.",
+    "subject": "New message from alleefrance.com",
+    "mapTitle": "Map of Lyon, France",
+    "validation": {
+      "name": "Your name and surname must have at least 2 characters",
+      "email": "Enter a valid email",
+      "country": "Select your country of contact",
+      "consultation": "Select the type of consultation",
+      "message": "Tell us more details (minimum 10 characters)"
+    },
+    "countries": {
+      "argentina": "Argentina",
+      "uruguay": "Uruguay",
+      "colombia": "Colombia",
+      "chile": "Chile",
+      "ecuador": "Ecuador",
+      "mexico": "Mexico",
+      "other": "Other"
+    },
+    "consultationTypes": {
+      "wh": "WH-VVT Visa",
+      "work": "Salarié/saisonnier Visa",
+      "private": "Vie privée et familiale Visa",
+      "authorization": "Work Authorization",
+      "advice": "Consultation",
+      "other": "Others"
+    }
+  },
+  "Footer": {
+    "description": "Specialists in immigration advice and visa processing for France. Your French dream, our commitment.",
+    "quote": "Quote my insurance",
+    "links": {
+      "title": "Quick Links",
+      "services": "Services",
+      "successStories": "Successful Cases",
+      "insurance": "Travel Insurance",
+      "faq": "Frequently Asked Questions",
+      "blog": "Blog"
+    },
+    "services": {
+      "title": "Services",
+      "work": "Work Visas",
+      "student": "Student Visa",
+      "wh": "Working Holiday"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "rights": "All rights reserved.",
+    "madeBy": "Made by",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms and Conditions"
+    }
+  },
+  "ServicesData": {
+    "personas": {
+      "students": {
+        "label": "Students",
+        "helper": "Admissions, visas and academic arrival"
+      },
+      "workers": {
+        "label": "Workers",
+        "helper": "Employment, permits and entrepreneurship"
+      },
+      "families": {
+        "label": "Families",
+        "helper": "Reunification and family stability"
+      },
+      "settled": {
+        "label": "Already in France",
+        "helper": "Regularize and maintain your status"
+      },
+      "general": {
+        "label": "General Services",
+        "helper": "Transversal support for everyone"
+      }
+    },
+    "items": {
+      "service_1": {
+        "title": "Personalized Consulting",
+        "description": "Resolve specific questions about migration to France with our experts.",
+        "details": [
+          "Express consulting (30 min): Specific questions",
+          "Complete consulting (1h): Comprehensive review with written summary"
+        ],
+        "price": "From 30€",
+        "duration": "30 min - 1 hour"
+      },
+      "service_2": {
+        "title": "Work Authorization",
+        "description": "Complete management of work authorization with DREETS.",
+        "details": [
+          "Publication on France Travail",
+          "ANEF process with DREETS",
+          "Communication with employer and worker",
+          "Dossier ready for the embassy"
+        ],
+        "price": "From 150€",
+        "duration": "2-4 weeks"
+      },
+      "service_3": {
+        "title": "Salarié/Saisonnier Visa",
+        "description": "Complete accompaniment for a work visa in France.",
+        "details": [
+          "Comprehensive management in France and origin country",
+          "Work authorization",
+          "Embassy appointment",
+          "Preparation of complete dossier",
+          "Professional letters and CVs",
+          "Strategy to demonstrate experience"
+        ],
+        "price": "From 250€",
+        "duration": "4-8 weeks"
+      },
+      "service_4": {
+        "title": "Travel Insurance",
+        "description": "International coverage for Schengen visa, studies or holidays in multiple destinations.",
+        "details": [
+          "Personalized advice by destination",
+          "Selection of Schengen/multi-destination policy",
+          "Certificate in French or English ready for consulate",
+          "Immediate issuance and support for changes"
+        ],
+        "price": "Variable",
+        "duration": "Immediate"
+      },
+      "service_5": {
+        "title": "Vie Privée et Familiale Visa",
+        "description": "Residence for private and family life in France.",
+        "details": [
+          "Complete advice (not PACS)",
+          "Preparation of dossier",
+          "Accompaniment at the prefecture",
+          "Process tracking"
+        ],
+        "price": "From 250€",
+        "duration": "4-6 weeks"
+      },
+      "service_6": {
+        "title": "French Naturalization",
+        "description": "Complete process to obtain French nationality.",
+        "details": [
+          "Review of requirements",
+          "Preparation of documents (certificates, casier, translations)",
+          "Interview simulation",
+          "Complete accompaniment"
+        ],
+        "price": "From 500€",
+        "duration": "8-12 weeks"
+      },
+      "service_7": {
+        "title": "Student Visa",
+        "description": "Campus France and academic registration to study in France.",
+        "details": [
+          "Campus France process",
+          "Academic registration",
+          "Preparation of dossier for embassy",
+          "Financial resources strategy",
+          "Housing search"
+        ],
+        "price": "From 250€",
+        "duration": "4-8 weeks"
+      },
+      "service_8": {
+        "title": "Family Reunification",
+        "description": "Reunite your family in France with all the necessary procedures.",
+        "details": [
+          "Dossier for OFII/prefecture",
+          "Advice on housing and resources",
+          "Documentary strategy",
+          "Complete accompaniment"
+        ],
+        "price": "From 350€",
+        "duration": "6-10 weeks"
+      },
+      "service_9": {
+        "title": "Tax Declaration",
+        "description": "Complete filing of your tax declaration in France.",
+        "details": [
+          "Complete filling of declaration",
+          "Advice on deductions",
+          "Accompaniment in notifications",
+          "Tax optimization"
+        ],
+        "price": "From 50€",
+        "duration": "1-2 weeks"
+      },
+      "service_10": {
+        "title": "Visa Validation",
+        "description": "Validation on the OFII platform upon arrival in France.",
+        "details": [
+          "Validation on OFII platform",
+          "Regularization of stay",
+          "Post-arrival advice"
+        ],
+        "price": "From 15€",
+        "duration": "Immediate"
+      },
+      "service_11": {
+        "title": "Titres de Séjour",
+        "description": "Renewal and obtaining of residence permits in France.",
+        "details": [
+          "Salarié",
+          "Saisonnier",
+          "Étudiant",
+          "Includes advice and dossier preparation",
+          "Accompaniment at the prefecture"
+        ],
+        "price": "From 150€",
+        "duration": "3-6 weeks"
+      },
+      "service_12": {
+        "title": "Passeport Talent Visa",
+        "description": "For highly qualified professionals and entrepreneurs.",
+        "details": [
+          "Salarié qualifié",
+          "European Blue Card",
+          "Jeune entreprise innovante",
+          "Eligibility assessment",
+          "Preparation of contracts/resources",
+          "Complete ANEF dossier",
+          "Accompaniment at prefecture/consulate"
+        ],
+        "price": "From 250€",
+        "duration": "4-8 weeks"
+      },
+      "service_13": {
+        "title": "Profession Libérale",
+        "description": "Change or request of status to work as a freelancer.",
+        "details": [
+          "Definition of activity (APE)",
+          "Registration with URSSAF/INPI",
+          "Activity and income plan",
+          "Dossier preparation",
+          "Complete accompaniment"
+        ],
+        "price": "From 250€",
+        "duration": "4-6 weeks"
+      },
+      "service_14": {
+        "title": "Official Translations",
+        "description": "Sworn translations accepted by French authorities.",
+        "details": [
+          "Official sworn translations",
+          "Accepted by prefectures",
+          "Valid for embassies",
+          "Recognized by universities",
+          "Quote according to pages/words"
+        ],
+        "price": "Variable",
+        "duration": "3-7 days"
+      },
+      "service_15": {
+        "title": "Social Security",
+        "description": "Complete procedure to obtain your carte vitale.",
+        "details": [
+          "CERFA forms",
+          "Document upload",
+          "Process tracking",
+          "Accompaniment until obtained"
+        ],
+        "price": "From 50€",
+        "duration": "2-4 weeks"
+      }
+    }
+  },
+  "ServicesCatalog": {
+    "chooseProfile": "Choose your profile and discover the recommended services for your situation.",
+    "requestService": "Request this service"
+  },
+  "ServicesPage": {
+    "title": "Services Catalog",
+    "subtitle": "Allée France Lyon Agency – Complete solutions for your immigration and administrative process in France.",
+    "helpText": "Don't know where to start? We recommend scheduling a consultation.",
+    "bookConsulting": "Book consultation",
+    "whatsappConsulting": "Consult via WhatsApp",
+    "responseTime": "We reply in less than 24 hours.",
+    "notFoundTitle": "Can't find the service you need?",
+    "notFoundDesc": "Contact us for a personalized consultation. Our team of experts is ready to help you with any immigration or administrative process in France.",
+    "freeConsulting": "Free consultation via WhatsApp",
+    "contactForm": "Contact form"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "Allée France Lyon operates alleefrance.com (hereinafter, “the Site”). We respect your privacy and are committed to protecting it through compliance with this policy.",
+    "sections": {
+      "1": {
+        "title": "1. Information we collect and use",
+        "p1": "Through the Site we receive and store the information you enter in forms, applications, inquiries, and contact messages. This may include data that identifies users, such as name, address, email, nationality, age, gender, and demographic data.",
+        "p2": "When you visit the Site, we also collect device information, such as IP address, browser type, time zone, installed cookies, and visited pages. We will refer to this information as “the Information”.",
+        "p3": "We use “the Information” to detect risks and prevent fraud (particularly your IP address), and to improve the browsing experience, content, and our campaigns.",
+        "purposesTitle": "Main purposes:",
+        "purposes": [
+          "Process and manage requests for immigration advice, visas, and administrative procedures in France.",
+          "Personalize the user experience and offer relevant content.",
+          "Communicate about inquiries, appointments, documentation, and service updates.",
+          "Improve our services and develop new solutions.",
+          "Comply with applicable legal and regulatory obligations.",
+          "Send general and marketing communications, such as newsletters and Site news."
+        ],
+        "p4": "We will not consider information obtained offline or through other means as information collected by the Site, unless expressly mentioned in this policy.",
+        "p5": "If you click on a link and leave the Site, we are not responsible for the privacy practices of third parties. We recommend reviewing the policies of those sites.",
+        "p6": "If you do not agree with our practices, you may choose not to use the Site. By accessing or using the Site, you accept this policy."
+      },
+      "2": {
+        "title": "2. Cookies",
+        "p1": "The Site uses cookies to collect information and improve navigation. You can configure your browser to reject all cookies or to notify you when one is sent. Keep in mind that some parts of the Site may not function properly if you disable cookies."
+      },
+      "3": {
+        "title": "3. Sharing your personal information",
+        "p1": "The information we collect may be shared with third parties as described in this policy:",
+        "list": [
+          "Service providers who assist us with hosting, analytics, messaging, and technical support, under our instructions.",
+          "Administrative or judicial authorities requiring information under applicable regulations.",
+          "Fraud prevention, protection of rights, and security of our users and the Site."
+        ]
+      },
+      "4": {
+        "title": "4. Security",
+        "p1": "We implement reasonable security measures to protect your personal data and reduce risks of loss, unauthorized access, or disclosure. However, no method of transmission or storage is completely secure, so we cannot guarantee absolute security."
+      },
+      "5": {
+        "title": "5. Changes to this policy",
+        "p1": "We may update this policy at any time. Changes will take effect immediately upon posting on the Site. We recommend reviewing this page periodically."
+      },
+      "6": {
+        "title": "6. Contact",
+        "p1": "If you wish to access, rectify, or delete personal information or make inquiries about this policy, write to us at "
+      }
+    }
+  },
+  "TermsAndConditions": {
+    "title": "Terms and Conditions",
+    "intro": "Welcome to Allée France Lyon. By accessing and using alleefrance.com (hereinafter, “the Site”), you accept these terms and conditions of use.",
+    "sections": {
+      "1": {
+        "title": "1. Acceptance of terms",
+        "p1": "Use of the Site implies full and unreserved acceptance of these terms. If you do not agree with any condition, please do not use the Site.",
+        "p2": "All information collected through the Site will be treated in accordance with our Privacy Policy."
+      },
+      "2": {
+        "title": "2. Information provided by Allée France",
+        "p1": "Allée France Lyon provides information and guidance on immigration processes, visas, and administrative procedures in France. The content of the Site is based on sources we consider reliable and verified experiences, but we do not guarantee its accuracy, completeness, or permanent updating.",
+        "p2": "The published information is for informational purposes and does not constitute binding legal advice. Each procedure may vary depending on nationality and the user's particular situation."
+      },
+      "3": {
+        "title": "3. Proper use of the Site",
+        "p1": "The user agrees to use the Site in a lawful and respectful manner, without affecting its operation or the rights of third parties. Fraudulent use, automated data collection, or any action that may harm the experience of other users is prohibited."
+      },
+      "4": {
+        "title": "4. Intellectual Property",
+        "p1": "All content on the Site, including texts, graphics, logos, images, trademarks, and software, is the property of Allée France Lyon or third parties who authorized their use. Reproduction or distribution without express authorization is prohibited."
+      },
+      "5": {
+        "title": "5. Responsibilities and limitations",
+        "p1": "Allée France Lyon assumes no responsibility for decisions made based on published information. The user uses the Site's content at their own risk.",
+        "p2": "We do not guarantee the continuous availability of the Site and may modify, suspend, or interrupt content and services without prior notice."
+      },
+      "6": {
+        "title": "6. Links to third parties",
+        "p1": "The Site may contain links to third-party sites. Allée France Lyon is not responsible for the contents, policies, or privacy practices of those external sites."
+      },
+      "7": {
+        "title": "7. Visa processes",
+        "p1": "The application, submission of documentation, and obtaining of visas are the sole responsibility of the user. Although we provide guidance and advice, we do not guarantee approval or denial by competent authorities."
+      },
+      "8": {
+        "title": "8. Changes to terms",
+        "p1": "Allée France Lyon may modify these terms at any time. The current version will be the one published on the Site."
+      },
+      "9": {
+        "title": "9. Applicable legislation",
+        "p1": "These terms are governed by current French legislation. Any controversy will be submitted to the competent courts of Lyon, France."
+      },
+      "10": {
+        "title": "10. Contact",
+        "p1": "If you have questions about these terms, write to us at "
+      }
+    }
+  },
+  "BlogPage": {
+    "title": "Blog and Resources",
+    "subtitle": "Comprehensive guides, articles and updated advice on immigration, visas and life in France. Reliable information for your immigration process.",
+    "readMore": "Read more",
+    "loadMore": "Load More Articles",
+    "ctaTitle": "Do You Need Personalized Advice?",
+    "ctaSubtitle": "Our team is ready to help you with your immigration process to France",
+    "ctaWhatsapp": "Consult via WhatsApp",
+    "ctaBook": "Schedule Consultation"
+  },
+  "BlogNewsletter": {
+    "title": "Exclusive alerts and resources",
+    "description": "Receive reminders of consular deadlines, notices of calls and ready-to-use tools for your immigration process.",
+    "highlights": [
+      "Key reminders",
+      "Calls before anyone else",
+      "Templates and checklists"
+    ]
+  },
+  "Blog": {
+    "index": {
+      "categories": [
+        "All",
+        "Finance",
+        "Connectivity",
+        "Work Visas",
+        "Working Holiday",
+        "Student Visas",
+        "Language & Culture"
+      ],
+      "posts": [
+        {
+          "title": "Physical vs. Virtual Banks in France: Which is Best for Immigrants?",
+          "excerpt": "Wise, Revolut, N26, Qonto or traditional bank: discover which one best suits your immigration situation in France.",
+          "date": "June 2, 2026",
+          "readTime": "12 min",
+          "image": "/bancos-france-inmigrantes.webp",
+          "category": "Finance",
+          "slug": "bancos-fisicos-vs-virtuales-francia"
+        },
+        {
+          "title": "What is an eSIM and why is it so useful today?",
+          "excerpt": "The guide every Latin American should read before landing in France. Active connectivity from the moment you land.",
+          "date": "June 2, 2026",
+          "readTime": "8 min",
+          "image": "/esim-guide-france.webp",
+          "category": "Connectivity",
+          "slug": "esim-guia-latinoamericanos-francia"
+        },
+        {
+          "title": "Saisonnier or Salarié Visa: Complete Guide 2026",
+          "excerpt": "Requirements, contracts, timing, and key tips to get a temporary Saisonnier or Salarié permit in France without a hitch.",
+          "date": "January 15, 2026",
+          "readTime": "9 min",
+          "image": "/seasonal-worker-in-french-vineyard.webp",
+          "category": "Work Visas",
+          "slug": "visa-saisonnier-salarie"
+        },
+        {
+          "title": "Working Holiday France: Checklist for Argentinians 2025",
+          "excerpt": "Step by step to gather documents, apply for the visa, and organize your first months in France with the Working Holiday program.",
+          "date": "January 10, 2025",
+          "readTime": "8 min",
+          "image": "/french-work-visa-documents.webp",
+          "category": "Working Holiday",
+          "slug": "working-holiday-francia"
+        },
+        {
+          "title": "Student Visa France 2025: Campus France and Consulate",
+          "excerpt": "Organize your calendar from program search to arrival in France, with checklists and essential documents.",
+          "date": "January 5, 2025",
+          "readTime": "10 min",
+          "image": "/student-studying-in-paris.webp",
+          "category": "Student Visas",
+          "slug": "visa-estudiante-francia"
+        },
+        {
+          "title": "Learn French: Resources and Methods to Progress Fast",
+          "excerpt": "Combined strategies (apps, teachers, immersion, and exams) to reach the B1/B2 level required by visas in record time.",
+          "date": "January 2, 2025",
+          "readTime": "7 min",
+          "image": "/person-learning-french-language.webp",
+          "category": "Language & Culture",
+          "slug": "aprender-frances-recursos"
+        }
+      ]
+    }
+  },
+  "BlogPosts": {
+    "aprender-frances-recursos": {
+      "hero": {
+        "title": "Learn French: Resources and Methods",
+        "subtitle": "An actionable plan to reach the level required by French visas, even if you start from scratch.",
+        "category": "Language and Culture"
+      },
+      "pillarsTitle": "The 3 pillars to progress",
+      "pillars": [
+        {
+          "title": "Daily Input",
+          "detail": "RFI Journal en français facile podcast + 20 minutes of graded reading (News in Slow French, Frantastique)."
+        },
+        {
+          "title": "Guided production",
+          "detail": "2 weekly classes (online or in person) focused on conversation and pronunciation correction."
+        },
+        {
+          "title": "Monthly evaluation",
+          "detail": "DELF/TCF mocks to measure progress and adjust the plan before the exam date."
+        }
+      ],
+      "pillarsConclusion": "Consistency is more important than quantity. 45 well-focused daily minutes beat long but irregular sessions. Use a shared calendar to log study hours and detect slow weeks.",
+      "resourcesTitle": "Recommended resources in 2024",
+      "resources": [
+        {
+          "name": "Alliance Française online",
+          "note": "Live classes + written feedback. Ideal for going from A2 to B1."
+        },
+        {
+          "name": "Italki / Preply",
+          "note": "Personalized teachers from 12 € an hour. Choose natives specialized in visas or studies."
+        },
+        {
+          "name": "Anki + B1 decks",
+          "note": "Flashcards with pronunciation to build professional vocabulary."
+        },
+        {
+          "name": "TV5 Monde Apprendre",
+          "note": "Short videos with self-correcting exercises."
+        },
+        {
+          "name": "Conversational Meetup",
+          "note": "Practice in your city with natives living in your country."
+        }
+      ],
+      "resourcesConclusion": "Complement digital materials with real immersion: change your phone's language, follow French accounts on social media, and look for language tandems. Constant exposure accelerates listening comprehension.",
+      "studyPlanTitle": "9-month study plan",
+      "studyPlan": [
+        {
+          "phase": "Months 1-2",
+          "focus": "Consolidate A2 grammatical base. 30 daily minutes of app + 2 group classes."
+        },
+        {
+          "phase": "Months 3-5",
+          "focus": "Jump to B1: weekly email writing and recorded oral mocks."
+        },
+        {
+          "phase": "Months 6-7",
+          "focus": "DELF preparation: timed exercises and individual corrective feedback."
+        },
+        {
+          "phase": "Months 8-9",
+          "focus": "Deepen professional vocabulary and build a portfolio of projects/essays in French."
+        }
+      ],
+      "examsTitle": "Preparation for official exams",
+      "exams": [
+        "Choose the exam according to your goal: DELF B1/B2 for visas, TCF IRN for naturalization, TEF Canada for migration.",
+        "Practice with a stopwatch. Oral tests last 10-15 minutes, so train concise answers.",
+        "Record yourself answering typical topics and analyze filler words or pronunciation errors.",
+        "Simulate the written part on a computer if you take TCF SO, or by hand for DELF."
+      ]
+    },
+    "working-holiday-francia": {
+      "hero": {
+        "title": "Working Holiday France: Checklist 2024",
+        "subtitle": "Opening dates, mandatory documents and financial plan so you arrive in France with everything sorted out.",
+        "category": "Working Holiday"
+      },
+      "section1": {
+        "title": "Quotas and strategy to get an appointment",
+        "p1": "The consulate opens the agenda in two batches (March and October) and it sells out in minutes. Create your France-Visas user in advance, preload the form and have your fee payment receipt ready for the same day of the appointment. Use a secondary email to avoid blockages and set up alerts with our Telegram bot to find out as soon as places become available.",
+        "p2": "Remember that the Working Holiday visa is for 12 months, non-renewable, and does not allow working with contracts longer than 6 months per employer. However, you can alternate jobs and study for up to 6 months without the need for another visa."
+      },
+      "checklistTitle": "Complete checklist before the appointment",
+      "checklist": [
+        "Argentine passport with a minimum validity of 12 months",
+        "Criminal record certificate (with apostille) issued less than 3 months ago",
+        "Comprehensive 12-month medical insurance including repatriation",
+        "Verifiable funds of at least 2,500 €",
+        "Return ticket or additional funds to buy it",
+        "Motivation letter and CV in French (yes, they ask for them)"
+      ],
+      "fundsTitle": "How to prove funds",
+      "funds": [
+        "Present bank statements for the last 3 months with clear movements. If the money is provided by a relative, attach a notarized letter, a copy of the document and proof of link. Avoid large transfers a day before the appointment; they generate doubts and you may be asked for additional explanations.",
+        "Many participants combine savings in local currency + buying euros a few days before. Keep the receipts from the exchange house to support the origin of the money."
+      ],
+      "budgetTitle": "Suggested budget for the first month",
+      "budget": [
+        {
+          "label": "Temporary accommodation",
+          "amount": "600 €",
+          "note": "3 weeks in a hostel or residence while looking for a colocation"
+        },
+        {
+          "label": "Guarantees and deposits",
+          "amount": "1,200 €",
+          "note": "1 month deposit + month in advance in big cities"
+        },
+        {
+          "label": "Transport + set up",
+          "amount": "300 €",
+          "note": "Navigo pass, chip, SIM card, procedures"
+        },
+        {
+          "label": "Emergency fund",
+          "amount": "400 €",
+          "note": "In case the first salary is delayed"
+        }
+      ],
+      "landingTitle": "Arrival in France: what to do in your first weeks",
+      "landingSteps": [
+        {
+          "title": "First 7 days",
+          "detail": "Process the bank account online and buy the phone line to validate the insurance."
+        },
+        {
+          "title": "Week 2",
+          "detail": "Look for stable accommodation (residences, colocations, foyers) and formalize the contract."
+        },
+        {
+          "title": "Month 1",
+          "detail": "Register with the CPAM for the sécurité sociale and activate your tax number if you get a job."
+        }
+      ],
+      "landingConclusion": "Once you sign your first contract, ask the employer to give you the Pôle Emploi attestation and activate your provisional social security number. This allows you to access medical coverage and contribute to unemployment."
+    },
+    "visa-estudiante-francia": {
+      "hero": {
+        "title": "Student Visa: Steps and Calendar",
+        "subtitle": "We break down the process from program search to the validation of your VLS-TS Étudiant in France.",
+        "category": "Student Visas"
+      },
+      "roadmapTitle": "Roadmap: from application to visa",
+      "milestones": [
+        {
+          "title": "Program selection",
+          "detail": "Research 5/6 programs compatible with your profile and check if they require CampusArt, Parcoursup or direct application."
+        },
+        {
+          "title": "Campus France",
+          "detail": "Upload the dossier, pay the fee and prepare for the interview. Bring official translations and justify your financing plan."
+        },
+        {
+          "title": "Consulate",
+          "detail": "Gather originals + copies, insurance, accommodation and acceptance letter. The passport takes between 7 and 15 working days after the appointment."
+        }
+      ],
+      "roadmapConclusion": "We recommend starting the search 9 months in advance. Many private schools respond in 2 weeks, but public universities and selective programs (Sciences Po, BTS, specialized masters) can take 2/3 months.",
+      "campusTitle": "How to prepare the Campus France dossier",
+      "campusP1": "Upload diplomas, transcripts and sworn translations in PDF. In the \"Motivation\" section explain why you chose France, what your professional goals are and how you will finance yourself. The interview usually lasts 15 minutes: bring your printed CV and project, they ask you questions in French and check that you understand the academic plan.",
+      "campusP2": "After the interview, Campus France sends the endorsement directly to the consulate. Only then can you book an appointment for the visa; that's why it is key not to leave the interview for the last minute.",
+      "docsTitle": "Documentation for the consulate",
+      "docs": [
+        "Final acceptance letter or attestation de pré-inscription",
+        "Language certificate (DELF B2, TCF, IELTS) depending on the program",
+        "Updated academic CV + study project",
+        "Travel medical insurance (later you will activate the sécurité sociale)",
+        "Proof of accommodation for at least 3 months",
+        "Financial means: 7,380 € per year as a reference"
+      ],
+      "fundingTitle": "Accepted financing options",
+      "funding": [
+        {
+          "label": "Own account",
+          "note": "Bank statements with balance ≥ 615 € per month of stay"
+        },
+        {
+          "label": "Family sponsor",
+          "note": "Commitment letter, copy of ID and proof of stable monthly income"
+        },
+        {
+          "label": "Scholarship/contract",
+          "note": "Official certificate detailing amounts, duration and whether it covers accommodation/meals"
+        }
+      ],
+      "fundingConclusion": "If you combine your own savings + sponsor, clarify the amounts provided by each and attach a summary table. The more clarity, the fewer requests for extra information you will receive.",
+      "arrivalTitle": "After arriving in France",
+      "arrivalSteps": [
+        "Validate the VLS-TS on ANEF within the first 3 months.",
+        "Register with the sécurité sociale (international students) and choose a mutuelle.",
+        "Open your bank account and ask for housing assistance (APL) if applicable.",
+        "If your visa allows working, register the contract on the appropriate platform and monitor your hours."
+      ]
+    },
+    "esim-guia-latinoamericanos-francia": {
+      "hero": {
+        "title": "What is an eSIM and why is it so useful today?",
+        "subtitle": "The guide every Latin American should read before landing in France.",
+        "category": "Connectivity and Technology",
+        "date": "June 2, 2026",
+        "readTime": "8 min read"
+      },
+      "intro": "An eSIM (embedded SIM) is a digital SIM card embedded directly into the phone's chip, which allows you to activate a data or call plan without the need to insert a physical card. It is activated in minutes using a QR code, can store several operator profiles simultaneously, and is especially useful for travelers, international workers, and immigrants because it allows you to have active connectivity from the moment you land in a new country, without queues, without waiting, and without depending on a phone store.",
+      "section1": {
+        "title": "From the physical card to the invisible chip",
+        "p1": "For years, arriving in a new country meant looking for a phone store, asking for a local SIM, and hoping the process wouldn't take too long. A slow and frustrating ritual, especially when you've just gotten off a long flight and all you want is to let people know you arrived safely.",
+        "p2": "The eSIM eliminates all that process. Being integrated into the phone's hardware, there is nothing to insert or swap. You scan a QR code, follow a few steps in the device settings, and in minutes the phone already has a local signal. This technology comes standard in most phones released since 2020."
+      },
+      "section2": {
+        "title": "How exactly does it work?",
+        "p1": "When you sign up for a plan with a compatible operator, they send a digital profile that is installed directly on the phone's chip. That profile contains all the information needed to connect to the network: number, data access, and user identification.",
+        "p2": "The most valuable thing is that the same phone can have several eSIM profiles installed at the same time, although usually only one is active. This means that you can keep your home country number and use a French number in parallel, without having to choose between one or the other. For someone in the migration process, that is a very concrete advantage."
+      },
+      "ventajasTitle": "Key advantages",
+      "ventajas": [
+        {
+          "icon": "⚡",
+          "title": "Instant activation",
+          "detail": "QR code and you're set, without going to any store."
+        },
+        {
+          "icon": "📱",
+          "title": "Double profile",
+          "detail": "Home number and French number on the same phone."
+        },
+        {
+          "icon": "🌍",
+          "title": "Global coverage",
+          "detail": "Platforms like Airalo or Holafly cover France from your country."
+        },
+        {
+          "icon": "🔒",
+          "title": "No risk of loss",
+          "detail": "It's digital: it doesn't break, it doesn't get lost, it doesn't get damaged."
+        }
+      ],
+      "section3": {
+        "title": "Why is the eSIM key for those arriving in France?",
+        "p1": "If you come to France with a visa, or simply as a tourist, having an eSIM will make your stay in France much easier, since you will have solved one of the main problems we all experience, no matter where we are: connectivity.",
+        "p2": "With an eSIM contracted before traveling, the phone arrives in France with an active connection. And if you prefer to wait, the activation process can be done from the airport wifi before going through customs. Without depending on an open store, without understanding contracts in French on the first day, without wasting time."
+      },
+      "compTitle": "Which companies offer eSIM in France?",
+      "operadoresFrancesesTitle": "Classic French operators",
+      "operadoresFranceses": [
+        {
+          "name": "Orange",
+          "detail": "Excellent national coverage, but usually more expensive."
+        },
+        {
+          "name": "Bouygues Telecom",
+          "detail": "Good coverage and competitive plans."
+        },
+        {
+          "name": "Free Mobile",
+          "detail": "Very popular among students and foreign workers for its low prices."
+        },
+        {
+          "name": "SFR",
+          "detail": "Solid coverage in large cities and rural areas."
+        }
+      ],
+      "operadoresLowCostTitle": "Low-cost operators widely used by immigrants",
+      "operadoresLowCost": [
+        {
+          "name": "Lebara",
+          "detail": "Widely used by Latin Americans for its cheap international calls."
+        },
+        {
+          "name": "Lycamobile",
+          "detail": "Popular for calls abroad and quick activation."
+        },
+        {
+          "name": "Syma Mobile",
+          "detail": "Cheap and easy-to-contract plans without too many requirements."
+        }
+      ],
+      "esimInternacionalesTitle": "International eSIMs to arrive already connected",
+      "esimInternacionales": [
+        {
+          "name": "Airalo",
+          "detail": "Very practical to activate data before the trip."
+        },
+        {
+          "name": "Holafly",
+          "detail": "Unlimited data in many plans and support in Spanish."
+        }
+      ],
+      "section4": {
+        "title": "Is my phone compatible?",
+        "p1": "Most iPhones since the XS model (2018) are compatible. On Android, brands like Samsung, Google Pixel, Motorola, and Xiaomi have had compatible models for several years, although not all models of each brand include it.",
+        "p2": "To verify it, simply go to the phone settings, look for the SIM section, and check if the option to add a digital plan appears. If it's there, the phone is compatible. One detail to keep in mind: some phones purchased with operator locks may not accept external eSIMs until they are unlocked, so it's a good idea to confirm this before traveling."
+      },
+      "section5": {
+        "title": "What you need to know before contracting",
+        "p1": "Not all eSIMs are equal. There are options that offer only data, and others that include a local phone number, calls, and data. For procedures in France, where many official forms ask for a French number, it is advisable to opt for the second option, even if the cost is somewhat higher.",
+        "p2": "The eSIM is the ideal solution for the first few days or weeks, while procedures stabilize and a fixed address is established. Once installed, it is usually most convenient to migrate to a monthly package with a local operator, which offers better conditions for long-term continuous use."
+      }
+    },
+    "bancos-fisicos-vs-virtuales-francia": {
+      "hero": {
+        "title": "Physical vs virtual banks in France",
+        "subtitle": "What is the best option for immigrants?",
+        "category": "Finances for Immigrants",
+        "date": "June 2, 2026",
+        "readTime": "12 min read"
+      },
+      "intro": {
+        "p1": "If you are arriving in France as an immigrant and wondering which bank to open, the short answer is: a virtual bank is almost always the best option to start with. Virtual banks in France like Wise, Revolut, and Qonto offer 100% online account opening, without the need for an established French address or a prior employment contract, with much lower fees than traditional banks and interfaces available in multiple languages.",
+        "p2": "On the other hand, physical banks like BNP Paribas, Société Générale, or Crédit Agricole usually require extensive documentation, in-person appointments, and often reject applications from people with a recent immigration status or in the process of regularization. Knowing the differences between both models can save you weeks of paperwork and a lot of headaches."
+      },
+      "section1": {
+        "title": "The banking system in France: what no one explains before you arrive",
+        "p1": "France has a solid and well-regulated banking system, but also a notoriously bureaucratic one. Opening a bank account in a traditional bank can become an almost impossible mission during the first few months of your stay, precisely when you need it the most.",
+        "p2": "To get paid, pay rent, receive transfers from abroad, or simply survive financially in France, you need a bank account. But getting one can be the first obstacle you face. This is where the distinction between physical and virtual banks becomes crucial."
+      },
+      "fisicosTitle": "Physical banks in France: advantages and disadvantages",
+      "losMasConocidos": "The most popular ones",
+      "bancosTradicionales": [
+        "BNP Paribas",
+        "Société Générale",
+        "Crédit Agricole",
+        "La Banque Postale",
+        "CIC"
+      ],
+      "ventajasFisicosLabel": "Advantages",
+      "desventajasFisicosLabel": "Disadvantages",
+      "ventajasFisicos": [
+        {
+          "title": "Institutional recognition",
+          "detail": "Many public agencies, landlords, and employers prefer or require an account in a \"traditional\" bank, especially for direct deposit of salary or rent payment by check."
+        },
+        {
+          "title": "Access to complete financial products",
+          "detail": "Loans, credits, savings plans, linked insurance. For those who have been in France for some time and want to build a financial history, they are the most comprehensive option."
+        },
+        {
+          "title": "Free ATM network",
+          "detail": "Most of these banks offer commission-free withdrawals within their own network."
+        },
+        {
+          "title": "In-person support",
+          "detail": "For people who prefer to manage their finances face-to-face, having an assigned advisor can be a plus."
+        }
+      ],
+      "desventajasFisicos": [
+        {
+          "title": "Demanding documentation",
+          "detail": "They generally request: proof of address in France (sometimes with minimum seniority), employment contract or proof of income, and in some cases, prior banking history."
+        },
+        {
+          "title": "Barriers for recent immigrants",
+          "detail": "If you arrive with a new visa, without a permanent contract, or living in temporary accommodation, many banks simply reject the application."
+        },
+        {
+          "title": "Monthly fees",
+          "detail": "Most charge between €7 and €15 a month for account maintenance, plus additional costs for a card or extra services."
+        },
+        {
+          "title": "Service in French only",
+          "detail": "For those who have not yet mastered the language, navigating the system can be frustrating."
+        },
+        {
+          "title": "Long processing times",
+          "detail": "It can take 2 to 4 weeks from application to receiving the card."
+        }
+      ],
+      "virtualesTitle": "Virtual banks in France: the best for immigrants",
+      "virtualesIntro": "Neobanks operate entirely online, without physical branches. These are the most used by the Latin American community in France:",
+      "ventajasLabel": "Advantages",
+      "desventajasLabel": "Disadvantages",
+      "idealParaLabel": "Ideal for:",
+      "neobancos": [
+        {
+          "name": "Wise",
+          "emoji": "💱",
+          "subtitle": "International transfers at the best price",
+          "color": "#009580",
+          "bgColor": "#f0faf8",
+          "ventajas": [
+            "Multi-currency account: euros, dollars, pesos, and many other currencies at the same time.",
+            "International transfers with the lowest fees in the market, without hidden markups in the exchange rate.",
+            "Account opening without the need for a prior French address.",
+            "Visa debit card available in several countries.",
+            "Interface available in Spanish."
+          ],
+          "desventajas": [
+            "It is not a bank in the strict sense: funds are not covered by the EU deposit guarantee system in the same way.",
+            "It does not offer salary direct deposit as standard across all French employers.",
+            "The physical card has an issuance cost.",
+            "More advanced features require a paid plan."
+          ],
+          "idealPara": "People who frequently send or receive money from abroad and are looking for the best exchange rate.",
+          "affiliate": {
+            "label": "Open your Wise account →",
+            "url": "https://wise.com/invite/ahpc/jiovannyalis"
+          }
+        },
+        {
+          "name": "Qonto",
+          "emoji": "🏢",
+          "subtitle": "For freelancers and small businesses",
+          "color": "#002654",
+          "bgColor": "#f0f4fb",
+          "ventajas": [
+            "Fully online opening in less than 24 hours.",
+            "French IBAN from day one, ideal for issuing invoices and receiving professional payments.",
+            "Integrated accounting tools: expense categorization, data export, connection to accounting software.",
+            "Support in several languages, including Spanish.",
+            "Recognized and accepted by most French administrative bodies."
+          ],
+          "desventajas": [
+            "It is not for personal use: it is a business account, not a day-to-day checking account.",
+            "Higher monthly fees than other neobanks: starting at €9 a month for the basic plan.",
+            "It does not allow cash withdrawals with the same flexibility as Revolut."
+          ],
+          "idealPara": "Auto-entrepreneurs, freelancers, and anyone needing a serious professional account from day one.",
+          "affiliate": null
+        },
+        {
+          "name": "Revolut",
+          "emoji": "⭐",
+          "subtitle": "The most complete neobank for everyday use",
+          "color": "#191c1f",
+          "bgColor": "#f5f5f7",
+          "badge": "Recommended",
+          "ventajas": [
+            "100% online account opening in less than 10 minutes, without the need for a prior address in France.",
+            "European IBAN from day one.",
+            "Commission-free euro transfers within the SEPA zone.",
+            "Currency exchange with real exchange rates (up to a monthly limit on the free plan).",
+            "Immediate virtual debit card and physical card available.",
+            "Payments via Google Pay and Apple Pay from the moment of activation.",
+            "Interface available in Spanish and very intuitive.",
+            "Integrated expense controls, consumption statistics, and savings options.",
+            "RevPoints points system: for every purchase, you accumulate points redeemable for discounts on clothing, food, travel, and experiences."
+          ],
+          "desventajas": [
+            "On the free plan, cash withdrawals have a monthly limit (€200 commission-free).",
+            "Some employers in France prefer accounts in more established banks for salary direct deposit, although this is becoming less frequent.",
+            "Customer support on the free plan can be slow."
+          ],
+          "idealPara": "Anyone arriving in France who needs an operational account immediately, with good conditions for daily use and the benefits of a real reward system.",
+          "affiliate": {
+            "label": "Open your Revolut account →",
+            "url": "https://revolut.com/referral/?referral-code=jiovannyali!MAY2-26-AR-RPB-H2&geo-redirect"
+          }
+        },
+        {
+          "name": "N26",
+          "emoji": "🇩🇪",
+          "subtitle": "The European neobank designed for simplicity",
+          "color": "#3a3a3a",
+          "bgColor": "#f8f8f8",
+          "ventajas": [
+            "Full European banking license: deposits protected up to €100,000 by the German guarantee fund.",
+            "100% online account opening, without the need for proof of prior address in France.",
+            "German IBAN (DE) accepted throughout the SEPA zone, valid for receiving salaries and setting up direct debits.",
+            "Functional free plan with Mastercard included and no maintenance fees.",
+            "Interface available in Spanish, highly intuitive, and easy to use from day one.",
+            "Real-time notifications and basic expense tracking tools.",
+            "Savings spaces integrated directly into the app."
+          ],
+          "desventajas": [
+            "The German IBAN might cause reluctance among some French landlords or employers who prefer a FR IBAN, although this is becoming increasingly rare.",
+            "Cash withdrawals on the free plan are limited to 3 commission-free withdrawals per month.",
+            "Advanced features require paid plans (N26 Smart, You, or Metal).",
+            "Customer support on the free plan can be slow during times of high demand."
+          ],
+          "idealPara": "Immigrants looking for a neobank with real banking backing, European deposit guarantee coverage, and a very simple user experience from their first day in France.",
+          "affiliate": null
+        },
+        {
+          "name": "Global66",
+          "emoji": "🌎",
+          "subtitle": "The best option for sending money to Latin America",
+          "color": "#E63946",
+          "bgColor": "#fff5f5",
+          "ventajas": [
+            "Highly competitive exchange rates for Latin American currencies: Colombian pesos, Chilean pesos, bolivars, Peruvian soles, among others.",
+            "Fast transfers, often credited in minutes or a few hours.",
+            "Spanish interface, designed with the Latin American user in mind.",
+            "No hidden fees: the exchange rate you see upfront is what is applied.",
+            "Available as a mobile app and web platform, easy to use from any device.",
+            "Simple registration, no prior French bank account required to get started."
+          ],
+          "desventajas": [
+            "It is not a bank account: it does not issue an IBAN, nor does it allow for salary direct deposit or paying bills in France.",
+            "Its function is exclusively for sending money abroad, not for managing day-to-day finances in Europe.",
+            "The availability of destinations and currencies is focused on Latin America.",
+            "It requires funding the transfer from a prior European bank account or neobank."
+          ],
+          "idealPara": "Latin American immigrants in France who need to send money to their family in Latin America quickly, securely, and with the best possible exchange rate. Used in combination with a European neobank, not as a replacement.",
+          "affiliate": {
+            "label": "Register on Global66 →",
+            "url": "https://share.global66.com/JIOSAN2"
+          }
+        }
+      ],
+      "revPoints": {
+        "badge": "Highlighted benefit",
+        "title": "Why are Revolut's RevPoints worth it?",
+        "p1": "One of the most interesting aspects of Revolut for those just arriving in France is its rewards program. Every time you pay with your Revolut card, you accumulate RevPoints. These points can be redeemed directly on the platform for discounts on purchases, products from selected brands, cashback, or access to experiences.",
+        "p2": "For someone building their life from scratch in a new country, every daily purchase—from the supermarket to transport—becomes an opportunity to accumulate value. It's not an exaggerated system, but it is real, functional, and integrates naturally into the daily use of the account.",
+        "cta": "Open your Revolut account and start earning →"
+      },
+      "cuandoUsarTitle": "So, physical or virtual bank?",
+      "cuandoUsar": [
+        {
+          "icon": "✈️",
+          "title": "If you just arrived in France",
+          "detail": "A virtual bank is your best starting point. It gives you access to an operational account immediately, without bureaucracy, and allows you to collect your first salary, pay your expenses, and receive transfers without waiting for weeks."
+        },
+        {
+          "icon": "📋",
+          "title": "If you have been in France for a while and have stable status",
+          "detail": "Consider supplementing your virtual account with an account at a traditional bank. Some official procedures, credit applications, or long-term leases can be facilitated with a physical bank as backup."
+        },
+        {
+          "icon": "💡",
+          "title": "The smartest strategy",
+          "detail": "Use both: a neobank for daily operations and international transfers, and a traditional bank when the bureaucratic process requires it."
+        }
+      ],
+      "conclusion": {
+        "title": "Conclusion",
+        "p1": "The banking system in France can seem like a maze at first, but today there are real tools that make it much more accessible. Virtual banks have democratized financial access for immigrants, and options like Wise, Qonto, and Revolut offer concrete solutions according to each profile and need.",
+        "p2": "If you are looking to start quickly, with a functional account from day one and benefits that accumulate with every daily expense, Revolut is hard to beat as an entry point into the French financial system."
+      },
+      "affiliateCTA": {
+        "subtitle": "start today",
+        "title": "Use my links and start accumulating benefits from Day 1"
+      }
+    },
+    "visa-saisonnier-salarie": {
+      "hero": {
+        "title": "Saisonnier or Salarié Visa: 2024 Guide",
+        "subtitle": "How to get a temporary contract, prepare your dossier and present the visa without making the mistakes that generate the most rejections.",
+        "category": "Work Visas"
+      },
+      "section1": {
+        "title": "What does the saisonnier / Salarié visa cover?",
+        "p1": "It allows working in France for 3 to 6 months (renewable up to 9) in sectors with temporary demand. The French company initiates the file and validates the contract with the DIRECCTE or via the ANEF platform. With that contract and a consistent motivation letter, you prove that you will return at the end of the season.",
+        "p2": "You don't need to demonstrate perfect French, but you do need to understand basic tasks. Having related experience, short courses or job references helps Human Resources trust your profile and speed up the process."
+      },
+      "reqsTitle": "Essential requirements",
+      "reqs": [
+        "Signed temporary contract + work authorization",
+        "Medical insurance for the entire period and repatriation",
+        "Minimum funds of €600 per month if the employer does not cover accommodation",
+        "Return ticket or money reserved to buy it"
+      ],
+      "advTitle": "Advantages",
+      "adv": [
+        "Possibility of linking contracts and returning each season",
+        "Access to company accommodation in agriculture and hospitality",
+        "You add French experience for future work visas",
+        "You can change to a long work visa if you receive a CDI"
+      ],
+      "timelineTitle": "Suggested timeline",
+      "timeline": [
+        {
+          "month": "Month 1",
+          "detail": "Define sector, region and contacts. Prepare CV/Letter in French and start sending applications."
+        },
+        {
+          "month": "Month 2",
+          "detail": "Close contract + job promise, gather personal documentation and request a consular appointment."
+        },
+        {
+          "month": "Month 3",
+          "detail": "Interview at the consulate, wait for the passport and organize the trip (insurance, accommodation, arrival)."
+        }
+      ],
+      "docsTitle": "Documentation they scrutinize",
+      "docs": [
+        "Work contract endorsed by DIRECCTE or validated via ANEF",
+        "Valid passport + full copy",
+        "Motivation letter and CV in French",
+        "International medical insurance covering the entire stay",
+        "Proof of accommodation or attestation d'hébergement",
+        "Sufficient funds (bank statements for the last 3 months)"
+      ],
+      "sectorsTitle": "Sectors with the highest demand in 2024",
+      "sectors": [
+        {
+          "title": "Agro / Grape harvests",
+          "text": "High demand between August and October. It is key to apply in advance and show previous experience or a desire to learn quickly."
+        },
+        {
+          "title": "Hospitality and tourism",
+          "text": "Ski resort and coastal area hotels hire for the high season. They look for conversational French and 4/6 months availability."
+        },
+        {
+          "title": "Urban services",
+          "text": "Restaurants, moving companies and delivery add staff in large cities. The network of local contacts speeds up your search."
+        }
+      ],
+      "tipsTitle": "Tips for presenting the file",
+      "tips": [
+        "Schedule the appointment as soon as you receive the contract; in high season they sell out fast.",
+        "If your employer covers accommodation or meals, ask them to state it in writing to justify fewer funds.",
+        "Include recommendation letters translated into French to strengthen your profile.",
+        "Organize the dossier in the order requested by the consulate and bring extra copies."
+      ]
+    }
+  },
+  "FAQData": {
+    "items": [
+      {
+        "question": "How long does a work authorization take?",
+        "answer": "The average is 8 to 12 weeks, depending on the position, the prefecture, and the workload of the Ministère de l’Intérieur. You can shorten delays by sending a complete file from the beginning and responding quickly to information requests.",
+        "category": [
+          "Trámites",
+          "General"
+        ]
+      },
+      {
+        "question": "What does the VVT insurance cover?",
+        "answer": "It includes emergency medical expenses in France and the EU, medical repatriation, civil liability, and 24/7 assistance. It also offers coverage in case of hospitalization or accident during the trip, which are mandatory requirements for the visa.",
+        "category": [
+          "Seguros",
+          "General"
+        ]
+      },
+      {
+        "question": "What documents are required for the Titre de séjour (student/salarié)?",
+        "answer": "Valid passport, long-stay visa or VLS-TS, translated birth certificate, proof of address, health insurance, financial means, contract or enrollment certificate and, if applicable, the last pay slips or proof of registration.",
+        "category": [
+          "Trámites",
+          "General"
+        ]
+      },
+      {
+        "question": "What is the consultation like and what do I receive at the end?",
+        "answer": "We coordinate a 60-minute video call, answer your questions, and at the end, we send you a written summary with the concrete steps you need to follow.",
+        "category": [
+          "Asesoría",
+          "General"
+        ]
+      },
+      {
+        "question": "What is the Working Holiday visa for France?",
+        "answer": "The Working Holiday visa is a long-stay permit that allows young foreigners to reside legally in France for a maximum period of 12 months. During this time, the holder can work temporarily to finance their stay and experience a cultural exchange. It is not a classic work or study visa, but an exchange program with specific conditions.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Who can apply for the Working Holiday visa?",
+        "answer": "Citizens of countries that have a current bilateral agreement with France can apply. In addition, it is mandatory to meet requirements regarding age, financial funds, travel insurance, and migration history. Each nationality has specific conditions that must be reviewed before starting the process.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What is the age limit to apply?",
+        "answer": "In most cases, the age range is 18 to 30 years old inclusive at the time of application. However, some agreements allow applying up to 35 years old, depending on the country of origin. Calculating the age and the exact moment of the application is key to avoiding rejections.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "How long does the Working Holiday visa last?",
+        "answer": "The maximum duration is 12 months, counted from the date of entry into France. This visa is not renewable or extendable, so it is important to plan ahead what to do at the end of the authorized period.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Do I need a job offer to apply?",
+        "answer": "No. The Working Holiday visa is requested without a prior work contract. The idea of the program is to allow the applicant to look for work once in France, usually in temporary or seasonal jobs.",
+        "category": [
+          "WH: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "How much money do I need to demonstrate for the application?",
+        "answer": "The consulate requires demonstrating sufficient funds to cover the first months in France. The amount usually varies between 2,500 and 3,000 euros, in addition to a return ticket or additional funds to purchase it. The way to present this financial proof is a sensitive point of the dossier.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Is it mandatory to purchase travel insurance?",
+        "answer": "Yes. Insurance is an indispensable requirement. It must cover the entire duration of the visa and include medical care, hospitalization, and medical repatriation. Incomplete insurance or incorrect dates can cause the visa to be refused.",
+        "category": [
+          "WH: General",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Can I study with a Working Holiday visa?",
+        "answer": "Yes, but only short-term courses, such as language classes or other non-degree training. This visa does not allow enrolling in university studies or long programs that require a student visa.",
+        "category": [
+          "WH: General",
+          "Estudios"
+        ]
+      },
+      {
+        "question": "Can I work full-time in France?",
+        "answer": "Yes, it is possible to work full-time, as long as they are temporary jobs and respect French labor laws. However, this visa is not designed for stable or long-term employment.",
+        "category": [
+          "WH: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Can I change employers during my stay?",
+        "answer": "Yes. The holder of a Working Holiday visa can change employers as many times as they wish, since the visa is not linked to a specific company.",
+        "category": [
+          "WH: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Can I travel around Europe with this visa?",
+        "answer": "Yes. Having a long-stay visa issued by France allows you to circulate through the Schengen area for short periods, respecting the established mobility rules.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Can the Working Holiday visa be extended?",
+        "answer": "No. Once the 12 months have ended, the visa expires automatically. To remain in France, it is necessary to change immigration status if the legal requirements are met.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Is it possible to change to another type of visa from within France?",
+        "answer": "In some cases yes, for example to a student or salarié visa. However, this depends on the applicant's profile, the type of contract obtained, and the regulations in force at that time.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Can I apply for the Working Holiday visa more than once?",
+        "answer": "No. The Working Holiday visa can only be requested once per country. It is not possible to repeat the program in France if it has already been obtained previously.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Why is it recommended to do the process with immigration advice?",
+        "answer": "Because each dossier is different, and errors in documentation, deadlines, or insurance can lead to delays or rejections. Specialized advice allows you to prepare the dossier correctly, anticipate risks, and evaluate future options once in France.",
+        "category": [
+          "WH: General",
+          "Asesoría"
+        ]
+      },
+      {
+        "question": "Do Argentines have an annual quota for the France Working Holiday visa?",
+        "answer": "No. Unlike other countries, France does not set a limited annual quota for Argentine citizens. This means it can be requested throughout the year, as long as the requirements are met.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "From where must the visa be processed if I am Argentine?",
+        "answer": "The application must be made from Argentina, before traveling. It is not possible to apply while in France or from a third country.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Which French consulate corresponds to my address in Argentina?",
+        "answer": "The assigned consulate depends on the declared place of residence in Argentina. Presenting the application at a consulate that does not correspond can generate delays or rejection.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Does the Argentine passport need to have a specific minimum validity?",
+        "answer": "Yes. The passport must be valid for the entire duration of the planned stay and have enough blank pages for the visa and immigration stamps.",
+        "category": [
+          "WH: Argentina",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Is it mandatory to present a purchased ticket or just a reservation?",
+        "answer": "Generally, a purchased ticket or sufficient funds to buy it is accepted. The criteria may vary depending on the consulate, so it is key to present the documentation correctly.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What kind of medical insurance do they accept for Argentines?",
+        "answer": "The insurance must cover the entire duration of the visa, include hospitalization, medical care, and medical repatriation. Incomplete insurance or incorrect dates are usually grounds for observations.",
+        "category": [
+          "WH: Argentina",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Can I apply for the Working Holiday visa if I already had another French visa?",
+        "answer": "Yes, as long as you have not previously held a Working Holiday France visa. Having held a tourist, student, or other category visa does not prevent the application.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What frequent mistakes do Argentines make when applying?",
+        "answer": "The most common are: presenting insurance that does not cover 12 months, insufficient or poorly justified funds, inconsistent dates between documents, and generic motivation letters.",
+        "category": [
+          "WH: Argentina",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Is the cover letter mandatory for Argentines?",
+        "answer": "Yes. It is a key document in the dossier. It must explain the personal project, the intention of the trip, and respect for the conditions of the program.",
+        "category": [
+          "WH: Argentina",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Can I enter France before the start date of the visa?",
+        "answer": "No. Entry into France must be made from the start date indicated on the visa. Entering earlier can generate immigration problems.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Is it possible to change employers during the stay?",
+        "answer": "Yes. The Working Holiday allows working with different employers, always within temporary contracts and respecting French labor legislation.",
+        "category": [
+          "WH: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What happens if I don't get a job immediately upon arrival?",
+        "answer": "There is no obligation to work immediately. That is why it is essential to have sufficient funds and a realistic plan for the first few months.",
+        "category": [
+          "WH: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Does the Working Holiday allow access to the French social security system?",
+        "answer": "Access depends on the type of contract and the duration of employment. In many cases, private insurance remains mandatory throughout the stay.",
+        "category": [
+          "WH: Argentina",
+          "Seguros",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Can I request a salarié visa if I find an employer?",
+        "answer": "It is possible in certain cases, but it is not automatic. The employer must start the process and meet specific requirements before the French administration.",
+        "category": [
+          "WH: Argentina",
+          "Trabajo",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Why is advice important before applying?",
+        "answer": "Because a poorly put together dossier can lead to rejections, delays, or unnecessary expenses. The advice allows validating documents, dates, insurance, and migration strategy from the start.",
+        "category": [
+          "WH: Argentina",
+          "Asesoría"
+        ]
+      },
+      {
+        "question": "How many slots are there for Chileans each year?",
+        "answer": "For Chilean citizens, the Working Holiday visa in France is limited to 400 slots per year. This means that once they are exhausted, no new applications are accepted until the next cycle opens the following year.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "When do applications open for Chileans?",
+        "answer": "The French Embassy announces the opening of applications (normally at the beginning of the year) and the 400 slots are enabled in that stage. It is important to be attentive because, once exhausted, no more applications are received until the next period.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "From where must I present my application if I am Chilean?",
+        "answer": "Chileans must present the application from Chile at the competent French consulate (usually in Santiago). Applications are not received from outside the country or from another territory.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What specific requirement does the insurance have for Chileans?",
+        "answer": "The insurance must cover the entire duration of the visa (12 months) with medical, hospital, and repatriation coverage. Many people fail in this point because the policy does not coincide exactly with the visa dates or does not meet the minimum conditions required.",
+        "category": [
+          "WH: Chile",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Is it difficult to get an appointment at the consulate?",
+        "answer": "One of the frequent problems reported by those trying to apply is the limited availability of appointments. Many people are left out due to not being able to book a slot before they run out.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What happens if the slots are already exhausted?",
+        "answer": "If the 400 slots are filled, the Embassy does not answer queries by phone or email about availability, and you have to wait for the opening of the next cycle to apply.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Must I demonstrate funds for living and ticket?",
+        "answer": "Yes. Chileans must prove financial solvency to cover initial expenses in France, and also demonstrate sufficient funds to purchase the return ticket or equivalent options according to current regulations.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What common mistakes do Chileans make when presenting documents?",
+        "answer": "Frequent errors include: incomplete forms or printed as 'draft', insurance with incorrect dates, passport with insufficient validity, and not presenting adequate backup of financial funds.",
+        "category": [
+          "WH: Chile",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Is it mandatory to present a medical certificate?",
+        "answer": "Yes. Chileans must present a medical certificate of good health issued by a licensed professional. This document is a formal requirement to show they are fit to work.",
+        "category": [
+          "WH: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Does the Chilean passport have specific requirements?",
+        "answer": "The passport must be valid for at least 12 months from the planned date of entry to France, and have at least two blank pages for formalities.",
+        "category": [
+          "WH: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Can I apply if I already had a Working Holiday before?",
+        "answer": "No. If you already obtained a Working Holiday visa for France in the past, you cannot apply again under this program.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Do I need to present accommodation booking?",
+        "answer": "Yes. For Chileans, it is usually necessary to prove a place where they will stay at least for the first few days (hostel, hotel, or invitation letter with documents from the host).",
+        "category": [
+          "WH: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Is there a fee for the visa?",
+        "answer": "Yes. The Working Holiday for Chileans has a cost of 99 euros, paid at the time of presenting the application at the consulate.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Can I work legally as soon as I arrive?",
+        "answer": "Yes, the visa allows you to work as soon as you enter the country, but the job search is on your own once you are in France.",
+        "category": [
+          "WH: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Does knowing French increase my chances?",
+        "answer": "Although it is not a mandatory requirement to apply, many Chileans report that having basic (or more) knowledge of French greatly facilitates the job search and integration once there.",
+        "category": [
+          "WH: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What is the saisonnier visa in France?",
+        "answer": "The saisonnier visa is a temporary work visa intended for foreigners who have been hired to perform seasonal activities in France (hotel business, tourism, agriculture, skiing). It allows working legally for a limited period linked to the contract.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Do I need to have a contract before applying for the visa?",
+        "answer": "Yes. The saisonnier visa cannot be requested without a prior employment contract. The French employer must offer a seasonal contract and carry out the procedures before the French labor authority.",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Who starts the process: the worker or the employer?",
+        "answer": "The process begins in France with the employer, who must request the work authorization. Once approved, the worker can present their visa application at the French consulate in their country of residence.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "How long does the saisonnier visa last?",
+        "answer": "It is generally granted for up to 6 months within a 12-month period. It is not a permanent visa nor does it allow continuous residence throughout the year.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Can I change employers with this visa?",
+        "answer": "No. The saisonnier visa is linked to the employer and the specific contract that was approved. Changing employers without a new authorization can generate migration problems.",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Does the saisonnier visa allow working in any sector?",
+        "answer": "No. It only allows working in the sector and position indicated in the approved contract (hotels, restaurants, skiing, grape harvest, agriculture).",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Is it mandatory to contract health insurance?",
+        "answer": "Yes. It is mandatory to present international medical insurance that covers the entire duration of the stay (medical care, hospitalization, and repatriation).",
+        "category": [
+          "Saisonnier: General",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Can I bring my family with a saisonnier visa?",
+        "answer": "No. The saisonnier visa does not allow family reunification. It is designed exclusively for a temporary work stay.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Can I renew the saisonnier visa?",
+        "answer": "The visa can be requested again in future seasons if a new contract is obtained, but it is not renewed automatically.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Does the saisonnier visa allow changing to another type of visa in France?",
+        "answer": "In principle, it is not designed for changes of status. In very specific cases, it could be evaluated, but it is not standard.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What happens if my contract ends earlier than planned?",
+        "answer": "If the contract ends early, the immigration situation must be carefully reviewed. Remaining in France without a valid work activity can generate irregularities.",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What are the most common mistakes when applying for this visa?",
+        "answer": "Incomplete contracts, lack of valid work authorization, incorrect medical insurance, and inconsistent dates.",
+        "category": [
+          "Saisonnier: General",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Is it a suitable visa if I want to stay long-term in France?",
+        "answer": "No. It is a temporary visa. If the objective is to establish long-term, there are other types of visas that must be evaluated.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Can I request the visa from any country?",
+        "answer": "The application must be presented at the French consulate corresponding to the applicant's country of legal residence.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Why is it recommended to receive advice before applying?",
+        "answer": "Because it is a visa with strict requirements and direct dependence on the employer. Advice allows verifying the contract, insurance, and feasibility of the project to avoid rejections.",
+        "category": [
+          "Saisonnier: General",
+          "Asesoría"
+        ]
+      },
+      {
+        "question": "Why does the French consulate in Argentina review personal solvency so much?",
+        "answer": "Because they seek to ensure that the applicant can support themselves financially during the first few weeks without relying exclusively on the employer's salary, avoiding situations of vulnerability.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What impact do prior stays as a tourist in Europe have?",
+        "answer": "Repeated or prolonged stays can generate doubts. The consulate evaluates if the new work project is consistent with the migration history and if previous limits have been respected.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "How does the Argentine consulate evaluate prior work experience?",
+        "answer": "They look for consistency between the applicant's profile and the position offered. If there is no relationship between prior experience and the seasonal work, the file is analyzed in greater detail.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What happens if the employer does not respect the French collective agreement?",
+        "answer": "The contract can be considered invalid. France controls that salary and conditions respect the collective agreement of the sector.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Why do some Argentines receive additional document requests?",
+        "answer": "Because the consulate detects inconsistencies or insufficient information. It is not a rejection, but a request for clarification to continue the process.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Is it possible that the consulate doubts the seasonal nature of the position?",
+        "answer": "Yes. If the position seems permanent or continuous, it can be rejected even if it is for a limited time.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "How important is the translation of documents?",
+        "answer": "It is crucial. The consulate expects clear and legible documents. A bad translation can slow down the analysis or generate confusion.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "How does a prior visa rejection affect a new application?",
+        "answer": "It forces to better justify the new application, demonstrating that the reasons for the previous rejection were corrected.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What happens if the contract includes accommodation?",
+        "answer": "It must be clearly specified in the contract. Verbal promises are not valid and generate doubts.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Does the consulate check the exact duration of the contract?",
+        "answer": "Yes. The duration must be consistent with the seasonal nature of the employment.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What happens if the employer changes their corporate name?",
+        "answer": "It can invalidate the initial authorization and require restarting part of the process.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Does the visa allow working overtime?",
+        "answer": "Only within the French legal framework and if the collective agreement allows it.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What happens if the applicant arrives before the start date of the contract?",
+        "answer": "They may have problems entering, as the visa is linked to the specific work period.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Why are some dossiers considered 'at risk'?",
+        "answer": "For combining a complex migration history, unclear contracts, lack of financial backing, or documentary inconsistencies.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "What distinguishes a solid dossier from a fragile one?",
+        "answer": "Total consistency between documents, contract, and migration project.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Why is the French consulate in Chile so strict with the consistency of the dossier?",
+        "answer": "Because they evaluate the migration project as a whole (contract, dates, insurance, plan). Any inconsistency can be interpreted as a risk of irregular stay.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What does France check about the employer when the worker is Chilean?",
+        "answer": "That the employer has a real and seasonal need, and complies with regulations. If the employer has no experience with foreigners, control is greater.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What impact does presenting a contract with 'flexible' dates have?",
+        "answer": "It generates distrust. The Chilean consulate requires precision in dates. Ambiguous contracts lead to corrections or delays.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Why is insurance one of the main causes of observations?",
+        "answer": "Because many present insurance valid in other countries but that do not meet the specific French criteria (coverage and exact dates).",
+        "category": [
+          "Saisonnier: Chile",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "How does having worked in Europe before influence the application?",
+        "answer": "The respect of previous visas is analyzed. A 'heavy' migration history generates more controls.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What happens if the contract does not mention accommodation?",
+        "answer": "If it does not mention it, the applicant must prove legal accommodation on their own. Lack of clarity here usually leaves applications incomplete.",
+        "category": [
+          "Saisonnier: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Why do they sometimes ask for additional documents at the last minute?",
+        "answer": "Because they detect inconsistencies during analysis. It is a sign that the dossier needs reinforcement, not necessarily a rejection.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Does not having prior experience in the sector influence the decision?",
+        "answer": "Yes. If there is no experience, at least a logical explanation of the profile (studies or clear motivation) is expected.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What happens if the employer has had problems with visas before?",
+        "answer": "The consulate will analyze new contracts from that employer with caution, even if the applicant complies with everything.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Does the saisonnier visa allow changing employers in France?",
+        "answer": "Not freely. It is linked to a specific employer.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Why do they review immigration history so much?",
+        "answer": "To verify respect of previous rules. Overstays or previous undeclared work are red flags.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Is it common for them to ask for clarifications about the personal project?",
+        "answer": "Yes. They want to understand the logic of the trip: why that job, in that place and time.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What happens if the contract seems 'too short'?",
+        "answer": "It can generate doubts about the economic viability of the project (if the trip is worth it).",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Why do some Chilean dossiers take longer than others?",
+        "answer": "It depends on the clarity of the contract and the reputation of the sector/employer.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "What distinguishes a well-prepared Chilean dossier from a weak one?",
+        "answer": "Total consistency. If contract, insurance, and profile fit without contradictions, the dossier advances quickly.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Do Latin American students have different requirements?",
+        "answer": "No, the criteria are the same for all international students. However, administrative procedures can vary by country (for example, Campus France validation is mandatory in many Latin American countries).",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "How much money do I need to demonstrate?",
+        "answer": "As a minimum, you need to demonstrate 615 euros per month of stay, or its annual equivalent. For a full year, this represents approximately 7,380 euros. You can combine several sources: own account, family sponsor, scholarships, future work contracts, etc.",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Can I work with a student visa?",
+        "answer": "Yes, the student visa allows you to work up to 964 hours per year (equivalent to approximately 60% of full-time). This allows you to complement your income during your studies.",
+        "category": [
+          "Estudios",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Is health insurance mandatory?",
+        "answer": "Yes, it is mandatory to have medical insurance at least for the start of the stay in France. Once in France, you must register in the student sécurité sociale (social security for international students).",
+        "category": [
+          "Estudios",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Can I apply without having finished my previous studies?",
+        "answer": "Yes, it is possible as long as your academic path and the new training are consistent with your profile. For example, a student about to finish high school can apply for university training, as long as they show consistency in their project.",
+        "category": [
+          "Estudios",
+          "General"
+        ]
+      },
+      {
+        "question": "Can I apply with just a pre-registration?",
+        "answer": "Yes, in many cases it is possible to apply with an attestation de pré-inscription (pre-registration). It must be official, issued by the educational institution, and contain detailed information about the program, duration, and conditions.",
+        "category": [
+          "Estudios",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "What happens if my study project is not consistent?",
+        "answer": "An inconsistent academic project is one of the main causes of rejection. Your studies must make sense within your academic and professional path. The French administration evaluates the consistency between your profile, your previous studies, and your new training project.",
+        "category": [
+          "Estudios",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Do I need a mandatory French level?",
+        "answer": "It depends on the type of training. For French courses, generally no previous level is required. For bachelor's or master's degrees, a B2 level (DELF, TCF) or equivalent is usually required. Some programs in English may require IELTS or TOEFL.",
+        "category": [
+          "Estudios",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Can I apply with language courses?",
+        "answer": "Yes, as long as the course has at least 20 hours per week, is from a recognized school, and has a sufficient duration. Intensive French courses are a valid option to obtain a student visa.",
+        "category": [
+          "Estudios",
+          "General"
+        ]
+      },
+      {
+        "question": "Can I work full-time with a student visa?",
+        "answer": "No, you are not allowed to work full-time with a student visa. The limit is 964 hours per year. Working more hours could put your student status at risk.",
+        "category": [
+          "Estudios",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "What happens if my financial resources are not justified?",
+        "answer": "If the financial resources are not properly justified, the consulate can request additional documents, generate delays in the process, or even reject the application. It is essential to present clear and official documentation.",
+        "category": [
+          "Estudios",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Can I renew the student visa in France?",
+        "answer": "Yes, you can renew your student visa in France as long as you continue studying, maintain your academic progress, and continue to meet the financial resource requirements. The renewal is done through ANEF.",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Can I change status after studying?",
+        "answer": "Yes, in some cases it is possible to change status after finishing your studies. This depends on the diploma obtained, your professional project, and consistency with your studies. For example, you can switch to a work visa (Salarié) if you find a job corresponding to your profile.",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Is the student visa a direct path to staying in France?",
+        "answer": "No, the student visa is temporary and linked to a specific academic project. To remain in France after finishing your studies, you will need new legal conditions (for example, a work visa, entrepreneur visa, family reunification, etc.).",
+        "category": [
+          "Estudios",
+          "General"
+        ]
+      }
+    ],
+    "titreDeSejour": [
+      {
+        "question": "When should I renew my Titre de Séjour?",
+        "answer": "You must start the renewal process 2-3 months before your current title expires. This ensures you have enough time to complete all procedures.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Can I work while waiting for the renewal?",
+        "answer": "Yes, while your application is in process and you have the récépissé (application receipt), you can continue working legally.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "What happens if my Titre de Séjour expires?",
+        "answer": "If your title expires before renewing it, you may be in an irregular situation. It is important to start the process in advance. We help you avoid this situation.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Can I change the type of my Titre de Séjour?",
+        "answer": "Yes, it is possible to change types (for example, from Étudiant to Salarié), but it requires a specific process. We advise you on the requirements and necessary steps.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "How long does the process take?",
+        "answer": "The time varies depending on the type and prefecture, generally between 3-6 weeks. With our help, we optimize the process to avoid delays.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Do I need to speak French for the process?",
+        "answer": "It is not mandatory, but it is recommended. We accompany you in all communications with the French authorities.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      }
+    ]
+  },
+  "StudentVisaPage": {
+    "hero": {
+      "title": "Student Visa for France",
+      "subtitle": "Essential information for international students",
+      "whatsappCta": "CONSULT BY WHATSAPP",
+      "advisorCta": "SCHEDULE CONSULTATION"
+    },
+    "intro": "The student visa allows non-European citizens to live and study in France. Obtaining it involves an official process with various French state agencies. This section summarizes key information to prepare your application.",
+    "organismos": {
+      "title": "Involved Organizations",
+      "subtitle": "Get to know the key institutions in your student visa process",
+      "cf": {
+        "title": "Campus France",
+        "description": "Evaluates your academic project. Validation is mandatory in many Latin American countries before applying for the visa.",
+        "cta": "Visit official site"
+      },
+      "fv": {
+        "title": "France-Visas",
+        "description": "Official portal of the French government for visa applications and scheduling consular appointments.",
+        "cta": "Visit official site"
+      },
+      "consulado": {
+        "title": "French Consulate",
+        "description": "Analyzes the complete dossier and makes the final decision on the visa. This is where you present your application."
+      },
+      "sp": {
+        "title": "Service-Public.fr",
+        "description": "Defines official rules, required financial resources, and the rights and obligations of students.",
+        "cta": "Visit official site"
+      }
+    },
+    "process": {
+      "title": "Your Path to France",
+      "subtitle": "The simplified step-by-step to get your visa.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Academic Acceptance",
+          "desc": "Obtain the acceptance or pre-registration letter from your school or university."
+        },
+        {
+          "step": "02",
+          "title": "Campus France",
+          "desc": "Complete the 'Etudes en France' process, payment, and academic interview."
+        },
+        {
+          "step": "03",
+          "title": "Visa Application",
+          "desc": "Fill out the form on France-Visas and gather your consular dossier."
+        },
+        {
+          "step": "04",
+          "title": "Consular Appointment",
+          "desc": "Submit your biometric documents and wait for the decision (7-15 days)."
+        }
+      ]
+    },
+    "types": {
+      "title": "Eligible Types of Study",
+      "apply": {
+        "title": "Eligible",
+        "items": [
+          "French courses (minimum 20 hours per week)",
+          "Bachelor's and Master's degrees",
+          "Master's degrees in recognized private schools",
+          "Long and structured training programs"
+        ]
+      },
+      "notApply": {
+        "title": "Not always eligible",
+        "items": [
+          "Short courses (less than 20 hours per week)",
+          "Training programs without sufficient hourly load",
+          "Studies inconsistent with your academic profile"
+        ]
+      }
+    },
+    "status": {
+      "title": "Change of Status",
+      "p1": "In some cases, it is possible to change status once in France, usually after finishing your studies. This change is not automatic and depends on the diploma obtained and the consistency of your academic and professional project. Each situation is evaluated case-by-case by the French administration.",
+      "p2": "Examples of possible changes: transitioning from a student visa to a work visa (Salarié) if you find a job corresponding to your profile and studies, or to an entrepreneur visa if you decide to create your own company."
+    },
+    "tips": {
+      "title": "Important Tips",
+      "items": [
+        {
+          "bold": "The student visa is an academic project, not just an administrative procedure.",
+          "text": " The consistency of your dossier is key to avoiding delays or rejections."
+        },
+        {
+          "bold": "Informing yourself in advance",
+          "text": " allows you to make better decisions and prepare all necessary documents with sufficient time."
+        },
+        {
+          "bold": "Plan ahead:",
+          "text": " The complete process, from the program search to obtaining the visa, can take 6 to 9 months. Start your search early enough."
+        },
+        {
+          "bold": "Complete documentation:",
+          "text": " Make sure to have all documents translated and legalized when applicable. An incomplete dossier can generate significant delays."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Need help with your student visa?",
+      "description": "We accompany you throughout the process: Campus France, academic registration, dossier preparation, and financial resource strategy.",
+      "button": "CONSULT NOW"
+    },
+    "faqSection": {
+      "title": "Frequently Asked Questions",
+      "description": "We answer your questions about requirements, financial solvency, Campus France, and part-time work."
+    }
+  },
+  "WorkVisasPage": {
+    "hero": {
+      "title": "Work Visas in France",
+      "subtitle": "Discover the two main pathways to work legally: \n Visa Salarié (Long-term stability) and Visa Saisonnier (Seasonal work).",
+      "whatsappCta": "CONSULT BY WHATSAPP",
+      "advisorCta": "SCHEDULE A CONSULTATION",
+      "communityCta": "Join the Salarié / Saisonnier Community"
+    },
+    "comparison": {
+      "title": "Comparison and Process",
+      "subtitle": "Analyze step by step which is the ideal option for your professional profile.",
+      "mobileHelper": "Choose a visa to see the complete process",
+      "salarieBtn": "Salarié",
+      "saisonnierBtn": "Saisonnier"
+    },
+    "salarie": {
+      "badge": "Visa Salarié",
+      "title": "Permanent (CDI/CDD)",
+      "step1": {
+        "title": "Definition and Scope",
+        "description": "It is a residence and work permit intended for people hired under a <strong>CDI</strong> (permanent) or <strong>long-term CDD</strong>.",
+        "highlight": "<strong>Main value:</strong> Stability, legal clarity, and long-term projection (residency)."
+      },
+      "step2": {
+        "title": "Offer and Métier en Tension",
+        "description": "A formal offer linked to a <strong>ROME</strong> code is required. If the position is on the list of <strong>Métiers en Tension</strong> (shortage of personnel), the process is faster.",
+        "link": "Consult regional list (Légifrance)"
+      },
+      "step3": {
+        "title": "Publication (France Travail)",
+        "description": "If the occupation is <strong>NOT</strong> in shortage, it is mandatory to publish the offer for <strong>21 days</strong> on France Travail for labor market control.",
+        "warning": "<strong>Important:</strong> Any modification restarts the 21-day counter."
+      },
+      "step4": {
+        "title": "Timelines and ANEF",
+        "items": [
+          "Platform: Ministry of the Interior (ANEF).",
+          "Authorization review: <strong>2 to 8 weeks</strong>.",
+          "Visa issuance (Consulate): <strong>~15 days</strong>."
+        ]
+      },
+      "step5": {
+        "title": "Validation in France",
+        "description": "Upon arrival, it is mandatory to validate the visa <strong>online</strong>, register in social security, and activate labor rights.",
+        "success": "Renewable towards long-term residency."
+      }
+    },
+    "saisonnier": {
+      "badge": "Visa Saisonnier",
+      "title": "Seasonal (3 to 6 months)",
+      "step1": {
+        "title": "Definition and Scope",
+        "description": "For seasonal work (Hotel, Agriculture, Tourism, Ski) with contracts of <strong>3 to 6 months</strong>.",
+        "highlight": "<strong>Limitation:</strong> Does not grant annual right. Maximum of 6 months of work per year. Renewable for <strong>3 consecutive years</strong>."
+      },
+      "step2": {
+        "title": "Seasonal Sectors",
+        "description": "Many seasonal occupations belong to <strong>Métiers en Tension</strong>, especially in tourist regions, facilitating approval.",
+        "tags": [
+          "Hotel",
+          "Catering",
+          "Mountain",
+          "Agriculture"
+        ]
+      },
+      "step3": {
+        "title": "Publication (Exception)",
+        "description": "In most seasonal cases (high demand), <strong>NOT necessary</strong> to publish the offer for 3 weeks.",
+        "note": "*Only if the occupation is not seasonal or in shortage, the 21 days are required."
+      },
+      "step4": {
+        "title": "Timelines and ANEF",
+        "items": [
+          "Platform: ANEF Employers.",
+          "Authorization review: <strong>2 to 8 weeks</strong>.",
+          "Visa issuance: <strong>~15 days</strong>."
+        ]
+      },
+      "step5": {
+        "title": "Validation and Cost",
+        "lessThan3": "<strong>Less than 3 months:</strong> NOT validated. No extra procedures.",
+        "3to6": "<strong>3 to 6 months:</strong> Mandatory validation + <em>Carte de Séjour Saisonnier</em>.",
+        "cost": "Issuance cost: <strong>0€</strong> (Free)."
+      }
+    },
+    "professionalSupport": {
+      "title": "PROFESSIONAL ACCOMPANIMENT",
+      "p1": "At <strong>Allée France Lyon</strong> I accompany you personally. I am <strong>Jio</strong>, a specialist in immigration procedures, with <strong>more than 700 successful processes</strong>.",
+      "p2": "We work in <strong>direct coordination</strong> with your employer (from small family businesses to large companies) to ensure a clean, complete, and approved file in <strong>record time</strong>."
+    },
+    "community": {
+      "title": "SALARIÉ / SAISONNIER COMMUNITY",
+      "description": "You are not alone in this process. Join our WhatsApp community to share experiences and tips.",
+      "button": "JOIN NOW"
+    },
+    "cta": {
+      "title": "Ready to start your process?",
+      "description": "We manage clean, complete, and approvable processes. Avoid mistakes and delays.",
+      "button": "CONSULT NOW"
+    },
+    "summaryTable": {
+      "title": "Key Differences Summarized",
+      "salarie": {
+        "title": "Visa Salarié",
+        "items": [
+          "For CDI or CDD Long.",
+          "Allows long-term residency.",
+          "Mandatory 21-day publication if not in shortage.",
+          "Has standard consular fees."
+        ]
+      },
+      "saisonnier": {
+        "title": "Visa Saisonnier",
+        "items": [
+          "Contracts of 3 to 6 months.",
+          "Generally does NOT require 21-day publication.",
+          "<strong>0€ Cost</strong> (Free).",
+          "Limited to 6 months per year."
+        ]
+      }
+    }
+  },
+  "WorkingHolidayPage": {
+    "global": {
+      "badge": "Working Holiday Global",
+      "hero": {
+        "title": "Live and Work around the world.",
+        "subtitle": "Your nationality is your passport to new opportunities. Choose your country of origin, find available destinations, and build a realistic strategy to travel, work, and learn.",
+        "ctaPrimary": "Select country of origin",
+        "ctaSecondary": "Explore destinations"
+      },
+      "highlights": [
+        {
+          "label": "Guides by nationality"
+        },
+        {
+          "label": "Legal work options"
+        },
+        {
+          "label": "Destinations on 4 continents"
+        }
+      ],
+      "origin": {
+        "eyebrow": "Select your country of origin",
+        "title": "Your journey starts here",
+        "description": "Choose your nationality to access requirements, opening dates, and specific recommendations for your application.",
+        "countryLink": "See available destinations",
+        "countryExplore": "Explore guide"
+      },
+      "destinations": {
+        "eyebrow": "Available destinations",
+        "title": "Choose where you want to live the experience",
+        "description": "Select a destination to discover requirements, quotas, and current job opportunities in each country.",
+        "activePrograms": "See active programs"
+      },
+      "advisory": {
+        "title": "Strategic Support for Your Working Holiday",
+        "description": "We centralize information, help you plan timelines, and prepare a solid dossier so your trip doesn't stay a theory. Our advisory service adapts to your country of origin and your chosen destination.",
+        "items": [
+          "Requirements diagnosis and opening calendar.",
+          "Document checklist and fund tracking.",
+          "Travel plan with work and accommodation options."
+        ],
+        "cardEyebrow": "Your plan in focus",
+        "cardTitle": "Ready to take the first step?",
+        "cardDescription": "Schedule a session with our team to review your profile, choose the ideal destination, and define the best application strategy.",
+        "cardButton": "Chat on WhatsApp"
+      },
+      "insurance": {
+        "eyebrow": "Travel insurance",
+        "title": "Get your mandatory Working Holiday insurance",
+        "description": "Protect your experience with a policy valid for consulates and official programs. Includes medical assistance, repatriation, and certificates ready to submit.",
+        "ctaButton": "Get a quote",
+        "ctaNote": "Receive the official certificate and letter to present at your consulate or application platform.",
+        "features": [
+          {
+            "title": "Mandatory coverage",
+            "description": "Medical care, hospitalization, and repatriation aligned with consular requirements."
+          },
+          {
+            "title": "International validity",
+            "description": "Protection throughout your stay and secondary trips within your Working Holiday."
+          },
+          {
+            "title": "Immediate certificate",
+            "description": "We issue the certificate in minutes to present at the consulate or official platform."
+          }
+        ]
+      },
+      "faqSection": {
+        "title": "Frequently Asked Questions about Working Holiday",
+        "description": "Find answers about requirements, insurance, work, and application timelines."
+      },
+      "cta": {
+        "title": "Ready to start your Working Holiday plan?",
+        "description": "Let's schedule a session to review your profile, confirm requirements, and define the next steps clearly.",
+        "ctaPrimary": "Chat on WhatsApp",
+        "ctaSecondary": "Book consultation"
+      },
+      "faqLoading": "Loading FAQs..."
+    },
+    "country": {
+      "whatsappBtn": "Consult on WhatsApp",
+      "advisoryBtn": "Book Consultation",
+      "quotaNote": "Limited spots per country · Our team helps you arrive ready regardless of your departure from {country}.",
+      "quotaFallback": "Official quota to be confirmed",
+      "quotaEyebrow": "Estimated quota · {label}",
+      "whatIs": {
+        "title": "What is the Working Holiday Visa?",
+        "p1": "The Working Holiday allows young people from {country} to reside abroad for up to 12 months, with the freedom to work temporarily and travel the chosen country. It's an excellent opportunity to improve the language, fund your experience, and live a total cultural immersion.",
+        "p2": "From Allée France we guide you at every stage: planning, paperwork, consular appointments, and settling in on arrival. We focus on anticipating problems and strengthening your dossier so you can take advantage of the quotas without setbacks.",
+        "quotaBody": "Demand quickly exceeds quotas, so it's crucial to prepare documentation in advance and arrive on opening day with everything ready. Our team helps you review every detail."
+      },
+      "benefits": {
+        "title": "Benefits of the French Working Holiday",
+        "items": [
+          {
+            "title": "Live a year in your chosen destination",
+            "description": "Reside for up to 12 months with the freedom to work, travel, and gain international experience."
+          },
+          {
+            "title": "Work legally",
+            "description": "You can take temporary jobs to fund your stay and add international experience to your CV."
+          },
+          {
+            "title": "Explore new countries",
+            "description": "Combine work and tourism to discover new cultures while sustaining your trip."
+          },
+          {
+            "title": "Real cultural immersion",
+            "description": "Improve the language, make international friends, and experience daily local life."
+          }
+        ]
+      },
+      "requirements": {
+        "title": "Application requirements",
+        "intro": "Preparing the application in advance is key to securing your annual quota. These are the requirements we review together before submitting your dossier:",
+        "academicAlert": "Requires higher education and/or English proficiency."
+      },
+      "checklist": {
+        "title": "Express checklist",
+        "description": "We organize your documentation in blocks so you can move forward clearly and avoid rejections due to formal details.",
+        "items": [
+          "Travel plan and target cities (work, temporary accommodation, transport).",
+          "Personalized timeline to know what to submit at each stage.",
+          "List of translated, apostilled, or certified documents.",
+          "Review of insurance and coverages required by the consulate."
+        ],
+        "keyDatesTitle": "Important dates"
+      },
+      "insurance": {
+        "eyebrow": "Mandatory insurance",
+        "title": "Get your VVT insurance for {country}",
+        "noVisaNote": "Without a valid insurance policy, the consulate will not accept the dossier or issue the visa.",
+        "partnerEyebrow": "Insurance partner",
+        "ctaButton": "Get a quote",
+        "ctaNote": "We provide the certificate in minutes, ready to attach to France-Visas or print alongside your OFII. We also handle extensions or refunds if you change your dates.",
+        "features": [
+          {
+            "title": "Schengen Coverage 24/7",
+            "description": "Medical care, hospitalization, and repatriation with international support throughout the program."
+          },
+          {
+            "title": "Consular documentation",
+            "description": "Official certificate and personalized letter to present at your consulate or official platform."
+          },
+          {
+            "title": "Comprehensive assistance",
+            "description": "Includes medical emergencies, accidents, telemedicine, and support for settling in France."
+          },
+          {
+            "title": "Extended travel coverage",
+            "description": "Protection from the moment you leave your country, throughout the Schengen Area, with an extension option if you decide to stay."
+          }
+        ]
+      },
+      "steps": {
+        "title": "Step-by-step process",
+        "items": [
+          {
+            "title": "Preparation",
+            "description": "We build your strategy: requirements review, date selection, and a personalized document checklist."
+          },
+          {
+            "title": "Documentation",
+            "description": "We gather certificates, translations, bank statements, health insurance, and motivation letters."
+          },
+          {
+            "title": "Application",
+            "description": "We book the appointment, fill your form, and help you submit the complete dossier to the consulate."
+          },
+          {
+            "title": "Travel and arrival",
+            "description": "We guide you through insurance activation, initial procedures, bank account opening, and tips for settling in France."
+          }
+        ]
+      },
+      "ctaMid": {
+        "title": "Ready to apply?",
+        "description": "We help you prepare a competitive dossier, meet official timelines, and land in France with a clear plan for accommodation, temporary work, and settlement procedures, regardless of where you depart from {country}.",
+        "ctaPrimary": "Start my Working Holiday",
+        "ctaSecondary": "Talk to the team"
+      },
+      "documents": {
+        "title": "Essential dossier documentation",
+        "description": "Each document must meet specific format, language, and validity requirements. We provide templates and models for a clear and professional presentation.",
+        "items": [
+          "Valid passport and completed official forms.",
+          "CV and motivation letter according to the destination.",
+          "Proof of funds (bank statements or certificates).",
+          "Flight reservation or equivalent funds.",
+          "International health insurance for the entire stay.",
+          "Apostilled criminal record certificate."
+        ],
+        "consularTipsTitle": "Quick tips for your consular appointment",
+        "consularTips": [
+          "Organize the dossier according to the official checklist. We use dividers to speed up the review.",
+          "Have printed and digital copies ready on a USB drive or in the cloud.",
+          "Prepare clear answers about your travel plan, accommodation, funds, and objectives.",
+          "Arrive at least 20 minutes early and ensure your insurance is printed in French or English."
+        ],
+        "countryNotesTitle": "Specific notes for {country}"
+      },
+      "destinations": {
+        "eyebrow": "Destinations for {country}",
+        "title": "Choose your next destination",
+        "description": "These are the Working Holiday programs available for your passport. We help you compare requirements and real timelines.",
+        "activePrograms": "Active programs",
+        "upcoming": "Coming soon"
+      },
+      "faqSection": {
+        "title": "Frequently Asked Questions about Working Holiday",
+        "description": "We answer key questions about requirements, insurance, work, and common application mistakes."
+      },
+      "ctaFinal": {
+        "title": "Which visa is right for you?",
+        "description": "Contact us for personalized advice and discover the best option based on your plans, timeline, and country of origin.",
+        "ctaPrimary": "Send us a WhatsApp",
+        "ctaSecondary": "See more services"
+      },
+      "countryGrid": {
+        "eyebrow": "Select your country",
+        "title": "Go directly to the country guide",
+        "quotaFallback": "Official quota"
+      }
+    }
+  },
+  "WorkingHolidayCountries": {
+    "global": {
+      "heroTitle": "Global Working Holiday for Latin America",
+      "heroSubtitle": "General overview of the Working Holiday program and the key steps for applicants from across the region.",
+      "quotaText": "Active programs 2025/2026",
+      "requisitos": [
+        "Be between 18 and 35 years old depending on the destination.",
+        "Valid passport for the entire duration of the stay.",
+        "Available funds for initial living expenses and a return ticket.",
+        "International health insurance valid for the full duration.",
+        "No criminal record."
+      ],
+      "insuranceNote": "We offer the insurance required by consulates and Working Holiday programs, with immediate issuance and a certificate for your dossier.",
+      "name": "Latin America"
+    },
+    "ar": {
+      "heroTitle": "Working Holiday for Argentinians",
+      "heroSubtitle": "Access over 15 official destinations. We accompany you through the application process for France, Australia, New Zealand, and more.",
+      "quotaText": "Over 15 active agreements",
+      "destinations": [
+        "France",
+        "Australia",
+        "New Zealand",
+        "Germany",
+        "Ireland",
+        "Denmark",
+        "Sweden",
+        "Portugal",
+        "Japan",
+        "South Korea",
+        "Poland",
+        "Austria",
+        "Hungary",
+        "Czech Republic",
+        "Norway (Coming Soon)"
+      ],
+      "requisitos": [
+        "Be between 18 and 30 years old (some destinations up to 35).",
+        "Valid Argentine passport.",
+        "Proof of funds (approx. USD 2,500 - 3,000).",
+        "Mandatory travel insurance for 12 months.",
+        "No criminal record."
+      ],
+      "insuranceNote": "For Argentinians, the insurance must cover medical expenses, hospitalization, and repatriation for the entire stay (12 months).",
+      "keyDates": [
+        "Australia: Opening July 1st",
+        "New Zealand: September (Variable date)"
+      ],
+      "name": "Argentina"
+    },
+    "cl": {
+      "heroTitle": "Working Holiday for Chileans",
+      "heroSubtitle": "Your passport opens the doors to Europe, Oceania, and North America. Take advantage of exclusive agreements with Canada and the Pacific Alliance.",
+      "quotaText": "18 Active agreements",
+      "destinations": [
+        "Australia",
+        "New Zealand",
+        "Canada (IEC)",
+        "France",
+        "Germany",
+        "Ireland",
+        "Sweden",
+        "Denmark",
+        "Austria",
+        "Portugal",
+        "Czech Republic",
+        "Hungary",
+        "Poland",
+        "Luxembourg",
+        "South Korea",
+        "Japan",
+        "Pacific Alliance (Mexico/Col/Peru)"
+      ],
+      "requisitos": [
+        "Age between 18 and 30 (Canada/NZ/Hungary up to 35).",
+        "Valid Chilean passport.",
+        "Mandatory international health insurance.",
+        "Return ticket or funds to purchase one."
+      ],
+      "insuranceNote": "Chile requires full health and repatriation coverage. Without this certificate, the visa may be rejected.",
+      "keyDates": [
+        "Canada IEC: Invitation rounds throughout the year",
+        "New Zealand: October"
+      ],
+      "name": "Chile"
+    },
+    "uy": {
+      "heroTitle": "Working Holiday for Uruguayans",
+      "heroSubtitle": "Live abroad with your Uruguayan passport. Access the exclusive UK visa and other top destinations.",
+      "quotaText": "9 Available destinations",
+      "destinations": [
+        "United Kingdom (Youth Mobility)",
+        "Australia",
+        "New Zealand",
+        "France",
+        "Germany",
+        "Sweden",
+        "Ireland",
+        "Netherlands",
+        "Japan"
+      ],
+      "requisitos": [
+        "Age 18-30 years.",
+        "Valid Uruguayan passport.",
+        "Criminal record certificate.",
+        "Annual travel insurance."
+      ],
+      "insuranceNote": "Insurance is mandatory to activate your visa upon arrival in Europe or Oceania.",
+      "keyDates": [
+        "New Zealand: August",
+        "United Kingdom: January and July (Ballot)"
+      ],
+      "name": "Uruguay"
+    },
+    "mx": {
+      "heroTitle": "Working Holiday for Mexicans",
+      "heroSubtitle": "Explore options in Europe, North America, and Asia. Your opportunity to live while traveling.",
+      "quotaText": "6 Main agreements",
+      "destinations": [
+        "Canada (IEC)",
+        "France",
+        "New Zealand",
+        "Germany",
+        "South Korea",
+        "Pacific Alliance (Chile/Col/Peru)"
+      ],
+      "requisitos": [
+        "Age 18-29/30 years.",
+        "Mexican passport.",
+        "Proof of financial solvency.",
+        "Major medical expense insurance."
+      ],
+      "insuranceNote": "Mandatory requirement: International insurance policy with sanitary repatriation.",
+      "keyDates": [
+        "Canada IEC: Opening at the start of the year",
+        "France: Year-round"
+      ],
+      "name": "Mexico"
+    },
+    "ec": {
+      "heroTitle": "Working Holiday for Ecuadorians",
+      "heroSubtitle": "Australia and France open their doors. Prepare your application with experts.",
+      "quotaText": "2 Main destinations",
+      "destinations": [
+        "Australia",
+        "France"
+      ],
+      "requisitos": [
+        "Age 18-30 years.",
+        "Higher education in progress or completed.",
+        "English proficiency level (Australia).",
+        "Government support letter (Australia)."
+      ],
+      "insuranceNote": "Mandatory international health insurance for the consular application.",
+      "keyDates": [
+        "Australia: Opening July 1st"
+      ],
+      "name": "Ecuador"
+    },
+    "co": {
+      "heroTitle": "Working Holiday for Colombians",
+      "heroSubtitle": "France is your gateway to Europe. Also take advantage of the Pacific Alliance.",
+      "quotaText": "4 Main destinations",
+      "destinations": [
+        "France",
+        "Chile",
+        "Mexico",
+        "Peru"
+      ],
+      "requisitos": [
+        "Age 18-30 years.",
+        "Valid Colombian passport.",
+        "Medical certificate and criminal record.",
+        "Departure ticket or sufficient funds."
+      ],
+      "insuranceNote": "France requires a medical insurance certificate for 1 year to approve the visa.",
+      "keyDates": [
+        "France: Quotas renewed in January"
+      ],
+      "name": "Colombia"
+    },
+    "pe": {
+      "heroTitle": "Working Holiday for Peruvians",
+      "heroSubtitle": "Australia awaits with 1,500 spots. Also discover your options in Europe.",
+      "quotaText": "8 Available destinations",
+      "destinations": [
+        "Australia",
+        "France",
+        "New Zealand",
+        "Portugal",
+        "Czech Republic",
+        "Hungary",
+        "Poland",
+        "Pacific Alliance"
+      ],
+      "requisitos": [
+        "Age 18-30 years.",
+        "Tertiary/university studies (mandatory for Australia/NZ).",
+        "Functional English level (Australia).",
+        "International health insurance."
+      ],
+      "insuranceNote": "Your insurance must cover all 365 days of your visa, without exception.",
+      "keyDates": [
+        "Australia: Opening July 1st",
+        "New Zealand: Variable date"
+      ],
+      "name": "Peru"
+    }
+  },
+  "NotFound": {
+    "title": "We couldn't find the page you're looking for",
+    "description": "The link might be broken or the content may have moved. But we are ready to help you continue your migration plan to France.",
+    "backHome": "Back to home",
+    "contactUs": "Go to contact",
+    "helpTitle": "Need help getting your migration project back on track?",
+    "helpDescription": "Schedule a free call and receive personalized guidance from our team of French advisors. We are here to accompany you every step of the way.",
+    "scheduleBtn": "Schedule advisory",
+    "whatsappBtn": "Send us a WhatsApp"
+  }
+}

@@ -12,7 +12,7 @@ type BlogNewsletterSectionProps = {
 
 export function BlogNewsletterSection({
   title = "Alertas y recursos exclusivos",
-  description = "Recibí recordatorios de plazos consulares, avisos de convocatorias y herramientas listas para usar en tu proceso migratorio.",
+  description = "Recibes recordatorios de plazos consulares, avisos de convocatorias y herramientas listas para usar en tu proceso migratorio.",
   highlights = ["Recordatorios clave", "Convocatorias antes que nadie", "Plantillas y checklists"],
   variant = "dark",
 }: BlogNewsletterSectionProps) {

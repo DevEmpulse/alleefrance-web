@@ -8,6 +8,7 @@ import { Calendar, ArrowRight, Clock } from "lucide-react";
 import { BlogNewsletterSection } from "@/components/blog/blog-newsletter-section";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
 
 type BlogPost = {
   title: string;
@@ -25,10 +26,13 @@ type BlogPageContentProps = {
 };
 
 export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
-  const [selectedCategory, setSelectedCategory] = useState("Todos");
+  const [selectedCategory, setSelectedCategory] = useState(categories[0] || "Todos");
+  const locale = useLocale();
+  const t = useTranslations("BlogPage");
+  const tNewsletter = useTranslations("BlogNewsletter");
 
   const filteredPosts =
-    selectedCategory === "Todos"
+    selectedCategory === categories[0]
       ? posts
       : posts.filter((post) => post.category === selectedCategory);
 
@@ -48,7 +52,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
             transition={{ duration: 0.6 }}
             className="text-4xl lg:text-5xl font-bold text-white mb-6"
           >
-            Blog y Recursos
+            {t("title")}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -56,9 +60,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto"
           >
-            Guías completas, artículos y consejos actualizados sobre migración,
-            visas y vida en Francia. Información confiable para tu proceso
-            migratorio.
+            {t("subtitle")}
           </motion.p>
         </div>
       </section>
@@ -98,7 +100,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
             {filteredPosts.map((post, index) => (
               <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
                 <Link
-                  href={`/blog/${post.slug}`}
+                  href={`/${locale}/blog/${post.slug}`}
                   className="block group focus:outline-none focus-visible:ring-4 focus-visible:ring-red-200 rounded-xl"
                 >
                   <article className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full">
@@ -147,7 +149,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                         className="flex items-center gap-2 font-semibold text-sm"
                         style={{ color: "#ED2939" }}
                       >
-                        Leer más
+                        {t("readMore")}
                         <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                       </span>
                     </div>
@@ -165,14 +167,18 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                 className="font-semibold tracking-wide text-base px-8 py-6 rounded-lg bg-transparent cursor-pointer"
                 style={{ borderColor: "#002654", color: "#002654" }}
               >
-                Cargar Más Artículos
+                {t("loadMore")}
               </Button>
             </div>
           </AnimateOnScroll>
         </div>
       </section>
 
-      <BlogNewsletterSection />
+      <BlogNewsletterSection 
+        title={tNewsletter("title")}
+        description={tNewsletter("description")}
+        highlights={tNewsletter.raw("highlights")}
+      />
 
       {/* CTA Section */}
       <AnimateOnScroll direction="fade" delay={0}>
@@ -182,11 +188,10 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
               className="text-3xl lg:text-4xl font-bold mb-4"
               style={{ color: "#002654" }}
             >
-              ¿Necesitás Asesoría Personalizada?
+              {t("ctaTitle")}
             </h2>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Nuestro equipo está listo para ayudarte con tu proceso de
-              migración a Francia
+              {t("ctaSubtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -200,7 +205,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Consultar por WhatsApp
+                  {t("ctaWhatsapp")}
                 </a>
               </Button>
               <Button
@@ -210,9 +215,9 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                 style={{ borderColor: "#002654", color: "#002654" }}
                 asChild
               >
-                <a href="/#contacto" target="_blank" rel="noopener noreferrer">
-                  Agendar Asesoría
-                </a>
+                <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
+                  {t("ctaBook")}
+                </Link>
               </Button>
             </div>
           </div>

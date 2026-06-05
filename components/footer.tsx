@@ -2,8 +2,11 @@ import { Shield, MapPin, Phone, ChevronRight } from "lucide-react";
 import { SiWhatsapp, SiInstagram, SiTiktok } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations("Footer");
+  const locale = useLocale();
   return (
     <footer
       className="relative overflow-hidden"
@@ -29,7 +32,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12">
           {/* Logo and Description - Full width on mobile, first column on desktop */}
           <div className="sm:col-span-2 lg:col-span-1 space-y-5 sm:space-y-6">
-            <Link href="/" className="inline-flex items-center gap-3 group">
+            <Link href={`/${locale}`} className="inline-flex items-center gap-3 group">
               <div className="relative h-12 sm:h-14 w-auto transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/logo-AF.webp"
@@ -42,17 +45,16 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-gray-300 text-sm sm:text-base leading-relaxed max-w-md lg:max-w-none">
-              Especialistas en asesoría migratoria y tramitación de visas para
-              Francia. Tu sueño francés, nuestro compromiso.
+              {t("description")}
             </p>
             <div className="pt-2">
               <Link
-                href="#seguro"
+                href={`/${locale}#seguro`}
                 className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
                 style={{ backgroundColor: "#ED2939" }}
               >
                 <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
-                <span>Cotizar mi seguro</span>
+                <span>{t("quote")}</span>
               </Link>
             </div>
           </div>
@@ -60,14 +62,14 @@ export function Footer() {
           {/* Quick Links */}
           <div className="space-y-4 sm:space-y-5">
             <h3 className="font-bold text-white text-base sm:text-lg mb-4 sm:mb-5">
-              Enlaces Rápidos
+              {t("links.title")}
             </h3>
             <ul className="space-y-2.5 sm:space-y-3 list-none">
               {[
-                { href: "/#servicios", label: "Servicios" },
-                { href: "/#casos-exitosos", label: "Casos Exitosos" },
-                { href: "/#seguro", label: "Seguro de Viaje" },
-                { href: "/#faq", label: "Preguntas Frecuentes" },
+                { href: `/${locale}#servicios`, label: t("links.services") },
+                { href: `/${locale}#casos-exitosos`, label: t("links.successStories") },
+                { href: `/${locale}#seguro`, label: t("links.insurance") },
+                { href: `/${locale}#faq`, label: t("links.faq") },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -87,14 +89,14 @@ export function Footer() {
           {/* Services */}
           <div className="space-y-4 sm:space-y-5">
             <h3 className="font-bold text-white text-base sm:text-lg mb-4 sm:mb-5">
-              Servicios
+              {t("services.title")}
             </h3>
             <ul className="space-y-2.5 sm:space-y-3 list-none">
               {[
-                { href: "/servicios/visas-trabajo", label: "Visas de Trabajo" },
-                { href: "/servicios/visa-etudiant", label: "Visa Étudiant" },
-                { href: "/working-holiday", label: "Working Holiday" },
-                { href: "/blog", label: "Blog" },
+                { href: `/${locale}/servicios/visas-trabajo`, label: t("services.work") },
+                { href: `/${locale}/servicios/visa-etudiant`, label: t("services.student") },
+                { href: `/${locale}/working-holiday`, label: t("services.wh") },
+                { href: `/${locale}/blog`, label: t("links.blog") },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -114,7 +116,7 @@ export function Footer() {
           {/* Contact and Social */}
           <div className="space-y-4 sm:space-y-5">
             <h3 className="font-bold text-white text-base sm:text-lg mb-4 sm:mb-5">
-              Contacto
+              {t("contact.title")}
             </h3>
             <div className="space-y-4">
               <a
@@ -189,8 +191,7 @@ export function Footer() {
         <div className="border-t border-gray-700/50 pt-6 sm:pt-8 mt-6 sm:mt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 min-h-[44px] sm:min-h-0">
             <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-2 sm:order-1 shrink-0">
-              © {new Date().getFullYear()} Allée France. Todos los derechos
-              reservados.
+              © {new Date().getFullYear()} Allée France. {t("rights")}
             </p>
 
             {/* Hecho por Empulse - centro en desktop, último en mobile */}
@@ -200,7 +201,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 text-gray-400 hover:text-white transition-colors duration-300 text-xs sm:text-sm order-3 sm:order-2 shrink-0 relative py-1"
             >
-              <span>Hecho por</span>
+              <span>{t("madeBy")}</span>
               <Image
                 src="/logoEmpuse.svg"
                 alt="Empulse"
@@ -218,17 +219,17 @@ export function Footer() {
 
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center sm:justify-end text-xs sm:text-sm order-1 sm:order-3">
               <Link
-                href="/politica-de-privacidad"
+                href={`/${locale}/politica-de-privacidad/`}
                 className="text-gray-400 hover:text-white transition-colors duration-300 px-2 py-1 rounded"
               >
-                Política de privacidad
+                {t("legal.privacy")}
               </Link>
               <span className="text-gray-600 hidden sm:inline">•</span>
               <Link
-                href="/terminos-y-condiciones"
+                href={`/${locale}/terminos-y-condiciones/`}
                 className="text-gray-400 hover:text-white transition-colors duration-300 px-2 py-1 rounded"
               >
-                Términos y condiciones
+                {t("legal.terms")}
               </Link>
             </div>
           </div>

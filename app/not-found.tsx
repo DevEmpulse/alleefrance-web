@@ -2,10 +2,23 @@ import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import { setRequestLocale } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
+import messages from "@/messages/es.json";
 
 export default function NotFound() {
+  setRequestLocale("es");
+
+  // Pasamos SOLO lo que Navbar y Footer necesitan estrictamente para no crashear,
+  // manteniendo la página rapidísima y sin el objeto JSON de 140KB.
+  const minimalMessages = {
+    Navbar: messages.Navbar,
+    Footer: messages.Footer,
+  };
+
   return (
-    <main className="min-h-screen w-full bg-slate-950 text-white flex flex-col">
+    <NextIntlClientProvider locale="es" messages={minimalMessages as any}>
+      <main className="min-h-screen w-full bg-slate-950 text-white flex flex-col">
       <Navbar />
 
       <section className="flex-1 px-4 py-20 md:py-28">
@@ -75,6 +88,7 @@ export default function NotFound() {
       </section>
 
       <Footer />
-    </main>
+      </main>
+    </NextIntlClientProvider>
   );
 }

@@ -686,9 +686,9 @@ export const ALL_FAQS: FAQItem[] = [
   },
 ];
 
-export const getFaqsByCategories = (categories: string[]) => {
+export const getFaqsByCategories = (categories: string[], allFaqs: FAQItem[] = ALL_FAQS) => {
   const categorySet = new Set(categories);
-  return ALL_FAQS.filter((faq) =>
+  return allFaqs.filter((faq) =>
     faq.category.some((category) => categorySet.has(category)),
   );
 };

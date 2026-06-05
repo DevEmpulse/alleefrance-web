@@ -30,6 +30,7 @@ import type {
   ServiceCard,
 } from "@/lib/services-data";
 import type { LucideIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type ServicesCatalogProps = {
   personas: Persona[];
@@ -82,6 +83,7 @@ const buildWhatsAppLink = (serviceTitle: string) => {
 };
 
 export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
+  const t = useTranslations("ServicesCatalog");
   const defaultPersona = personas[0]?.id ?? "general";
   const [selectedPersona, setSelectedPersona] =
     useState<PersonaId>(defaultPersona);
@@ -146,7 +148,7 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
 
         {/* Texto guía */}
         <p className="mb-10 text-center text-sm md:text-base text-slate-600">
-          Elige tu perfil y descubre los servicios recomendados para tu situación.
+          {t("chooseProfile")}
         </p>
       </AnimateOnScroll>
 
@@ -227,10 +229,10 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
                       >
                         {isExternal ? (
                           <a href={ctaLink} target="_blank" rel="noopener noreferrer">
-                            Solicitar este servicio
+                            {t("requestService")}
                           </a>
                         ) : (
-                          <Link href={ctaLink}>Solicitar este servicio</Link>
+                          <Link href={ctaLink}>{t("requestService")}</Link>
                         )}
                       </Button>
                     </div>

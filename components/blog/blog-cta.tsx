@@ -3,11 +3,14 @@
 import { Button } from "@/components/ui/button";
 import { BlogNewsletterSection } from "@/components/blog/blog-newsletter-section";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import Link from "next/link";
+import { useLocale } from "next-intl";
 
 export function BlogCTASections() {
+  const locale = useLocale();
   return (
     <>
-      <BlogNewsletterSection description="Recibí alertas de convocatorias, guías actualizadas y recordatorios de plazos clave directamente en tu email." />
+      <BlogNewsletterSection description="Recibe alertas de convocatorias, guías actualizadas y recordatorios de plazos clave directamente en tu email." />
 
       <AnimateOnScroll direction="fade" delay={0}>
         <section className="py-16 px-6 bg-gray-50">
@@ -44,9 +47,9 @@ export function BlogCTASections() {
                 style={{ borderColor: "#002654", color: "#002654" }}
                 asChild
               >
-                <a href="/#contacto" target="_blank" rel="noopener noreferrer">
+                <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
                   Reservar asesoría
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

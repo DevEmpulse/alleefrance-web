@@ -9,6 +9,7 @@ import {
   FaQuoteRight,
 } from "react-icons/fa";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
+import { useTranslations } from "next-intl";
 
 const testimonials = [
   {
@@ -54,6 +55,7 @@ const testimonials = [
 ];
 
 export function SuccessStoriesSection() {
+  const t = useTranslations("SuccessStories");
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: "left" | "right") => {
@@ -76,11 +78,10 @@ export function SuccessStoriesSection() {
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between mb-12">
             <div className="max-w-3xl">
               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-[#002654]">
-                Historias reales, resultados comprobados
+                {t("title")}
               </h2>
               <p className="text-lg text-slate-600">
-                La tranquilidad de saber que estás en manos de expertos. Así lo
-                vivieron ellos:
+                {t("description")}
               </p>
             </div>
 
@@ -88,7 +89,7 @@ export function SuccessStoriesSection() {
             <div className="hidden md:flex gap-3">
               <button
                 type="button"
-                aria-label="Ver opinion anterior"
+                aria-label={t("previous")}
                 onClick={() => handleScroll("left")}
                 className="cursor-pointer w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-[#002654] hover:text-white hover:border-[#002654] transition-all shadow-sm"
               >
@@ -96,7 +97,7 @@ export function SuccessStoriesSection() {
               </button>
               <button
                 type="button"
-                aria-label="Ver opinion siguiente"
+                aria-label={t("next")}
                 onClick={() => handleScroll("right")}
                 className="cursor-pointer w-12 h-12 flex items-center justify-center rounded-full border border-gray-300 bg-white text-gray-600 hover:bg-[#002654] hover:text-white hover:border-[#002654] transition-all shadow-sm"
               >
@@ -134,7 +135,7 @@ export function SuccessStoriesSection() {
                   </p>
                   {/* CAMBIO DE COLOR AQUÍ: de text-gray-400 a text-gray-600 para accesibilidad */}
                   <span className="text-xs text-gray-600 font-medium">
-                    {testimonial.date}
+                    {t("date")}
                   </span>
                 </div>
               </div>
@@ -164,14 +165,14 @@ export function SuccessStoriesSection() {
             <div className="flex md:hidden gap-4">
               <button
                 onClick={() => handleScroll("left")}
-                aria-label="Ver opinion anterior"
+                aria-label={t("previous")}
                 className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
                 <FaChevronLeft />
               </button>
               <button
                 onClick={() => handleScroll("right")}
-                aria-label="Ver opinion siguiente"
+                aria-label={t("next")}
                 className="p-3 rounded-full border border-gray-300 bg-white shadow-sm active:scale-95 transition-transform"
               >
                 <FaChevronRight />
@@ -195,7 +196,7 @@ export function SuccessStoriesSection() {
                 </div>
               </div>
               <span className="text-sm font-semibold text-[#002654] border-l border-gray-300 pl-3 ml-1">
-                Ver las +40 reseñas en Google
+                {t("googleCta")}
               </span>
               <svg
                 className="w-4 h-4 text-[#002654] group-hover:translate-x-0.5 transition-transform"

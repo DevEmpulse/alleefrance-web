@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -31,10 +32,6 @@ import {
 } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import {
-  beneficios,
-  pasos,
-  documentos,
-  insuranceFeatures,
   getDestinationImage,
   normalizeDestinationName,
 } from "@/components/working-holiday/working-holiday-content";
@@ -58,16 +55,19 @@ export function WorkingHolidayCountryPage({
 }: WorkingHolidayCountryPageProps) {
   const router = useRouter();
   const { setCountry } = useCountry();
+  const locale = useLocale();
+  const t = useTranslations("WorkingHolidayPage.country");
+  const tCountry = useTranslations("WorkingHolidayCountries");
 
   const audienceLabel =
-    config.code === "global" ? "cada país de Latinoamérica" : config.name;
+    config.code === "global" ? "cada país de Latinoamérica" : tCountry(`${config.code}.name`);
 
   const navigateToCountry = (code: WorkingHolidayCountryCode) => {
     if (code === "global") {
-      router.push("/working-holiday");
+      router.push(`/${locale}/working-holiday`);
       return;
     }
-    router.push(`/working-holiday/${code}`);
+    router.push(`/${locale}/working-holiday/${code}`);
   };
 
   const handleGridSelection = (code: WorkingHolidayCountryCode) => {
@@ -75,13 +75,14 @@ export function WorkingHolidayCountryPage({
     navigateToCountry(code);
   };
 
-  const requirementsTitle = "Requisitos de postulación";
   const showAcademicAlert = config.code === "pe" || config.code === "ec";
   const faqCategories = ["WH: General", "Seguros", `WH: ${config.name}`];
   const faqItems = getFaqsByCategories(faqCategories);
   const whatsappConsultLink = `https://wa.me/33601526171?text=${encodeURIComponent(
-    `Hola, soy de ${config.name} y me interesa una Working Holiday.`,
+    `Hola, soy de ${tCountry(`${config.code}.name`)} y me interesa una Working Holiday.`,
   )}`;
+
+  const checklistIcons = [MapPin, Clock, Backpack, Shield];
 
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
@@ -94,13 +95,13 @@ export function WorkingHolidayCountryPage({
         >
           <div className="max-w-5xl mx-auto text-center text-white">
             <Badge className="mb-6 bg-white/10 text-white border-white/20 uppercase tracking-widest">
-              Working Holiday {config.name}
+              Working Holiday {tCountry(`${config.code}.name`)}
             </Badge>
             <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-              {config.heroTitle}
+              {tCountry(`${config.code}.heroTitle`)}
             </h1>
             <p className="text-lg lg:text-xl text-white/90 leading-relaxed mb-10">
-              {config.heroSubtitle}
+              {tCountry(`${config.code}.heroSubtitle`)}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -115,7 +116,7 @@ export function WorkingHolidayCountryPage({
                   rel="noopener noreferrer"
                 >
                   <SiWhatsapp className="w-5 h-5 mr-2" />
-                  Consultar por WhatsApp
+                  {t("whatsappBtn")}
                 </a>
               </Button>
               <Button
@@ -124,15 +125,14 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <a href="/#contacto" rel="noopener noreferrer">
+                <Link href={`/${locale}#contacto`}>
                   <Calendar className="w-5 h-5 mr-2" />
-                  Reservar Asesoría
-                </a>
+                  {t("advisoryBtn")}
+                </Link>
               </Button>
             </div>
             <p className="mt-6 text-sm text-white/70">
-              Cupos limitados por país · Nuestro equipo te ayuda a llegar con
-              todo listo sin importar que partas desde {audienceLabel}.
+              {t("quotaNote", { country: audienceLabel })}
             </p>
           </div>
         </section>
@@ -148,20 +148,13 @@ export function WorkingHolidayCountryPage({
                 className="text-3xl lg:text-4xl font-bold mb-6"
                 style={{ color: "#002654" }}
               >
-                ¿Qué es la Visa Working Holiday?
+                {t("whatIs.title")}
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                La Working Holiday permite a jóvenes de {audienceLabel} residir
-                en el exterior por hasta 12 meses con libertad para trabajar de
-                forma temporal y recorrer el país elegido. Es una excelente
-                oportunidad para mejorar el idioma, financiar tu experiencia y
-                vivir una inmersión cultural total.
+                {t("whatIs.p1", { country: audienceLabel })}
               </p>
               <p className="text-gray-700 text-lg leading-relaxed">
-                Desde Allée France te guiamos en cada etapa: planificación,
-                papeles, turnos consulares y adaptación al llegar. Nos enfocamos
-                en anticipar problemas y fortalecer tu dossier para que puedas
-                aprovechar los cupos sin contratiempos.
+                {t("whatIs.p2")}
               </p>
             </div>
             <Card className="p-6 bg-gray-50 border border-gray-100 shadow-sm">
@@ -169,21 +162,18 @@ export function WorkingHolidayCountryPage({
                 <Shield className="w-10 h-10 text-[#ED2939]" />
                 <div>
                   <p className="text-sm uppercase tracking-wide text-gray-500">
-                    Cupo estimado · {config.label}
+                    {t("quotaEyebrow", { label: config.label })}
                   </p>
                   <p
                     className="text-2xl font-bold"
                     style={{ color: "#002654" }}
                   >
-                    {config.quotaText ?? "Cupo oficial a confirmar"}
+                    {tCountry.has(`${config.code}.quotaText`) ? tCountry(`${config.code}.quotaText`) : t("quotaFallback")}
                   </p>
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                La demanda supera rápidamente los cupos, por eso es clave
-                preparar la documentación con anticipación y llegar al día de
-                apertura con todo listo. Nuestro equipo te ayuda a revisar cada
-                detalle.
+                {t("whatIs.quotaBody")}
               </p>
             </Card>
           </div>
@@ -195,10 +185,10 @@ export function WorkingHolidayCountryPage({
               className="text-3xl lg:text-4xl font-bold text-center mb-12"
               style={{ color: "#002654" }}
             >
-              Beneficios de la Working Holiday francesa
+              {t("benefits.title")}
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
-              {beneficios.map((benefit) => (
+              {(t.raw("benefits.items") as Array<{ title: string; description: string }>).map((benefit) => (
                 <Card
                   key={benefit.title}
                   className="p-6 hover:shadow-lg transition-shadow"
@@ -207,7 +197,7 @@ export function WorkingHolidayCountryPage({
                     className="w-12 h-12 rounded-full flex items-center justify-center mb-4"
                     style={{ backgroundColor: "rgba(0, 38, 84, 0.08)" }}
                   >
-                    <benefit.icon
+                    <Plane
                       className="w-6 h-6"
                       style={{ color: "#002654" }}
                     />
@@ -234,25 +224,23 @@ export function WorkingHolidayCountryPage({
                 className="text-3xl lg:text-4xl font-bold mb-6"
                 style={{ color: "#002654" }}
               >
-                {requirementsTitle}
+                {t("requirements.title")}
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Preparar la solicitud con tiempo es clave para ingresar en los
-                cupos anuales. Estos son los requisitos que revisamos juntos
-                antes de enviar tu dossier:
+                {t("requirements.intro")}
               </p>
               {showAcademicAlert ? (
                 <Card className="mb-6 border border-amber-200 bg-amber-50/80">
                   <div className="flex items-start gap-3 p-4">
                     <div className="mt-1 h-2.5 w-2.5 rounded-full bg-amber-500" />
                     <p className="text-sm text-amber-900">
-                      Requiere estudios superiores y/o inglés.
+                      {t("requirements.academicAlert")}
                     </p>
                   </div>
                 </Card>
               ) : null}
               <div className="space-y-4">
-                {config.requisitos.map((req) => (
+                {(tCountry.raw(`${config.code}.requisitos`) as string[]).map((req) => (
                   <Card
                     key={req}
                     className="p-4 border-l-4"
@@ -270,46 +258,28 @@ export function WorkingHolidayCountryPage({
               </div>
             </div>
             <div className="bg-[#002654] text-white rounded-2xl p-8 shadow-xl">
-              <h3 className="text-2xl font-semibold mb-4">Checklist express</h3>
+              <h3 className="text-2xl font-semibold mb-4">{t("checklist.title")}</h3>
               <p className="text-white/80 leading-relaxed mb-6">
-                Organizamos tu documentación en bloques para que avances con
-                claridad y evites rechazos por detalles formales.
+                {t("checklist.description")}
               </p>
               <ul className="space-y-4 text-white/90">
-                <li className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 mt-1" />
-                  <span>
-                    Plan de viaje y ciudades objetivo (trabajo, alojamiento
-                    temporal, transporte).
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 mt-1" />
-                  <span>
-                    Línea de tiempo personalizada para saber qué presentar en
-                    cada etapa.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Backpack className="w-5 h-5 mt-1" />
-                  <span>
-                    Lista de documentos traducidos, apostillados o certificados.
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Shield className="w-5 h-5 mt-1" />
-                  <span>
-                    Revisión de seguros y coberturas exigidas por el consulado.
-                  </span>
-                </li>
+                {(t.raw("checklist.items") as string[]).map((item, idx) => {
+                  const Icon = checklistIcons[idx] ?? Shield;
+                  return (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Icon className="w-5 h-5 mt-1" />
+                      <span>{item}</span>
+                    </li>
+                  );
+                })}
               </ul>
-              {config.keyDates?.length ? (
+              {tCountry.has(`${config.code}.keyDates`) ? (
                 <div className="mt-8 border-t border-white/20 pt-6">
                   <h4 className="text-lg font-semibold mb-4">
-                    Fechas importantes
+                    {t("checklist.keyDatesTitle")}
                   </h4>
                   <ul className="space-y-4 text-white/90">
-                    {config.keyDates.map((item) => (
+                    {(tCountry.raw(`${config.code}.keyDates`) as string[]).map((item) => (
                       <li key={item} className="flex items-start gap-3">
                         <Calendar className="w-5 h-5 mt-1" />
                         <span>{item}</span>
@@ -333,21 +303,20 @@ export function WorkingHolidayCountryPage({
           <div className="relative max-w-6xl mx-auto text-white">
             <div className="text-center mb-12">
               <p className="text-xs font-semibold uppercase tracking-[0.4em] text-white/70 mb-3">
-                Seguro obligatorio
+                {t("insurance.eyebrow")}
               </p>
               <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                Contratá tu seguro VVT para {config.name}
+                {t("insurance.title", { country: tCountry(`${config.code}.name`) })}
               </h2>
               <p className="text-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
-                {config.insuranceNote}
+                {tCountry(`${config.code}.insuranceNote`)}
               </p>
               <p className="mt-4 text-sm text-white/70">
-                Sin este seguro válido, el consulado no acepta el dossier ni
-                emite la visa.
+                {t("insurance.noVisaNote")}
               </p>
               <div className="mt-6 flex flex-col items-center gap-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">
-                  Socio asegurador
+                  {t("insurance.partnerEyebrow")}
                 </p>
                 <div className="bg-white/10 border border-white/20 rounded-full px-6 py-3 flex items-center justify-center backdrop-blur">
                   <Image
@@ -362,14 +331,14 @@ export function WorkingHolidayCountryPage({
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {insuranceFeatures.map((feature) => (
+              {(t.raw("insurance.features") as Array<{ title: string; description: string }>).map((feature) => (
                 <Card
                   key={feature.title}
                   className="bg-white/10 border border-white/20 p-6 rounded-2xl backdrop-blur"
                 >
                   <div className="flex items-start gap-4">
                     <div className="rounded-full bg-white/15 p-3">
-                      <feature.icon className="w-6 h-6 text-white" />
+                      <Shield className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold mb-2 text-white">
@@ -394,13 +363,11 @@ export function WorkingHolidayCountryPage({
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Cotiza tu seguro
+                  {t("insurance.ctaButton")}
                 </a>
               </Button>
               <p className="text-sm text-white/80 max-w-2xl">
-                Te entregamos el certificado en minutos y lo dejamos listo para
-                adjuntar en France-Visas o imprimirlo junto a tu OFII. Además,
-                gestionamos las extensiones o reembolsos si cambiás tus fechas.
+                {t("insurance.ctaNote")}
               </p>
             </div>
           </div>
@@ -412,10 +379,10 @@ export function WorkingHolidayCountryPage({
               className="text-3xl lg:text-4xl font-bold text-center mb-12"
               style={{ color: "#002654" }}
             >
-              Proceso paso a paso
+              {t("steps.title")}
             </h2>
             <div className="space-y-6">
-              {pasos.map((paso, index) => (
+              {(t.raw("steps.items") as Array<{ title: string; description: string }>).map((paso, index) => (
                 <Card key={paso.title} className="p-6 flex gap-4 items-start">
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center font-bold text-white text-lg"
@@ -443,13 +410,10 @@ export function WorkingHolidayCountryPage({
         <section className="py-16 px-6 bg-[#002654] text-white">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              ¿Listo para postularte?
+              {t("ctaMid.title")}
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Te ayudamos a preparar un dossier competitivo, cumplir con los
-              tiempos oficiales y aterrizar en Francia con un plan claro de
-              alojamiento, trabajo temporal y trámites de instalación, sin
-              importar que partas desde {audienceLabel}.
+              {t("ctaMid.description", { country: audienceLabel })}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -464,7 +428,7 @@ export function WorkingHolidayCountryPage({
                   rel="noopener noreferrer"
                 >
                   <Plane className="w-5 h-5 mr-2" />
-                  Empezar mi Working Holiday
+                  {t("ctaMid.ctaPrimary")}
                 </a>
               </Button>
               <Button
@@ -473,9 +437,9 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href="/#contacto">
+                <Link href={`/${locale}#contacto`}>
                   <Globe className="w-5 h-5 mr-2" />
-                  Hablar con el equipo
+                  {t("ctaMid.ctaSecondary")}
                 </Link>
               </Button>
             </div>
@@ -489,15 +453,13 @@ export function WorkingHolidayCountryPage({
                 className="text-3xl lg:text-4xl font-bold mb-6"
                 style={{ color: "#002654" }}
               >
-                Documentación esencial del dossier
+                {t("documents.title")}
               </h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Cada documento debe respetar formato, idioma y vigencia
-                específicos. Te compartimos modelos y plantillas para que tu
-                presentación sea clara y profesional.
+                {t("documents.description")}
               </p>
               <div className="grid md:grid-cols-2 gap-4">
-                {documentos.map((doc) => (
+                {(t.raw("documents.items") as string[]).map((doc) => (
                   <Card key={doc} className="p-4 flex gap-3 items-start">
                     <CheckCircle2
                       className="w-5 h-5 mt-1 shrink-0"
@@ -514,37 +476,24 @@ export function WorkingHolidayCountryPage({
                   className="text-2xl font-semibold mb-4"
                   style={{ color: "#002654" }}
                 >
-                  Tips rápidos para el turno consular
+                  {t("documents.consularTipsTitle")}
                 </h3>
                 <ul className="space-y-4 text-gray-700 leading-relaxed">
-                  <li>
-                    Ordena el dossier según el checklist oficial. Usamos
-                    separadores para agilizar la revisión.
-                  </li>
-                  <li>
-                    Ten listos comprobantes impresos y digitales en un pendrive
-                    o carpeta en la nube.
-                  </li>
-                  <li>
-                    prepara respuestas claras sobre tu plan de viaje,
-                    alojamiento, fondos y objetivos.
-                  </li>
-                  <li>
-                    Llegá con al menos 20 minutos de anticipación y revisá que
-                    tu seguro esté impreso en francés o inglés.
-                  </li>
+                  {(t.raw("documents.consularTips") as string[]).map((tip, idx) => (
+                    <li key={idx}>{tip}</li>
+                  ))}
                 </ul>
               </Card>
-              {config.notas?.length ? (
+              {tCountry.has(`${config.code}.notas`) ? (
                 <Card className="p-6 bg-white border border-gray-100">
                   <h3
                     className="text-xl font-semibold mb-4"
                     style={{ color: "#002654" }}
                   >
-                    Notas específicas para {config.name}
+                    {t("documents.countryNotesTitle", { country: tCountry(`${config.code}.name`) })}
                   </h3>
                   <ul className="space-y-3 text-gray-700 leading-relaxed">
-                    {config.notas.map((note) => (
+                    {(tCountry.raw(`${config.code}.notas`) as string[]).map((note) => (
                       <li key={note} className="flex items-start gap-2">
                         <CheckCircle2
                           className="w-4 h-4 mt-1 shrink-0"
@@ -565,22 +514,21 @@ export function WorkingHolidayCountryPage({
             <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gray-400 mb-3">
-                  Destinos para {config.name}
+                  {t("destinations.eyebrow", { country: tCountry(`${config.code}.name`) })}
                 </p>
                 <h2
                   className="text-3xl lg:text-4xl font-bold"
                   style={{ color: "#002654" }}
                 >
-                  Elige tu próximo destino
+                  {t("destinations.title")}
                 </h2>
               </div>
               <p className="text-gray-600 max-w-lg">
-                Estos son los programas Working Holiday disponibles para tu
-                pasaporte. Te ayudamos a comparar requisitos y tiempos reales.
+                {t("destinations.description")}
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {config.destinations.map((destination) => {
+              {(tCountry.has(`${config.code}.destinations`) ? tCountry.raw(`${config.code}.destinations`) as string[] : config.destinations).map((destination) => {
                 const normalizedDestination =
                   normalizeDestinationName(destination);
                 const imageSrc = getDestinationImage(destination);
@@ -616,7 +564,9 @@ export function WorkingHolidayCountryPage({
                         {destination}
                       </p>
                       <p className="text-sm text-gray-500">
-                        {isUpcoming ? "Próximamente" : "Programas activos"}
+                        {isUpcoming
+                          ? t("destinations.upcoming")
+                          : t("destinations.activePrograms")}
                       </p>
                     </div>
                   </div>
@@ -627,8 +577,8 @@ export function WorkingHolidayCountryPage({
         </section>
 
         <FAQSection
-          title="Preguntas frecuentes sobre Working Holiday"
-          description="Resolvemos dudas clave sobre requisitos, seguros, trabajo y errores frecuentes en la postulación."
+          title={t("faqSection.title")}
+          description={t("faqSection.description")}
           allowedCategories={faqCategories}
           data={faqItems}
         />
@@ -636,11 +586,10 @@ export function WorkingHolidayCountryPage({
         <section className="py-16 px-6 bg-[#0F2354] text-white">
           <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              ¿Cuál visa es la adecuada para ti?
+              {t("ctaFinal.title")}
             </h2>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
-              Contactanos para una asesoría personalizada y descubrí cuál es la
-              mejor opción según tus planes, tiempos y país de origen.
+              {t("ctaFinal.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
@@ -655,7 +604,7 @@ export function WorkingHolidayCountryPage({
                   rel="noopener noreferrer"
                 >
                   <SiWhatsapp className="w-5 h-5 mr-2" />
-                  Envíanos un WhatsApp
+                  {t("ctaFinal.ctaPrimary")}
                 </a>
               </Button>
               <Button
@@ -664,9 +613,9 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href="/servicios">
+                <Link href={`/${locale}/servicios`}>
                   <Globe className="w-5 h-5 mr-2" />
-                  Ver más servicios
+                  {t("ctaFinal.ctaSecondary")}
                 </Link>
               </Button>
             </div>
@@ -686,22 +635,24 @@ type CountryGridProps = {
 };
 
 function CountryGrid({ onSelect }: CountryGridProps) {
+  const t = useTranslations("WorkingHolidayPage.country");
+
   return (
     <section className="py-12 px-6 bg-white border-b border-gray-100">
       <div className="max-w-5xl mx-auto text-center">
         <p className="text-xs font-semibold uppercase tracking-[0.4em] text-gray-400 mb-3">
-          Selecciona tu país
+          {t("countryGrid.eyebrow")}
         </p>
         <h3
           className="text-2xl lg:text-3xl font-bold mb-10"
           style={{ color: "#002654" }}
         >
-          Ingresa directo a la guía por país
+          {t("countryGrid.title")}
         </h3>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map((code) => {
             const country = WORKING_HOLIDAY_COUNTRIES[code];
-            const quotaLabel = country.quotaText ?? "Cupo oficial";
+            const quotaLabel = country.quotaText ?? t("countryGrid.quotaFallback");
             const isLastCard =
               code ===
               PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES[

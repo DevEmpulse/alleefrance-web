@@ -1,0 +1,2858 @@
+{
+  "LocaleLayout": {
+    "title": "Allée France",
+    "description": "Conseil en immigration spécialisé en France pour les Latino-Américains."
+  },
+  "Navbar": {
+    "logoAlt": "Allée France - Conseil en immigration France pour les Latino-Américains",
+    "about": "À propos",
+    "services": "Services",
+    "workVisa": "Visa Salarié / Saisonnier",
+    "workingHoliday": "Permis Vacances Travail",
+    "studentVisa": "Visa Étudiant",
+    "contact": "Contact",
+    "quoteInsurance": "Devis d'assurance",
+    "changeLanguage": "Changer de langue",
+    "toggleMenu": "Ouvrir le menu"
+  },
+  "Hero": {
+    "imageAlt": "Vue de Lyon, France - Allée France vous accompagne dans votre projet d'immigration",
+    "title": "Votre projet en France, avec un accompagnement professionnel",
+    "subtitle": "Je vous accompagne étape par étape : Salarié/Saisonnier, PVT, Titres de séjour et conseils personnalisés.",
+    "workVisaCta": "Je veux mon visa Salarié/Saisonnier",
+    "workingHolidayCta": "Visa Vacances Travail (PVT)",
+    "whatsappCta": "Planifier une consultation",
+    "statsTitle": "Leader du marché",
+    "statsSubtitle": "depuis plus de 2 ans",
+    "statsLabel": "cas de réussite"
+  },
+  "About": {
+    "mapAlt": "Carte de France avec les principales villes où émigrer : Paris, Lyon, Marseille",
+    "titlePrefix": "Guide expert en visas et démarches pour",
+    "titleHighlight": "vivre et travailler",
+    "titleSuffix": "en France",
+    "paragraph1": "Chez Allée France, nous sommes spécialistes des démarches d'immigration pour la France et guidons ceux qui souhaitent vivre, travailler ou étudier dans ce pays.",
+    "paragraph2Prefix": "Plus de",
+    "paragraph2Strong": "700 processus réussis",
+    "paragraph2Suffix": "garantissent notre expérience en matière d'autorisations de travail, visa Salarié, visa Saisonnier, visa étudiant et regroupement familial.",
+    "paragraph3": "Nous aidons les personnes d'Amérique latine et du monde entier à concrétiser leur projet d'immigration en France avec des conseils clairs, un accompagnement étape par étape et une stratégie personnalisée selon votre objectif : emploi, études ou résidence.",
+    "paragraph4": "Nous offrons des conseils spécialisés non seulement pour la France, mais aussi pour d'autres destinations où vous souhaitez étudier, vivre ou travailler, toujours avec le même niveau de précision et de résultats.",
+    "quote": "Votre projet n'est pas une démarche : c'est votre avenir.",
+    "mission": "Et notre mission est de le rendre possible.",
+    "servicesCta": "Nos services",
+    "contactCta": "Contactez-nous",
+    "stats": {
+      "cases": "Cas de réussite",
+      "experience": "Années d'expérience",
+      "adviceValue": "Conseil",
+      "adviceLabel": "Personnalisé"
+    }
+  },
+  "Services": {
+    "title": "Nos Services",
+    "description": "Choisissez la démarche dont vous avez besoin et laissez-nous vous guider sur votre chemin vers la France.",
+    "moreInfo": "PLUS D'INFORMATIONS",
+    "contact": "CONTACT",
+    "viewAll": "VOIR TOUS LES SERVICES",
+    "items": {
+      "visa-salarie": {
+        "title": "Visa Salarié",
+        "description": "Gestion complète pour votre visa de travail et préparation du dossier.",
+        "alt": "Service Visa Salarié France - Contrat de travail CDI et CDD pour étrangers"
+      },
+      "working-holiday": {
+        "title": "Permis Vacances Travail",
+        "description": "Accompagnement complet pour vivre et travailler en France pendant une saison.",
+        "alt": "Visa PVT France - Programme vacances travail pour jeunes latino-américains"
+      },
+      "titre-de-sejour": {
+        "title": "Titre de Séjour",
+        "description": "Régularisez votre résidence avec des conseils personnalisés et un suivi.",
+        "alt": "Titre de Séjour France - Permis de séjour et renouvellement pour étrangers"
+      },
+      "necesitas-aseoria": {
+        "title": "Besoin de conseils ?",
+        "description": "Contactez-nous via WhatsApp et nous répondrons à vos questions en quelques minutes.",
+        "alt": "Conseils d'immigration personnalisés France - Consultation WhatsApp avec des experts"
+      }
+    }
+  },
+  "WorkingHoliday": {
+    "edition": "ÉDITION {year}",
+    "titleStart": "Votre PVT",
+    "titleMiddle": "en",
+    "titleCountry": "France",
+    "titleEnd": "commence ici.",
+    "imageAlt": "Jeunes latino-américains profitant du PVT en France - Visa vacances-travail",
+    "benefit1": "Gestion intégrale des visas",
+    "benefit2": "Orientation pour le logement et la recherche d'emploi",
+    "benefit3": "Communauté exclusive de voyageurs",
+    "approved": "Plus de 300 visas approuvés",
+    "cta": "Commencez votre voyage",
+    "otherTitle": "Autres destinations PVT",
+    "otherDescription": "Explorez les options alternatives disponibles pour les résidents d'Amérique latine.",
+    "viewMore": "Voir plus de destinations"
+  },
+  "Insurance": {
+    "partner": "Partenaire Officiel",
+    "partnerAlt": "Asegura tu Viaje - Partenaire officiel d'assurance voyage pour visa Schengen France",
+    "titleLine1": "Votre visa approuvé,",
+    "titleLine2": "votre voyage protégé.",
+    "description": "L'assurance obligatoire pour entrer en Europe. Conforme à toutes les exigences consulaires.",
+    "imageAlt": "Voyageurs latino-américains heureux en Europe avec l'assurance voyage Schengen",
+    "insuredTravelers": "Voyageurs Assurés",
+    "averageRating": "Évaluation Moyenne",
+    "cta": "Obtenir un devis d'assurance maintenant",
+    "certificate": "Certificat officiel envoyé instantanément par email",
+    "features": {
+      "illness": {
+        "title": "Maladie",
+        "description": "Couverture médicale complète pour tout symptôme ou maladie."
+      },
+      "hospitalization": {
+        "title": "Hospitalisation",
+        "description": "Protection totale pour les frais d'hospitalisation et de traitement."
+      },
+      "repatriation": {
+        "title": "Rapatriement",
+        "description": "Service de retour sanitaire immédiat en cas d'urgence."
+      },
+      "stay": {
+        "title": "Séjour complet",
+        "description": "Couverture 24/7 pendant votre séjour en France et dans l'espace Schengen."
+      }
+    }
+  },
+  "BlogHome": {
+    "eyebrow": "Ressources récentes",
+    "title": "BLOG",
+    "previousArticle": "Voir l'article précédent",
+    "nextArticle": "Voir l'article suivant",
+    "previous": "Voir précédent",
+    "next": "Voir suivant",
+    "readMore": "Lire la suite",
+    "viewAll": "VOIR TOUS LES ARTICLES"
+  },
+  "SuccessStories": {
+    "title": "Histoires vraies, résultats prouvés",
+    "description": "La tranquillité d'esprit de savoir que vous êtes entre les mains d'experts. Voici comment ils l'ont vécu :",
+    "previous": "Voir l'avis précédent",
+    "next": "Voir l'avis suivant",
+    "googleCta": "Voir les +40 avis sur Google",
+    "date": "Il y a 2 semaines"
+  },
+  "FAQHome": {
+    "title": "Foire Aux Questions (FAQ)",
+    "whTitle": "Foire aux questions sur le Working Holiday",
+    "workTitle": "Foire aux questions : Visas de travail",
+    "studentTitle": "Foire aux questions : Visa étudiant",
+    "tdsTitle": "Foire aux questions : Titre de Séjour",
+    "whDescCountry": "Nous résolvons vos doutes sur les exigences, les assurances, le travail et les erreurs fréquentes de candidature.",
+    "whDescGlobal": "Nous résolvons vos doutes sur les exigences, les assurances, le travail et les délais de candidature.",
+    "workDesc": "Nous répondons à vos questions sur les contrats, les exigences saisonnières et les assurances pour travailler légalement en France.",
+    "studentDesc": "Nous répondons à vos questions sur les exigences, la solvabilité financière, Campus France et le travail à temps partiel.",
+    "tdsDesc": "Nous répondons à vos questions sur le renouvellement, le changement de statut et l'accompagnement.",
+    "whatsapp": "WhatsApp pour plus de questions",
+    "filterLabel": "Filtrer par catégorie",
+    "categoryPlaceholder": "Sélectionner une catégorie",
+    "searchPlaceholder": "Rechercher des questions...",
+    "searchLabel": "Rechercher des questions",
+    "empty": "Nous n'avons trouvé aucun résultat avec ces filtres.",
+    "showMore": "Voir plus de questions sur {category} (+{count})",
+    "categories": {
+      "Trámites": "Démarches",
+      "General": "Général",
+      "Seguros": "Assurances",
+      "Asesoría": "Conseil",
+      "WH: General": "WH: Général",
+      "WH: Argentina": "WH: Argentine",
+      "WH: Chile": "WH: Chili",
+      "Trabajo": "Travail",
+      "Estudios": "Études",
+      "Documentación": "Documentation",
+      "Errores Frecuentes": "Erreurs Fréquentes",
+      "Saisonnier: General": "Saisonnier: Général",
+      "Saisonnier: Argentina": "Saisonnier: Argentine",
+      "Saisonnier: Chile": "Saisonnier: Chili",
+      "Titre de Séjour": "Titre de Séjour"
+    }
+  },
+  "Contact": {
+    "title": "CONTACT",
+    "intro": "Prêt à commencer votre processus d'immigration ? Remplissez le formulaire et nous vous contacterons pour une consultation initiale gratuite.",
+    "namePlaceholder": "Nom et prénom",
+    "emailPlaceholder": "Email",
+    "countryLabel": "Sélectionnez votre pays",
+    "countryPlaceholder": "Pays de contact",
+    "consultationLabel": "Sélectionnez le type de consultation",
+    "consultationPlaceholder": "Type de consultation (consultation express)",
+    "messagePlaceholder": "Message",
+    "submitting": "Envoi en cours...",
+    "submit": "Envoyer le message",
+    "success": "Merci ! Nous vous contacterons sous peu.",
+    "missingKey": "Impossible d'envoyer le formulaire. La clé NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY est manquante.",
+    "error": "Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer dans quelques minutes.",
+    "subject": "Nouveau message depuis alleefrance.com",
+    "mapTitle": "Carte de Lyon, France",
+    "validation": {
+      "name": "Votre nom et prénom doivent comporter au moins 2 caractères",
+      "email": "Entrez un email valide",
+      "country": "Sélectionnez votre pays de contact",
+      "consultation": "Sélectionnez le type de consultation",
+      "message": "Donnez-nous plus de détails (minimum 10 caractères)"
+    },
+    "countries": {
+      "argentina": "Argentine",
+      "uruguay": "Uruguay",
+      "colombia": "Colombie",
+      "chile": "Chili",
+      "ecuador": "Équateur",
+      "mexico": "Mexique",
+      "other": "Autre"
+    },
+    "consultationTypes": {
+      "wh": "Visa PVT (WH-VVT)",
+      "work": "Visa Salarié/saisonnier",
+      "private": "Visa vie privée et familiale",
+      "authorization": "Autorisation de travail",
+      "advice": "Consultation",
+      "other": "Autres"
+    }
+  },
+  "Footer": {
+    "description": "Spécialistes du conseil en immigration et du traitement des visas pour la France. Votre rêve français, notre engagement.",
+    "quote": "Devis d'assurance",
+    "links": {
+      "title": "Liens Rapides",
+      "services": "Services",
+      "successStories": "Cas de réussite",
+      "insurance": "Assurance Voyage",
+      "faq": "Foire Aux Questions",
+      "blog": "Blog"
+    },
+    "services": {
+      "title": "Services",
+      "work": "Visas de Travail",
+      "student": "Visa Étudiant",
+      "wh": "Permis Vacances Travail"
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "rights": "Tous droits réservés.",
+    "madeBy": "Fait par",
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions générales"
+    }
+  },
+  "ServicesData": {
+    "personas": {
+      "students": {
+        "label": "Étudiants",
+        "helper": "Admissions, visas et arrivée académique"
+      },
+      "workers": {
+        "label": "Travailleurs",
+        "helper": "Emploi, permis et entrepreneuriat"
+      },
+      "families": {
+        "label": "Familles",
+        "helper": "Regroupement et stabilité familiale"
+      },
+      "settled": {
+        "label": "Déjà en France",
+        "helper": "Régularisez et maintenez votre statut"
+      },
+      "general": {
+        "label": "Services Généraux",
+        "helper": "Soutien transversal pour tous"
+      }
+    },
+    "items": {
+      "service_1": {
+        "title": "Conseil Personnalisé",
+        "description": "Résolvez des questions spécifiques sur l'immigration en France avec nos experts.",
+        "details": [
+          "Conseil express (30 min) : Questions spécifiques",
+          "Conseil complet (1h) : Bilan complet avec résumé écrit"
+        ],
+        "price": "À partir de 30€",
+        "duration": "30 min - 1 heure"
+      },
+      "service_2": {
+        "title": "Autorisation de Travail",
+        "description": "Gestion complète de l'autorisation de travail auprès de la DREETS.",
+        "details": [
+          "Publication sur France Travail",
+          "Démarche ANEF auprès de la DREETS",
+          "Communication avec l'employeur et le travailleur",
+          "Dossier prêt pour l'ambassade"
+        ],
+        "price": "À partir de 150€",
+        "duration": "2-4 semaines"
+      },
+      "service_3": {
+        "title": "Visa Salarié/Saisonnier",
+        "description": "Accompagnement complet pour un visa de travail en France.",
+        "details": [
+          "Gestion intégrale en France et dans le pays d'origine",
+          "Autorisation de travail",
+          "Rendez-vous à l'ambassade",
+          "Préparation du dossier complet",
+          "Lettres et CV professionnels",
+          "Stratégie pour démontrer l'expérience"
+        ],
+        "price": "À partir de 250€",
+        "duration": "4-8 semaines"
+      },
+      "service_4": {
+        "title": "Assurance Voyage",
+        "description": "Couvertures internationales pour visa Schengen, études ou vacances multi-destinations.",
+        "details": [
+          "Conseils personnalisés par destination",
+          "Sélection d'une police Schengen/multi-destinations",
+          "Certificat en français ou en anglais prêt pour le consulat",
+          "Émission immédiate et assistance en cas de changements"
+        ],
+        "price": "Variable",
+        "duration": "Immédiat"
+      },
+      "service_5": {
+        "title": "Visa Vie Privée et Familiale",
+        "description": "Résidence pour vie privée et familiale en France.",
+        "details": [
+          "Conseil complet (hors PACS)",
+          "Préparation du dossier",
+          "Accompagnement en préfecture",
+          "Suivi de la procédure"
+        ],
+        "price": "À partir de 250€",
+        "duration": "4-6 semaines"
+      },
+      "service_6": {
+        "title": "Nationalité Française",
+        "description": "Procédure complète pour obtenir la nationalité française.",
+        "details": [
+          "Vérification des exigences",
+          "Préparation des documents (actes, casier, traductions)",
+          "Simulation d'entretien",
+          "Accompagnement complet"
+        ],
+        "price": "À partir de 500€",
+        "duration": "8-12 semaines"
+      },
+      "service_7": {
+        "title": "Visa Étudiant",
+        "description": "Campus France et inscription académique pour étudier en France.",
+        "details": [
+          "Procédure Campus France",
+          "Inscription académique",
+          "Préparation du dossier pour l'ambassade",
+          "Stratégie de ressources financières",
+          "Recherche de logement"
+        ],
+        "price": "À partir de 250€",
+        "duration": "4-8 semaines"
+      },
+      "service_8": {
+        "title": "Regroupement Familial",
+        "description": "Réunissez votre famille en France avec toutes les démarches nécessaires.",
+        "details": [
+          "Dossier OFII/préfecture",
+          "Conseils sur le logement et les ressources",
+          "Stratégie documentaire",
+          "Accompagnement complet"
+        ],
+        "price": "À partir de 350€",
+        "duration": "6-10 semaines"
+      },
+      "service_9": {
+        "title": "Déclaration d'Impôts",
+        "description": "Remplissage complet de votre déclaration d'impôts en France.",
+        "details": [
+          "Remplissage complet de la déclaration",
+          "Conseils sur les déductions",
+          "Accompagnement pour les notifications",
+          "Optimisation fiscale"
+        ],
+        "price": "À partir de 50€",
+        "duration": "1-2 semaines"
+      },
+      "service_10": {
+        "title": "Validation de Visa",
+        "description": "Validation sur la plateforme OFII dès l'arrivée en France.",
+        "details": [
+          "Validation sur la plateforme OFII",
+          "Régularisation du séjour",
+          "Conseils post-arrivée"
+        ],
+        "price": "À partir de 15€",
+        "duration": "Immédiat"
+      },
+      "service_11": {
+        "title": "Titres de Séjour",
+        "description": "Renouvellement et obtention de permis de séjour en France.",
+        "details": [
+          "Salarié",
+          "Saisonnier",
+          "Étudiant",
+          "Inclut conseil et préparation de dossier",
+          "Accompagnement en préfecture"
+        ],
+        "price": "À partir de 150€",
+        "duration": "3-6 semaines"
+      },
+      "service_12": {
+        "title": "Visa Passeport Talent",
+        "description": "Pour les professionnels hautement qualifiés et les entrepreneurs.",
+        "details": [
+          "Salarié qualifié",
+          "Carte bleue européenne",
+          "Jeune entreprise innovante",
+          "Évaluation de l'éligibilité",
+          "Préparation des contrats/ressources",
+          "Dossier ANEF complet",
+          "Accompagnement en préfecture/consulat"
+        ],
+        "price": "À partir de 250€",
+        "duration": "4-8 semaines"
+      },
+      "service_13": {
+        "title": "Profession Libérale",
+        "description": "Changement ou demande de statut pour travailler en tant qu'indépendant.",
+        "details": [
+          "Définition de l'activité (APE)",
+          "Inscription à l'URSSAF/INPI",
+          "Plan d'activité et revenus",
+          "Préparation du dossier",
+          "Accompagnement complet"
+        ],
+        "price": "À partir de 250€",
+        "duration": "4-6 semaines"
+      },
+      "service_14": {
+        "title": "Traductions Officielles",
+        "description": "Traductions assermentées acceptées par les autorités françaises.",
+        "details": [
+          "Traductions officielles assermentées",
+          "Acceptées par les préfectures",
+          "Valides pour les ambassades",
+          "Reconnues par les universités",
+          "Devis selon pages/mots"
+        ],
+        "price": "Variable",
+        "duration": "3-7 jours"
+      },
+      "service_15": {
+        "title": "Sécurité Sociale",
+        "description": "Démarche complète pour obtenir votre carte vitale.",
+        "details": [
+          "Formulaires CERFA",
+          "Téléchargement de documents",
+          "Suivi de la procédure",
+          "Accompagnement jusqu'à l'obtention"
+        ],
+        "price": "À partir de 50€",
+        "duration": "2-4 semaines"
+      }
+    }
+  },
+  "ServicesCatalog": {
+    "chooseProfile": "Choisissez votre profil et découvrez les services recommandés pour votre situation.",
+    "requestService": "Demander ce service"
+  },
+  "ServicesPage": {
+    "title": "Catalogue de Services",
+    "subtitle": "Agence Allée France Lyon – Des solutions complètes pour votre processus d'immigration et administratif en France.",
+    "helpText": "Vous ne savez pas par où commencer ? Nous vous recommandons de planifier une consultation.",
+    "bookConsulting": "Réserver une consultation",
+    "whatsappConsulting": "Consulter via WhatsApp",
+    "responseTime": "Nous répondons en moins de 24 heures.",
+    "notFoundTitle": "Vous ne trouvez pas le service dont vous avez besoin ?",
+    "notFoundDesc": "Contactez-nous pour une consultation personnalisée. Notre équipe d'experts est prête à vous aider pour toute démarche d'immigration ou administrative en France.",
+    "freeConsulting": "Consultation gratuite via WhatsApp",
+    "contactForm": "Formulaire de contact"
+  },
+  "PrivacyPolicy": {
+    "title": "Politique de Confidentialité",
+    "intro": "Allée France Lyon exploite alleefrance.com (ci-après, « le Site »). Nous respectons votre vie privée et nous nous engageons à la protéger en nous conformant à cette politique.",
+    "sections": {
+      "1": {
+        "title": "1. Informations que nous collectons et utilisons",
+        "p1": "À travers le Site, nous recevons et stockons les informations que vous saisissez dans les formulaires, candidatures, demandes de renseignements et messages de contact. Cela peut inclure des données qui identifient les utilisateurs, telles que le nom, l'adresse, l'e-mail, la nationalité, l'âge, le sexe et les données démographiques.",
+        "p2": "Lorsque vous visitez le Site, nous collectons également des informations sur l'appareil, telles que l'adresse IP, le type de navigateur, le fuseau horaire, les cookies installés et les pages visitées. Nous appellerons ces informations « les Informations ».",
+        "p3": "Nous utilisons « les Informations » pour détecter les risques et prévenir la fraude (en particulier votre adresse IP), et pour améliorer l'expérience de navigation, le contenu et nos campagnes.",
+        "purposesTitle": "Finalités principales :",
+        "purposes": [
+          "Traiter et gérer les demandes de conseils en immigration, de visas et de démarches administratives en France.",
+          "Personnaliser l'expérience utilisateur et proposer un contenu pertinent.",
+          "Communiquer sur les demandes de renseignements, les rendez-vous, les documents et les mises à jour des services.",
+          "Améliorer nos services et développer de nouvelles solutions.",
+          "Se conformer aux obligations légales et réglementaires applicables.",
+          "Envoyer des communications générales et marketing, telles que des newsletters et des actualités du Site."
+        ],
+        "p4": "Nous ne considérerons pas les informations obtenues hors ligne ou par d'autres moyens comme des informations collectées par le Site, sauf mention expresse dans la présente politique.",
+        "p5": "Si vous cliquez sur un lien et quittez le Site, nous ne sommes pas responsables des pratiques de confidentialité des tiers. Nous vous recommandons de consulter les politiques de ces sites.",
+        "p6": "Si vous n'êtes pas d'accord avec nos pratiques, vous pouvez choisir de ne pas utiliser le Site. En accédant ou en utilisant le Site, vous acceptez cette politique."
+      },
+      "2": {
+        "title": "2. Cookies",
+        "p1": "Le Site utilise des cookies pour collecter des informations et améliorer la navigation. Vous pouvez configurer votre navigateur pour refuser tous les cookies ou pour vous avertir lorsqu'un cookie est envoyé. Gardez à l'esprit que certaines parties du Site peuvent ne pas fonctionner correctement si vous désactivez les cookies."
+      },
+      "3": {
+        "title": "3. Partage de vos informations personnelles",
+        "p1": "Les informations que nous collectons peuvent être partagées avec des tiers comme décrit dans cette politique :",
+        "list": [
+          "Les prestataires de services qui nous assistent pour l'hébergement, l'analyse, la messagerie et le support technique, selon nos instructions.",
+          "Les autorités administratives ou judiciaires exigeant des informations en vertu de la réglementation applicable.",
+          "Prévention de la fraude, protection des droits et sécurité de nos utilisateurs et du Site."
+        ]
+      },
+      "4": {
+        "title": "4. Sécurité",
+        "p1": "Nous mettons en œuvre des mesures de sécurité raisonnables pour protéger vos données personnelles et réduire les risques de perte, d'accès non autorisé ou de divulgation. Cependant, aucune méthode de transmission ou de stockage n'est totalement sécurisée, nous ne pouvons donc pas garantir une sécurité absolue."
+      },
+      "5": {
+        "title": "5. Modifications de cette politique",
+        "p1": "Nous pouvons mettre à jour cette politique à tout moment. Les modifications prendront effet immédiatement après leur publication sur le Site. Nous vous recommandons de consulter cette page périodiquement."
+      },
+      "6": {
+        "title": "6. Contact",
+        "p1": "Si vous souhaitez accéder, rectifier ou supprimer des informations personnelles ou poser des questions sur cette politique, écrivez-nous à "
+      }
+    }
+  },
+  "TermsAndConditions": {
+    "title": "Conditions Générales",
+    "intro": "Bienvenue sur Allée France Lyon. En accédant et en utilisant alleefrance.com (ci-après, « le Site »), vous acceptez ces conditions d'utilisation.",
+    "sections": {
+      "1": {
+        "title": "1. Acceptation des conditions",
+        "p1": "L'utilisation du Site implique l'acceptation pleine et sans réserve de ces conditions. Si vous n'êtes pas d'accord avec l'une des conditions, veuillez ne pas utiliser le Site.",
+        "p2": "Toutes les informations collectées via le Site seront traitées conformément à notre Politique de Confidentialité."
+      },
+      "2": {
+        "title": "2. Informations fournies par Allée France",
+        "p1": "Allée France Lyon fournit des informations et des conseils sur les processus d'immigration, les visas et les démarches administratives en France. Le contenu du Site est basé sur des sources que nous considérons fiables et des expériences vérifiées, mais nous ne garantissons pas son exactitude, son exhaustivité ou sa mise à jour permanente.",
+        "p2": "Les informations publiées le sont à titre informatif et ne constituent pas un avis juridique contraignant. Chaque procédure peut varier selon la nationalité et la situation particulière de l'utilisateur."
+      },
+      "3": {
+        "title": "3. Utilisation appropriée du Site",
+        "p1": "L'utilisateur s'engage à utiliser le Site de manière légale et respectueuse, sans nuire à son fonctionnement ni aux droits de tiers. L'utilisation frauduleuse, la collecte automatisée de données ou toute action pouvant nuire à l'expérience d'autres utilisateurs sont interdites."
+      },
+      "4": {
+        "title": "4. Propriété intellectuelle",
+        "p1": "Tout le contenu du Site, y compris les textes, graphiques, logos, images, marques et logiciels, est la propriété d'Allée France Lyon ou de tiers ayant autorisé leur utilisation. La reproduction ou distribution sans autorisation expresse est interdite."
+      },
+      "5": {
+        "title": "5. Responsabilités et limitations",
+        "p1": "Allée France Lyon n'assume aucune responsabilité pour les décisions prises sur la base des informations publiées. L'utilisateur utilise le contenu du Site à ses propres risques.",
+        "p2": "Nous ne garantissons pas la disponibilité continue du Site et pouvons modifier, suspendre ou interrompre le contenu et les services sans préavis."
+      },
+      "6": {
+        "title": "6. Liens vers des tiers",
+        "p1": "Le Site peut contenir des liens vers des sites tiers. Allée France Lyon n'est pas responsable du contenu, des politiques ou des pratiques de confidentialité de ces sites externes."
+      },
+      "7": {
+        "title": "7. Processus de visa",
+        "p1": "La demande, la soumission de documents et l'obtention de visas sont sous l'entière responsabilité de l'utilisateur. Bien que nous fournissions un accompagnement et des conseils, nous ne garantissons pas l'approbation ou le refus par les autorités compétentes."
+      },
+      "8": {
+        "title": "8. Modifications des conditions",
+        "p1": "Allée France Lyon peut modifier ces conditions à tout moment. La version en vigueur sera celle publiée sur le Site."
+      },
+      "9": {
+        "title": "9. Législation applicable",
+        "p1": "Ces conditions sont régies par la législation française en vigueur. Tout litige sera soumis aux tribunaux compétents de Lyon, France."
+      },
+      "10": {
+        "title": "10. Contact",
+        "p1": "Si vous avez des questions concernant ces conditions, écrivez-nous à "
+      }
+    }
+  },
+  "BlogPage": {
+    "title": "Blog et Ressources",
+    "subtitle": "Guides complets, articles et conseils actualisés sur l'immigration, les visas et la vie en France. Des informations fiables pour votre processus d'immigration.",
+    "readMore": "Lire la suite",
+    "loadMore": "Charger plus d'articles",
+    "ctaTitle": "Besoin de conseils personnalisés ?",
+    "ctaSubtitle": "Notre équipe est prête à vous aider dans votre processus d'immigration en France",
+    "ctaWhatsapp": "Consulter via WhatsApp",
+    "ctaBook": "Planifier une consultation"
+  },
+  "BlogNewsletter": {
+    "title": "Alertes et ressources exclusives",
+    "description": "Recevez des rappels d'échéances consulaires, des avis d'appels et des outils prêts à l'emploi pour votre processus d'immigration.",
+    "highlights": [
+      "Rappels clés",
+      "Appels avant tout le monde",
+      "Modèles et listes de contrôle"
+    ]
+  },
+  "Blog": {
+    "index": {
+      "categories": [
+        "Tout",
+        "Finances",
+        "Connectivité",
+        "Visas de Travail",
+        "Permis Vacances-Travail",
+        "Visas Étudiants",
+        "Langue et Culture"
+      ],
+      "posts": [
+        {
+          "title": "Banques physiques vs Banques virtuelles en France : Lequel choisir ?",
+          "excerpt": "Wise, Revolut, N26, Qonto ou banque traditionnelle : découvrez celle qui correspond le mieux à votre situation en France.",
+          "date": "2 Juin 2026",
+          "readTime": "12 min",
+          "image": "/bancos-france-inmigrantes.webp",
+          "category": "Finances",
+          "slug": "bancos-fisicos-vs-virtuales-francia"
+        },
+        {
+          "title": "Qu'est-ce qu'une eSIM et pourquoi est-ce si utile ?",
+          "excerpt": "Le guide que tout Latino-Américain devrait lire avant d'arriver en France. Connectivité active dès l'atterrissage.",
+          "date": "2 Juin 2026",
+          "readTime": "8 min",
+          "image": "/esim-guide-france.webp",
+          "category": "Connectivité",
+          "slug": "esim-guia-latinoamericanos-francia"
+        },
+        {
+          "title": "Visa Saisonnier ou Salarié : Guide Complet 2026",
+          "excerpt": "Exigences, contrats, délais et conseils clés pour obtenir un permis Saisonnier ou Salarié temporaire en France sans accroc.",
+          "date": "15 Janvier 2026",
+          "readTime": "9 min",
+          "image": "/seasonal-worker-in-french-vineyard.webp",
+          "category": "Visas de Travail",
+          "slug": "visa-saisonnier-salarie"
+        },
+        {
+          "title": "PVT France : Checklist pour les Argentins 2025",
+          "excerpt": "Étape par étape pour rassembler les documents, demander le visa et organiser vos premiers mois en France avec le PVT.",
+          "date": "10 Janvier 2025",
+          "readTime": "8 min",
+          "image": "/french-work-visa-documents.webp",
+          "category": "Permis Vacances-Travail",
+          "slug": "working-holiday-francia"
+        },
+        {
+          "title": "Visa Étudiant France 2025 : Campus France et Consulat",
+          "excerpt": "Organisez votre calendrier de la recherche de programmes à l'arrivée en France, avec checklists et documents essentiels.",
+          "date": "5 Janvier 2025",
+          "readTime": "10 min",
+          "image": "/student-studying-in-paris.webp",
+          "category": "Visas Étudiants",
+          "slug": "visa-estudiante-francia"
+        },
+        {
+          "title": "Apprendre le Français : Ressources et Méthodes pour Progresser",
+          "excerpt": "Stratégies combinées (applications, professeurs, immersion et examens) pour atteindre le niveau B1/B2 requis pour les visas en un temps record.",
+          "date": "2 Janvier 2025",
+          "readTime": "7 min",
+          "image": "/person-learning-french-language.webp",
+          "category": "Langue et Culture",
+          "slug": "aprender-frances-recursos"
+        }
+      ]
+    }
+  },
+  "BlogPosts": {
+    "aprender-frances-recursos": {
+      "hero": {
+        "title": "Apprendre le français : Ressources et Méthodes",
+        "subtitle": "Un plan d'action pour atteindre le niveau requis par les visas français, même si vous partez de zéro.",
+        "category": "Langue et Culture"
+      },
+      "pillarsTitle": "Les 3 piliers pour progresser",
+      "pillars": [
+        {
+          "title": "Saisie quotidienne",
+          "detail": "Podcast RFI Journal en français facile + 20 minutes de lecture graduée (News in Slow French, Frantastique)."
+        },
+        {
+          "title": "Production guidée",
+          "detail": "2 cours hebdomadaires (en ligne ou en présentiel) axés sur la conversation et la correction de la prononciation."
+        },
+        {
+          "title": "Évaluation mensuelle",
+          "detail": "Simulations DELF/TCF pour mesurer les progrès et ajuster le plan avant la date de l'examen."
+        }
+      ],
+      "pillarsConclusion": "La régularité est plus importante que la quantité. 45 minutes quotidiennes bien ciblées valent mieux que des sessions longues mais irrégulières. Utilisez un calendrier partagé pour consigner les heures d'étude et détecter les semaines creuses.",
+      "resourcesTitle": "Ressources recommandées en 2024",
+      "resources": [
+        {
+          "name": "Alliance Française en ligne",
+          "note": "Cours en direct + retours écrits. Idéal pour passer de A2 à B1."
+        },
+        {
+          "name": "Italki / Preply",
+          "note": "Professeurs personnalisés à partir de 12 € de l'heure. Choisissez des natifs spécialisés dans les visas ou les études."
+        },
+        {
+          "name": "Anki + decks B1",
+          "note": "Cartes flash avec prononciation pour acquérir du vocabulaire professionnel."
+        },
+        {
+          "name": "TV5 Monde Apprendre",
+          "note": "Vidéos courtes avec exercices autocorrectifs."
+        },
+        {
+          "name": "Rencontres conversationnelles",
+          "note": "Pratiquez dans votre ville avec des natifs."
+        }
+      ],
+      "resourcesConclusion": "Complétez le matériel numérique par une véritable immersion : changez la langue de votre téléphone, suivez des comptes français sur les réseaux sociaux et cherchez des tandems linguistiques. Une exposition constante accélère la compréhension orale.",
+      "studyPlanTitle": "Plan d'étude de 9 mois",
+      "studyPlan": [
+        {
+          "phase": "Mois 1-2",
+          "focus": "Consolider la base grammaticale A2. 30 minutes d'application quotidiennes + 2 cours en groupe."
+        },
+        {
+          "phase": "Mois 3-5",
+          "focus": "Passer au B1 : rédaction hebdomadaire d'e-mails et simulations orales enregistrées."
+        },
+        {
+          "phase": "Mois 6-7",
+          "focus": "Préparation au DELF : exercices chronométrés et retours correctifs individuels."
+        },
+        {
+          "phase": "Mois 8-9",
+          "focus": "Approfondir le vocabulaire professionnel et constituer un portfolio de projets/essais en français."
+        }
+      ],
+      "examsTitle": "Préparation aux examens officiels",
+      "exams": [
+        "Choisissez l'examen en fonction de votre objectif : DELF B1/B2 pour les visas, TCF IRN pour la naturalisation, TEF Canada pour l'immigration.",
+        "Pratiquez avec un chronomètre. Les épreuves orales durent 10 à 15 minutes, alors entraînez-vous à faire des réponses concises.",
+        "Enregistrez-vous en répondant à des sujets typiques et analysez vos tics de langage ou vos erreurs de prononciation.",
+        "Simulez la partie écrite sur ordinateur si vous passez le TCF SO, ou à la main pour le DELF."
+      ]
+    },
+    "working-holiday-francia": {
+      "hero": {
+        "title": "PVT France : Checklist 2024",
+        "subtitle": "Dates d'ouverture, documents obligatoires et plan financier pour que vous arriviez en France avec tout réglé.",
+        "category": "Permis Vacances-Travail"
+      },
+      "section1": {
+        "title": "Quotas et stratégie pour obtenir un rendez-vous",
+        "p1": "Le consulat ouvre l'agenda en deux lots (mars et octobre) et il s'épuise en quelques minutes. Créez votre utilisateur France-Visas à l'avance, pré-remplissez le formulaire et ayez votre reçu de paiement des frais prêt pour le jour même du rendez-vous. Utilisez un e-mail secondaire pour éviter les blocages et configurez des alertes avec notre bot Telegram pour savoir dès que des places se libèrent.",
+        "p2": "N'oubliez pas que le visa Vacances-Travail est de 12 mois, non renouvelable, et ne permet pas de travailler avec des contrats de plus de 6 mois par employeur. Cependant, vous pouvez alterner les emplois et étudier jusqu'à 6 mois sans avoir besoin d'un autre visa."
+      },
+      "checklistTitle": "Checklist complète avant le rendez-vous",
+      "checklist": [
+        "Passeport argentin avec une validité minimale de 12 mois",
+        "Extrait de casier judiciaire (avec apostille) délivré il y a moins de 3 mois",
+        "Assurance médicale complète de 12 mois incluant le rapatriement",
+        "Fonds vérifiables d'au moins 2 500 €",
+        "Billet de retour ou fonds supplémentaires pour l'acheter",
+        "Lettre de motivation et CV en français (oui, ils les demandent)"
+      ],
+      "fundsTitle": "Comment justifier des fonds",
+      "funds": [
+        "Présentez les relevés bancaires des 3 derniers mois avec des mouvements clairs. Si l'argent est fourni par un proche, joignez une lettre notariée, une copie de la pièce d'identité et une preuve de lien. Évitez les gros transferts un jour avant le rendez-vous ; ils suscitent des doutes et on peut vous demander des explications supplémentaires.",
+        "De nombreux participants combinent des économies en monnaie locale + l'achat d'euros quelques jours avant. Conservez les reçus du bureau de change pour justifier l'origine de l'argent."
+      ],
+      "budgetTitle": "Budget suggéré pour le premier mois",
+      "budget": [
+        {
+          "label": "Hébergement temporaire",
+          "amount": "600 €",
+          "note": "3 semaines en auberge ou résidence en cherchant une colocation"
+        },
+        {
+          "label": "Garanties et cautions",
+          "amount": "1 200 €",
+          "note": "1 mois de caution + mois d'avance dans les grandes villes"
+        },
+        {
+          "label": "Transport + installation",
+          "amount": "300 €",
+          "note": "Pass Navigo, puce, carte SIM, démarches"
+        },
+        {
+          "label": "Fonds d'urgence",
+          "amount": "400 €",
+          "note": "Au cas où le premier salaire tarde"
+        }
+      ],
+      "landingTitle": "Arrivée en France : que faire lors de vos premières semaines",
+      "landingSteps": [
+        {
+          "title": "Les 7 premiers jours",
+          "detail": "Traitez le compte bancaire en ligne et achetez la ligne téléphonique pour valider l'assurance."
+        },
+        {
+          "title": "Semaine 2",
+          "detail": "Recherchez un logement stable (résidences, colocations, foyers) et formalisez le contrat."
+        },
+        {
+          "title": "Mois 1",
+          "detail": "Inscrivez-vous à la CPAM pour la sécurité sociale et activez votre numéro fiscal si vous trouvez un emploi."
+        }
+      ],
+      "landingConclusion": "Une fois que vous avez signé votre premier contrat, demandez à l'employeur de vous remettre l'attestation Pôle Emploi et activez votre numéro de sécurité sociale provisoire. Cela vous permet d'accéder à la couverture médicale et de cotiser au chômage."
+    },
+    "visa-estudiante-francia": {
+      "hero": {
+        "title": "Visa Étudiant : Étapes et Calendrier",
+        "subtitle": "Nous détaillons le processus, de la recherche de programmes à la validation de votre VLS-TS Étudiant en France.",
+        "category": "Visas Étudiants"
+      },
+      "roadmapTitle": "Feuille de route : de la candidature au visa",
+      "milestones": [
+        {
+          "title": "Sélection du programme",
+          "detail": "Recherchez 5/6 formations compatibles avec votre profil et vérifiez si elles nécessitent CampusArt, Parcoursup ou une candidature directe."
+        },
+        {
+          "title": "Campus France",
+          "detail": "Téléchargez le dossier, payez les frais et préparez l'entretien. Apportez des traductions officielles et justifiez votre plan de financement."
+        },
+        {
+          "title": "Consulat",
+          "detail": "Rassemblez les originaux + copies, assurance, logement et lettre d'acceptation. Le passeport prend entre 7 et 15 jours ouvrables après le rendez-vous."
+        }
+      ],
+      "roadmapConclusion": "Nous recommandons de commencer la recherche 9 mois à l'avance. De nombreuses écoles privées répondent en 2 semaines, mais les universités publiques et les formations sélectives (Sciences Po, BTS, masters spécialisés) peuvent prendre 2 à 3 mois.",
+      "campusTitle": "Comment préparer le dossier Campus France",
+      "campusP1": "Téléchargez les diplômes, les relevés de notes et les traductions assermentées en PDF. Dans la section \"Motivation\", expliquez pourquoi vous avez choisi la France, quels sont vos objectifs professionnels et comment vous allez vous financer. L'entretien dure généralement 15 minutes : apportez votre CV imprimé et votre projet, ils vous posent des questions en français et vérifient que vous comprenez le plan académique.",
+      "campusP2": "Après l'entretien, Campus France envoie l'aval directement au consulat. Ce n'est qu'alors que vous pourrez prendre rendez-vous pour le visa ; c'est pourquoi il est essentiel de ne pas laisser l'entretien à la dernière minute.",
+      "docsTitle": "Documentation pour le consulat",
+      "docs": [
+        "Lettre d'acceptation définitive ou attestation de pré-inscription",
+        "Certificat de langue (DELF B2, TCF, IELTS) selon la formation",
+        "CV académique mis à jour + projet d'études",
+        "Assurance médicale de voyage (vous activerez ensuite la sécurité sociale)",
+        "Justificatif de domicile d'au moins 3 mois",
+        "Moyens financiers : 7 380 € par an à titre de référence"
+      ],
+      "fundingTitle": "Options de financement acceptées",
+      "funding": [
+        {
+          "label": "Compte personnel",
+          "note": "Relevés bancaires avec solde ≥ 615 € par mois de séjour"
+        },
+        {
+          "label": "Sponsor familial",
+          "note": "Lettre d'engagement, copie de la carte d'identité et preuve de revenus mensuels stables"
+        },
+        {
+          "label": "Bourse/contrat",
+          "note": "Certificat officiel détaillant les montants, la durée et s'il couvre l'hébergement/les repas"
+        }
+      ],
+      "fundingConclusion": "Si vous combinez vos propres économies + un sponsor, clarifiez les montants fournis par chacun et joignez un tableau récapitulatif. Plus il y a de clarté, moins vous recevrez de demandes d'informations supplémentaires.",
+      "arrivalTitle": "Après votre arrivée en France",
+      "arrivalSteps": [
+        "Validez le VLS-TS sur l'ANEF dans les 3 premiers mois.",
+        "Inscrivez-vous à la sécurité sociale (étudiants internationaux) et choisissez une mutuelle.",
+        "Ouvrez votre compte bancaire et demandez l'aide au logement (APL) si applicable.",
+        "Si votre visa vous permet de travailler, enregistrez le contrat sur la plateforme appropriée et surveillez vos heures."
+      ]
+    },
+    "esim-guia-latinoamericanos-francia": {
+      "hero": {
+        "title": "Qu'est-ce qu'une eSIM et pourquoi est-ce si utile aujourd'hui ?",
+        "subtitle": "Le guide que tout Latino-Américain devrait lire avant d'atterrir en France.",
+        "category": "Connectivité et Technologie",
+        "date": "2 Juin 2026",
+        "readTime": "8 min de lecture"
+      },
+      "intro": "Une eSIM (embedded SIM) est une carte SIM numérique intégrée directement dans la puce du téléphone, qui permet d'activer un forfait de données ou d'appels sans avoir besoin d'insérer une carte physique. Elle s'active en quelques minutes via un code QR, peut stocker plusieurs profils d'opérateurs simultanément et est particulièrement utile pour les voyageurs, les travailleurs internationaux et les immigrants car elle permet d'avoir une connectivité active dès l'atterrissage dans un nouveau pays, sans files d'attente, sans attendre et sans dépendre d'un magasin de téléphonie.",
+      "section1": {
+        "title": "De la carte physique à la puce invisible",
+        "p1": "Pendant des années, arriver dans un nouveau pays signifiait chercher un magasin de téléphonie, demander une carte SIM locale et espérer que le processus ne prendrait pas trop de temps. Un rituel lent et frustrant, surtout quand on vient de descendre d'un long vol et qu'on veut juste prévenir qu'on est bien arrivé.",
+        "p2": "L'eSIM élimine tout ce processus. Étant intégrée au matériel du téléphone, il n'y a rien à insérer ni à échanger. Vous scannez un code QR, suivez quelques étapes dans les paramètres de l'appareil, et en quelques minutes, le téléphone a déjà un signal local. Cette technologie est livrée en standard sur la plupart des téléphones sortis depuis 2020."
+      },
+      "section2": {
+        "title": "Comment ça marche exactement ?",
+        "p1": "Lors de la souscription d'un forfait auprès d'un opérateur compatible, ce dernier envoie un profil numérique qui s'installe directement sur la puce du téléphone. Ce profil contient toutes les informations nécessaires pour se connecter au réseau : numéro, accès aux données et identification de l'utilisateur.",
+        "p2": "Le plus précieux est qu'un même téléphone peut avoir plusieurs profils eSIM installés en même temps, bien qu'un seul soit généralement actif. Cela signifie que vous pouvez conserver votre numéro d'origine et utiliser un numéro français en parallèle, sans avoir à choisir entre l'un ou l'autre. Pour une personne en processus de migration, c'est un avantage très concret."
+      },
+      "ventajasTitle": "Les avantages clés",
+      "ventajas": [
+        {
+          "icon": "⚡",
+          "title": "Activation instantanée",
+          "detail": "Code QR et c'est parti, sans aller dans aucun magasin."
+        },
+        {
+          "icon": "📱",
+          "title": "Double profil",
+          "detail": "Numéro d'origine et numéro français sur le même téléphone."
+        },
+        {
+          "icon": "🌍",
+          "title": "Couverture mondiale",
+          "detail": "Des plateformes comme Airalo ou Holafly couvrent la France depuis votre pays."
+        },
+        {
+          "icon": "🔒",
+          "title": "Aucun risque de perte",
+          "detail": "C'est numérique : ça ne se casse pas, ça ne se perd pas, ça ne s'abîme pas."
+        }
+      ],
+      "section3": {
+        "title": "Pourquoi l'eSIM est-elle essentielle pour ceux qui arrivent en France ?",
+        "p1": "Si vous venez en France avec un visa, ou simplement en tant que touriste, avoir une eSIM facilitera grandement votre séjour en France, car vous aurez résolu l'un des principaux problèmes que nous rencontrons tous, peu importe où nous sommes : la connectivité.",
+        "p2": "Avec une eSIM souscrite avant le voyage, le téléphone arrive en France avec une connexion active. Et si vous préférez attendre, le processus d'activation peut se faire depuis le wifi de l'aéroport avant de passer la douane. Sans dépendre d'un magasin ouvert, sans comprendre les contrats en français le premier jour, sans perdre de temps."
+      },
+      "compTitle": "Quelles entreprises proposent des eSIM en France ?",
+      "operadoresFrancesesTitle": "Opérateurs français classiques",
+      "operadoresFranceses": [
+        {
+          "name": "Orange",
+          "detail": "Excellente couverture nationale, mais généralement plus cher."
+        },
+        {
+          "name": "Bouygues Telecom",
+          "detail": "Bonne couverture et forfaits compétitifs."
+        },
+        {
+          "name": "Free Mobile",
+          "detail": "Très populaire parmi les étudiants et les travailleurs étrangers pour ses prix bas."
+        },
+        {
+          "name": "SFR",
+          "detail": "Couverture solide dans les grandes villes et les zones rurales."
+        }
+      ],
+      "operadoresLowCostTitle": "Opérateurs low-cost très utilisés par les immigrés",
+      "operadoresLowCost": [
+        {
+          "name": "Lebara",
+          "detail": "Très utilisé par les Latino-Américains pour ses appels internationaux bon marché."
+        },
+        {
+          "name": "Lycamobile",
+          "detail": "Populaire pour les appels à l'étranger et une activation rapide."
+        },
+        {
+          "name": "Syma Mobile",
+          "detail": "Des forfaits pas chers et faciles à souscrire sans trop d'exigences."
+        }
+      ],
+      "esimInternacionalesTitle": "eSIM internationales pour arriver déjà connecté",
+      "esimInternacionales": [
+        {
+          "name": "Airalo",
+          "detail": "Très pratique pour activer les données avant le voyage."
+        },
+        {
+          "name": "Holafly",
+          "detail": "Données illimitées dans de nombreux forfaits et assistance en espagnol."
+        }
+      ],
+      "section4": {
+        "title": "Mon téléphone est-il compatible ?",
+        "p1": "La plupart des iPhones depuis le modèle XS (2018) sont compatibles. Sur Android, des marques comme Samsung, Google Pixel, Motorola et Xiaomi ont des modèles compatibles depuis plusieurs années, bien que tous les modèles de chaque marque ne l'incluent pas.",
+        "p2": "Pour le vérifier, il suffit d'aller dans les paramètres du téléphone, de chercher la section SIM et de vérifier si l'option d'ajouter un forfait numérique apparaît. Si elle est là, le téléphone est compatible. Un détail à garder à l'esprit : certains téléphones achetés avec des blocages d'opérateur peuvent ne pas accepter les eSIM externes jusqu'à ce qu'ils soient débloqués, il convient donc de le confirmer avant de voyager."
+      },
+      "section5": {
+        "title": "Ce qu'il faut savoir avant de souscrire",
+        "p1": "Toutes les eSIM ne se valent pas. Il existe des options qui offrent uniquement des données, et d'autres qui incluent un numéro de téléphone local, des appels et des données. Pour les démarches en France, où de nombreux formulaires officiels demandent un numéro français, il est conseillé d'opter pour la deuxième option, même si le coût est un peu plus élevé.",
+        "p2": "L'eSIM est la solution idéale pour les premiers jours ou semaines, pendant que les démarches se stabilisent et qu'une adresse fixe est établie. Une fois installé, il est généralement plus pratique de migrer vers un forfait mensuel avec un opérateur local, qui offre de meilleures conditions pour une utilisation continue à long terme."
+      }
+    },
+    "bancos-fisicos-vs-virtuales-francia": {
+      "hero": {
+        "title": "Banques physiques vs banques virtuelles en France",
+        "subtitle": "Quelle est la meilleure option pour les immigrés ?",
+        "category": "Finances pour Immigrés",
+        "date": "2 Juin 2026",
+        "readTime": "12 min de lecture"
+      },
+      "intro": {
+        "p1": "Si vous arrivez en France en tant qu'immigré et que vous vous demandez quelle banque ouvrir, la réponse courte est : une banque virtuelle est presque toujours la meilleure option pour commencer. Les banques virtuelles en France comme Wise, Revolut et Qonto proposent une ouverture de compte 100 % en ligne, sans avoir besoin d'un domicile français consolidé ou d'un contrat de travail préalable, avec des frais bien inférieurs à ceux des banques traditionnelles et des interfaces disponibles en plusieurs langues.",
+        "p2": "En revanche, les banques physiques telles que BNP Paribas, Société Générale ou Crédit Agricole exigent généralement de nombreux documents, des rendez-vous en personne et, dans de nombreux cas, rejettent les demandes des personnes ayant un statut d'immigration récent ou en cours de régularisation. Connaître les différences entre les deux modèles peut vous faire économiser des semaines de paperasse et beaucoup de maux de tête."
+      },
+      "section1": {
+        "title": "Le système bancaire en France : ce que personne ne vous explique avant d'arriver",
+        "p1": "La France dispose d'un système bancaire solide et bien réglementé, mais aussi notoirement bureaucratique. Ouvrir un compte bancaire dans une banque traditionnelle peut devenir une mission presque impossible pendant les premiers mois de votre séjour, précisément quand vous en avez le plus besoin.",
+        "p2": "Pour percevoir un salaire, payer un loyer, recevoir des virements de l'étranger ou tout simplement survivre financièrement en France, il vous faut un compte bancaire. Mais l'obtenir peut être le premier obstacle auquel vous serez confronté. C'est là que la distinction entre les banques physiques et virtuelles devient cruciale."
+      },
+      "fisicosTitle": "Les banques physiques en France : avantages et inconvénients",
+      "losMasConocidos": "Les plus connus",
+      "bancosTradicionales": [
+        "BNP Paribas",
+        "Société Générale",
+        "Crédit Agricole",
+        "La Banque Postale",
+        "CIC"
+      ],
+      "ventajasFisicosLabel": "Avantages",
+      "desventajasFisicosLabel": "Inconvénients",
+      "ventajasFisicos": [
+        {
+          "title": "Reconnaissance institutionnelle",
+          "detail": "De nombreux organismes publics, propriétaires et employeurs préfèrent ou exigent un compte dans une banque « traditionnelle », notamment pour la domiciliation des salaires ou le paiement des loyers par chèque."
+        },
+        {
+          "title": "Accès à des produits financiers complets",
+          "detail": "Prêts, crédits, plans d'épargne, assurances liées. Pour ceux qui vivent en France depuis un certain temps et qui souhaitent se constituer un historique financier, c'est l'option la plus complète."
+        },
+        {
+          "title": "Réseau de distributeurs automatiques gratuit",
+          "detail": "La plupart de ces banques proposent des retraits sans commission au sein de leur propre réseau."
+        },
+        {
+          "title": "Soutien en personne",
+          "detail": "Pour les personnes qui préfèrent gérer leurs finances en face à face, avoir un conseiller attitré peut être un atout."
+        }
+      ],
+      "desventajasFisicos": [
+        {
+          "title": "Documents exigeants",
+          "detail": "En général, ils demandent : un justificatif de domicile en France (parfois avec une ancienneté minimale), un contrat de travail ou un justificatif de revenus et, dans certains cas, un historique bancaire préalable."
+        },
+        {
+          "title": "Obstacles pour les immigrés récents",
+          "detail": "Si vous arrivez avec un nouveau visa, sans contrat à durée indéterminée ou si vous vivez dans un logement temporaire, de nombreuses banques rejettent tout simplement la demande."
+        },
+        {
+          "title": "Frais mensuels",
+          "detail": "La plupart facturent entre 7 € et 15 € par mois pour la tenue de compte, plus les frais supplémentaires pour une carte ou des services supplémentaires."
+        },
+        {
+          "title": "Service en français uniquement",
+          "detail": "Pour ceux qui ne maîtrisent pas encore la langue, naviguer dans le système peut être frustrant."
+        },
+        {
+          "title": "Délais de traitement longs",
+          "detail": "Il peut s'écouler de 2 à 4 semaines entre la demande et la réception de la carte."
+        }
+      ],
+      "virtualesTitle": "Les banques virtuelles en France : les meilleures pour les immigrés",
+      "virtualesIntro": "Les néobanques opèrent entièrement en ligne, sans succursales physiques. Voici les plus utilisées par la communauté latino-américaine en France :",
+      "ventajasLabel": "Avantages",
+      "desventajasLabel": "Inconvénients",
+      "idealParaLabel": "Idéal pour :",
+      "neobancos": [
+        {
+          "name": "Wise",
+          "emoji": "💱",
+          "subtitle": "Virements internationaux au meilleur prix",
+          "color": "#009580",
+          "bgColor": "#f0faf8",
+          "ventajas": [
+            "Compte multidevise : euros, dollars, pesos et de nombreuses autres devises en même temps.",
+            "Virements internationaux avec les frais les plus bas du marché, sans marges cachées sur le taux de change.",
+            "Ouverture de compte sans avoir besoin d'une adresse française préalable.",
+            "Carte de débit Visa disponible dans plusieurs pays.",
+            "Interface disponible en espagnol."
+          ],
+          "desventajas": [
+            "Ce n'est pas une banque au sens strict : les fonds ne sont pas couverts par le système européen de garantie des dépôts de la même manière.",
+            "Il ne propose pas la domiciliation des salaires en standard chez tous les employeurs français.",
+            "La carte physique a un coût d'émission.",
+            "Les fonctionnalités plus avancées nécessitent un plan payant."
+          ],
+          "idealPara": "Les personnes qui envoient ou reçoivent fréquemment de l'argent de l'étranger et qui recherchent le meilleur taux de change.",
+          "affiliate": {
+            "label": "Ouvrez votre compte Wise →",
+            "url": "https://wise.com/invite/ahpc/jiovannyalis"
+          }
+        },
+        {
+          "name": "Qonto",
+          "emoji": "🏢",
+          "subtitle": "Pour les indépendants et les petites entreprises",
+          "color": "#002654",
+          "bgColor": "#f0f4fb",
+          "ventajas": [
+            "Ouverture entièrement en ligne en moins de 24 heures.",
+            "IBAN français dès le premier jour, idéal pour émettre des factures et recevoir des paiements professionnels.",
+            "Outils de comptabilité intégrés : catégorisation des dépenses, exportation des données, connexion aux logiciels de comptabilité.",
+            "Assistance en plusieurs langues, y compris l'espagnol.",
+            "Reconnu et accepté par la plupart des organismes administratifs français."
+          ],
+          "desventajas": [
+            "Il n'est pas destiné à un usage personnel : c'est un compte professionnel, pas un compte courant au quotidien.",
+            "Frais mensuels plus élevés que les autres néobanques : à partir de 9 € par mois pour le forfait de base.",
+            "Il ne permet pas de retirer des espèces avec la même flexibilité que Revolut."
+          ],
+          "idealPara": "Auto-entrepreneurs, freelances et toute personne ayant besoin d'un compte professionnel sérieux dès le premier jour.",
+          "affiliate": null
+        },
+        {
+          "name": "Revolut",
+          "emoji": "⭐",
+          "subtitle": "La néobanque la plus complète pour le quotidien",
+          "color": "#191c1f",
+          "bgColor": "#f5f5f7",
+          "badge": "Recommandé",
+          "ventajas": [
+            "Ouverture de compte 100 % en ligne en moins de 10 minutes, sans avoir besoin d'une adresse préalable en France.",
+            "IBAN européen dès le premier jour.",
+            "Virements en euros sans commission au sein de la zone SEPA.",
+            "Change de devises avec des taux de change réels (jusqu'à une limite mensuelle sur le plan gratuit).",
+            "Carte de débit virtuelle immédiate et carte physique disponibles.",
+            "Paiements via Google Pay et Apple Pay dès l'activation.",
+            "Interface disponible en espagnol et très intuitive.",
+            "Contrôles des dépenses, statistiques de consommation et options d'épargne intégrés.",
+            "Système de points RevPoints : pour chaque achat, vous cumulez des points échangeables contre des réductions sur les vêtements, la nourriture, les voyages et les expériences."
+          ],
+          "desventajas": [
+            "Sur le plan gratuit, les retraits d'espèces sont soumis à une limite mensuelle (200 € sans commission).",
+            "Certains employeurs en France préfèrent les comptes dans des banques plus établies pour la domiciliation des salaires, bien que cela devienne moins fréquent.",
+            "Le support client sur le plan gratuit peut être lent."
+          ],
+          "idealPara": "Quiconque arrive en France et a besoin d'un compte opérationnel immédiatement, avec de bonnes conditions pour un usage quotidien et les avantages d'un véritable système de récompense.",
+          "affiliate": {
+            "label": "Ouvrez votre compte Revolut →",
+            "url": "https://revolut.com/referral/?referral-code=jiovannyali!MAY2-26-AR-RPB-H2&geo-redirect"
+          }
+        },
+        {
+          "name": "N26",
+          "emoji": "🇩🇪",
+          "subtitle": "La néobanque européenne conçue pour la simplicité",
+          "color": "#3a3a3a",
+          "bgColor": "#f8f8f8",
+          "ventajas": [
+            "Licence bancaire européenne complète : dépôts protégés jusqu'à 100 000 € par le fonds de garantie allemand.",
+            "Ouverture de compte 100 % en ligne, sans justificatif de domicile préalable en France.",
+            "IBAN allemand (DE) accepté dans toute la zone SEPA, valable pour recevoir les salaires et mettre en place des prélèvements.",
+            "Plan gratuit fonctionnel avec Mastercard incluse et sans frais de tenue de compte.",
+            "Interface disponible en espagnol, très intuitive et facile à utiliser dès le premier jour.",
+            "Notifications en temps réel et outils de base de suivi des dépenses.",
+            "Espaces d'épargne intégrés directement dans l'application."
+          ],
+          "desventajas": [
+            "L'IBAN allemand peut susciter des réticences de la part de certains propriétaires ou employeurs français qui préfèrent un IBAN FR, bien que cela soit de plus en plus rare.",
+            "Les retraits d'espèces sur le plan gratuit sont limités à 3 retraits sans commission par mois.",
+            "Les fonctionnalités avancées nécessitent des forfaits payants (N26 Smart, You ou Metal).",
+            "Le support client sur le forfait gratuit peut être lent pendant les périodes de forte demande."
+          ],
+          "idealPara": "Les immigrés à la recherche d'une néobanque avec un véritable soutien bancaire, une couverture de garantie des dépôts européenne et une expérience utilisateur très simple dès leur premier jour en France.",
+          "affiliate": null
+        },
+        {
+          "name": "Global66",
+          "emoji": "🌎",
+          "subtitle": "La meilleure option pour envoyer de l'argent en Amérique latine",
+          "color": "#E63946",
+          "bgColor": "#fff5f5",
+          "ventajas": [
+            "Taux de change très compétitifs pour les devises d'Amérique latine : pesos colombiens, pesos chiliens, bolivars, soles péruviens, entre autres.",
+            "Virements rapides, souvent crédités en quelques minutes ou quelques heures.",
+            "Interface en espagnol, conçue en pensant à l'utilisateur latino-américain.",
+            "Pas de frais cachés : le taux de change que vous voyez au départ est celui qui est appliqué.",
+            "Disponible sous forme d'application mobile et de plateforme Web, facile à utiliser depuis n'importe quel appareil.",
+            "Inscription simple, aucun compte bancaire français préalable requis pour commencer."
+          ],
+          "desventajas": [
+            "Il ne s'agit pas d'un compte bancaire : il n'émet pas d'IBAN et ne permet pas non plus la domiciliation des salaires ni le paiement des factures en France.",
+            "Sa fonction est exclusivement d'envoyer de l'argent à l'étranger, pas de gérer les finances quotidiennes en Europe.",
+            "La disponibilité des destinations et des devises est axée sur l'Amérique latine.",
+            "Il nécessite de financer le transfert depuis un compte bancaire européen ou une néobanque préalable."
+          ],
+          "idealPara": "Les immigrés latino-américains en France qui ont besoin d'envoyer de l'argent à leur famille en Amérique latine rapidement, en toute sécurité et avec le meilleur taux de change possible. Utilisé en combinaison avec une néobanque européenne, et non en remplacement.",
+          "affiliate": {
+            "label": "Inscrivez-vous sur Global66 →",
+            "url": "https://share.global66.com/JIOSAN2"
+          }
+        }
+      ],
+      "revPoints": {
+        "badge": "Avantage en vedette",
+        "title": "Pourquoi les RevPoints de Revolut en valent-ils la peine ?",
+        "p1": "L'un des aspects les plus intéressants de Revolut pour ceux qui viennent d'arriver en France est son programme de récompenses. À chaque fois que vous payez avec votre carte Revolut, vous cumulez des RevPoints. Ces points peuvent être échangés directement sur la plateforme contre des réductions sur des achats, des produits de marques sélectionnées, du cashback ou un accès à des expériences.",
+        "p2": "Pour quelqu'un qui construit sa vie à partir de zéro dans un nouveau pays, chaque achat quotidien — du supermarché aux transports — devient une occasion d'accumuler de la valeur. Ce n'est pas un système exagéré, mais c'est réel, fonctionnel et s'intègre naturellement à l'utilisation quotidienne du compte.",
+        "cta": "Ouvrez votre compte Revolut et commencez à gagner →"
+      },
+      "cuandoUsarTitle": "Alors, banque physique ou virtuelle ?",
+      "cuandoUsar": [
+        {
+          "icon": "✈️",
+          "title": "Si vous venez d'arriver en France",
+          "detail": "Une banque virtuelle est votre meilleur point de départ. Elle vous donne immédiatement accès à un compte opérationnel, sans bureaucratie, et vous permet de percevoir votre premier salaire, de payer vos dépenses et de recevoir des virements sans attendre des semaines."
+        },
+        {
+          "icon": "📋",
+          "title": "Si vous êtes en France depuis un certain temps et que vous avez un statut stable",
+          "detail": "Pensez à compléter votre compte virtuel par un compte dans une banque traditionnelle. Certaines démarches officielles, demandes de crédit ou baux à long terme peuvent être facilités avec une banque physique en renfort."
+        },
+        {
+          "icon": "💡",
+          "title": "La stratégie la plus intelligente",
+          "detail": "Utilisez les deux : une néobanque pour les opérations quotidiennes et les virements internationaux, et une banque traditionnelle lorsque le processus bureaucratique l'exige."
+        }
+      ],
+      "conclusion": {
+        "title": "Conclusion",
+        "p1": "Le système bancaire français peut ressembler à un labyrinthe au début, mais il existe aujourd'hui de véritables outils qui le rendent beaucoup plus accessible. Les banques virtuelles ont démocratisé l'accès financier pour les immigrés, et des options comme Wise, Qonto et Revolut proposent des solutions concrètes en fonction de chaque profil et de chaque besoin.",
+        "p2": "Si vous cherchez à démarrer rapidement, avec un compte fonctionnel dès le premier jour et des avantages qui s'accumulent avec chaque dépense quotidienne, Revolut est difficile à battre en tant que point d'entrée dans le système financier français."
+      },
+      "affiliateCTA": {
+        "subtitle": "commencez aujourd'hui",
+        "title": "Utilisez mes liens et commencez à accumuler des avantages dès le 1er jour"
+      }
+    },
+    "visa-saisonnier-salarie": {
+      "hero": {
+        "title": "Visa Saisonnier ou Salarié : Guide 2024",
+        "subtitle": "Comment obtenir un contrat temporaire, préparer votre dossier et présenter le visa sans commettre les erreurs qui génèrent le plus de rejets.",
+        "category": "Visas de Travail"
+      },
+      "section1": {
+        "title": "Que couvre le visa saisonnier / Salarié ?",
+        "p1": "Il permet de travailler en France de 3 à 6 mois (renouvelable jusqu'à 9) dans des secteurs à demande temporaire. L'entreprise française initie le dossier et valide le contrat auprès de la DIRECCTE ou via la plateforme ANEF. Avec ce contrat et une lettre de motivation cohérente, vous prouvez que vous rentrerez à la fin de la saison.",
+        "p2": "Vous n'avez pas besoin de démontrer un français parfait, mais de comprendre les tâches de base. Avoir une expérience connexe, des formations courtes ou des références professionnelles aide les Ressources Humaines à faire confiance à votre profil et accélère la procédure."
+      },
+      "reqsTitle": "Exigences essentielles",
+      "reqs": [
+        "Contrat temporaire signé + autorisation de travail",
+        "Assurance médicale pour toute la période et rapatriement",
+        "Fonds minimums de 600 € par mois si l'employeur ne couvre pas le logement",
+        "Billet de retour ou argent réservé pour l'acheter"
+      ],
+      "advTitle": "Avantages",
+      "adv": [
+        "Possibilité d'enchaîner les contrats et de revenir chaque saison",
+        "Accès au logement d'entreprise dans l'agriculture et l'hôtellerie",
+        "Vous ajoutez une expérience française pour de futurs visas de travail",
+        "Vous pouvez passer à un visa de travail long si vous recevez un CDI"
+      ],
+      "timelineTitle": "Calendrier suggéré",
+      "timeline": [
+        {
+          "month": "Mois 1",
+          "detail": "Définissez le secteur, la région et les contacts. Préparez CV/Lettre en français et commencez à envoyer des candidatures."
+        },
+        {
+          "month": "Mois 2",
+          "detail": "Concluez le contrat + promesse d'embauche, rassemblez les documents personnels et demandez un rendez-vous consulaire."
+        },
+        {
+          "month": "Mois 3",
+          "detail": "Entretien au consulat, attente du passeport et organisation du voyage (assurance, hébergement, arrivée)."
+        }
+      ],
+      "docsTitle": "Documentation examinée à la loupe",
+      "docs": [
+        "Contrat de travail visé par la DIRECCTE ou validé via l'ANEF",
+        "Passeport en cours de validité + copie intégrale",
+        "Lettre de motivation et CV en français",
+        "Assurance médicale internationale couvrant tout le séjour",
+        "Justificatif de domicile ou attestation d'hébergement",
+        "Fonds suffisants (relevés bancaires des 3 derniers mois)"
+      ],
+      "sectorsTitle": "Secteurs les plus demandés en 2024",
+      "sectors": [
+        {
+          "title": "Agro / Vendanges",
+          "text": "Forte demande entre août et octobre. Il est essentiel de postuler à l'avance et de montrer une expérience préalable ou une envie d'apprendre rapidement."
+        },
+        {
+          "title": "Hôtellerie et tourisme",
+          "text": "Les hôtels des stations de ski et des zones côtières embauchent pour la haute saison. Ils recherchent un français conversationnel et une disponibilité de 4/6 mois."
+        },
+        {
+          "title": "Services urbains",
+          "text": "Les restaurants, les déménagements et la livraison recrutent du personnel dans les grandes villes. Le réseau de contacts locaux accélère votre recherche."
+        }
+      ],
+      "tipsTitle": "Conseils pour présenter le dossier",
+      "tips": [
+        "Prenez rendez-vous dès que vous recevez le contrat ; en haute saison, ils s'épuisent vite.",
+        "Si votre employeur couvre le logement ou les repas, demandez-lui de l'indiquer par écrit pour justifier des fonds moindres.",
+        "Incluez des lettres de recommandation traduites en français pour renforcer votre profil.",
+        "Organisez le dossier dans l'ordre demandé par le consulat et apportez des copies supplémentaires."
+      ]
+    }
+  },
+  "FAQData": {
+    "items": [
+      {
+        "question": "Combien de temps prend une autorisation de travail ?",
+        "answer": "La moyenne est de 8 à 12 semaines, selon le poste, la préfecture et la charge de travail du Ministère de l'Intérieur. Vous pouvez réduire les délais en envoyant un dossier complet dès le début et en répondant rapidement aux demandes d'informations.",
+        "category": [
+          "Trámites",
+          "General"
+        ]
+      },
+      {
+        "question": "Qu'est-ce que couvre l'assurance VVT ?",
+        "answer": "Elle comprend les frais médicaux d'urgence en France et dans l'UE, le rapatriement sanitaire, la responsabilité civile et l'assistance 24h/24 et 7j/7. Elle offre également une couverture en cas d'hospitalisation ou d'accident pendant le voyage, qui sont des exigences obligatoires pour le visa.",
+        "category": [
+          "Seguros",
+          "General"
+        ]
+      },
+      {
+        "question": "Quels documents sont demandés pour le Titre de séjour (étudiant/salarié) ?",
+        "answer": "Passeport en cours de validité, visa de long séjour ou VLS-TS, acte de naissance traduit, justificatif de domicile, assurance maladie, ressources financières, contrat ou certificat de scolarité et, le cas échéant, les derniers bulletins de salaire ou attestation d'inscription.",
+        "category": [
+          "Trámites",
+          "General"
+        ]
+      },
+      {
+        "question": "Comment se déroule le conseil et que reçois-je à la fin ?",
+        "answer": "Nous organisons un appel vidéo de 60 minutes, répondons à vos questions et, à la fin, nous vous envoyons un résumé écrit avec les étapes concrètes à suivre.",
+        "category": [
+          "Asesoría",
+          "General"
+        ]
+      },
+      {
+        "question": "Qu'est-ce que le visa Working Holiday pour la France ?",
+        "answer": "Le visa Working Holiday (VVT) est un permis de long séjour qui permet aux jeunes étrangers de résider légalement en France pendant une période maximale de 12 mois. Pendant cette période, le titulaire peut travailler temporairement pour financer son séjour et vivre une expérience culturelle. Il ne s'agit pas d'un visa de travail classique ni d'études, mais d'un programme d'échange avec des conditions spécifiques.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Qui peut demander le visa Working Holiday ?",
+        "answer": "Les citoyens des pays ayant un accord bilatéral en vigueur avec la France peuvent en faire la demande. De plus, il est obligatoire de respecter des conditions d'âge, de ressources financières, d'assurance voyage et d'antécédents migratoires. Chaque nationalité a des conditions particulières qui doivent être vérifiées avant de commencer les démarches.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quelle est la limite d'âge pour postuler ?",
+        "answer": "Dans la plupart des cas, la tranche d'âge est de 18 à 30 ans inclus au moment de la demande. Cependant, certains accords permettent de postuler jusqu'à 35 ans, selon le pays d'origine. Le calcul de l'âge et le moment exact de la demande sont essentiels pour éviter les refus.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Combien de temps dure le visa Working Holiday ?",
+        "answer": "La durée maximale est de 12 mois, à compter de la date d'entrée en France. Ce visa n'est ni renouvelable ni prorogeable, il est donc important de planifier à l'avance ce qu'il faut faire à la fin de la période autorisée.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Ai-je besoin d'une offre d'emploi pour le demander ?",
+        "answer": "Non. Le Working Holiday se demande sans contrat de travail préalable. L'idée du programme est de permettre au demandeur de chercher du travail une fois en France, généralement dans des emplois temporaires ou saisonniers.",
+        "category": [
+          "WH: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Combien d'argent dois-je justifier pour la demande ?",
+        "answer": "Le consulat exige de justifier de fonds suffisants pour couvrir les premiers mois en France. Le montant varie généralement entre 2 500 et 3 000 euros, en plus d'un billet de retour ou des fonds supplémentaires pour l'acheter. La manière de présenter cette preuve financière est un point sensible du dossier.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Est-il obligatoire de souscrire une assurance voyage ?",
+        "answer": "Oui. L'assurance est une exigence indispensable. Elle doit couvrir toute la durée du visa et inclure les soins médicaux, l'hospitalisation et le rapatriement sanitaire. Une assurance incomplète ou avec des dates erronées peut entraîner le refus du visa.",
+        "category": [
+          "WH: General",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Puis-je étudier avec un visa Working Holiday ?",
+        "answer": "Oui, mais uniquement des cours de courte durée, comme des cours de langue ou d'autres formations non diplômantes. Ce visa ne permet pas de s'inscrire dans des études universitaires ou des programmes longs nécessitant un visa étudiant.",
+        "category": [
+          "WH: General",
+          "Estudios"
+        ]
+      },
+      {
+        "question": "Puis-je travailler à plein temps en France ?",
+        "answer": "Oui, il est possible de travailler à plein temps, à condition qu'il s'agisse d'emplois temporaires et dans le respect de la législation du travail française. Néanmoins, ce visa n'est pas conçu pour un emploi stable ou de longue durée.",
+        "category": [
+          "WH: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Puis-je changer d'employeur pendant mon séjour ?",
+        "answer": "Oui. Le titulaire d'un Working Holiday peut changer d'employeur autant de fois qu'il le souhaite, car le visa n'est pas lié à une entreprise spécifique.",
+        "category": [
+          "WH: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Puis-je voyager en Europe avec ce visa ?",
+        "answer": "Oui. En disposant d'un visa de long séjour délivré par la France, il est possible de circuler dans l'espace Schengen pour de courtes périodes, en respectant les règles de mobilité établies.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Le visa Working Holiday peut-il être prolongé ?",
+        "answer": "Non. Une fois les 12 mois écoulés, le visa expire automatiquement. Pour rester en France, il est nécessaire de changer de statut migratoire si les conditions légales sont remplies.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Est-il possible de changer pour un autre type de visa depuis la France ?",
+        "answer": "Dans certains cas oui, par exemple vers un visa étudiant ou salarié. Cependant, cela dépend du profil du demandeur, du type de contrat obtenu et de la réglementation en vigueur à ce moment-là.",
+        "category": [
+          "WH: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Puis-je demander le Working Holiday plus d'une fois ?",
+        "answer": "Non. Le Working Holiday ne peut être demandé qu'une seule fois par pays. Il n'est pas possible de répéter le programme en France si vous l'avez déjà obtenu auparavant.",
+        "category": [
+          "WH: General"
+        ]
+      },
+      {
+        "question": "Pourquoi est-il recommandé d'effectuer les démarches avec un conseil en immigration ?",
+        "answer": "Parce que chaque dossier est différent et que les erreurs de documentation, de délais ou d'assurances peuvent entraîner des retards ou des refus. Un conseil spécialisé permet de préparer correctement le dossier, d'anticiper les risques et d'évaluer les options futures une fois en France.",
+        "category": [
+          "WH: General",
+          "Asesoría"
+        ]
+      },
+      {
+        "question": "Les Argentins ont-ils un quota annuel pour le Working Holiday France ?",
+        "answer": "Non. Contrairement à d'autres pays, la France ne fixe pas de quota annuel limité pour les citoyens argentins. Cela signifie qu'il peut être demandé tout au long de l'année, à condition de remplir les conditions.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "D'où le visa doit-il être demandé si je suis Argentin ?",
+        "answer": "La demande doit obligatoirement être effectuée depuis l'Argentine, avant le voyage. Il n'est pas possible de postuler en étant en France ou depuis un pays tiers.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quel consulat de France correspond à mon domicile en Argentine ?",
+        "answer": "Le consulat attribué dépend du lieu de résidence déclaré en Argentine. Présenter la demande dans un consulat qui ne correspond pas peut générer des retards ou un refus.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Le passeport argentin doit-il avoir une validité minimale spécifique ?",
+        "answer": "Oui. Le passeport doit être valide pendant toute la durée du séjour prévu et disposer de suffisamment de pages vierges pour le visa et les tampons d'entrée et de sortie.",
+        "category": [
+          "WH: Argentina",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Est-il obligatoire de présenter un billet acheté ou seulement une réservation ?",
+        "answer": "Généralement, un billet acheté ou des fonds suffisants pour l'acheter sont acceptés. Le critère peut varier selon le consulat, il est donc essentiel de présenter correctement la documentation.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quel type d'assurance médicale est accepté pour les Argentins ?",
+        "answer": "L'assurance doit couvrir toute la durée du visa, inclure l'hospitalisation, les soins médicaux et le rapatriement sanitaire. Les assurances incomplètes ou avec des dates incorrectes font généralement l'objet d'observations.",
+        "category": [
+          "WH: Argentina",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Puis-je demander le Working Holiday si j'ai déjà eu un autre visa français ?",
+        "answer": "Oui, à condition de ne pas avoir déjà obtenu un Working Holiday pour la France. Avoir eu un visa de tourisme, d'étudiant ou d'une autre catégorie n'empêche pas la demande.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quelles erreurs fréquentes les Argentins commettent-ils en postulant ?",
+        "answer": "Les plus courantes sont : présenter des assurances qui ne couvrent pas 12 mois, des fonds insuffisants ou mal justifiés, des dates incohérentes entre les documents et des lettres de motivation génériques.",
+        "category": [
+          "WH: Argentina",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "La lettre de motivation est-elle obligatoire pour les Argentins ?",
+        "answer": "Oui. C'est un document clé dans le dossier. Elle doit expliquer le projet personnel, l'intention du voyage et le respect des conditions du programme.",
+        "category": [
+          "WH: Argentina",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Puis-je entrer en France avant la date de début du visa ?",
+        "answer": "Non. L'entrée en France doit s'effectuer à partir de la date de début indiquée sur le visa. Entrer plus tôt peut générer des problèmes migratoires.",
+        "category": [
+          "WH: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Est-il possible de changer d'employeur pendant le séjour ?",
+        "answer": "Oui. Le Working Holiday permet de travailler avec différents employeurs, toujours dans le cadre de contrats temporaires et dans le respect de la législation du travail française.",
+        "category": [
+          "WH: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si je ne trouve pas de travail immédiatement en arrivant ?",
+        "answer": "Il n'y a pas d'obligation de travailler immédiatement. C'est pourquoi il est fondamental de disposer de fonds suffisants et d'un plan réaliste pour les premiers mois.",
+        "category": [
+          "WH: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Le Working Holiday permet-il d'accéder à la sécurité sociale française ?",
+        "answer": "L'accès dépend du type de contrat et de la durée de l'emploi. Dans de nombreux cas, l'assurance privée reste obligatoire pendant toute la durée du séjour.",
+        "category": [
+          "WH: Argentina",
+          "Seguros",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Puis-je demander un visa salarié si je trouve un employeur ?",
+        "answer": "C'est possible dans certains cas, mais ce n'est pas automatique. L'employeur doit entamer les démarches et remplir des conditions spécifiques auprès de l'administration française.",
+        "category": [
+          "WH: Argentina",
+          "Trabajo",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Pourquoi une consultation est-elle importante avant de postuler ?",
+        "answer": "Parce qu'un dossier mal constitué peut entraîner des refus, des retards ou des dépenses inutiles. Le conseil permet de valider les documents, les dates, l'assurance et la stratégie migratoire dès le départ.",
+        "category": [
+          "WH: Argentina",
+          "Asesoría"
+        ]
+      },
+      {
+        "question": "Combien de places y a-t-il pour les Chiliens chaque année ?",
+        "answer": "Pour les citoyens chiliens, le visa Working Holiday en France est limité à 400 places par an. Cela signifie qu'une fois ce quota atteint, aucune nouvelle demande n'est acceptée avant l'ouverture du cycle suivant l'année suivante.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quand ouvrent les candidatures pour les Chiliens ?",
+        "answer": "L'ambassade de France annonce l'ouverture des candidatures (généralement en début d'année) et les 400 places sont alors attribuées. Il est important d'être vigilant car une fois le quota atteint, aucune demande supplémentaire n'est acceptée avant la période suivante.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "D'où dois-je présenter ma demande si je suis Chilien ?",
+        "answer": "Les Chiliens doivent présenter leur demande depuis le Chili auprès du consulat de France compétent (généralement à Santiago). Aucune demande n'est reçue depuis l'étranger ou un autre territoire.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quelle exigence spécifique l'assurance a-t-elle pour les Chiliens ?",
+        "answer": "L'assurance doit couvrir toute la durée du visa (12 mois) avec une couverture médicale, hospitalière et de rapatriement. Beaucoup échouent sur ce point car la police ne coïncide pas exactement avec les dates du visa ou ne remplit pas les conditions minimales exigées.",
+        "category": [
+          "WH: Chile",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Est-il difficile d'obtenir un rendez-vous au consulat ?",
+        "answer": "L'un des problèmes fréquents signalés par les personnes qui tentent de postuler est la disponibilité limitée des rendez-vous. Beaucoup se retrouvent exclus faute d'avoir pu réserver un créneau avant qu'ils ne soient épuisés.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si les places sont déjà épuisées ?",
+        "answer": "Si les 400 places sont pourvues, l'ambassade ne répond à aucune demande par téléphone ou par e-mail concernant la disponibilité, et il faut attendre l'ouverture du cycle suivant pour postuler.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Dois-je justifier de fonds pour vivre et pour le billet ?",
+        "answer": "Oui. Les Chiliens doivent prouver leur solvabilité financière pour couvrir les dépenses initiales en France, et également justifier de fonds suffisants pour acheter le billet de retour ou des options équivalentes selon la réglementation en vigueur.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quelles erreurs communes les Chiliens commettent-ils en présentant les documents ?",
+        "answer": "Les erreurs fréquentes incluent : formulaires incomplets ou imprimés en mode 'brouillon', assurance avec des dates incorrectes, passeport avec une validité insuffisante et absence de justificatif adéquat des fonds financiers.",
+        "category": [
+          "WH: Chile",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Est-il obligatoire de présenter un certificat médical ?",
+        "answer": "Oui. Les Chiliens doivent présenter un certificat médical de bonne santé délivré par un professionnel habilité. Ce document est une exigence formelle pour démontrer qu'ils sont aptes à travailler.",
+        "category": [
+          "WH: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Le passeport chilien a-t-il des exigences spécifiques ?",
+        "answer": "Le passeport doit avoir une validité d'au moins 12 mois à compter de la date d'entrée prévue en France, et comporter au moins deux pages vierges pour les formalités.",
+        "category": [
+          "WH: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Puis-je postuler si j'ai déjà eu un Working Holiday auparavant ?",
+        "answer": "Non. Si vous avez déjà obtenu un visa Working Holiday pour la France par le passé, vous ne pouvez pas postuler à nouveau dans le cadre de ce programme.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Dois-je présenter une réservation d'hébergement ?",
+        "answer": "Oui. Pour les Chiliens, il est généralement nécessaire de justifier d'un lieu où loger au moins pendant les premiers jours (auberge de jeunesse, hôtel, ou lettre d'invitation avec les documents de l'hôte).",
+        "category": [
+          "WH: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Y a-t-il des frais pour le visa ?",
+        "answer": "Oui. Le Working Holiday pour les Chiliens a un coût de 99 euros, payé au moment de présenter la demande au consulat.",
+        "category": [
+          "WH: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Puis-je travailler légalement dès mon arrivée ?",
+        "answer": "Oui, le visa permet de travailler dès votre entrée sur le territoire, mais la recherche d'emploi s'effectue par vos propres moyens une fois en France.",
+        "category": [
+          "WH: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Est-ce que savoir parler français augmente mes chances ?",
+        "answer": "Bien que ce ne soit pas une exigence obligatoire pour postuler, de nombreux Chiliens signalent qu'avoir des connaissances de base (ou plus) en français facilite grandement la recherche d'emploi et l'intégration une fois sur place.",
+        "category": [
+          "WH: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Qu'est-ce que le visa saisonnier en France ?",
+        "answer": "Le visa saisonnier est un visa de travail temporaire destiné aux étrangers recrutés pour effectuer des activités saisonnières en France (hôtellerie, tourisme, agriculture, ski). Il permet de travailler légalement pendant une période limitée liée au contrat.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Dois-je avoir un contrat avant de demander le visa ?",
+        "answer": "Oui. Le visa saisonnier ne peut pas être demandé sans contrat de travail préalable. L'employeur français doit proposer un contrat saisonnier et effectuer les démarches auprès de l'autorité française du travail.",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Qui entame la démarche : le travailleur ou l'employeur ?",
+        "answer": "Le processus commence en France avec l'employeur, qui doit demander l'autorisation de travail. Une fois approuvée, le travailleur peut présenter sa demande de visa au consulat de France de son pays de résidence.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Combien de temps dure le visa saisonnier ?",
+        "answer": "Il est généralement accordé pour une durée maximale de 6 mois sur une période de 12 mois. Ce n'est pas un visa permanent et il ne permet pas de résider de manière continue toute l'année.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Puis-je changer d'employeur avec ce visa ?",
+        "answer": "Non. Le visa saisonnier est lié à l'employeur et au contrat spécifique qui a été approuvé. Changer d'employeur sans nouvelle autorisation peut générer des problèmes migratoires.",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Le visa saisonnier permet-il de travailler dans n'importe quel secteur ?",
+        "answer": "Non. Il permet uniquement de travailler dans le secteur et au poste indiqués dans le contrat approuvé (hôtels, restaurants, ski, vendanges, agriculture).",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Est-il obligatoire de souscrire une assurance maladie ?",
+        "answer": "Oui. Il est obligatoire de présenter une assurance médicale internationale couvrant toute la durée du séjour (soins médicaux, hospitalisation et rapatriement).",
+        "category": [
+          "Saisonnier: General",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Puis-je amener ma famille avec un visa saisonnier ?",
+        "answer": "Non. Le visa saisonnier ne permet pas le regroupement familial. Il est conçu exclusivement pour un séjour de travail temporaire.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Puis-je renouveler le visa saisonnier ?",
+        "answer": "Le visa peut être demandé à nouveau lors des saisons futures si un nouveau contrat est obtenu, mais il ne se renouvelle pas automatiquement.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Le visa saisonnier permet-il de changer de type de visa en France ?",
+        "answer": "En principe, il n'est pas conçu pour des changements de statut. Dans des cas très spécifiques, cela pourrait être évalué, mais ce n'est pas habituel.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si mon contrat se termine plus tôt que prévu ?",
+        "answer": "Si le contrat prend fin prématurément, la situation migratoire doit être examinée avec soin. Rester en France sans activité professionnelle valide peut entraîner des irrégularités.",
+        "category": [
+          "Saisonnier: General",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Quelles sont les erreurs les plus courantes lors de la demande de ce visa ?",
+        "answer": "Contrats incomplets, absence d'autorisation de travail valide, assurance médicale incorrecte et dates incohérentes.",
+        "category": [
+          "Saisonnier: General",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Est-ce un visa adapté si je souhaite m'installer à long terme en France ?",
+        "answer": "Non. C'est un visa temporaire. Si l'objectif est de s'établir à long terme, d'autres types de visas doivent être envisagés.",
+        "category": [
+          "Saisonnier: General"
+        ]
+      },
+      {
+        "question": "Puis-je demander le visa depuis n'importe quel pays ?",
+        "answer": "La demande doit être déposée auprès du consulat de France correspondant au pays de résidence légale du demandeur.",
+        "category": [
+          "Saisonnier: General",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Pourquoi est-il recommandé de se faire conseiller avant de postuler ?",
+        "answer": "Parce qu'il s'agit d'un visa avec des exigences strictes et une dépendance directe vis-à-vis de l'employeur. Un conseil permet de vérifier le contrat, l'assurance et la viabilité du projet pour éviter les refus.",
+        "category": [
+          "Saisonnier: General",
+          "Asesoría"
+        ]
+      },
+      {
+        "question": "Pourquoi le consulat de France en Argentine vérifie-t-il autant la solvabilité personnelle ?",
+        "answer": "Parce qu'ils veulent s'assurer que le demandeur peut subvenir à ses besoins financiers pendant les premières semaines sans dépendre exclusivement du salaire de l'employeur, évitant ainsi les situations de vulnérabilité.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Quel impact ont les séjours antérieurs en tant que touriste en Europe ?",
+        "answer": "Des séjours répétés ou prolongés peuvent susciter des doutes. Le consulat évalue si le nouveau projet professionnel est cohérent avec l'historique migratoire et si les limites précédentes ont été respectées.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Comment le consulat argentin évalue-t-il l'expérience professionnelle antérieure ?",
+        "answer": "Ils recherchent une cohérence entre le profil du demandeur et le poste proposé. S'il n'y a pas de lien entre l'expérience passée et l'emploi saisonnier, le dossier est analysé plus en détail.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si l'employeur ne respecte pas la convention collective française ?",
+        "answer": "Le contrat peut être considéré comme invalide. La France vérifie que le salaire et les conditions respectent la convention collective du secteur.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Pourquoi certains Argentins reçoivent-ils des demandes de documents supplémentaires ?",
+        "answer": "Parce que le consulat détecte des incohérences ou des informations insuffisantes. Il ne s'agit pas d'un refus, mais d'une demande de clarification pour poursuivre le processus.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Est-il possible que le consulat doute du caractère saisonnier du poste ?",
+        "answer": "Oui. Si le poste semble permanent ou continu, il peut être refusé même s'il est pour une durée limitée.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Quelle est l'importance de la traduction des documents ?",
+        "answer": "Elle est cruciale. Le consulat attend des documents clairs et lisibles. Une mauvaise traduction peut ralentir l'analyse ou générer de la confusion.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Comment affecte un refus de visa antérieur ?",
+        "answer": "Il oblige à mieux justifier la nouvelle demande, en prouvant que les motifs du refus précédent ont été corrigés.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si le contrat inclut l'hébergement ?",
+        "answer": "Cela doit être clairement spécifié dans le contrat. Les promesses verbales ne sont pas valables et suscitent des doutes.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Le consulat vérifie-t-il la durée exacte du contrat ?",
+        "answer": "Oui. La durée doit être cohérente avec le caractère saisonnier de l'emploi.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si l'employeur change de raison sociale ?",
+        "answer": "Cela peut invalider l'autorisation initiale et nécessiter de recommencer une partie des démarches.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Le visa permet-il de faire des heures supplémentaires ?",
+        "answer": "Uniquement dans le cadre légal français et si la convention collective le permet.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si le demandeur arrive avant la date du contrat ?",
+        "answer": "Il peut rencontrer des problèmes lors de l'entrée, car le visa est lié à la période de travail spécifique.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Pourquoi certains dossiers sont-ils considérés 'à risque' ?",
+        "answer": "Pour cause de combinaison d'un historique migratoire complexe, de contrats peu clairs, d'un manque de soutien financier ou d'incohérences documentaires.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Qu'est-ce qui distingue un dossier solide d'un dossier fragile ?",
+        "answer": "La cohérence totale entre les documents, le contrat et le projet migratoire.",
+        "category": [
+          "Saisonnier: Argentina",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Pourquoi le consulat de France au Chili est-il si strict sur la cohérence du dossier ?",
+        "answer": "Parce qu'il évalue le projet migratoire dans son ensemble (contrat, dates, assurance, plan). Toute incohérence peut être interprétée comme un risque de séjour irrégulier.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Que vérifie la France concernant l'employeur lorsque le travailleur est chilien ?",
+        "answer": "Que l'employeur a un besoin réel et saisonnier, et respecte la réglementation. Si l'employeur n'a pas d'expérience avec les étrangers, le contrôle est plus important.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Quel impact a la présentation d'un contrat avec des dates 'flexibles' ?",
+        "answer": "Cela génère de la méfiance. Le consulat chilien exige de la précision dans les dates. Les contrats ambigus entraînent des corrections ou des retards.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Pourquoi l'assurance est-elle l'une des principales causes d'observations ?",
+        "answer": "Parce que beaucoup présentent des assurances valables dans d'autres pays mais qui ne respectent pas les critères français spécifiques (couvertures et dates exactes).",
+        "category": [
+          "Saisonnier: Chile",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Comment influe le fait d'avoir déjà travaillé en Europe ?",
+        "answer": "Le respect des visas précédents est analysé. Un historique migratoire 'chargé' engendre plus de contrôles.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si le contrat ne mentionne pas d'hébergement ?",
+        "answer": "S'il ne le mentionne pas, le demandeur doit prouver un hébergement légal par ses propres moyens. Le manque de clarté sur ce point laisse souvent les demandes incomplètes.",
+        "category": [
+          "Saisonnier: Chile",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Pourquoi demandent-ils parfois des documents supplémentaires à la dernière minute ?",
+        "answer": "Parce qu'ils détectent des incohérences lors de l'analyse. C'est le signe que le dossier a besoin d'être renforcé, pas nécessairement un refus.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Le manque d'expérience préalable dans le secteur influe-t-il ?",
+        "answer": "Oui. S'il n'y a pas d'expérience, on attend au moins une explication logique du profil (études ou motivation claire).",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si l'employeur a déjà eu des problèmes avec des visas auparavant ?",
+        "answer": "Le consulat analysera avec prudence les nouveaux contrats de cet employeur, même si le candidat remplit toutes les conditions.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Le visa saisonnier permet-il de changer d'employeur en France ?",
+        "answer": "Pas librement. Il est lié à un employeur spécifique.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Pourquoi vérifient-ils autant les antécédents migratoires ?",
+        "answer": "Pour vérifier le respect des règles antérieures. Les dépassements de séjour ou les travaux antérieurs non déclarés sont des signaux d'alarme.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Est-il fréquent qu'ils demandent des clarifications sur le projet personnel ?",
+        "answer": "Oui. Ils veulent comprendre la logique du voyage : pourquoi ce travail, à cet endroit et à ce moment.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si le contrat semble 'trop court' ?",
+        "answer": "Cela peut générer des doutes sur la viabilité économique du projet (si le voyage en vaut la peine).",
+        "category": [
+          "Saisonnier: Chile",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Pourquoi certains dossiers chiliens prennent-ils plus de temps que d'autres ?",
+        "answer": "Cela dépend de la clarté du contrat et de la réputation du secteur/employeur.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Qu'est-ce qui distingue un dossier chilien bien préparé d'un dossier faible ?",
+        "answer": "La cohérence totale. Si le contrat, l'assurance et le profil s'accordent sans contradictions, le dossier avance rapidement.",
+        "category": [
+          "Saisonnier: Chile",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Les étudiants latino-américains ont-ils des exigences différentes ?",
+        "answer": "Non, les critères sont les mêmes pour tous les étudiants internationaux. Cependant, les procédures administratives peuvent varier selon le pays (par exemple, la validation de Campus France est obligatoire dans de nombreux pays d'Amérique latine).",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "De combien d'argent dois-je justifier ?",
+        "answer": "Au minimum, vous devez justifier de 615 euros par mois de séjour, ou son équivalent annuel. Pour une année complète, cela représente environ 7 380 euros. Vous pouvez combiner plusieurs sources : compte personnel, garant familial, bourses, futurs contrats de travail, etc.",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Puis-je travailler avec un visa étudiant ?",
+        "answer": "Oui, le visa étudiant vous permet de travailler jusqu'à 964 heures par an (soit environ 60 % d'un temps plein). Cela vous permet de compléter vos revenus pendant vos études.",
+        "category": [
+          "Estudios",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "L'assurance maladie est-elle obligatoire ?",
+        "answer": "Oui, il est obligatoire d'avoir une assurance médicale au moins pour le début du séjour en France. Une fois en France, vous devrez vous inscrire à la sécurité sociale étudiante (sécurité sociale pour les étudiants internationaux).",
+        "category": [
+          "Estudios",
+          "Seguros"
+        ]
+      },
+      {
+        "question": "Puis-je postuler sans avoir terminé mes études antérieures ?",
+        "answer": "Oui, c'est possible à condition que votre parcours académique et la nouvelle formation soient cohérents avec votre profil. Par exemple, un étudiant sur le point de terminer son baccalauréat peut postuler à une formation universitaire, à condition de montrer une cohérence dans son projet.",
+        "category": [
+          "Estudios",
+          "General"
+        ]
+      },
+      {
+        "question": "Puis-je postuler uniquement avec une pré-inscription ?",
+        "answer": "Oui, dans de nombreux cas, il est possible de postuler avec une attestation de pré-inscription. Elle doit être officielle, délivrée par l'établissement d'enseignement, et contenir des informations détaillées sur le programme, la durée et les conditions.",
+        "category": [
+          "Estudios",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si mon projet d'études n'est pas cohérent ?",
+        "answer": "Un projet académique incohérent est l'une des principales causes de refus. Vos études doivent avoir du sens dans le cadre de votre parcours universitaire et professionnel. L'administration française évalue la cohérence entre votre profil, vos études antérieures et votre nouveau projet de formation.",
+        "category": [
+          "Estudios",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Le niveau de français est-il obligatoire ?",
+        "answer": "Cela dépend du type de formation. Pour les cours de français, aucun niveau préalable n'est généralement requis. Pour les licences ou les masters, un niveau B2 (DELF, TCF) ou équivalent est généralement exigé. Certains programmes en anglais peuvent nécessiter un IELTS ou un TOEFL.",
+        "category": [
+          "Estudios",
+          "Documentación"
+        ]
+      },
+      {
+        "question": "Puis-je postuler pour des cours de langue ?",
+        "answer": "Oui, à condition que le cours comporte au moins 20 heures par semaine, soit dispensé par une école reconnue et soit d'une durée suffisante. Les cours intensifs de français sont une option valable pour obtenir le visa étudiant.",
+        "category": [
+          "Estudios",
+          "General"
+        ]
+      },
+      {
+        "question": "Puis-je travailler à temps plein avec un visa étudiant ?",
+        "answer": "Non, il n'est pas permis de travailler à temps plein avec un visa étudiant. La limite est de 964 heures par an. Travailler plus d'heures pourrait mettre en péril votre statut d'étudiant.",
+        "category": [
+          "Estudios",
+          "Trabajo"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si mes ressources financières ne sont pas justifiées ?",
+        "answer": "Si les ressources financières ne sont pas dûment justifiées, le consulat peut demander des documents supplémentaires, retarder le processus ou même refuser la demande. Il est fondamental de présenter des justificatifs clairs et officiels.",
+        "category": [
+          "Estudios",
+          "Errores Frecuentes"
+        ]
+      },
+      {
+        "question": "Puis-je renouveler le visa étudiant en France ?",
+        "answer": "Oui, vous pouvez renouveler votre visa étudiant en France à condition de poursuivre vos études, de maintenir votre progression académique et de continuer à remplir les conditions de ressources financières. Le renouvellement se fait via l'ANEF.",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Puis-je changer de statut après mes études ?",
+        "answer": "Oui, dans certains cas, il est possible de changer de statut après avoir terminé vos études. Cela dépend du diplôme obtenu, de votre projet professionnel et de la cohérence avec vos études. Par exemple, vous pouvez passer à un visa de travail (Salarié) si vous trouvez un emploi correspondant à votre profil.",
+        "category": [
+          "Estudios",
+          "Trámites"
+        ]
+      },
+      {
+        "question": "Le visa étudiant est-il une voie directe pour rester en France ?",
+        "answer": "Non, le visa étudiant est temporaire et lié à un projet universitaire spécifique. Pour rester en France après avoir terminé vos études, vous aurez besoin de nouvelles conditions légales (par exemple, un visa de travail, un visa d'entrepreneur, le regroupement familial, etc.).",
+        "category": [
+          "Estudios",
+          "General"
+        ]
+      }
+    ],
+    "titreDeSejour": [
+      {
+        "question": "Quand dois-je renouveler mon Titre de Séjour ?",
+        "answer": "Vous devez entamer les démarches de renouvellement 2 à 3 mois avant l'expiration de votre titre actuel. Cela vous garantit d'avoir suffisamment de temps pour accomplir toutes les formalités.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Puis-je travailler en attendant le renouvellement ?",
+        "answer": "Oui, tant que votre demande est en cours et que vous disposez du récépissé (reçu de demande de renouvellement), vous pouvez continuer à travailler légalement.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Que se passe-t-il si mon Titre de Séjour expire ?",
+        "answer": "Si votre titre expire avant que vous ne le renouveliez, vous risquez de vous retrouver en situation irrégulière. Il est important d'entamer les démarches à l'avance. Nous vous aidons à éviter cette situation.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Puis-je changer de type de Titre de Séjour ?",
+        "answer": "Oui, il est possible de changer de type (par exemple, d'Étudiant à Salarié), mais cela nécessite une procédure spécifique. Nous vous conseillons sur les exigences et les étapes nécessaires.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Combien de temps prend la procédure ?",
+        "answer": "Le délai varie selon le type et la préfecture, généralement entre 3 et 6 semaines. Grâce à notre aide, nous optimisons le processus pour éviter les retards.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      },
+      {
+        "question": "Dois-je parler français pour la démarche ?",
+        "answer": "Ce n'est pas obligatoire, mais c'est recommandé. Nous vous accompagnons dans toutes vos communications avec les autorités françaises.",
+        "category": [
+          "Titre de Séjour"
+        ]
+      }
+    ]
+  },
+  "StudentVisaPage": {
+    "hero": {
+      "title": "Visa Étudiant pour la France",
+      "subtitle": "Informations essentielles pour les étudiants internationaux",
+      "whatsappCta": "CONSULTER PAR WHATSAPP",
+      "advisorCta": "PLANIFIER UN CONSEIL"
+    },
+    "intro": "Le visa étudiant permet aux citoyens non européens de vivre et d'étudier en France. Son obtention implique un processus officiel auprès de divers organismes de l'État français. Cette section résume les informations clés pour préparer votre demande.",
+    "organismos": {
+      "title": "Organismes Intervenants",
+      "subtitle": "Découvrez les institutions clés du processus de votre visa étudiant",
+      "cf": {
+        "title": "Campus France",
+        "description": "Évalue votre projet académique. La validation est obligatoire dans de nombreux pays d'Amérique latine avant de demander le visa.",
+        "cta": "Visiter le site officiel"
+      },
+      "fv": {
+        "title": "France-Visas",
+        "description": "Portail officiel du gouvernement français pour les demandes de visa et la prise de rendez-vous consulaire.",
+        "cta": "Visiter le site officiel"
+      },
+      "consulado": {
+        "title": "Consulat de France",
+        "description": "Analyse le dossier complet et prend la décision finale sur le visa. C'est là que vous présenterez votre demande."
+      },
+      "sp": {
+        "title": "Service-Public.fr",
+        "description": "Définit les règles officielles, les ressources financières requises, ainsi que les droits et obligations des étudiants.",
+        "cta": "Visiter le site officiel"
+      }
+    },
+    "process": {
+      "title": "Votre Chemin vers la France",
+      "subtitle": "Le pas-à-pas simplifié pour obtenir votre visa.",
+      "steps": [
+        {
+          "step": "01",
+          "title": "Acceptation Académique",
+          "desc": "Obtenez la lettre d'acceptation ou de pré-inscription de votre école ou université."
+        },
+        {
+          "step": "02",
+          "title": "Campus France",
+          "desc": "Complétez la procédure 'Etudes en France', le paiement et l'entretien académique."
+        },
+        {
+          "step": "03",
+          "title": "Demande de Visa",
+          "desc": "Remplissez le formulaire sur France-Visas et rassemblez votre dossier consulaire."
+        },
+        {
+          "step": "04",
+          "title": "Rendez-vous Consulaire",
+          "desc": "Présentez vos documents biométriques et attendez la décision (7 à 15 jours)."
+        }
+      ]
+    },
+    "types": {
+      "title": "Types d'Études Éligibles",
+      "apply": {
+        "title": "Éligibles",
+        "items": [
+          "Cours de français (minimum 20 heures par semaine)",
+          "Licences et Masters",
+          "Masters dans des écoles privées reconnues",
+          "Formaciones longues et structurées"
+        ]
+      },
+      "notApply": {
+        "title": "Pas toujours éligibles",
+        "items": [
+          "Cours de courte durée (moins de 20 heures par semaine)",
+          "Formations sans volume horaire suffisant",
+          "Études incohérentes avec le profil académique"
+        ]
+      }
+    },
+    "status": {
+      "title": "Changement de Statut",
+      "p1": "Dans certains cas, il est possible de changer de statut une fois en France, généralement après avoir terminé vos études. Ce changement n'est pas automatique et dépend du diplôme obtenu ainsi que de la cohérence de votre projet académique et professionnel. Chaque situation est évaluée au cas par cas par l'administration française.",
+      "p2": "Exemples de changements possibles : passer d'un visa étudiant à un visa de travail (Salarié) si vous trouvez un emploi correspondant à votre profil et à vos études, ou à un visa entrepreneur si vous décidez de créer votre propre entreprise."
+    },
+    "tips": {
+      "title": "Conseils Importants",
+      "items": [
+        {
+          "bold": "Le visa étudiant est un projet académique, pas seulement une démarche administrative.",
+          "text": " La cohérence de votre dossier est essentielle pour éviter les retards ou les refus."
+        },
+        {
+          "bold": "S'informer à l'avance",
+          "text": " vous permet de prendre de meilleures décisions et de préparer tous les documents nécessaires en temps voulu."
+        },
+        {
+          "bold": "Planifiez à l'avance :",
+          "text": " L'ensemble du processus, de la recherche de formation à l'obtention du visa, peut prendre de 6 à 9 mois. Commencez vos recherches suffisamment tôt."
+        },
+        {
+          "bold": "Documentation complète :",
+          "text": " Veillez à ce que tous vos documents soient traduits et légalisés si nécessaire. Un dossier incomplet peut générer des retards importants."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Besoin d'aide pour votre visa étudiant ?",
+      "description": "Nous vous accompagnons tout au long du processus : Campus France, inscription académique, préparation du dossier et stratégie de ressources financières.",
+      "button": "CONSULTER MAINTENANT"
+    },
+    "faqSection": {
+      "title": "Questions Fréquentes",
+      "description": "Nous répondons à vos questions sur les conditions, les ressources financières, Campus France et le travail à temps partiel."
+    }
+  },
+  "WorkVisasPage": {
+    "hero": {
+      "title": "Visas de Travail en France",
+      "subtitle": "Découvrez les deux voies principales pour travailler légalement : \n Visa Salarié (Stabilité à long terme) et Visa Saisonnier (Travail saisonnier).",
+      "whatsappCta": "CONSULTER PAR WHATSAPP",
+      "advisorCta": "PRENDRE RENDEZ-VOUS",
+      "communityCta": "Rejoindre la Communauté Salarié / Saisonnier"
+    },
+    "comparison": {
+      "title": "Comparatif et Processus",
+      "subtitle": "Analysez étape par étape quelle est l'option idéale pour votre profil professionnel.",
+      "mobileHelper": "Choisissez un visa pour voir le processus complet",
+      "salarieBtn": "Salarié",
+      "saisonnierBtn": "Saisonnier"
+    },
+    "salarie": {
+      "badge": "Visa Salarié",
+      "title": "Permanent (CDI/CDD)",
+      "step1": {
+        "title": "Définition et Portée",
+        "description": "C'est un titre de séjour et de travail destiné aux personnes embauchées sous <strong>CDI</strong> (indéterminé) ou <strong>CDD de longue durée</strong>.",
+        "highlight": "<strong>Valeur principale :</strong> Stabilité, clarté juridique et projection à long terme (résidence)."
+      },
+      "step2": {
+        "title": "Offre et Métier en Tension",
+        "description": "Une offre formelle liée à un code <strong>ROME</strong> est requise. Si le poste figure sur la liste des <strong>Métiers en Tension</strong> (pénurie de main-d'œuvre), le processus est plus rapide.",
+        "link": "Consulter la liste régionale (Légifrance)"
+      },
+      "step3": {
+        "title": "Publication (France Travail)",
+        "description": "Si le métier n'est <strong>PAS</strong> en tension, il est obligatoire de publier l'offre pendant <strong>21 jours</strong> sur France Travail pour le contrôle du marché du travail.",
+        "warning": "<strong>Important :</strong> Toute modification réinitialise le compteur de 21 jours."
+      },
+      "step4": {
+        "title": "Délais et ANEF",
+        "items": [
+          "Plateforme : Ministère de l'Intérieur (ANEF).",
+          "Examen de l'autorisation : <strong>2 à 8 semaines</strong>.",
+          "Délivrance du visa (Consulat) : <strong>~15 jours</strong>."
+        ]
+      },
+      "step5": {
+        "title": "Validation en France",
+        "description": "À l'arrivée, il est obligatoire de valider le visa <strong>en ligne</strong>, de s'enregistrer à la sécurité sociale et d'activer ses droits du travail.",
+        "success": "Renouvelable vers une résidence de longue durée."
+      }
+    },
+    "saisonnier": {
+      "badge": "Visa Saisonnier",
+      "title": "Saisonnier (3 à 6 mois)",
+      "step1": {
+        "title": "Définition et Portée",
+        "description": "Pour les travaux saisonniers (Hôtellerie, Agriculture, Tourisme, Ski) avec des contrats de <strong>3 à 6 mois</strong>.",
+        "highlight": "<strong>Limitation :</strong> N'ouvre pas de droit annuel. Maximum 6 mois de travail par an. Renouvelable <strong>3 années consécutives</strong>."
+      },
+      "step2": {
+        "title": "Secteurs Saisonniers",
+        "description": "De nombreux emplois saisonniers relèvent de <strong>Métiers en Tension</strong>, en particulier dans les régions touristiques, ce qui facilite l'approbation.",
+        "tags": [
+          "Hôtellerie",
+          "Restauration",
+          "Montagne",
+          "Agro"
+        ]
+      },
+      "step3": {
+        "title": "Publication (Exception)",
+        "description": "Dans la plupart des cas saisonniers (forte demande), il n'est <strong>PAS nécessaire</strong> de publier l'offre pendant 3 semaines.",
+        "note": "*Seulement si le métier n'est pas saisonnier ou en tension, les 21 jours sont requis."
+      },
+      "step4": {
+        "title": "Délais et ANEF",
+        "items": [
+          "Plateforme : ANEF Employeurs.",
+          "Examen de l'autorisation : 2 à 8 semaines.",
+          "Délivrance du visa : ~15 jours."
+        ]
+      },
+      "step5": {
+        "title": "Validation et Coût",
+        "lessThan3": "Moins de 3 mois : NON validé. Aucune démarche supplémentaire.",
+        "3to6": "3 à 6 mois : Validation obligatoire + Carte de Séjour Saisonnier.",
+        "cost": "Coût de délivrance : 0€ (Gratuit)."
+      }
+    },
+    "professionalSupport": {
+      "title": "ACCOMPAGNEMENT PROFESSIONNEL",
+      "p1": "Chez Allée France Lyon, je vous accompagne personnellement. Je m'appelle Jio, spécialiste des démarches d'immigration, avec plus de 700 dossiers réussis.",
+      "p2": "Nous travaillons en coordination directe avec votre employeur (de la petite entreprise familiale aux grands groupes) pour garantir un dossier propre, complet et approuvé en un temps record."
+    },
+    "community": {
+      "title": "COMMUNAUTÉ SALARIÉ / SAISONNIER",
+      "description": "Vous n'êtes pas seul dans ce processus. Rejoignez notre communauté WhatsApp pour partager vos expériences et conseils.",
+      "button": "REJOINDRE MAINTENANT"
+    },
+    "cta": {
+      "title": "Prêt à lancer votre projet ?",
+      "description": "Nous gérons des dossiers propres, complets et approuvables. Évitez les erreurs et les retards.",
+      "button": "CONSULTER MAINTENANT"
+    },
+    "summaryTable": {
+      "title": "Différences Clés Résumées",
+      "salarie": {
+        "title": "Visa Salarié",
+        "items": [
+          "Pour CDI ou CDD Long.",
+          "Permet la résidence à long terme.",
+          "Publication obligatoire de 21 jours si pas en tension.",
+          "Frais consulaires standards applicables."
+        ]
+      },
+      "saisonnier": {
+        "title": "Visa Saisonnier",
+        "items": [
+          "Contrats de 3 à 6 mois.",
+          "Ne nécessite généralement PAS de publication de 21 jours.",
+          "Coût 0€ (Gratuit).",
+          "Limité à 6 mois par an."
+        ]
+      }
+    }
+  },
+  "WorkingHolidayPage": {
+    "global": {
+      "badge": "Working Holiday Global",
+      "hero": {
+        "title": "Vivez et Travaillez dans le monde.",
+        "subtitle": "Votre nationalité est votre passeport vers de nouvelles opportunités. Choisissez votre pays d'origine, trouvez les destinations disponibles et construisez une stratégie réaliste pour voyager, travailler et apprendre.",
+        "ctaPrimary": "Sélectionner le pays d'origine",
+        "ctaSecondary": "Explorer les destinations"
+      },
+      "highlights": [
+        {
+          "label": "Guides par nationalité"
+        },
+        {
+          "label": "Options de travail légal"
+        },
+        {
+          "label": "Destinations sur 4 continents"
+        }
+      ],
+      "origin": {
+        "eyebrow": "Sélectionnez votre pays d'origine",
+        "title": "Votre parcours commence ici",
+        "description": "Choisissez votre nationalité pour accéder aux conditions, aux dates d'ouverture et aux recommandations spécifiques à votre candidature.",
+        "countryLink": "Voir les destinations disponibles",
+        "countryExplore": "Explorer le guide"
+      },
+      "destinations": {
+        "eyebrow": "Destinations disponibles",
+        "title": "Choisissez où vous voulez vivre l'expérience",
+        "description": "Sélectionnez une destination pour découvrir les conditions, les quotas et les opportunités d'emploi actuelles dans chaque pays.",
+        "activePrograms": "Voir les programmes actifs"
+      },
+      "advisory": {
+        "title": "Accompagnement stratégique pour votre Working Holiday",
+        "description": "Nous centralisons les informations, vous aidons à planifier les délais et à préparer un dossier solide pour que votre voyage reste possible. Notre conseil s'adapte à votre pays d'origine et à la destination choisie.",
+        "items": [
+          "Diagnostic des conditions et calendrier des ouvertures.",
+          "Checklist de documents et suivi des fonds.",
+          "Plan de voyage avec options de travail et d'hébergement."
+        ],
+        "cardEyebrow": "Votre plan en vue",
+        "cardTitle": "Prêt à franchir le premier pas ?",
+        "cardDescription": "Planifiez une session avec notre équipe pour examiner votre profil, choisir la destination idéale et définir la meilleure stratégie de candidature.",
+        "cardButton": "Discuter sur WhatsApp"
+      },
+      "insurance": {
+        "eyebrow": "Assurance voyage",
+        "title": "Souscrivez votre assurance obligatoire pour le Working Holiday",
+        "description": "Protégez votre expérience avec une police valide pour les consulats et les programmes officiels. Comprend l'assistance médicale, le rapatriement et les certificats prêts à soumettre.",
+        "ctaButton": "Obtenir un devis",
+        "ctaNote": "Recevez le certificat officiel et la lettre à présenter à votre consulat ou sur la plateforme de demande.",
+        "features": [
+          {
+            "title": "Couverture obligatoire",
+            "description": "Soins médicaux, hospitalisation et rapatriement conformément aux exigences consulaires."
+          },
+          {
+            "title": "Validité internationale",
+            "description": "Protection pendant toute la durée du séjour et les voyages secondaires dans le cadre de votre Working Holiday."
+          },
+          {
+            "title": "Certificat immédiat",
+            "description": "Nous émettons le justificatif en quelques minutes pour le présenter au consulat ou sur la plateforme officielle."
+          }
+        ]
+      },
+      "faqSection": {
+        "title": "Questions fréquentes sur le Working Holiday",
+        "description": "Trouvez des réponses sur les conditions, les assurances, le travail et les délais de candidature."
+      },
+      "cta": {
+        "title": "Prêt à démarrer votre plan Working Holiday ?",
+        "description": "Planifions une session pour examiner votre profil, confirmer les conditions et définir clairement les prochaines étapes.",
+        "ctaPrimary": "Discuter sur WhatsApp",
+        "ctaSecondary": "Réserver un conseil"
+      },
+      "faqLoading": "Chargement des questions fréquentes..."
+    },
+    "country": {
+      "whatsappBtn": "Contacter sur WhatsApp",
+      "advisoryBtn": "Réserver un Conseil",
+      "quotaNote": "Places limitées par pays · Notre équipe vous aide à arriver prêt quel que soit votre départ depuis {country}.",
+      "quotaFallback": "Quota officiel à confirmer",
+      "quotaEyebrow": "Quota estimé · {label}",
+      "whatIs": {
+        "title": "Qu'est-ce que le Visa Working Holiday ?",
+        "p1": "Le Working Holiday permet aux jeunes de {country} de résider à l'étranger jusqu'à 12 mois avec la liberté de travailler temporairement et de parcourir le pays choisi. C'est une excellente opportunité pour améliorer la langue, financer son expérience et vivre une immersion culturelle totale.",
+        "p2": "Depuis Allée France, nous vous guidons à chaque étape : planification, dossier, rendez-vous consulaires et installation à l'arrivée. Nous nous concentrons sur l'anticipation des problèmes et le renforcement de votre dossier pour que vous puissiez profiter des quotas sans accrocs.",
+        "quotaBody": "La demande dépasse rapidement les quotas, il est donc essentiel de préparer la documentation à l'avance et d'arriver le jour d'ouverture avec tout prêt. Notre équipe vous aide à vérifier chaque détail."
+      },
+      "benefits": {
+        "title": "Avantages du Working Holiday français",
+        "items": [
+          {
+            "title": "Vivez un an dans la destination choisie",
+            "description": "Résidez jusqu'à 12 mois avec la liberté de travailler, voyager et acquis de l'expérience internationale."
+          },
+          {
+            "title": "Travailler légalement",
+            "description": "Vous pouvez occuper des emplois temporaires pour financer votre séjour et enrichir votre CV à l'international."
+          },
+          {
+            "title": "Explorer de nouveaux pays",
+            "description": "Combinez travail et tourisme pour découvrir de nouvelles cultures tout en soutenant votre voyage."
+          },
+          {
+            "title": "Immersion culturelle réelle",
+            "description": "Améliorez la langue, faites des amis internationaux et vivez le quotidien local."
+          }
+        ]
+      },
+      "requirements": {
+        "title": "Conditions de candidature",
+        "intro": "Préparer la demande à l'avance est essentiel pour accrocher un quota annuel. Ce sont les conditions que nous examinons ensemble avant de soumettre votre dossier :",
+        "academicAlert": "Nécessite des études supérieures et/ou la maîtrise de l'anglais."
+      },
+      "checklist": {
+        "title": "Checklist express",
+        "description": "Nous organisons votre documentation par blocs pour que vous avanciez clairement et évitiez les refus pour des détails formels.",
+        "items": [
+          "Plan de voyage et villes cibles (travail, hébergement temporaire, transport).",
+          "Calendrier personnalisé pour savoir quoi soumettre à chaque étape.",
+          "Liste de documents traduits, apostillés ou certifiés.",
+          "Vérification des assurances et couvertures exigées par le consulat."
+        ],
+        "keyDatesTitle": "Dates importantes"
+      },
+      "insurance": {
+        "eyebrow": "Assurance obligatoire",
+        "title": "Souscrivez votre assurance VVT pour {country}",
+        "noVisaNote": "Sans assurance valide, le consulat n'accepte pas le dossier et ne délivre pas le visa.",
+        "partnerEyebrow": "Partenaire assureur",
+        "ctaButton": "Obtenir un devis",
+        "ctaNote": "Nous fournissons le certificat en quelques minutes, prêt à joindre à France-Visas ou à imprimer avec votre OFII. Nous gérons également les extensions ou remboursements si vous changez vos dates.",
+        "features": [
+          {
+            "title": "Couverture Schengen 24h/24",
+            "description": "Soins médicaux, hospitalisation et rapatriement avec soutien international pendant le programme."
+          },
+          {
+            "title": "Documentation consulaire",
+            "description": "Certificat officiel et lettre personnalisée à présenter à votre consulat ou sur la plateforme officielle."
+          },
+          {
+            "title": "Assistance complète",
+            "description": "Comprend les urgences médicales, accidents, télémédecine et accompagnement pour votre installation en France."
+          },
+          {
+            "title": "Couverture voyage étendue",
+            "description": "Protection dès le départ de votre pays, dans tout l'Espace Schengen, avec option de prolongation si vous décidez de rester."
+          }
+        ]
+      },
+      "steps": {
+        "title": "Processus étape par étape",
+        "items": [
+          {
+            "title": "Préparation",
+            "description": "Nous construisons votre stratégie : examen des conditions, sélection des dates et checklist personnalisée de documents."
+          },
+          {
+            "title": "Documentation",
+            "description": "Nous rassemblons les certificats, traductions, relevés bancaires, assurance santé et lettres de motivation."
+          },
+          {
+            "title": "Demande",
+            "description": "Nous prenons le rendez-vous, remplissons votre formulaire et vous aidons à soumettre le dossier complet au consulat."
+          },
+          {
+            "title": "Voyage et arrivée",
+            "description": "Nous vous guidons dans l'activation de l'assurance, les démarches initiales, l'ouverture de compte et les conseils pour vous installer en France."
+          }
+        ]
+      },
+      "ctaMid": {
+        "title": "Prêt à postuler ?",
+        "description": "Nous vous aidons à préparer un dossier compétitif, à respecter les délais officiels et à atterrir en France avec un plan clair pour le logement, le travail temporaire et les démarches d'installation, peu importe votre départ depuis {country}.",
+        "ctaPrimary": "Démarrer mon Working Holiday",
+        "ctaSecondary": "Parler à l'équipe"
+      },
+      "documents": {
+        "title": "Documentation essentielle du dossier",
+        "description": "Chaque document doit respecter un format, une langue et une validité spécifiques. Nous vous fournissons des modèles et gabarits pour une présentation claire et professionnelle.",
+        "items": [
+          "Passeport valide et formulaires officiels remplis.",
+          "CV et lettre de motivation selon la destination.",
+          "Justificatif de fonds (relevés bancaires ou certificats).",
+          "Réservation de vol ou fonds équivalents.",
+          "Assurance santé internationale pour toute la durée du séjour.",
+          "Casier judiciaire apostillé."
+        ],
+        "consularTipsTitle": "Conseils rapides pour votre rendez-vous consulaire",
+        "consularTips": [
+          "Organisez le dossier selon la checklist officielle. Nous utilisons des intercalaires pour accélérer la révision.",
+          "Ayez des copies imprimées et numériques sur une clé USB ou dans le cloud.",
+          "Préparez des réponses claires sur votre plan de voyage, hébergement, fonds et objectifs.",
+          "Arrivez au moins 20 minutes à l'avance et vérifiez que votre assurance est imprimée en français ou en anglais."
+        ],
+        "countryNotesTitle": "Notes spécifiques pour {country}"
+      },
+      "destinations": {
+        "eyebrow": "Destinations pour {country}",
+        "title": "Choisissez votre prochaine destination",
+        "description": "Ce sont les programmes Working Holiday disponibles pour votre passeport. Nous vous aidons à comparer les conditions et les délais réels.",
+        "activePrograms": "Programmes actifs",
+        "upcoming": "Bientôt disponible"
+      },
+      "faqSection": {
+        "title": "Questions fréquentes sur le Working Holiday",
+        "description": "Nous répondons aux questions clés sur les conditions, les assurances, le travail et les erreurs fréquentes dans la candidature."
+      },
+      "ctaFinal": {
+        "title": "Quel visa vous convient ?",
+        "description": "Contactez-nous pour un conseil personnalisé et découvrez la meilleure option selon vos projets, vos délais et votre pays d'origine.",
+        "ctaPrimary": "Envoyez-nous un WhatsApp",
+        "ctaSecondary": "Voir plus de services"
+      },
+      "countryGrid": {
+        "eyebrow": "Sélectionnez votre pays",
+        "title": "Accédez directement au guide par pays",
+        "quotaFallback": "Quota officiel"
+      }
+    }
+  },
+  "WorkingHolidayCountries": {
+    "global": {
+      "heroTitle": "Working Holiday Global pour l'Amérique Latine",
+      "heroSubtitle": "Vue d'ensemble du programme Working Holiday et des étapes clés pour les candidats de toute la région.",
+      "quotaText": "Programmes actifs 2025/2026",
+      "requisitos": [
+        "Avoir entre 18 et 35 ans selon la destination.",
+        "Passeport valide pendant toute la durée du séjour.",
+        "Fonds disponibles pour les dépenses initiales et un billet de retour.",
+        "Assurance santé internationale valide pour toute la durée.",
+        "Absence de casier judiciaire."
+      ],
+      "insuranceNote": "Nous proposons l'assurance exigée par les consulats et les programmes Working Holiday, avec émission immédiate et certificat pour votre dossier.",
+      "name": "Amérique Latine"
+    },
+    "ar": {
+      "heroTitle": "Working Holiday pour les Argentins",
+      "heroSubtitle": "Accédez à plus de 15 destinations officielles. Nous vous accompagnons dans le processus de candidature pour la France, l'Australie, la Nouvelle-Zélande et bien plus.",
+      "quotaText": "Plus de 15 accords en vigueur",
+      "destinations": [
+        "France",
+        "Australie",
+        "Nouvelle-Zélande",
+        "Allemagne",
+        "Irlande",
+        "Danemark",
+        "Suède",
+        "Portugal",
+        "Japon",
+        "Corée du Sud",
+        "Pologne",
+        "Autriche",
+        "Hongrie",
+        "République Tchèque",
+        "Norvège (Bientôt)"
+      ],
+      "requisitos": [
+        "Avoir entre 18 et 30 ans (certaines destinations jusqu'à 35).",
+        "Passeport argentin valide.",
+        "Justificatif de fonds (environ USD 2 500 - 3 000).",
+        "Assurance voyage obligatoire pour 12 mois.",
+        "Absence de casier judiciaire."
+      ],
+      "insuranceNote": "Pour les Argentins, l'assurance doit couvrir les frais médicaux, l'hospitalisation et le rapatriement pour toute la durée du séjour (12 mois).",
+      "keyDates": [
+        "Australie : Ouverture le 1er juillet",
+        "Nouvelle-Zélande : Septembre (date variable)"
+      ],
+      "name": "Argentine"
+    },
+    "cl": {
+      "heroTitle": "Working Holiday pour les Chiliens",
+      "heroSubtitle": "Votre passeport vous ouvre les portes de l'Europe, de l'Océanie et de l'Amérique du Nord. Profitez des accords exclusifs avec le Canada et l'Alliance du Pacifique.",
+      "quotaText": "18 Accords en vigueur",
+      "destinations": [
+        "Australie",
+        "Nouvelle-Zélande",
+        "Canada (EIC)",
+        "France",
+        "Allemagne",
+        "Irlande",
+        "Suède",
+        "Danemark",
+        "Autriche",
+        "Portugal",
+        "République Tchèque",
+        "Hongrie",
+        "Pologne",
+        "Luxembourg",
+        "Corée du Sud",
+        "Japon",
+        "Alliance du Pacifique (Mexique/Col/Pérou)"
+      ],
+      "requisitos": [
+        "Âge entre 18 et 30 ans (Canada/NZ/Hongrie jusqu'à 35).",
+        "Passeport chilien valide.",
+        "Assurance santé internationale obligatoire.",
+        "Billet de retour ou fonds pour l'acheter."
+      ],
+      "insuranceNote": "Le Chili exige une couverture complète santé et rapatriement. Sans ce certificat, le visa peut être refusé.",
+      "keyDates": [
+        "Canada EIC : Rondes d'invitation tout au long de l'année",
+        "Nouvelle-Zélande : Octobre"
+      ],
+      "name": "Chili"
+    },
+    "uy": {
+      "heroTitle": "Working Holiday pour les Uruguayens",
+      "heroSubtitle": "Vivez à l'étranger avec votre passeport uruguayen. Accédez au visa exclusif du Royaume-Uni et d'autres destinations de premier plan.",
+      "quotaText": "9 Destinations disponibles",
+      "destinations": [
+        "Royaume-Uni (Youth Mobility)",
+        "Australie",
+        "Nouvelle-Zélande",
+        "France",
+        "Allemagne",
+        "Suède",
+        "Irlande",
+        "Pays-Bas",
+        "Japon"
+      ],
+      "requisitos": [
+        "Âge 18-30 ans.",
+        "Passeport uruguayen valide.",
+        "Certificat de casier judiciaire.",
+        "Assurance voyage annuelle."
+      ],
+      "insuranceNote": "L'assurance est obligatoire pour activer votre visa à l'arrivée en Europe ou en Océanie.",
+      "keyDates": [
+        "Nouvelle-Zélande : Août",
+        "Royaume-Uni : Janvier et juillet (Tirage au sort)"
+      ],
+      "name": "Uruguay"
+    },
+    "mx": {
+      "heroTitle": "Working Holiday pour les Mexicains",
+      "heroSubtitle": "Explorez des options en Europe, en Amérique du Nord et en Asie. Votre opportunité de vivre en voyageant.",
+      "quotaText": "6 Accords principaux",
+      "destinations": [
+        "Canada (EIC)",
+        "France",
+        "Nouvelle-Zélande",
+        "Allemagne",
+        "Corée du Sud",
+        "Alliance du Pacifique (Chili/Col/Pérou)"
+      ],
+      "requisitos": [
+        "Âge 18-29/30 ans.",
+        "Passeport mexicain.",
+        "Justificatif de solvabilité financière.",
+        "Assurance maladie majeure."
+      ],
+      "insuranceNote": "Exigence impérative : Police d'assurance internationale avec rapatriement sanitaire.",
+      "keyDates": [
+        "Canada EIC : Ouverture en début d'année",
+        "France : Toute l'année"
+      ],
+      "name": "Mexique"
+    },
+    "ec": {
+      "heroTitle": "Working Holiday pour les Équatoriens",
+      "heroSubtitle": "L'Australie et la France ouvrent leurs portes. Préparez votre candidature avec des experts.",
+      "quotaText": "2 Destinations principales",
+      "destinations": [
+        "Australie",
+        "France"
+      ],
+      "requisitos": [
+        "Âge 18-30 ans.",
+        "Études supérieures en cours ou terminées.",
+        "Niveau d'anglais (Australie).",
+        "Lettre de soutien gouvernementale (Australie)."
+      ],
+      "insuranceNote": "Assurance santé internationale obligatoire pour la candidature consulaire.",
+      "keyDates": [
+        "Australie : Ouverture le 1er juillet"
+      ],
+      "name": "Équateur"
+    },
+    "co": {
+      "heroTitle": "Working Holiday pour les Colombiens",
+      "heroSubtitle": "La France est votre porte d'entrée en Europe. Profitez également de l'Alliance du Pacifique.",
+      "quotaText": "4 Destinations principales",
+      "destinations": [
+        "France",
+        "Chili",
+        "Mexique",
+        "Pérou"
+      ],
+      "requisitos": [
+        "Âge 18-30 ans.",
+        "Passeport colombien valide.",
+        "Certificat médical et casier judiciaire.",
+        "Billet de sortie ou fonds suffisants."
+      ],
+      "insuranceNote": "La France exige un certificat d'assurance médicale d'un an pour approuver le visa.",
+      "keyDates": [
+        "France : Renouvellement des quotas en janvier"
+      ],
+      "name": "Colombie"
+    },
+    "pe": {
+      "heroTitle": "Working Holiday pour les Péruviens",
+      "heroSubtitle": "L'Australie vous attend avec 1 500 places. Découvrez également vos options en Europe.",
+      "quotaText": "8 Destinations disponibles",
+      "destinations": [
+        "Australie",
+        "France",
+        "Nouvelle-Zélande",
+        "Portugal",
+        "République Tchèque",
+        "Hongrie",
+        "Pologne",
+        "Alliance du Pacifique"
+      ],
+      "requisitos": [
+        "Âge 18-30 ans.",
+        "Études tertiaires/universitaires (obligatoire pour Australie/NZ).",
+        "Niveau d'anglais fonctionnel (Australie).",
+        "Assurance santé internationale."
+      ],
+      "insuranceNote": "Votre assurance doit couvrir les 365 jours de votre visa, sans exception.",
+      "keyDates": [
+        "Australie : Ouverture le 1er juillet",
+        "Nouvelle-Zélande : Date variable"
+      ],
+      "name": "Pérou"
+    }
+  },
+  "NotFound": {
+    "title": "Nous n'avons pas trouvé la page que vous cherchez",
+    "description": "Le lien est peut-être cassé ou le contenu a été déplacé. Mais nous sommes prêts à vous aider à poursuivre votre projet d'expatriation en France.",
+    "backHome": "Retour à l'accueil",
+    "contactUs": "Aller au contact",
+    "helpTitle": "Pouvons-nous vous aider à reprendre votre projet migratoire ?",
+    "helpDescription": "Planifiez un appel gratuit et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
+    "scheduleBtn": "Planifier une consultation",
+    "whatsappBtn": "Envoyez-nous un WhatsApp"
+  }
+}
