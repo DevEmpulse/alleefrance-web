@@ -1,43 +1,51 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
 }
 
 
-export const metadata: Metadata = {
-  title: "Visa Estudiante Francia 2026: Campus France y Proceso Completo",
-  description:
-    "Guía completa para obtener tu visa de estudiante en Francia. Proceso Campus France, requisitos económicos, inscripción universitaria y acompañamiento experto para latinoamericanos.",
-  keywords: [
-    "visa estudiante francia",
-    "estudiar en francia",
-    "campus france",
-    "visa estudiante requisitos",
-    "universidad francia extranjeros",
-    "VLS-TS estudiante",
-    "estudiar francés francia",
-    "beca francia latinoamericanos",
-  ],
-  openGraph: {
-    title: "Visa Estudiante Francia: Campus France y Proceso | Allée France",
-    description:
-      "Todo sobre la visa de estudiante para Francia. Campus France, requisitos y asesoría especializada.",
-    url: "https://alleefrance.com/servicios/visa-etudiant",
-    type: "website",
-    images: [
-      {
-        url: "/student-studying-in-paris.webp",
-        width: 1200,
-        height: 630,
-        alt: "Visa Estudiante Francia - Allée France",
-      },
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.visaEtudiant" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "visa estudiante francia",
+      "estudiar en francia",
+      "campus france",
+      "visa estudiante requisitos",
+      "universidad francia extranjeros",
+      "VLS-TS estudiante",
+      "estudiar francés francia",
+      "beca francia latinoamericanos",
     ],
-  },
-  alternates: {
-    canonical: "https://alleefrance.com/servicios/visa-etudiant",
-  },
-};
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://alleefrance.com/${locale}/servicios/visa-etudiant`,
+      type: "website",
+      images: [
+        {
+          url: "/student-studying-in-paris.webp",
+          width: 1200,
+          height: 630,
+          alt: "Visa Estudiante Francia - Allée France",
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://alleefrance.com/${locale}/servicios/visa-etudiant`,
+    },
+  };
+}
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

@@ -1,4 +1,42 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Allée France | Asesoría Migratoria Francia para Latinoamericanos",
+      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +700 casos exitosos. Acompañamiento integral desde LATAM. Consultá gratis."
+    },
+    "services": {
+      "title": "Servicios de Asesoría Migratoria Francia | Visas y Trámites",
+      "description": "Catálogo completo de servicios migratorios para Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday, Titre de Séjour, reagrupación familiar y más. +700 casos exitosos."
+    },
+    "blog": {
+      "title": "Blog de Migración a Francia | Guías, Visas y Consejos 2026",
+      "description": "Artículos y guías actualizadas sobre visas Francia: Working Holiday, Salarié, Saisonnier, Estudiante. Consejos de expertos para emigrar, trabajar y vivir en Francia."
+    },
+    "workingHoliday": {
+      "title": "Working Holiday Francia 2026 | Requisitos, Cupos y Asesoría",
+      "description": "Guía completa Working Holiday Francia para latinoamericanos. Requisitos actualizados, cupos por país y asesoría experta. ¡Viví y trabajá en Francia!"
+    },
+    "visasTrabajo": {
+      "title": "Visa de Trabajo Francia 2026: Salarié y Saisonnier | Guía Completa",
+      "description": "Guía completa Visa Salarié y Saisonnier Francia 2026. Requisitos, proceso ANEF, Métiers en Tension y tiempos. Asesoría profesional para trabajar legalmente en Francia."
+    },
+    "visaEtudiant": {
+      "title": "Visa Estudiante Francia 2026: Campus France y Proceso Completo",
+      "description": "Guía completa para obtener tu visa de estudiante en Francia. Proceso Campus France, requisitos económicos, inscripción universitaria y acompañamiento experto para latinoamericanos."
+    },
+    "titreDeSejour": {
+      "title": "Titre de Séjour Francia: Renovación y Solicitud | Guía 2026",
+      "description": "Todo sobre el Titre de Séjour en Francia: renovación, primera solicitud, tipos (Salarié, Étudiant, Saisonnier). Asesoría experta y acompañamiento en prefectura."
+    },
+    "privacy": {
+      "title": "Política de Privacidad | Allée France",
+      "description": "Política de privacidad de Allée France. Conozca cómo recopilamos, utilizamos y protegemos su información personal."
+    },
+    "terms": {
+      "title": "Términos y Condiciones | Allée France",
+      "description": "Términos y condiciones de uso de Allée France. Aspectos legales, responsabilidades y uso adecuado de la plataforma."
+    }
+  },
   "LocaleLayout": {
     "title": "Allée France",
     "description": "Asesoría migratoria especializada en Francia para latinoamericanos."
@@ -2655,7 +2693,9 @@
         "No contar con antecedentes penales."
       ],
       "insuranceNote": "Ofrecemos el seguro exigido por consulados y programas Working Holiday con emisión inmediata y certificado para tu dossier.",
-      "name": "Latinoamérica"
+      "name": "Latinoamérica",
+      "seoTitle": "Working Holiday Francia 2026 | Requisitos, Cupos y Asesoría",
+      "seoDescription": "Guía completa Working Holiday Francia para latinoamericanos. Requisitos actualizados, cupos por país y asesoría experta. ¡Viví y trabajá en Francia!"
     },
     "ar": {
       "heroTitle": "Working Holiday para Argentinos",
@@ -2690,7 +2730,9 @@
         "Australia: Apertura 1 de Julio",
         "Nueva Zelanda: Septiembre (Fecha variable)"
       ],
-      "name": "Argentina"
+      "name": "Argentina",
+      "seoTitle": "Working Holiday Francia Argentinos 2026: Requisitos y Guía",
+      "seoDescription": "Working Holiday Francia para argentinos: sin cupo anual, requisitos, fondos necesarios y proceso completo. +500 casos exitosos. Asesoría personalizada."
     },
     "cl": {
       "heroTitle": "Working Holiday para Chilenos",
@@ -2726,7 +2768,9 @@
         "Canadá IEC: Rondas de invitación todo el año",
         "Nueva Zelanda: Octubre"
       ],
-      "name": "Chile"
+      "name": "Chile",
+      "seoTitle": "Working Holiday Francia Chilenos 2026: Cupos y Requisitos",
+      "seoDescription": "Working Holiday Francia para chilenos: 400 cupos anuales, requisitos, documentación y fechas de apertura. Asesoría experta para asegurar tu lugar."
     },
     "uy": {
       "heroTitle": "Working Holiday para Uruguayos",
@@ -2754,7 +2798,9 @@
         "Nueva Zelanda: Agosto",
         "Reino Unido: Enero y Julio (Ballot)"
       ],
-      "name": "Uruguay"
+      "name": "Uruguay",
+      "seoTitle": "Working Holiday Francia Uruguayos 2026: Guía Completa",
+      "seoDescription": "Working Holiday Francia para uruguayos: requisitos, documentación y proceso paso a paso. Accedé también a Reino Unido y Australia."
     },
     "mx": {
       "heroTitle": "Working Holiday para Mexicanos",
@@ -2779,7 +2825,9 @@
         "Canadá IEC: Apertura a inicio de año",
         "Francia: Todo el año"
       ],
-      "name": "México"
+      "name": "México",
+      "seoTitle": "Working Holiday Francia Mexicanos 2026: Requisitos y Proceso",
+      "seoDescription": "Working Holiday Francia para mexicanos: requisitos actualizados, documentación y asesoría profesional. Tu oportunidad de vivir en Francia."
     },
     "ec": {
       "heroTitle": "Working Holiday para Ecuatorianos",
@@ -2799,7 +2847,9 @@
       "keyDates": [
         "Australia: Apertura 1 de Julio"
       ],
-      "name": "Ecuador"
+      "name": "Ecuador",
+      "seoTitle": "Working Holiday Francia Ecuatorianos 2026: Guía y Requisitos",
+      "seoDescription": "Working Holiday Francia y Australia para ecuatorianos: requisitos específicos, nivel de inglés y proceso de aplicación con expertos."
     },
     "co": {
       "heroTitle": "Working Holiday para Colombianos",
@@ -2821,7 +2871,9 @@
       "keyDates": [
         "Francia: Se renuevan cupos en Enero"
       ],
-      "name": "Colombia"
+      "name": "Colombia",
+      "seoTitle": "Working Holiday Francia Colombianos 2026: Cupos y Requisitos",
+      "seoDescription": "Working Holiday Francia para colombianos: 400 cupos, requisitos, fechas de apertura y acompañamiento profesional. Tu puerta a Europa."
     },
     "pe": {
       "heroTitle": "Working Holiday para Peruanos",
@@ -2848,7 +2900,9 @@
         "Australia: Apertura 1 de Julio",
         "Nueva Zelanda: Fecha variable"
       ],
-      "name": "Perú"
+      "name": "Perú",
+      "seoTitle": "Working Holiday Francia Peruanos 2026: Requisitos y Guía",
+      "seoDescription": "Working Holiday Francia y Australia para peruanos: 1.500 cupos Australia, requisitos y proceso completo con asesoría experta."
     }
   },
   "NotFound": {

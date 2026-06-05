@@ -1,35 +1,43 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
 }
 
 
-export const metadata: Metadata = {
-  title: "Titre de Séjour Francia: Renovación y Solicitud | Guía 2026",
-  description:
-    "Todo sobre el Titre de Séjour en Francia: renovación, primera solicitud, tipos (Salarié, Étudiant, Saisonnier). Asesoría experta y acompañamiento en prefectura.",
-  keywords: [
-    "titre de séjour francia",
-    "permiso residencia francia",
-    "renovar titre de séjour",
-    "carte de séjour",
-    "regularizar francia",
-    "prefectura francia",
-    "ANEF",
-    "récépissé francia",
-  ],
-  openGraph: {
-    title: "Titre de Séjour Francia: Renovación y Solicitud | Allée France",
-    description:
-      "Guía completa para obtener o renovar tu Titre de Séjour en Francia. Asesoría profesional y acompañamiento.",
-    url: "https://alleefrance.com/servicios/titre-de-sejour",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://alleefrance.com/servicios/titre-de-sejour",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.titreDeSejour" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "titre de séjour francia",
+      "permiso residencia francia",
+      "renovar titre de séjour",
+      "carte de séjour",
+      "regularizar francia",
+      "prefectura francia",
+      "ANEF",
+      "récépissé francia",
+    ],
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://alleefrance.com/${locale}/servicios/titre-de-sejour`,
+      type: "website",
+    },
+    alternates: {
+      canonical: `https://alleefrance.com/${locale}/servicios/titre-de-sejour`,
+    },
+  };
+}
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

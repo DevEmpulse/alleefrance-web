@@ -9,31 +9,38 @@ export function generateStaticParams() {
 }
 
 
-export const metadata: Metadata = {
-  title: "Blog de Migración a Francia | Guías, Visas y Consejos 2025",
-  description:
-    "Artículos y guías actualizadas sobre visas Francia: Working Holiday, Salarié, Saisonnier, Estudiante. Consejos de expertos para emigrar, trabajar y vivir en Francia.",
-  keywords: [
-    "blog migración francia",
-    "guía visa francia",
-    "consejos vivir francia",
-    "trabajar en francia",
-    "estudiar en francia",
-    "emigrar a francia",
-    "working holiday francia blog",
-    "visa salarié guía",
-  ],
-  openGraph: {
-    title: "Blog de Migración a Francia | Guías y Consejos | Allée France",
-    description:
-      "Artículos y guías completas sobre visas, migración y vida en Francia. Información actualizada por expertos.",
-    url: "https://alleefrance.com/blog",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://alleefrance.com/blog",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.blog" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "blog migración francia",
+      "guía visa francia",
+      "consejos vivir francia",
+      "trabajar en francia",
+      "estudiar en francia",
+      "emigrar a francia",
+      "working holiday francia blog",
+      "visa salarié guía",
+    ],
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://alleefrance.com/${locale}/blog`,
+      type: "website",
+    },
+    alternates: {
+      canonical: `https://alleefrance.com/${locale}/blog`,
+    },
+  };
+}
 
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;

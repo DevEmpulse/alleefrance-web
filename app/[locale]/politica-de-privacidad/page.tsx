@@ -1,11 +1,28 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import type { Metadata } from "next";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.privacy" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: {
+      canonical: `https://alleefrance.com/${locale}/politica-de-privacidad`,
+    },
+  };
+}
 
 export default async function PoliticaDePrivacidadPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

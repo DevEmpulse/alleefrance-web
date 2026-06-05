@@ -1,4 +1,42 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Allée France | French Immigration Advisory for Latin Americans",
+      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +700 successful cases. Comprehensive support from LATAM. Get a free consultation."
+    },
+    "services": {
+      "title": "French Immigration Advisory Services | Visas & Procedures",
+      "description": "Complete catalog of immigration services for France: Salarié, Saisonnier, Student, Working Holiday Visas, Titre de Séjour, family reunification, and more."
+    },
+    "blog": {
+      "title": "French Migration Blog | Guides, Visas & Tips 2026",
+      "description": "Updated articles and guides on French visas: Working Holiday, Salarié, Saisonnier, Student. Expert tips to emigrate, work, and live in France."
+    },
+    "workingHoliday": {
+      "title": "Working Holiday France 2026 | Requirements, Quotas & Advice",
+      "description": "Complete Working Holiday France guide for Latin Americans. Updated requirements, quotas by country, and expert advice. Live and work in France!"
+    },
+    "visasTrabajo": {
+      "title": "Work Visa France 2026: Salarié and Saisonnier | Complete Guide",
+      "description": "Complete guide for Salarié and Saisonnier Visas in France 2026. Requirements, ANEF process, Métiers en Tension, and processing times. Professional advice."
+    },
+    "visaEtudiant": {
+      "title": "Student Visa France 2026: Campus France & Complete Process",
+      "description": "Complete guide to obtain your student visa for France. Campus France process, financial requirements, university enrollment, and expert support."
+    },
+    "titreDeSejour": {
+      "title": "Titre de Séjour France: Renewal & Application | 2026 Guide",
+      "description": "Everything about the Titre de Séjour in France: renewal, first-time application, types (Salarié, Étudiant, Saisonnier). Expert advice and prefecture support."
+    },
+    "privacy": {
+      "title": "Privacy Policy | Allée France",
+      "description": "Privacy policy of Allée France. Learn how we collect, use, and protect your personal information."
+    },
+    "terms": {
+      "title": "Terms and Conditions | Allée France",
+      "description": "Terms and conditions of use for Allée France. Legal aspects, responsibilities, and proper use of the platform."
+    }
+  },
   "LocaleLayout": {
     "title": "Allée France",
     "description": "Specialized immigration consultancy in France for Latin Americans."
@@ -2655,7 +2693,9 @@
         "No criminal record."
       ],
       "insuranceNote": "We offer the insurance required by consulates and Working Holiday programs, with immediate issuance and a certificate for your dossier.",
-      "name": "Latin America"
+      "name": "Latin America",
+      "seoTitle": "Working Holiday France 2026 | Requirements, Quotas & Advice",
+      "seoDescription": "Complete Working Holiday France guide for Latin Americans. Updated requirements, quotas by country, and expert advice. Live and work in France!"
     },
     "ar": {
       "heroTitle": "Working Holiday for Argentinians",
@@ -2690,7 +2730,9 @@
         "Australia: Opening July 1st",
         "New Zealand: September (Variable date)"
       ],
-      "name": "Argentina"
+      "name": "Argentina",
+      "seoTitle": "Working Holiday France Argentinians 2026: Requirements and Guide",
+      "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +500 successful cases. Personalized advisory."
     },
     "cl": {
       "heroTitle": "Working Holiday for Chileans",
@@ -2726,7 +2768,9 @@
         "Canada IEC: Invitation rounds throughout the year",
         "New Zealand: October"
       ],
-      "name": "Chile"
+      "name": "Chile",
+      "seoTitle": "Working Holiday France Chileans 2026: Quotas & Requirements",
+      "seoDescription": "Working Holiday France for Chileans: 400 annual spots, requirements, documents, and opening dates. Expert advisory to secure your spot."
     },
     "uy": {
       "heroTitle": "Working Holiday for Uruguayans",
@@ -2754,7 +2798,9 @@
         "New Zealand: August",
         "United Kingdom: January and July (Ballot)"
       ],
-      "name": "Uruguay"
+      "name": "Uruguay",
+      "seoTitle": "Working Holiday France Uruguayans 2026: Complete Guide",
+      "seoDescription": "Working Holiday France for Uruguayans: requirements, documents, and step-by-step process. Also access UK and Australia options."
     },
     "mx": {
       "heroTitle": "Working Holiday for Mexicans",
@@ -2779,7 +2825,9 @@
         "Canada IEC: Opening at the start of the year",
         "France: Year-round"
       ],
-      "name": "Mexico"
+      "name": "Mexico",
+      "seoTitle": "Working Holiday France Mexicans 2026: Requirements and Process",
+      "seoDescription": "Working Holiday France for Mexicans: updated requirements, documentation, and professional advisory. Your opportunity to live in France."
     },
     "ec": {
       "heroTitle": "Working Holiday for Ecuadorians",
@@ -2799,7 +2847,9 @@
       "keyDates": [
         "Australia: Opening July 1st"
       ],
-      "name": "Ecuador"
+      "name": "Ecuador",
+      "seoTitle": "Working Holiday France Ecuadorians 2026: Guide and Requirements",
+      "seoDescription": "Working Holiday France and Australia for Ecuadorians: specific requirements, English level, and application process with experts."
     },
     "co": {
       "heroTitle": "Working Holiday for Colombians",
@@ -2821,7 +2871,9 @@
       "keyDates": [
         "France: Quotas renewed in January"
       ],
-      "name": "Colombia"
+      "name": "Colombia",
+      "seoTitle": "Working Holiday France Colombians 2026: Quotas and Requirements",
+      "seoDescription": "Working Holiday France for Colombians: 400 spots, requirements, opening dates, and professional support. Your gateway to Europe."
     },
     "pe": {
       "heroTitle": "Working Holiday for Peruvians",
@@ -2848,7 +2900,9 @@
         "Australia: Opening July 1st",
         "New Zealand: Variable date"
       ],
-      "name": "Peru"
+      "name": "Peru",
+      "seoTitle": "Working Holiday France Peruvians 2026: Requirements and Guide",
+      "seoDescription": "Working Holiday France and Australia for Peruvians: 1,500 Australia spots, requirements, and full process with expert advisory."
     }
   },
   "NotFound": {

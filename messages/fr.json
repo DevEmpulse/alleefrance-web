@@ -1,4 +1,42 @@
 {
+  "Metadata": {
+    "home": {
+      "title": "Allée France | Conseil en Immigration France pour Latino-Américains",
+      "description": "Experts en visas France : Salarié, Saisonnier, Working Holiday et Étudiant. +700 cas de réussite. Accompagnement complet depuis l'Amérique latine."
+    },
+    "services": {
+      "title": "Services de Conseil en Immigration France | Visas & Démarches",
+      "description": "Catalogue complet des services d'immigration pour la France : Visa Salarié, Saisonnier, Étudiant, Working Holiday, Titre de Séjour, regroupement familial, etc."
+    },
+    "blog": {
+      "title": "Blog de l'Immigration en France | Guides, Visas & Conseils 2026",
+      "description": "Articles et guides mis à jour sur les visas pour la France : Working Holiday, Salarié, Saisonnier, Étudiant. Conseils d'experts pour émigrer, travailler et vivre en France."
+    },
+    "workingHoliday": {
+      "title": "Working Holiday France 2026 | Conditions, Quotas & Conseil",
+      "description": "Guide complet du Working Holiday France pour les Latino-Américains. Conditions mises à jour, quotas par pays et conseil d'experts. Vivez et travaillez en France !"
+    },
+    "visasTrabajo": {
+      "title": "Visa de Travail France 2026 : Salarié et Saisonnier | Guide Complet",
+      "description": "Guide complet des visas Salarié et Saisonnier en France 2026. Conditions, processus ANEF, Métiers en Tension et délais. Conseil professionnel pour travailler en France."
+    },
+    "visaEtudiant": {
+      "title": "Visa Étudiant France 2026 : Campus France & Processus Complet",
+      "description": "Guide complet pour obtenir votre visa d'étudiant pour la France. Processus Campus France, ressources financières requises, inscription universitaire et soutien d'experts."
+    },
+    "titreDeSejour": {
+      "title": "Titre de Séjour France : Renouvellement & Demande | Guide 2026",
+      "description": "Tout sur le Titre de Séjour en France : renouvellement, première demande, types (Salarié, Étudiant, Saisonnier). Conseil d'experts et accompagnement en préfecture."
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité | Allée France",
+      "description": "Politique de confidentialité d'Allée France. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles."
+    },
+    "terms": {
+      "title": "Conditions Générales d'Utilisation | Allée France",
+      "description": "Conditions générales d'utilisation d'Allée France. Aspects légaux, responsabilités et utilisation appropriée de la plateforme."
+    }
+  },
   "LocaleLayout": {
     "title": "Allée France",
     "description": "Conseil en immigration spécialisé en France pour les Latino-Américains."
@@ -2655,7 +2693,9 @@
         "Absence de casier judiciaire."
       ],
       "insuranceNote": "Nous proposons l'assurance exigée par les consulats et les programmes Working Holiday, avec émission immédiate et certificat pour votre dossier.",
-      "name": "Amérique Latine"
+      "name": "Amérique Latine",
+      "seoTitle": "Working Holiday France 2026 | Conditions, Quotas & Conseil",
+      "seoDescription": "Guide complet Working Holiday France pour les Latino-Américains. Conditions, quotas par pays et conseil d'experts. Partez en France !"
     },
     "ar": {
       "heroTitle": "Working Holiday pour les Argentins",
@@ -2690,7 +2730,9 @@
         "Australie : Ouverture le 1er juillet",
         "Nouvelle-Zélande : Septembre (date variable)"
       ],
-      "name": "Argentine"
+      "name": "Argentine",
+      "seoTitle": "Working Holiday France Argentins 2026 : Conditions et Guide",
+      "seoDescription": "Working Holiday France pour les Argentins : conditions, justificatif de fonds et processus complet. +500 cas de réussite. Conseil personnalisé."
     },
     "cl": {
       "heroTitle": "Working Holiday pour les Chiliens",
@@ -2726,7 +2768,9 @@
         "Canada EIC : Rondes d'invitation tout au long de l'année",
         "Nouvelle-Zélande : Octobre"
       ],
-      "name": "Chili"
+      "name": "Chili",
+      "seoTitle": "Working Holiday France Chiliens 2026 : Quotas & Conditions",
+      "seoDescription": "Working Holiday France pour les Chiliens : 400 places annuelles, conditions, documentation et dates d'ouverture. Conseil d'experts."
     },
     "uy": {
       "heroTitle": "Working Holiday pour les Uruguayens",
@@ -2754,7 +2798,9 @@
         "Nouvelle-Zélande : Août",
         "Royaume-Uni : Janvier et juillet (Tirage au sort)"
       ],
-      "name": "Uruguay"
+      "name": "Uruguay",
+      "seoTitle": "Working Holiday France Uruguayens 2026 : Guide Complet",
+      "seoDescription": "Working Holiday France pour les Uruguayens : conditions, documents et processus étape par étape. Options également pour le Royaume-Uni et l'Australie."
     },
     "mx": {
       "heroTitle": "Working Holiday pour les Mexicains",
@@ -2779,7 +2825,9 @@
         "Canada EIC : Ouverture en début d'année",
         "France : Toute l'année"
       ],
-      "name": "Mexique"
+      "name": "Mexique",
+      "seoTitle": "Working Holiday France Mexicains 2026 : Conditions et Processus",
+      "seoDescription": "Working Holiday France pour les Mexicains : conditions mises à jour, documentation et conseil professionnel. Votre opportunité de vivre en France."
     },
     "ec": {
       "heroTitle": "Working Holiday pour les Équatoriens",
@@ -2799,7 +2847,9 @@
       "keyDates": [
         "Australie : Ouverture le 1er juillet"
       ],
-      "name": "Équateur"
+      "name": "Équateur",
+      "seoTitle": "Working Holiday France Équatoriens 2026 : Guide et Conditions",
+      "seoDescription": "Working Holiday France et Australie pour les Équatoriens : conditions spécifiques, niveau d'anglais et processus de candidature avec des experts."
     },
     "co": {
       "heroTitle": "Working Holiday pour les Colombiens",
@@ -2821,7 +2871,9 @@
       "keyDates": [
         "France : Renouvellement des quotas en janvier"
       ],
-      "name": "Colombie"
+      "name": "Colombie",
+      "seoTitle": "Working Holiday France Colombiens 2026 : Quotas et Conditions",
+      "seoDescription": "Working Holiday France pour les Colombiens : 400 places, conditions, dates d'ouverture et accompagnement professionnel. Votre porte vers l'Europe."
     },
     "pe": {
       "heroTitle": "Working Holiday pour les Péruviens",
@@ -2848,7 +2900,9 @@
         "Australie : Ouverture le 1er juillet",
         "Nouvelle-Zélande : Date variable"
       ],
-      "name": "Pérou"
+      "name": "Pérou",
+      "seoTitle": "Working Holiday France Péruviens 2026 : Conditions et Guide",
+      "seoDescription": "Working Holiday France et Australie pour les Péruviens : 1 500 places Australie, conditions et processus complet avec conseil d'experts."
     }
   },
   "NotFound": {

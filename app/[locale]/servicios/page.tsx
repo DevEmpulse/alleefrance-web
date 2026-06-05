@@ -16,29 +16,36 @@ export function generateStaticParams() {
 }
 
 
-export const metadata: Metadata = {
-  title: "Servicios de Asesoría Migratoria Francia | Visas y Trámites",
-  description:
-    "Catálogo completo de servicios migratorios para Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday, Titre de Séjour, reagrupación familiar y más. +700 casos exitosos.",
-  keywords: [
-    "servicios migratorios francia",
-    "asesoría visa francia",
-    "trámites migratorios francia",
-    "gestoría visa francia",
-    "visa trabajo francia",
-    "visa estudiante francia",
-  ],
-  openGraph: {
-    title: "Servicios de Asesoría Migratoria Francia | Allée France",
-    description:
-      "Catálogo completo de servicios migratorios para Francia. Visa de trabajo, estudios y residencia con expertos.",
-    url: "https://alleefrance.com/servicios",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://alleefrance.com/servicios",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.services" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "servicios migratorios francia",
+      "asesoría visa francia",
+      "trámites migratorios francia",
+      "gestoría visa francia",
+      "visa trabajo francia",
+      "visa estudiante francia",
+    ],
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://alleefrance.com/${locale}/servicios`,
+      type: "website",
+    },
+    alternates: {
+      canonical: `https://alleefrance.com/${locale}/servicios`,
+    },
+  };
+}
 
 export default async function ServiciosPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;

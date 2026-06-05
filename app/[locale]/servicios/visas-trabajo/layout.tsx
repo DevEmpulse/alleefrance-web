@@ -1,45 +1,53 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
 }
 
 
-export const metadata: Metadata = {
-  title: "Visa de Trabajo Francia 2026: Salarié y Saisonnier | Guía Completa",
-  description:
-    "Guía completa Visa Salarié y Saisonnier Francia 2026. Requisitos, proceso ANEF, Métiers en Tension y tiempos. Asesoría profesional para trabajar legalmente en Francia.",
-  keywords: [
-    "visa salarié francia",
-    "visa saisonnier francia",
-    "trabajar en francia",
-    "visa trabajo francia",
-    "contrato trabajo francia",
-    "autorización trabajo francia",
-    "ANEF",
-    "DREETS",
-    "métiers en tension",
-    "trabajo estacional francia",
-  ],
-  openGraph: {
-    title: "Visa de Trabajo Francia: Salarié y Saisonnier | Allée France",
-    description:
-      "Guía completa para obtener tu visa de trabajo en Francia. Proceso ANEF, requisitos y acompañamiento profesional.",
-    url: "https://alleefrance.com/servicios/visas-trabajo",
-    type: "website",
-    images: [
-      {
-        url: "/visas-trabajo-bg.webp",
-        width: 1200,
-        height: 630,
-        alt: "Visa de Trabajo Francia - Allée France",
-      },
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Metadata.visasTrabajo" });
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: [
+      "visa salarié francia",
+      "visa saisonnier francia",
+      "trabajar en francia",
+      "visa trabajo francia",
+      "contrato trabajo francia",
+      "autorización trabajo francia",
+      "ANEF",
+      "DREETS",
+      "métiers en tension",
+      "trabajo estacional francia",
     ],
-  },
-  alternates: {
-    canonical: "https://alleefrance.com/servicios/visas-trabajo",
-  },
-};
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      url: `https://alleefrance.com/${locale}/servicios/visas-trabajo`,
+      type: "website",
+      images: [
+        {
+          url: "/visas-trabajo-bg.webp",
+          width: 1200,
+          height: 630,
+          alt: "Visa de Trabajo Francia - Allée France",
+        },
+      ],
+    },
+    alternates: {
+      canonical: `https://alleefrance.com/${locale}/servicios/visas-trabajo`,
+    },
+  };
+}
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

@@ -1,4 +1,4 @@
-import { setRequestLocale } from "next-intl/server";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CountryProvider } from "@/components/country-provider";
@@ -29,42 +29,48 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: CountryPageProps): Promise<Metadata> {
-  const { country } = await params;
+  const { country, locale } = await params;
   const config = getWorkingHolidayCountryConfig(country);
 
   if (!config || config.code === "global") {
+    const tGlobal = await getTranslations({ locale, namespace: "WorkingHolidayCountries.global" });
     return {
-      title: WORKING_HOLIDAY_COUNTRIES.global.seoTitle,
-      description: WORKING_HOLIDAY_COUNTRIES.global.seoDescription,
+      title: tGlobal("seoTitle"),
+      description: tGlobal("seoDescription"),
     };
   }
 
+  const tCountry = await getTranslations({ locale, namespace: `WorkingHolidayCountries.${config.code}` });
+  const countryName = tCountry("name");
+  const seoTitle = tCountry("seoTitle");
+  const seoDescription = tCountry("seoDescription");
+
   return {
-    title: config.seoTitle,
-    description: config.seoDescription,
+    title: seoTitle,
+    description: seoDescription,
     keywords: [
-      `working holiday francia ${config.name.toLowerCase()}`,
-      `visa francia ${config.name.toLowerCase()}`,
-      `trabajar en francia ${config.name.toLowerCase()}`,
+      `working holiday francia ${countryName.toLowerCase()}`,
+      `visa francia ${countryName.toLowerCase()}`,
+      `trabajar en francia ${countryName.toLowerCase()}`,
       "working holiday",
       "visa vacaciones trabajo francia",
     ],
     openGraph: {
-      title: config.seoTitle,
-      description: config.seoDescription,
-      url: `https://alleefrance.com/working-holiday/${config.code}`,
+      title: seoTitle,
+      description: seoDescription,
+      url: `https://alleefrance.com/${locale}/working-holiday/${config.code}`,
       type: "website",
       images: [
         {
           url: "/hero-lyon.webp",
           width: 1200,
           height: 630,
-          alt: `Working Holiday Francia para ${config.name}`,
+          alt: `Working Holiday Francia para ${countryName}`,
         },
       ],
     },
     alternates: {
-      canonical: `https://alleefrance.com/working-holiday/${config.code}`,
+      canonical: `https://alleefrance.com/${locale}/working-holiday/${config.code}`,
     },
   };
 }
