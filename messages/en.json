@@ -270,7 +270,7 @@
     },
     "services": {
       "title": "Services",
-      "work": "Work Visas",
+      "work": "Work",
       "student": "Student Visa",
       "wh": "Working Holiday"
     },
@@ -641,12 +641,21 @@
         "All",
         "Finance",
         "Connectivity",
-        "Work Visas",
+        "Work",
         "Working Holiday",
         "Student Visas",
         "Language & Culture"
       ],
       "posts": [
+        {
+          "title": "How to find a job in France from Latin America (without being there)",
+          "excerpt": "A clear strategy to find a French employer from across the world and start your visa process.",
+          "date": "12 June 2026",
+          "readTime": "9 min",
+          "image": "/conseguir-trabajo-francia.webp",
+          "category": "Work",
+          "slug": "conseguir-trabajo-francia-desde-latam"
+        },
         {
           "title": "Physical vs. Virtual Banks in France: Which is Best for Immigrants?",
           "excerpt": "Wise, Revolut, N26, Qonto or traditional bank: discover which one best suits your immigration situation in France.",
@@ -671,7 +680,7 @@
           "date": "January 15, 2026",
           "readTime": "9 min",
           "image": "/seasonal-worker-in-french-vineyard.webp",
-          "category": "Work Visas",
+          "category": "Work",
           "slug": "visa-saisonnier-salarie"
         },
         {
@@ -1311,6 +1320,73 @@
         "Include recommendation letters translated into French to strengthen your profile.",
         "Organize the dossier in the order requested by the consulate and bring extra copies."
       ]
+    },
+    "conseguir-trabajo-francia-desde-latam": {
+      "hero": {
+        "title": "How to find a job in France from Latin America (without being there)",
+        "subtitle": "Strategies and platforms to find an employer from your country and secure your Salarié or Saisonnier visa.",
+        "category": "Work"
+      },
+      "section1": {
+        "title": "Why it's important to have a job before traveling",
+        "p1": "One of the most common fears among those who want to emigrate to France is this: 'How do I get an employer if I'm on the other side of the world?' The good news is that it is completely possible, and there is a clear strategy to do so. At Allée France we have accompanied more than 700 people through this process, and in this article we share exactly how to approach it.",
+        "p2": "For the Salarié and Saisonnier visa, the employment contract with a French employer is the central pillar of the application. Without it, there is no visa. That is why getting a job from LATAM is not just an advantage: it is the mandatory first step in the labor migration process. In addition, arriving with guaranteed work allows you to plan your accommodation, your finances and your adaptation with much more peace of mind. It's not the same to arrive and improvise as it is to arrive with a concrete plan."
+      },
+      "plataformasTitle": "Platforms where to look for work in France",
+      "plataformas": [
+        {
+          "name": "France Travail (ex-Pôle Emploi)",
+          "text": "It's the official employment portal of the French government. It's in French, but has thousands of offers updated daily. You can register from abroad and apply online. Search by sector and region."
+        },
+        {
+          "name": "LinkedIn",
+          "text": "Many French employers, especially in gastronomy, tourism, construction, and technology, post on LinkedIn. Optimize your profile in French, indicate that you are looking for work in France and that you are available for a visa. Contact HR managers directly."
+        },
+        {
+          "name": "Indeed France",
+          "text": "indeed.fr is the largest job search engine in France. Filter by 'CDI', 'CDD', or 'saisonnier' according to the type of contract you need for your visa."
+        },
+        {
+          "name": "APEC and Cadreemploi",
+          "text": "For professional and executive profiles. They require an intermediate or advanced level of French."
+        },
+        {
+          "name": "Facebook and WhatsApp groups of the Latino community",
+          "text": "There are very active networks of Latin Americans in France where employers share informal vacancies. Many contracts for the Saisonnier visa arise this way."
+        }
+      ],
+      "sectoresTitle": "Sectors with the highest demand (Métiers en Tension)",
+      "sectoresText": "France officially has sectors with staff shortages, the so-called Métiers en Tension. Working in one of these sectors greatly simplifies the visa process because the employer does not need to publish the offer for 21 days on France Travail. The main ones are:",
+      "sectores": [
+        "Hospitality and catering (cook, waiter, receptionist, room manager)",
+        "Agriculture and grape harvesting (fruit, grape, flower harvesting)",
+        "Construction (bricklayer, painter, electrician, plumber)",
+        "Care of the elderly (life assistant, nursing)",
+        "Transport and logistics"
+      ],
+      "sectoresConclusion": "If your trade qualifies as a Métier en Tension in the region where you will work, the process is faster and simpler.",
+      "cvTitle": "How to prepare your CV for the French market",
+      "cvText": "The CV in France follows a different format from the Latin American one. Some key points:",
+      "cvList": [
+        "Maximum 1 page (2 if you have more than 10 years of experience).",
+        "Photo is optional, but very common to include.",
+        "No information such as marital status, number of children, or ID.",
+        "Reverse chronological format: most recent first.",
+        "Written entirely in French, even if the employer speaks Spanish."
+      ],
+      "cvConclusion": "The required level of French varies by sector. In agriculture or seasonal work, you can get by with a basic level. In gastronomy and care, an intermediate level (B1) opens more doors.",
+      "procesoTitle": "The process once you find an employer",
+      "procesoText": "When a French employer agrees to hire you, the formal visa process begins:",
+      "procesoList": [
+        "The employer initiates the procedure on the ANEF platform (Ministry of the Interior).",
+        "DREETS verifies the offer and grants the work authorization.",
+        "With the authorization, the employer sends you the necessary documentation.",
+        "You apply for the visa at the French consulate in your country.",
+        "Once approved, you can fly to France and start working."
+      ],
+      "procesoConclusion": "The total time from the start of the procedure until you travel is usually 6 to 12 weeks, depending on the region and the type of visa.",
+      "asesoriaTitle": "The role of migration advice in this process",
+      "asesoriaText": "Many errors in the file occur in the coordination between the applicant and the employer: incomplete documents, miscalculated deadlines, or incorrect formats. Allée France accompanies both the worker and the employer so that the process is clean and without delays."
     }
   },
   "FAQData": {

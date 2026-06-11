@@ -182,7 +182,7 @@
   "FAQHome": {
     "title": "Preguntas Frecuentes (FAQ)",
     "whTitle": "Preguntas frecuentes sobre Working Holiday",
-    "workTitle": "Preguntas Frecuentes: Visas de Trabajo",
+    "workTitle": "Preguntas Frecuentes: Trabajo",
     "studentTitle": "Preguntas Frecuentes: Visa de Estudiante",
     "tdsTitle": "Preguntas Frecuentes: Titre de Séjour",
     "whDescCountry": "Resolvemos dudas clave sobre requisitos, seguros, trabajo y errores frecuentes en la postulación.",
@@ -270,7 +270,7 @@
     },
     "services": {
       "title": "Servicios",
-      "work": "Visas de Trabajo",
+      "work": "Trabajo",
       "student": "Visa Étudiant",
       "wh": "Working Holiday"
     },
@@ -641,12 +641,21 @@
         "Todos",
         "Finanzas",
         "Conectividad",
-        "Visas de Trabajo",
+        "Trabajo",
         "Working Holiday",
         "Visas de Estudiante",
         "Idioma y Cultura"
       ],
       "posts": [
+        {
+          "title": "Cómo conseguir trabajo en Francia desde América Latina (sin estar allá)",
+          "excerpt": "Una estrategia clara para conseguir un empleador francés estando al otro lado del mundo y empezar tu proceso de visa.",
+          "date": "12 Junio 2026",
+          "readTime": "9 min",
+          "image": "/conseguir-trabajo-francia.webp",
+          "category": "Trabajo",
+          "slug": "conseguir-trabajo-francia-desde-latam"
+        },
         {
           "title": "Bancos físicos vs bancos virtuales en Francia: ¿cuál es la mejor opción para inmigrantes?",
           "excerpt": "Wise, Revolut, N26, Qonto o banco tradicional: descubrí cuál se adapta mejor a tu situación migratoria en Francia.",
@@ -671,7 +680,7 @@
           "date": "15 Enero 2026",
           "readTime": "9 min",
           "image": "/seasonal-worker-in-french-vineyard.webp",
-          "category": "Visas de Trabajo",
+          "category": "Trabajo",
           "slug": "visa-saisonnier-salarie"
         },
         {
@@ -1311,6 +1320,73 @@
         "Incluí cartas de recomendación traducidas al francés para fortalecer tu perfil.",
         "Organiza el dossier en el orden que pide el consulado y llevá copias extra."
       ]
+    },
+    "conseguir-trabajo-francia-desde-latam": {
+      "hero": {
+        "title": "Cómo conseguir trabajo en Francia desde América Latina (sin estar allá)",
+        "subtitle": "Estrategias y plataformas para encontrar empleador desde tu país y asegurar tu visa Salarié o Saisonnier.",
+        "category": "Trabajo"
+      },
+      "section1": {
+        "title": "Por qué es importante tener trabajo antes de viajar",
+        "p1": "Uno de los miedos más comunes entre quienes quieren emigrar a Francia es este: '¿cómo consigo un empleador si estoy al otro lado del mundo?' La buena noticia es que es completamente posible, y hay una estrategia clara para hacerlo. En Allée France hemos acompañado a más de 700 personas a través de este proceso, y en este artículo te compartimos exactamente cómo abordarlo.",
+        "p2": "Para la visa Salarié y Saisonnier, el contrato de trabajo con un empleador francés es el pilar central del expediente. Sin él, no hay visa. Por eso, conseguir empleo desde LATAM no es solo una ventaja: es el primer paso obligatorio en el proceso migratorio laboral. Además, llegar con trabajo garantizado te permite planificar tu alojamiento, tus finanzas y tu adaptación con mucha más tranquilidad. No es lo mismo llegar a improvisar que llegar con un plan concreto."
+      },
+      "plataformasTitle": "Las plataformas donde buscar trabajo en Francia",
+      "plataformas": [
+        {
+          "name": "France Travail (ex-Pôle Emploi)",
+          "text": "Es el portal oficial de empleo del gobierno francés. Está en francés, pero tiene miles de ofertas actualizadas diariamente. Podés registrarte desde el exterior y aplicar en línea. Buscá por sector y región."
+        },
+        {
+          "name": "LinkedIn",
+          "text": "Muchos empleadores franceses, especialmente en gastronomía, turismo, construcción y tecnología, publican en LinkedIn. Optimizá tu perfil en francés, indicá que buscás trabajo en Francia y que contás con disponibilidad para visa. Contactá directamente a los responsables de RRHH."
+        },
+        {
+          "name": "Indeed France",
+          "text": "indeed.fr es el motor de búsqueda de empleo más grande en Francia. Filtrá por 'CDI', 'CDD', o 'saisonnier' según el tipo de contrato que necesitás para tu visa."
+        },
+        {
+          "name": "APEC y Cadreemploi",
+          "text": "Para perfiles profesionales y ejecutivos. Requieren nivel de francés intermedio o avanzado."
+        },
+        {
+          "name": "Grupos de Facebook y WhatsApp de la comunidad latina",
+          "text": "Hay redes de latinoamericanos en Francia muy activas donde empleadores comparten vacantes informales. Muchos contratos para visa Saisonnier surgen de esta forma."
+        }
+      ],
+      "sectoresTitle": "Los sectores con mayor demanda (Métiers en Tension)",
+      "sectoresText": "Francia tiene oficialmente sectores con escasez de personal, los llamados Métiers en Tension. Trabajar en uno de estos sectores simplifica enormemente el proceso de visa porque el empleador no necesita publicar la oferta por 21 días en France Travail. Los principales son:",
+      "sectores": [
+        "Hotelería y restauración (cocinero, mozo, recepcionista, encargado de sala)",
+        "Agricultura y vendimia (recolección de frutas, uvas, flores)",
+        "Construcción (albañil, pintor, electricista, plomero)",
+        "Cuidado de personas mayores (auxiliar de vida, enfermería)",
+        "Transporte y logística"
+      ],
+      "sectoresConclusion": "Si tu oficio califica como Métier en Tension en la región donde trabajarás, el proceso es más rápido y sencillo.",
+      "cvTitle": "Cómo preparar tu CV para el mercado francés",
+      "cvText": "El CV en Francia sigue un formato diferente al latinoamericano. Algunos puntos clave:",
+      "cvList": [
+        "Máximo 1 página (2 si tenés más de 10 años de experiencia).",
+        "Foto opcional, pero muy común incluirla.",
+        "Sin información como estado civil, número de hijos o DNI.",
+        "Formato cronológico inverso: lo más reciente primero.",
+        "Redactado completamente en francés, incluso si el empleador habla español."
+      ],
+      "cvConclusion": "El nivel de francés exigido varía por sector. En agricultura o trabajo estacional podés arreglarte con nivel básico. En gastronomía y cuidados, un nivel intermedio (B1) abre más puertas.",
+      "procesoTitle": "El proceso una vez que encontrás empleador",
+      "procesoText": "Cuando un empleador francés acepta contratarte, comienza el proceso formal de visa:",
+      "procesoList": [
+        "El empleador inicia el trámite en la plataforma ANEF (Ministerio del Interior).",
+        "DREETS verifica la oferta y otorga la autorización de trabajo.",
+        "Con la autorización, el empleador te envía la documentación necesaria.",
+        "Vos solicitás la visa en el consulado francés de tu país.",
+        "Una vez aprobada, podés volar a Francia y comenzar a trabajar."
+      ],
+      "procesoConclusion": "El tiempo total desde que se inicia el trámite hasta que viajás suele ser de 6 a 12 semanas, según la región y el tipo de visa.",
+      "asesoriaTitle": "El rol de la asesoría migratoria en este proceso",
+      "asesoriaText": "Muchos errores en el expediente ocurren en la coordinación entre el solicitante y el empleador: documentos incompletos, plazos mal calculados, o formatos incorrectos. Allée France acompaña tanto al trabajador como al empleador para que el proceso sea limpio y sin retrasos."
     }
   },
   "FAQData": {

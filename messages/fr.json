@@ -270,7 +270,7 @@
     },
     "services": {
       "title": "Services",
-      "work": "Visas de Travail",
+      "work": "Travail",
       "student": "Visa Étudiant",
       "wh": "Permis Vacances Travail"
     },
@@ -641,12 +641,21 @@
         "Tout",
         "Finances",
         "Connectivité",
-        "Visas de Travail",
+        "Travail",
         "Permis Vacances-Travail",
         "Visas Étudiants",
         "Langue et Culture"
       ],
       "posts": [
+        {
+          "title": "Comment trouver un emploi en France depuis l'Amérique latine (sans y être)",
+          "excerpt": "Une stratégie claire pour trouver un employeur français depuis l'autre bout du monde et commencer votre démarche de visa.",
+          "date": "12 Juin 2026",
+          "readTime": "9 min",
+          "image": "/conseguir-trabajo-francia.webp",
+          "category": "Travail",
+          "slug": "conseguir-trabajo-francia-desde-latam"
+        },
         {
           "title": "Banques physiques vs Banques virtuelles en France : Lequel choisir ?",
           "excerpt": "Wise, Revolut, N26, Qonto ou banque traditionnelle : découvrez celle qui correspond le mieux à votre situation en France.",
@@ -671,7 +680,7 @@
           "date": "15 Janvier 2026",
           "readTime": "9 min",
           "image": "/seasonal-worker-in-french-vineyard.webp",
-          "category": "Visas de Travail",
+          "category": "Travail",
           "slug": "visa-saisonnier-salarie"
         },
         {
@@ -1311,6 +1320,73 @@
         "Incluez des lettres de recommandation traduites en français pour renforcer votre profil.",
         "Organisez le dossier dans l'ordre demandé par le consulat et apportez des copies supplémentaires."
       ]
+    },
+    "conseguir-trabajo-francia-desde-latam": {
+      "hero": {
+        "title": "Comment trouver un emploi en France depuis l'Amérique latine (sans y être)",
+        "subtitle": "Stratégies et plateformes pour trouver un employeur depuis votre pays et obtenir votre visa Salarié ou Saisonnier.",
+        "category": "Travail"
+      },
+      "section1": {
+        "title": "Pourquoi il est important d'avoir un emploi avant de voyager",
+        "p1": "L'une des craintes les plus courantes chez ceux qui veulent émigrer en France est la suivante : 'Comment trouver un employeur si je suis à l'autre bout du monde ?' La bonne nouvelle, c'est que c'est tout à fait possible et qu'il existe une stratégie claire pour y parvenir. Chez Allée France, nous avons accompagné plus de 700 personnes dans cette démarche, et dans cet article, nous partageons exactement comment l'aborder.",
+        "p2": "Pour les visas Salarié et Saisonnier, le contrat de travail avec un employeur français est le pilier central du dossier. Sans lui, pas de visa. C'est pourquoi trouver un emploi depuis l'Amérique latine n'est pas seulement un avantage : c'est la première étape obligatoire du processus de migration professionnelle. De plus, arriver avec un emploi garanti vous permet de planifier votre logement, vos finances et votre adaptation avec beaucoup plus de tranquillité. Ce n'est pas la même chose d'arriver pour improviser que d'arriver avec un plan concret."
+      },
+      "plataformasTitle": "Les plateformes où chercher du travail en France",
+      "plataformas": [
+        {
+          "name": "France Travail (ex-Pôle Emploi)",
+          "text": "C'est le portail officiel de l'emploi du gouvernement français. Il est en français, mais propose des milliers d'offres actualisées quotidiennement. Vous pouvez vous inscrire depuis l'étranger et postuler en ligne. Cherchez par secteur et par région."
+        },
+        {
+          "name": "LinkedIn",
+          "text": "De nombreux employeurs français, notamment dans la gastronomie, le tourisme, la construction et la technologie, publient sur LinkedIn. Optimisez votre profil en français, indiquez que vous cherchez du travail en France et que vous êtes disponible pour un visa. Contactez directement les responsables RH."
+        },
+        {
+          "name": "Indeed France",
+          "text": "indeed.fr est le plus grand moteur de recherche d'emploi en France. Filtrez par 'CDI', 'CDD' ou 'saisonnier' selon le type de contrat dont vous avez besoin pour votre visa."
+        },
+        {
+          "name": "APEC et Cadreemploi",
+          "text": "Pour les profils professionnels et cadres. Ils exigent un niveau de français intermédiaire ou avancé."
+        },
+        {
+          "name": "Groupes Facebook et WhatsApp de la communauté latino",
+          "text": "Il existe des réseaux de latino-américains très actifs en France où les employeurs partagent des offres informelles. De nombreux contrats pour le visa Saisonnier voient le jour de cette manière."
+        }
+      ],
+      "sectoresTitle": "Les secteurs les plus demandés (Métiers en Tension)",
+      "sectoresText": "La France a officiellement des secteurs en pénurie de personnel, les fameux Métiers en Tension. Travailler dans l'un de ces secteurs simplifie grandement le processus de visa car l'employeur n'a pas besoin de publier l'offre pendant 21 jours sur France Travail. Les principaux sont :",
+      "sectores": [
+        "Hôtellerie et restauration (cuisinier, serveur, réceptionniste, chef de salle)",
+        "Agriculture et vendanges (récolte de fruits, raisins, fleurs)",
+        "Bâtiment (maçon, peintre, électricien, plombier)",
+        "Soins aux personnes âgées (auxiliaire de vie, infirmerie)",
+        "Transport et logistique"
+      ],
+      "sectoresConclusion": "Si votre métier est qualifié de Métier en Tension dans la région où vous allez travailler, le processus est plus rapide et plus simple.",
+      "cvTitle": "Comment préparer votre CV pour le marché français",
+      "cvText": "Le CV en France suit un format différent de celui d'Amérique latine. Quelques points clés :",
+      "cvList": [
+        "Maximum 1 page (2 si vous avez plus de 10 ans d'expérience).",
+        "Photo facultative, mais très courante.",
+        "Aucune information telle que l'état civil, le nombre d'enfants ou la carte d'identité.",
+        "Format chronologique inversé : le plus récent en premier.",
+        "Rédigé entièrement en français, même si l'employeur parle espagnol."
+      ],
+      "cvConclusion": "Le niveau de français requis varie selon le secteur. Dans l'agriculture ou le travail saisonnier, vous pouvez vous en sortir avec un niveau de base. Dans la gastronomie et les soins, un niveau intermédiaire (B1) ouvre plus de portes.",
+      "procesoTitle": "Le processus une fois que vous avez trouvé un employeur",
+      "procesoText": "Lorsqu'un employeur français accepte de vous embaucher, le processus officiel de visa commence :",
+      "procesoList": [
+        "L'employeur initie la démarche sur la plateforme ANEF (Ministère de l'Intérieur).",
+        "La DREETS vérifie l'offre et accorde l'autorisation de travail.",
+        "Avec l'autorisation, l'employeur vous envoie les documents nécessaires.",
+        "Vous demandez le visa au consulat de France de votre pays.",
+        "Une fois approuvé, vous pouvez vous envoler pour la France et commencer à travailler."
+      ],
+      "procesoConclusion": "Le délai total entre le début de la procédure et votre voyage est généralement de 6 à 12 semaines, selon la région et le type de visa.",
+      "asesoriaTitle": "Le rôle du conseil en migration dans ce processus",
+      "asesoriaText": "De nombreuses erreurs dans le dossier se produisent lors de la coordination entre le demandeur et l'employeur : documents incomplets, délais mal calculés ou formats incorrects. Allée France accompagne à la fois le travailleur et l'employeur pour que le processus soit clair et sans retard."
     }
   },
   "FAQData": {
