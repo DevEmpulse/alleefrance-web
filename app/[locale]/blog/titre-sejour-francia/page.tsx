@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function TitreSejourPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
-  const t = await getTranslations("BlogPosts.titre-sejour-francia");
+  const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.titre-sejour-francia" });
 
   const types = t.raw("types") as Array<{
     name: string; icon: string; description: string; duration: string; canWork: boolean;
