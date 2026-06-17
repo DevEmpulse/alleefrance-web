@@ -644,9 +644,19 @@
         "Travail",
         "Permis Vacances-Travail",
         "Visas Étudiants",
-        "Langue et Culture"
+        "Langue et Culture",
+        "Démarches Administratives"
       ],
       "posts": [
+        {
+          "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
+          "excerpt": "Le guide complet sur le titre de séjour pour les Latino-Américains : types, documents, plateforme ANEF et délais.",
+          "date": "17 Juin 2026",
+          "readTime": "10 min",
+          "image": "/titre-sejour-france-guide.webp",
+          "category": "Démarches Administratives",
+          "slug": "titre-sejour-francia"
+        },
         {
           "title": "Comment trouver un emploi en France depuis l'Amérique latine (sans y être)",
           "excerpt": "Une stratégie claire pour trouver un employeur français depuis l'autre bout du monde et commencer votre démarche de visa.",
@@ -1387,6 +1397,106 @@
       "procesoConclusion": "Le délai total entre le début de la procédure et votre voyage est généralement de 6 à 12 semaines, selon la région et le type de visa.",
       "asesoriaTitle": "Le rôle du conseil en migration dans ce processus",
       "asesoriaText": "De nombreuses erreurs dans le dossier se produisent lors de la coordination entre le demandeur et l'employeur : documents incomplets, délais mal calculés ou formats incorrects. Allée France accompagne à la fois le travailleur et l'employeur pour que le processus soit clair et sans retard."
+    },
+    "titre-sejour-francia": {
+      "hero": {
+        "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
+        "subtitle": "Le guide complet pour les Latino-Américains qui souhaitent vivre légalement en France au-delà de 90 jours.",
+        "category": "Démarches Administratives",
+        "date": "17 Juin 2026",
+        "readTime": "10 min de lecture"
+      },
+      "intro": {
+        "p1": "Le titre de séjour est le document qui vous permet de vivre et, selon le type, de travailler légalement en France au-delà de 90 jours. Il s'agit de l'étape suivant l'entrée avec un visa de long séjour, et comprendre son fonctionnement est essentiel pour tout Latino-Américain souhaitant construire son projet de vie en France.",
+        "p2": "Dans ce guide, vous trouverez tout ce que vous devez savoir : ce que c'est exactement, quels sont les principaux types, quand commencer la démarche et comment la gérer via la plateforme ANEF."
+      },
+      "whatIs": {
+        "title": "Qu'est-ce que le titre de séjour exactement ?",
+        "p1": "C'est une carte délivrée par la préfecture française qui atteste de votre statut migratoire dans le pays. Selon la raison de votre présence en France (travail, études, regroupement familial, etc.), vous aurez un type de titre différent avec des droits associés différents.",
+        "warning": "⚠️ Sans titre de séjour, après les 90 jours autorisés par un visa, vous seriez en situation irrégulière. C'est pourquoi la démarche doit être entamée à temps."
+      },
+      "typesTitle": "Principaux types de titres de séjour",
+      "types": [
+        {
+          "name": "Salarié",
+          "icon": "💼",
+          "description": "Pour les personnes travaillant sous contrat CDI ou CDD de longue durée. Renouvelable annuellement et ouvre la voie à la résidence de longue durée (10 ans) après 5 années consécutives en France.",
+          "duration": "1 an, renouvelable",
+          "canWork": true
+        },
+        {
+          "name": "Saisonnier",
+          "icon": "🌾",
+          "description": "Pour les travailleurs saisonniers. Valable pour la durée du contrat (jusqu'à 6 mois). Peut être renouvelé pendant 3 années consécutives. N'ouvre pas droit à la résidence permanente seul.",
+          "duration": "Jusqu'à 6 mois",
+          "canWork": true
+        },
+        {
+          "name": "Étudiant",
+          "icon": "🎓",
+          "description": "Pour les étudiants inscrits dans des établissements d'enseignement supérieur en France. Permet de travailler jusqu'à 60 % du temps légal (964 heures par an).",
+          "duration": "1 an, renouvelable",
+          "canWork": true
+        },
+        {
+          "name": "Visiteur",
+          "icon": "🏡",
+          "description": "Pour les personnes sans activité professionnelle en France mais disposant de ressources suffisantes pour subvenir à leurs besoins. N'autorise pas le travail.",
+          "duration": "1 an, renouvelable",
+          "canWork": false
+        },
+        {
+          "name": "Passeport Talent",
+          "icon": "⭐",
+          "description": "Pour les profils hautement qualifiés : chercheurs, artistes, entrepreneurs, cadres d'entreprises internationales. Valable 4 ans et renouvelable.",
+          "duration": "4 ans, renouvelable",
+          "canWork": true
+        },
+        {
+          "name": "Regroupement Familial",
+          "icon": "👨‍👩‍👧",
+          "description": "Pour les conjoints et enfants de résidents légaux en France. Nécessite une procédure préalable dans le pays d'origine.",
+          "duration": "Variable",
+          "canWork": true
+        }
+      ],
+      "canWork": "Travail autorisé",
+      "cannotWork": "Sans autorisation de travail",
+      "whenTitle": "Quand faut-il commencer la démarche ?",
+      "when": {
+        "p1": "La demande de titre de séjour doit être initiée avant l'expiration de votre visa. L'idéal est de faire la demande au moins 2 mois avant l'expiration pour éviter des périodes d'incertitude administrative.",
+        "recipisse": "✅ Lorsque la démarche est en cours et que vous avez le récépissé (récépissé de demande), vous pouvez continuer à vivre et à travailler légalement en France dans l'attente de la décision."
+      },
+      "anefTitle": "La plateforme ANEF : où tout se gère",
+      "anef": {
+        "p1": "Depuis 2021, la plupart des démarches de titre de séjour s'effectuent en ligne via la plateforme ANEF (Administration Numérique pour les Étrangers en France).",
+        "cta": "Accéder à la plateforme ANEF",
+        "note": "Dans certains départements, le rendez-vous en préfecture est encore maintenu pour certaines catégories. Le système varie selon la région."
+      },
+      "docsTitle": "Documents généralement nécessaires",
+      "docsGeneral": [
+        "Passeport valide avec au moins 6 mois de validité",
+        "Visa de long séjour valide ou récépissé précédent",
+        "Justificatif de domicile en France (quittance de loyer ou attestation d'hébergement)",
+        "Photos d'identité (format français)",
+        "Documents spécifiques selon le type de titre (contrat de travail, certificat d'inscription, etc.)",
+        "Justificatif d'assurance maladie ou affiliation à la Sécurité Sociale"
+      ],
+      "steps": [],
+      "timingTitle": "Délais de traitement",
+      "timing": {
+        "p1": "Les délais varient considérablement selon la préfecture et le volume des demandes. En général, il faut compter entre 2 et 6 mois pour une décision définitive. Durant cette période, le récépissé remis lors du dépôt de la demande a une valeur juridique et vous protège contre tout contrôle migratoire."
+      },
+      "renewalTitle": "Renouvellement du titre de séjour",
+      "renewal": {
+        "p1": "Le renouvellement doit également être demandé à l'avance (au moins 2 mois avant l'expiration). Si vous maintenez votre situation professionnelle et remplissez les conditions, le renouvellement est quasi automatique.",
+        "p2": "Après 5 ans de résidence légale continue, vous pouvez demander la carte de résident de 10 ans, qui offre beaucoup plus de stabilité et de simplicité administrative."
+      },
+      "cta": {
+        "label": "Besoin d'aide ?",
+        "title": "Allée France vous accompagne tout au long de votre parcours migratoire",
+        "button": "Contacter Allée France →"
+      }
     }
   },
   "FAQData": {

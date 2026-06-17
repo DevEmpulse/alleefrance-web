@@ -644,9 +644,19 @@
         "Trabajo",
         "Working Holiday",
         "Visas de Estudiante",
-        "Idioma y Cultura"
+        "Idioma y Cultura",
+        "Trámites Migratorios"
       ],
       "posts": [
+        {
+          "title": "Titre de Séjour en Francia: qué es, tipos y cómo tramitarlo paso a paso",
+          "excerpt": "La guía completa sobre el permiso de residencia francés para latinoamericanos: tipos, documentos, plataforma ANEF y tiempos.",
+          "date": "17 Junio 2026",
+          "readTime": "10 min",
+          "image": "/titre-sejour-france-guide.webp",
+          "category": "Trámites Migratorios",
+          "slug": "titre-sejour-francia"
+        },
         {
           "title": "Cómo conseguir trabajo en Francia desde América Latina (sin estar allá)",
           "excerpt": "Una estrategia clara para conseguir un empleador francés estando al otro lado del mundo y empezar tu proceso de visa.",
@@ -1387,6 +1397,106 @@
       "procesoConclusion": "El tiempo total desde que se inicia el trámite hasta que viajás suele ser de 6 a 12 semanas, según la región y el tipo de visa.",
       "asesoriaTitle": "El rol de la asesoría migratoria en este proceso",
       "asesoriaText": "Muchos errores en el expediente ocurren en la coordinación entre el solicitante y el empleador: documentos incompletos, plazos mal calculados, o formatos incorrectos. Allée France acompaña tanto al trabajador como al empleador para que el proceso sea limpio y sin retrasos."
+    },
+    "titre-sejour-francia": {
+      "hero": {
+        "title": "Titre de Séjour en Francia: qué es, tipos y cómo tramitarlo",
+        "subtitle": "La guía completa para latinoamericanos que quieren vivir legalmente en Francia más allá de los 90 días.",
+        "category": "Trámites Migratorios",
+        "date": "17 Junio 2026",
+        "readTime": "10 min de lectura"
+      },
+      "intro": {
+        "p1": "El Titre de Séjour (permiso de residencia) es el documento que te permite vivir y, según el tipo, trabajar legalmente en Francia más allá de los 90 días. Es el siguiente paso después de ingresar con una visa de larga duración, y entender cómo funciona es fundamental para cualquier latinoamericano que quiera construir su proyecto de vida en Francia.",
+        "p2": "En esta guía vas a encontrar todo lo que necesitás saber: qué es exactamente, cuáles son los tipos principales, cuándo hay que iniciar el trámite y cómo manejarlo a través de la plataforma ANEF."
+      },
+      "whatIs": {
+        "title": "¿Qué es exactamente el Titre de Séjour?",
+        "p1": "Es una tarjeta emitida por la prefectura francesa que acredita tu estatus migratorio en el país. Dependiendo del motivo por el que estás en Francia (trabajo, estudios, reagrupación familiar, etc.), tendrás un tipo diferente de permiso con distintos derechos asociados.",
+        "warning": "⚠️ Sin el Titre de Séjour, después de los 90 días permitidos por una visa, estarías en situación irregular. Por eso, el trámite debe iniciarse a tiempo."
+      },
+      "typesTitle": "Tipos principales de Titre de Séjour",
+      "types": [
+        {
+          "name": "Salarié",
+          "icon": "💼",
+          "description": "Para personas que trabajan con contrato CDI o CDD de larga duración. Es renovable anualmente y abre el camino hacia la residencia de larga duración (10 años) después de 5 años continuos en Francia.",
+          "duration": "1 año renovable",
+          "canWork": true
+        },
+        {
+          "name": "Saisonnier",
+          "icon": "🌾",
+          "description": "Para trabajadores estacionales. Válido por la duración del contrato (hasta 6 meses). Se puede renovar durante 3 años consecutivos. No da derecho a residencia permanente por sí solo.",
+          "duration": "Hasta 6 meses",
+          "canWork": true
+        },
+        {
+          "name": "Étudiant",
+          "icon": "🎓",
+          "description": "Para estudiantes matriculados en instituciones de educación superior en Francia. Permite trabajar hasta el 60% del tiempo legal (964 horas al año).",
+          "duration": "1 año renovable",
+          "canWork": true
+        },
+        {
+          "name": "Visiteur",
+          "icon": "🏡",
+          "description": "Para personas sin actividad laboral en Francia pero con recursos suficientes para mantenerse. No autoriza a trabajar.",
+          "duration": "1 año renovable",
+          "canWork": false
+        },
+        {
+          "name": "Passeport Talent",
+          "icon": "⭐",
+          "description": "Para perfiles altamente calificados: investigadores, artistas, emprendedores, ejecutivos de empresas internacionales. Válido por 4 años y renovable.",
+          "duration": "4 años renovable",
+          "canWork": true
+        },
+        {
+          "name": "Regroupement Familial",
+          "icon": "👨‍👩‍👧",
+          "description": "Para cónyuges e hijos de residentes legales en Francia. Requiere un proceso previo en el país de origen.",
+          "duration": "Variable",
+          "canWork": true
+        }
+      ],
+      "canWork": "Autoriza a trabajar",
+      "cannotWork": "Sin autorización laboral",
+      "whenTitle": "¿Cuándo hay que iniciar el trámite?",
+      "when": {
+        "p1": "El trámite del Titre de Séjour debe iniciarse antes de que venza tu visa. Lo ideal es solicitarlo al menos 2 meses antes del vencimiento para evitar períodos de incertidumbre administrativa.",
+        "recipisse": "✅ Cuando el trámite está en curso y tenés el récépissé (comprobante de solicitud), podés seguir viviendo y trabajando legalmente en Francia mientras esperás la resolución."
+      },
+      "anefTitle": "La plataforma ANEF: dónde se gestiona todo",
+      "anef": {
+        "p1": "Desde 2021, la mayoría de los trámites de Titre de Séjour se realizan en línea a través de la plataforma ANEF (Administration Numérique pour les Étrangers en France).",
+        "cta": "Ir a la plataforma ANEF",
+        "note": "En algunos departamentos todavía se mantiene la cita presencial en la prefectura para ciertas categorías. El sistema varía según la región."
+      },
+      "docsTitle": "Documentación general necesaria",
+      "docsGeneral": [
+        "Pasaporte válido con al menos 6 meses de vigencia",
+        "Visa de larga duración vigente o récépissé anterior",
+        "Justificante de domicilio en Francia (quittance de loyer o attestation d'hébergement)",
+        "Fotos de identidad (formato francés)",
+        "Documentación específica según el tipo de permiso (contrato de trabajo, certificado de matrícula, etc.)",
+        "Comprobante de seguro médico o afiliación a la Sécurité Sociale"
+      ],
+      "steps": [],
+      "timingTitle": "Tiempos de resolución",
+      "timing": {
+        "p1": "Los tiempos varían bastante según la prefectura y el volumen de solicitudes. En general podés esperar entre 2 y 6 meses para la resolución definitiva. Durante ese tiempo, el récépissé que recibís al presentar la solicitud tiene validez legal y te protege contra cualquier control migratorio."
+      },
+      "renewalTitle": "Renovación del Titre de Séjour",
+      "renewal": {
+        "p1": "La renovación debe solicitarse igualmente con anticipación (mínimo 2 meses antes del vencimiento). Si mantenés tu situación laboral y cumplís con las condiciones, la renovación es prácticamente automática.",
+        "p2": "Después de 5 años de residencia legal continua, podés solicitar la Carte de Résident de 10 años, que otorga mucha más estabilidad y simplicidad administrativa."
+      },
+      "cta": {
+        "label": "¿Necesitás ayuda?",
+        "title": "Allée France te acompaña en todo el proceso migratorio",
+        "button": "Contactar a Allée France →"
+      }
     }
   },
   "FAQData": {
