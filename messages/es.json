@@ -644,10 +644,19 @@
         "Trabajo",
         "Working Holiday",
         "Visas de Estudiante",
-        "Idioma y Cultura",
+        "Vida en Francia",
         "Trámites Migratorios"
       ],
       "posts": [
+        {
+          "title": "Cuánto cuesta vivir en Francia: presupuesto real para latinoamericanos en 2026",
+          "excerpt": "Una de las preguntas más frecuentes que recibimos es: '¿Cuánto dinero necesito para vivir en Francia?' La respuesta depende de la ciudad, tu estilo de vida y tu situación migratoria.",
+          "date": "14 Junio 2026",
+          "readTime": "8 min",
+          "image": "/cuanto-cuesta-vivir-en-francia.webp",
+          "category": "Vida en Francia",
+          "slug": "cuanto-cuesta-vivir-en-francia"
+        },
         {
           "title": "Titre de Séjour en Francia: qué es, tipos y cómo tramitarlo paso a paso",
           "excerpt": "La guía completa sobre el permiso de residencia francés para latinoamericanos: tipos, documentos, plataforma ANEF y tiempos.",
@@ -717,7 +726,7 @@
           "date": "2 Enero 2025",
           "readTime": "7 min",
           "image": "/person-learning-french-language.webp",
-          "category": "Idioma y Cultura",
+          "category": "Vida en Francia",
           "slug": "aprender-frances-recursos"
         }
       ]
@@ -1496,6 +1505,85 @@
         "label": "¿Necesitás ayuda?",
         "title": "Allée France te acompaña en todo el proceso migratorio",
         "button": "Contactar a Allée France →"
+      }
+    },
+    "cuanto-cuesta-vivir-en-francia": {
+      "hero": {
+        "title": "Cuánto cuesta vivir en Francia: presupuesto real para latinoamericanos en 2026",
+        "subtitle": "Un desglose detallado de gastos: alquiler, alimentación, transporte y consejos para ahorrar mientras te adaptás a tu nueva vida.",
+        "category": "Vida en Francia"
+      },
+      "intro": "Una de las preguntas más frecuentes que recibimos es: '¿Cuánto dinero necesito para vivir en Francia?' La respuesta depende de la ciudad, tu estilo de vida y tu situación migratoria. En este artículo te compartimos cifras reales basadas en la experiencia de los cientos de latinoamericanos que hemos acompañado.",
+      "section1": {
+        "title": "La diferencia entre ciudades",
+        "p1": "Francia no tiene el mismo costo en todas partes. París es significativamente más cara que el resto, pero también es donde más oportunidades laborales existen. Lyon, Marsella, Burdeos, Toulouse, Nantes y Estrasburgo ofrecen un equilibrio muy bueno entre calidad de vida y costo."
+      },
+      "alquiler": {
+        "title": "El gasto más importante: el alquiler",
+        "p1": "El alquiler es el rubro que más impacta en el presupuesto mensual:",
+        "list": [
+          "París: habitación compartida 700-900 €/mes | estudio 900-1.400 €/mes",
+          "Lyon: habitación compartida 450-650 €/mes | estudio 600-900 €/mes",
+          "Marsella: habitación compartida 350-500 €/mes | estudio 500-750 €/mes",
+          "Ciudades medianas (Toulouse, Nantes, Rennes): 400-700 €/mes para estudio"
+        ],
+        "p2": "Muchos recién llegados optan por la colocation (piso compartido) durante los primeros meses. Es la opción más económica y además facilita la integración. Plataformas como Leboncoin, PAP y SeLoger son las más usadas.",
+        "p3": "Importante: en Francia es necesario presentar garantías para alquilar (fiador con ingresos o seguro de alquiler Visale). Esto puede ser una barrera inicial para extranjeros sin historial en el país."
+      },
+      "alimentacion": {
+        "title": "Alimentación",
+        "p1": "Comer en Francia puede ser económico si cocinás en casa y aprovechás los supermercados. Cadenas como Lidl, Aldi, Super U y Leclerc tienen precios muy accesibles.",
+        "list": [
+          "Supermercado (semana para una persona): 50-80 €",
+          "Menú del día en restaurante: 10-15 €",
+          "Café o croissant: 2-4 €",
+          "Presupuesto mensual de alimentación cocinando en casa: 200-300 €"
+        ]
+      },
+      "transporte": {
+        "title": "Transporte",
+        "p1": "El transporte público en Francia es excelente y relativamente económico. Las ciudades grandes tienen metro, tranvía y autobús bien integrados.",
+        "list": [
+          "Abono mensual en Lyon (TCL): ~75 € (con algunos descuentos según ingresos)",
+          "Abono mensual en París (Navigo): ~86 €",
+          "Bicicleta compartida (Vélo'v en Lyon): 1,65 €/mes con abono anual",
+          "Tren interurbano (SNCF): variable, conviene comprar con anticipación"
+        ],
+        "p2": "Si tenés vehículo propio, sumá seguro (100-150 €/mes), combustible y mantenimiento."
+      },
+      "servicios": {
+        "title": "Servicios y telefonía",
+        "list": [
+          "Factura de agua, electricidad y gas: 80-150 €/mes (incluido en muchas colocations)",
+          "Internet fibra óptica: 15-30 €/mes",
+          "Plan de telefonía con datos ilimitados: 10-20 €/mes (Free Mobile, Bouygues, SFR)"
+        ]
+      },
+      "salud": {
+        "title": "Salud",
+        "p1": "Una vez que estás afiliado a la Sécurité Sociale (seguridad social francesa), la cobertura médica es muy amplia. Las consultas médicas cuestan entre 26-30 €, con un reembolso del 70% por parte del sistema. Para cubrir el resto, la mayoría contrata una mutuelle (seguro complementario) desde 20-50 €/mes.",
+        "p2": "Durante los primeros 3 meses antes de poder acceder a la seguridad social, es fundamental tener un seguro de viaje internacional vigente."
+      },
+      "presupuesto": {
+        "title": "Presupuesto mensual estimado",
+        "p1": "Un resumen orientativo para una persona viviendo fuera de París:",
+        "list": [
+          "Alquiler (habitación en colocation): 500 €",
+          "Alimentación: 250 €",
+          "Transporte: 80 €",
+          "Telefonía e internet: 25 €",
+          "Ocio y salidas: 100 €",
+          "Gastos varios (ropa, higiene, imprevistos): 100 €"
+        ],
+        "conclusion": "Total estimado: entre 1.050 y 1.200 € por mes para una vida razonable fuera de París. En París, sumá entre 300 y 500 € más."
+      },
+      "ahorros": {
+        "title": "¿Cuánto necesito tener ahorrado antes de ir?",
+        "p1": "La recomendación general es tener entre 2.000 y 3.000 € disponibles al momento de llegar, para cubrir los primeros dos meses antes de recibir el primer sueldo y para el depósito de garantía del alquiler (habitualmente 1 mes de alquiler)."
+      },
+      "asesoria": {
+        "title": "¿Tenés dudas sobre cómo financiar tu llegada a Francia?",
+        "p1": "Nuestro equipo está listo para asesorarte. Consultanos en alleefrance.com."
       }
     }
   },

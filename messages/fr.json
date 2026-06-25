@@ -644,10 +644,19 @@
         "Travail",
         "Permis Vacances-Travail",
         "Visas Étudiants",
-        "Langue et Culture",
+        "Vie en France",
         "Démarches Administratives"
       ],
       "posts": [
+        {
+          "title": "Combien coûte la vie en France : budget réel pour les Latino-Américains en 2026",
+          "excerpt": "L'une des questions les plus fréquentes que nous recevons est : 'De combien d'argent ai-je besoin pour vivre en France ?' La réponse dépend de la ville, de votre style de vie et de votre situation migratoire.",
+          "date": "14 Juin 2026",
+          "readTime": "8 min",
+          "image": "/cuanto-cuesta-vivir-en-francia.webp",
+          "category": "Vie en France",
+          "slug": "cuanto-cuesta-vivir-en-francia"
+        },
         {
           "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
           "excerpt": "Le guide complet sur le titre de séjour pour les Latino-Américains : types, documents, plateforme ANEF et délais.",
@@ -717,7 +726,7 @@
           "date": "2 Janvier 2025",
           "readTime": "7 min",
           "image": "/person-learning-french-language.webp",
-          "category": "Langue et Culture",
+          "category": "Vie en France",
           "slug": "aprender-frances-recursos"
         }
       ]
@@ -1496,6 +1505,85 @@
         "label": "Besoin d'aide ?",
         "title": "Allée France vous accompagne tout au long de votre parcours migratoire",
         "button": "Contacter Allée France →"
+      }
+    },
+    "cuanto-cuesta-vivir-en-francia": {
+      "hero": {
+        "title": "Combien coûte la vie en France : budget réel pour les Latino-Américains en 2026",
+        "subtitle": "Une répartition détaillée des dépenses : loyer, nourriture, transport et astuces pour économiser pendant que vous vous adaptez à votre nouvelle vie.",
+        "category": "Vie en France"
+      },
+      "intro": "L'une des questions les plus fréquentes que nous recevons est : 'De combien d'argent ai-je besoin pour vivre en France ?' La réponse dépend de la ville, de votre style de vie et de votre situation migratoire. Dans cet article, nous partageons de vrais chiffres basés sur l'expérience des centaines de Latino-Américains que nous avons accompagnés.",
+      "section1": {
+        "title": "La différence entre les villes",
+        "p1": "La France n'a pas le même coût partout. Paris est nettement plus chère que le reste, mais c'est aussi là qu'il y a le plus d'opportunités d'emploi. Lyon, Marseille, Bordeaux, Toulouse, Nantes et Strasbourg offrent un très bon équilibre entre qualité de vie et coût."
+      },
+      "alquiler": {
+        "title": "La dépense la plus importante : le loyer",
+        "p1": "Le loyer est le poste qui impacte le plus le budget mensuel :",
+        "list": [
+          "Paris : chambre partagée 700-900 €/mois | studio 900-1 400 €/mois",
+          "Lyon : chambre partagée 450-650 €/mois | studio 600-900 €/mois",
+          "Marseille : chambre partagée 350-500 €/mois | studio 500-750 €/mois",
+          "Villes moyennes (Toulouse, Nantes, Rennes) : 400-700 €/mois pour un studio"
+        ],
+        "p2": "De nombreux nouveaux arrivants optent pour la colocation pendant leurs premiers mois. C'est l'option la plus économique et elle facilite également l'intégration. Les plateformes comme Leboncoin, PAP et SeLoger sont les plus utilisées.",
+        "p3": "Important : en France, il est nécessaire de présenter des garanties pour louer (garant avec revenus ou assurance locative Visale). Cela peut être un obstacle initial pour les étrangers sans historique dans le pays."
+      },
+      "alimentacion": {
+        "title": "Alimentation",
+        "p1": "Manger en France peut être économique si vous cuisinez à la maison et profitez des supermarchés. Des chaînes comme Lidl, Aldi, Super U et Leclerc ont des prix très accessibles.",
+        "list": [
+          "Supermarché (semaine pour une personne) : 50-80 €",
+          "Menu du jour au restaurant : 10-15 €",
+          "Café ou croissant : 2-4 €",
+          "Budget mensuel alimentaire en cuisinant à la maison : 200-300 €"
+        ]
+      },
+      "transporte": {
+        "title": "Transport",
+        "p1": "Les transports en commun en France sont excellents et relativement économiques. Les grandes villes disposent de métros, tramways et bus bien intégrés.",
+        "list": [
+          "Abonnement mensuel à Lyon (TCL) : ~75 € (avec des réductions selon les revenus)",
+          "Abonnement mensuel à Paris (Navigo) : ~86 €",
+          "Vélo en libre-service (Vélo'v à Lyon) : 1,65 €/mois avec abonnement annuel",
+          "Train interurbain (SNCF) : variable, mieux vaut acheter à l'avance"
+        ],
+        "p2": "Si vous avez votre propre véhicule, ajoutez l'assurance (100-150 €/mois), le carburant et l'entretien."
+      },
+      "servicios": {
+        "title": "Services et téléphonie",
+        "list": [
+          "Facture d'eau, d'électricité et de gaz : 80-150 €/mois (inclus dans de nombreuses colocations)",
+          "Internet fibre optique : 15-30 €/mois",
+          "Forfait mobile données illimitées : 10-20 €/mois (Free Mobile, Bouygues, SFR)"
+        ]
+      },
+      "salud": {
+        "title": "Santé",
+        "p1": "Une fois affilié à la Sécurité Sociale, la couverture médicale est très large. Les consultations médicales coûtent entre 26 et 30 €, avec un remboursement de 70 % par le système. Pour couvrir le reste, la plupart souscrivent une mutuelle à partir de 20-50 €/mois.",
+        "p2": "Pendant les 3 premiers mois avant de pouvoir accéder à la sécurité sociale, il est fondamental d'avoir une assurance voyage internationale valide."
+      },
+      "presupuesto": {
+        "title": "Budget mensuel estimé",
+        "p1": "Un résumé indicatif pour une personne vivant hors de Paris :",
+        "list": [
+          "Loyer (chambre en colocation) : 500 €",
+          "Alimentation : 250 €",
+          "Transport : 80 €",
+          "Téléphonie et internet : 25 €",
+          "Loisirs et sorties : 100 €",
+          "Dépenses diverses (vêtements, hygiène, imprévus) : 100 €"
+        ],
+        "conclusion": "Total estimé : entre 1 050 et 1 200 € par mois pour une vie raisonnable hors de Paris. À Paris, ajoutez entre 300 et 500 € de plus."
+      },
+      "ahorros": {
+        "title": "Combien dois-je avoir économisé avant de partir ?",
+        "p1": "La recommandation générale est d'avoir entre 2 000 et 3 000 € disponibles à l'arrivée, pour couvrir les deux premiers mois avant de recevoir le premier salaire et pour le dépôt de garantie du loyer (généralement 1 mois de loyer)."
+      },
+      "asesoria": {
+        "title": "Vous avez des doutes sur la façon de financer votre arrivée en France ?",
+        "p1": "Notre équipe est prête à vous conseiller. Contactez-nous sur alleefrance.com."
       }
     }
   },
