@@ -9,6 +9,7 @@
 
 # production
 /build
+site.zip
 
 # debug
 npm-debug.log*
