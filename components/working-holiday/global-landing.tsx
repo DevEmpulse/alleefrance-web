@@ -353,8 +353,8 @@ export function WorkingHolidayGlobalLanding() {
             <div className="mt-10 flex flex-col items-center gap-4 text-center">
               <div className="bg-white/10 border border-white/20 rounded-full px-6 py-3 flex items-center justify-center backdrop-blur">
                 <Image
-                  src="/ATV_logo-naranja-blanco.webp"
-                  alt="Aseguratuviaje.com"
+                  src="/logo-go-assistance.webp"
+                  alt="GO! Assistance"
                   width={170}
                   height={48}
                   className="h-10 w-auto object-contain"
@@ -367,7 +367,7 @@ export function WorkingHolidayGlobalLanding() {
                 asChild
               >
                 <a
-                  href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
+                  href="https://www.goassistance.com/afiliados/alleefrancelyongo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

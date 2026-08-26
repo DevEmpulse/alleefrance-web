@@ -64,7 +64,7 @@ export function InsuranceSection() {
               </span>
               <div className="h-4 w-[1px] bg-white/30"></div>
               <Image
-                  src="/ATV_logo-naranja-blanco.webp"
+                  src="/logo-go-assistance.webp"
                   alt={t("partnerAlt")}
                   width={100}
                   height={25}
@@ -186,7 +186,7 @@ export function InsuranceSection() {
               asChild
             >
               <a
-                href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
+                href="https://www.goassistance.com/afiliados/alleefrancelyongo"
                 target="_blank"
                 rel="noopener noreferrer"
               >

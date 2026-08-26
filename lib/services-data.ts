@@ -108,7 +108,7 @@ export const getServices = (t: any): ServiceCard[] => [
     ],
     price: t("items.service_4.price"),
     duration: t("items.service_4.duration"),
-    link: "https://www.aseguratuviaje.com/afiliados/alleefrancelyon",
+    link: "https://www.goassistance.com/afiliados/alleefrancelyongo",
     personas: ["students","families","general"]
   },
   {

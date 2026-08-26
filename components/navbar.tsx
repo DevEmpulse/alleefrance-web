@@ -208,7 +208,7 @@ export function Navbar() {
               style={{ backgroundColor: "#DC1F2E" }}
             >
               <a
-                href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
+                href="https://www.goassistance.com/afiliados/alleefrancelyongo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -326,7 +326,7 @@ export function Navbar() {
                 style={{ backgroundColor: "#DC1F2E" }}
               >
                 <a
-                  href="https://www.aseguratuviaje.com/afiliados/alleefrancelyon"
+                  href="https://www.goassistance.com/afiliados/alleefrancelyongo"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
