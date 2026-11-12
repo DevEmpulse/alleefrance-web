@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { FAQSection } from "@/components/faq-section";
+import { WORKING_HOLIDAY_FAQ_SECTION } from "@/lib/faq-sections";
 import { getFaqsByCategories } from "@/data/faqs";
 import { type WorkingHolidayCountryCode } from "@/lib/working-holiday-countries";
 import {
@@ -25,22 +26,9 @@ import {
 } from "lucide-react";
 import { buildWhatsAppLink } from "@/lib/utils";
 
-const workingHolidayFaqs = getFaqsByCategories([
-  "WH: General",
-  "WH: Argentina",
-  "WH: Chile",
-  "Errores Frecuentes",
-  "Seguros",
-  "Trabajo",
-]);
-const workingHolidayFaqCategories = [
-  "WH: General",
-  "WH: Argentina",
-  "WH: Chile",
-  "Errores Frecuentes",
-  "Seguros",
-  "Trabajo",
-];
+const workingHolidayFaqCategories =
+  WORKING_HOLIDAY_FAQ_SECTION.allowedCategories ?? [];
+const workingHolidayFaqs = getFaqsByCategories(workingHolidayFaqCategories);
 
 const OtherDestinationsCarousel = dynamic(
   () =>

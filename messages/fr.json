@@ -3525,5 +3525,129 @@
     "helpDescription": "Planifiez un appel gratuit et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
     "scheduleBtn": "Planifier une consultation",
     "whatsappBtn": "Envoyez-nous un WhatsApp"
+  },
+  "StructuredData": {
+    "breadcrumbs": {
+      "home": "Accueil",
+      "services": "Services",
+      "workVisas": "Visas de travail",
+      "studentVisa": "Visa étudiant",
+      "titreDeSejour": "Titre de Séjour",
+      "workingHoliday": "Working Holiday"
+    },
+    "howTo": {
+      "workVisas": {
+        "name": "Comment obtenir un visa de travail pour la France",
+        "description": "Guide étape par étape pour obtenir votre visa Salarié ou Saisonnier et travailler légalement en France.",
+        "steps": [
+          {
+            "name": "Obtenir une offre d'emploi",
+            "text": "Obtenez une offre d'emploi ferme d'un employeur français avec un contrat CDI, CDD ou saisonnier."
+          },
+          {
+            "name": "L'employeur lance la démarche ANEF",
+            "text": "Votre employeur demande l'autorisation de travail auprès de la DREETS via la plateforme ANEF."
+          },
+          {
+            "name": "Publication sur France Travail",
+            "text": "Si le poste ne figure pas dans les Métiers en Tension, l'offre est publiée pendant 21 jours."
+          },
+          {
+            "name": "Obtenir l'autorisation de travail",
+            "text": "La DREETS approuve l'autorisation de travail (2 à 8 semaines)."
+          },
+          {
+            "name": "Demander le visa au consulat",
+            "text": "Une fois l'autorisation approuvée, vous demandez le visa au consulat de France de votre pays."
+          },
+          {
+            "name": "Valider le visa à l'arrivée en France",
+            "text": "À votre arrivée, validez votre visa en ligne auprès de l'OFII et inscrivez-vous à la sécurité sociale."
+          }
+        ]
+      },
+      "studentVisa": {
+        "name": "Comment obtenir un visa étudiant pour la France",
+        "description": "Guide étape par étape pour obtenir votre visa étudiant et étudier en France.",
+        "steps": [
+          {
+            "name": "Obtenir l'admission académique",
+            "text": "Obtenez la lettre d'admission ou de préinscription de votre école ou université en France."
+          },
+          {
+            "name": "Compléter la procédure Campus France",
+            "text": "Créez votre compte Études en France, complétez votre dossier académique et passez l'entretien."
+          },
+          {
+            "name": "Préparer les justificatifs financiers",
+            "text": "Justifiez de ressources d'au moins 615 € par mois (7 380 € par an) avec des relevés bancaires ou un garant."
+          },
+          {
+            "name": "Demander le visa au consulat",
+            "text": "Remplissez le formulaire France-Visas, prenez rendez-vous et présentez votre dossier complet."
+          },
+          {
+            "name": "Valider le visa à l'arrivée",
+            "text": "Validez votre VLS-TS en ligne et inscrivez-vous à la sécurité sociale étudiante."
+          }
+        ]
+      },
+      "titreDeSejour": {
+        "name": "Comment renouveler ou demander le Titre de Séjour en France",
+        "description": "Guide étape par étape pour obtenir ou renouveler votre titre de séjour en France.",
+        "steps": [
+          {
+            "name": "Rassembler les documents",
+            "text": "Préparez votre passeport en cours de validité, un justificatif de domicile, des justificatifs de revenus et une assurance maladie."
+          },
+          {
+            "name": "Remplir les formulaires CERFA",
+            "text": "Remplissez les formulaires officiels correspondant à votre type de titre."
+          },
+          {
+            "name": "Déposer la demande sur la plateforme ANEF",
+            "text": "Téléchargez votre dossier complet sur la plateforme ANEF du ministère de l'Intérieur."
+          },
+          {
+            "name": "Rendez-vous en préfecture",
+            "text": "Présentez-vous au rendez-vous en préfecture pour la prise de vos données biométriques."
+          },
+          {
+            "name": "Recevoir le récépissé et le titre",
+            "text": "Obtenez le récépissé provisoire, puis votre Titre de Séjour définitif."
+          }
+        ]
+      },
+      "workingHoliday": {
+        "name": "Comment obtenir le visa Working Holiday pour la France",
+        "description": "Guide étape par étape pour demander votre visa Working Holiday et vivre en France jusqu'à 12 mois.",
+        "steps": [
+          {
+            "name": "Vérifier les conditions",
+            "text": "Vérifiez que vous remplissez la condition d'âge (18-30/35 ans), que votre nationalité est éligible et que vous n'avez jamais eu de Working Holiday en France."
+          },
+          {
+            "name": "Rassembler les documents",
+            "text": "Préparez votre passeport en cours de validité, un casier judiciaire apostillé, un CV et une lettre de motivation en français."
+          },
+          {
+            "name": "Souscrire une assurance voyage",
+            "text": "Souscrivez une assurance santé internationale de 12 mois couvrant l'hospitalisation et le rapatriement."
+          },
+          {
+            "name": "Justifier des fonds",
+            "text": "Présentez des relevés bancaires attestant de 2 500 à 3 000 € et un billet retour ou des fonds équivalents."
+          },
+          {
+            "name": "Prendre rendez-vous au consulat",
+            "text": "Créez un compte France-Visas, remplissez le formulaire et réservez un créneau au consulat."
+          },
+          {
+            "name": "Déposer la demande",
+            "text": "Présentez-vous au rendez-vous avec les documents originaux et des copies. La réponse prend environ 15 jours."
+          }
+        ]
+      }
+    }
   }
 }

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { CountryProvider } from "@/components/country-provider";
+import { PageSchemas, getBreadcrumbNames } from "@/lib/schema-server";
+import { workingHolidayCountryFaqSection } from "@/lib/faq-sections";
 import { WorkingHolidayCountryPage } from "@/components/working-holiday/working-holiday-country";
 import {
   PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES,
@@ -82,10 +84,29 @@ export default async function WorkingHolidayCountryRoute({
     notFound();
   }
   const countryConfig = config;
+  const names = await getBreadcrumbNames(locale);
+  const tCountry = await getTranslations({
+    locale,
+    namespace: `WorkingHolidayCountries.${countryConfig.code}`,
+  });
 
   return (
-    <CountryProvider initialCountryCode={countryConfig.code}>
-      <WorkingHolidayCountryPage config={countryConfig} />
-    </CountryProvider>
+    <>
+      <PageSchemas
+        locale={locale}
+        breadcrumbs={[
+          { name: names.home, path: "" },
+          { name: names.workingHoliday, path: "/working-holiday" },
+          {
+            name: tCountry("name"),
+            path: `/working-holiday/${countryConfig.code}`,
+          },
+        ]}
+        faqSection={workingHolidayCountryFaqSection(countryConfig.name)}
+      />
+      <CountryProvider initialCountryCode={countryConfig.code}>
+        <WorkingHolidayCountryPage config={countryConfig} />
+      </CountryProvider>
+    </>
   );
 }

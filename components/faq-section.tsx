@@ -19,12 +19,16 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import {
+  FAQ_PAGE_SIZE,
+  filterFaqsByCategory,
+  getFaqCategories,
+  getInitialFaqCategory,
+  usesTitreDeSejourFaqs,
+  type FAQItem,
+} from "@/lib/faq";
 
-export interface FAQItem {
-  question: string;
-  answer: string;
-  category: string[];
-}
+export type { FAQItem };
 
 interface FAQSectionProps {
   title: string;
@@ -57,8 +61,7 @@ export function FAQSection({
 
   const faqSource = useMemo(() => {
     try {
-      const isTds = allowedCategories?.includes("Titre de Séjour") || 
-                    data.some(item => item.category.includes("Titre de Séjour"));
+      const isTds = usesTitreDeSejourFaqs(allowedCategories, data);
       if (isTds) {
         return tData.raw("titreDeSejour") as FAQItem[];
       }
@@ -69,45 +72,14 @@ export function FAQSection({
   }, [data, allowedCategories, tData]);
 
   const [searchValue, setSearchValue] = useState("");
-  const [visibleCount, setVisibleCount] = useState(6);
-  const categories = useMemo<string[]>(() => {
-    const unique = new Set<string>();
-    const allowedSet = allowedCategories ? new Set(allowedCategories) : null;
-    faqSource.forEach((item) => {
-      item.category.forEach((category) => {
-        if (category && (!allowedSet || allowedSet.has(category))) {
-          unique.add(category);
-        }
-      });
-    });
-    const preferredOrder = [
-      "WH: General",
-      "WH: Argentina",
-      "WH: Chile",
-      "Saisonnier: General",
-      "Saisonnier: Argentina",
-      "Saisonnier: Chile",
-    ];
-    const preferredIndex = new Map(
-      preferredOrder.map((value, index) => [value, index])
-    );
-    return Array.from(unique).sort((left, right) => {
-      const leftIndex = preferredIndex.get(left);
-      const rightIndex = preferredIndex.get(right);
-      if (leftIndex !== undefined && rightIndex !== undefined) {
-        return leftIndex - rightIndex;
-      }
-      if (leftIndex !== undefined) return 1;
-      if (rightIndex !== undefined) return -1;
-      return left.localeCompare(right, "es");
-    });
-  }, [allowedCategories, faqSource]);
-  const [activeCategory, setActiveCategory] = useState(() => {
-    if (defaultCategory && categories.includes(defaultCategory)) {
-      return defaultCategory;
-    }
-    return categories[0] ?? "";
-  });
+  const [visibleCount, setVisibleCount] = useState(FAQ_PAGE_SIZE);
+  const categories = useMemo<string[]>(
+    () => getFaqCategories(faqSource, allowedCategories),
+    [allowedCategories, faqSource]
+  );
+  const [activeCategory, setActiveCategory] = useState(() =>
+    getInitialFaqCategory(categories, defaultCategory)
+  );
 
   useEffect(() => {
     if (defaultCategory && categories.includes(defaultCategory)) {
@@ -120,22 +92,17 @@ export function FAQSection({
   }, [activeCategory, categories, defaultCategory]);
 
   useEffect(() => {
-    setVisibleCount(6);
+    setVisibleCount(FAQ_PAGE_SIZE);
   }, [activeCategory, searchValue]);
 
   const normalizedSearch = searchValue.trim().toLowerCase();
   const filteredFaqs = useMemo(() => {
-    return faqSource.filter((item) => {
-      const matchesCategory = activeCategory
-        ? item.category.includes(activeCategory)
-        : true;
-      const matchesSearch = normalizedSearch
+    return filterFaqsByCategory(faqSource, activeCategory).filter((item) =>
+      normalizedSearch
         ? item.question.toLowerCase().includes(normalizedSearch) ||
           item.answer.toLowerCase().includes(normalizedSearch)
-        : true;
-
-      return matchesCategory && matchesSearch;
-    });
+        : true
+    );
   }, [activeCategory, faqSource, normalizedSearch]);
   const displayedFaqs = filteredFaqs.slice(0, visibleCount);
 
@@ -257,7 +224,7 @@ export function FAQSection({
               type="button"
               onClick={() =>
                 setVisibleCount((count) =>
-                  Math.min(count + 6, filteredFaqs.length)
+                  Math.min(count + FAQ_PAGE_SIZE, filteredFaqs.length)
                 )
               }
               className="text-[#002654] font-semibold hover:underline mt-8 flex items-center justify-center w-full cursor-pointer"

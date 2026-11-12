@@ -23,6 +23,7 @@ import { Navbar } from "@/components/navbar";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { Footer } from "@/components/footer";
 import { FAQSection } from "@/components/faq-section";
+import { STUDENT_VISA_FAQ_SECTION } from "@/lib/faq-sections";
 import { getFaqsByCategories } from "@/data/faqs";
 
 import Link from "next/link";
@@ -33,18 +34,8 @@ export default function VisaEtudiantPage() {
 
   const t = useTranslations("StudentVisaPage");
   const locale = useLocale();
-  const studentFaqs = getFaqsByCategories([
-    "Estudios",
-    "Errores Frecuentes",
-    "Asesoría",
-    "Seguros",
-  ]);
-  const studentFaqCategories = [
-    "Estudios",
-    "Errores Frecuentes",
-    "Asesoría",
-    "Seguros",
-  ];
+  const studentFaqCategories = STUDENT_VISA_FAQ_SECTION.allowedCategories ?? [];
+  const studentFaqs = getFaqsByCategories(studentFaqCategories);
 
   return (
     <div className="min-h-screen bg-white">
@@ -462,7 +453,7 @@ export default function VisaEtudiantPage() {
         title={t("faqSection.title")}
         description={t("faqSection.description")}
         allowedCategories={studentFaqCategories}
-        defaultCategory="Estudios"
+        defaultCategory={STUDENT_VISA_FAQ_SECTION.defaultCategory}
         data={studentFaqs}
       />
 

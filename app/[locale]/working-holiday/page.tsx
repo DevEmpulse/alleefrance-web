@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { WORKING_HOLIDAY_COUNTRIES } from "@/lib/working-holiday-countries";
 import { WorkingHolidayLanding } from "./landing";
+import { PageSchemas, getBreadcrumbNames } from "@/lib/schema-server";
+import { WORKING_HOLIDAY_FAQ_SECTION } from "@/lib/faq-sections";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
@@ -48,6 +50,20 @@ export async function generateMetadata({
 export default async function WorkingHolidayPage({ params }: { params: Promise<{ locale: string }> }) {
   const p = await params;
   setRequestLocale(p.locale);
+  const names = await getBreadcrumbNames(p.locale);
 
-  return <WorkingHolidayLanding />;
+  return (
+    <>
+      <PageSchemas
+        locale={p.locale}
+        breadcrumbs={[
+          { name: names.home, path: "" },
+          { name: names.workingHoliday, path: "/working-holiday" },
+        ]}
+        howTo="workingHoliday"
+        faqSection={WORKING_HOLIDAY_FAQ_SECTION}
+      />
+      <WorkingHolidayLanding />
+    </>
+  );
 }

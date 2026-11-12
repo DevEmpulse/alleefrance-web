@@ -6,6 +6,12 @@ import { isLocale, routing } from "@/i18n/routing";
 import { Montserrat, Open_Sans } from "next/font/google";
 import { Metadata } from "next";
 import { SITE_URL } from "@/lib/seo";
+import { JsonLd } from "@/components/json-ld";
+import {
+  buildOrganizationSchema,
+  buildProfessionalServiceSchema,
+  buildWebSiteSchema,
+} from "@/lib/schema";
 import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION } from "@/lib/site-verification";
 
 const montserrat = Montserrat({
@@ -128,90 +134,9 @@ export default async function LocaleLayout({
         />
         <meta name="geo.region" content="FR-ARA" />
         <meta name="geo.placename" content="Lyon" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://alleefrance.com/#organization",
-              name: "Allée France",
-              alternateName: "Allée France Lyon",
-              url: "https://alleefrance.com",
-              logo: "https://alleefrance.com/logo-AF.webp",
-              description:
-                locale === "en"
-                  ? "Specialized immigration consultancy in France for Latin Americans."
-                  : locale === "fr"
-                  ? "Conseil en immigration spécialisé en France pour les Latino-Américains."
-                  : "Asesoría migratoria especializada en Francia para latinoamericanos. Expertos en visas de trabajo, estudios, Working Holiday y permisos de residencia.",
-              foundingDate: "2023",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Lyon",
-                addressRegion: "Auvergne-Rhône-Alpes",
-                addressCountry: "FR",
-              },
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+33-601-526-171",
-                contactType: "customer service",
-                availableLanguage: ["Spanish", "French", "English"],
-                areaServed: ["AR", "CL", "CO", "MX", "PE", "UY", "EC"],
-              },
-              sameAs: ["https://wa.me/33601526171"],
-              areaServed: [
-                { "@type": "Country", name: "Argentina" },
-                { "@type": "Country", name: "Chile" },
-                { "@type": "Country", name: "Colombia" },
-                { "@type": "Country", name: "México" },
-                { "@type": "Country", name: "Perú" },
-                { "@type": "Country", name: "Uruguay" },
-                { "@type": "Country", name: "Ecuador" },
-              ],
-              knowsAbout: [
-                "Visa Salarié Francia",
-                "Visa Saisonnier Francia",
-                "Working Holiday Francia",
-                "Visa Estudiante Francia",
-                "Titre de Séjour",
-                "Migración a Francia",
-              ],
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "ProfessionalService",
-              "@id": "https://alleefrance.com/#localbusiness",
-              name: "Allée France - Asesoría Migratoria",
-              image: "https://alleefrance.com/logo-AF.webp",
-              url: "https://alleefrance.com",
-              telephone: "+33601526171",
-              priceRange: "€€",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Lyon",
-                addressCountry: "FR",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 45.764043,
-                longitude: 4.835659,
-              },
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "127",
-                bestRating: "5",
-                worstRating: "1",
-              },
-            }),
-          }}
-        />
+        <JsonLd data={buildOrganizationSchema(locale)} />
+        <JsonLd data={buildProfessionalServiceSchema()} />
+        <JsonLd data={buildWebSiteSchema(locale)} />
       </head>
       <body
         className={`${openSans.className} antialiased overflow-x-hidden`}

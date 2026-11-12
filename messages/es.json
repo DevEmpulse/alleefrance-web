@@ -3525,5 +3525,129 @@
     "helpDescription": "Agenda una llamada gratuita y recibe orientación personalizada de nuestro equipo de consejeros franceses. Estamos aquí para acompañarte en cada paso.",
     "scheduleBtn": "Agendar asesoría",
     "whatsappBtn": "Envíanos un WhatsApp"
+  },
+  "StructuredData": {
+    "breadcrumbs": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "workVisas": "Visas de Trabajo",
+      "studentVisa": "Visa Estudiante",
+      "titreDeSejour": "Titre de Séjour",
+      "workingHoliday": "Working Holiday"
+    },
+    "howTo": {
+      "workVisas": {
+        "name": "Cómo obtener una Visa de Trabajo en Francia",
+        "description": "Guía paso a paso para obtener tu visa Salarié o Saisonnier para trabajar legalmente en Francia.",
+        "steps": [
+          {
+            "name": "Conseguir oferta de trabajo",
+            "text": "Obtén una oferta formal de empleo de un empleador francés con contrato CDI, CDD o estacional."
+          },
+          {
+            "name": "Empleador inicia trámite ANEF",
+            "text": "Tu empleador solicita la autorización de trabajo ante DREETS a través de la plataforma ANEF."
+          },
+          {
+            "name": "Publicación en France Travail",
+            "text": "Si el puesto no está en Métiers en Tension, se publica la oferta por 21 días."
+          },
+          {
+            "name": "Obtener autorización de trabajo",
+            "text": "DREETS aprueba la autorización de trabajo (2-8 semanas)."
+          },
+          {
+            "name": "Solicitar visa en consulado",
+            "text": "Con la autorización aprobada, solicitas la visa en el consulado francés de tu país."
+          },
+          {
+            "name": "Validar visa al llegar a Francia",
+            "text": "Al llegar, valida tu visa online en OFII y regístrate en seguridad social."
+          }
+        ]
+      },
+      "studentVisa": {
+        "name": "Cómo obtener una Visa de Estudiante para Francia",
+        "description": "Guía paso a paso para obtener tu visa de estudiante y estudiar en Francia.",
+        "steps": [
+          {
+            "name": "Obtener aceptación académica",
+            "text": "Consigue la carta de aceptación o preinscripción de tu escuela o universidad en Francia."
+          },
+          {
+            "name": "Completar proceso Campus France",
+            "text": "Crea tu cuenta en Etudes en France, completa tu dossier académico y realiza la entrevista."
+          },
+          {
+            "name": "Preparar documentación económica",
+            "text": "Demuestra recursos de al menos 615€ por mes (7.380€ anuales) mediante extractos bancarios o sponsor."
+          },
+          {
+            "name": "Solicitar visa en consulado",
+            "text": "Llena el formulario en France-Visas, agenda cita y presenta tu expediente completo."
+          },
+          {
+            "name": "Validar visa al llegar",
+            "text": "Valida tu VLS-TS online y regístrate en la sécurité sociale estudiantil."
+          }
+        ]
+      },
+      "titreDeSejour": {
+        "name": "Cómo renovar o solicitar el Titre de Séjour en Francia",
+        "description": "Guía paso a paso para obtener o renovar tu permiso de residencia en Francia.",
+        "steps": [
+          {
+            "name": "Reunir documentación",
+            "text": "Prepara pasaporte vigente, comprobante de domicilio, justificantes de ingresos y seguro médico."
+          },
+          {
+            "name": "Completar formularios CERFA",
+            "text": "Llena los formularios oficiales correspondientes a tu tipo de título."
+          },
+          {
+            "name": "Solicitar en plataforma ANEF",
+            "text": "Carga tu dossier completo en la plataforma ANEF del Ministerio del Interior."
+          },
+          {
+            "name": "Cita en prefectura",
+            "text": "Acude a la cita en prefectura para toma de datos biométricos."
+          },
+          {
+            "name": "Recibir récépissé y título",
+            "text": "Obtén el récépissé provisional y luego tu Titre de Séjour definitivo."
+          }
+        ]
+      },
+      "workingHoliday": {
+        "name": "Cómo obtener la Visa Working Holiday Francia",
+        "description": "Guía paso a paso para solicitar tu visa Working Holiday y vivir en Francia hasta 12 meses.",
+        "steps": [
+          {
+            "name": "Verificar requisitos",
+            "text": "Confirma que cumples con edad (18-30/35), nacionalidad elegible y no haber tenido WH Francia antes."
+          },
+          {
+            "name": "Reunir documentación",
+            "text": "Prepara pasaporte vigente, antecedentes penales apostillados, CV y carta de motivación en francés."
+          },
+          {
+            "name": "Contratar seguro de viaje",
+            "text": "Adquiere seguro médico internacional de 12 meses con hospitalización y repatriación."
+          },
+          {
+            "name": "Demostrar fondos",
+            "text": "Presenta extractos bancarios con 2.500-3.000€ y pasaje de regreso o fondos equivalentes."
+          },
+          {
+            "name": "Agendar cita consular",
+            "text": "Crea cuenta en France-Visas, completa formulario y reserva turno en el consulado."
+          },
+          {
+            "name": "Presentar solicitud",
+            "text": "Acude a la cita con documentos originales y copias. Espera aprobación (15 días aprox)."
+          }
+        ]
+      }
+    }
   }
 }
