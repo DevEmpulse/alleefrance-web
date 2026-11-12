@@ -6,13 +6,11 @@
 /** Page path without locale: /{locale}/autor/jio/. */
 export const AUTHOR_PATH = "/autor/jio";
 
-/** Name as written in the bio, used for the page title and article bylines. */
-export const AUTHOR_DISPLAY_NAME = "Jiovanny Sandoval Villegas";
-
-/** Full name, used in Person markup. */
-export const AUTHOR_FULL_NAME = "Jiovanny Ali Sandoval Villegas";
-
-export const AUTHOR_ALTERNATE_NAME = "Jio";
+/**
+ * The only name shown anywhere, including Person markup. The author asked not to publish
+ * his full name.
+ */
+export const AUTHOR_DISPLAY_NAME = "Jio";
 
 /** ISO 639-1 codes of the languages he works in (French and Spanish). */
 export const AUTHOR_LANGUAGES = ["fr", "es"];

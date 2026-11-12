@@ -88,7 +88,7 @@ export default async function AuthorPage({
               aria-label={t("avatarLabel")}
               className="mx-auto mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-white/30 bg-white/10 text-3xl font-bold tracking-wide"
             >
-              JS
+              J
             </div>
             <h1 className="text-4xl lg:text-5xl font-bold mb-4 leading-tight">
               {AUTHOR_DISPLAY_NAME}

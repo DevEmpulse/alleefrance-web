@@ -1,8 +1,7 @@
 import { SITE_NAME, SITE_URL, localizedUrl } from "@/lib/seo";
 import { stripHtml, type FAQItem } from "@/lib/faq";
 import {
-  AUTHOR_ALTERNATE_NAME,
-  AUTHOR_FULL_NAME,
+  AUTHOR_DISPLAY_NAME,
   AUTHOR_LANGUAGES,
   AUTHOR_PATH,
   BUSINESS_GOOGLE_PROFILE_URL,
@@ -199,8 +198,7 @@ function buildPersonNode(locale: string, data: PersonData): JsonLdNode {
   return {
     "@type": "Person",
     "@id": PERSON_ID,
-    name: AUTHOR_FULL_NAME,
-    alternateName: AUTHOR_ALTERNATE_NAME,
+    name: AUTHOR_DISPLAY_NAME,
     jobTitle: data.jobTitle,
     description: data.description,
     url: localizedUrl(locale, AUTHOR_PATH),
@@ -254,7 +252,7 @@ export function buildBlogPostingSchema({
     author: {
       "@type": "Person",
       "@id": PERSON_ID,
-      name: AUTHOR_FULL_NAME,
+      name: AUTHOR_DISPLAY_NAME,
       url: localizedUrl(locale, AUTHOR_PATH),
     },
     publisher: { "@id": ORGANIZATION_ID },
