@@ -4,6 +4,9 @@ import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
+import { ArticleByline } from "@/components/blog/article-byline";
+import { ArticleSchemas } from "@/lib/schema-server";
+import { articleOpenGraph, getBlogPost } from "@/lib/blog-posts";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
 export function generateStaticParams() {
@@ -11,17 +14,19 @@ export function generateStaticParams() {
 }
 
 
-const heroImage = "/Fondo-WH.webp";
+const SLUG = "working-holiday-francia";
+const heroImage = getBlogPost(SLUG).image;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const p = await params;
   const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.working-holiday-francia.hero" });
   return buildMetadata({
     locale: p.locale,
-    path: "/blog/working-holiday-francia",
+    path: `/blog/${SLUG}`,
     title: t("title"),
     description: t("subtitle"),
     type: "article",
+    article: articleOpenGraph(p.locale, SLUG),
     image: { url: heroImage, alt: t("title") },
   });
 }
@@ -38,6 +43,12 @@ export default async function WorkingHolidayFranciaPage({ params }: { params: Pr
 
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
+      <ArticleSchemas
+        locale={p.locale}
+        slug={SLUG}
+        headline={t("hero.title")}
+        description={t("hero.subtitle")}
+      />
       <Navbar />
 
       <section
@@ -63,6 +74,7 @@ export default async function WorkingHolidayFranciaPage({ params }: { params: Pr
           <p className="text-xl leading-relaxed mb-6">
             {t("hero.subtitle")}
           </p>
+          <ArticleByline locale={p.locale} slug={SLUG} />
         </div>
       </section>
 

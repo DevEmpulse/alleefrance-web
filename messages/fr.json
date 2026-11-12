@@ -266,7 +266,8 @@
       "successStories": "Cas de réussite",
       "insurance": "Assurance Voyage",
       "faq": "Foire Aux Questions",
-      "blog": "Blog"
+      "blog": "Blog",
+      "author": "Notre fondateur"
     },
     "services": {
       "title": "Services",
@@ -651,7 +652,6 @@
         {
           "title": "Renouveler son titre de séjour en 2026 : délais, ANEF et que faire si l'attestation n'arrive pas",
           "excerpt": "Quand demander le renouvellement, comment procéder sur l'ANEF et que faire si votre titre expire avant l'attestation de prolongation d'instruction.",
-          "date": "11 Novembre 2026",
           "readTime": "6 min",
           "image": "/renovar-titre-de-sejour-2026.webp",
           "category": "Démarches Administratives",
@@ -660,7 +660,6 @@
         {
           "title": "Combien coûte la vie en France : budget réel pour les Latino-Américains en 2026",
           "excerpt": "L'une des questions les plus fréquentes que nous recevons est : 'De combien d'argent ai-je besoin pour vivre en France ?' La réponse dépend de la ville, de votre style de vie et de votre situation migratoire.",
-          "date": "14 Juin 2026",
           "readTime": "8 min",
           "image": "/cuanto-cuesta-vivir-en-francia.webp",
           "category": "Vie en France",
@@ -669,7 +668,6 @@
         {
           "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
           "excerpt": "Le guide complet sur le titre de séjour pour les Latino-Américains : types, documents, plateforme ANEF et délais.",
-          "date": "17 Juin 2026",
           "readTime": "10 min",
           "image": "/titre-sejour-france-guide.webp",
           "category": "Démarches Administratives",
@@ -678,7 +676,6 @@
         {
           "title": "Comment trouver un emploi en France depuis l'Amérique latine (sans y être)",
           "excerpt": "Une stratégie claire pour trouver un employeur français depuis l'autre bout du monde et commencer votre démarche de visa.",
-          "date": "12 Juin 2026",
           "readTime": "9 min",
           "image": "/conseguir-trabajo-francia.webp",
           "category": "Travail",
@@ -687,7 +684,6 @@
         {
           "title": "Banques physiques vs Banques virtuelles en France : Lequel choisir ?",
           "excerpt": "Wise, Revolut, N26, Qonto ou banque traditionnelle : découvrez celle qui correspond le mieux à votre situation en France.",
-          "date": "2 Juin 2026",
           "readTime": "12 min",
           "image": "/bancos-france-inmigrantes.webp",
           "category": "Finances",
@@ -696,7 +692,6 @@
         {
           "title": "Qu'est-ce qu'une eSIM et pourquoi est-ce si utile ?",
           "excerpt": "Le guide que tout Latino-Américain devrait lire avant d'arriver en France. Connectivité active dès l'atterrissage.",
-          "date": "2 Juin 2026",
           "readTime": "8 min",
           "image": "/esim-guide-france.webp",
           "category": "Connectivité",
@@ -705,7 +700,6 @@
         {
           "title": "Visa Saisonnier ou Salarié : Guide Complet 2026",
           "excerpt": "Exigences, contrats, délais et conseils clés pour obtenir un permis Saisonnier ou Salarié temporaire en France sans accroc.",
-          "date": "15 Janvier 2026",
           "readTime": "9 min",
           "image": "/seasonal-worker-in-french-vineyard.webp",
           "category": "Travail",
@@ -714,7 +708,6 @@
         {
           "title": "PVT France : Checklist pour les Argentins 2025",
           "excerpt": "Étape par étape pour rassembler les documents, demander le visa et organiser vos premiers mois en France avec le PVT.",
-          "date": "10 Janvier 2025",
           "readTime": "8 min",
           "image": "/french-work-visa-documents.webp",
           "category": "Permis Vacances-Travail",
@@ -723,7 +716,6 @@
         {
           "title": "Visa Étudiant France 2025 : Campus France et Consulat",
           "excerpt": "Organisez votre calendrier de la recherche de programmes à l'arrivée en France, avec checklists et documents essentiels.",
-          "date": "5 Janvier 2025",
           "readTime": "10 min",
           "image": "/student-studying-in-paris.webp",
           "category": "Visas Étudiants",
@@ -732,7 +724,6 @@
         {
           "title": "Apprendre le Français : Ressources et Méthodes pour Progresser",
           "excerpt": "Stratégies combinées (applications, professeurs, immersion et examens) pour atteindre le niveau B1/B2 requis pour les visas en un temps record.",
-          "date": "2 Janvier 2025",
           "readTime": "7 min",
           "image": "/person-learning-french-language.webp",
           "category": "Vie en France",
@@ -943,7 +934,6 @@
         "title": "Qu'est-ce qu'une eSIM et pourquoi est-ce si utile aujourd'hui ?",
         "subtitle": "Le guide que tout Latino-Américain devrait lire avant d'atterrir en France.",
         "category": "Connectivité et Technologie",
-        "date": "2 Juin 2026",
         "readTime": "8 min de lecture"
       },
       "intro": "Une eSIM (embedded SIM) est une carte SIM numérique intégrée directement dans la puce du téléphone, qui permet d'activer un forfait de données ou d'appels sans avoir besoin d'insérer une carte physique. Elle s'active en quelques minutes via un code QR, peut stocker plusieurs profils d'opérateurs simultanément et est particulièrement utile pour les voyageurs, les travailleurs internationaux et les immigrants car elle permet d'avoir une connectivité active dès l'atterrissage dans un nouveau pays, sans files d'attente, sans attendre et sans dépendre d'un magasin de téléphonie.",
@@ -1047,7 +1037,6 @@
         "title": "Banques physiques vs banques virtuelles en France",
         "subtitle": "Quelle est la meilleure option pour les immigrés ?",
         "category": "Finances pour Immigrés",
-        "date": "2 Juin 2026",
         "readTime": "12 min de lecture"
       },
       "intro": {
@@ -1421,7 +1410,6 @@
         "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
         "subtitle": "Le guide complet pour les Latino-Américains qui souhaitent vivre légalement en France au-delà de 90 jours.",
         "category": "Démarches Administratives",
-        "date": "17 Juin 2026",
         "readTime": "10 min de lecture"
       },
       "intro": {
@@ -1611,10 +1599,7 @@
         "category": "Démarches Administratives",
         "title": "Renouveler son titre de séjour en 2026 : délais, ANEF et que faire si l'attestation de prolongation d'instruction n'arrive pas",
         "subtitle": "Guide pratique pour savoir quand demander le renouvellement, comment procéder sur l'ANEF et que faire si votre titre expire avant que l'attestation de prolongation d'instruction n'arrive.",
-        "date": "11 Novembre 2026",
-        "readTime": "6 min de lecture",
-        "byline": "Par Jiovanny Sandoval Villegas, gestionnaire chez Gestoría Allée France Lyon",
-        "updated": "Mis à jour le 11 novembre 2026"
+        "readTime": "6 min de lecture"
       },
       "shortAnswer": "Réponse courte : en France, vous devez demander le renouvellement de votre titre de séjour entre 120 et 60 jours avant son expiration, en ligne sur l'ANEF ou directement auprès de la préfecture, selon le type de titre. Si votre dossier est complet et déposé dans ce délai, la préfecture doit vous délivrer une attestation de prolongation d'instruction, valable jusqu'à 3 mois et renouvelable, qui prouve que vous restez en situation régulière en attendant votre nouvelle carte.",
       "whenToRenew": {
@@ -3529,6 +3514,7 @@
   "StructuredData": {
     "breadcrumbs": {
       "home": "Accueil",
+      "blog": "Blog",
       "services": "Services",
       "workVisas": "Visas de travail",
       "studentVisa": "Visa étudiant",
@@ -3649,5 +3635,31 @@
         ]
       }
     }
+  },
+  "AuthorPage": {
+    "meta": {
+      "title": "Jiovanny Sandoval Villegas (Jio), fondateur d'Allée France",
+      "description": "Jiovanny Sandoval Villegas est le fondateur d'Allée France, une gestoría basée à Lyon spécialisée dans les démarches migratoires et administratives pour les Latino-Américains qui souhaitent vivre, travailler ou étudier en France."
+    },
+    "jobTitle": "Gérant et propriétaire",
+    "subtitle": "Jio · Gérant et propriétaire d'Allée France",
+    "avatarLabel": "Initiales de Jiovanny Sandoval Villegas",
+    "aboutTitle": "À propos de Jio",
+    "bio": [
+      "Jiovanny Sandoval Villegas est le fondateur d'Allée France, une gestoría basée à Lyon spécialisée dans les démarches migratoires et administratives pour les Latino-Américains qui souhaitent vivre, travailler ou étudier en France.",
+      "Depuis plus de deux ans, il accompagne des personnes et des familles tout au long de leur parcours : visas de travail (salarié, saisonnier et travailleur temporaire), titres de séjour, renouvellements et changements de statut sur l'ANEF et en préfecture, démarches de vie privée et familiale, et assurances voyage pour le visa. Il connaît à fond le CESEDA, le Code du travail et les procédures de l'OFII et des préfectures françaises.",
+      "Avec Allée France, il a accompagné plus de 900 dossiers et compte plus de 70 avis sur Google."
+    ],
+    "roleLabel": "Rôle",
+    "languagesLabel": "Langues",
+    "languagesValue": "Français et espagnol",
+    "linksTitle": "Allée France en ligne",
+    "googleReviews": "Voir nos avis Google",
+    "instagram": "Allée France sur Instagram",
+    "articlesTitle": "Articles de Jio"
+  },
+  "BlogByline": {
+    "by": "Par",
+    "updated": "Mis à jour le"
   }
 }

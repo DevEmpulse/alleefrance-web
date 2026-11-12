@@ -32,6 +32,15 @@ type BuildMetadataOptions = {
   description: string;
   image?: SeoImage;
   type?: "website" | "article";
+  /** Open Graph article fields. Only used when `type` is "article". */
+  article?: {
+    /** ISO 8601 date or date-time. */
+    publishedTime: string;
+    /** ISO 8601 date or date-time. */
+    modifiedTime: string;
+    /** Absolute URL of the author's page. */
+    authorUrl: string;
+  };
   /** Skip the layout title template (used by the home page). */
   absoluteTitle?: boolean;
 };
@@ -54,6 +63,7 @@ export function buildMetadata({
   description,
   image = DEFAULT_IMAGE,
   type = "website",
+  article,
   absoluteTitle = false,
 }: BuildMetadataOptions): Metadata {
   const canonical = localizedUrl(locale, path);
@@ -67,7 +77,18 @@ export function buildMetadata({
     description,
     alternates: { canonical, languages },
     openGraph: {
-      type,
+      ...(type === "article"
+        ? {
+            type: "article" as const,
+            ...(article
+              ? {
+                  publishedTime: article.publishedTime,
+                  modifiedTime: article.modifiedTime,
+                  authors: [article.authorUrl],
+                }
+              : {}),
+          }
+        : { type: "website" as const }),
       url: canonical,
       siteName: SITE_NAME,
       locale: OG_LOCALES[locale as Locale] ?? OG_LOCALES[routing.defaultLocale],

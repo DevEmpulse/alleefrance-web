@@ -1,5 +1,13 @@
 import { SITE_NAME, SITE_URL, localizedUrl } from "@/lib/seo";
 import { stripHtml, type FAQItem } from "@/lib/faq";
+import {
+  AUTHOR_ALTERNATE_NAME,
+  AUTHOR_FULL_NAME,
+  AUTHOR_LANGUAGES,
+  AUTHOR_PATH,
+  BUSINESS_GOOGLE_PROFILE_URL,
+} from "@/lib/author";
+import { getBlogPost } from "@/lib/blog-posts";
 
 export type JsonLdNode = Record<string, unknown>;
 
@@ -7,12 +15,15 @@ const SCHEMA_CONTEXT = "https://schema.org";
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const LOCAL_BUSINESS_ID = `${SITE_URL}/#localbusiness`;
+/** Locale-independent, so every article in every locale references the same Person. */
+export const PERSON_ID = `${SITE_URL}/#jio`;
 
 /** Social profiles linked from the site (footer and contact section). */
 export const SOCIAL_PROFILE_URLS = [
   "https://wa.me/33601526171",
   "https://instagram.com/alleefrancelyon",
   "https://www.tiktok.com/@alleefrancelyon",
+  BUSINESS_GOOGLE_PROFILE_URL,
 ];
 
 const ORGANIZATION_DESCRIPTIONS: Record<string, string> = {
@@ -170,5 +181,82 @@ export function buildFaqPageSchema(items: FAQItem[]): JsonLdNode {
         text: stripHtml(item.answer),
       },
     })),
+  };
+}
+
+export type PersonData = {
+  /** Localized job title. */
+  jobTitle: string;
+  /** Localized professional bio. */
+  description: string;
+};
+
+/**
+ * The author. No `image` and no `sameAs`: no photo and no personal profiles were confirmed.
+ * Without `@context` so it can be nested as `mainEntity`.
+ */
+function buildPersonNode(locale: string, data: PersonData): JsonLdNode {
+  return {
+    "@type": "Person",
+    "@id": PERSON_ID,
+    name: AUTHOR_FULL_NAME,
+    alternateName: AUTHOR_ALTERNATE_NAME,
+    jobTitle: data.jobTitle,
+    description: data.description,
+    url: localizedUrl(locale, AUTHOR_PATH),
+    knowsLanguage: AUTHOR_LANGUAGES,
+    worksFor: { "@id": ORGANIZATION_ID },
+  };
+}
+
+export function buildProfilePageSchema(
+  locale: string,
+  data: PersonData,
+): JsonLdNode {
+  return {
+    "@context": SCHEMA_CONTEXT,
+    "@type": "ProfilePage",
+    url: localizedUrl(locale, AUTHOR_PATH),
+    inLanguage: locale,
+    mainEntity: buildPersonNode(locale, data),
+  };
+}
+
+export type BlogPostingData = {
+  locale: string;
+  /** Registry slug of the article. */
+  slug: string;
+  headline: string;
+  description: string;
+};
+
+/** Dates, image and author come from the blog registry. */
+export function buildBlogPostingSchema({
+  locale,
+  slug,
+  headline,
+  description,
+}: BlogPostingData): JsonLdNode {
+  const post = getBlogPost(slug);
+  return {
+    "@context": SCHEMA_CONTEXT,
+    "@type": "BlogPosting",
+    headline,
+    description,
+    image: [`${SITE_URL}${post.image}`],
+    datePublished: post.datePublished,
+    dateModified: post.dateModified,
+    inLanguage: locale,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": localizedUrl(locale, `/blog/${slug}`),
+    },
+    author: {
+      "@type": "Person",
+      "@id": PERSON_ID,
+      name: AUTHOR_FULL_NAME,
+      url: localizedUrl(locale, AUTHOR_PATH),
+    },
+    publisher: { "@id": ORGANIZATION_ID },
   };
 }

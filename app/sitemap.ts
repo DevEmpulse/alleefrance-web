@@ -3,6 +3,8 @@ import { MetadataRoute } from "next";
 import { PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES } from "@/lib/working-holiday-countries";
 import { routing } from "@/i18n/routing";
 import { localizedUrl } from "@/lib/seo";
+import { BLOG_POSTS } from "@/lib/blog-posts";
+import { AUTHOR_PATH } from "@/lib/author";
 
 type ChangeFrequency = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
@@ -53,26 +55,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/servicios/titre-de-sejour", changeFrequency: "weekly" as const, priority: 0.8 },
     { path: "/working-holiday", changeFrequency: "weekly" as const, priority: 0.9 },
     { path: "/blog", changeFrequency: "weekly" as const, priority: 0.7 },
+    { path: AUTHOR_PATH, changeFrequency: "yearly" as const, priority: 0.5 },
   ];
 
   const whPaths = PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map(code => ({
     path: `/working-holiday/${code}`, changeFrequency: "monthly" as const, priority: 0.8
   }));
 
-  // Publication dates come from the blog index cards (messages BlogPage.posts[].date).
-  // Pages without a known modification date omit lastModified.
-  const blogPaths = [
-    { path: "/blog/visa-saisonier-salarie", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2026-01-15" },
-    { path: "/blog/working-holiday-francia", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2025-01-10" },
-    { path: "/blog/visa-estudiante-francia", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2025-01-05" },
-    { path: "/blog/aprender-frances-recursos", changeFrequency: "monthly" as const, priority: 0.6, lastModified: "2025-01-02" },
-    { path: "/blog/esim-guia-latinoamericanos-francia", changeFrequency: "monthly" as const, priority: 0.6, lastModified: "2026-06-02" },
-    { path: "/blog/bancos-fisicos-vs-virtuales-francia", changeFrequency: "monthly" as const, priority: 0.6, lastModified: "2026-06-02" },
-    { path: "/blog/titre-sejour-francia", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2026-06-17" },
-    { path: "/blog/conseguir-trabajo-francia-desde-latam", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2026-06-12" },
-    { path: "/blog/cuanto-cuesta-vivir-en-francia", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2026-06-14" },
-    { path: "/blog/renovar-titre-de-sejour-2026", changeFrequency: "monthly" as const, priority: 0.7, lastModified: "2026-11-11" },
-  ];
+  // Blog slugs and dates come from the blog registry (lib/blog-posts.ts).
+  const blogPaths: PathEntry[] = BLOG_POSTS.map((post) => ({
+    path: `/blog/${post.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+    lastModified: post.dateModified,
+  }));
 
   const legalPaths = [
     { path: "/politica-de-privacidad", changeFrequency: "yearly" as const, priority: 0.3 },

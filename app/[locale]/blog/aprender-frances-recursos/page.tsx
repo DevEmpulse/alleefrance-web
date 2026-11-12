@@ -4,23 +4,28 @@ import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
+import { ArticleByline } from "@/components/blog/article-byline";
+import { ArticleSchemas } from "@/lib/schema-server";
+import { articleOpenGraph, getBlogPost } from "@/lib/blog-posts";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
 }
 
 
-const heroImage = "/person-learning-french-language.webp";
+const SLUG = "aprender-frances-recursos";
+const heroImage = getBlogPost(SLUG).image;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const p = await params;
   const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.aprender-frances-recursos.hero" });
   return buildMetadata({
     locale: p.locale,
-    path: "/blog/aprender-frances-recursos",
+    path: `/blog/${SLUG}`,
     title: t("title"),
     description: t("subtitle"),
     type: "article",
+    article: articleOpenGraph(p.locale, SLUG),
     image: { url: heroImage, alt: t("title") },
   });
 }
@@ -37,6 +42,12 @@ export default async function AprenderFrancesRecursosPage({ params }: { params: 
 
   return (
     <div className="min-h-screen bg-white">
+      <ArticleSchemas
+        locale={p.locale}
+        slug={SLUG}
+        headline={t("hero.title")}
+        description={t("hero.subtitle")}
+      />
       <Navbar />
 
       <section
@@ -62,6 +73,7 @@ export default async function AprenderFrancesRecursosPage({ params }: { params: 
           <p className="text-xl leading-relaxed mb-6">
             {t("hero.subtitle")}
           </p>
+          <ArticleByline locale={p.locale} slug={SLUG} />
         </div>
       </section>
 

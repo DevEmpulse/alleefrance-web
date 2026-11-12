@@ -7,6 +7,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useTranslations, useLocale } from "next-intl";
+import { formatBlogDate, getBlogPost } from "@/lib/blog-posts";
 
 export function BlogSection() {
   const t = useTranslations("BlogHome");
@@ -88,7 +89,7 @@ export function BlogSection() {
 
                 <div className="p-6 flex flex-col flex-1">
                   <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                    {post.date} · {post.readTime}
+                    {formatBlogDate(getBlogPost(post.slug).datePublished, locale)} · {post.readTime}
                   </p>
                   <h3
                     className="text-lg font-bold mb-3 line-clamp-2"

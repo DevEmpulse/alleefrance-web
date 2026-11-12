@@ -3,6 +3,7 @@ import { JsonLd } from "@/components/json-ld";
 import { getInitiallyVisibleFaqsForLocale } from "@/lib/faq-server";
 import type { FAQSectionConfig } from "@/lib/faq";
 import {
+  buildBlogPostingSchema,
   buildBreadcrumbSchema,
   buildFaqPageSchema,
   buildHowToSchema,
@@ -77,6 +78,7 @@ export async function PageSchemas({
 
 export type BreadcrumbKey =
   | "home"
+  | "blog"
   | "services"
   | "workVisas"
   | "studentVisa"
@@ -90,10 +92,44 @@ export async function getBreadcrumbNames(
   const t = await getTranslations({ locale, namespace: "StructuredData.breadcrumbs" });
   return {
     home: t("home"),
+    blog: t("blog"),
     services: t("services"),
     workVisas: t("workVisas"),
     studentVisa: t("studentVisa"),
     titreDeSejour: t("titreDeSejour"),
     workingHoliday: t("workingHoliday"),
   };
+}
+
+type ArticleSchemasProps = {
+  locale: string;
+  /** Registry slug of the article. */
+  slug: string;
+  /** The article's h1. */
+  headline: string;
+  description: string;
+};
+
+/** BlogPosting and BreadcrumbList (Home, Blog, article) of a blog article. */
+export async function ArticleSchemas({
+  locale,
+  slug,
+  headline,
+  description,
+}: ArticleSchemasProps) {
+  const names = await getBreadcrumbNames(locale);
+  return (
+    <>
+      <JsonLd
+        data={buildBlogPostingSchema({ locale, slug, headline, description })}
+      />
+      <JsonLd
+        data={buildBreadcrumbSchema(locale, [
+          { name: names.home, path: "" },
+          { name: names.blog, path: "/blog" },
+          { name: headline, path: `/blog/${slug}` },
+        ])}
+      />
+    </>
+  );
 }

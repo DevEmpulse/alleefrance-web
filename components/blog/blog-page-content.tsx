@@ -10,12 +10,12 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { formatBlogDate, getBlogPost } from "@/lib/blog-posts";
 
 
 type BlogPost = {
   title: string;
   excerpt: string;
-  date: string;
   readTime: string;
   image: string;
   category: string;
@@ -128,7 +128,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                       <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
                         <span className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
-                          {post.date}
+                          {formatBlogDate(getBlogPost(post.slug).datePublished, locale)}
                         </span>
                         <span className="flex items-center gap-1">
                           <Clock className="w-4 h-4" />
