@@ -68,31 +68,6 @@ export function FAQSection({
     }
   }, [data, allowedCategories, tData]);
 
-  const displayTitle = useMemo(() => {
-    if (title === "Preguntas Frecuentes (FAQ)" || title === "Preguntas Frecuentes") {
-      if (allowedCategories?.includes("Titre de Séjour")) {
-        return t("tdsTitle");
-      }
-      return t("title");
-    }
-    if (title === "Preguntas frecuentes sobre Working Holiday") return t("whTitle");
-    if (title === "Preguntas Frecuentes: Visas de Trabajo") return t("workTitle");
-    if (title === "Preguntas Frecuentes: Visa de Estudiante") return t("studentTitle");
-    if (title === "Preguntas Frecuentes: Titre de Séjour") return t("tdsTitle");
-    return title;
-  }, [title, allowedCategories, t]);
-
-  const displayDescription = useMemo(() => {
-    if (!description) return undefined;
-    if (description === "Resolvemos dudas clave sobre requisitos, seguros, trabajo y errores frecuentes en la postulación.") return t("whDescCountry");
-    if (description === "Resolvé dudas clave sobre requisitos, seguros, trabajo y tiempos de aplicación.") return t("whDescGlobal");
-    if (description === "Resolvemos tus dudas sobre contratos, requisitos estacionales y seguros para trabajar legalmente en Francia.") return t("workDesc");
-    if (description === "Resolvemos tus dudas sobre requisitos, solvencia económica, Campus France y trabajo a tiempo parcial.") return t("studentDesc");
-    if (description === "Resolvemos tus dudas sobre renovación, cambio de estatus y acompañamiento." || 
-        description === "Resolvemos dudas clave sobre renovación, requisitos y tiempos del Titre de Séjour.") return t("tdsDesc");
-    return description;
-  }, [description, t]);
-
   const [searchValue, setSearchValue] = useState("");
   const [visibleCount, setVisibleCount] = useState(6);
   const categories = useMemo<string[]>(() => {
@@ -173,10 +148,10 @@ export function FAQSection({
               className="text-4xl lg:text-5xl font-bold mb-4"
               style={{ color: "#002654" }}
             >
-              {displayTitle}
+              {title}
             </h2>
-            {displayDescription ? (
-              <p className="text-gray-600 max-w-2xl mx-auto">{displayDescription}</p>
+            {description ? (
+              <p className="text-gray-600 max-w-2xl mx-auto">{description}</p>
             ) : null}
           </div>
         </AnimateOnScroll>
@@ -257,7 +232,10 @@ export function FAQSection({
                       >
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-gray-700 leading-relaxed pb-6">
+                      <AccordionContent
+                        forceMount
+                        className="text-gray-700 leading-relaxed pb-6"
+                      >
                         {isHtmlString(faq.answer) ? (
                           <div
                             dangerouslySetInnerHTML={{ __html: faq.answer }}

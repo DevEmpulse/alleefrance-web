@@ -4,17 +4,12 @@ import { HeroSection } from "@/components/hero-section";
 import { AboutSection } from "@/components/about-section";
 import { ServicesSection } from "@/components/services-section";
 import { WorkingHolidaySection } from "@/components/working-holiday-section";
+import { useTranslations } from "next-intl";
 import { ALL_FAQS } from "@/data/faqs";
 
-function SectionLoading({ message }: { message: string }) {
-  return (
-    <section
-      aria-hidden="true"
-      className="py-16 text-center text-sm text-gray-500"
-    >
-      {message}
-    </section>
-  );
+// Language-neutral placeholder: the loading state carries no text.
+function SectionLoading() {
+  return <section aria-hidden="true" className="py-16" />;
 }
 
 const InsuranceSection = dynamic(
@@ -23,18 +18,14 @@ const InsuranceSection = dynamic(
       (mod) => mod.InsuranceSection
     ),
   {
-    loading: () => (
-      <SectionLoading message="Preparando coberturas recomendadas..." />
-    ),
+    loading: () => <SectionLoading />,
   }
 );
 
 const BlogSection = dynamic(
   () => import("@/components/blog-section").then((mod) => mod.BlogSection),
   {
-    loading: () => (
-      <SectionLoading message="Actualizando artículos del blog..." />
-    ),
+    loading: () => <SectionLoading />,
   }
 );
 
@@ -44,18 +35,14 @@ const SuccessStoriesSection = dynamic(
       (mod) => mod.SuccessStoriesSection
     ),
   {
-    loading: () => (
-      <SectionLoading message="Cargando historias de éxito..." />
-    ),
+    loading: () => <SectionLoading />,
   }
 );
 
 const FAQSection = dynamic(
   () => import("@/components/faq-section").then((mod) => mod.FAQSection),
   {
-    loading: () => (
-      <SectionLoading message="Cargando preguntas frecuentes..." />
-    ),
+    loading: () => <SectionLoading />,
   }
 );
 
@@ -65,22 +52,20 @@ const ContactSection = dynamic(
       (mod) => mod.ContactSection
     ),
   {
-    loading: () => (
-      <SectionLoading message="Preparando formulario de contacto..." />
-    ),
+    loading: () => <SectionLoading />,
   }
 );
 
 const Footer = dynamic(
   () => import("@/components/footer").then((mod) => mod.Footer),
   {
-    loading: () => (
-      <SectionLoading message="Cargando información de contacto..." />
-    ),
+    loading: () => <SectionLoading />,
   }
 );
 
 export function HomePage() {
+  const tFaq = useTranslations("FAQHome");
+
   return (
     <main className="min-h-screen w-full overflow-x-hidden">
       <Navbar />
@@ -91,7 +76,7 @@ export function HomePage() {
       <InsuranceSection />
       <BlogSection />
       <SuccessStoriesSection />
-      <FAQSection title="Preguntas Frecuentes (FAQ)" data={ALL_FAQS} />
+      <FAQSection title={tFaq("title")} data={ALL_FAQS} />
       <ContactSection />
       <Footer />
     </main>

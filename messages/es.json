@@ -2776,7 +2776,7 @@
       "button": "CONSULTAR AHORA"
     },
     "faqSection": {
-      "title": "Preguntas Frecuentes",
+      "title": "Preguntas Frecuentes (FAQ)",
       "description": "Resolvemos tus dudas sobre requisitos, solvencia económica, Campus France y trabajo a tiempo parcial."
     }
   },
@@ -3062,8 +3062,8 @@
       "moreServices": "VER MÁS SERVICIOS"
     },
     "faq": {
-      "title": "Preguntas Frecuentes",
-      "description": "Resolvemos dudas clave sobre renovación, requisitos y tiempos del Titre de Séjour."
+      "title": "Preguntas Frecuentes: Titre de Séjour",
+      "description": "Resolvemos tus dudas sobre renovación, cambio de estatus y acompañamiento."
     }
   },
   "WorkingHolidayPage": {

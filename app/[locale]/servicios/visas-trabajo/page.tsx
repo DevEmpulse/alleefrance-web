@@ -29,6 +29,7 @@ import { buildWhatsAppLink } from "@/lib/utils";
 export default function VisasTrabajoPage() {
 
   const t = useTranslations("WorkVisasPage");
+  const tFaq = useTranslations("FAQHome");
   const locale = useLocale();
   const [selectedVisa, setSelectedVisa] = useState<"salarie" | "saisonnier">(
     "salarie",
@@ -754,8 +755,8 @@ export default function VisasTrabajoPage() {
       </section>
 
       <FAQSection
-        title="Preguntas Frecuentes: Visas de Trabajo"
-        description="Resolvemos tus dudas sobre contratos, requisitos estacionales y seguros para trabajar legalmente en Francia."
+        title={tFaq("workTitle")}
+        description={tFaq("workDesc")}
         allowedCategories={[
           "Trabajo",
           "Saisonnier: General",

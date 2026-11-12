@@ -10,11 +10,8 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { FAQSection } from "@/components/faq-section";
 import { CountryIndicator } from "@/components/country-indicator";
-const FAQSection = dynamic(
-  () => import("@/components/faq-section").then((mod) => mod.FAQSection),
-  { ssr: false },
-);
 import { useCountry } from "@/components/country-provider";
 import { getFaqsByCategories } from "@/data/faqs";
 import {

@@ -18,9 +18,12 @@ function AnimatedCounter({
   duration?: number;
   delay?: number;
 }) {
-  const [count, setCount] = useState(0);
+  // Start from the final value so the static HTML (and no-JS clients) show it;
+  // the count-up below is a progressive enhancement once the page hydrates.
+  const [count, setCount] = useState(end);
 
   useEffect(() => {
+    setCount(0);
     const timer = setTimeout(() => {
       let startTime: number | null = null;
       const animate = (currentTime: number) => {
@@ -72,7 +75,7 @@ export function HeroSection() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 pt-40 lg:pt-48 pb-40 text-center">
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 1, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight"
