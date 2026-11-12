@@ -1,7 +1,10 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { CountryProvider } from "@/components/country-provider";
+import { PageSchemas, getBreadcrumbNames } from "@/lib/schema-server";
+import { workingHolidayCountryFaqSection } from "@/lib/faq-sections";
 import { WorkingHolidayCountryPage } from "@/components/working-holiday/working-holiday-country";
 import {
   PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES,
@@ -34,10 +37,12 @@ export async function generateMetadata({
 
   if (!config || config.code === "global") {
     const tGlobal = await getTranslations({ locale, namespace: "WorkingHolidayCountries.global" });
-    return {
+    return buildMetadata({
+      locale,
+      path: `/working-holiday/${country}`,
       title: tGlobal("seoTitle"),
       description: tGlobal("seoDescription"),
-    };
+    });
   }
 
   const tCountry = await getTranslations({ locale, namespace: `WorkingHolidayCountries.${config.code}` });
@@ -46,8 +51,18 @@ export async function generateMetadata({
   const seoDescription = tCountry("seoDescription");
 
   return {
-    title: seoTitle,
-    description: seoDescription,
+    ...buildMetadata({
+      locale,
+      path: `/working-holiday/${config.code}`,
+      title: seoTitle,
+      description: seoDescription,
+      image: {
+        url: "/hero-lyon.webp",
+        width: 1200,
+        height: 630,
+        alt: `Working Holiday Francia para ${countryName}`,
+      },
+    }),
     keywords: [
       `working holiday francia ${countryName.toLowerCase()}`,
       `visa francia ${countryName.toLowerCase()}`,
@@ -55,23 +70,6 @@ export async function generateMetadata({
       "working holiday",
       "visa vacaciones trabajo francia",
     ],
-    openGraph: {
-      title: seoTitle,
-      description: seoDescription,
-      url: `https://alleefrance.com/${locale}/working-holiday/${config.code}`,
-      type: "website",
-      images: [
-        {
-          url: "/hero-lyon.webp",
-          width: 1200,
-          height: 630,
-          alt: `Working Holiday Francia para ${countryName}`,
-        },
-      ],
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/working-holiday/${config.code}`,
-    },
   };
 }
 
@@ -86,10 +84,29 @@ export default async function WorkingHolidayCountryRoute({
     notFound();
   }
   const countryConfig = config;
+  const names = await getBreadcrumbNames(locale);
+  const tCountry = await getTranslations({
+    locale,
+    namespace: `WorkingHolidayCountries.${countryConfig.code}`,
+  });
 
   return (
-    <CountryProvider initialCountryCode={countryConfig.code}>
-      <WorkingHolidayCountryPage config={countryConfig} />
-    </CountryProvider>
+    <>
+      <PageSchemas
+        locale={locale}
+        breadcrumbs={[
+          { name: names.home, path: "" },
+          { name: names.workingHoliday, path: "/working-holiday" },
+          {
+            name: tCountry("name"),
+            path: `/working-holiday/${countryConfig.code}`,
+          },
+        ]}
+        faqSection={workingHolidayCountryFaqSection(countryConfig.name)}
+      />
+      <CountryProvider initialCountryCode={countryConfig.code}>
+        <WorkingHolidayCountryPage config={countryConfig} />
+      </CountryProvider>
+    </>
   );
 }

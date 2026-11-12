@@ -10,11 +10,9 @@ import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { FAQSection } from "@/components/faq-section";
+import { workingHolidayCountryFaqSection } from "@/lib/faq-sections";
 import { CountryIndicator } from "@/components/country-indicator";
-const FAQSection = dynamic(
-  () => import("@/components/faq-section").then((mod) => mod.FAQSection),
-  { ssr: false },
-);
 import { useCountry } from "@/components/country-provider";
 import { getFaqsByCategories } from "@/data/faqs";
 import {
@@ -80,7 +78,8 @@ export function WorkingHolidayCountryPage({
   };
 
   const showAcademicAlert = config.code === "pe" || config.code === "ec";
-  const faqCategories = ["WH: General", "Seguros", `WH: ${config.name}`];
+  const faqCategories =
+    workingHolidayCountryFaqSection(config.name).allowedCategories ?? [];
   const faqItems = getFaqsByCategories(faqCategories);
   const whatsappConsultLink = buildWhatsAppLink(
     `Hola, soy de ${tCountry(`${config.code}.name`)} y me interesa una Working Holiday.`,

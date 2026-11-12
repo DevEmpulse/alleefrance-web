@@ -21,6 +21,7 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { Footer } from "@/components/footer";
 import { FAQSection } from "@/components/faq-section";
 import { getFaqsByCategories } from "@/data/faqs";
+import { WORK_VISAS_FAQ_SECTION } from "@/lib/faq-sections";
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
@@ -29,18 +30,14 @@ import { buildWhatsAppLink } from "@/lib/utils";
 export default function VisasTrabajoPage() {
 
   const t = useTranslations("WorkVisasPage");
+  const tFaq = useTranslations("FAQHome");
   const locale = useLocale();
   const [selectedVisa, setSelectedVisa] = useState<"salarie" | "saisonnier">(
     "salarie",
   );
-  const workVisaFaqs = getFaqsByCategories([
-    "Trabajo",
-    "Saisonnier: General",
-    "Saisonnier: Argentina",
-    "Saisonnier: Chile",
-    "Seguros",
-    "Errores Frecuentes",
-  ]);
+  const workVisaFaqs = getFaqsByCategories(
+    WORK_VISAS_FAQ_SECTION.allowedCategories ?? [],
+  );
 
   return (
     <div className="min-h-screen bg-white">
@@ -754,16 +751,9 @@ export default function VisasTrabajoPage() {
       </section>
 
       <FAQSection
-        title="Preguntas Frecuentes: Visas de Trabajo"
-        description="Resolvemos tus dudas sobre contratos, requisitos estacionales y seguros para trabajar legalmente en Francia."
-        allowedCategories={[
-          "Trabajo",
-          "Saisonnier: General",
-          "Saisonnier: Argentina",
-          "Saisonnier: Chile",
-          "Seguros",
-          "Errores Frecuentes",
-        ]}
+        title={tFaq("workTitle")}
+        description={tFaq("workDesc")}
+        allowedCategories={WORK_VISAS_FAQ_SECTION.allowedCategories}
         data={workVisaFaqs}
       />
 

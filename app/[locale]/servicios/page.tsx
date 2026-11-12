@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -26,8 +27,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata.services" });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    ...buildMetadata({
+      locale,
+      path: "/servicios",
+      title: t("title"),
+      description: t("description"),
+    }),
     keywords: [
       "servicios migratorios francia",
       "asesoría visa francia",
@@ -36,15 +41,6 @@ export async function generateMetadata({
       "visa trabajo francia",
       "visa estudiante francia",
     ],
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `https://alleefrance.com/${locale}/servicios`,
-      type: "website",
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/servicios`,
-    },
   };
 }
 

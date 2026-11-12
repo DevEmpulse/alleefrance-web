@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | French Immigration Advisory for Latin Americans",
-      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +700 successful cases. Comprehensive support from LATAM. Get a free consultation."
+      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Get a free consultation."
     },
     "services": {
       "title": "French Immigration Advisory Services | Visas & Procedures",
@@ -29,11 +29,11 @@
       "description": "Everything about the Titre de Séjour in France: renewal, first-time application, types (Salarié, Étudiant, Saisonnier). Expert advice and prefecture support."
     },
     "privacy": {
-      "title": "Privacy Policy | Allée France",
+      "title": "Privacy Policy",
       "description": "Privacy policy of Allée France. Learn how we collect, use, and protect your personal information."
     },
     "terms": {
-      "title": "Terms and Conditions | Allée France",
+      "title": "Terms and Conditions",
       "description": "Terms and conditions of use for Allée France. Legal aspects, responsibilities, and proper use of the platform."
     }
   },
@@ -62,7 +62,7 @@
     "whatsappCta": "Schedule a consultation",
     "statsTitle": "Market Leader",
     "statsSubtitle": "for over 2 years",
-    "statsLabel": "successful cases"
+    "statsLabel": "processes"
   },
   "About": {
     "mapAlt": "Map of France with the main cities to emigrate: Paris, Lyon, Marseille",
@@ -71,7 +71,7 @@
     "titleSuffix": "in France",
     "paragraph1": "At Allée France we are specialists in immigration procedures for France and we guide those who wish to live, work or study in this country.",
     "paragraph2Prefix": "More than",
-    "paragraph2Strong": "700 successful processes",
+    "paragraph2Strong": "900 successful processes",
     "paragraph2Suffix": "guarantee our experience in work authorizations, Salarié visa, Saisonnier visa, student visa and family reunification.",
     "paragraph3": "We help people from Latin America and the world to realize their immigration project to France with clear advice, step-by-step accompaniment and a personalized strategy according to your objective: employment, studies or residence.",
     "paragraph4": "We offer specialized advice not only for France, but also for other destinations where you wish to study, live or work, always with the same level of precision and results.",
@@ -80,7 +80,7 @@
     "servicesCta": "Our services",
     "contactCta": "Contact us",
     "stats": {
-      "cases": "Successful cases",
+      "cases": "Processes",
       "experience": "Years of experience",
       "adviceValue": "Advice",
       "adviceLabel": "Personalized"
@@ -176,8 +176,7 @@
     "description": "The peace of mind knowing you are in expert hands. This is how they experienced it:",
     "previous": "View previous review",
     "next": "View next review",
-    "googleCta": "See the +40 reviews on Google",
-    "date": "2 weeks ago"
+    "googleCta": "See all {count} reviews on Google"
   },
   "FAQHome": {
     "title": "Frequently Asked Questions (FAQ)",
@@ -266,7 +265,8 @@
       "successStories": "Successful Cases",
       "insurance": "Travel Insurance",
       "faq": "Frequently Asked Questions",
-      "blog": "Blog"
+      "blog": "Blog",
+      "author": "Our founder"
     },
     "services": {
       "title": "Services",
@@ -651,7 +651,6 @@
         {
           "title": "Renewing your titre de séjour in 2026: deadlines, ANEF, and what to do if the attestation doesn't arrive",
           "excerpt": "When to apply for renewal, how to do it on ANEF, and what to do if your titre expires before the attestation de prolongation d'instruction arrives.",
-          "date": "November 11, 2026",
           "readTime": "6 min",
           "image": "/renovar-titre-de-sejour-2026.webp",
           "category": "Immigration Paperwork",
@@ -660,7 +659,6 @@
         {
           "title": "How much it costs to live in France: real budget for Latin Americans in 2026",
           "excerpt": "One of the most frequently asked questions we receive is: 'How much money do I need to live in France?' The answer depends on the city, your lifestyle, and your immigration status.",
-          "date": "14 June 2026",
           "readTime": "8 min",
           "image": "/cuanto-cuesta-vivir-en-francia.webp",
           "category": "Life in France",
@@ -669,7 +667,6 @@
         {
           "title": "Titre de Séjour in France: What It Is, Types & Step-by-Step Guide",
           "excerpt": "The complete guide to the French residence permit for Latin Americans: types, documents, ANEF platform and processing times.",
-          "date": "June 17, 2026",
           "readTime": "10 min",
           "image": "/titre-sejour-france-guide.webp",
           "category": "Immigration Paperwork",
@@ -678,7 +675,6 @@
         {
           "title": "How to find a job in France from Latin America (without being there)",
           "excerpt": "A clear strategy to find a French employer from across the world and start your visa process.",
-          "date": "12 June 2026",
           "readTime": "9 min",
           "image": "/conseguir-trabajo-francia.webp",
           "category": "Work",
@@ -687,7 +683,6 @@
         {
           "title": "Physical vs. Virtual Banks in France: Which is Best for Immigrants?",
           "excerpt": "Wise, Revolut, N26, Qonto or traditional bank: discover which one best suits your immigration situation in France.",
-          "date": "June 2, 2026",
           "readTime": "12 min",
           "image": "/bancos-france-inmigrantes.webp",
           "category": "Finance",
@@ -696,7 +691,6 @@
         {
           "title": "What is an eSIM and why is it so useful today?",
           "excerpt": "The guide every Latin American should read before landing in France. Active connectivity from the moment you land.",
-          "date": "June 2, 2026",
           "readTime": "8 min",
           "image": "/esim-guide-france.webp",
           "category": "Connectivity",
@@ -705,16 +699,14 @@
         {
           "title": "Saisonnier or Salarié Visa: Complete Guide 2026",
           "excerpt": "Requirements, contracts, timing, and key tips to get a temporary Saisonnier or Salarié permit in France without a hitch.",
-          "date": "January 15, 2026",
           "readTime": "9 min",
           "image": "/seasonal-worker-in-french-vineyard.webp",
           "category": "Work",
-          "slug": "visa-saisonnier-salarie"
+          "slug": "visa-saisonier-salarie"
         },
         {
           "title": "Working Holiday France: Checklist for Argentinians 2025",
           "excerpt": "Step by step to gather documents, apply for the visa, and organize your first months in France with the Working Holiday program.",
-          "date": "January 10, 2025",
           "readTime": "8 min",
           "image": "/french-work-visa-documents.webp",
           "category": "Working Holiday",
@@ -723,7 +715,6 @@
         {
           "title": "Student Visa France 2025: Campus France and Consulate",
           "excerpt": "Organize your calendar from program search to arrival in France, with checklists and essential documents.",
-          "date": "January 5, 2025",
           "readTime": "10 min",
           "image": "/student-studying-in-paris.webp",
           "category": "Student Visas",
@@ -732,7 +723,6 @@
         {
           "title": "Learn French: Resources and Methods to Progress Fast",
           "excerpt": "Combined strategies (apps, teachers, immersion, and exams) to reach the B1/B2 level required by visas in record time.",
-          "date": "January 2, 2025",
           "readTime": "7 min",
           "image": "/person-learning-french-language.webp",
           "category": "Life in France",
@@ -943,7 +933,6 @@
         "title": "What is an eSIM and why is it so useful today?",
         "subtitle": "The guide every Latin American should read before landing in France.",
         "category": "Connectivity and Technology",
-        "date": "June 2, 2026",
         "readTime": "8 min read"
       },
       "intro": "An eSIM (embedded SIM) is a digital SIM card embedded directly into the phone's chip, which allows you to activate a data or call plan without the need to insert a physical card. It is activated in minutes using a QR code, can store several operator profiles simultaneously, and is especially useful for travelers, international workers, and immigrants because it allows you to have active connectivity from the moment you land in a new country, without queues, without waiting, and without depending on a phone store.",
@@ -1047,7 +1036,6 @@
         "title": "Physical vs virtual banks in France",
         "subtitle": "What is the best option for immigrants?",
         "category": "Finances for Immigrants",
-        "date": "June 2, 2026",
         "readTime": "12 min read"
       },
       "intro": {
@@ -1357,7 +1345,7 @@
       },
       "section1": {
         "title": "Why it's important to have a job before traveling",
-        "p1": "One of the most common fears among those who want to emigrate to France is this: 'How do I get an employer if I'm on the other side of the world?' The good news is that it is completely possible, and there is a clear strategy to do so. At Allée France we have accompanied more than 700 people through this process, and in this article we share exactly how to approach it.",
+        "p1": "One of the most common fears among those who want to emigrate to France is this: 'How do I get an employer if I'm on the other side of the world?' The good news is that it is completely possible, and there is a clear strategy to do so. At Allée France we have accompanied more than 900 people through this process, and in this article we share exactly how to approach it.",
         "p2": "For the Salarié and Saisonnier visa, the employment contract with a French employer is the central pillar of the application. Without it, there is no visa. That is why getting a job from LATAM is not just an advantage: it is the mandatory first step in the labor migration process. In addition, arriving with guaranteed work allows you to plan your accommodation, your finances and your adaptation with much more peace of mind. It's not the same to arrive and improvise as it is to arrive with a concrete plan."
       },
       "plataformasTitle": "Platforms where to look for work in France",
@@ -1421,7 +1409,6 @@
         "title": "Titre de Séjour in France: What It Is, Types & How to Apply",
         "subtitle": "The complete guide for Latin Americans who want to legally live in France beyond 90 days.",
         "category": "Immigration Paperwork",
-        "date": "June 17, 2026",
         "readTime": "10 min read"
       },
       "intro": {
@@ -1611,10 +1598,7 @@
         "category": "Immigration Paperwork",
         "title": "Renewing Your Titre de Séjour in 2026: Deadlines, ANEF, and What to Do If the Attestation de Prolongation d'Instruction Doesn't Arrive",
         "subtitle": "A practical guide to knowing when to apply for renewal, how to do it on ANEF, and what to do if your titre de séjour expires before the attestation de prolongation d'instruction arrives.",
-        "date": "November 11, 2026",
-        "readTime": "6 min read",
-        "byline": "By Jiovanny Sandoval Villegas, case manager at Gestoría Allée France Lyon",
-        "updated": "Updated on November 11, 2026"
+        "readTime": "6 min read"
       },
       "shortAnswer": "Short answer: in France, you must apply to renew your titre de séjour between 120 and 60 days before it expires, online through ANEF or directly with the prefecture, depending on the type of titre. If your file is complete and you submitted it within that window, the prefecture must issue you an attestation de prolongation d'instruction, valid for up to 3 months and renewable, which proves you remain in a regular situation while you wait for your new card.",
       "whenToRenew": {
@@ -2867,7 +2851,7 @@
     },
     "professionalSupport": {
       "title": "PROFESSIONAL ACCOMPANIMENT",
-      "p1": "At <strong>Allée France Lyon</strong> I accompany you personally. I am <strong>Jio</strong>, a specialist in immigration procedures, with <strong>more than 700 successful processes</strong>.",
+      "p1": "At <strong>Allée France Lyon</strong> I accompany you personally. I am <strong>Jio</strong>, a specialist in immigration procedures, with <strong>more than 900 successful processes</strong>.",
       "p2": "We work in <strong>direct coordination</strong> with your employer (from small family businesses to large companies) to ensure a clean, complete, and approved file in <strong>record time</strong>."
     },
     "community": {
@@ -3343,7 +3327,7 @@
       ],
       "name": "Argentina",
       "seoTitle": "Working Holiday France Argentinians 2026: Requirements and Guide",
-      "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +500 successful cases. Personalized advisory."
+      "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +900 successful cases. Personalized advisory."
     },
     "cl": {
       "heroTitle": "Working Holiday for Chileans",
@@ -3525,5 +3509,156 @@
     "helpDescription": "Schedule a free call and receive personalized guidance from our team of French advisors. We are here to accompany you every step of the way.",
     "scheduleBtn": "Schedule advisory",
     "whatsappBtn": "Send us a WhatsApp"
+  },
+  "StructuredData": {
+    "breadcrumbs": {
+      "home": "Home",
+      "blog": "Blog",
+      "services": "Services",
+      "workVisas": "Work Visas",
+      "studentVisa": "Student Visa",
+      "titreDeSejour": "Titre de Séjour",
+      "workingHoliday": "Working Holiday"
+    },
+    "howTo": {
+      "workVisas": {
+        "name": "How to get a Work Visa for France",
+        "description": "Step-by-step guide to getting your Salarié or Saisonnier visa to work legally in France.",
+        "steps": [
+          {
+            "name": "Secure a job offer",
+            "text": "Get a formal job offer from a French employer with a permanent (CDI), fixed-term (CDD) or seasonal contract."
+          },
+          {
+            "name": "Employer starts the ANEF process",
+            "text": "Your employer applies for the work authorization from DREETS through the ANEF platform."
+          },
+          {
+            "name": "Job posting on France Travail",
+            "text": "If the position is not on the Métiers en Tension list, the job offer is advertised for 21 days."
+          },
+          {
+            "name": "Obtain the work authorization",
+            "text": "DREETS approves the work authorization (2-8 weeks)."
+          },
+          {
+            "name": "Apply for the visa at the consulate",
+            "text": "Once the authorization is approved, you apply for the visa at the French consulate in your country."
+          },
+          {
+            "name": "Validate your visa on arrival in France",
+            "text": "On arrival, validate your visa online with OFII and register with social security."
+          }
+        ]
+      },
+      "studentVisa": {
+        "name": "How to get a Student Visa for France",
+        "description": "Step-by-step guide to getting your student visa and studying in France.",
+        "steps": [
+          {
+            "name": "Get academic acceptance",
+            "text": "Obtain the acceptance or pre-enrollment letter from your school or university in France."
+          },
+          {
+            "name": "Complete the Campus France process",
+            "text": "Create your Études en France account, complete your academic file and attend the interview."
+          },
+          {
+            "name": "Prepare proof of funds",
+            "text": "Show resources of at least €615 per month (€7,380 per year) through bank statements or a sponsor."
+          },
+          {
+            "name": "Apply for the visa at the consulate",
+            "text": "Fill in the France-Visas form, book an appointment and submit your complete file."
+          },
+          {
+            "name": "Validate your visa on arrival",
+            "text": "Validate your VLS-TS online and register with the student social security."
+          }
+        ]
+      },
+      "titreDeSejour": {
+        "name": "How to renew or apply for the Titre de Séjour in France",
+        "description": "Step-by-step guide to obtain or renew your residence permit in France.",
+        "steps": [
+          {
+            "name": "Gather documents",
+            "text": "Prepare a valid passport, proof of address, proof of income, and health insurance."
+          },
+          {
+            "name": "Complete CERFA forms",
+            "text": "Fill out the official forms corresponding to your permit type."
+          },
+          {
+            "name": "Apply on the ANEF platform",
+            "text": "Upload your complete dossier on the ANEF platform of the Ministry of the Interior."
+          },
+          {
+            "name": "Prefecture appointment",
+            "text": "Attend the appointment at the prefecture for biometric data collection."
+          },
+          {
+            "name": "Receive receipt and permit",
+            "text": "Obtain the provisional receipt and then your final Titre de Séjour."
+          }
+        ]
+      },
+      "workingHoliday": {
+        "name": "How to get the Working Holiday Visa for France",
+        "description": "Step-by-step guide to applying for your Working Holiday visa and living in France for up to 12 months.",
+        "steps": [
+          {
+            "name": "Check the requirements",
+            "text": "Confirm that you meet the age limit (18-30/35), have an eligible nationality and have not held a France Working Holiday before."
+          },
+          {
+            "name": "Gather your documents",
+            "text": "Prepare a valid passport, an apostilled criminal record certificate, a CV and a motivation letter in French."
+          },
+          {
+            "name": "Buy travel insurance",
+            "text": "Get 12-month international health insurance covering hospitalization and repatriation."
+          },
+          {
+            "name": "Prove your funds",
+            "text": "Provide bank statements showing €2,500-3,000 and a return ticket or equivalent funds."
+          },
+          {
+            "name": "Book a consular appointment",
+            "text": "Create a France-Visas account, complete the form and book a slot at the consulate."
+          },
+          {
+            "name": "Submit your application",
+            "text": "Attend the appointment with original documents and copies. Approval takes about 15 days."
+          }
+        ]
+      }
+    }
+  },
+  "AuthorPage": {
+    "meta": {
+      "title": "Jio, founder of Allée France",
+      "description": "Jio is the founder of Allée France, a Lyon-based gestoría specialized in immigration and administrative procedures for Latin Americans who want to live, work or study in France."
+    },
+    "jobTitle": "Manager and Owner",
+    "subtitle": "Manager and Owner of Allée France",
+    "avatarLabel": "Initial of Jio",
+    "aboutTitle": "About Jio",
+    "bio": [
+      "Jio is the founder of Allée France, a Lyon-based gestoría specialized in immigration and administrative procedures for Latin Americans who want to live, work or study in France.",
+      "For more than two years he has supported individuals and families throughout the entire process: work visas (salarié, saisonnier and travailleur temporaire), residence permits (titre de séjour), renewals and changes of status on the ANEF and at the préfecture, private and family life procedures, and travel insurance for the visa. He has in-depth knowledge of the CESEDA, the Code du travail and the procedures of the OFII and the French préfectures.",
+      "With Allée France he has supported more than 900 cases and has more than 70 reviews on Google."
+    ],
+    "roleLabel": "Role",
+    "languagesLabel": "Languages",
+    "languagesValue": "French and Spanish",
+    "linksTitle": "Allée France online",
+    "googleReviews": "See our Google reviews",
+    "instagram": "Allée France on Instagram",
+    "articlesTitle": "Articles by Jio"
+  },
+  "BlogByline": {
+    "by": "By",
+    "updated": "Updated on"
   }
 }

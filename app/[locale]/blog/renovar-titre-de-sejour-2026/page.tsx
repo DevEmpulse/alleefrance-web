@@ -1,14 +1,18 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
+import { ArticleByline } from "@/components/blog/article-byline";
+import { ArticleSchemas } from "@/lib/schema-server";
+import { articleOpenGraph, getBlogPost } from "@/lib/blog-posts";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
 
 const SLUG = "renovar-titre-de-sejour-2026";
-const heroImage = "/renovar-titre-de-sejour-2026.webp";
+const heroImage = getBlogPost(SLUG).image;
 
 const SOURCES = [
   "https://www.service-public.gouv.fr/particuliers/vosdroits/F36206",
@@ -26,34 +30,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = t("metaTitle");
   const description = t("metaDescription");
   const keywords = t.raw("keywords") as string[];
-  const url = `https://alleefrance.com/${locale}/blog/${SLUG}`;
 
   return {
-    title,
-    description,
-    keywords,
-    alternates: {
-      canonical: url,
-      languages: {
-        es: `https://alleefrance.com/es/blog/${SLUG}`,
-        en: `https://alleefrance.com/en/blog/${SLUG}`,
-        fr: `https://alleefrance.com/fr/blog/${SLUG}`,
-      },
-    },
-    openGraph: {
+    ...buildMetadata({
+      locale,
+      path: `/blog/${SLUG}`,
       title,
       description,
-      url,
       type: "article",
-      images: [
-        {
-          url: heroImage,
-          width: 1376,
-          height: 768,
-          alt: title,
-        },
-      ],
-    },
+      article: articleOpenGraph(locale, SLUG),
+      image: { url: heroImage, width: 1376, height: 768, alt: title },
+    }),
+    keywords,
   };
 }
 
@@ -75,6 +63,12 @@ export default async function RenovarTitreSejourPage({ params }: { params: Promi
 
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
+      <ArticleSchemas
+        locale={locale}
+        slug={SLUG}
+        headline={t("hero.title")}
+        description={t("seo.metaDescription")}
+      />
       <Navbar />
 
       {/* Hero */}
@@ -98,15 +92,7 @@ export default async function RenovarTitreSejourPage({ params }: { params: Promi
           <p className="text-xl leading-relaxed mb-6 text-white/90">
             {t("hero.subtitle")}
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-white/60">
-            <span>{t("hero.date")}</span>
-            <span>·</span>
-            <span>{t("hero.readTime")}</span>
-            <span>·</span>
-            <span>{t("hero.byline")}</span>
-            <span>·</span>
-            <span>{t("hero.updated")}</span>
-          </div>
+          <ArticleByline locale={locale} slug={SLUG} readTime={t("hero.readTime")} />
         </div>
       </section>
 

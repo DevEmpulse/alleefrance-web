@@ -19,12 +19,16 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useEffect, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import {
+  FAQ_PAGE_SIZE,
+  filterFaqsByCategory,
+  getFaqCategories,
+  getInitialFaqCategory,
+  usesTitreDeSejourFaqs,
+  type FAQItem,
+} from "@/lib/faq";
 
-export interface FAQItem {
-  question: string;
-  answer: string;
-  category: string[];
-}
+export type { FAQItem };
 
 interface FAQSectionProps {
   title: string;
@@ -57,8 +61,7 @@ export function FAQSection({
 
   const faqSource = useMemo(() => {
     try {
-      const isTds = allowedCategories?.includes("Titre de Séjour") || 
-                    data.some(item => item.category.includes("Titre de Séjour"));
+      const isTds = usesTitreDeSejourFaqs(allowedCategories, data);
       if (isTds) {
         return tData.raw("titreDeSejour") as FAQItem[];
       }
@@ -68,71 +71,15 @@ export function FAQSection({
     }
   }, [data, allowedCategories, tData]);
 
-  const displayTitle = useMemo(() => {
-    if (title === "Preguntas Frecuentes (FAQ)" || title === "Preguntas Frecuentes") {
-      if (allowedCategories?.includes("Titre de Séjour")) {
-        return t("tdsTitle");
-      }
-      return t("title");
-    }
-    if (title === "Preguntas frecuentes sobre Working Holiday") return t("whTitle");
-    if (title === "Preguntas Frecuentes: Visas de Trabajo") return t("workTitle");
-    if (title === "Preguntas Frecuentes: Visa de Estudiante") return t("studentTitle");
-    if (title === "Preguntas Frecuentes: Titre de Séjour") return t("tdsTitle");
-    return title;
-  }, [title, allowedCategories, t]);
-
-  const displayDescription = useMemo(() => {
-    if (!description) return undefined;
-    if (description === "Resolvemos dudas clave sobre requisitos, seguros, trabajo y errores frecuentes en la postulación.") return t("whDescCountry");
-    if (description === "Resolvé dudas clave sobre requisitos, seguros, trabajo y tiempos de aplicación.") return t("whDescGlobal");
-    if (description === "Resolvemos tus dudas sobre contratos, requisitos estacionales y seguros para trabajar legalmente en Francia.") return t("workDesc");
-    if (description === "Resolvemos tus dudas sobre requisitos, solvencia económica, Campus France y trabajo a tiempo parcial.") return t("studentDesc");
-    if (description === "Resolvemos tus dudas sobre renovación, cambio de estatus y acompañamiento." || 
-        description === "Resolvemos dudas clave sobre renovación, requisitos y tiempos del Titre de Séjour.") return t("tdsDesc");
-    return description;
-  }, [description, t]);
-
   const [searchValue, setSearchValue] = useState("");
-  const [visibleCount, setVisibleCount] = useState(6);
-  const categories = useMemo<string[]>(() => {
-    const unique = new Set<string>();
-    const allowedSet = allowedCategories ? new Set(allowedCategories) : null;
-    faqSource.forEach((item) => {
-      item.category.forEach((category) => {
-        if (category && (!allowedSet || allowedSet.has(category))) {
-          unique.add(category);
-        }
-      });
-    });
-    const preferredOrder = [
-      "WH: General",
-      "WH: Argentina",
-      "WH: Chile",
-      "Saisonnier: General",
-      "Saisonnier: Argentina",
-      "Saisonnier: Chile",
-    ];
-    const preferredIndex = new Map(
-      preferredOrder.map((value, index) => [value, index])
-    );
-    return Array.from(unique).sort((left, right) => {
-      const leftIndex = preferredIndex.get(left);
-      const rightIndex = preferredIndex.get(right);
-      if (leftIndex !== undefined && rightIndex !== undefined) {
-        return leftIndex - rightIndex;
-      }
-      if (leftIndex !== undefined) return 1;
-      if (rightIndex !== undefined) return -1;
-      return left.localeCompare(right, "es");
-    });
-  }, [allowedCategories, faqSource]);
-  const [activeCategory, setActiveCategory] = useState(() => {
-    if (defaultCategory && categories.includes(defaultCategory)) {
-      return defaultCategory;
-    }
-    return categories[0] ?? "";
-  });
+  const [visibleCount, setVisibleCount] = useState(FAQ_PAGE_SIZE);
+  const categories = useMemo<string[]>(
+    () => getFaqCategories(faqSource, allowedCategories),
+    [allowedCategories, faqSource]
+  );
+  const [activeCategory, setActiveCategory] = useState(() =>
+    getInitialFaqCategory(categories, defaultCategory)
+  );
 
   useEffect(() => {
     if (defaultCategory && categories.includes(defaultCategory)) {
@@ -145,22 +92,17 @@ export function FAQSection({
   }, [activeCategory, categories, defaultCategory]);
 
   useEffect(() => {
-    setVisibleCount(6);
+    setVisibleCount(FAQ_PAGE_SIZE);
   }, [activeCategory, searchValue]);
 
   const normalizedSearch = searchValue.trim().toLowerCase();
   const filteredFaqs = useMemo(() => {
-    return faqSource.filter((item) => {
-      const matchesCategory = activeCategory
-        ? item.category.includes(activeCategory)
-        : true;
-      const matchesSearch = normalizedSearch
+    return filterFaqsByCategory(faqSource, activeCategory).filter((item) =>
+      normalizedSearch
         ? item.question.toLowerCase().includes(normalizedSearch) ||
           item.answer.toLowerCase().includes(normalizedSearch)
-        : true;
-
-      return matchesCategory && matchesSearch;
-    });
+        : true
+    );
   }, [activeCategory, faqSource, normalizedSearch]);
   const displayedFaqs = filteredFaqs.slice(0, visibleCount);
 
@@ -173,10 +115,10 @@ export function FAQSection({
               className="text-4xl lg:text-5xl font-bold mb-4"
               style={{ color: "#002654" }}
             >
-              {displayTitle}
+              {title}
             </h2>
-            {displayDescription ? (
-              <p className="text-gray-600 max-w-2xl mx-auto">{displayDescription}</p>
+            {description ? (
+              <p className="text-gray-600 max-w-2xl mx-auto">{description}</p>
             ) : null}
           </div>
         </AnimateOnScroll>
@@ -257,7 +199,10 @@ export function FAQSection({
                       >
                         {faq.question}
                       </AccordionTrigger>
-                      <AccordionContent className="text-gray-700 leading-relaxed pb-6">
+                      <AccordionContent
+                        forceMount
+                        className="text-gray-700 leading-relaxed pb-6"
+                      >
                         {isHtmlString(faq.answer) ? (
                           <div
                             dangerouslySetInnerHTML={{ __html: faq.answer }}
@@ -279,7 +224,7 @@ export function FAQSection({
               type="button"
               onClick={() =>
                 setVisibleCount((count) =>
-                  Math.min(count + 6, filteredFaqs.length)
+                  Math.min(count + FAQ_PAGE_SIZE, filteredFaqs.length)
                 )
               }
               className="text-[#002654] font-semibold hover:underline mt-8 flex items-center justify-center w-full cursor-pointer"

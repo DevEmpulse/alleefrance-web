@@ -50,8 +50,29 @@ function AccordionTrigger({
 function AccordionContent({
   className,
   children,
+  forceMount,
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Content>) {
+  if (forceMount) {
+    // Always mounted so the answer stays in the static HTML. The panel opens and
+    // closes by animating its grid row between 0fr and 1fr, and closed panels turn
+    // `invisible` once the collapse ends, which hides them from view, focus and
+    // assistive tech. Radix leaves inline `transition-duration`/`animation-name`
+    // overrides on the node after measuring it, so the transition is `!important`.
+    return (
+      <AccordionPrimitive.Content
+        data-slot="accordion-content"
+        forceMount
+        className="grid overflow-hidden text-sm data-[state=open]:grid-rows-[1fr] data-[state=open]:[transition:grid-template-rows_0.2s_ease-out,visibility_0s_linear_0s]! data-[state=closed]:invisible data-[state=closed]:grid-rows-[0fr] data-[state=closed]:[transition:grid-template-rows_0.2s_ease-out,visibility_0s_linear_0.2s]!"
+        {...props}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <div className={cn('pt-0 pb-4', className)}>{children}</div>
+        </div>
+      </AccordionPrimitive.Content>
+    )
+  }
+
   return (
     <AccordionPrimitive.Content
       data-slot="accordion-content"

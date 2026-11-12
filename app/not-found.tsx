@@ -5,7 +5,35 @@ import { Button } from "@/components/ui/button";
 import { setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import messages from "@/messages/es.json";
-import { buildWhatsAppLink } from "@/lib/utils";
+
+// A static export produces a single 404 file, so there is no locale to read:
+// the copy is inline in the three site languages, each linking to its home.
+const COPY = [
+  {
+    code: "es",
+    title: "No encontramos la página que buscas",
+    description:
+      "Puede que el enlace esté roto o que se haya movido el contenido. Estamos listos para ayudarte a continuar tu plan migratorio hacia Francia.",
+    cta: "Volver al inicio",
+    href: "/es/",
+  },
+  {
+    code: "en",
+    title: "We couldn't find the page you're looking for",
+    description:
+      "The link may be broken or the content may have moved. We're ready to help you move forward with your plan to move to France.",
+    cta: "Back to home",
+    href: "/en/",
+  },
+  {
+    code: "fr",
+    title: "Nous n'avons pas trouvé la page que vous cherchez",
+    description:
+      "Le lien est peut-être rompu ou le contenu a été déplacé. Nous sommes prêts à vous aider à poursuivre votre projet d'installation en France.",
+    cta: "Retour à l'accueil",
+    href: "/fr/",
+  },
+];
 
 export default function NotFound() {
   setRequestLocale("es");
@@ -26,65 +54,31 @@ export default function NotFound() {
 
             <section className="flex-1 px-4 py-20 md:py-28">
               <div className="container mx-auto max-w-5xl text-center space-y-10">
-                <p className="text-sm uppercase tracking-[0.3em] text-blue-200">
+                <h1 className="text-sm uppercase tracking-[0.3em] text-blue-200 font-normal">
                   Error 404
-                </p>
-                <h1 className="text-4xl md:text-5xl font-black tracking-tight">
-                  No encontramos la página que buscas
                 </h1>
-                <p className="text-lg text-blue-100 max-w-3xl mx-auto">
-                  Puede que el enlace esté roto o que se haya movido el contenido.
-                  Pero estamos listos para ayudarte a continuar tu plan migratorio
-                  hacia Francia.
-                </p>
 
-                <div className="flex flex-wrap items-center justify-center gap-4">
-                  <Button
-                    asChild
-                    className="bg-[#1e3a8a] hover:bg-[#1e3a8a]/80 text-white px-8 py-6 text-base rounded-full shadow-lg shadow-blue-900/40"
-                  >
-                    <Link href="/">Volver al inicio</Link>
-                  </Button>
-                  <Button
-                    asChild
-                    className="bg-[#ED2939] hover:bg-[#ED2939]/90 text-white px-8 py-6 text-base rounded-full shadow-lg shadow-red-900/40"
-                  >
-                    <Link href="/#contacto">Ir a contacto</Link>
-                  </Button>
-                </div>
-
-                <div className="mt-16 bg-white/5 border border-white/15 rounded-3xl p-8 md:p-10 text-left relative overflow-hidden">
-                  <div className="absolute inset-0 bg-linear-to-r from-blue-500/10 to-transparent pointer-events-none" />
-                  <div className="relative space-y-4">
-                    <h2 className="text-2xl font-semibold">
-                      ¿Te ayudamos a retomar tu proyecto migratorio?
-                    </h2>
-                    <p className="text-blue-100">
-                      Agenda una llamada gratuita y recibe orientación personalizada
-                      de nuestro equipo de consejeros franceses. Estamos aquí para
-                      acompañarte en cada paso.
-                    </p>
-                    <div className="flex flex-wrap gap-4">
+                <div className="grid gap-6 md:grid-cols-3 text-left">
+                  {COPY.map((item) => (
+                    <div
+                      key={item.code}
+                      lang={item.code}
+                      className="bg-white/5 border border-white/15 rounded-3xl p-8 flex flex-col gap-4"
+                    >
+                      <h2 className="text-2xl font-black tracking-tight">
+                        {item.title}
+                      </h2>
+                      <p className="text-blue-100 flex-1">{item.description}</p>
                       <Button
                         asChild
-                        className="bg-[#ED2939] hover:bg-[#ED2939]/90 text-white px-6 py-5 text-base rounded-2xl shadow-lg shadow-red-900/40"
+                        className="bg-[#ED2939] hover:bg-[#ED2939]/90 text-white px-6 py-5 text-base rounded-full shadow-lg shadow-red-900/40 self-start"
                       >
-                        <Link href="/#contacto">Agendar asesoría</Link>
-                      </Button>
-                      <Button
-                        asChild
-                        className="bg-[#ED2939] hover:bg-[#ED2939]/90 text-white px-6 py-5 text-base rounded-2xl shadow-lg shadow-red-900/40"
-                      >
-                        <a
-                          href={buildWhatsAppLink()}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Envíanos un WhatsApp
-                        </a>
+                        <Link href={item.href} hrefLang={item.code}>
+                          {item.cta}
+                        </Link>
                       </Button>
                     </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </section>

@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { HomePage } from "@/components/home-page";
 import { isLocale, routing } from "@/i18n/routing";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
+import { PageSchemas } from "@/lib/schema-server";
+import { HOME_FAQ_SECTION } from "@/lib/faq-sections";
 
 export const dynamicParams = false;
 
@@ -18,15 +21,13 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata.home" });
 
-  return {
-    title: {
-      absolute: t("title"),
-    },
+  return buildMetadata({
+    locale,
+    path: "",
+    title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}`,
-    },
-  };
+    absoluteTitle: true,
+  });
 }
 
 
@@ -43,5 +44,10 @@ export default async function LocalizedHomePage({
 
   setRequestLocale(locale);
 
-  return <HomePage />;
+  return (
+    <>
+      <PageSchemas locale={locale} faqSection={HOME_FAQ_SECTION} />
+      <HomePage />
+    </>
+  );
 }

@@ -1,8 +1,12 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
+import { ArticleByline } from "@/components/blog/article-byline";
+import { ArticleSchemas } from "@/lib/schema-server";
+import { articleOpenGraph, getBlogPost } from "@/lib/blog-posts";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 
 export function generateStaticParams() {
@@ -10,15 +14,21 @@ export function generateStaticParams() {
 }
 
 
-const heroImage = "/bancos-france-inmigrantes.webp";
+const SLUG = "bancos-fisicos-vs-virtuales-francia";
+const heroImage = getBlogPost(SLUG).image;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const p = await params;
   const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.bancos-fisicos-vs-virtuales-francia.hero" });
-  return {
-    title: `${t("title")} | Allée France`,
+  return buildMetadata({
+    locale: p.locale,
+    path: `/blog/${SLUG}`,
+    title: t("title"),
     description: t("subtitle"),
-  };
+    type: "article",
+    article: articleOpenGraph(p.locale, SLUG),
+    image: { url: heroImage, alt: t("title") },
+  });
 }
 
 export default async function BancosPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -37,6 +47,12 @@ export default async function BancosPage({ params }: { params: Promise<{ locale:
   
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
+      <ArticleSchemas
+        locale={p.locale}
+        slug={SLUG}
+        headline={t("hero.title")}
+        description={t("hero.subtitle")}
+      />
       <Navbar />
 
       {/* Hero */}
@@ -63,11 +79,7 @@ export default async function BancosPage({ params }: { params: Promise<{ locale:
           <p className="text-xl leading-relaxed mb-6 text-white/90">
             {t("hero.subtitle")}
           </p>
-          <div className="flex items-center justify-center gap-4 text-sm text-white/60">
-            <span>{t("hero.date")}</span>
-            <span>·</span>
-            <span>{t("hero.readTime")}</span>
-          </div>
+          <ArticleByline locale={p.locale} slug={SLUG} readTime={t("hero.readTime")} />
         </div>
       </section>
 

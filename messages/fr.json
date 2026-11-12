@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Conseil en Immigration France pour Latino-Américains",
-      "description": "Experts en visas France : Salarié, Saisonnier, Working Holiday et Étudiant. +700 cas de réussite. Accompagnement complet depuis l'Amérique latine."
+      "description": "Experts en visas France : Salarié, Saisonnier, Working Holiday et Étudiant. +900 cas de réussite. Accompagnement complet depuis l'Amérique latine."
     },
     "services": {
       "title": "Services de Conseil en Immigration France | Visas & Démarches",
@@ -29,11 +29,11 @@
       "description": "Tout sur le Titre de Séjour en France : renouvellement, première demande, types (Salarié, Étudiant, Saisonnier). Conseil d'experts et accompagnement en préfecture."
     },
     "privacy": {
-      "title": "Politique de Confidentialité | Allée France",
+      "title": "Politique de Confidentialité",
       "description": "Politique de confidentialité d'Allée France. Découvrez comment nous collectons, utilisons et protégeons vos informations personnelles."
     },
     "terms": {
-      "title": "Conditions Générales d'Utilisation | Allée France",
+      "title": "Conditions Générales d'Utilisation",
       "description": "Conditions générales d'utilisation d'Allée France. Aspects légaux, responsabilités et utilisation appropriée de la plateforme."
     }
   },
@@ -62,7 +62,7 @@
     "whatsappCta": "Planifier une consultation",
     "statsTitle": "Leader du marché",
     "statsSubtitle": "depuis plus de 2 ans",
-    "statsLabel": "cas de réussite"
+    "statsLabel": "dossiers"
   },
   "About": {
     "mapAlt": "Carte de France avec les principales villes où émigrer : Paris, Lyon, Marseille",
@@ -71,7 +71,7 @@
     "titleSuffix": "en France",
     "paragraph1": "Chez Allée France, nous sommes spécialistes des démarches d'immigration pour la France et guidons ceux qui souhaitent vivre, travailler ou étudier dans ce pays.",
     "paragraph2Prefix": "Plus de",
-    "paragraph2Strong": "700 processus réussis",
+    "paragraph2Strong": "900 processus réussis",
     "paragraph2Suffix": "garantissent notre expérience en matière d'autorisations de travail, visa Salarié, visa Saisonnier, visa étudiant et regroupement familial.",
     "paragraph3": "Nous aidons les personnes d'Amérique latine et du monde entier à concrétiser leur projet d'immigration en France avec des conseils clairs, un accompagnement étape par étape et une stratégie personnalisée selon votre objectif : emploi, études ou résidence.",
     "paragraph4": "Nous offrons des conseils spécialisés non seulement pour la France, mais aussi pour d'autres destinations où vous souhaitez étudier, vivre ou travailler, toujours avec le même niveau de précision et de résultats.",
@@ -80,7 +80,7 @@
     "servicesCta": "Nos services",
     "contactCta": "Contactez-nous",
     "stats": {
-      "cases": "Cas de réussite",
+      "cases": "Dossiers",
       "experience": "Années d'expérience",
       "adviceValue": "Conseil",
       "adviceLabel": "Personnalisé"
@@ -176,8 +176,7 @@
     "description": "La tranquillité d'esprit de savoir que vous êtes entre les mains d'experts. Voici comment ils l'ont vécu :",
     "previous": "Voir l'avis précédent",
     "next": "Voir l'avis suivant",
-    "googleCta": "Voir les +40 avis sur Google",
-    "date": "Il y a 2 semaines"
+    "googleCta": "Voir les {count} avis sur Google"
   },
   "FAQHome": {
     "title": "Foire Aux Questions (FAQ)",
@@ -266,7 +265,8 @@
       "successStories": "Cas de réussite",
       "insurance": "Assurance Voyage",
       "faq": "Foire Aux Questions",
-      "blog": "Blog"
+      "blog": "Blog",
+      "author": "Notre fondateur"
     },
     "services": {
       "title": "Services",
@@ -651,7 +651,6 @@
         {
           "title": "Renouveler son titre de séjour en 2026 : délais, ANEF et que faire si l'attestation n'arrive pas",
           "excerpt": "Quand demander le renouvellement, comment procéder sur l'ANEF et que faire si votre titre expire avant l'attestation de prolongation d'instruction.",
-          "date": "11 Novembre 2026",
           "readTime": "6 min",
           "image": "/renovar-titre-de-sejour-2026.webp",
           "category": "Démarches Administratives",
@@ -660,7 +659,6 @@
         {
           "title": "Combien coûte la vie en France : budget réel pour les Latino-Américains en 2026",
           "excerpt": "L'une des questions les plus fréquentes que nous recevons est : 'De combien d'argent ai-je besoin pour vivre en France ?' La réponse dépend de la ville, de votre style de vie et de votre situation migratoire.",
-          "date": "14 Juin 2026",
           "readTime": "8 min",
           "image": "/cuanto-cuesta-vivir-en-francia.webp",
           "category": "Vie en France",
@@ -669,7 +667,6 @@
         {
           "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
           "excerpt": "Le guide complet sur le titre de séjour pour les Latino-Américains : types, documents, plateforme ANEF et délais.",
-          "date": "17 Juin 2026",
           "readTime": "10 min",
           "image": "/titre-sejour-france-guide.webp",
           "category": "Démarches Administratives",
@@ -678,7 +675,6 @@
         {
           "title": "Comment trouver un emploi en France depuis l'Amérique latine (sans y être)",
           "excerpt": "Une stratégie claire pour trouver un employeur français depuis l'autre bout du monde et commencer votre démarche de visa.",
-          "date": "12 Juin 2026",
           "readTime": "9 min",
           "image": "/conseguir-trabajo-francia.webp",
           "category": "Travail",
@@ -687,7 +683,6 @@
         {
           "title": "Banques physiques vs Banques virtuelles en France : Lequel choisir ?",
           "excerpt": "Wise, Revolut, N26, Qonto ou banque traditionnelle : découvrez celle qui correspond le mieux à votre situation en France.",
-          "date": "2 Juin 2026",
           "readTime": "12 min",
           "image": "/bancos-france-inmigrantes.webp",
           "category": "Finances",
@@ -696,7 +691,6 @@
         {
           "title": "Qu'est-ce qu'une eSIM et pourquoi est-ce si utile ?",
           "excerpt": "Le guide que tout Latino-Américain devrait lire avant d'arriver en France. Connectivité active dès l'atterrissage.",
-          "date": "2 Juin 2026",
           "readTime": "8 min",
           "image": "/esim-guide-france.webp",
           "category": "Connectivité",
@@ -705,16 +699,14 @@
         {
           "title": "Visa Saisonnier ou Salarié : Guide Complet 2026",
           "excerpt": "Exigences, contrats, délais et conseils clés pour obtenir un permis Saisonnier ou Salarié temporaire en France sans accroc.",
-          "date": "15 Janvier 2026",
           "readTime": "9 min",
           "image": "/seasonal-worker-in-french-vineyard.webp",
           "category": "Travail",
-          "slug": "visa-saisonnier-salarie"
+          "slug": "visa-saisonier-salarie"
         },
         {
           "title": "PVT France : Checklist pour les Argentins 2025",
           "excerpt": "Étape par étape pour rassembler les documents, demander le visa et organiser vos premiers mois en France avec le PVT.",
-          "date": "10 Janvier 2025",
           "readTime": "8 min",
           "image": "/french-work-visa-documents.webp",
           "category": "Permis Vacances-Travail",
@@ -723,7 +715,6 @@
         {
           "title": "Visa Étudiant France 2025 : Campus France et Consulat",
           "excerpt": "Organisez votre calendrier de la recherche de programmes à l'arrivée en France, avec checklists et documents essentiels.",
-          "date": "5 Janvier 2025",
           "readTime": "10 min",
           "image": "/student-studying-in-paris.webp",
           "category": "Visas Étudiants",
@@ -732,7 +723,6 @@
         {
           "title": "Apprendre le Français : Ressources et Méthodes pour Progresser",
           "excerpt": "Stratégies combinées (applications, professeurs, immersion et examens) pour atteindre le niveau B1/B2 requis pour les visas en un temps record.",
-          "date": "2 Janvier 2025",
           "readTime": "7 min",
           "image": "/person-learning-french-language.webp",
           "category": "Vie en France",
@@ -943,7 +933,6 @@
         "title": "Qu'est-ce qu'une eSIM et pourquoi est-ce si utile aujourd'hui ?",
         "subtitle": "Le guide que tout Latino-Américain devrait lire avant d'atterrir en France.",
         "category": "Connectivité et Technologie",
-        "date": "2 Juin 2026",
         "readTime": "8 min de lecture"
       },
       "intro": "Une eSIM (embedded SIM) est une carte SIM numérique intégrée directement dans la puce du téléphone, qui permet d'activer un forfait de données ou d'appels sans avoir besoin d'insérer une carte physique. Elle s'active en quelques minutes via un code QR, peut stocker plusieurs profils d'opérateurs simultanément et est particulièrement utile pour les voyageurs, les travailleurs internationaux et les immigrants car elle permet d'avoir une connectivité active dès l'atterrissage dans un nouveau pays, sans files d'attente, sans attendre et sans dépendre d'un magasin de téléphonie.",
@@ -1047,7 +1036,6 @@
         "title": "Banques physiques vs banques virtuelles en France",
         "subtitle": "Quelle est la meilleure option pour les immigrés ?",
         "category": "Finances pour Immigrés",
-        "date": "2 Juin 2026",
         "readTime": "12 min de lecture"
       },
       "intro": {
@@ -1357,7 +1345,7 @@
       },
       "section1": {
         "title": "Pourquoi il est important d'avoir un emploi avant de voyager",
-        "p1": "L'une des craintes les plus courantes chez ceux qui veulent émigrer en France est la suivante : 'Comment trouver un employeur si je suis à l'autre bout du monde ?' La bonne nouvelle, c'est que c'est tout à fait possible et qu'il existe une stratégie claire pour y parvenir. Chez Allée France, nous avons accompagné plus de 700 personnes dans cette démarche, et dans cet article, nous partageons exactement comment l'aborder.",
+        "p1": "L'une des craintes les plus courantes chez ceux qui veulent émigrer en France est la suivante : 'Comment trouver un employeur si je suis à l'autre bout du monde ?' La bonne nouvelle, c'est que c'est tout à fait possible et qu'il existe une stratégie claire pour y parvenir. Chez Allée France, nous avons accompagné plus de 900 personnes dans cette démarche, et dans cet article, nous partageons exactement comment l'aborder.",
         "p2": "Pour les visas Salarié et Saisonnier, le contrat de travail avec un employeur français est le pilier central du dossier. Sans lui, pas de visa. C'est pourquoi trouver un emploi depuis l'Amérique latine n'est pas seulement un avantage : c'est la première étape obligatoire du processus de migration professionnelle. De plus, arriver avec un emploi garanti vous permet de planifier votre logement, vos finances et votre adaptation avec beaucoup plus de tranquillité. Ce n'est pas la même chose d'arriver pour improviser que d'arriver avec un plan concret."
       },
       "plataformasTitle": "Les plateformes où chercher du travail en France",
@@ -1421,7 +1409,6 @@
         "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
         "subtitle": "Le guide complet pour les Latino-Américains qui souhaitent vivre légalement en France au-delà de 90 jours.",
         "category": "Démarches Administratives",
-        "date": "17 Juin 2026",
         "readTime": "10 min de lecture"
       },
       "intro": {
@@ -1611,10 +1598,7 @@
         "category": "Démarches Administratives",
         "title": "Renouveler son titre de séjour en 2026 : délais, ANEF et que faire si l'attestation de prolongation d'instruction n'arrive pas",
         "subtitle": "Guide pratique pour savoir quand demander le renouvellement, comment procéder sur l'ANEF et que faire si votre titre expire avant que l'attestation de prolongation d'instruction n'arrive.",
-        "date": "11 Novembre 2026",
-        "readTime": "6 min de lecture",
-        "byline": "Par Jiovanny Sandoval Villegas, gestionnaire chez Gestoría Allée France Lyon",
-        "updated": "Mis à jour le 11 novembre 2026"
+        "readTime": "6 min de lecture"
       },
       "shortAnswer": "Réponse courte : en France, vous devez demander le renouvellement de votre titre de séjour entre 120 et 60 jours avant son expiration, en ligne sur l'ANEF ou directement auprès de la préfecture, selon le type de titre. Si votre dossier est complet et déposé dans ce délai, la préfecture doit vous délivrer une attestation de prolongation d'instruction, valable jusqu'à 3 mois et renouvelable, qui prouve que vous restez en situation régulière en attendant votre nouvelle carte.",
       "whenToRenew": {
@@ -2867,7 +2851,7 @@
     },
     "professionalSupport": {
       "title": "ACCOMPAGNEMENT PROFESSIONNEL",
-      "p1": "Chez Allée France Lyon, je vous accompagne personnellement. Je m'appelle Jio, spécialiste des démarches d'immigration, avec plus de 700 dossiers réussis.",
+      "p1": "Chez Allée France Lyon, je vous accompagne personnellement. Je m'appelle Jio, spécialiste des démarches d'immigration, avec plus de 900 dossiers réussis.",
       "p2": "Nous travaillons en coordination directe avec votre employeur (de la petite entreprise familiale aux grands groupes) pour garantir un dossier propre, complet et approuvé en un temps record."
     },
     "community": {
@@ -3343,7 +3327,7 @@
       ],
       "name": "Argentine",
       "seoTitle": "Working Holiday France Argentins 2026 : Conditions et Guide",
-      "seoDescription": "Working Holiday France pour les Argentins : conditions, justificatif de fonds et processus complet. +500 cas de réussite. Conseil personnalisé."
+      "seoDescription": "Working Holiday France pour les Argentins : conditions, justificatif de fonds et processus complet. +900 cas de réussite. Conseil personnalisé."
     },
     "cl": {
       "heroTitle": "Working Holiday pour les Chiliens",
@@ -3525,5 +3509,156 @@
     "helpDescription": "Planifiez un appel gratuit et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
     "scheduleBtn": "Planifier une consultation",
     "whatsappBtn": "Envoyez-nous un WhatsApp"
+  },
+  "StructuredData": {
+    "breadcrumbs": {
+      "home": "Accueil",
+      "blog": "Blog",
+      "services": "Services",
+      "workVisas": "Visas de travail",
+      "studentVisa": "Visa étudiant",
+      "titreDeSejour": "Titre de Séjour",
+      "workingHoliday": "Working Holiday"
+    },
+    "howTo": {
+      "workVisas": {
+        "name": "Comment obtenir un visa de travail pour la France",
+        "description": "Guide étape par étape pour obtenir votre visa Salarié ou Saisonnier et travailler légalement en France.",
+        "steps": [
+          {
+            "name": "Obtenir une offre d'emploi",
+            "text": "Obtenez une offre d'emploi ferme d'un employeur français avec un contrat CDI, CDD ou saisonnier."
+          },
+          {
+            "name": "L'employeur lance la démarche ANEF",
+            "text": "Votre employeur demande l'autorisation de travail auprès de la DREETS via la plateforme ANEF."
+          },
+          {
+            "name": "Publication sur France Travail",
+            "text": "Si le poste ne figure pas dans les Métiers en Tension, l'offre est publiée pendant 21 jours."
+          },
+          {
+            "name": "Obtenir l'autorisation de travail",
+            "text": "La DREETS approuve l'autorisation de travail (2 à 8 semaines)."
+          },
+          {
+            "name": "Demander le visa au consulat",
+            "text": "Une fois l'autorisation approuvée, vous demandez le visa au consulat de France de votre pays."
+          },
+          {
+            "name": "Valider le visa à l'arrivée en France",
+            "text": "À votre arrivée, validez votre visa en ligne auprès de l'OFII et inscrivez-vous à la sécurité sociale."
+          }
+        ]
+      },
+      "studentVisa": {
+        "name": "Comment obtenir un visa étudiant pour la France",
+        "description": "Guide étape par étape pour obtenir votre visa étudiant et étudier en France.",
+        "steps": [
+          {
+            "name": "Obtenir l'admission académique",
+            "text": "Obtenez la lettre d'admission ou de préinscription de votre école ou université en France."
+          },
+          {
+            "name": "Compléter la procédure Campus France",
+            "text": "Créez votre compte Études en France, complétez votre dossier académique et passez l'entretien."
+          },
+          {
+            "name": "Préparer les justificatifs financiers",
+            "text": "Justifiez de ressources d'au moins 615 € par mois (7 380 € par an) avec des relevés bancaires ou un garant."
+          },
+          {
+            "name": "Demander le visa au consulat",
+            "text": "Remplissez le formulaire France-Visas, prenez rendez-vous et présentez votre dossier complet."
+          },
+          {
+            "name": "Valider le visa à l'arrivée",
+            "text": "Validez votre VLS-TS en ligne et inscrivez-vous à la sécurité sociale étudiante."
+          }
+        ]
+      },
+      "titreDeSejour": {
+        "name": "Comment renouveler ou demander le Titre de Séjour en France",
+        "description": "Guide étape par étape pour obtenir ou renouveler votre titre de séjour en France.",
+        "steps": [
+          {
+            "name": "Rassembler les documents",
+            "text": "Préparez votre passeport en cours de validité, un justificatif de domicile, des justificatifs de revenus et une assurance maladie."
+          },
+          {
+            "name": "Remplir les formulaires CERFA",
+            "text": "Remplissez les formulaires officiels correspondant à votre type de titre."
+          },
+          {
+            "name": "Déposer la demande sur la plateforme ANEF",
+            "text": "Téléchargez votre dossier complet sur la plateforme ANEF du ministère de l'Intérieur."
+          },
+          {
+            "name": "Rendez-vous en préfecture",
+            "text": "Présentez-vous au rendez-vous en préfecture pour la prise de vos données biométriques."
+          },
+          {
+            "name": "Recevoir le récépissé et le titre",
+            "text": "Obtenez le récépissé provisoire, puis votre Titre de Séjour définitif."
+          }
+        ]
+      },
+      "workingHoliday": {
+        "name": "Comment obtenir le visa Working Holiday pour la France",
+        "description": "Guide étape par étape pour demander votre visa Working Holiday et vivre en France jusqu'à 12 mois.",
+        "steps": [
+          {
+            "name": "Vérifier les conditions",
+            "text": "Vérifiez que vous remplissez la condition d'âge (18-30/35 ans), que votre nationalité est éligible et que vous n'avez jamais eu de Working Holiday en France."
+          },
+          {
+            "name": "Rassembler les documents",
+            "text": "Préparez votre passeport en cours de validité, un casier judiciaire apostillé, un CV et une lettre de motivation en français."
+          },
+          {
+            "name": "Souscrire une assurance voyage",
+            "text": "Souscrivez une assurance santé internationale de 12 mois couvrant l'hospitalisation et le rapatriement."
+          },
+          {
+            "name": "Justifier des fonds",
+            "text": "Présentez des relevés bancaires attestant de 2 500 à 3 000 € et un billet retour ou des fonds équivalents."
+          },
+          {
+            "name": "Prendre rendez-vous au consulat",
+            "text": "Créez un compte France-Visas, remplissez le formulaire et réservez un créneau au consulat."
+          },
+          {
+            "name": "Déposer la demande",
+            "text": "Présentez-vous au rendez-vous avec les documents originaux et des copies. La réponse prend environ 15 jours."
+          }
+        ]
+      }
+    }
+  },
+  "AuthorPage": {
+    "meta": {
+      "title": "Jio, fondateur d'Allée France",
+      "description": "Jio est le fondateur d'Allée France, une gestoría basée à Lyon spécialisée dans les démarches migratoires et administratives pour les Latino-Américains qui souhaitent vivre, travailler ou étudier en France."
+    },
+    "jobTitle": "Gérant et propriétaire",
+    "subtitle": "Gérant et propriétaire d'Allée France",
+    "avatarLabel": "Initiale de Jio",
+    "aboutTitle": "À propos de Jio",
+    "bio": [
+      "Jio est le fondateur d'Allée France, une gestoría basée à Lyon spécialisée dans les démarches migratoires et administratives pour les Latino-Américains qui souhaitent vivre, travailler ou étudier en France.",
+      "Depuis plus de deux ans, il accompagne des personnes et des familles tout au long de leur parcours : visas de travail (salarié, saisonnier et travailleur temporaire), titres de séjour, renouvellements et changements de statut sur l'ANEF et en préfecture, démarches de vie privée et familiale, et assurances voyage pour le visa. Il connaît à fond le CESEDA, le Code du travail et les procédures de l'OFII et des préfectures françaises.",
+      "Avec Allée France, il a accompagné plus de 900 dossiers et compte plus de 70 avis sur Google."
+    ],
+    "roleLabel": "Rôle",
+    "languagesLabel": "Langues",
+    "languagesValue": "Français et espagnol",
+    "linksTitle": "Allée France en ligne",
+    "googleReviews": "Voir nos avis Google",
+    "instagram": "Allée France sur Instagram",
+    "articlesTitle": "Articles de Jio"
+  },
+  "BlogByline": {
+    "by": "Par",
+    "updated": "Mis à jour le"
   }
 }

@@ -73,6 +73,7 @@ export function Footer() {
                 { href: `/${locale}#casos-exitosos`, label: t("links.successStories") },
                 { href: `/${locale}#seguro`, label: t("links.insurance") },
                 { href: `/${locale}#faq`, label: t("links.faq") },
+                { href: `/${locale}/autor/jio/`, label: t("links.author") },
               ].map((link) => (
                 <li key={link.href}>
                   <Link

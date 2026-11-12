@@ -10,12 +10,12 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { formatBlogDate, getBlogPost } from "@/lib/blog-posts";
 
 
 type BlogPost = {
   title: string;
   excerpt: string;
-  date: string;
   readTime: string;
   image: string;
   category: string;
@@ -49,7 +49,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
       >
         <div className="max-w-5xl mx-auto text-center">
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 1, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-4xl lg:text-5xl font-bold text-white mb-6"
@@ -102,11 +102,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
             {filteredPosts.map((post, index) => (
               <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
                 <Link
-                  href={
-                    post.slug === "visa-saisonnier-salarie"
-                      ? `/${locale}/servicios/visas-trabajo/`
-                      : `/${locale}/blog/${post.slug}`
-                  }
+                  href={`/${locale}/blog/${post.slug}`}
                   className="block group focus:outline-none focus-visible:ring-4 focus-visible:ring-red-200 rounded-xl"
                 >
                   <article className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full">
@@ -132,7 +128,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                       <div className="flex items-center gap-4 text-sm text-gray-600 mb-3">
                         <span className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
-                          {post.date}
+                          {formatBlogDate(getBlogPost(post.slug).datePublished, locale)}
                         </span>
                         <span className="flex items-center gap-1">
                           <Clock className="w-4 h-4" />

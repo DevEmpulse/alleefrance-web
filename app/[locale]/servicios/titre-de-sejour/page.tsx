@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FAQSection, type FAQItem } from "@/components/faq-section";
+import { TITRE_DE_SEJOUR_FAQ_SECTION } from "@/lib/faq-sections";
 import {
   CheckCircle2,
   Clock,
@@ -390,7 +391,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
       <FAQSection
         title={t("faq.title")}
         description={t("faq.description")}
-        allowedCategories={["Titre de Séjour"]}
+        allowedCategories={TITRE_DE_SEJOUR_FAQ_SECTION.allowedCategories}
         data={titreDeSejourFaqs}
       />
 

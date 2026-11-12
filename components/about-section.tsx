@@ -14,7 +14,7 @@ export function AboutSection() {
   const stats = [
     {
       icon: ShieldCheck,
-      value: "+700",
+      value: "+900",
       label: t("stats.cases"),
     },
     {
