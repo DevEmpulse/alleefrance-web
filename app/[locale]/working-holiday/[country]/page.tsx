@@ -1,5 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { CountryProvider } from "@/components/country-provider";
 import { WorkingHolidayCountryPage } from "@/components/working-holiday/working-holiday-country";
@@ -34,10 +35,12 @@ export async function generateMetadata({
 
   if (!config || config.code === "global") {
     const tGlobal = await getTranslations({ locale, namespace: "WorkingHolidayCountries.global" });
-    return {
+    return buildMetadata({
+      locale,
+      path: `/working-holiday/${country}`,
       title: tGlobal("seoTitle"),
       description: tGlobal("seoDescription"),
-    };
+    });
   }
 
   const tCountry = await getTranslations({ locale, namespace: `WorkingHolidayCountries.${config.code}` });
@@ -46,8 +49,18 @@ export async function generateMetadata({
   const seoDescription = tCountry("seoDescription");
 
   return {
-    title: seoTitle,
-    description: seoDescription,
+    ...buildMetadata({
+      locale,
+      path: `/working-holiday/${config.code}`,
+      title: seoTitle,
+      description: seoDescription,
+      image: {
+        url: "/hero-lyon.webp",
+        width: 1200,
+        height: 630,
+        alt: `Working Holiday Francia para ${countryName}`,
+      },
+    }),
     keywords: [
       `working holiday francia ${countryName.toLowerCase()}`,
       `visa francia ${countryName.toLowerCase()}`,
@@ -55,23 +68,6 @@ export async function generateMetadata({
       "working holiday",
       "visa vacaciones trabajo francia",
     ],
-    openGraph: {
-      title: seoTitle,
-      description: seoDescription,
-      url: `https://alleefrance.com/${locale}/working-holiday/${config.code}`,
-      type: "website",
-      images: [
-        {
-          url: "/hero-lyon.webp",
-          width: 1200,
-          height: 630,
-          alt: `Working Holiday Francia para ${countryName}`,
-        },
-      ],
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/working-holiday/${config.code}`,
-    },
   };
 }
 

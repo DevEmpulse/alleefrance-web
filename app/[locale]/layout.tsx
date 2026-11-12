@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { isLocale, routing } from "@/i18n/routing";
 import { Montserrat, Open_Sans } from "next/font/google";
 import { Metadata } from "next";
+import { SITE_URL } from "@/lib/seo";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const t = await getTranslations({ locale, namespace: "Metadata.home" });
   
   return {
-    metadataBase: new URL("https://alleefrance.com"),
+    metadataBase: new URL(SITE_URL),
     title: {
       default: t("title"),
       template: "%s | Allée France",
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       "titre de séjour",
       "emigrar a francia",
     ],
-    authors: [{ name: "Jio - Allée France", url: "https://alleefrance.com" }],
+    authors: [{ name: "Jio - Allée France", url: SITE_URL }],
     creator: "Allée France",
     publisher: "Allée France",
     robots: {
@@ -65,7 +66,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       type: "website",
       locale: locale === "en" ? "en_US" : locale === "fr" ? "fr_FR" : "es_ES",
-      url: `https://alleefrance.com/${locale}`,
       siteName: "Allée France",
       title: t("title"),
       description: t("description"),
@@ -83,14 +83,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       title: t("title"),
       description: t("description"),
       images: ["/hero-lyon.webp"],
-    },
-    alternates: {
-      languages: {
-        en: "/en",
-        es: "/es",
-        fr: "/fr",
-        "x-default": "/es",
-      },
     },
     category: "Immigration Services",
   };

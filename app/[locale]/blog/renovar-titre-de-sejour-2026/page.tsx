@@ -1,5 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
@@ -26,34 +27,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const title = t("metaTitle");
   const description = t("metaDescription");
   const keywords = t.raw("keywords") as string[];
-  const url = `https://alleefrance.com/${locale}/blog/${SLUG}`;
 
   return {
-    title,
-    description,
-    keywords,
-    alternates: {
-      canonical: url,
-      languages: {
-        es: `https://alleefrance.com/es/blog/${SLUG}`,
-        en: `https://alleefrance.com/en/blog/${SLUG}`,
-        fr: `https://alleefrance.com/fr/blog/${SLUG}`,
-      },
-    },
-    openGraph: {
+    ...buildMetadata({
+      locale,
+      path: `/blog/${SLUG}`,
       title,
       description,
-      url,
       type: "article",
-      images: [
-        {
-          url: heroImage,
-          width: 1376,
-          height: 768,
-          alt: title,
-        },
-      ],
-    },
+      image: { url: heroImage, width: 1376, height: 768, alt: title },
+    }),
+    keywords,
   };
 }
 

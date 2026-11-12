@@ -1,5 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
@@ -14,10 +15,14 @@ const heroImage = "/seasonal-worker-in-french-vineyard.webp";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const p = await params;
   const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.visa-saisonnier-salarie.hero" });
-  return {
-    title: `${t("title")} | Allée France`,
+  return buildMetadata({
+    locale: p.locale,
+    path: "/blog/visa-saisonier-salarie",
+    title: t("title"),
     description: t("subtitle"),
-  };
+    type: "article",
+    image: { url: heroImage, alt: t("title") },
+  });
 }
 
 export default async function VisasaisonnierSalariePage({ params }: { params: Promise<{ locale: string }> }) {

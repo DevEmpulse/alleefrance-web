@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
@@ -15,8 +16,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata.titreDeSejour" });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    ...buildMetadata({
+      locale,
+      path: "/servicios/titre-de-sejour",
+      title: t("title"),
+      description: t("description"),
+    }),
     keywords: [
       "titre de séjour francia",
       "permiso residencia francia",
@@ -27,15 +32,6 @@ export async function generateMetadata({
       "ANEF",
       "récépissé francia",
     ],
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `https://alleefrance.com/${locale}/servicios/titre-de-sejour`,
-      type: "website",
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/servicios/titre-de-sejour`,
-    },
   };
 }
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
@@ -15,8 +16,18 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata.visasTrabajo" });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    ...buildMetadata({
+      locale,
+      path: "/servicios/visas-trabajo",
+      title: t("title"),
+      description: t("description"),
+      image: {
+        url: "/visas-trabajo-bg.webp",
+        width: 1200,
+        height: 630,
+        alt: "Visa de Trabajo Francia - Allée France",
+      },
+    }),
     keywords: [
       "visa salarié francia",
       "visa saisonnier francia",
@@ -29,23 +40,6 @@ export async function generateMetadata({
       "métiers en tension",
       "trabajo estacional francia",
     ],
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `https://alleefrance.com/${locale}/servicios/visas-trabajo`,
-      type: "website",
-      images: [
-        {
-          url: "/visas-trabajo-bg.webp",
-          width: 1200,
-          height: 630,
-          alt: "Visa de Trabajo Francia - Allée France",
-        },
-      ],
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/servicios/visas-trabajo`,
-    },
   };
 }
 

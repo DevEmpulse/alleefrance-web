@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { BlogPageContent } from "@/components/blog/blog-page-content";
 import { Footer } from "@/components/footer";
 
@@ -18,8 +19,12 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata.blog" });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    ...buildMetadata({
+      locale,
+      path: "/blog",
+      title: t("title"),
+      description: t("description"),
+    }),
     keywords: [
       "blog migración francia",
       "guía visa francia",
@@ -30,15 +35,6 @@ export async function generateMetadata({
       "working holiday francia blog",
       "visa salarié guía",
     ],
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `https://alleefrance.com/${locale}/blog`,
-      type: "website",
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/blog`,
-    },
   };
 }
 

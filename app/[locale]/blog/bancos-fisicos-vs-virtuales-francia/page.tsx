@@ -1,5 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { Navbar } from "@/components/navbar";
 import { BlogCTASections } from "@/components/blog/blog-cta";
 import { Footer } from "@/components/footer";
@@ -15,10 +16,14 @@ const heroImage = "/bancos-france-inmigrantes.webp";
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const p = await params;
   const t = await getTranslations({ locale: p.locale, namespace: "BlogPosts.bancos-fisicos-vs-virtuales-francia.hero" });
-  return {
-    title: `${t("title")} | Allée France`,
+  return buildMetadata({
+    locale: p.locale,
+    path: "/blog/bancos-fisicos-vs-virtuales-francia",
+    title: t("title"),
     description: t("subtitle"),
-  };
+    type: "article",
+    image: { url: heroImage, alt: t("title") },
+  });
 }
 
 export default async function BancosPage({ params }: { params: Promise<{ locale: string }> }) {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 
 export function generateStaticParams() {
@@ -15,8 +16,18 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata.visaEtudiant" });
 
   return {
-    title: t("title"),
-    description: t("description"),
+    ...buildMetadata({
+      locale,
+      path: "/servicios/visa-etudiant",
+      title: t("title"),
+      description: t("description"),
+      image: {
+        url: "/student-studying-in-paris.webp",
+        width: 1200,
+        height: 630,
+        alt: "Visa Estudiante Francia - Allée France",
+      },
+    }),
     keywords: [
       "visa estudiante francia",
       "estudiar en francia",
@@ -27,23 +38,6 @@ export async function generateMetadata({
       "estudiar francés francia",
       "beca francia latinoamericanos",
     ],
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      url: `https://alleefrance.com/${locale}/servicios/visa-etudiant`,
-      type: "website",
-      images: [
-        {
-          url: "/student-studying-in-paris.webp",
-          width: 1200,
-          height: 630,
-          alt: "Visa Estudiante Francia - Allée France",
-        },
-      ],
-    },
-    alternates: {
-      canonical: `https://alleefrance.com/${locale}/servicios/visa-etudiant`,
-    },
   };
 }
 
