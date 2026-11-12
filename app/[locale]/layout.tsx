@@ -6,6 +6,7 @@ import { isLocale, routing } from "@/i18n/routing";
 import { Montserrat, Open_Sans } from "next/font/google";
 import { Metadata } from "next";
 import { SITE_URL } from "@/lib/seo";
+import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION } from "@/lib/site-verification";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -85,6 +86,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       images: ["/hero-lyon.webp"],
     },
     category: "Immigration Services",
+    verification: {
+      ...(GOOGLE_SITE_VERIFICATION ? { google: GOOGLE_SITE_VERIFICATION } : {}),
+      ...(BING_SITE_VERIFICATION ? { other: { "msvalidate.01": BING_SITE_VERIFICATION } } : {}),
+    },
   };
 }
 
