@@ -12,7 +12,7 @@ import {
   buildProfessionalServiceSchema,
   buildWebSiteSchema,
 } from "@/lib/schema";
-import { BING_SITE_VERIFICATION, GOOGLE_SITE_VERIFICATION } from "@/lib/site-verification";
+import { SITE_VERIFICATION } from "@/lib/site-verification";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -92,10 +92,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       images: ["/hero-lyon.webp"],
     },
     category: "Immigration Services",
-    verification: {
-      ...(GOOGLE_SITE_VERIFICATION ? { google: GOOGLE_SITE_VERIFICATION } : {}),
-      ...(BING_SITE_VERIFICATION ? { other: { "msvalidate.01": BING_SITE_VERIFICATION } } : {}),
-    },
+    verification: SITE_VERIFICATION,
   };
 }
 
