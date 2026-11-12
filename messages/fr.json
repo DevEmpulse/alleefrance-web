@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Conseil en Immigration France pour Latino-Américains",
-      "description": "Experts en visas France : Salarié, Saisonnier, Working Holiday et Étudiant. +700 cas de réussite. Accompagnement complet depuis l'Amérique latine."
+      "description": "Experts en visas France : Salarié, Saisonnier, Working Holiday et Étudiant. +900 cas de réussite. Accompagnement complet depuis l'Amérique latine."
     },
     "services": {
       "title": "Services de Conseil en Immigration France | Visas & Démarches",
@@ -62,7 +62,7 @@
     "whatsappCta": "Planifier une consultation",
     "statsTitle": "Leader du marché",
     "statsSubtitle": "depuis plus de 2 ans",
-    "statsLabel": "cas de réussite"
+    "statsLabel": "dossiers"
   },
   "About": {
     "mapAlt": "Carte de France avec les principales villes où émigrer : Paris, Lyon, Marseille",
@@ -71,7 +71,7 @@
     "titleSuffix": "en France",
     "paragraph1": "Chez Allée France, nous sommes spécialistes des démarches d'immigration pour la France et guidons ceux qui souhaitent vivre, travailler ou étudier dans ce pays.",
     "paragraph2Prefix": "Plus de",
-    "paragraph2Strong": "700 processus réussis",
+    "paragraph2Strong": "900 processus réussis",
     "paragraph2Suffix": "garantissent notre expérience en matière d'autorisations de travail, visa Salarié, visa Saisonnier, visa étudiant et regroupement familial.",
     "paragraph3": "Nous aidons les personnes d'Amérique latine et du monde entier à concrétiser leur projet d'immigration en France avec des conseils clairs, un accompagnement étape par étape et une stratégie personnalisée selon votre objectif : emploi, études ou résidence.",
     "paragraph4": "Nous offrons des conseils spécialisés non seulement pour la France, mais aussi pour d'autres destinations où vous souhaitez étudier, vivre ou travailler, toujours avec le même niveau de précision et de résultats.",
@@ -80,7 +80,7 @@
     "servicesCta": "Nos services",
     "contactCta": "Contactez-nous",
     "stats": {
-      "cases": "Cas de réussite",
+      "cases": "Dossiers",
       "experience": "Années d'expérience",
       "adviceValue": "Conseil",
       "adviceLabel": "Personnalisé"
@@ -176,8 +176,7 @@
     "description": "La tranquillité d'esprit de savoir que vous êtes entre les mains d'experts. Voici comment ils l'ont vécu :",
     "previous": "Voir l'avis précédent",
     "next": "Voir l'avis suivant",
-    "googleCta": "Voir les +40 avis sur Google",
-    "date": "Il y a 2 semaines"
+    "googleCta": "Voir les {count} avis sur Google"
   },
   "FAQHome": {
     "title": "Foire Aux Questions (FAQ)",
@@ -1346,7 +1345,7 @@
       },
       "section1": {
         "title": "Pourquoi il est important d'avoir un emploi avant de voyager",
-        "p1": "L'une des craintes les plus courantes chez ceux qui veulent émigrer en France est la suivante : 'Comment trouver un employeur si je suis à l'autre bout du monde ?' La bonne nouvelle, c'est que c'est tout à fait possible et qu'il existe une stratégie claire pour y parvenir. Chez Allée France, nous avons accompagné plus de 700 personnes dans cette démarche, et dans cet article, nous partageons exactement comment l'aborder.",
+        "p1": "L'une des craintes les plus courantes chez ceux qui veulent émigrer en France est la suivante : 'Comment trouver un employeur si je suis à l'autre bout du monde ?' La bonne nouvelle, c'est que c'est tout à fait possible et qu'il existe une stratégie claire pour y parvenir. Chez Allée France, nous avons accompagné plus de 900 personnes dans cette démarche, et dans cet article, nous partageons exactement comment l'aborder.",
         "p2": "Pour les visas Salarié et Saisonnier, le contrat de travail avec un employeur français est le pilier central du dossier. Sans lui, pas de visa. C'est pourquoi trouver un emploi depuis l'Amérique latine n'est pas seulement un avantage : c'est la première étape obligatoire du processus de migration professionnelle. De plus, arriver avec un emploi garanti vous permet de planifier votre logement, vos finances et votre adaptation avec beaucoup plus de tranquillité. Ce n'est pas la même chose d'arriver pour improviser que d'arriver avec un plan concret."
       },
       "plataformasTitle": "Les plateformes où chercher du travail en France",
@@ -2852,7 +2851,7 @@
     },
     "professionalSupport": {
       "title": "ACCOMPAGNEMENT PROFESSIONNEL",
-      "p1": "Chez Allée France Lyon, je vous accompagne personnellement. Je m'appelle Jio, spécialiste des démarches d'immigration, avec plus de 700 dossiers réussis.",
+      "p1": "Chez Allée France Lyon, je vous accompagne personnellement. Je m'appelle Jio, spécialiste des démarches d'immigration, avec plus de 900 dossiers réussis.",
       "p2": "Nous travaillons en coordination directe avec votre employeur (de la petite entreprise familiale aux grands groupes) pour garantir un dossier propre, complet et approuvé en un temps record."
     },
     "community": {
@@ -3328,7 +3327,7 @@
       ],
       "name": "Argentine",
       "seoTitle": "Working Holiday France Argentins 2026 : Conditions et Guide",
-      "seoDescription": "Working Holiday France pour les Argentins : conditions, justificatif de fonds et processus complet. +500 cas de réussite. Conseil personnalisé."
+      "seoDescription": "Working Holiday France pour les Argentins : conditions, justificatif de fonds et processus complet. +900 cas de réussite. Conseil personnalisé."
     },
     "cl": {
       "heroTitle": "Working Holiday pour les Chiliens",

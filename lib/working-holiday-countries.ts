@@ -93,7 +93,7 @@ const COUNTRY_DATA: Record<
     ],
     seoTitle: "Working Holiday Francia Argentinos 2025: Requisitos y Guía",
     seoDescription:
-      "Working Holiday Francia para argentinos: sin cupo anual, requisitos, fondos necesarios y proceso completo. +500 casos exitosos. Asesoría personalizada.",
+      "Working Holiday Francia para argentinos: sin cupo anual, requisitos, fondos necesarios y proceso completo. +900 casos exitosos. Asesoría personalizada.",
   },
   cl: {
     code: "cl",

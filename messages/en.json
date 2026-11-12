@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | French Immigration Advisory for Latin Americans",
-      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +700 successful cases. Comprehensive support from LATAM. Get a free consultation."
+      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Get a free consultation."
     },
     "services": {
       "title": "French Immigration Advisory Services | Visas & Procedures",
@@ -62,7 +62,7 @@
     "whatsappCta": "Schedule a consultation",
     "statsTitle": "Market Leader",
     "statsSubtitle": "for over 2 years",
-    "statsLabel": "successful cases"
+    "statsLabel": "processes"
   },
   "About": {
     "mapAlt": "Map of France with the main cities to emigrate: Paris, Lyon, Marseille",
@@ -71,7 +71,7 @@
     "titleSuffix": "in France",
     "paragraph1": "At Allée France we are specialists in immigration procedures for France and we guide those who wish to live, work or study in this country.",
     "paragraph2Prefix": "More than",
-    "paragraph2Strong": "700 successful processes",
+    "paragraph2Strong": "900 successful processes",
     "paragraph2Suffix": "guarantee our experience in work authorizations, Salarié visa, Saisonnier visa, student visa and family reunification.",
     "paragraph3": "We help people from Latin America and the world to realize their immigration project to France with clear advice, step-by-step accompaniment and a personalized strategy according to your objective: employment, studies or residence.",
     "paragraph4": "We offer specialized advice not only for France, but also for other destinations where you wish to study, live or work, always with the same level of precision and results.",
@@ -80,7 +80,7 @@
     "servicesCta": "Our services",
     "contactCta": "Contact us",
     "stats": {
-      "cases": "Successful cases",
+      "cases": "Processes",
       "experience": "Years of experience",
       "adviceValue": "Advice",
       "adviceLabel": "Personalized"
@@ -176,8 +176,7 @@
     "description": "The peace of mind knowing you are in expert hands. This is how they experienced it:",
     "previous": "View previous review",
     "next": "View next review",
-    "googleCta": "See the +40 reviews on Google",
-    "date": "2 weeks ago"
+    "googleCta": "See all {count} reviews on Google"
   },
   "FAQHome": {
     "title": "Frequently Asked Questions (FAQ)",
@@ -1346,7 +1345,7 @@
       },
       "section1": {
         "title": "Why it's important to have a job before traveling",
-        "p1": "One of the most common fears among those who want to emigrate to France is this: 'How do I get an employer if I'm on the other side of the world?' The good news is that it is completely possible, and there is a clear strategy to do so. At Allée France we have accompanied more than 700 people through this process, and in this article we share exactly how to approach it.",
+        "p1": "One of the most common fears among those who want to emigrate to France is this: 'How do I get an employer if I'm on the other side of the world?' The good news is that it is completely possible, and there is a clear strategy to do so. At Allée France we have accompanied more than 900 people through this process, and in this article we share exactly how to approach it.",
         "p2": "For the Salarié and Saisonnier visa, the employment contract with a French employer is the central pillar of the application. Without it, there is no visa. That is why getting a job from LATAM is not just an advantage: it is the mandatory first step in the labor migration process. In addition, arriving with guaranteed work allows you to plan your accommodation, your finances and your adaptation with much more peace of mind. It's not the same to arrive and improvise as it is to arrive with a concrete plan."
       },
       "plataformasTitle": "Platforms where to look for work in France",
@@ -2852,7 +2851,7 @@
     },
     "professionalSupport": {
       "title": "PROFESSIONAL ACCOMPANIMENT",
-      "p1": "At <strong>Allée France Lyon</strong> I accompany you personally. I am <strong>Jio</strong>, a specialist in immigration procedures, with <strong>more than 700 successful processes</strong>.",
+      "p1": "At <strong>Allée France Lyon</strong> I accompany you personally. I am <strong>Jio</strong>, a specialist in immigration procedures, with <strong>more than 900 successful processes</strong>.",
       "p2": "We work in <strong>direct coordination</strong> with your employer (from small family businesses to large companies) to ensure a clean, complete, and approved file in <strong>record time</strong>."
     },
     "community": {
@@ -3328,7 +3327,7 @@
       ],
       "name": "Argentina",
       "seoTitle": "Working Holiday France Argentinians 2026: Requirements and Guide",
-      "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +500 successful cases. Personalized advisory."
+      "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +900 successful cases. Personalized advisory."
     },
     "cl": {
       "heroTitle": "Working Holiday for Chileans",

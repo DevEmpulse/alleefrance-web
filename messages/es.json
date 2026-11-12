@@ -2,11 +2,11 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Asesoría Migratoria Francia para Latinoamericanos",
-      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +700 casos exitosos. Acompañamiento integral desde LATAM. Consultá gratis."
+      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +900 casos exitosos. Acompañamiento integral desde LATAM. Consultá gratis."
     },
     "services": {
       "title": "Servicios de Asesoría Migratoria Francia | Visas y Trámites",
-      "description": "Catálogo completo de servicios migratorios para Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday, Titre de Séjour, reagrupación familiar y más. +700 casos exitosos."
+      "description": "Catálogo completo de servicios migratorios para Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday, Titre de Séjour, reagrupación familiar y más. +900 casos exitosos."
     },
     "blog": {
       "title": "Blog de Migración a Francia | Guías, Visas y Consejos 2026",
@@ -62,7 +62,7 @@
     "whatsappCta": "Agenda una asesoría",
     "statsTitle": "Líder en el Mercado",
     "statsSubtitle": "por más de 2 años",
-    "statsLabel": "casos exitosos"
+    "statsLabel": "procesos"
   },
   "About": {
     "mapAlt": "Mapa de Francia con las principales ciudades para emigrar: París, Lyon, Marsella",
@@ -71,7 +71,7 @@
     "titleSuffix": "en Francia",
     "paragraph1": "En Allée France somos especialistas en trámites migratorios para Francia y guiamos a quienes desean vivir, trabajar o estudiar en este país.",
     "paragraph2Prefix": "Más de",
-    "paragraph2Strong": "700 procesos exitosos",
+    "paragraph2Strong": "900 procesos exitosos",
     "paragraph2Suffix": "avalan nuestra experiencia en autorizaciones de trabajo, visa Salarié, visa Saisonnier, visa de estudiante y reagrupación familiar.",
     "paragraph3": "Ayudamos a personas de América Latina y el mundo a concretar su proyecto migratorio hacia Francia con asesoría clara, acompañamiento paso a paso y una estrategia personalizada según tu objetivo: empleo, estudios o residencia.",
     "paragraph4": "Te ofrecemos asesoría especializada no solo para Francia, sino también para otros destinos donde desees estudiar, vivir o trabajar, siempre con el mismo nivel de precisión y resultados.",
@@ -80,7 +80,7 @@
     "servicesCta": "Nuestros servicios",
     "contactCta": "Contáctanos",
     "stats": {
-      "cases": "Casos exitosos",
+      "cases": "Procesos",
       "experience": "Años de experiencia",
       "adviceValue": "Asesoría",
       "adviceLabel": "Personalizada"
@@ -176,8 +176,7 @@
     "description": "La tranquilidad de saber que estás en manos de expertos. Así lo vivieron ellos:",
     "previous": "Ver opinión anterior",
     "next": "Ver opinión siguiente",
-    "googleCta": "Ver las +40 reseñas en Google",
-    "date": "Hace 2 semanas"
+    "googleCta": "Ver las {count} reseñas en Google"
   },
   "FAQHome": {
     "title": "Preguntas Frecuentes (FAQ)",
@@ -1346,7 +1345,7 @@
       },
       "section1": {
         "title": "Por qué es importante tener trabajo antes de viajar",
-        "p1": "Uno de los miedos más comunes entre quienes quieren emigrar a Francia es este: '¿cómo consigo un empleador si estoy al otro lado del mundo?' La buena noticia es que es completamente posible, y hay una estrategia clara para hacerlo. En Allée France hemos acompañado a más de 700 personas a través de este proceso, y en este artículo te compartimos exactamente cómo abordarlo.",
+        "p1": "Uno de los miedos más comunes entre quienes quieren emigrar a Francia es este: '¿cómo consigo un empleador si estoy al otro lado del mundo?' La buena noticia es que es completamente posible, y hay una estrategia clara para hacerlo. En Allée France hemos acompañado a más de 900 personas a través de este proceso, y en este artículo te compartimos exactamente cómo abordarlo.",
         "p2": "Para la visa Salarié y Saisonnier, el contrato de trabajo con un empleador francés es el pilar central del expediente. Sin él, no hay visa. Por eso, conseguir empleo desde LATAM no es solo una ventaja: es el primer paso obligatorio en el proceso migratorio laboral. Además, llegar con trabajo garantizado te permite planificar tu alojamiento, tus finanzas y tu adaptación con mucha más tranquilidad. No es lo mismo llegar a improvisar que llegar con un plan concreto."
       },
       "plataformasTitle": "Las plataformas donde buscar trabajo en Francia",
@@ -2852,7 +2851,7 @@
     },
     "professionalSupport": {
       "title": "ACOMPAÑAMIENTO PROFESIONAL",
-      "p1": "En <strong>Allée France Lyon</strong> te acompaño personalmente. Soy <strong>Jio</strong>, especialista en trámites migratorios, con <strong>más de 700 procesos exitosos</strong>.",
+      "p1": "En <strong>Allée France Lyon</strong> te acompaño personalmente. Soy <strong>Jio</strong>, especialista en trámites migratorios, con <strong>más de 900 procesos exitosos</strong>.",
       "p2": "Trabajamos en <strong>coordinación directa</strong> con tu empleador (desde pequeños negocios familiares hasta grandes empresas) para asegurar un expediente limpio, completo y aprobado en <strong>tiempo récord</strong>."
     },
     "community": {
@@ -3328,7 +3327,7 @@
       ],
       "name": "Argentina",
       "seoTitle": "Working Holiday Francia Argentinos 2026: Requisitos y Guía",
-      "seoDescription": "Working Holiday Francia para argentinos: sin cupo anual, requisitos, fondos necesarios y proceso completo. +500 casos exitosos. Asesoría personalizada."
+      "seoDescription": "Working Holiday Francia para argentinos: sin cupo anual, requisitos, fondos necesarios y proceso completo. +900 casos exitosos. Asesoría personalizada."
     },
     "cl": {
       "heroTitle": "Working Holiday para Chilenos",

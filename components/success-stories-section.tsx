@@ -9,53 +9,34 @@ import {
   FaQuoteRight,
 } from "react-icons/fa";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { TESTIMONIALS } from "@/data/testimonials";
+import { routing, type Locale } from "@/i18n/routing";
+import { BUSINESS_GOOGLE_PROFILE_URL } from "@/lib/author";
+import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "@/lib/google-reviews";
 
-const testimonials = [
-  {
-    name: "Carla Behrens",
-    date: "Hace 2 semanas",
-    quote:
-      "Excelente atención por parte de Jio para gestionar mi Visa. Resolvió todo en tiempo y forma y mi empleador quedó muy a gusto con la explicación que él brindó y como ayudo en este proceso.",
-    initial: "C",
-    color: "bg-blue-600",
-  },
-  {
-    name: "Jezabel Jaramillo",
-    date: "Hace 2 semanas",
-    quote:
-      "Jio ha sido un factor elemental en mi proceso de estadía en Francia, desde el momento uno me asesoró y generó un vínculo de respaldo... tiene una calidez humana increíble.",
-    initial: "J",
-    color: "bg-purple-600",
-  },
-  {
-    name: "Pablo Augier",
-    date: "Hace 2 semanas",
-    quote:
-      "Extremadamente satisfecho con el servicio y la ayuda, Jio nos asesoró muy bien con los pasos a seguir para conseguir la visa y gracias a su experiencia pudimos lograr la tan ansiada vuelta a Francia.",
-    initial: "P",
-    color: "bg-emerald-600",
-  },
-  {
-    name: "Victoria González",
-    date: "Hace 2 semanas",
-    quote:
-      "Super recomendable, Jio es muy atento, responsable y profesional con su trabajo. Nos asesoró y nos brindó mucha información valiosa.",
-    initial: "V",
-    color: "bg-orange-500",
-  },
-  {
-    name: "Carolina Vernaz",
-    date: "Hace 2 semanas",
-    quote:
-      "Excelente servicio!! La verdad que nosotros tuvimos muchos inconvenientes porque el proceso lo realizamos en un momento donde cambiaron muchas cosas, y supieron guiarnos.",
-    initial: "C",
-    color: "bg-gray-600",
-  },
+const AVATAR_COLORS = [
+  "bg-blue-600",
+  "bg-purple-600",
+  "bg-emerald-600",
+  "bg-orange-500",
+  "bg-gray-600",
 ];
+
+function isLocale(value: string): value is Locale {
+  return (routing.locales as readonly string[]).includes(value);
+}
 
 export function SuccessStoriesSection() {
   const t = useTranslations("SuccessStories");
+  const rawLocale = useLocale();
+  const locale: Locale = isLocale(rawLocale) ? rawLocale : routing.defaultLocale;
+  // Month and year only: Google publishes relative dates, so the stored day is not meaningful.
+  const dateFormatter = new Intl.DateTimeFormat(locale, {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
   const scrollRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: "left" | "right") => {
@@ -110,12 +91,12 @@ export function SuccessStoriesSection() {
         {/* Carrusel de Testimonios */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0"
+          className="flex items-start gap-6 overflow-x-auto snap-x snap-mandatory pb-8 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0"
         >
-          {testimonials.map((testimonial, index) => (
+          {TESTIMONIALS.map((testimonial, index) => (
             <article
               key={index}
-              className="min-w-[85%] sm:min-w-[60%] md:min-w-[40%] lg:min-w-[30%] snap-center bg-white rounded-2xl p-6 flex flex-col relative shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-slate-100 transition-transform hover:-translate-y-1 duration-300"
+              className="w-[85%] sm:w-[60%] md:w-[40%] lg:w-[30%] shrink-0 snap-center bg-white rounded-2xl p-6 flex flex-col relative shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] border border-slate-100 transition-transform hover:-translate-y-1 duration-300"
             >
               {/* Logo de Google pequeño en la tarjeta para autenticidad */}
               <div className="absolute top-6 right-6 opacity-50 grayscale group-hover:grayscale-0">
@@ -125,18 +106,20 @@ export function SuccessStoriesSection() {
               {/* Header: Avatar + Nombre */}
               <div className="flex items-center gap-3 mb-4">
                 <div
-                  className={`w-10 h-10 rounded-full ${testimonial.color} text-white flex items-center justify-center font-bold text-lg shadow-sm`}
+                  className={`w-10 h-10 rounded-full ${AVATAR_COLORS[index % AVATAR_COLORS.length]} text-white flex items-center justify-center font-bold text-lg shadow-sm`}
                 >
-                  {testimonial.initial}
+                  {testimonial.name.charAt(0).toUpperCase()}
                 </div>
                 <div>
-                  <p className="font-bold text-gray-900 leading-none">
+                  <p className="font-bold text-gray-900 leading-tight pr-8">
                     {testimonial.name}
                   </p>
-                  {/* CAMBIO DE COLOR AQUÍ: de text-gray-400 a text-gray-600 para accesibilidad */}
-                  <span className="text-xs text-gray-600 font-medium">
-                    {t("date")}
-                  </span>
+                  <time
+                    dateTime={testimonial.date}
+                    className="text-xs text-gray-600 font-medium"
+                  >
+                    {dateFormatter.format(new Date(`${testimonial.date}-01T00:00:00Z`))}
+                  </time>
                 </div>
               </div>
 
@@ -150,9 +133,15 @@ export function SuccessStoriesSection() {
               {/* Cita */}
               <div className="relative">
                 <FaQuoteRight className="absolute -top-1 -left-1 text-slate-100 text-4xl -z-10" />
-                <p className="text-slate-600 leading-relaxed text-sm relative z-10">
-                  "{testimonial.quote}"
-                </p>
+                <div className="space-y-3 text-slate-600 leading-relaxed text-sm relative z-10 break-words">
+                  {testimonial.quote[locale].split("\n\n").map((paragraph, i, all) => (
+                    <p key={i}>
+                      {i === 0 ? '"' : ""}
+                      {paragraph}
+                      {i === all.length - 1 ? '"' : ""}
+                    </p>
+                  ))}
+                </div>
               </div>
             </article>
           ))}
@@ -181,14 +170,14 @@ export function SuccessStoriesSection() {
 
             {/* Botón Principal */}
             <a
-              href="https://share.google/NA0uNhNw0Rxzr7NIW"
+              href={BUSINESS_GOOGLE_PROFILE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full border-2 border-[#002654]/20 hover:border-[#002654] shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               <FcGoogle className="text-xl" />
               <div className="flex items-center gap-2">
-                <span className="font-bold text-[#002654]">5.0</span>
+                <span className="font-bold text-[#002654]">{GOOGLE_RATING}</span>
                 <div className="flex text-yellow-400 text-sm">
                   {[...Array(5)].map((_, i) => (
                     <FaStar key={i} />
@@ -196,7 +185,7 @@ export function SuccessStoriesSection() {
                 </div>
               </div>
               <span className="text-sm font-semibold text-[#002654] border-l border-gray-300 pl-3 ml-1">
-                {t("googleCta")}
+                {t("googleCta", { count: GOOGLE_REVIEW_COUNT })}
               </span>
               <svg
                 className="w-4 h-4 text-[#002654] group-hover:translate-x-0.5 transition-transform"

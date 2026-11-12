@@ -55,6 +55,11 @@ export default async function AuthorPage({
     ),
   );
 
+  // Newest first; ISO dates compare correctly as strings.
+  const authorPosts = BLOG_POSTS.filter((post) => post.author === "jio").sort(
+    (a, b) => b.datePublished.localeCompare(a.datePublished),
+  );
+
   return (
     <div className="min-h-screen bg-white w-full overflow-x-hidden">
       <JsonLd
@@ -167,7 +172,7 @@ export default async function AuthorPage({
                   {t("articlesTitle")}
                 </h2>
                 <ul className="space-y-3 list-none">
-                  {BLOG_POSTS.filter((post) => post.author === "jio").map(
+                  {authorPosts.map(
                     (post) => (
                       <li key={post.slug}>
                         <Link

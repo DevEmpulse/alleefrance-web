@@ -152,7 +152,7 @@ export function HeroSection() {
                   className="text-xl sm:text-3xl lg:text-4xl font-bold leading-none"
                   style={{ color: "#DC1F2E" }}
                 >
-                  <AnimatedCounter end={700} duration={2500} />
+                  <AnimatedCounter end={900} duration={2500} />
                 </span>
                 <span className="text-[10px] sm:text-sm lg:text-base font-semibold text-gray-700 leading-tight">
                   {t("statsLabel")}
