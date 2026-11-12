@@ -57,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog/titre-sejour-francia", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/blog/conseguir-trabajo-francia-desde-latam", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "/blog/cuanto-cuesta-vivir-en-francia", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "/blog/renovar-titre-de-sejour-2026", changeFrequency: "monthly" as const, priority: 0.7 },
   ];
 
   const legalPaths = [

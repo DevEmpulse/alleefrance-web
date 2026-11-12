@@ -649,6 +649,15 @@
       ],
       "posts": [
         {
+          "title": "Renovar el titre de séjour en 2026: plazos, ANEF y qué hacer si no llega la attestation",
+          "excerpt": "Cuándo pedir la renovación, cómo hacerla en la ANEF y qué hacer si tu titre vence antes de recibir la attestation de prolongation d'instruction.",
+          "date": "11 Noviembre 2026",
+          "readTime": "6 min",
+          "image": "/renovar-titre-de-sejour-2026.webp",
+          "category": "Trámites Migratorios",
+          "slug": "renovar-titre-de-sejour-2026"
+        },
+        {
           "title": "Cuánto cuesta vivir en Francia: presupuesto real para latinoamericanos en 2026",
           "excerpt": "Una de las preguntas más frecuentes que recibimos es: '¿Cuánto dinero necesito para vivir en Francia?' La respuesta depende de la ciudad, tu estilo de vida y tu situación migratoria.",
           "date": "14 Junio 2026",
@@ -1584,6 +1593,170 @@
       "asesoria": {
         "title": "¿Tenés dudas sobre cómo financiar tu llegada a Francia?",
         "p1": "Nuestro equipo está listo para asesorarte. Consultanos en alleefrance.com."
+      }
+    },
+    "renovar-titre-de-sejour-2026": {
+      "seo": {
+        "metaTitle": "Renovar el titre de séjour en 2026: plazos y ANEF",
+        "metaDescription": "Cuándo renovar tu titre de séjour, cómo hacerlo en la ANEF y qué hacer si no llega la attestation de prolongation d'instruction. Guía 2026.",
+        "keywords": [
+          "renovar titre de séjour",
+          "renovación titre de séjour ANEF",
+          "attestation de prolongation d'instruction",
+          "titre de séjour vencido",
+          "renovar residencia Francia"
+        ]
+      },
+      "hero": {
+        "category": "Trámites Migratorios",
+        "title": "Renovar el titre de séjour en 2026: plazos, ANEF y qué hacer si no llega la attestation de prolongation d'instruction",
+        "subtitle": "Guía práctica para saber cuándo pedir la renovación, cómo hacerlo en la ANEF y qué hacer si tu titre vence antes de recibir la attestation de prolongation d'instruction.",
+        "date": "11 Noviembre 2026",
+        "readTime": "6 min de lectura",
+        "byline": "Por Jiovanny Sandoval Villegas, gestor en Gestoría Allée France Lyon",
+        "updated": "Actualizado el 11 de noviembre de 2026"
+      },
+      "shortAnswer": "Respuesta corta: en Francia debes pedir la renovación de tu titre de séjour entre 120 y 60 días antes de que venza, en línea en la ANEF o directamente ante la prefectura, según el tipo de titre. Si tu expediente está completo y lo presentaste en ese plazo, la prefectura debe darte una attestation de prolongation d'instruction, válida hasta 3 meses y renovable, que demuestra que sigues en situación regular mientras esperas tu nueva tarjeta.",
+      "whenToRenew": {
+        "title": "¿Cuándo debo pedir la renovación de mi titre de séjour?",
+        "p1": "Entre el día 120 y el día 60 antes de la fecha de vencimiento de tu tarjeta. Es decir, entre 4 y 2 meses antes. Ese plazo está fijado en el artículo R. 431-5 del CESEDA y es la condición para tener derecho a la attestation de prolongation d'instruction.",
+        "table": {
+          "headers": [
+            "Si tu titre vence el…",
+            "Puedes presentar desde el…",
+            "A más tardar el…"
+          ],
+          "rows": [
+            {
+              "expires": "31 de marzo de 2027",
+              "from": "1 de diciembre de 2026",
+              "until": "30 de enero de 2027"
+            },
+            {
+              "expires": "30 de junio de 2027",
+              "from": "2 de marzo de 2027",
+              "until": "1 de mayo de 2027"
+            },
+            {
+              "expires": "30 de septiembre de 2027",
+              "from": "2 de junio de 2027",
+              "until": "1 de agosto de 2027"
+            }
+          ]
+        },
+        "tip": "Consejo de gestor: no esperes al día 60. Los plazos de tramitación en la ANEF son largos y un documento que falta puede retrasar todo varias semanas."
+      },
+      "anef": {
+        "title": "¿Cómo se renueva el titre de séjour en la ANEF?",
+        "intro": "Muchas renovaciones se hacen en línea en la plataforma ANEF (Administration numérique des étrangers en France), sin cita en la prefectura.",
+        "warning": "Importante: la renovación del titre de séjour salarié y del travailleur temporaire no se hace por la ANEF, sino directamente con la prefectura y según su propio procedimiento. Cada caso es individual, así que consulta siempre con la prefectura que corresponde a tu domicilio.",
+        "steps": [
+          "Entra en tu espacio ANEF con tu cuenta (o créala con FranceConnect).",
+          "Elige la renovación que corresponde a tu situación: étudiant, vie privée et familiale, etc.",
+          "Sube los documentos escaneados, completos y legibles.",
+          "Paga el timbre fiscal en línea cuando la plataforma lo pida.",
+          "Descarga y guarda la attestation de dépôt: es tu prueba de que presentaste a tiempo."
+        ]
+      },
+      "documents": {
+        "title": "¿Qué documentos suelen pedir para renovar?",
+        "intro": "La lista exacta depende del tipo de titre, pero casi siempre incluye:",
+        "items": [
+          "Pasaporte vigente y tu titre de séjour actual.",
+          "Justificante de domicilio reciente (o attestation d'hébergement + identidad de quien te aloja).",
+          "Fotos en formato oficial (las cabinas en Francia tienen la opción «Titre de séjour»).",
+          "Prueba de que sigues cumpliendo las condiciones de tu titre: contrato de trabajo y nóminas, certificado de estudios, prueba de vida en común, etc."
+        ]
+      },
+      "attestation": {
+        "title": "¿Qué es la attestation de prolongation d'instruction?",
+        "intro": "Es un documento que la prefectura pone en tu espacio ANEF cuando tu tarjeta vence y tu expediente todavía no ha sido resuelto. Prueba que tu estancia sigue siendo regular. Está prevista en el artículo R. 431-15-1 del CESEDA.",
+        "items": [
+          {
+            "label": "Condiciones",
+            "detail": "expediente completo y presentado entre el día 120 y el 60 antes del vencimiento."
+          },
+          {
+            "label": "Duración",
+            "detail": "hasta 3 meses, y se renueva mientras la prefectura no decida."
+          },
+          {
+            "label": "Trabajo",
+            "detail": "si tu tarjeta anterior te permitía trabajar, puedes seguir trabajando; la attestation lo indica."
+          },
+          {
+            "label": "Viajes",
+            "detail": "antes de salir de Francia con este documento, consulta a tu prefectura por la ANEF."
+          }
+        ],
+        "conseilEtat": "En mayo de 2026, el Conseil d'État (decisión n.º 502860) recordó que la administración está obligada a entregar esta attestation cuando se cumplen las condiciones."
+      },
+      "expired": {
+        "title": "¿Qué hago si mi titre venció y no me llegó la attestation?",
+        "intro": "Es uno de los problemas más frecuentes de 2026. Sigue estos pasos:",
+        "steps": [
+          {
+            "lead": "Revisa tu espacio ANEF:",
+            "detail": "a veces la attestation está disponible y no llegó aviso por correo."
+          },
+          {
+            "lead": "Verifica que tu expediente esté completo:",
+            "detail": "si la prefectura pidió un documento y no lo subiste, no se genera la attestation."
+          },
+          {
+            "lead": "Escribe a la prefectura por el formulario de contacto de la ANEF:",
+            "detail": "indica tu fecha de depósito y de vencimiento. Algunas prefecturas tienen un formulario específico en demarche.numerique.gouv.fr."
+          },
+          {
+            "lead": "Guarda todas las pruebas:",
+            "detail": "attestation de dépôt, capturas de pantalla y mensajes."
+          },
+          {
+            "lead": "Si nada funciona:",
+            "detail": "un especialista puede presentar un recurso urgente (référé) ante el tribunal administrativo. En 2026 varios tribunales han ordenado a la prefectura entregar la attestation en pocos días."
+          }
+        ]
+      },
+      "changes2026": {
+        "title": "¿Cambió algo en 2026 si paso a una tarjeta plurianual?",
+        "p1": "Sí. Desde el 1 de enero de 2026, para pedir por primera vez una carte de séjour pluriannuelle necesitas aprobar el examen civique y acreditar nivel A2 de francés. Para la carte de résident de 10 años se exige nivel B1. Si ese es tu caso, prepáralo antes de tu fecha de renovación."
+      },
+      "faq": {
+        "title": "Preguntas frecuentes",
+        "items": [
+          {
+            "question": "¿Puedo renovar mi titre de séjour después de que venció?",
+            "answer": "Puedes presentar la solicitud, pero fuera de plazo pierdes el derecho automático a la attestation de prolongation d'instruction y puedes quedar varias semanas sin documento válido. Presenta lo antes posible."
+          },
+          {
+            "question": "¿Cuánto tarda la renovación en la ANEF?",
+            "answer": "Varía mucho según la prefectura: de algunas semanas a varios meses. Por eso conviene presentar cerca del día 120."
+          },
+          {
+            "question": "¿Puedo trabajar mientras espero la renovación?",
+            "answer": "Sí, si tu tarjeta anterior te autorizaba a trabajar y tienes una attestation de prolongation d'instruction vigente."
+          },
+          {
+            "question": "¿La renovación tiene costo?",
+            "answer": "Sí, se paga un timbre fiscal en línea. El monto depende del tipo de titre."
+          }
+        ]
+      },
+      "cta": {
+        "title": "¿Necesitas ayuda con tu renovación?",
+        "body": "En Gestoría Allée France Lyon preparamos tu expediente, lo presentamos en la ANEF y hacemos el seguimiento hasta que recibes tu tarjeta. Más de 900 personas ya han hecho su trámite con nosotros.",
+        "whatsappButton": "Escribir por WhatsApp",
+        "whatsappMessage": "Hola, necesito ayuda para renovar mi titre de séjour.",
+        "bookLabel": "Agendar asesoría"
+      },
+      "legal": "Este artículo es informativo y no sustituye el asesoramiento de un abogado. Cada caso puede requerir revisión.",
+      "sources": {
+        "label": "Fuentes:",
+        "links": [
+          "Service-public.fr — attestation de prolongation d'instruction (F36206)",
+          "Conseil d'État, decisión n.º 502860 (mayo de 2026)",
+          "Service-public.fr — nivel de francés y examen civique (F34501)"
+        ]
       }
     }
   },

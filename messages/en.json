@@ -649,6 +649,15 @@
       ],
       "posts": [
         {
+          "title": "Renewing your titre de séjour in 2026: deadlines, ANEF, and what to do if the attestation doesn't arrive",
+          "excerpt": "When to apply for renewal, how to do it on ANEF, and what to do if your titre expires before the attestation de prolongation d'instruction arrives.",
+          "date": "November 11, 2026",
+          "readTime": "6 min",
+          "image": "/renovar-titre-de-sejour-2026.webp",
+          "category": "Immigration Paperwork",
+          "slug": "renovar-titre-de-sejour-2026"
+        },
+        {
           "title": "How much it costs to live in France: real budget for Latin Americans in 2026",
           "excerpt": "One of the most frequently asked questions we receive is: 'How much money do I need to live in France?' The answer depends on the city, your lifestyle, and your immigration status.",
           "date": "14 June 2026",
@@ -1584,6 +1593,170 @@
       "asesoria": {
         "title": "Do you have doubts about how to finance your arrival in France?",
         "p1": "Our team is ready to advise you. Contact us at alleefrance.com."
+      }
+    },
+    "renovar-titre-de-sejour-2026": {
+      "seo": {
+        "metaTitle": "Renew Your Titre de Séjour in 2026: Deadlines and ANEF",
+        "metaDescription": "When to renew your titre de séjour, how to do it on ANEF, and what to do if the attestation de prolongation d'instruction never arrives. 2026 guide.",
+        "keywords": [
+          "renew titre de séjour",
+          "titre de séjour renewal ANEF",
+          "attestation de prolongation d'instruction",
+          "expired titre de séjour",
+          "renew French residence permit"
+        ]
+      },
+      "hero": {
+        "category": "Immigration Paperwork",
+        "title": "Renewing Your Titre de Séjour in 2026: Deadlines, ANEF, and What to Do If the Attestation de Prolongation d'Instruction Doesn't Arrive",
+        "subtitle": "A practical guide to knowing when to apply for renewal, how to do it on ANEF, and what to do if your titre de séjour expires before the attestation de prolongation d'instruction arrives.",
+        "date": "November 11, 2026",
+        "readTime": "6 min read",
+        "byline": "By Jiovanny Sandoval Villegas, case manager at Gestoría Allée France Lyon",
+        "updated": "Updated on November 11, 2026"
+      },
+      "shortAnswer": "Short answer: in France, you must apply to renew your titre de séjour between 120 and 60 days before it expires, online through ANEF or directly with the prefecture, depending on the type of titre. If your file is complete and you submitted it within that window, the prefecture must issue you an attestation de prolongation d'instruction, valid for up to 3 months and renewable, which proves you remain in a regular situation while you wait for your new card.",
+      "whenToRenew": {
+        "title": "When should I apply to renew my titre de séjour?",
+        "p1": "Between day 120 and day 60 before your card's expiration date — in other words, between 4 and 2 months beforehand. That window is set out in Article R. 431-5 of the CESEDA and is the condition for being entitled to the attestation de prolongation d'instruction.",
+        "table": {
+          "headers": [
+            "If your titre expires on…",
+            "You can apply starting…",
+            "At the latest by…"
+          ],
+          "rows": [
+            {
+              "expires": "March 31, 2027",
+              "from": "December 1, 2026",
+              "until": "January 30, 2027"
+            },
+            {
+              "expires": "June 30, 2027",
+              "from": "March 2, 2027",
+              "until": "May 1, 2027"
+            },
+            {
+              "expires": "September 30, 2027",
+              "from": "June 2, 2027",
+              "until": "August 1, 2027"
+            }
+          ]
+        },
+        "tip": "Case manager's tip: don't wait until day 60. ANEF processing times are long, and a single missing document can delay everything by several weeks."
+      },
+      "anef": {
+        "title": "How do you renew your titre de séjour on ANEF?",
+        "intro": "Many renewals are handled online through the ANEF platform (Administration numérique des étrangers en France), with no prefecture appointment needed.",
+        "warning": "Important: renewals for the titre de séjour salarié and travailleur temporaire are not handled through ANEF — they go directly through the prefecture, following its own procedure. Every case is individual, so always check with the prefecture for your place of residence.",
+        "steps": [
+          "Log in to your ANEF account (or create one with FranceConnect).",
+          "Select the renewal that matches your situation: étudiant, vie privée et familiale, etc.",
+          "Upload your scanned documents, complete and legible.",
+          "Pay the fiscal stamp fee online when the platform asks for it.",
+          "Download and keep your attestation de dépôt — it's your proof that you applied on time."
+        ]
+      },
+      "documents": {
+        "title": "What documents are usually requested for renewal?",
+        "intro": "The exact list depends on the type of titre, but it almost always includes:",
+        "items": [
+          "A valid passport and your current titre de séjour.",
+          "A recent proof of address (or attestation d'hébergement plus proof of identity of whoever is hosting you).",
+          "Official-format photos (photo booths in France have a “Titre de séjour” option).",
+          "Proof that you still meet your titre's conditions: employment contract and payslips, enrollment certificate, proof of shared life, etc."
+        ]
+      },
+      "attestation": {
+        "title": "What is the attestation de prolongation d'instruction?",
+        "intro": "It is a document the prefecture posts to your ANEF account when your card expires and your file has not yet been resolved. It proves your stay remains regular, and it is set out in Article R. 431-15-1 of the CESEDA.",
+        "items": [
+          {
+            "label": "Conditions",
+            "detail": "a complete file submitted between day 120 and day 60 before expiration."
+          },
+          {
+            "label": "Duration",
+            "detail": "up to 3 months, renewable for as long as the prefecture has not decided."
+          },
+          {
+            "label": "Work",
+            "detail": "if your previous card authorized you to work, you can keep working — the attestation states this."
+          },
+          {
+            "label": "Travel",
+            "detail": "before leaving France with this document, check with your prefecture through ANEF."
+          }
+        ],
+        "conseilEtat": "In May 2026, the Conseil d'État (decision no. 502860) reaffirmed that the administration is required to issue this attestation once the conditions are met."
+      },
+      "expired": {
+        "title": "What should I do if my titre expired and the attestation never arrived?",
+        "intro": "This is one of the most common problems in 2026. Follow these steps:",
+        "steps": [
+          {
+            "lead": "Check your ANEF account:",
+            "detail": "sometimes the attestation is available even though no notification email arrived."
+          },
+          {
+            "lead": "Verify your file is complete:",
+            "detail": "if the prefecture requested a document you haven't uploaded, the attestation won't be generated."
+          },
+          {
+            "lead": "Contact the prefecture through ANEF's contact form:",
+            "detail": "give your submission date and expiration date. Some prefectures have a specific form at demarche.numerique.gouv.fr."
+          },
+          {
+            "lead": "Keep every piece of evidence:",
+            "detail": "your attestation de dépôt, screenshots, and messages."
+          },
+          {
+            "lead": "If nothing works:",
+            "detail": "a specialist can file an urgent appeal (référé) with the administrative court. In 2026, several courts have ordered prefectures to issue the attestation within days."
+          }
+        ]
+      },
+      "changes2026": {
+        "title": "What changed in 2026 for the multi-year card?",
+        "p1": "Yes. Since January 1, 2026, applying for a carte de séjour pluriannuelle for the first time requires passing the examen civique and proving A2-level French. The carte de résident (10-year card) requires B1 level. If that applies to you, prepare for it before your renewal date."
+      },
+      "faq": {
+        "title": "Frequently asked questions",
+        "items": [
+          {
+            "question": "Can I renew my titre de séjour after it has expired?",
+            "answer": "You can still submit the application, but once you're past the deadline you lose the automatic right to the attestation de prolongation d'instruction and may go several weeks without a valid document. Apply as soon as possible."
+          },
+          {
+            "question": "How long does an ANEF renewal take?",
+            "answer": "It varies a lot by prefecture, from a few weeks to several months. That's why it's best to apply around day 120."
+          },
+          {
+            "question": "Can I work while I wait for my renewal?",
+            "answer": "Yes, if your previous card authorized you to work and you hold a valid attestation de prolongation d'instruction."
+          },
+          {
+            "question": "Does the renewal cost anything?",
+            "answer": "Yes, you pay an online fiscal stamp fee. The amount depends on the type of titre."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Need help with your renewal?",
+        "body": "At Gestoría Allée France Lyon, we prepare your file, submit it through ANEF, and follow up until you receive your card. More than 900 people have already completed their process with us.",
+        "whatsappButton": "Message Us on WhatsApp",
+        "whatsappMessage": "Hi, I need help renewing my titre de séjour.",
+        "bookLabel": "Book a Consultation"
+      },
+      "legal": "This article is for informational purposes only and does not replace legal advice from a lawyer. Each case may require individual review.",
+      "sources": {
+        "label": "Sources:",
+        "links": [
+          "Service-public.fr — attestation de prolongation d'instruction (F36206)",
+          "Conseil d'État, decision no. 502860 (May 2026)",
+          "Service-public.fr — French level and examen civique (F34501)"
+        ]
       }
     }
   },

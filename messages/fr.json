@@ -649,6 +649,15 @@
       ],
       "posts": [
         {
+          "title": "Renouveler son titre de séjour en 2026 : délais, ANEF et que faire si l'attestation n'arrive pas",
+          "excerpt": "Quand demander le renouvellement, comment procéder sur l'ANEF et que faire si votre titre expire avant l'attestation de prolongation d'instruction.",
+          "date": "11 Novembre 2026",
+          "readTime": "6 min",
+          "image": "/renovar-titre-de-sejour-2026.webp",
+          "category": "Démarches Administratives",
+          "slug": "renovar-titre-de-sejour-2026"
+        },
+        {
           "title": "Combien coûte la vie en France : budget réel pour les Latino-Américains en 2026",
           "excerpt": "L'une des questions les plus fréquentes que nous recevons est : 'De combien d'argent ai-je besoin pour vivre en France ?' La réponse dépend de la ville, de votre style de vie et de votre situation migratoire.",
           "date": "14 Juin 2026",
@@ -1584,6 +1593,170 @@
       "asesoria": {
         "title": "Vous avez des doutes sur la façon de financer votre arrivée en France ?",
         "p1": "Notre équipe est prête à vous conseiller. Contactez-nous sur alleefrance.com."
+      }
+    },
+    "renovar-titre-de-sejour-2026": {
+      "seo": {
+        "metaTitle": "Renouveler son titre de séjour en 2026 : délais et ANEF",
+        "metaDescription": "Quand renouveler votre titre de séjour, comment faire sur l'ANEF et que faire si l'attestation de prolongation d'instruction n'arrive pas. Guide 2026.",
+        "keywords": [
+          "renouveler titre de séjour",
+          "renouvellement titre de séjour ANEF",
+          "attestation de prolongation d'instruction",
+          "titre de séjour expiré",
+          "renouveler sa carte de séjour"
+        ]
+      },
+      "hero": {
+        "category": "Démarches Administratives",
+        "title": "Renouveler son titre de séjour en 2026 : délais, ANEF et que faire si l'attestation de prolongation d'instruction n'arrive pas",
+        "subtitle": "Guide pratique pour savoir quand demander le renouvellement, comment procéder sur l'ANEF et que faire si votre titre expire avant que l'attestation de prolongation d'instruction n'arrive.",
+        "date": "11 Novembre 2026",
+        "readTime": "6 min de lecture",
+        "byline": "Par Jiovanny Sandoval Villegas, gestionnaire chez Gestoría Allée France Lyon",
+        "updated": "Mis à jour le 11 novembre 2026"
+      },
+      "shortAnswer": "Réponse courte : en France, vous devez demander le renouvellement de votre titre de séjour entre 120 et 60 jours avant son expiration, en ligne sur l'ANEF ou directement auprès de la préfecture, selon le type de titre. Si votre dossier est complet et déposé dans ce délai, la préfecture doit vous délivrer une attestation de prolongation d'instruction, valable jusqu'à 3 mois et renouvelable, qui prouve que vous restez en situation régulière en attendant votre nouvelle carte.",
+      "whenToRenew": {
+        "title": "Quand dois-je demander le renouvellement de mon titre de séjour ?",
+        "p1": "Entre le jour 120 et le jour 60 avant la date d'expiration de votre carte, soit entre 4 et 2 mois avant. Ce délai est fixé par l'article R. 431-5 du CESEDA et conditionne le droit à l'attestation de prolongation d'instruction.",
+        "table": {
+          "headers": [
+            "Si votre titre expire le…",
+            "Vous pouvez déposer à partir du…",
+            "Au plus tard le…"
+          ],
+          "rows": [
+            {
+              "expires": "31 mars 2027",
+              "from": "1er décembre 2026",
+              "until": "30 janvier 2027"
+            },
+            {
+              "expires": "30 juin 2027",
+              "from": "2 mars 2027",
+              "until": "1er mai 2027"
+            },
+            {
+              "expires": "30 septembre 2027",
+              "from": "2 juin 2027",
+              "until": "1er août 2027"
+            }
+          ]
+        },
+        "tip": "Conseil du gestionnaire : n'attendez pas le jour 60. Les délais de traitement sur l'ANEF sont longs, et un document manquant peut retarder tout le dossier de plusieurs semaines."
+      },
+      "anef": {
+        "title": "Comment renouveler son titre de séjour sur l'ANEF ?",
+        "intro": "De nombreux renouvellements se font en ligne sur la plateforme ANEF (Administration numérique des étrangers en France), sans rendez-vous en préfecture.",
+        "warning": "Important : le renouvellement du titre de séjour salarié et du travailleur temporaire ne se fait pas via l'ANEF, mais directement auprès de la préfecture, selon sa propre procédure. Chaque cas est particulier, consultez toujours la préfecture dont dépend votre domicile.",
+        "steps": [
+          "Connectez-vous à votre espace ANEF (ou créez-en un avec FranceConnect).",
+          "Choisissez le renouvellement correspondant à votre situation : étudiant, vie privée et familiale, etc.",
+          "Téléversez vos documents scannés, complets et lisibles.",
+          "Payez le timbre fiscal en ligne lorsque la plateforme le demande.",
+          "Téléchargez et conservez votre attestation de dépôt : c'est la preuve que vous avez déposé votre dossier à temps."
+        ]
+      },
+      "documents": {
+        "title": "Quels documents demande-t-on habituellement pour le renouvellement ?",
+        "intro": "La liste exacte dépend du type de titre, mais elle comprend presque toujours :",
+        "items": [
+          "Un passeport en cours de validité et votre titre de séjour actuel.",
+          "Un justificatif de domicile récent (ou une attestation d'hébergement accompagnée d'une pièce d'identité de la personne qui vous héberge).",
+          "Des photos au format officiel (les cabines en France proposent l'option « Titre de séjour »).",
+          "Une preuve que vous remplissez toujours les conditions de votre titre : contrat de travail et bulletins de salaire, certificat de scolarité, preuve de vie commune, etc."
+        ]
+      },
+      "attestation": {
+        "title": "Qu'est-ce que l'attestation de prolongation d'instruction ?",
+        "intro": "C'est un document que la préfecture dépose sur votre espace ANEF lorsque votre carte expire et que votre dossier n'est pas encore traité. Il prouve que votre séjour reste régulier et il est prévu par l'article R. 431-15-1 du CESEDA.",
+        "items": [
+          {
+            "label": "Conditions",
+            "detail": "un dossier complet déposé entre le jour 120 et le jour 60 avant l'expiration."
+          },
+          {
+            "label": "Durée",
+            "detail": "jusqu'à 3 mois, renouvelable tant que la préfecture n'a pas statué."
+          },
+          {
+            "label": "Travail",
+            "detail": "si votre carte précédente vous autorisait à travailler, vous pouvez continuer à le faire ; l'attestation le mentionne."
+          },
+          {
+            "label": "Voyages",
+            "detail": "avant de quitter la France avec ce document, renseignez-vous auprès de votre préfecture via l'ANEF."
+          }
+        ],
+        "conseilEtat": "En mai 2026, le Conseil d'État (décision n° 502860) a rappelé que l'administration est tenue de délivrer cette attestation dès lors que les conditions sont remplies."
+      },
+      "expired": {
+        "title": "Que faire si mon titre a expiré et que l'attestation n'est pas arrivée ?",
+        "intro": "C'est l'un des problèmes les plus fréquents de 2026. Suivez ces étapes :",
+        "steps": [
+          {
+            "lead": "Vérifiez votre espace ANEF :",
+            "detail": "il arrive que l'attestation soit disponible sans qu'aucun avis par e-mail ne soit arrivé."
+          },
+          {
+            "lead": "Assurez-vous que votre dossier est complet :",
+            "detail": "si la préfecture a demandé un document que vous n'avez pas transmis, l'attestation n'est pas générée."
+          },
+          {
+            "lead": "Écrivez à la préfecture via le formulaire de contact de l'ANEF :",
+            "detail": "indiquez vos dates de dépôt et d'expiration. Certaines préfectures disposent d'un formulaire spécifique sur demarche.numerique.gouv.fr."
+          },
+          {
+            "lead": "Conservez toutes les preuves :",
+            "detail": "attestation de dépôt, captures d'écran et messages échangés."
+          },
+          {
+            "lead": "Si rien ne fonctionne :",
+            "detail": "un spécialiste peut déposer un référé en urgence devant le tribunal administratif. En 2026, plusieurs tribunaux ont ordonné à la préfecture de délivrer l'attestation sous quelques jours."
+          }
+        ]
+      },
+      "changes2026": {
+        "title": "Qu'est-ce qui a changé en 2026 pour la carte pluriannuelle ?",
+        "p1": "Oui. Depuis le 1er janvier 2026, pour demander pour la première fois une carte de séjour pluriannuelle, il faut réussir l'examen civique et justifier d'un niveau A2 de français. Pour la carte de résident de 10 ans, le niveau B1 est exigé. Si c'est votre cas, préparez-le avant votre date de renouvellement."
+      },
+      "faq": {
+        "title": "Questions fréquentes",
+        "items": [
+          {
+            "question": "Puis-je renouveler mon titre de séjour après son expiration ?",
+            "answer": "Vous pouvez déposer votre demande, mais hors délai vous perdez le droit automatique à l'attestation de prolongation d'instruction et pouvez rester plusieurs semaines sans document valide. Déposez votre dossier au plus vite."
+          },
+          {
+            "question": "Combien de temps prend le renouvellement sur l'ANEF ?",
+            "answer": "Cela varie beaucoup selon la préfecture : de quelques semaines à plusieurs mois. C'est pourquoi il vaut mieux déposer votre dossier vers le jour 120."
+          },
+          {
+            "question": "Puis-je travailler en attendant le renouvellement ?",
+            "answer": "Oui, si votre carte précédente vous autorisait à travailler et que vous disposez d'une attestation de prolongation d'instruction en cours de validité."
+          },
+          {
+            "question": "Le renouvellement est-il payant ?",
+            "answer": "Oui, un timbre fiscal est à régler en ligne. Le montant dépend du type de titre."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Besoin d'aide pour votre renouvellement ?",
+        "body": "Chez Gestoría Allée France Lyon, nous préparons votre dossier, le déposons sur l'ANEF et assurons le suivi jusqu'à la réception de votre carte. Plus de 900 personnes ont déjà réalisé leur démarche avec nous.",
+        "whatsappButton": "Nous écrire sur WhatsApp",
+        "whatsappMessage": "Bonjour, j'ai besoin d'aide pour renouveler mon titre de séjour.",
+        "bookLabel": "Réserver une consultation"
+      },
+      "legal": "Cet article est fourni à titre informatif et ne remplace pas les conseils d'un avocat. Chaque situation peut nécessiter un examen particulier.",
+      "sources": {
+        "label": "Sources :",
+        "links": [
+          "Service-public.fr — attestation de prolongation d'instruction (F36206)",
+          "Conseil d'État, décision n° 502860 (mai 2026)",
+          "Service-public.fr — niveau de français et examen civique (F34501)"
+        ]
       }
     }
   },
