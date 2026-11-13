@@ -1,4 +1,19 @@
 # ============================================================
+#  Redirecciones Canónicas SEO (301) - Alleefrance Web
+# ============================================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1. Forzar HTTPS y quitar www (www.alleefrance.com -> https://alleefrance.com)
+  RewriteCond %{HTTP_HOST} ^www\.alleefrance\.com$ [NC,OR]
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://alleefrance.com%{REQUEST_URI} [R=301,L]
+
+  # 2. Redirigir rutas antiguas sin prefijo de idioma (/es/) hacia /es/...
+  RewriteRule ^(servicios|blog|working-holiday|autor|politica-de-privacidad|terminos-y-condiciones)(/.*)?$ https://alleefrance.com/es/$1$2 [R=301,L]
+</IfModule>
+
+# ============================================================
 #  Cache Control - Alleefrance Web
 #  Evita que el navegador muestre versiones antiguas del sitio
 # ============================================================

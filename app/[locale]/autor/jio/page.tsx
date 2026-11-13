@@ -34,6 +34,7 @@ export async function generateMetadata({
     path: AUTHOR_PATH,
     title: t("title"),
     description: t("description"),
+    absoluteTitle: true,
   });
 }
 
