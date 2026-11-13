@@ -137,7 +137,6 @@
     "titleLine1": "Tu visa aprobada,",
     "titleLine2": "tu viaje protegido.",
     "description": "El seguro obligatorio para entrar a Europa. Cumple con todos los requisitos consulares.",
-    "imageAlt": "Viajeros latinoamericanos felices en Europa con seguro de viaje Schengen",
     "insuredTravelers": "Viajeros Asegurados",
     "averageRating": "Valoración Promedio",
     "cta": "Cotizar mi Seguro Ahora",
@@ -159,6 +158,22 @@
         "title": "Toda la estadía",
         "description": "Cobertura 24/7 durante tu tiempo en Francia y la Zona Schengen."
       }
+    },
+    "includesTitle": "Qué incluye tu certificado",
+    "certificateCard": {
+      "ariaLabel": "Ejemplo de certificado de seguro de viaje",
+      "title": "Certificado de seguro de viaje",
+      "subtitle": "Emitido para solicitud de visa",
+      "holderLabel": "Titular",
+      "holderValue": "Tu nombre",
+      "destinationLabel": "Destino",
+      "destinationValue": "Francia y Zona Schengen",
+      "coverageLabel": "Cobertura médica",
+      "coverageValue": "Desde 30.000 €",
+      "validityLabel": "Vigencia",
+      "validityValue": "Fechas de tu viaje",
+      "stampLine1": "Válido",
+      "stampLine2": "para visa"
     }
   },
   "BlogHome": {

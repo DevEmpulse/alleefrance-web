@@ -1,44 +1,28 @@
 "use client"
 
 import Image from "next/image"
-import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ShieldCheck, Heart, Plane, Calendar, Users, CheckCircle2, Star } from "lucide-react"
+import { ShieldCheck, Plane, Users, Check, Star } from "lucide-react"
 import { AnimateOnScroll } from "@/components/animate-on-scroll"
 import { useTranslations } from "next-intl"
+
+const FEATURE_KEYS = ["illness", "hospitalization", "repatriation", "stay"] as const
 
 export function InsuranceSection() {
   const t = useTranslations("Insurance")
 
-  const insuranceFeatures = [
-    {
-      icon: Heart,
-      title: t("features.illness.title"),
-      description: t("features.illness.description"),
-      color: "text-rose-400",
-      bg: "bg-rose-500/20",
-    },
-    {
-      icon: ShieldCheck,
-      title: t("features.hospitalization.title"),
-      description: t("features.hospitalization.description"),
-      color: "text-blue-300",
-      bg: "bg-blue-500/20",
-    },
-    {
-      icon: Plane,
-      title: t("features.repatriation.title"),
-      description: t("features.repatriation.description"),
-      color: "text-emerald-300",
-      bg: "bg-emerald-500/20",
-    },
-    {
-      icon: Calendar,
-      title: t("features.stay.title"),
-      description: t("features.stay.description"),
-      color: "text-amber-300",
-      bg: "bg-amber-500/20",
-    },
+  const insuranceFeatures = FEATURE_KEYS.map((key) => ({
+    key,
+    title: t(`features.${key}.title`),
+    description: t(`features.${key}.description`),
+  }))
+
+  // Sample certificate fields; the user's own values are filled in by GO! Assistance
+  const certificateFields = [
+    { label: t("certificateCard.holderLabel"), value: t("certificateCard.holderValue"), sample: true },
+    { label: t("certificateCard.destinationLabel"), value: t("certificateCard.destinationValue"), sample: false },
+    { label: t("certificateCard.coverageLabel"), value: t("certificateCard.coverageValue"), sample: false },
+    { label: t("certificateCard.validityLabel"), value: t("certificateCard.validityValue"), sample: true },
   ]
 
   return (
@@ -93,58 +77,86 @@ export function InsuranceSection() {
         {/* Grid Layout */}
         <div className="grid lg:grid-cols-12 gap-4 md:gap-6 items-center mb-6 md:mb-8">
           
-          {/* Columna Izquierda: Features (5 columnas) */}
-          <div className="lg:col-span-5 flex flex-col gap-2 md:gap-2.5">
-            {insuranceFeatures.map((feature, index) => {
-              const Icon = feature.icon
-              return (
-                <AnimateOnScroll key={index} direction="left" delay={index * 0.1}>
-                  <Card
-                    className="group p-3 md:p-3.5 rounded-xl md:rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 
-                               hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-                  >
-                    <div className="flex items-start gap-3 md:gap-3.5">
-                      <div className={`p-2 md:p-2.5 rounded-lg md:rounded-xl ${feature.bg} flex-shrink-0 mt-0.5`}>
-                        <Icon className={`w-4 h-4 md:w-5 md:h-5 ${feature.color}`} />
-                      </div>
-                      <div>
-                        <h3 className="text-sm md:text-base font-semibold text-white mb-0.5 md:mb-1 group-hover:text-blue-100 transition-colors">
-                          {feature.title}
-                        </h3>
-                        <p className="text-xs md:text-sm text-blue-100/70 leading-relaxed">
-                          {feature.description}
-                        </p>
-                      </div>
+          {/* Columna Izquierda: lista de coberturas (5 columnas) */}
+          <div className="lg:col-span-5">
+            <AnimateOnScroll direction="left" delay={0.1}>
+              <h3 className="text-sm font-semibold text-blue-200 mb-2">{t("includesTitle")}</h3>
+              <ul className="border-b border-white/15">
+                {insuranceFeatures.map((feature) => (
+                  <li key={feature.key} className="flex items-start gap-3 md:gap-4 py-3.5 md:py-4 border-t border-white/15">
+                    <span
+                      aria-hidden="true"
+                      className="mt-0.5 flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-white text-[#1E3A8A]"
+                    >
+                      <Check className="h-4 w-4" strokeWidth={3} />
+                    </span>
+                    <div className="min-w-0">
+                      <h4 className="text-base md:text-lg text-white leading-snug">{feature.title}</h4>
+                      <p className="mt-0.5 text-sm md:text-base text-blue-100/85 leading-relaxed">{feature.description}</p>
                     </div>
-                  </Card>
-                </AnimateOnScroll>
-              )
-            })}
+                  </li>
+                ))}
+              </ul>
+            </AnimateOnScroll>
           </div>
 
-          {/* Columna Derecha: Imagen Hero + Stats (7 columnas) */}
+          {/* Columna Derecha: certificado de ejemplo + Stats (7 columnas) */}
           <div className="lg:col-span-7 relative pl-0 lg:pl-8">
             <AnimateOnScroll direction="right" delay={0.2}>
-              
-              {/* Contenedor de Imagen Principal */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
-                {/* Overlay gradiente para legibilidad */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#172554]/80 via-transparent to-transparent z-10" />
-                
-                {/* Imagen: Sugiero cambiar a una foto de viajero "backpacker" o mirando un mapa */}
-                <div className="relative h-[280px] md:h-[320px] lg:h-[360px] w-full">
-                   <Image
-                    src="/twopersonhappy.webp"
-                    alt={t("imageAlt")}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
 
-                {/* Panel de Estadísticas (Integrado abajo) */}
-                <div className="absolute bottom-0 left-0 right-0 z-20 bg-white/10 backdrop-blur-xl border-t border-white/10 p-3 md:p-4">
-                  <div className="flex flex-col sm:flex-row items-center justify-around gap-4 md:gap-5">
+              {/* Certificado de ejemplo: lo que el viajero recibe y presenta en el consulado */}
+              <div className="px-2 pt-3 sm:px-6">
+                <article
+                  aria-label={t("certificateCard.ariaLabel")}
+                  className="relative -rotate-2 rounded-md bg-[#FBFAF6] px-5 pt-6 pb-20 sm:px-7 sm:pt-7 text-[#0F1F4D] shadow-[0_30px_60px_-20px_rgba(8,15,45,0.65)] ring-1 ring-[#0F1F4D]/10"
+                  style={{
+                    backgroundImage:
+                      "repeating-linear-gradient(0deg, transparent 0 27px, rgba(30,58,138,0.05) 27px 28px)",
+                  }}
+                >
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-x-0 top-0 h-1.5 rounded-t-md"
+                    style={{ background: "linear-gradient(90deg, #002395 0 33.3%, #ffffff 33.3% 66.6%, #ED2939 66.6%)" }}
+                  />
+                  <div className="flex flex-wrap items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <h3 className="text-lg md:text-xl font-extrabold tracking-tight">{t("certificateCard.title")}</h3>
+                      <p className="text-xs md:text-sm text-[#4B5A86]">{t("certificateCard.subtitle")}</p>
+                    </div>
+                    <Image
+                      src="/logo-go-assistance.webp"
+                      alt={t("partnerAlt")}
+                      width={100}
+                      height={25}
+                      className="h-6 md:h-7 w-auto object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                  <dl className="mt-5 grid grid-cols-[auto_1fr] gap-x-4 sm:gap-x-5 gap-y-2.5 text-sm md:text-base">
+                    {certificateFields.map((field) => (
+                      <div key={field.label} className="contents">
+                        <dt className="text-[#4B5A86]">{field.label}</dt>
+                        <dd className={`min-w-0 ${field.sample ? "italic text-[#6B7499]" : "font-semibold"}`}>
+                          {field.value}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+                  <div
+                    aria-hidden="true"
+                    className="absolute right-5 bottom-4 -rotate-12 rounded-lg border-[3px] border-[#ED2939] px-2.5 py-1.5 text-center font-[family-name:var(--font-montserrat)] text-xs md:text-sm font-extrabold leading-tight text-[#ED2939]/90"
+                  >
+                    {t("certificateCard.stampLine1")}
+                    <br />
+                    {t("certificateCard.stampLine2")}
+                  </div>
+                </article>
+              </div>
+
+              {/* Estadísticas */}
+              <div className="mt-6 md:mt-8">
+                  <div className="flex flex-row items-center justify-around gap-3 md:gap-5">
                     
                     {/* Stat 1 */}
                     <div className="flex items-center gap-2 md:gap-2.5">
@@ -157,7 +169,7 @@ export function InsuranceSection() {
                       </div>
                     </div>
 
-                    <div className="hidden sm:block w-px h-8 md:h-10 bg-white/10"></div>
+                    <div className="w-px h-8 md:h-10 bg-white/10"></div>
 
                     {/* Stat 2 */}
                     <div className="flex items-center gap-2 md:gap-2.5">
@@ -171,7 +183,6 @@ export function InsuranceSection() {
                     </div>
 
                   </div>
-                </div>
               </div>
             </AnimateOnScroll>
           </div>
@@ -182,7 +193,7 @@ export function InsuranceSection() {
           <div className="flex flex-col items-center justify-center mt-4 md:mt-6">
             <Button
               size="lg"
-              className="group relative overflow-hidden bg-[#ED2939] hover:bg-[#D61E2E] text-white font-bold text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-full shadow-xl shadow-red-600/20 transition-all hover:scale-105"
+              className="group relative overflow-hidden bg-[#ED2939] hover:bg-[#D61E2E] text-white font-bold text-base md:text-lg px-6 sm:px-8 md:px-10 py-4 md:py-5 h-auto max-w-full whitespace-normal text-center rounded-full shadow-xl shadow-red-600/20 transition-all hover:scale-105"
               asChild
             >
               <a
