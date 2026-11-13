@@ -78,7 +78,7 @@ export function HeroSection() {
             initial={{ opacity: 1, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight max-w-4xl mx-auto"
+            className="text-[1.875rem] min-[400px]:text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight max-w-4xl mx-auto"
           >
             {t("title")}
           </motion.h1>
