@@ -2,10 +2,11 @@
 
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Clock3, ShieldCheck } from "lucide-react";
+import { ArrowRight, Clock3, ShieldCheck, Star } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import { SiWhatsapp } from "react-icons/si";
+import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT } from "@/lib/google-reviews";
 
 export function AboutSection() {
   const t = useTranslations("About");
@@ -36,7 +37,8 @@ export function AboutSection() {
 
       <div className="relative max-w-7xl mx-auto px-6">
         <AnimateOnScroll direction="right" delay={0.2}>
-          <div className="hidden sm:block absolute -right-12 md:-right-16 lg:-right-20 -top-72 w-[340px] md:w-[420px] lg:w-[520px] pointer-events-none z-40">
+          {/* On screens wider than the 80rem container, pin the map to the viewport's right edge */}
+          <div className="hidden sm:block absolute -right-12 md:-right-16 lg:right-[min(-5rem,calc((80rem-100vw)/2+1rem))] -top-72 w-[340px] md:w-[420px] lg:w-[520px] pointer-events-none z-40">
             <img
               src="/mapitafrancia.webp"
               alt={t("mapAlt")}
@@ -59,50 +61,22 @@ export function AboutSection() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid gap-12 items-center">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
           <AnimateOnScroll direction="left" delay={0}>
             <div className="space-y-6 w-full">
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.15] text-[#002654]">
-                {t("titlePrefix")}{" "}
-                <span className="relative inline-block">
-                  {t("titleHighlight")}
-                  <svg
-                    className="absolute -bottom-1 left-0 w-full h-2 text-[#ED2939]/30"
-                    viewBox="0 0 200 8"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M0,5 Q50,0 100,5 T200,5"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </span>{" "}
-                {t("titleSuffix")}
+              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold leading-[1.15] text-[#002654] text-balance">
+                {t("title")}
               </h2>
 
-              <div className="text-gray-600 text-base lg:text-lg leading-relaxed space-y-4">
+              <div className="text-gray-600 text-base lg:text-lg leading-relaxed space-y-4 max-w-[62ch]">
                 <p>{t("paragraph1")}</p>
                 <p>
-                  {t("paragraph2Prefix")}{" "}
-                  <span className="font-semibold text-[#002654]">
-                    {t("paragraph2Strong")}
-                  </span>{" "}
-                  {t("paragraph2Suffix")}
+                  {t.rich("paragraph2", {
+                    strong: (chunks) => (
+                      <strong className="font-semibold text-[#002654]">{chunks}</strong>
+                    ),
+                  })}
                 </p>
-                <p>{t("paragraph3")}</p>
-                <p>{t("paragraph4")}</p>
-
-                <div className="relative pl-5 py-2 border-l-4 border-[#ED2939] bg-gradient-to-r from-red-50/80 to-transparent rounded-r-lg">
-                  <p className="font-semibold text-gray-800 italic">
-                    &quot;{t("quote")}&quot;
-                  </p>
-                  <p className="text-sm text-[#002654] font-bold mt-1">
-                    {t("mission")}
-                  </p>
-                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
@@ -127,6 +101,31 @@ export function AboutSection() {
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                   </Link>
                 </Button>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Right column starts below the map on desktop */}
+          <AnimateOnScroll direction="right" delay={0.1}>
+            <div className="flex flex-col gap-7 lg:pt-40">
+              <blockquote>
+                <p className="text-2xl sm:text-3xl font-bold leading-tight text-[#002654] font-[family-name:var(--font-montserrat)] text-balance">
+                  &ldquo;{t("quote")}&rdquo;
+                </p>
+                <footer className="mt-3 text-base text-gray-600">{t("mission")}</footer>
+              </blockquote>
+              <div className="border-t border-gray-200 pt-5">
+                <p className="flex items-center gap-2 text-3xl font-bold leading-none text-[#002654] font-[family-name:var(--font-montserrat)]">
+                  {GOOGLE_RATING}
+                  <span className="flex text-[#F5B301]" aria-hidden="true">
+                    {Array.from({ length: 5 }, (_, i) => (
+                      <Star key={i} className="h-4 w-4 fill-current" />
+                    ))}
+                  </span>
+                </p>
+                <p className="mt-2 text-sm text-gray-600">
+                  {t("googleReviews", { count: GOOGLE_REVIEW_COUNT })}
+                </p>
               </div>
             </div>
           </AnimateOnScroll>

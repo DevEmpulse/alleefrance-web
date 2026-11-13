@@ -56,25 +56,21 @@
   "Hero": {
     "imageAlt": "Vista de Lyon, Francia - Allée France te acompaña en tu proyecto migratorio",
     "title": "Tu proyecto en Francia, con acompañamiento profesional",
-    "subtitle": "Te acompaño paso a paso: Salarié/Saisonnier, VVT, Titres de séjour y asesorías personalizadas.",
-    "workVisaCta": "Quiero mi visa Salarié/Saisonnier",
+    "subtitle": "Te acompañamos paso a paso: Salarié/Saisonnier, VVT, Titres de séjour y asesorías personalizadas.",
     "workingHolidayCta": "Visa Working Holiday (VVT)",
     "whatsappCta": "Agenda una asesoría",
     "statsTitle": "Líder en el Mercado",
     "statsSubtitle": "por más de 2 años",
-    "statsLabel": "procesos"
+    "statsLabel": "procesos",
+    "servicesCta": "Ver servicios",
+    "visaLinksLead": "¿Ya sabes qué necesitas?",
+    "workVisaLink": "Visa Salarié / Saisonnier",
+    "visaLinksOr": "o"
   },
   "About": {
     "mapAlt": "Mapa de Francia con las principales ciudades para emigrar: París, Lyon, Marsella",
-    "titlePrefix": "Guía experto en visas y trámites para",
-    "titleHighlight": "vivir y trabajar",
-    "titleSuffix": "en Francia",
-    "paragraph1": "En Allée France somos especialistas en trámites migratorios para Francia y guiamos a quienes desean vivir, trabajar o estudiar en este país.",
-    "paragraph2Prefix": "Más de",
-    "paragraph2Strong": "900 procesos exitosos",
-    "paragraph2Suffix": "avalan nuestra experiencia en autorizaciones de trabajo, visa Salarié, visa Saisonnier, visa de estudiante y reagrupación familiar.",
-    "paragraph3": "Ayudamos a personas de América Latina y el mundo a concretar su proyecto migratorio hacia Francia con asesoría clara, acompañamiento paso a paso y una estrategia personalizada según tu objetivo: empleo, estudios o residencia.",
-    "paragraph4": "Te ofrecemos asesoría especializada no solo para Francia, sino también para otros destinos donde desees estudiar, vivir o trabajar, siempre con el mismo nivel de precisión y resultados.",
+    "title": "Guía experto en visas y trámites para vivir y trabajar en Francia",
+    "paragraph1": "En Allée France somos especialistas en trámites migratorios para Francia: autorizaciones de trabajo, visa Salarié, visa Saisonnier, visa de estudiante y reagrupación familiar.",
     "quote": "Tu proyecto no es un trámite: es tu futuro.",
     "mission": "Y nuestra misión es hacerlo posible.",
     "servicesCta": "Nuestros servicios",
@@ -84,7 +80,9 @@
       "experience": "Años de experiencia",
       "adviceValue": "Asesoría",
       "adviceLabel": "Personalizada"
-    }
+    },
+    "paragraph2": "Ayudamos a personas de América Latina y el mundo a concretar su proyecto con asesoría clara, acompañamiento paso a paso y una estrategia según tu objetivo: <strong>empleo, estudios o residencia</strong>.",
+    "googleReviews": "{count} reseñas en Google"
   },
   "Services": {
     "title": "Nuestros Servicios",

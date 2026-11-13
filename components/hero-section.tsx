@@ -69,16 +69,16 @@ export function HeroSection() {
             placeholder="blur"
             blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUH/8QAIRAAAgIBAwUBAAAAAAAAAAAAAQIDBAAFESEGEhMxQVH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABkRAAIDAQAAAAAAAAAAAAAAAAACAQMRIf/aAAwDAQACEQMRAD8AydLF7U9TqWJLyTBIowscR7B8j2x8qnxg8g4yRgcYxjJWTqIpqP/Z"
           />
-          <div className="absolute inset-0 bg-blue-700/45 pointer-events-none" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-transparent pointer-events-none" />
+          {/* Even navy tint so the centered copy reads well on both sides */}
+          <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,rgba(10,22,60,0.66)_0%,rgba(10,22,60,0.62)_55%,rgba(10,22,60,0.72)_100%)]" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-40 lg:pt-48 pb-40 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 lg:pt-40 pb-48 text-center">
           <motion.h1
             initial={{ opacity: 1, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight"
+            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance leading-tight max-w-4xl mx-auto"
           >
             {t("title")}
           </motion.h1>
@@ -87,7 +87,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="text-base sm:text-lg lg:text-xl text-white/90 mb-10 max-w-3xl mx-auto leading-relaxed px-4"
+            className="text-base sm:text-lg lg:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
             {t("subtitle")}
           </motion.p>
@@ -96,40 +96,50 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center mb-8 max-w-5xl mx-auto px-4"
+            className="max-w-3xl mx-auto"
           >
-            <Button
-              size="lg"
-              className="text-white font-bold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
-              style={{ backgroundColor: "#DC1F2E" }}
-              asChild
-            >
-              <Link href={`/${locale}/servicios/visas-trabajo`}>{t("workVisaCta")}</Link>
-            </Button>
-
-            <Button
-              size="lg"
-              className="bg-white/10 backdrop-blur-sm border-2 border-white text-white font-semibold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-white hover:text-[#002654] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
-              asChild
-            >
-              <Link href={`/${locale}/working-holiday`}>{t("workingHolidayCta")}</Link>
-            </Button>
-
-            <Button
-              size="lg"
-              className="bg-[#25D366] text-[#002654] font-bold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-[#22c55e] hover:text-[#002654] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
-              asChild
-            >
-              <a
-                href={buildWhatsAppLink()}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2"
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center">
+              <Button
+                size="lg"
+                className="bg-[#25D366] text-[#002654] font-bold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-[#22c55e] hover:text-[#002654] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto sm:flex-shrink-0"
+                asChild
               >
-                <SiWhatsapp className="w-5 h-5" />
-                {t("whatsappCta")}
-              </a>
-            </Button>
+                <a
+                  href={buildWhatsAppLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2"
+                >
+                  <SiWhatsapp className="w-5 h-5" />
+                  {t("whatsappCta")}
+                </a>
+              </Button>
+
+              <Button
+                size="lg"
+                className="bg-transparent border-2 border-white/80 text-white font-semibold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-white hover:text-[#002654] active:scale-[0.98] transition-all duration-200 w-full sm:w-auto sm:flex-shrink-0"
+                asChild
+              >
+                <Link href={`/${locale}/servicios`}>{t("servicesCta")}</Link>
+              </Button>
+            </div>
+
+            <p className="mt-5 text-sm text-blue-100/90">
+              {t("visaLinksLead")}{" "}
+              <Link
+                href={`/${locale}/servicios/visas-trabajo`}
+                className="font-semibold text-white underline underline-offset-4 hover:text-blue-100"
+              >
+                {t("workVisaLink")}
+              </Link>{" "}
+              {t("visaLinksOr")}{" "}
+              <Link
+                href={`/${locale}/working-holiday`}
+                className="font-semibold text-white underline underline-offset-4 hover:text-blue-100"
+              >
+                {t("workingHolidayCta")}
+              </Link>
+            </p>
           </motion.div>
         </div>
 

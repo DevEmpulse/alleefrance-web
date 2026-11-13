@@ -56,25 +56,21 @@
   "Hero": {
     "imageAlt": "Vue de Lyon, France - Allée France vous accompagne dans votre projet d'immigration",
     "title": "Votre projet en France, avec un accompagnement professionnel",
-    "subtitle": "Je vous accompagne étape par étape : Salarié/Saisonnier, PVT, Titres de séjour et conseils personnalisés.",
-    "workVisaCta": "Je veux mon visa Salarié/Saisonnier",
+    "subtitle": "Nous vous accompagnons étape par étape : Salarié/Saisonnier, PVT, Titres de séjour et conseils personnalisés.",
     "workingHolidayCta": "Visa Vacances Travail (PVT)",
     "whatsappCta": "Planifier une consultation",
     "statsTitle": "Leader du marché",
     "statsSubtitle": "depuis plus de 2 ans",
-    "statsLabel": "dossiers"
+    "statsLabel": "dossiers",
+    "servicesCta": "Voir les services",
+    "visaLinksLead": "Vous savez déjà ce qu'il vous faut ?",
+    "workVisaLink": "Visa Salarié / Saisonnier",
+    "visaLinksOr": "ou"
   },
   "About": {
     "mapAlt": "Carte de France avec les principales villes où émigrer : Paris, Lyon, Marseille",
-    "titlePrefix": "Guide expert en visas et démarches pour",
-    "titleHighlight": "vivre et travailler",
-    "titleSuffix": "en France",
-    "paragraph1": "Chez Allée France, nous sommes spécialistes des démarches d'immigration pour la France et guidons ceux qui souhaitent vivre, travailler ou étudier dans ce pays.",
-    "paragraph2Prefix": "Plus de",
-    "paragraph2Strong": "900 processus réussis",
-    "paragraph2Suffix": "garantissent notre expérience en matière d'autorisations de travail, visa Salarié, visa Saisonnier, visa étudiant et regroupement familial.",
-    "paragraph3": "Nous aidons les personnes d'Amérique latine et du monde entier à concrétiser leur projet d'immigration en France avec des conseils clairs, un accompagnement étape par étape et une stratégie personnalisée selon votre objectif : emploi, études ou résidence.",
-    "paragraph4": "Nous offrons des conseils spécialisés non seulement pour la France, mais aussi pour d'autres destinations où vous souhaitez étudier, vivre ou travailler, toujours avec le même niveau de précision et de résultats.",
+    "title": "Guide expert en visas et démarches pour vivre et travailler en France",
+    "paragraph1": "Chez Allée France, nous sommes spécialistes des démarches d'immigration pour la France : autorisations de travail, visa Salarié, visa Saisonnier, visa étudiant et regroupement familial.",
     "quote": "Votre projet n'est pas une démarche : c'est votre avenir.",
     "mission": "Et notre mission est de le rendre possible.",
     "servicesCta": "Nos services",
@@ -84,7 +80,9 @@
       "experience": "Années d'expérience",
       "adviceValue": "Conseil",
       "adviceLabel": "Personnalisé"
-    }
+    },
+    "paragraph2": "Nous aidons les personnes d'Amérique latine et du monde entier à concrétiser leur projet avec des conseils clairs, un accompagnement étape par étape et une stratégie adaptée à votre objectif : <strong>emploi, études ou résidence</strong>.",
+    "googleReviews": "{count} avis Google"
   },
   "Services": {
     "title": "Nos Services",

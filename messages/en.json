@@ -56,25 +56,21 @@
   "Hero": {
     "imageAlt": "View of Lyon, France - Allée France accompanies you in your immigration project",
     "title": "Your project in France, with professional accompaniment",
-    "subtitle": "I accompany you step by step: Salarié/Saisonnier, VVT, Titres de séjour and personalized consultancies.",
-    "workVisaCta": "I want my Salarié/Saisonnier visa",
+    "subtitle": "We guide you step by step: Salarié/Saisonnier, VVT, Titres de séjour and personalized consultations.",
     "workingHolidayCta": "Working Holiday Visa (VVT)",
     "whatsappCta": "Schedule a consultation",
     "statsTitle": "Market Leader",
     "statsSubtitle": "for over 2 years",
-    "statsLabel": "processes"
+    "statsLabel": "processes",
+    "servicesCta": "See services",
+    "visaLinksLead": "Already know what you need?",
+    "workVisaLink": "Salarié / Saisonnier visa",
+    "visaLinksOr": "or"
   },
   "About": {
     "mapAlt": "Map of France with the main cities to emigrate: Paris, Lyon, Marseille",
-    "titlePrefix": "Expert guide in visas and procedures to",
-    "titleHighlight": "live and work",
-    "titleSuffix": "in France",
-    "paragraph1": "At Allée France we are specialists in immigration procedures for France and we guide those who wish to live, work or study in this country.",
-    "paragraph2Prefix": "More than",
-    "paragraph2Strong": "900 successful processes",
-    "paragraph2Suffix": "guarantee our experience in work authorizations, Salarié visa, Saisonnier visa, student visa and family reunification.",
-    "paragraph3": "We help people from Latin America and the world to realize their immigration project to France with clear advice, step-by-step accompaniment and a personalized strategy according to your objective: employment, studies or residence.",
-    "paragraph4": "We offer specialized advice not only for France, but also for other destinations where you wish to study, live or work, always with the same level of precision and results.",
+    "title": "Expert guide to visas and procedures to live and work in France",
+    "paragraph1": "At Allée France we specialize in immigration procedures for France: work authorizations, Salarié visa, Saisonnier visa, student visa and family reunification.",
     "quote": "Your project is not a procedure: it is your future.",
     "mission": "And our mission is to make it possible.",
     "servicesCta": "Our services",
@@ -84,7 +80,9 @@
       "experience": "Years of experience",
       "adviceValue": "Advice",
       "adviceLabel": "Personalized"
-    }
+    },
+    "paragraph2": "We help people from Latin America and around the world make their project happen with clear advice, step-by-step support and a strategy built around your goal: <strong>work, studies or residence</strong>.",
+    "googleReviews": "{count} Google reviews"
   },
   "Services": {
     "title": "Our Services",
