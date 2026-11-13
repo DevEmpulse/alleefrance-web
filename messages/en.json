@@ -137,7 +137,6 @@
     "titleLine1": "Your visa approved,",
     "titleLine2": "your trip protected.",
     "description": "The mandatory insurance to enter Europe. Complies with all consular requirements.",
-    "imageAlt": "Happy Latin American travelers in Europe with Schengen travel insurance",
     "insuredTravelers": "Insured Travelers",
     "averageRating": "Average Rating",
     "cta": "Quote my Insurance Now",
@@ -159,6 +158,22 @@
         "title": "Entire Stay",
         "description": "24/7 coverage during your time in France and the Schengen Area."
       }
+    },
+    "includesTitle": "What your certificate includes",
+    "certificateCard": {
+      "ariaLabel": "Sample travel insurance certificate",
+      "title": "Travel insurance certificate",
+      "subtitle": "Issued for visa applications",
+      "holderLabel": "Holder",
+      "holderValue": "Your name",
+      "destinationLabel": "Destination",
+      "destinationValue": "France and Schengen Area",
+      "coverageLabel": "Medical coverage",
+      "coverageValue": "From €30,000",
+      "validityLabel": "Valid",
+      "validityValue": "Your travel dates",
+      "stampLine1": "Valid",
+      "stampLine2": "for visa"
     }
   },
   "BlogHome": {

@@ -137,7 +137,6 @@
     "titleLine1": "Votre visa approuvé,",
     "titleLine2": "votre voyage protégé.",
     "description": "L'assurance obligatoire pour entrer en Europe. Conforme à toutes les exigences consulaires.",
-    "imageAlt": "Voyageurs latino-américains heureux en Europe avec l'assurance voyage Schengen",
     "insuredTravelers": "Voyageurs Assurés",
     "averageRating": "Évaluation Moyenne",
     "cta": "Obtenir un devis d'assurance maintenant",
@@ -159,6 +158,22 @@
         "title": "Séjour complet",
         "description": "Couverture 24/7 pendant votre séjour en France et dans l'espace Schengen."
       }
+    },
+    "includesTitle": "Ce que comprend votre certificat",
+    "certificateCard": {
+      "ariaLabel": "Exemple de certificat d'assurance voyage",
+      "title": "Certificat d'assurance voyage",
+      "subtitle": "Émis pour une demande de visa",
+      "holderLabel": "Titulaire",
+      "holderValue": "Votre nom",
+      "destinationLabel": "Destination",
+      "destinationValue": "France et espace Schengen",
+      "coverageLabel": "Couverture médicale",
+      "coverageValue": "À partir de 30 000 €",
+      "validityLabel": "Validité",
+      "validityValue": "Dates de votre voyage",
+      "stampLine1": "Valable",
+      "stampLine2": "pour visa"
     }
   },
   "BlogHome": {
