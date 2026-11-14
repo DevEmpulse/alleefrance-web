@@ -3673,5 +3673,12 @@
   "BlogByline": {
     "by": "Par",
     "updated": "Mis à jour le"
+  },
+  "BlogArticle": {
+    "readTime": "{minutes} min de lecture",
+    "cardReadTime": "{minutes} min",
+    "sourcesLabel": "Sources :",
+    "whatsappButton": "Nous écrire sur WhatsApp",
+    "bookLabel": "Réserver une consultation"
   }
 }

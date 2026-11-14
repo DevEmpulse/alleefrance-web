@@ -7,15 +7,12 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { useTranslations, useLocale } from "next-intl";
-import { formatBlogDate, getBlogPost } from "@/lib/blog-posts";
+import type { BlogCard } from "@/lib/blog-cards";
 
-export function BlogSection() {
+export function BlogSection({ posts: blogPosts }: { posts: BlogCard[] }) {
   const t = useTranslations("BlogHome");
   const locale = useLocale();
   const scrollRef = useRef<HTMLDivElement>(null);
-
-  const tBlog = useTranslations("Blog.index");
-  const blogPosts = tBlog.raw("posts") as any[];
 
   const handleScroll = (direction: "left" | "right") => {
     if (!scrollRef.current) return;
@@ -89,7 +86,7 @@ export function BlogSection() {
 
                 <div className="p-6 flex flex-col flex-1">
                   <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-                    {formatBlogDate(getBlogPost(post.slug).datePublished, locale)} · {post.readTime}
+                    {post.date} · {post.readTime}
                   </p>
                   <h3
                     className="text-lg font-bold mb-3 line-clamp-2"

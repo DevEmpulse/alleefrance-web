@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 import { PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES } from "@/lib/working-holiday-countries";
 import { routing } from "@/i18n/routing";
 import { localizedUrl } from "@/lib/seo";
-import { BLOG_POSTS } from "@/lib/blog-posts";
+import { PUBLISHED_BLOG_POSTS } from "@/lib/blog-posts";
 import { AUTHOR_PATH } from "@/lib/author";
 
 type ChangeFrequency = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
@@ -62,8 +62,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     path: `/working-holiday/${code}`, changeFrequency: "monthly" as const, priority: 0.8
   }));
 
-  // Blog slugs and dates come from the blog registry (lib/blog-posts.ts).
-  const blogPaths: PathEntry[] = BLOG_POSTS.map((post) => ({
+  // Blog slugs and dates come from the blog registry (lib/blog-posts.ts); scheduled articles are left out.
+  const blogPaths: PathEntry[] = PUBLISHED_BLOG_POSTS.map((post) => ({
     path: `/blog/${post.slug}`,
     changeFrequency: "monthly" as const,
     priority: 0.7,

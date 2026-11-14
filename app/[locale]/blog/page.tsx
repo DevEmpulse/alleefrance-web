@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { BlogPageContent } from "@/components/blog/blog-page-content";
 import { Footer } from "@/components/footer";
+import { getBlogCards } from "@/lib/blog-cards";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
@@ -43,7 +44,7 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
   setRequestLocale(p.locale);
   
   const t = await getTranslations({ locale: p.locale, namespace: "Blog.index" });
-  const blogPosts = t.raw("posts") as any[];
+  const blogPosts = await getBlogCards(p.locale);
   const categories = t.raw("categories") as string[];
 
   return (

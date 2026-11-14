@@ -16,7 +16,8 @@ import {
   BUSINESS_GOOGLE_PROFILE_URL,
   BUSINESS_INSTAGRAM_URL,
 } from "@/lib/author";
-import { BLOG_POSTS, formatBlogDate } from "@/lib/blog-posts";
+import { PUBLISHED_BLOG_POSTS, formatBlogDate } from "@/lib/blog-posts";
+import { getBlogCards } from "@/lib/blog-cards";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
@@ -46,18 +47,15 @@ export default async function AuthorPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "AuthorPage" });
-  const tIndex = await getTranslations({ locale, namespace: "Blog.index" });
   const names = await getBreadcrumbNames(locale);
 
   const bio = t.raw("bio") as string[];
   const titles = new Map(
-    (tIndex.raw("posts") as Array<{ slug: string; title: string }>).map(
-      (post) => [post.slug, post.title],
-    ),
+    (await getBlogCards(locale)).map((card) => [card.slug, card.title]),
   );
 
   // Newest first; ISO dates compare correctly as strings.
-  const authorPosts = BLOG_POSTS.filter((post) => post.author === "jio").sort(
+  const authorPosts = PUBLISHED_BLOG_POSTS.filter((post) => post.author === "jio").sort(
     (a, b) => b.datePublished.localeCompare(a.datePublished),
   );
 
