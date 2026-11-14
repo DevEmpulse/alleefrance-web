@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  # Publishes scheduled blog articles (lib/blog-posts.ts): the daily run only builds and deploys
+  # when an article in content/blog is dated today. 05:00 UTC is 06:00 or 07:00 in Paris.
+  # Scheduled runs use the default branch.
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
 
 # Never run two deploys against the server at the same time.
 concurrency:
@@ -11,7 +17,37 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Pushes and manual runs always deploy; the daily run only on a publication day.
+  publication-check:
+    runs-on: ubuntu-latest
+    outputs:
+      deploy: ${{ steps.check.outputs.deploy }}
+    steps:
+      - name: Checkout
+        if: github.event_name == 'schedule'
+        uses: actions/checkout@v4
+
+      - name: Look for an article dated today
+        id: check
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          if [ "$EVENT_NAME" != "schedule" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          today=$(TZ=Europe/Paris date +%F)
+          if grep -lq "\"datePublished\": \"$today\"" content/blog/*/es.json; then
+            echo "Article scheduled for $today: deploying."
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No article scheduled for $today: nothing to deploy."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build-and-deploy:
+    needs: publication-check
+    if: needs.publication-check.outputs.deploy == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
