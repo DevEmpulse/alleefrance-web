@@ -1,0 +1,122 @@
+{
+  "slug": "titre-de-sejour-saisonnier",
+  "datePublished": "2026-12-07",
+  "seo": {
+    "metaTitle": "Titre de séjour saisonnier : pièces et étapes",
+    "metaDescription": "Visa saisonnier de 3 mois : comment demander la carte de séjour travailleur saisonnier jusqu'à 3 ans, la règle des 6 mois et la liste complète des pièces.",
+    "keywords": [
+      "titre de séjour saisonnier",
+      "carte de séjour travailleur saisonnier",
+      "visa saisonnier 3 mois",
+      "pièces titre de séjour saisonnier"
+    ]
+  },
+  "card": {
+    "category": "Démarches Administratives",
+    "excerpt": "Visa saisonnier de 3 mois : comment demander la carte de séjour travailleur saisonnier jusqu'à 3 ans, la règle des 6 mois et la liste complète des pièces."
+  },
+  "readMinutes": 2,
+  "title": "Titre de séjour saisonnier : pièces à fournir et étapes (avec liste à cocher)",
+  "shortAnswer": "Réponse courte : le visa saisonnier dure 3 mois. Pour continuer à travailler, vous devez demander la carte de séjour pluriannuelle « travailleur saisonnier », valable jusqu'à 3 ans. Elle vous permet d'occuper des emplois saisonniers jusqu'à 6 mois par an, à condition de maintenir votre résidence habituelle hors de France.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Comment fonctionne la carte travailleur saisonnier ?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Durée : jusqu'à 3 ans, renouvelable.",
+        "Limite : 6 mois cumulés de séjour et de travail par an en France au maximum.",
+        "Résidence : vous vous engagez à maintenir votre résidence habituelle dans votre pays.",
+        "Travail saisonnier uniquement : si vous occupez un autre type d'emploi ou restez plus de 6 mois, la carte peut vous être retirée.",
+        "Pas de changement de statut : pour passer en salarié ou en travailleur temporaire, il faut un nouveau visa demandé au consulat.",
+        "Pas de regroupement familial avec cette carte."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Les étapes"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Avant le départ : votre employeur demande l'autorisation de travail et vous obtenez le visa saisonnier de 3 mois au consulat.",
+        "À l'arrivée : vous réunissez les pièces de la liste ci-dessous.",
+        "Demande : elle se dépose auprès de la préfecture de votre domicile, selon sa procédure. Chaque préfecture a ses propres règles : renseignez-vous auprès de la vôtre.",
+        "Remise : vous payez le timbre fiscal et récupérez votre carte."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Liste des pièces à fournir"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Visa saisonnier (scan ou photo)",
+        "Passeport : page des données et toutes les pages comportant des tampons",
+        "Acte de naissance apostillé et traduit en français",
+        "Contrat de travail",
+        "Attestation d'hébergement + pièce d'identité de l'hébergeant",
+        "Extrait Kbis de l'entreprise (à demander à votre employeur)",
+        "Autorisation de travail (celle du visa)",
+        "Billets d'avion, de train ou de bus prouvant votre entrée en France",
+        "Photo au format français (option « Titre de séjour » dans les cabines)",
+        "Numéro de téléphone français actif",
+        "Attestation du maintien de la résidence hors de France",
+        "Contrat d'engagement à respecter les principes de la République"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Les erreurs que nous voyons souvent"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Attendre que le visa soit sur le point d'expirer pour lancer la démarche.",
+        "Un acte de naissance sans apostille ou avec une traduction non assermentée.",
+        "Ne pas conserver les billets d'entrée : ils servent à prouver la limite des 6 mois.",
+        "Passer plus de 6 mois en France dans l'année : cela met le renouvellement en péril."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "question": "Puis-je travailler pour un autre employeur ?",
+          "answer": "Oui, sur un autre emploi saisonnier, mais le nouvel employeur doit demander une nouvelle autorisation de travail."
+        },
+        {
+          "question": "Comment renouveler la carte au bout des 3 ans ?",
+          "answer": "Entre 4 et 2 mois avant l'expiration, avec un nouveau contrat saisonnier et les justificatifs montrant que vous avez respecté les 6 mois par an."
+        },
+        {
+          "question": "Les ressortissants algériens peuvent-ils la demander ?",
+          "answer": "Non, ils relèvent de l'accord franco-algérien."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Nous constituons votre dossier complet",
+      "body": "Chez Allée France Lyon, nous vérifions vos pièces, préparons les formulaires et vous accompagnons jusqu'à la remise de votre carte. Écrivez-nous sur WhatsApp au +33 6 01 52 61 71 ou prenez un conseil personnalisé sur alleefrance.com/fr.",
+      "whatsappMessage": "Bonjour, j'ai besoin d'aide pour mon titre de séjour saisonnier."
+    }
+  ],
+  "disclaimer": "Article informatif. La liste des pièces peut varier selon la préfecture.",
+  "sources": [
+    {
+      "label": "Service-public / justice.fr — carte pluriannuelle travailleur saisonnier"
+    },
+    {
+      "label": "Préfecture de l'Hérault — liste des pièces (renouvellement)"
+    }
+  ]
+}

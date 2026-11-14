@@ -1,0 +1,122 @@
+{
+  "slug": "titre-de-sejour-saisonnier",
+  "datePublished": "2026-12-07",
+  "seo": {
+    "metaTitle": "Titre de séjour saisonnier: documentos y paso a paso",
+    "metaDescription": "Llegaste con visa saisonnier de 3 meses: cómo pedir tu carte de séjour travailleur saisonnier de hasta 3 años, la regla de los 6 meses y el checklist completo.",
+    "keywords": [
+      "titre de séjour saisonnier",
+      "carte de séjour travailleur saisonnier",
+      "visa saisonnier 3 meses",
+      "documentos titre saisonnier"
+    ]
+  },
+  "card": {
+    "category": "Trámites Migratorios",
+    "excerpt": "Llegaste con visa saisonnier de 3 meses: cómo pedir tu carte de séjour travailleur saisonnier de hasta 3 años, la regla de los 6 meses y el checklist completo."
+  },
+  "readMinutes": 2,
+  "title": "Titre de séjour saisonnier: documentos y paso a paso (con checklist)",
+  "shortAnswer": "Respuesta corta: la visa saisonnier dura 3 meses. Para seguir trabajando debes pedir la carte de séjour pluriannuelle «travailleur saisonnier», válida hasta 3 años. Te permite trabajar en empleos de temporada hasta 6 meses por año, siempre que mantengas tu residencia habitual fuera de Francia.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "¿Cómo funciona la carte travailleur saisonnier?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Duración: hasta 3 años, renovable.",
+        "Límite: máximo 6 meses acumulados de estancia y trabajo por año en Francia.",
+        "Residencia: te comprometes a mantener tu residencia habitual en tu país.",
+        "Solo trabajo de temporada: si trabajas en otro tipo de empleo o te quedas más de 6 meses, la tarjeta puede ser retirada.",
+        "No permite cambiar de estatus: para pasar a salarié o travailleur temporaire necesitas una nueva visa desde el consulado.",
+        "Sin reagrupación familiar con esta tarjeta."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Paso a paso"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Antes de viajar: tu empleador pide la autorización de trabajo y tú obtienes la visa saisonnier de 3 meses en el consulado.",
+        "Al llegar: reúnes los documentos del checklist.",
+        "Solicitud: se presenta ante la prefectura de tu domicilio, según su procedimiento. Cada prefectura tiene sus propias reglas: consulta la tuya.",
+        "Entrega: pagas el timbre fiscal y recoges tu tarjeta."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Checklist de documentos"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Visa saisonnier (escaneo o foto)",
+        "Pasaporte: página de datos y todas las páginas con sellos",
+        "Acta de nacimiento apostillada y traducida al francés",
+        "Contrat de travail",
+        "Attestation d'hébergement + pièce d'identité de quien te aloja",
+        "Extrait Kbis de la empresa (pídelo a tu empleador)",
+        "Autorisation de travail (la misma de la visa)",
+        "Billetes de avión, tren o bus que muestran tu entrada a Francia",
+        "Foto en formato francés (opción «Titre de séjour» en las cabinas)",
+        "Número de teléfono francés activo",
+        "Attestation du maintien de la résidence hors de France",
+        "Contrat d'engagement à respecter les principes de la République"
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Errores que vemos a menudo"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Esperar a que la visa esté por vencer para empezar el trámite.",
+        "Acta de nacimiento sin apostilla o con traducción no jurada.",
+        "No guardar los billetes de entrada: sirven para probar el límite de 6 meses.",
+        "Pasar más de 6 meses en Francia en el año: pone en riesgo la renovación."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Puedo trabajar para otro empleador?",
+          "answer": "Sí, en otro empleo de temporada, pero el nuevo empleador debe pedir una nueva autorización de trabajo."
+        },
+        {
+          "question": "¿Cómo renuevo la tarjeta al final de los 3 años?",
+          "answer": "Entre 4 y 2 meses antes del vencimiento, con un nuevo contrato de temporada y las pruebas de que respetaste los 6 meses por año."
+        },
+        {
+          "question": "¿Los argelinos pueden pedirla?",
+          "answer": "No, se rigen por el acuerdo franco-argelino."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Te armamos el expediente completo",
+      "body": "En Allée France Lyon revisamos tus documentos, preparamos los formularios y te acompañamos hasta recibir tu tarjeta. Escríbenos por WhatsApp al +33 6 01 52 61 71 o agenda una asesoría personalizada en alleefrance.com/es.",
+      "whatsappMessage": "Hola, necesito ayuda con mi titre de séjour saisonnier."
+    }
+  ],
+  "disclaimer": "Artículo informativo. La lista de documentos puede variar según la prefectura.",
+  "sources": [
+    {
+      "label": "Service-public / justice.fr — carte pluriannuelle travailleur saisonnier"
+    },
+    {
+      "label": "Prefectura de Hérault — lista de documentos (renovación)"
+    }
+  ]
+}

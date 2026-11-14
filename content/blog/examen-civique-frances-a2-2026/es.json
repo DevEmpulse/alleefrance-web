@@ -1,0 +1,129 @@
+{
+  "slug": "examen-civique-frances-a2-2026",
+  "datePublished": "2026-11-30",
+  "seo": {
+    "metaTitle": "Examen civique y francés A2: requisitos 2026 en Francia",
+    "metaDescription": "Desde 2026 la carte de séjour pluriannuelle exige examen civique y nivel A2 de francés. Quién debe pasarlo, cómo es y cómo prepararte.",
+    "keywords": [
+      "examen civique francia",
+      "nivel A2 titre de séjour",
+      "carte pluriannuelle 2026",
+      "carte de résident B1"
+    ]
+  },
+  "card": {
+    "category": "Trámites Migratorios",
+    "excerpt": "Desde 2026 la carte de séjour pluriannuelle exige examen civique y nivel A2 de francés. Quién debe pasarlo, cómo es y cómo prepararte."
+  },
+  "readMinutes": 2,
+  "title": "Examen civique y nivel A2 de francés: lo que cambió en 2026 para tu tarjeta de residencia",
+  "shortAnswer": "Respuesta corta: desde el 1 de enero de 2026, quien pide por primera vez una carte de séjour pluriannuelle (de 2 a 4 años) debe aprobar el examen civique y acreditar nivel A2 de francés. Para la primera carte de résident de 10 años se exige nivel B1. Ambas pruebas se presentan antes de depositar la solicitud.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "¿Qué cambió exactamente?"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Tarjeta que pides por primera vez",
+        "Francés exigido",
+        "Examen civique"
+      ],
+      "rows": [
+        [
+          "Carte de séjour pluriannuelle",
+          "A2",
+          "Sí, versión «carte pluriannuelle»"
+        ],
+        [
+          "Carte de résident (10 años)",
+          "B1",
+          "Sí, versión «carte de résident»"
+        ],
+        [
+          "Nacionalidad francesa",
+          "B2",
+          "Sí"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "El examen civique y el certificado de francés son dos pruebas distintas: aprobar una no reemplaza a la otra."
+    },
+    {
+      "type": "heading",
+      "text": "¿Cómo es el examen civique?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Son 40 preguntas de opción múltiple, en francés, en 45 minutos. Para aprobar necesitas al menos 32 respuestas correctas (80 %). Las preguntas tratan sobre los valores de la República, las instituciones, la historia y la vida diaria en Francia."
+    },
+    {
+      "type": "heading",
+      "text": "¿Quién no está concernido?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Quien solo renueva una tarjeta anual (por ejemplo salarié o étudiant) sin pasar a la plurianual.",
+        "Quien renueva una tarjeta plurianual que ya tenía.",
+        "Algunas nacionalidades con acuerdos propios, como los argelinos."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Cada caso es individual: confirma tu situación con la prefectura o con un asesor antes de depositar."
+    },
+    {
+      "type": "heading",
+      "text": "¿Cómo prepararte?"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Calcula tu fecha: si tu tarjeta anual vence en 2027 y quieres pasar a la plurianual, prepara las pruebas desde ahora.",
+        "Francés: inscríbete a un examen reconocido (TCF, DELF) con varias semanas de anticipación; las plazas se agotan.",
+        "Examen civique: practica con tests en línea en formato oficial. Con método, se prepara en pocas semanas.",
+        "Contrato de integración republicana (CIR): si lo firmaste al llegar, la formación cívica de 24 horas te ayuda para el examen."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Qué pasa si no apruebo?",
+          "answer": "No podrás obtener la plurianual con esa solicitud, pero puedes volver a presentarte. Mientras tanto, puede ser posible seguir con una tarjeta anual si cumples sus condiciones."
+        },
+        {
+          "question": "¿El examen es en español?",
+          "answer": "No, es en francés."
+        },
+        {
+          "question": "¿La renovación de mi tarjeta anual también lo exige?",
+          "answer": "No por la sola renovación de una tarjeta anual. Se exige al pedir por primera vez la plurianual o la de residente."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "¿Quieres saber si te corresponde la plurianual?",
+      "body": "Revisamos tu situación, tus fechas y lo que debes preparar. Escríbenos por WhatsApp al +33 6 01 52 61 71 o agenda una asesoría personalizada en alleefrance.com/es.",
+      "whatsappMessage": "Hola, quiero saber si me corresponde la carte de séjour pluriannuelle."
+    }
+  ],
+  "disclaimer": "Artículo informativo. Cada caso puede requerir revisión individual.",
+  "sources": [
+    {
+      "label": "Service-public.fr — nivel de francés para la tarjeta de residencia (F34501)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501"
+    },
+    {
+      "label": "Service-public.fr — contrato de integración republicana"
+    }
+  ]
+}

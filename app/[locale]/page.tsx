@@ -6,6 +6,7 @@ import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/seo";
 import { PageSchemas } from "@/lib/schema-server";
 import { HOME_FAQ_SECTION } from "@/lib/faq-sections";
+import { getBlogCards } from "@/lib/blog-cards";
 
 export const dynamicParams = false;
 
@@ -47,7 +48,7 @@ export default async function LocalizedHomePage({
   return (
     <>
       <PageSchemas locale={locale} faqSection={HOME_FAQ_SECTION} />
-      <HomePage />
+      <HomePage blogPosts={await getBlogCards(locale)} />
     </>
   );
 }

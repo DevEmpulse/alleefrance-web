@@ -276,7 +276,14 @@ for (const l of LOCALES) {
 
 // page count
 const perLocale = Object.fromEntries(LOCALES.map((l) => [l, pages.filter((p) => p.locale === l).length]));
-assert("0", "out/", pages.length === 81 && LOCALES.every((l) => perLocale[l] === 27), "81 pages (27 per locale)", JSON.stringify({ total: pages.length, ...perLocale }));
+// Scheduled blog articles change the total, so the expected count comes from the sitemap.
+assert(
+  "0",
+  "out/",
+  pages.length === sitemapLocs.length && LOCALES.every((l) => perLocale[l] === pages.length / LOCALES.length),
+  `${sitemapLocs.length} pages (one per sitemap entry, same count per locale)`,
+  JSON.stringify({ total: pages.length, sitemap: sitemapLocs.length, ...perLocale }),
+);
 
 // ---------- report ----------
 const LABELS = {

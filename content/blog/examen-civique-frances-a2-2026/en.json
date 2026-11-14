@@ -1,0 +1,129 @@
+{
+  "slug": "examen-civique-frances-a2-2026",
+  "datePublished": "2026-11-30",
+  "seo": {
+    "metaTitle": "Examen civique and A2 French: 2026 rules in France",
+    "metaDescription": "From 2026 the carte de séjour pluriannuelle requires the examen civique and A2 level French. Who has to take them, what they involve and how to prepare.",
+    "keywords": [
+      "examen civique france",
+      "A2 french level titre de séjour",
+      "carte pluriannuelle 2026",
+      "carte de résident B1"
+    ]
+  },
+  "card": {
+    "category": "Immigration Paperwork",
+    "excerpt": "From 2026 the carte de séjour pluriannuelle requires the examen civique and A2 level French. Who has to take them, what they involve and how to prepare."
+  },
+  "readMinutes": 2,
+  "title": "Examen civique and A2 level French: what changed in 2026 for your residence card",
+  "shortAnswer": "Short answer: since 1 January 2026, anyone applying for a carte de séjour pluriannuelle (2 to 4 years) for the first time has to pass the examen civique and prove A2 level French. For a first carte de résident, valid 10 years, the requirement is B1. Both tests are taken before you file your application.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "What exactly changed?"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Card you are applying for the first time",
+        "French level required",
+        "Examen civique"
+      ],
+      "rows": [
+        [
+          "Carte de séjour pluriannuelle",
+          "A2",
+          "Yes, the “carte pluriannuelle” version"
+        ],
+        [
+          "Carte de résident (10 years)",
+          "B1",
+          "Yes, the “carte de résident” version"
+        ],
+        [
+          "French nationality",
+          "B2",
+          "Yes"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "The examen civique and the French certificate are two separate tests: passing one does not replace the other."
+    },
+    {
+      "type": "heading",
+      "text": "What is the examen civique like?"
+    },
+    {
+      "type": "paragraph",
+      "text": "It is 40 multiple-choice questions, in French, in 45 minutes. To pass you need at least 32 correct answers (80%). The questions cover the values of the Republic, its institutions, its history and everyday life in France."
+    },
+    {
+      "type": "heading",
+      "text": "Who is exempt?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Anyone only renewing a one-year card (salarié or étudiant, for example) without moving to the pluriannuelle.",
+        "Anyone renewing a carte pluriannuelle they already hold.",
+        "Some nationalities covered by their own agreements, such as Algerians."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Every case is individual: confirm your own situation with the préfecture or with an advisor before you file."
+    },
+    {
+      "type": "heading",
+      "text": "How to prepare"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Work out your dates: if your one-year card expires in 2027 and you want to move to the pluriannuelle, start preparing for the tests now.",
+        "French: book a recognized exam (TCF, DELF) several weeks ahead; the places fill up.",
+        "Examen civique: practice with online tests in the official format. With a method, a few weeks is enough.",
+        "Contrat d'intégration républicaine (CIR): if you signed one when you arrived, the 24-hour civics training helps you for the exam."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "What happens if I don't pass?",
+          "answer": "You will not get the pluriannuelle with that application, but you can sit the test again. In the meantime, staying on a one-year card may still be possible if you meet its conditions."
+        },
+        {
+          "question": "Can I take the exam in my own language?",
+          "answer": "No, it is in French."
+        },
+        {
+          "question": "Does renewing my one-year card require it too?",
+          "answer": "Not for renewing a one-year card on its own. It is required when you apply for the pluriannuelle or the carte de résident for the first time."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Want to know if the pluriannuelle is for you?",
+      "body": "We review your situation, your dates and what you need to prepare. Write to us on WhatsApp at +33 6 01 52 61 71 or book a personalized consultation at alleefrance.com/en.",
+      "whatsappMessage": "Hi, I'd like to know whether the carte de séjour pluriannuelle applies to me."
+    }
+  ],
+  "disclaimer": "Informational article. Each case may need an individual review.",
+  "sources": [
+    {
+      "label": "Service-public.fr — French level required for the residence card (F34501)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501"
+    },
+    {
+      "label": "Service-public.fr — contrat d'intégration républicaine"
+    }
+  ]
+}

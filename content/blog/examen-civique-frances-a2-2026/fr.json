@@ -1,0 +1,129 @@
+{
+  "slug": "examen-civique-frances-a2-2026",
+  "datePublished": "2026-11-30",
+  "seo": {
+    "metaTitle": "Examen civique et français A2 : exigences 2026",
+    "metaDescription": "Depuis 2026, la carte de séjour pluriannuelle exige l'examen civique et le niveau A2 de français. Qui est concerné et comment s'y préparer.",
+    "keywords": [
+      "examen civique france",
+      "niveau A2 titre de séjour",
+      "carte pluriannuelle 2026",
+      "carte de résident B1"
+    ]
+  },
+  "card": {
+    "category": "Démarches Administratives",
+    "excerpt": "Depuis 2026, la carte de séjour pluriannuelle exige l'examen civique et le niveau A2 de français. Qui est concerné et comment s'y préparer."
+  },
+  "readMinutes": 2,
+  "title": "Examen civique et niveau A2 de français : ce qui a changé en 2026 pour votre titre de séjour",
+  "shortAnswer": "Réponse courte : depuis le 1er janvier 2026, toute personne qui demande pour la première fois une carte de séjour pluriannuelle (de 2 à 4 ans) doit réussir l'examen civique et justifier du niveau A2 de français. Pour une première carte de résident de 10 ans, le niveau B1 est exigé. Les deux épreuves se passent avant le dépôt de la demande.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Qu'est-ce qui a changé exactement ?"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Titre demandé pour la première fois",
+        "Niveau de français exigé",
+        "Examen civique"
+      ],
+      "rows": [
+        [
+          "Carte de séjour pluriannuelle",
+          "A2",
+          "Oui, version « carte pluriannuelle »"
+        ],
+        [
+          "Carte de résident (10 ans)",
+          "B1",
+          "Oui, version « carte de résident »"
+        ],
+        [
+          "Nationalité française",
+          "B2",
+          "Oui"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "L'examen civique et le certificat de français sont deux épreuves distinctes : réussir l'une ne remplace pas l'autre."
+    },
+    {
+      "type": "heading",
+      "text": "Comment se déroule l'examen civique ?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Il comporte 40 questions à choix multiple, en français, en 45 minutes. Il faut au moins 32 bonnes réponses (80 %) pour réussir. Les questions portent sur les valeurs de la République, les institutions, l'histoire et la vie quotidienne en France."
+    },
+    {
+      "type": "heading",
+      "text": "Qui n'est pas concerné ?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Les personnes qui renouvellent simplement une carte annuelle (salarié ou étudiant, par exemple) sans passer à la pluriannuelle.",
+        "Les personnes qui renouvellent une carte pluriannuelle qu'elles détenaient déjà.",
+        "Certaines nationalités relevant d'accords spécifiques, comme les ressortissants algériens."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Chaque situation est individuelle : confirmez la vôtre auprès de la préfecture ou d'un conseiller avant de déposer votre demande."
+    },
+    {
+      "type": "heading",
+      "text": "Comment s'y préparer ?"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Calculez votre échéance : si votre carte annuelle expire en 2027 et que vous voulez passer à la pluriannuelle, préparez les épreuves dès maintenant.",
+        "Français : inscrivez-vous à un examen reconnu (TCF, DELF) plusieurs semaines à l'avance ; les places partent vite.",
+        "Examen civique : entraînez-vous avec des tests en ligne au format officiel. Avec de la méthode, quelques semaines suffisent.",
+        "Contrat d'intégration républicaine (CIR) : si vous l'avez signé à votre arrivée, la formation civique de 24 heures vous sert pour l'examen."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "question": "Que se passe-t-il si j'échoue ?",
+          "answer": "Vous n'obtiendrez pas la pluriannuelle avec cette demande, mais vous pouvez repasser les épreuves. En attendant, il reste parfois possible de poursuivre avec une carte annuelle si vous en remplissez les conditions."
+        },
+        {
+          "question": "L'examen peut-il se passer dans une autre langue ?",
+          "answer": "Non, il se déroule en français."
+        },
+        {
+          "question": "Le renouvellement de ma carte annuelle l'exige-t-il aussi ?",
+          "answer": "Non, pas pour le seul renouvellement d'une carte annuelle. L'exigence s'applique à la première demande de carte pluriannuelle ou de carte de résident."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Vous voulez savoir si la pluriannuelle vous concerne ?",
+      "body": "Nous examinons votre situation, vos échéances et ce que vous devez préparer. Écrivez-nous sur WhatsApp au +33 6 01 52 61 71 ou prenez un conseil personnalisé sur alleefrance.com/fr.",
+      "whatsappMessage": "Bonjour, je souhaite savoir si la carte de séjour pluriannuelle me concerne."
+    }
+  ],
+  "disclaimer": "Article informatif. Chaque dossier peut nécessiter un examen individuel.",
+  "sources": [
+    {
+      "label": "Service-public.fr — niveau de français exigé pour le titre de séjour (F34501)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34501"
+    },
+    {
+      "label": "Service-public.fr — contrat d'intégration républicaine"
+    }
+  ]
+}

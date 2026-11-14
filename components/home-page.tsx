@@ -6,6 +6,7 @@ import { ServicesSection } from "@/components/services-section";
 import { WorkingHolidaySection } from "@/components/working-holiday-section";
 import { useTranslations } from "next-intl";
 import { ALL_FAQS } from "@/data/faqs";
+import type { BlogCard } from "@/lib/blog-cards";
 
 // Language-neutral placeholder: the loading state carries no text.
 function SectionLoading() {
@@ -63,7 +64,7 @@ const Footer = dynamic(
   }
 );
 
-export function HomePage() {
+export function HomePage({ blogPosts }: { blogPosts: BlogCard[] }) {
   const tFaq = useTranslations("FAQHome");
 
   return (
@@ -74,7 +75,7 @@ export function HomePage() {
       <ServicesSection />
       <WorkingHolidaySection />
       <InsuranceSection />
-      <BlogSection />
+      <BlogSection posts={blogPosts} />
       <SuccessStoriesSection />
       <FAQSection title={tFaq("title")} data={ALL_FAQS} />
       <ContactSection />
