@@ -1,0 +1,136 @@
+{
+  "slug": "visa-saisonnier-travailleur-temporaire-salarie",
+  "datePublished": "2026-12-14",
+  "seo": {
+    "metaTitle": "Visa saisonnier, travailleur temporaire o salarié: diferencias",
+    "metaDescription": "Compara las 3 visas de trabajo de Francia: duración, titre de séjour, si puedes renovar sin salir del país y cuál te conviene según tu contrato.",
+    "keywords": [
+      "visa travailleur temporaire francia",
+      "visa salarié francia",
+      "diferencia saisonnier salarié",
+      "visa de trabajo francia"
+    ]
+  },
+  "card": {
+    "category": "Trabajo",
+    "excerpt": "Compara las 3 visas de trabajo de Francia: duración, titre de séjour, si puedes renovar sin salir del país y cuál te conviene según tu contrato."
+  },
+  "readMinutes": 2,
+  "title": "Visa saisonnier, travailleur temporaire o salarié: cuál te corresponde",
+  "shortAnswer": "Respuesta corta: el tipo de contrato decide la visa. Un contrato de temporada da la visa saisonnier (máximo 6 meses al año en Francia). Un contrato de duración determinada de 6 a 12 meses da la visa travailleur temporaire. Un contrato indefinido (CDI) da la visa salarié. Solo las dos últimas permiten quedarse y renovar en Francia sin volver a tu país.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Las 3 visas de trabajo, lado a lado"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "",
+        "Saisonnier",
+        "Travailleur temporaire",
+        "Salarié"
+      ],
+      "rows": [
+        [
+          "Contrato",
+          "De temporada, mínimo 3 meses",
+          "Duración determinada, 6 a 12 meses",
+          "Indefinido (CDI)"
+        ],
+        [
+          "Visa inicial",
+          "3 meses",
+          "Según el contrato",
+          "1 año"
+        ],
+        [
+          "Titre de séjour",
+          "Carte travailleur saisonnier (hasta 3 años)",
+          "Carte travailleur temporaire",
+          "Carte salarié"
+        ],
+        [
+          "Estancia",
+          "Máximo 6 meses al año",
+          "Mientras dure el contrato",
+          "Continua"
+        ],
+        [
+          "¿Renovar sin salir de Francia?",
+          "No: hay que salir al terminar los 6 meses",
+          "Sí",
+          "Sí"
+        ],
+        [
+          "¿Cambiar de estatus en Francia?",
+          "No",
+          "Según el caso",
+          "Según el caso"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "¿Cuál es mejor para mí?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Si quieres trabajar unos meses y volver a tu país: saisonnier. Ideal para agricultura, vendimias, turismo y estaciones de esquí.",
+        "Si tienes una oferta de 6 a 12 meses: travailleur temporaire. Puedes renovar si el contrato se prolonga.",
+        "Si quieres instalarte en Francia: salarié con CDI. Es el camino más estable hacia la tarjeta plurianual y, más adelante, la de residente."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Lo que tienen en común"
+    },
+    {
+      "type": "paragraph",
+      "text": "En los tres casos, el empleador pide primero la autorización de trabajo y después tú pides la visa en el consulado. Ojo: la renovación del titre salarié y travailleur temporaire no se hace por la ANEF, sino directamente con la prefectura. Cada caso es individual, así que consulta siempre con la prefectura de tu domicilio."
+    },
+    {
+      "type": "heading",
+      "text": "Actualidad: los métiers en tension"
+    },
+    {
+      "type": "paragraph",
+      "text": "Francia publica una lista de oficios con escasez de mano de obra por región (la vigente es del arrêté del 21 de mayo de 2025). Si tu puesto figura en esa lista, el empleador no tiene que demostrar que buscó primero a un candidato en Francia, lo que facilita la autorización de trabajo. Construcción, hostelería, agricultura y salud aparecen a menudo."
+    },
+    {
+      "type": "faq",
+      "title": "Preguntas frecuentes",
+      "items": [
+        {
+          "question": "¿Puedo pasar de saisonnier a salarié sin salir de Francia?",
+          "answer": "No. La tarjeta saisonnier no permite cambiar de estatus: necesitas una nueva visa desde el consulado."
+        },
+        {
+          "question": "¿Cuánto tarda la autorización de trabajo?",
+          "answer": "Depende de la plataforma y la región; cuenta varias semanas. Por eso conviene empezar con tiempo."
+        },
+        {
+          "question": "¿Mi pareja puede venir conmigo?",
+          "answer": "Con la tarjeta saisonnier no hay reagrupación familiar. Con salarié es posible más adelante, con condiciones."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Acompañamiento completo para tu visa de trabajo",
+      "body": "Te guiamos en Francia y en el consulado de tu país, con pago en 2 cuotas. Escríbenos por WhatsApp al +33 6 01 52 61 71 o agenda una asesoría personalizada en alleefrance.com/es.",
+      "whatsappMessage": "Hola, quiero saber qué visa de trabajo me corresponde para Francia."
+    }
+  ],
+  "disclaimer": "Artículo informativo. Cada caso puede requerir revisión individual.",
+  "sources": [
+    {
+      "label": "Service-public / justice.fr — carte travailleur saisonnier"
+    },
+    {
+      "label": "Prefectura de Hérault — condiciones saisonnier"
+    }
+  ]
+}

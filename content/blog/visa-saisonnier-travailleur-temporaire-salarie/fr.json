@@ -1,0 +1,136 @@
+{
+  "slug": "visa-saisonnier-travailleur-temporaire-salarie",
+  "datePublished": "2026-12-14",
+  "seo": {
+    "metaTitle": "Visa saisonnier, travailleur temporaire ou salarié ?",
+    "metaDescription": "Comparez les 3 visas de travail français : durée, titre de séjour, renouvellement sans quitter le pays et celui qui convient à votre contrat.",
+    "keywords": [
+      "visa travailleur temporaire france",
+      "visa salarié france",
+      "différence saisonnier salarié",
+      "visa de travail france"
+    ]
+  },
+  "card": {
+    "category": "Travail",
+    "excerpt": "Comparez les 3 visas de travail français : durée, titre de séjour, renouvellement sans quitter le pays et celui qui convient à votre contrat."
+  },
+  "readMinutes": 2,
+  "title": "Visa saisonnier, travailleur temporaire ou salarié : lequel vous correspond",
+  "shortAnswer": "Réponse courte : c'est le type de contrat qui détermine le visa. Un contrat saisonnier donne le visa saisonnier (6 mois par an en France au maximum). Un contrat à durée déterminée de 6 à 12 mois donne le visa travailleur temporaire. Un contrat à durée indéterminée (CDI) donne le visa salarié. Seuls les deux derniers permettent de rester en France et d'y renouveler son titre sans retourner dans son pays.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Les 3 visas de travail, côte à côte"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "",
+        "Saisonnier",
+        "Travailleur temporaire",
+        "Salarié"
+      ],
+      "rows": [
+        [
+          "Contrat",
+          "Saisonnier, 3 mois minimum",
+          "Durée déterminée, 6 à 12 mois",
+          "Durée indéterminée (CDI)"
+        ],
+        [
+          "Visa initial",
+          "3 mois",
+          "Selon le contrat",
+          "1 an"
+        ],
+        [
+          "Titre de séjour",
+          "Carte travailleur saisonnier (jusqu'à 3 ans)",
+          "Carte travailleur temporaire",
+          "Carte salarié"
+        ],
+        [
+          "Séjour",
+          "6 mois par an au maximum",
+          "Pendant toute la durée du contrat",
+          "Continu"
+        ],
+        [
+          "Renouveler sans quitter la France ?",
+          "Non : il faut sortir au terme des 6 mois",
+          "Oui",
+          "Oui"
+        ],
+        [
+          "Changer de statut en France ?",
+          "Non",
+          "Selon le cas",
+          "Selon le cas"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Lequel est le mieux adapté à ma situation ?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Vous voulez travailler quelques mois puis rentrer dans votre pays : le saisonnier. Idéal pour l'agriculture, les vendanges, le tourisme et les stations de ski.",
+        "Vous avez une offre de 6 à 12 mois : le travailleur temporaire. Renouvelable si le contrat se prolonge.",
+        "Vous voulez vous installer en France : le salarié avec un CDI. C'est la voie la plus stable vers la carte pluriannuelle puis, plus tard, vers la carte de résident."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Ce qu'ils ont en commun"
+    },
+    {
+      "type": "paragraph",
+      "text": "Dans les trois cas, l'employeur demande d'abord l'autorisation de travail, puis vous déposez votre demande de visa au consulat. Attention : le renouvellement des titres salarié et travailleur temporaire ne passe pas par l'ANEF, mais directement par la préfecture. Chaque dossier est individuel : renseignez-vous toujours auprès de la préfecture de votre domicile."
+    },
+    {
+      "type": "heading",
+      "text": "Actualité : les métiers en tension"
+    },
+    {
+      "type": "paragraph",
+      "text": "La France publie une liste régionale des métiers en tension (celle en vigueur date de l'arrêté du 21 mai 2025). Si votre poste y figure, l'employeur n'a pas à démontrer qu'il a d'abord cherché un candidat en France, ce qui facilite l'autorisation de travail. Le bâtiment, l'hôtellerie-restauration, l'agriculture et la santé y apparaissent souvent."
+    },
+    {
+      "type": "faq",
+      "title": "Questions fréquentes",
+      "items": [
+        {
+          "question": "Puis-je passer de saisonnier à salarié sans quitter la France ?",
+          "answer": "Non. La carte saisonnier ne permet pas de changer de statut : il vous faut un nouveau visa demandé au consulat."
+        },
+        {
+          "question": "Combien de temps prend l'autorisation de travail ?",
+          "answer": "Cela dépend de la plateforme et de la région ; comptez plusieurs semaines. Mieux vaut donc s'y prendre tôt."
+        },
+        {
+          "question": "Mon conjoint peut-il venir avec moi ?",
+          "answer": "Avec la carte saisonnier, il n'y a pas de regroupement familial. Avec la carte salarié, c'est possible plus tard, sous conditions."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Un accompagnement complet pour votre visa de travail",
+      "body": "Nous vous guidons en France comme au consulat de votre pays, avec un paiement en 2 fois. Écrivez-nous sur WhatsApp au +33 6 01 52 61 71 ou prenez un conseil personnalisé sur alleefrance.com/fr.",
+      "whatsappMessage": "Bonjour, je souhaite savoir quel visa de travail pour la France me correspond."
+    }
+  ],
+  "disclaimer": "Article informatif. Chaque dossier peut nécessiter un examen individuel.",
+  "sources": [
+    {
+      "label": "Service-public / justice.fr — carte travailleur saisonnier"
+    },
+    {
+      "label": "Préfecture de l'Hérault — conditions du statut saisonnier"
+    }
+  ]
+}

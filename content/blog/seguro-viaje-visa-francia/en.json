@@ -1,0 +1,141 @@
+{
+  "slug": "seguro-viaje-visa-francia",
+  "datePublished": "2026-11-23",
+  "seo": {
+    "metaTitle": "Travel insurance for a French visa: 2026 rules",
+    "metaDescription": "What your insurance must cover for your French visa, how long to buy it for, and what changes with the new EES checks at Schengen borders.",
+    "keywords": [
+      "travel insurance french visa",
+      "schengen travel insurance",
+      "medical insurance france visa",
+      "EES Schengen",
+      "ETIAS"
+    ]
+  },
+  "card": {
+    "category": "Immigration Paperwork",
+    "excerpt": "What your insurance must cover for your French visa, how long to buy it for, and what changes with the new EES checks at Schengen borders."
+  },
+  "readMinutes": 3,
+  "title": "Travel insurance for your French visa: what it must cover in 2026 and what is changing at the border",
+  "shortAnswer": "Short answer: for a short-stay Schengen visa, your insurance must cover at least €30,000 in medical expenses, hospitalization and repatriation, across the whole Schengen area and for the full length of your stay. For long-stay visas (work, studies, vie privée), consulates usually ask for medical insurance covering the beginning of your stay, until you are registered with French social security.",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Is travel insurance mandatory to enter France?"
+    },
+    {
+      "type": "paragraph",
+      "text": "For the short-stay Schengen visa (tourism, family visit, business), yes: the European Visa Code requires it. Without a valid insurance certificate, the consulate can reject your application."
+    },
+    {
+      "type": "paragraph",
+      "text": "For long-stay visas, the rules change with the purpose of your trip and with the consulate. In practice, most document lists ask for medical insurance covering your arrival in France. Always check the France-Visas list and your own consulate's list."
+    },
+    {
+      "type": "heading",
+      "text": "What must the insurance cover?"
+    },
+    {
+      "type": "table",
+      "headers": [
+        "Requirement",
+        "What to check on your certificate"
+      ],
+      "rows": [
+        [
+          "Minimum amount",
+          "€30,000 or more in medical expenses"
+        ],
+        [
+          "Coverage",
+          "Illness, accident, hospitalization and repatriation"
+        ],
+        [
+          "Area",
+          "The entire Schengen area"
+        ],
+        [
+          "Dates",
+          "From your day of arrival to your day of departure"
+        ],
+        [
+          "Personal details",
+          "Your full name exactly as it appears in your passport"
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "How long should the policy last?"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a short-stay visa, the full length of your trip, not the validity of the visa. For a long-stay work visa, the sensible thing is to cover your first few months: the time it takes to be registered with French social security (CPAM) after you start working."
+    },
+    {
+      "type": "heading",
+      "text": "What's new: the EES checks at Schengen borders"
+    },
+    {
+      "type": "paragraph",
+      "text": "Since 10 April 2026, the European Entry/Exit System (EES) has been running at every external Schengen border. When you arrive, your photo and fingerprints are recorded, and the system replaces the stamps in your passport. Get to the airport early: that first registration can take longer."
+    },
+    {
+      "type": "paragraph",
+      "text": "The European Union is also preparing ETIAS, an electronic travel authorization for travelers who enter without a visa today (Mexicans, Chileans or Colombians on short trips, for example). It is announced for late 2026; confirm the date on the official site before you travel."
+    },
+    {
+      "type": "heading",
+      "text": "Common mistakes with insurance"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Buying a policy that only covers France and not the whole Schengen area.",
+        "Dates that do not match your flight ticket.",
+        "Amounts in dollars with no clear equivalent in euros.",
+        "Credit card insurance with no certificate in your name.",
+        "Buying the insurance after your consulate appointment."
+      ]
+    },
+    {
+      "type": "faq",
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "question": "Is my credit card insurance enough?",
+          "answer": "Only if the bank issues a certificate in your name stating the amount, the dates and the Schengen area. Many consulates do not accept it."
+        },
+        {
+          "question": "When do I get the certificate?",
+          "answer": "With most insurers, immediately by email, ready to print."
+        },
+        {
+          "question": "Can I use the same policy if I travel to Spain or Italy?",
+          "answer": "Yes, as long as the coverage is for the whole Schengen area."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Get your insurance quote with Allée France",
+      "body": "We work with GO! Assistance: coverage for illness, hospitalization and repatriation across the whole Schengen area, with the certificate emailed to you straight away. Click “Quote my insurance” on alleefrance.com/en or write to us on WhatsApp at +33 6 01 52 61 71.",
+      "whatsappMessage": "Hi, I'd like a quote for travel insurance for my French visa."
+    }
+  ],
+  "disclaimer": "Informational article. Always check the requirements of your own consulate.",
+  "sources": [
+    {
+      "label": "Ministry of the Interior — the EES system"
+    },
+    {
+      "label": "National Assembly — reply on the €30,000 Schengen insurance requirement"
+    },
+    {
+      "label": "France-Visas",
+      "url": "https://france-visas.gouv.fr/"
+    }
+  ]
+}
