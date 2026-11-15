@@ -23,7 +23,7 @@ export type BlogPostMeta = {
   slug: string;
   /** ISO 8601 date (YYYY-MM-DD). */
   datePublished: string;
-  /** ISO 8601 date (YYYY-MM-DD). No later edit is recorded, so it equals datePublished. */
+  /** ISO 8601 date (YYYY-MM-DD). */
   dateModified: string;
   /** Hero image, path under /public. */
   image: string;
@@ -80,14 +80,14 @@ const PAGE_POST_ENTRIES: Omit<BlogPostMeta, "layout">[] = [
   {
     slug: "bancos-fisicos-vs-virtuales-francia",
     datePublished: "2026-06-02",
-    dateModified: "2026-06-02",
+    dateModified: "2026-11-15",
     image: "/bancos-france-inmigrantes.webp",
     author: "jio",
   },
   {
     slug: "esim-guia-latinoamericanos-francia",
     datePublished: "2026-06-02",
-    dateModified: "2026-06-02",
+    dateModified: "2026-11-15",
     image: "/esim-guide-france.webp",
     author: "jio",
   },
@@ -95,28 +95,28 @@ const PAGE_POST_ENTRIES: Omit<BlogPostMeta, "layout">[] = [
     // One "n" in the slug; its messages namespace (BlogPosts.visa-saisonnier-salarie) has two.
     slug: "visa-saisonier-salarie",
     datePublished: "2026-01-15",
-    dateModified: "2026-01-15",
+    dateModified: "2026-11-15",
     image: "/seasonal-worker-in-french-vineyard.webp",
     author: "jio",
   },
   {
     slug: "working-holiday-francia",
     datePublished: "2025-01-10",
-    dateModified: "2025-01-10",
+    dateModified: "2026-11-15",
     image: "/Fondo-WH.webp",
     author: "jio",
   },
   {
     slug: "visa-estudiante-francia",
     datePublished: "2025-01-05",
-    dateModified: "2025-01-05",
+    dateModified: "2026-11-15",
     image: "/student-studying-in-paris.webp",
     author: "jio",
   },
   {
     slug: "aprender-frances-recursos",
     datePublished: "2025-01-02",
-    dateModified: "2025-01-02",
+    dateModified: "2026-11-15",
     image: "/person-learning-french-language.webp",
     author: "jio",
   },
