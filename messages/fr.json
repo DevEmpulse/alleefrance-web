@@ -5,27 +5,27 @@
       "description": "Experts en visas France : Salarié, Saisonnier, Working Holiday et Étudiant. +900 cas de réussite. Accompagnement complet depuis l'Amérique latine."
     },
     "services": {
-      "title": "Services de Conseil en Immigration France | Visas & Démarches",
+      "title": "Conseil en Immigration en France | Visas & Démarches",
       "description": "Catalogue complet des services d'immigration pour la France : Visa Salarié, Saisonnier, Étudiant, Working Holiday, Titre de Séjour, regroupement familial, etc."
     },
     "blog": {
-      "title": "Blog de l'Immigration en France | Guides, Visas & Conseils 2026",
+      "title": "Blog Immigration en France | Guides et Visas 2026",
       "description": "Articles et guides mis à jour sur les visas pour la France : Working Holiday, Salarié, Saisonnier, Étudiant. Conseils d'experts pour émigrer, travailler et vivre en France."
     },
     "workingHoliday": {
-      "title": "Working Holiday France 2026 | Conditions, Quotas & Conseil",
+      "title": "Working Holiday France 2026 | Conditions et Quotas",
       "description": "Guide complet du Working Holiday France pour les Latino-Américains. Conditions mises à jour, quotas par pays et conseil d'experts. Vivez et travaillez en France !"
     },
     "visasTrabajo": {
-      "title": "Visa de Travail France 2026 : Salarié et Saisonnier | Guide Complet",
+      "title": "Visa de Travail France 2026 : Salarié et Saisonnier",
       "description": "Guide complet des visas Salarié et Saisonnier en France 2026. Conditions, processus ANEF, Métiers en Tension et délais. Conseil professionnel pour travailler en France."
     },
     "visaEtudiant": {
-      "title": "Visa Étudiant France 2026 : Campus France & Processus Complet",
+      "title": "Visa Étudiant France 2026 : Campus France & Étapes",
       "description": "Guide complet pour obtenir votre visa d'étudiant pour la France. Processus Campus France, ressources financières requises, inscription universitaire et soutien d'experts."
     },
     "titreDeSejour": {
-      "title": "Titre de Séjour France : Renouvellement & Demande | Guide 2026",
+      "title": "Titre de Séjour France 2026 : Renouvellement & Guide",
       "description": "Tout sur le Titre de Séjour en France : renouvellement, première demande, types (Salarié, Étudiant, Saisonnier). Conseil d'experts et accompagnement en préfecture."
     },
     "privacy": {
@@ -749,7 +749,8 @@
       "hero": {
         "title": "Apprendre le Français pour Vivre en France : Ressources et Niveau B1/B2 (2026)",
         "subtitle": "Un plan d'action pour atteindre le niveau requis par les visas français, même si vous partez de zéro.",
-        "category": "Langue et Culture"
+        "category": "Langue et Culture",
+        "metaTitle": "Apprendre le Français pour Vivre en France (2026)"
       },
       "pillarsTitle": "Les 3 piliers pour progresser",
       "pillars": [
@@ -822,7 +823,8 @@
       "hero": {
         "title": "PVT France 2026 (Working Holiday) : Conditions, Quotas et Checklist",
         "subtitle": "Dates d'ouverture, documents obligatoires et plan financier pour que vous arriviez en France avec tout réglé.",
-        "category": "Permis Vacances-Travail"
+        "category": "Permis Vacances-Travail",
+        "metaTitle": "PVT France 2026 (Working Holiday) : Quotas et Guide"
       },
       "section1": {
         "title": "Quotas et stratégie pour obtenir un rendez-vous",
@@ -887,7 +889,8 @@
       "hero": {
         "title": "Visa Étudiant en France 2026 : Conditions, Campus France et Étapes",
         "subtitle": "Nous détaillons le processus, de la recherche de programmes à la validation de votre VLS-TS Étudiant en France.",
-        "category": "Visas Étudiants"
+        "category": "Visas Étudiants",
+        "metaTitle": "Visa Étudiant en France 2026 : Campus France & Guide"
       },
       "roadmapTitle": "Feuille de route : de la candidature au visa",
       "milestones": [
@@ -946,7 +949,8 @@
         "title": "eSIM pour la France et l’Europe 2026 : Guide et Comparatif",
         "subtitle": "Le guide que tout Latino-Américain devrait lire avant d'atterrir en France.",
         "category": "Connectivité et Technologie",
-        "readTime": "8 min de lecture"
+        "readTime": "8 min de lecture",
+        "metaTitle": "eSIM pour la France et l’Europe 2026 : Comparatif"
       },
       "intro": "Une eSIM (embedded SIM) est une carte SIM numérique intégrée directement dans la puce du téléphone, qui permet d'activer un forfait de données ou d'appels sans avoir besoin d'insérer une carte physique. Elle s'active en quelques minutes via un code QR, peut stocker plusieurs profils d'opérateurs simultanément et est particulièrement utile pour les voyageurs, les travailleurs internationaux et les immigrants car elle permet d'avoir une connectivité active dès l'atterrissage dans un nouveau pays, sans files d'attente, sans attendre et sans dépendre d'un magasin de téléphonie.",
       "section1": {
@@ -1049,7 +1053,8 @@
         "title": "Banques physiques vs banques virtuelles en France 2026 : laquelle choisir ?",
         "subtitle": "Quelle est la meilleure option pour les immigrés ?",
         "category": "Finances pour Immigrés",
-        "readTime": "12 min de lecture"
+        "readTime": "12 min de lecture",
+        "metaTitle": "Banques Physiques vs Virtuelles en France en 2026"
       },
       "intro": {
         "p1": "Si vous arrivez en France en tant qu'immigré et que vous vous demandez quelle banque ouvrir, la réponse courte est : une banque virtuelle est presque toujours la meilleure option pour commencer. Les banques virtuelles en France comme Wise, Revolut et Qonto proposent une ouverture de compte 100 % en ligne, sans avoir besoin d'un domicile français consolidé ou d'un contrat de travail préalable, avec des frais bien inférieurs à ceux des banques traditionnelles et des interfaces disponibles en plusieurs langues.",
@@ -1282,7 +1287,8 @@
       "hero": {
         "title": "Visa Saisonnier et Salarié en France 2026 : Conditions et Démarches",
         "subtitle": "Comment obtenir un contrat temporaire, préparer votre dossier et présenter le visa sans commettre les erreurs qui génèrent le plus de rejets.",
-        "category": "Visas de Travail"
+        "category": "Visas de Travail",
+        "metaTitle": "Visa Saisonnier et Salarié en France 2026 : Démarches"
       },
       "section1": {
         "title": "Que couvre le visa saisonnier / Salarié ?",
@@ -1354,7 +1360,8 @@
       "hero": {
         "title": "Comment trouver un emploi en France depuis l'Amérique latine (sans y être)",
         "subtitle": "Stratégies et plateformes pour trouver un employeur depuis votre pays et obtenir votre visa Salarié ou Saisonnier.",
-        "category": "Travail"
+        "category": "Travail",
+        "metaTitle": "Trouver un Emploi en France depuis l’Amérique Latine"
       },
       "section1": {
         "title": "Pourquoi il est important d'avoir un emploi avant de voyager",
@@ -1422,7 +1429,8 @@
         "title": "Titre de Séjour en France : ce que c'est, les types et comment l'obtenir",
         "subtitle": "Le guide complet pour les Latino-Américains qui souhaitent vivre légalement en France au-delà de 90 jours.",
         "category": "Démarches Administratives",
-        "readTime": "10 min de lecture"
+        "readTime": "10 min de lecture",
+        "metaTitle": "Titre de Séjour en France 2026 : Types et Démarches"
       },
       "intro": {
         "p1": "Le titre de séjour est le document qui vous permet de vivre et, selon le type, de travailler légalement en France au-delà de 90 jours. Il s'agit de l'étape suivant l'entrée avec un visa de long séjour, et comprendre son fonctionnement est essentiel pour tout Latino-Américain souhaitant construire son projet de vie en France.",
@@ -1520,7 +1528,8 @@
       "hero": {
         "title": "Combien coûte la vie en France : budget réel pour les Latino-Américains en 2026",
         "subtitle": "Une répartition détaillée des dépenses : loyer, nourriture, transport et astuces pour économiser pendant que vous vous adaptez à votre nouvelle vie.",
-        "category": "Vie en France"
+        "category": "Vie en France",
+        "metaTitle": "Coût de la Vie en France en 2026 : Budget Mensuel"
       },
       "intro": "L'une des questions les plus fréquentes que nous recevons est : 'De combien d'argent ai-je besoin pour vivre en France ?' La réponse dépend de la ville, de votre style de vie et de votre situation migratoire. Dans cet article, nous partageons de vrais chiffres basés sur l'expérience des centaines de Latino-Américains que nous avons accompagnés.",
       "section1": {
@@ -3302,7 +3311,7 @@
       ],
       "insuranceNote": "Nous proposons l'assurance exigée par les consulats et les programmes Working Holiday, avec émission immédiate et certificat pour votre dossier.",
       "name": "Amérique Latine",
-      "seoTitle": "Working Holiday France 2026 | Conditions, Quotas & Conseil",
+      "seoTitle": "Working Holiday France 2026 | Conditions et Quotas",
       "seoDescription": "Guide complet Working Holiday France pour les Latino-Américains. Conditions, quotas par pays et conseil d'experts. Partez en France !"
     },
     "ar": {
@@ -3339,7 +3348,7 @@
         "Nouvelle-Zélande : Septembre (date variable)"
       ],
       "name": "Argentine",
-      "seoTitle": "Working Holiday France Argentins 2026 : Conditions et Guide",
+      "seoTitle": "Working Holiday France Argentins 2026 : Conditions",
       "seoDescription": "Working Holiday France pour les Argentins : conditions, justificatif de fonds et processus complet. +900 cas de réussite. Conseil personnalisé."
     },
     "cl": {
@@ -3377,7 +3386,7 @@
         "Nouvelle-Zélande : Octobre"
       ],
       "name": "Chili",
-      "seoTitle": "Working Holiday France Chiliens 2026 : Quotas & Conditions",
+      "seoTitle": "Working Holiday France Chiliens 2026 : Conditions",
       "seoDescription": "Working Holiday France pour les Chiliens : 400 places annuelles, conditions, documentation et dates d'ouverture. Conseil d'experts."
     },
     "uy": {
@@ -3434,7 +3443,7 @@
         "France : Toute l'année"
       ],
       "name": "Mexique",
-      "seoTitle": "Working Holiday France Mexicains 2026 : Conditions et Processus",
+      "seoTitle": "Working Holiday France Mexicains 2026 : Conditions",
       "seoDescription": "Working Holiday France pour les Mexicains : conditions mises à jour, documentation et conseil professionnel. Votre opportunité de vivre en France."
     },
     "ec": {
@@ -3456,7 +3465,7 @@
         "Australie : Ouverture le 1er juillet"
       ],
       "name": "Équateur",
-      "seoTitle": "Working Holiday France Équatoriens 2026 : Guide et Conditions",
+      "seoTitle": "Working Holiday France Équatoriens 2026 : Conditions",
       "seoDescription": "Working Holiday France et Australie pour les Équatoriens : conditions spécifiques, niveau d'anglais et processus de candidature avec des experts."
     },
     "co": {
@@ -3480,7 +3489,7 @@
         "France : Renouvellement des quotas en janvier"
       ],
       "name": "Colombie",
-      "seoTitle": "Working Holiday France Colombiens 2026 : Quotas et Conditions",
+      "seoTitle": "Working Holiday France Colombiens 2026 : Conditions",
       "seoDescription": "Working Holiday France pour les Colombiens : 400 places, conditions, dates d'ouverture et accompagnement professionnel. Votre porte vers l'Europe."
     },
     "pe": {
@@ -3509,7 +3518,7 @@
         "Nouvelle-Zélande : Date variable"
       ],
       "name": "Pérou",
-      "seoTitle": "Working Holiday France Péruviens 2026 : Conditions et Guide",
+      "seoTitle": "Working Holiday France Péruviens 2026 : Conditions",
       "seoDescription": "Working Holiday France et Australie pour les Péruviens : 1 500 places Australie, conditions et processus complet avec conseil d'experts."
     }
   },
