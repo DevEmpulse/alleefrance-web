@@ -9,7 +9,10 @@
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://alleefrance.com%{REQUEST_URI} [R=301,L]
 
-  # 2. Redirigir rutas antiguas sin prefijo de idioma (/es/) hacia /es/...
+  # 2. Redirigir la raíz (/) a /es/ con 301 para consolidar señales SEO y evitar que bots auditen el stub de redirección
+  RewriteRule ^$ https://alleefrance.com/es/ [R=301,L]
+
+  # 3. Redirigir rutas antiguas sin prefijo de idioma (/es/) hacia /es/...
   RewriteRule ^(servicios|blog|working-holiday|autor|politica-de-privacidad|terminos-y-condiciones)(/.*)?$ https://alleefrance.com/es/$1$2 [R=301,L]
 </IfModule>
 
