@@ -135,7 +135,8 @@ for (const p of pages) {
     titles.length !== 1 ||
     !titleText ||
     /\|\s*Allée France\s*\|\s*Allée France/.test(titleText) ||
-    suffixCount > 1;
+    suffixCount > 1 ||
+    titleText.length > 70;
   assert("1", page, !badTitle, "title (one, non-empty, no doubled suffix)", `${titles.length} <title>; text="${titleText}"`);
 
   // 2 meta description

@@ -5,7 +5,7 @@
       "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Get a free consultation."
     },
     "services": {
-      "title": "French Immigration Advisory Services | Visas & Procedures",
+      "title": "French Immigration Advisory | Visas & Procedures",
       "description": "Complete catalog of immigration services for France: Salarié, Saisonnier, Student, Working Holiday Visas, Titre de Séjour, family reunification, and more."
     },
     "blog": {
@@ -13,19 +13,19 @@
       "description": "Updated articles and guides on French visas: Working Holiday, Salarié, Saisonnier, Student. Expert tips to emigrate, work, and live in France."
     },
     "workingHoliday": {
-      "title": "Working Holiday France 2026 | Requirements, Quotas & Advice",
+      "title": "Working Holiday France 2026 | Requirements & Quotas",
       "description": "Complete Working Holiday France guide for Latin Americans. Updated requirements, quotas by country, and expert advice. Live and work in France!"
     },
     "visasTrabajo": {
-      "title": "Work Visa France 2026: Salarié and Saisonnier | Complete Guide",
+      "title": "Work Visa France 2026: Salarié & Saisonnier Guide",
       "description": "Complete guide for Salarié and Saisonnier Visas in France 2026. Requirements, ANEF process, Métiers en Tension, and processing times. Professional advice."
     },
     "visaEtudiant": {
-      "title": "Student Visa France 2026: Campus France & Complete Process",
+      "title": "Student Visa France 2026: Campus France & Process",
       "description": "Complete guide to obtain your student visa for France. Campus France process, financial requirements, university enrollment, and expert support."
     },
     "titreDeSejour": {
-      "title": "Titre de Séjour France: Renewal & Application | 2026 Guide",
+      "title": "Titre de Séjour France 2026: Renewal & Application",
       "description": "Everything about the Titre de Séjour in France: renewal, first-time application, types (Salarié, Étudiant, Saisonnier). Expert advice and prefecture support."
     },
     "privacy": {
@@ -749,7 +749,8 @@
       "hero": {
         "title": "Learn French to Move to France: Resources & B1/B2 Study Plan (2026)",
         "subtitle": "An actionable plan to reach the level required by French visas, even if you start from scratch.",
-        "category": "Language and Culture"
+        "category": "Language and Culture",
+        "metaTitle": "Learn French to Move to France: B1/B2 Guide (2026)"
       },
       "pillarsTitle": "The 3 pillars to progress",
       "pillars": [
@@ -822,7 +823,8 @@
       "hero": {
         "title": "Working Holiday France 2026: Requirements, Quotas & Step-by-Step Checklist",
         "subtitle": "Opening dates, mandatory documents and financial plan so you arrive in France with everything sorted out.",
-        "category": "Working Holiday"
+        "category": "Working Holiday",
+        "metaTitle": "Working Holiday France 2026: Requirements & Quotas"
       },
       "section1": {
         "title": "Quotas and strategy to get an appointment",
@@ -887,7 +889,8 @@
       "hero": {
         "title": "Student Visa in France 2026: Requirements, Campus France & Steps",
         "subtitle": "We break down the process from program search to the validation of your VLS-TS Étudiant in France.",
-        "category": "Student Visas"
+        "category": "Student Visas",
+        "metaTitle": "Student Visa in France 2026: Campus France & Steps"
       },
       "roadmapTitle": "Roadmap: from application to visa",
       "milestones": [
@@ -946,7 +949,8 @@
         "title": "Best eSIM for France & Europe 2026: Complete Guide for Travelers",
         "subtitle": "The guide every Latin American should read before landing in France.",
         "category": "Connectivity and Technology",
-        "readTime": "8 min read"
+        "readTime": "8 min read",
+        "metaTitle": "Best eSIM for France & Europe 2026: Traveler Guide"
       },
       "intro": "An eSIM (embedded SIM) is a digital SIM card embedded directly into the phone's chip, which allows you to activate a data or call plan without the need to insert a physical card. It is activated in minutes using a QR code, can store several operator profiles simultaneously, and is especially useful for travelers, international workers, and immigrants because it allows you to have active connectivity from the moment you land in a new country, without queues, without waiting, and without depending on a phone store.",
       "section1": {
@@ -1049,7 +1053,8 @@
         "title": "Physical vs. Virtual Banks in France 2026: Which Is Best for Immigrants?",
         "subtitle": "What is the best option for immigrants?",
         "category": "Finances for Immigrants",
-        "readTime": "12 min read"
+        "readTime": "12 min read",
+        "metaTitle": "Physical vs. Virtual Banks in France 2026: Guide"
       },
       "intro": {
         "p1": "If you are arriving in France as an immigrant and wondering which bank to open, the short answer is: a virtual bank is almost always the best option to start with. Virtual banks in France like Wise, Revolut, and Qonto offer 100% online account opening, without the need for an established French address or a prior employment contract, with much lower fees than traditional banks and interfaces available in multiple languages.",
@@ -1282,7 +1287,8 @@
       "hero": {
         "title": "Saisonnier & Salarié Work Visa in France 2026: Requirements & How to Apply",
         "subtitle": "How to get a temporary contract, prepare your dossier and present the visa without making the mistakes that generate the most rejections.",
-        "category": "Work Visas"
+        "category": "Work Visas",
+        "metaTitle": "Saisonnier & Salarié Work Visa in France 2026: Guide"
       },
       "section1": {
         "title": "What does the saisonnier / Salarié visa cover?",
@@ -1354,7 +1360,8 @@
       "hero": {
         "title": "How to find a job in France from Latin America (without being there)",
         "subtitle": "Strategies and platforms to find an employer from your country and secure your Salarié or Saisonnier visa.",
-        "category": "Work"
+        "category": "Work",
+        "metaTitle": "How to Find a Job in France from Latin America (2026)"
       },
       "section1": {
         "title": "Why it's important to have a job before traveling",
@@ -1422,7 +1429,8 @@
         "title": "Titre de Séjour in France: What It Is, Types & How to Apply",
         "subtitle": "The complete guide for Latin Americans who want to legally live in France beyond 90 days.",
         "category": "Immigration Paperwork",
-        "readTime": "10 min read"
+        "readTime": "10 min read",
+        "metaTitle": "Titre de Séjour in France 2026: Types & How to Apply"
       },
       "intro": {
         "p1": "The Titre de Séjour (residence permit) is the document that allows you to live and, depending on the type, work legally in France beyond 90 days. It is the next step after entering with a long-stay visa, and understanding how it works is essential for any Latin American who wants to build their life project in France.",
@@ -1520,7 +1528,8 @@
       "hero": {
         "title": "How much it costs to live in France: real budget for Latin Americans in 2026",
         "subtitle": "A detailed breakdown of expenses: rent, food, transportation, and tips for saving money as you adapt to your new life.",
-        "category": "Life in France"
+        "category": "Life in France",
+        "metaTitle": "Cost of Living in France 2026: Real Monthly Budget"
       },
       "intro": "One of the most frequently asked questions we receive is: 'How much money do I need to live in France?' The answer depends on the city, your lifestyle, and your immigration status. In this article, we share real figures based on the experience of the hundreds of Latin Americans we have accompanied.",
       "section1": {
@@ -3302,7 +3311,7 @@
       ],
       "insuranceNote": "We offer the insurance required by consulates and Working Holiday programs, with immediate issuance and a certificate for your dossier.",
       "name": "Latin America",
-      "seoTitle": "Working Holiday France 2026 | Requirements, Quotas & Advice",
+      "seoTitle": "Working Holiday France 2026 | Requirements & Quotas",
       "seoDescription": "Complete Working Holiday France guide for Latin Americans. Updated requirements, quotas by country, and expert advice. Live and work in France!"
     },
     "ar": {
@@ -3339,7 +3348,7 @@
         "New Zealand: September (Variable date)"
       ],
       "name": "Argentina",
-      "seoTitle": "Working Holiday France Argentinians 2026: Requirements and Guide",
+      "seoTitle": "Working Holiday France Argentinians 2026: Guide",
       "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +900 successful cases. Personalized advisory."
     },
     "cl": {
@@ -3377,7 +3386,7 @@
         "New Zealand: October"
       ],
       "name": "Chile",
-      "seoTitle": "Working Holiday France Chileans 2026: Quotas & Requirements",
+      "seoTitle": "Working Holiday France Chileans 2026: Requirements",
       "seoDescription": "Working Holiday France for Chileans: 400 annual spots, requirements, documents, and opening dates. Expert advisory to secure your spot."
     },
     "uy": {
@@ -3434,7 +3443,7 @@
         "France: Year-round"
       ],
       "name": "Mexico",
-      "seoTitle": "Working Holiday France Mexicans 2026: Requirements and Process",
+      "seoTitle": "Working Holiday France Mexicans 2026: Requirements",
       "seoDescription": "Working Holiday France for Mexicans: updated requirements, documentation, and professional advisory. Your opportunity to live in France."
     },
     "ec": {
@@ -3456,7 +3465,7 @@
         "Australia: Opening July 1st"
       ],
       "name": "Ecuador",
-      "seoTitle": "Working Holiday France Ecuadorians 2026: Guide and Requirements",
+      "seoTitle": "Working Holiday France Ecuadorians 2026: Requirements",
       "seoDescription": "Working Holiday France and Australia for Ecuadorians: specific requirements, English level, and application process with experts."
     },
     "co": {
@@ -3480,7 +3489,7 @@
         "France: Quotas renewed in January"
       ],
       "name": "Colombia",
-      "seoTitle": "Working Holiday France Colombians 2026: Quotas and Requirements",
+      "seoTitle": "Working Holiday France Colombians 2026: Requirements",
       "seoDescription": "Working Holiday France for Colombians: 400 spots, requirements, opening dates, and professional support. Your gateway to Europe."
     },
     "pe": {
@@ -3509,7 +3518,7 @@
         "New Zealand: Variable date"
       ],
       "name": "Peru",
-      "seoTitle": "Working Holiday France Peruvians 2026: Requirements and Guide",
+      "seoTitle": "Working Holiday France Peruvians 2026: Requirements",
       "seoDescription": "Working Holiday France and Australia for Peruvians: 1,500 Australia spots, requirements, and full process with expert advisory."
     }
   },
