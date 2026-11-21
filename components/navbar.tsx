@@ -8,9 +8,11 @@ import Image from "next/image";
 import { HiShieldCheck } from "react-icons/hi2";
 import { useTranslations, useLocale } from "next-intl";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { BOOKING_PATH } from "@/data/consultations";
 
 export function Navbar() {
   const t = useTranslations("Navbar");
+  const tBooking = useTranslations("Booking");
   const locale = useLocale();
   const localizedHomeHref = `/${locale}`;
 
@@ -204,18 +206,31 @@ export function Navbar() {
             <LanguageSwitcher isScrolled={isScrolled} />
             <Button
               asChild
-              className="font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
-              style={{ backgroundColor: "#DC1F2E" }}
+              variant="outline"
+              className="font-bold bg-transparent border-2 transition-all duration-300 hover:scale-105 active:scale-95 group"
+              style={{
+                borderColor: isScrolled ? "#002654" : "#FFFFFF",
+                color: isScrolled ? "#002654" : "#FFFFFF",
+              }}
             >
               <a
                 href="https://www.goassistance.com/afiliados/alleefrancelyongo"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={t("quoteInsurance")}
                 className="flex items-center gap-2"
               >
                 <HiShieldCheck className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
-                {t("quoteInsurance")}
+                {/* Icon only on narrower desktops so the booking button keeps its room. */}
+                <span className="hidden xl:inline">{t("quoteInsurance")}</span>
               </a>
+            </Button>
+            <Button
+              asChild
+              className="font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
+              style={{ backgroundColor: "#DC1F2E" }}
+            >
+              <Link href={`/${locale}${BOOKING_PATH}/`}>{tBooking("cta")}</Link>
             </Button>
           </div>
 
@@ -322,8 +337,19 @@ export function Navbar() {
 
               <Button
                 asChild
-                className="text-white font-bold w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95 group"
+                className="text-white font-bold w-full mt-4 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-red-500/50 active:scale-95"
                 style={{ backgroundColor: "#DC1F2E" }}
+              >
+                <Link href={`/${locale}${BOOKING_PATH}/`} onClick={() => setIsOpen(false)}>
+                  {tBooking("cta")}
+                </Link>
+              </Button>
+
+              <Button
+                asChild
+                variant="outline"
+                className="font-bold w-full bg-transparent border-2 transition-all duration-300 hover:scale-[1.02] active:scale-95 group"
+                style={{ borderColor: "#002654", color: "#002654" }}
               >
                 <a
                   href="https://www.goassistance.com/afiliados/alleefrancelyongo"

@@ -6,10 +6,13 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
+import { BOOKING_CTA_ATTRIBUTE } from "@/components/booking/floating-booking-button";
 
 export function BlogCTASections() {
   const locale = useLocale();
   const tCTA = useTranslations("BlogCTA");
+  const tBooking = useTranslations("Booking");
   const tNewsletter = useTranslations("BlogNewsletter");
 
   return (
@@ -40,7 +43,18 @@ export function BlogCTASections() {
               <Button
                 size="lg"
                 className="font-semibold tracking-wide hover:opacity-90"
-                style={{ backgroundColor: "#ED2939", color: "white" }}
+                style={{ backgroundColor: "#DC1F2E", color: "white" }}
+                asChild
+              >
+                <Link href={`/${locale}${BOOKING_PATH}/`} {...{ [BOOKING_CTA_ATTRIBUTE]: "" }}>
+                  {tBooking("cta")}
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="font-semibold tracking-wide bg-transparent"
+                style={{ borderColor: "#002654", color: "#002654" }}
                 asChild
               >
                 <a
@@ -50,17 +64,6 @@ export function BlogCTASections() {
                 >
                   {tCTA("whatsapp")}
                 </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="font-semibold tracking-wide bg-transparent"
-                style={{ borderColor: "#002654", color: "#002654" }}
-                asChild
-              >
-                <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
-                  {tCTA("book")}
-                </Link>
               </Button>
             </div>
           </div>

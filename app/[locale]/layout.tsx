@@ -1,5 +1,6 @@
 import type React from "react";
 import { NextIntlClientProvider } from "next-intl";
+import { FloatingBookingButton } from "@/components/booking/floating-booking-button";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { isLocale, routing } from "@/i18n/routing";
@@ -140,6 +141,7 @@ export default async function LocaleLayout({
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <FloatingBookingButton />
         </NextIntlClientProvider>
       </body>
     </html>
