@@ -3689,5 +3689,44 @@
     "sourcesLabel": "Sources:",
     "whatsappButton": "Message Us on WhatsApp",
     "bookLabel": "Book a Consultation"
+  },
+  "Booking": {
+    "cta": "Book your consultation",
+    "consultations": {
+      "express": "Express Consultation",
+      "standard": "Standard Consultation",
+      "vie-privee": "Full Vie Privée et Familiale Consultation",
+      "work-visas": "Work Visa Consultation",
+      "students": "Student Consultation"
+    },
+    "duration": "{minutes} minutes",
+    "select": {
+      "metaTitle": "Book your consultation | Allée France",
+      "metaDescription": "Choose your immigration consultation with Allée France, pay online with PayPal, and schedule it on WhatsApp.",
+      "eyebrow": "Step 1 of 2",
+      "title": "Choose your consultation",
+      "choose": "Choose",
+      "back": "Back"
+    },
+    "confirm": {
+      "metaTitle": "Confirm your consultation | Allée France",
+      "eyebrow": "Step 2 of 2",
+      "title": "Confirm your consultation",
+      "change": "Change",
+      "nameLabel": "Name",
+      "countryLabel": "Country",
+      "caseLabel": "Short description of your case",
+      "required": "This field is required",
+      "payStep": "Step 1 · Pay with PayPal",
+      "payButton": "Pay €{amount} with PayPal",
+      "payHint": "Opens in a new tab.",
+      "payDone": "PayPal opened in another tab",
+      "payAgain": "Didn't open? Open PayPal again",
+      "whatsappStep": "Step 2 · Schedule on WhatsApp",
+      "whatsappButton": "Confirm time on WhatsApp",
+      "whatsappLocked": "Available after opening PayPal.",
+      "whatsappHint": "Attach the PayPal receipt in the chat and we will agree on a day and time."
+    },
+    "whatsappMessage": "Hi Jio, I just paid for the {consultation} (€{amount}) via PayPal.\n\nName: {name}\nCountry: {country}\nMy case: {summary}\n\nI'm attaching the payment receipt. What day and time are you available?"
   }
 }

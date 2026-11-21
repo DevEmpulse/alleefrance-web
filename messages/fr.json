@@ -3689,5 +3689,44 @@
     "sourcesLabel": "Sources :",
     "whatsappButton": "Nous écrire sur WhatsApp",
     "bookLabel": "Réserver une consultation"
+  },
+  "Booking": {
+    "cta": "Réservez votre consultation",
+    "consultations": {
+      "express": "Consultation Express",
+      "standard": "Consultation Standard",
+      "vie-privee": "Consultation complète Vie Privée et Familiale",
+      "work-visas": "Consultation Visas de Travail",
+      "students": "Consultation Étudiants"
+    },
+    "duration": "{minutes} minutes",
+    "select": {
+      "metaTitle": "Réservez votre consultation | Allée France",
+      "metaDescription": "Choisissez votre consultation en immigration avec Allée France, payez en ligne avec PayPal et fixez l'horaire sur WhatsApp.",
+      "eyebrow": "Étape 1 sur 2",
+      "title": "Choisissez votre consultation",
+      "choose": "Choisir",
+      "back": "Retour"
+    },
+    "confirm": {
+      "metaTitle": "Confirmez votre consultation | Allée France",
+      "eyebrow": "Étape 2 sur 2",
+      "title": "Confirmez votre consultation",
+      "change": "Modifier",
+      "nameLabel": "Nom",
+      "countryLabel": "Pays",
+      "caseLabel": "Brève description de votre situation",
+      "required": "Ce champ est obligatoire",
+      "payStep": "Étape 1 · Payez avec PayPal",
+      "payButton": "Payer {amount} € avec PayPal",
+      "payHint": "S'ouvre dans un nouvel onglet.",
+      "payDone": "PayPal ouvert dans un autre onglet",
+      "payAgain": "Il ne s'est pas ouvert ? Rouvrir PayPal",
+      "whatsappStep": "Étape 2 · Fixez l'horaire sur WhatsApp",
+      "whatsappButton": "Confirmer l'horaire sur WhatsApp",
+      "whatsappLocked": "Disponible après l'ouverture de PayPal.",
+      "whatsappHint": "Joignez le reçu PayPal dans le chat et nous fixerons le jour et l'heure."
+    },
+    "whatsappMessage": "Bonjour Jio, je viens de payer la {consultation} ({amount} €) par PayPal.\n\nNom : {name}\nPays : {country}\nMa situation : {summary}\n\nJe joins le reçu de paiement. Quel jour et quelle heure vous conviennent ?"
   }
 }

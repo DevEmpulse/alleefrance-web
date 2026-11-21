@@ -3689,5 +3689,44 @@
     "sourcesLabel": "Fuentes:",
     "whatsappButton": "Escribir por WhatsApp",
     "bookLabel": "Agendar asesoría"
+  },
+  "Booking": {
+    "cta": "Agenda tu asesoría",
+    "consultations": {
+      "express": "Asesoría Exprés",
+      "standard": "Asesoría Común",
+      "vie-privee": "Asesoría Completa Vie Privée et Familiale",
+      "work-visas": "Asesoría Visas de Trabajo",
+      "students": "Asesoría Estudiantes"
+    },
+    "duration": "{minutes} minutos",
+    "select": {
+      "metaTitle": "Agenda tu asesoría | Allée France",
+      "metaDescription": "Elige tu asesoría migratoria con Allée France, paga en línea con PayPal y coordina el horario por WhatsApp.",
+      "eyebrow": "Paso 1 de 2",
+      "title": "Elige tu asesoría",
+      "choose": "Elegir",
+      "back": "Volver"
+    },
+    "confirm": {
+      "metaTitle": "Confirma tu asesoría | Allée France",
+      "eyebrow": "Paso 2 de 2",
+      "title": "Confirma tu asesoría",
+      "change": "Cambiar",
+      "nameLabel": "Nombre",
+      "countryLabel": "País",
+      "caseLabel": "Breve descripción de tu caso",
+      "required": "Este campo es obligatorio",
+      "payStep": "Paso 1 · Paga en PayPal",
+      "payButton": "Pagar {amount} € con PayPal",
+      "payHint": "Se abre en una pestaña nueva.",
+      "payDone": "PayPal abierto en otra pestaña",
+      "payAgain": "¿No se abrió? Volver a abrir PayPal",
+      "whatsappStep": "Paso 2 · Coordina por WhatsApp",
+      "whatsappButton": "Confirmar horario por WhatsApp",
+      "whatsappLocked": "Se activa después de abrir PayPal.",
+      "whatsappHint": "Adjunta el comprobante de PayPal en el chat y acordamos día y hora."
+    },
+    "whatsappMessage": "Hola Jio, acabo de pagar la {consultation} ({amount} €) por PayPal.\n\nNombre: {name}\nPaís: {country}\nMi caso: {summary}\n\nTe adjunto el comprobante de pago. ¿Qué día y hora tienes disponible?"
   }
 }
