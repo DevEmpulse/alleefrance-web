@@ -20,6 +20,14 @@ export const CONSULTATIONS: Consultation[] = [
   { id: "students", priceEur: 150 },
 ];
 
+/** Locale-relative path of the "Elige tu asesoría" page. */
+export const BOOKING_PATH = "/agenda";
+
+/** Confirmation page for one consultation; the id travels as `?servicio=` so the page stays static. */
+export function buildConfirmHref(locale: string, id: ConsultationId) {
+  return `/${locale}${BOOKING_PATH}/confirmar/?servicio=${id}`;
+}
+
 export const PAYPAL_ME_URL = "https://paypal.me/alleefrancelyon";
 
 export function buildPayPalLink(amountEur: number) {
