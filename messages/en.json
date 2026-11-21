@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Visas & French Immigration Advisory for Latin Americans",
-      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Get a free consultation."
+      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Book your consultation."
     },
     "services": {
       "title": "French Immigration Advisory | Visas & Procedures",
@@ -229,7 +229,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "intro": "Ready to start your immigration process? Fill out the form and we will contact you for a free initial consultation.",
+    "intro": "Ready to start your immigration process? Fill out the form and we will contact you to guide you through the next steps.",
     "namePlaceholder": "Full Name",
     "emailPlaceholder": "Email",
     "countryLabel": "Select your country",
@@ -522,7 +522,6 @@
     "responseTime": "We reply in less than 24 hours.",
     "notFoundTitle": "Can't find the service you need?",
     "notFoundDesc": "Contact us for a personalized consultation. Our team of experts is ready to help you with any immigration or administrative process in France.",
-    "freeConsulting": "Free consultation via WhatsApp",
     "contactForm": "Contact form"
   },
   "PrivacyPolicy": {
@@ -3528,7 +3527,7 @@
     "backHome": "Back to home",
     "contactUs": "Go to contact",
     "helpTitle": "Need help getting your migration project back on track?",
-    "helpDescription": "Schedule a free call and receive personalized guidance from our team of French advisors. We are here to accompany you every step of the way.",
+    "helpDescription": "Book your consultation and receive personalized guidance from our team of French advisors. We are here to accompany you every step of the way.",
     "scheduleBtn": "Schedule advisory",
     "whatsappBtn": "Send us a WhatsApp"
   },

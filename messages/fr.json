@@ -229,7 +229,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "intro": "Prêt à commencer votre processus d'immigration ? Remplissez le formulaire et nous vous contacterons pour une consultation initiale gratuite.",
+    "intro": "Prêt à commencer votre processus d'immigration ? Remplissez le formulaire et nous vous contacterons pour vous orienter sur les prochaines étapes.",
     "namePlaceholder": "Nom et prénom",
     "emailPlaceholder": "Email",
     "countryLabel": "Sélectionnez votre pays",
@@ -522,7 +522,6 @@
     "responseTime": "Nous répondons en moins de 24 heures.",
     "notFoundTitle": "Vous ne trouvez pas le service dont vous avez besoin ?",
     "notFoundDesc": "Contactez-nous pour une consultation personnalisée. Notre équipe d'experts est prête à vous aider pour toute démarche d'immigration ou administrative en France.",
-    "freeConsulting": "Consultation gratuite via WhatsApp",
     "contactForm": "Formulaire de contact"
   },
   "PrivacyPolicy": {
@@ -3528,7 +3527,7 @@
     "backHome": "Retour à l'accueil",
     "contactUs": "Aller au contact",
     "helpTitle": "Pouvons-nous vous aider à reprendre votre projet migratoire ?",
-    "helpDescription": "Planifiez un appel gratuit et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
+    "helpDescription": "Réservez votre consultation et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
     "scheduleBtn": "Planifier une consultation",
     "whatsappBtn": "Envoyez-nous un WhatsApp"
   },

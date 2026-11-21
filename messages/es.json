@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Visas y Asesoría Migratoria en Francia",
-      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +900 casos exitosos. Acompañamiento integral desde LATAM. Consultá gratis."
+      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +900 casos exitosos. Acompañamiento integral desde LATAM. Agenda tu asesoría."
     },
     "services": {
       "title": "Asesoría Migratoria en Francia | Visas y Trámites",
@@ -229,7 +229,7 @@
   },
   "Contact": {
     "title": "CONTACTO",
-    "intro": "¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos pondremos en contacto contigo para una consulta inicial gratuita.",
+    "intro": "¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos pondremos en contacto contigo para orientarte sobre los próximos pasos.",
     "namePlaceholder": "Nombres y apellidos",
     "emailPlaceholder": "Email",
     "countryLabel": "Selecciona tu país",
@@ -522,7 +522,6 @@
     "responseTime": "Respondemos en menos de 24 hs.",
     "notFoundTitle": "¿No encuentras el servicio que necesitas?",
     "notFoundDesc": "Contáctanos para una consulta personalizada. Nuestro equipo de expertos está listo para ayudarte con cualquier trámite migratorio o administrativo en Francia.",
-    "freeConsulting": "Consulta gratis por WhatsApp",
     "contactForm": "Formulario de contacto"
   },
   "PrivacyPolicy": {
@@ -3528,7 +3527,7 @@
     "backHome": "Volver al inicio",
     "contactUs": "Ir a contacto",
     "helpTitle": "¿Te ayudamos a retomar tu proyecto migratorio?",
-    "helpDescription": "Agenda una llamada gratuita y recibe orientación personalizada de nuestro equipo de consejeros franceses. Estamos aquí para acompañarte en cada paso.",
+    "helpDescription": "Agenda tu asesoría y recibe orientación personalizada de nuestro equipo de consejeros franceses. Estamos aquí para acompañarte en cada paso.",
     "scheduleBtn": "Agendar asesoría",
     "whatsappBtn": "Envíanos un WhatsApp"
   },

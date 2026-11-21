@@ -12,6 +12,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Calendar } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
@@ -50,6 +51,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
 
   const t = await getTranslations({ locale: p.locale, namespace: "ServicesData" });
   const tPage = await getTranslations({ locale: p.locale, namespace: "ServicesPage" });
+  const tBooking = await getTranslations({ locale: p.locale, namespace: "Booking" });
   const personas = getPersonas(t);
   const services = getServices(t);
 
@@ -88,11 +90,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
                     style={{ backgroundColor: "#ED2939" }}
                     asChild
                   >
-                    <Link
-                      href={`/${p.locale}#contacto`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <Link href={`/${p.locale}${BOOKING_PATH}/`}>
                       <Calendar className="w-5 h-5 mr-2" />
                       {tPage("bookConsulting")}
                     </Link>
@@ -145,13 +143,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
                     className="font-semibold text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
                     style={{ backgroundColor: "#ED2939" }}
                   >
-                    <a
-                      href={buildWhatsAppLink()}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {tPage("freeConsulting")}
-                    </a>
+                    <Link href={`/${p.locale}${BOOKING_PATH}/`}>{tBooking("cta")}</Link>
                   </Button>
                   <Button
                     asChild
