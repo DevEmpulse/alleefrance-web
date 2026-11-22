@@ -86,7 +86,7 @@ export function WorkingHolidaySection() {
                     asChild
                   >
                     <Link
-                      href={`/${locale}/working-holiday`}
+                      href={`/${locale}/working-holiday/`}
                       className="flex items-center gap-2"
                     >
                       {t("cta")}
@@ -125,7 +125,7 @@ export function WorkingHolidaySection() {
               className="bg-red-600 px-8 py-5 text-base font-semibold text-white shadow-lg transition-all hover:bg-red-700 hover:shadow-xl"
               asChild
             >
-              <Link href={`/${locale}/working-holiday`}>{t("viewMore")}</Link>
+              <Link href={`/${locale}/working-holiday/`}>{t("viewMore")}</Link>
             </Button>
           </div>
         </AnimateOnScroll>

@@ -137,7 +137,7 @@ export function WorkingHolidayGlobalLanding() {
               {originCountries.map((country) => (
                 <Link
                   key={country.code}
-                  href={`/${locale}/working-holiday/${country.code}`}
+                  href={`/${locale}/working-holiday/${country.code}/`}
                   className="group rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="flex items-center gap-4">
@@ -394,7 +394,7 @@ export function WorkingHolidayGlobalLanding() {
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href={`/${locale}#contacto`}>{t("cta.ctaSecondary")}</Link>
+                <Link href={`/${locale}/#contacto`}>{t("cta.ctaSecondary")}</Link>
               </Button>
             </div>
           </div>

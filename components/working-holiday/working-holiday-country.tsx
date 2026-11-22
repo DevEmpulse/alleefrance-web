@@ -128,7 +128,7 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href={`/${locale}#contacto`}>
+                <Link href={`/${locale}/#contacto`}>
                   <Calendar className="w-5 h-5 mr-2" />
                   {t("advisoryBtn")}
                 </Link>
@@ -440,7 +440,7 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href={`/${locale}#contacto`}>
+                <Link href={`/${locale}/#contacto`}>
                   <Globe className="w-5 h-5 mr-2" />
                   {t("ctaMid.ctaSecondary")}
                 </Link>
@@ -620,7 +620,7 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href={`/${locale}/servicios`}>
+                <Link href={`/${locale}/servicios/`}>
                   <Globe className="w-5 h-5 mr-2" />
                   {t("ctaFinal.ctaSecondary")}
                 </Link>

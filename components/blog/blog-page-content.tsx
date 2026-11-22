@@ -93,7 +93,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
             {filteredPosts.map((post, index) => (
               <AnimateOnScroll key={index} direction="up" delay={index * 0.1}>
                 <Link
-                  href={`/${locale}/blog/${post.slug}`}
+                  href={`/${locale}/blog/${post.slug}/`}
                   className="block group focus:outline-none focus-visible:ring-4 focus-visible:ring-red-200 rounded-xl"
                 >
                   <article className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full">
@@ -208,7 +208,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                 style={{ borderColor: "#002654", color: "#002654" }}
                 asChild
               >
-                <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
+                <Link href={`/${locale}/#contacto`} target="_blank" rel="noopener noreferrer">
                   {t("ctaBook")}
                 </Link>
               </Button>

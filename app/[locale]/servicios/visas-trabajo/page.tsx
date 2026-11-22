@@ -92,7 +92,7 @@ export default function VisasTrabajoPage() {
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
+              <Link href={`/${locale}/#contacto`} target="_blank" rel="noopener noreferrer">
                 <Calendar className="mr-2 h-5 w-5" />
                 {t("hero.advisorCta")}
               </Link>

@@ -69,7 +69,7 @@ export function BlogSection({ posts: blogPosts }: { posts: BlogCard[] }) {
           {blogPosts.map((post) => (
             <Link
               key={post.slug}
-              href={`/${locale}/blog/${post.slug}`}
+              href={`/${locale}/blog/${post.slug}/`}
               className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] snap-center group"
             >
               <article className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow h-full border border-gray-100 flex flex-col">
@@ -137,7 +137,7 @@ export function BlogSection({ posts: blogPosts }: { posts: BlogCard[] }) {
               style={{ borderColor: "#002654", color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}/blog`}>{t("viewAll")}</Link>
+              <Link href={`/${locale}/blog/`}>{t("viewAll")}</Link>
             </Button>
           </div>
         </AnimateOnScroll>
