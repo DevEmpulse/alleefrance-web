@@ -285,7 +285,8 @@
       "title": "Services",
       "work": "Work",
       "student": "Student Visa",
-      "wh": "Working Holiday"
+      "wh": "Working Holiday",
+      "titreDeSejour": "Titre de Séjour"
     },
     "contact": {
       "title": "Contact"
@@ -295,6 +296,16 @@
     "legal": {
       "privacy": "Privacy Policy",
       "terms": "Terms and Conditions"
+    },
+    "whCountries": {
+      "title": "Working Holiday by Country",
+      "ar": "Argentina",
+      "cl": "Chile",
+      "co": "Colombia",
+      "ec": "Ecuador",
+      "mx": "Mexico",
+      "pe": "Peru",
+      "uy": "Uruguay"
     }
   },
   "ServicesData": {

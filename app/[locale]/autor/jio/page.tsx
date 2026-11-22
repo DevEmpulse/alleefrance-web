@@ -175,7 +175,7 @@ export default async function AuthorPage({
                     (post) => (
                       <li key={post.slug}>
                         <Link
-                          href={`/${locale}/blog/${post.slug}`}
+                          href={`/${locale}/blog/${post.slug}/`}
                           className="block p-5 rounded-2xl border border-gray-100 shadow-sm bg-white transition-shadow hover:shadow-md"
                         >
                           <time

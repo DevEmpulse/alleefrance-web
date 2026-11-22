@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES } from "@/lib/working-holiday-countries";
 
 export function Footer() {
   const t = useTranslations("Footer");
@@ -35,7 +36,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12">
           {/* Logo and Description - Full width on mobile, first column on desktop */}
           <div className="sm:col-span-2 lg:col-span-1 space-y-5 sm:space-y-6">
-            <Link href={`/${locale}`} className="inline-flex items-center gap-3 group">
+            <Link href={`/${locale}/`} className="inline-flex items-center gap-3 group">
               <div className="relative h-12 sm:h-14 w-auto transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/logo-AF.webp"
@@ -52,7 +53,7 @@ export function Footer() {
             </p>
             <div className="pt-2">
               <Link
-                href={`/${locale}#seguro`}
+                href={`/${locale}/#seguro`}
                 className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 rounded-full text-white text-sm sm:text-base font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95"
                 style={{ backgroundColor: "#ED2939" }}
               >
@@ -69,10 +70,10 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5 sm:space-y-3 list-none">
               {[
-                { href: `/${locale}#servicios`, label: t("links.services") },
-                { href: `/${locale}#casos-exitosos`, label: t("links.successStories") },
-                { href: `/${locale}#seguro`, label: t("links.insurance") },
-                { href: `/${locale}#faq`, label: t("links.faq") },
+                { href: `/${locale}/servicios/`, label: t("links.services") },
+                { href: `/${locale}/#casos-exitosos`, label: t("links.successStories") },
+                { href: `/${locale}/#seguro`, label: t("links.insurance") },
+                { href: `/${locale}/#faq`, label: t("links.faq") },
                 { href: `/${locale}/autor/jio/`, label: t("links.author") },
               ].map((link) => (
                 <li key={link.href}>
@@ -97,10 +98,11 @@ export function Footer() {
             </h3>
             <ul className="space-y-2.5 sm:space-y-3 list-none">
               {[
-                { href: `/${locale}/servicios/visas-trabajo`, label: t("services.work") },
-                { href: `/${locale}/servicios/visa-etudiant`, label: t("services.student") },
-                { href: `/${locale}/working-holiday`, label: t("services.wh") },
-                { href: `/${locale}/blog`, label: t("links.blog") },
+                { href: `/${locale}/servicios/visas-trabajo/`, label: t("services.work") },
+                { href: `/${locale}/servicios/visa-etudiant/`, label: t("services.student") },
+                { href: `/${locale}/servicios/titre-de-sejour/`, label: t("services.titreDeSejour") },
+                { href: `/${locale}/working-holiday/`, label: t("services.wh") },
+                { href: `/${locale}/blog/`, label: t("links.blog") },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -188,6 +190,24 @@ export function Footer() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Working Holiday by Country Bar */}
+        <div className="border-t border-gray-700/40 pt-6 pb-2">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-4 gap-y-2 text-xs sm:text-sm">
+            <span className="font-semibold text-white/90">
+              {t("whCountries.title")}:
+            </span>
+            {PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map((code) => (
+              <Link
+                key={code}
+                href={`/${locale}/working-holiday/${code}/`}
+                className="text-gray-300 hover:text-white transition-colors duration-200 underline-offset-4 hover:underline"
+              >
+                {t(`whCountries.${code}`)}
+              </Link>
+            ))}
           </div>
         </div>
 

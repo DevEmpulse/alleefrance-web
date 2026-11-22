@@ -383,7 +383,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}/servicios`}>{t("cta.moreServices")}</Link>
+              <Link href={`/${locale}/servicios/`}>{t("cta.moreServices")}</Link>
             </Button>
           </div>
         </div>

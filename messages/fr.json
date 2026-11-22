@@ -285,7 +285,8 @@
       "title": "Services",
       "work": "Travail",
       "student": "Visa Étudiant",
-      "wh": "Permis Vacances Travail"
+      "wh": "Permis Vacances Travail",
+      "titreDeSejour": "Titre de Séjour"
     },
     "contact": {
       "title": "Contact"
@@ -295,6 +296,16 @@
     "legal": {
       "privacy": "Politique de confidentialité",
       "terms": "Conditions générales"
+    },
+    "whCountries": {
+      "title": "Working Holiday par pays",
+      "ar": "Argentine",
+      "cl": "Chili",
+      "co": "Colombie",
+      "ec": "Équateur",
+      "mx": "Mexique",
+      "pe": "Pérou",
+      "uy": "Uruguay"
     }
   },
   "ServicesData": {

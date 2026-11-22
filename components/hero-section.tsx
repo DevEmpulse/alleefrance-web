@@ -122,7 +122,7 @@ export function HeroSection() {
                 className="bg-transparent border-2 border-white/80 text-white font-semibold tracking-wide text-sm sm:text-base px-6 sm:px-8 py-5 sm:py-6 rounded-full hover:bg-white hover:text-[#002654] active:scale-[0.98] transition-all duration-200 w-full sm:w-auto sm:flex-shrink-0"
                 asChild
               >
-                <Link href={`/${locale}/servicios`}>{t("servicesCta")}</Link>
+                <Link href={`/${locale}/servicios/`}>{t("servicesCta")}</Link>
               </Button>
             </div>
 
@@ -142,14 +142,14 @@ export function HeroSection() {
             <p className="mt-5 text-sm text-blue-100/90">
               {t("visaLinksLead")}{" "}
               <Link
-                href={`/${locale}/servicios/visas-trabajo`}
+                href={`/${locale}/servicios/visas-trabajo/`}
                 className="font-semibold text-white underline underline-offset-4 hover:text-blue-100"
               >
                 {t("workVisaLink")}
               </Link>{" "}
               {t("visaLinksOr")}{" "}
               <Link
-                href={`/${locale}/working-holiday`}
+                href={`/${locale}/working-holiday/`}
                 className="font-semibold text-white underline underline-offset-4 hover:text-blue-100"
               >
                 {t("workingHolidayCta")}

@@ -138,7 +138,7 @@ export function WorkingHolidayGlobalLanding() {
               {originCountries.map((country) => (
                 <Link
                   key={country.code}
-                  href={`/${locale}/working-holiday/${country.code}`}
+                  href={`/${locale}/working-holiday/${country.code}/`}
                   className="group rounded-3xl border border-gray-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
                 >
                   <div className="flex items-center gap-4">

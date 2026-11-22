@@ -13,8 +13,10 @@ type PathEntry = {
   path: string;
   changeFrequency: ChangeFrequency;
   priority: number;
-  lastModified?: string;
+  lastModified: string;
 };
+
+const SITE_LAST_MODIFIED = "2026-11-22";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = routing.locales;
@@ -26,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     path: string,
     changeFrequency: ChangeFrequency,
     priority: number,
-    lastModified?: string,
+    lastModified: string,
   ) => {
     return locales.map((locale) => {
       const languages = locales.reduce((acc, l) => {
@@ -34,11 +36,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         return acc;
       }, {} as Record<string, string>);
       
-      languages['x-default'] = getUrl(defaultLocale, path);
+      languages["x-default"] = getUrl(defaultLocale, path);
 
       return {
         url: getUrl(locale, path),
-        ...(lastModified ? { lastModified } : {}),
+        lastModified,
         changeFrequency,
         priority,
         alternates: {
@@ -48,33 +50,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   };
 
-  const mainPaths = [
-    { path: "/", changeFrequency: "weekly" as const, priority: 1 },
-    { path: "/servicios", changeFrequency: "weekly" as const, priority: 0.9 },
-    { path: "/servicios/visas-trabajo", changeFrequency: "weekly" as const, priority: 0.9 },
-    { path: "/servicios/visa-etudiant", changeFrequency: "weekly" as const, priority: 0.8 },
-    { path: "/servicios/titre-de-sejour", changeFrequency: "weekly" as const, priority: 0.8 },
-    { path: "/working-holiday", changeFrequency: "weekly" as const, priority: 0.9 },
-    { path: "/blog", changeFrequency: "weekly" as const, priority: 0.7 },
-    { path: AUTHOR_PATH, changeFrequency: "yearly" as const, priority: 0.5 },
-    { path: BOOKING_PATH, changeFrequency: "monthly" as const, priority: 0.8 },
+  const mainPaths: PathEntry[] = [
+    { path: "/", changeFrequency: "weekly", priority: 1, lastModified: SITE_LAST_MODIFIED },
+    { path: "/servicios", changeFrequency: "weekly", priority: 0.9, lastModified: SITE_LAST_MODIFIED },
+    { path: "/servicios/visas-trabajo", changeFrequency: "weekly", priority: 0.9, lastModified: SITE_LAST_MODIFIED },
+    { path: "/servicios/visa-etudiant", changeFrequency: "weekly", priority: 0.8, lastModified: SITE_LAST_MODIFIED },
+    { path: "/servicios/titre-de-sejour", changeFrequency: "weekly", priority: 0.8, lastModified: SITE_LAST_MODIFIED },
+    { path: "/working-holiday", changeFrequency: "weekly", priority: 0.9, lastModified: SITE_LAST_MODIFIED },
+    { path: "/blog", changeFrequency: "weekly", priority: 0.7, lastModified: SITE_LAST_MODIFIED },
+    { path: AUTHOR_PATH, changeFrequency: "yearly", priority: 0.5, lastModified: SITE_LAST_MODIFIED },
+    { path: BOOKING_PATH, changeFrequency: "monthly", priority: 0.8, lastModified: SITE_LAST_MODIFIED },
   ];
 
-  const whPaths = PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map(code => ({
-    path: `/working-holiday/${code}`, changeFrequency: "monthly" as const, priority: 0.8
+  const whPaths: PathEntry[] = PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map((code) => ({
+    path: `/working-holiday/${code}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+    lastModified: SITE_LAST_MODIFIED,
   }));
 
   // Blog slugs and dates come from the blog registry (lib/blog-posts.ts); scheduled articles are left out.
   const blogPaths: PathEntry[] = PUBLISHED_BLOG_POSTS.map((post) => ({
     path: `/blog/${post.slug}`,
-    changeFrequency: "monthly" as const,
+    changeFrequency: "monthly",
     priority: 0.7,
     lastModified: post.dateModified,
   }));
 
-  const legalPaths = [
-    { path: "/politica-de-privacidad", changeFrequency: "yearly" as const, priority: 0.3 },
-    { path: "/terminos-y-condiciones", changeFrequency: "yearly" as const, priority: 0.3 },
+  const legalPaths: PathEntry[] = [
+    { path: "/politica-de-privacidad", changeFrequency: "yearly", priority: 0.3, lastModified: SITE_LAST_MODIFIED },
+    { path: "/terminos-y-condiciones", changeFrequency: "yearly", priority: 0.3, lastModified: SITE_LAST_MODIFIED },
   ];
 
   const allPaths: PathEntry[] = [...mainPaths, ...whPaths, ...blogPaths, ...legalPaths];
