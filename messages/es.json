@@ -6,11 +6,11 @@
     },
     "services": {
       "title": "Asesoría Migratoria en Francia | Visas y Trámites",
-      "description": "Catálogo completo de servicios migratorios para Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday, Titre de Séjour, reagrupación familiar y más. +900 casos exitosos."
+      "description": "Catálogo de servicios migratorios en Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday y Titre de Séjour. +900 casos exitosos. Consultá gratis."
     },
     "blog": {
       "title": "Blog de Migración a Francia | Guías y Visas 2026",
-      "description": "Artículos y guías actualizadas sobre visas Francia: Working Holiday, Salarié, Saisonnier, Estudiante. Consejos de expertos para emigrar, trabajar y vivir en Francia."
+      "description": "Artículos y guías actualizadas sobre visas en Francia 2026: Working Holiday, Salarié, Saisonnier y Estudiante. Consejos expertos para emigrar y trabajar."
     },
     "workingHoliday": {
       "title": "Working Holiday Francia 2026 | Requisitos y Cupos",
@@ -18,11 +18,11 @@
     },
     "visasTrabajo": {
       "title": "Visa de Trabajo Francia 2026: Salarié y Saisonnier",
-      "description": "Guía completa Visa Salarié y Saisonnier Francia 2026. Requisitos, proceso ANEF, Métiers en Tension y tiempos. Asesoría profesional para trabajar legalmente en Francia."
+      "description": "Guía completa Visa Salarié y Saisonnier Francia 2026: requisitos, autorización DREETS, proceso ANEF y plazos. Asesoría experta para trabajar en Francia."
     },
     "visaEtudiant": {
       "title": "Visa Estudiante Francia 2026: Campus France y Guía",
-      "description": "Guía completa para obtener tu visa de estudiante en Francia. Proceso Campus France, requisitos económicos, inscripción universitaria y acompañamiento experto para latinoamericanos."
+      "description": "Guía completa para obtener tu visa de estudiante en Francia 2026: Campus France, solvencia económica, inscripción universitaria y acompañamiento experto."
     },
     "titreDeSejour": {
       "title": "Titre de Séjour Francia 2026: Renovación y Trámite",
@@ -30,11 +30,11 @@
     },
     "privacy": {
       "title": "Política de Privacidad",
-      "description": "Política de privacidad de Allée France. Conozca cómo recopilamos, utilizamos y protegemos su información personal."
+      "description": "Política de privacidad de Allée France. Conozca cómo recopilamos, utilizamos y protegemos sus datos personales conforme al RGPD europeo en Francia."
     },
     "terms": {
       "title": "Términos y Condiciones",
-      "description": "Términos y condiciones de uso de Allée France. Aspectos legales, responsabilidades y uso adecuado de la plataforma."
+      "description": "Términos y condiciones de uso de Allée France. Aspectos legales, alcance de nuestros servicios de asesoría migratoria en Francia y responsabilidades."
     }
   },
   "LocaleLayout": {
@@ -760,7 +760,8 @@
         "title": "Aprender Francés para Emigrar a Francia: Recursos y Nivel B1/B2 (2026)",
         "subtitle": "Un plan accionable para llegar al nivel que exigen las visas francesas, aunque partas desde cero.",
         "category": "Idioma y Cultura",
-        "metaTitle": "Aprender Francés para Emigrar a Francia: Guía 2026"
+        "metaTitle": "Aprender Francés para Emigrar a Francia: Guía 2026",
+        "metaDescription": "Plan práctico para aprender francés desde cero y alcanzar el nivel A2, B1 o B2 que exigen las visas, universidades y trámites de residencia en Francia 2026."
       },
       "pillarsTitle": "Los 3 pilares para progresar",
       "pillars": [
@@ -834,7 +835,8 @@
         "title": "Working Holiday Francia 2026: Requisitos, Cupos y Checklist Paso a Paso",
         "subtitle": "Fechas de apertura, documentos obligatorios y plan financiero para que llegues a Francia con todo resuelto.",
         "category": "Working Holiday",
-        "metaTitle": "Working Holiday Francia 2026: Requisitos y Cupos"
+        "metaTitle": "Working Holiday Francia 2026: Requisitos y Cupos",
+        "metaDescription": "Guía Working Holiday Francia 2026: fechas de apertura, cupos por país, requisitos financieros, seguro médico obligatorio y checklist paso a paso para aplicar."
       },
       "section1": {
         "title": "Cupos y estrategia para conseguir turno",
@@ -900,7 +902,8 @@
         "title": "Visa de Estudiante en Francia 2026: Requisitos, Campus France y Pasos",
         "subtitle": "Desglosamos el proceso desde la búsqueda de programas hasta la validación de tu VLS-TS Étudiant en Francia.",
         "category": "Visas de Estudiante",
-        "metaTitle": "Visa de Estudiante en Francia 2026: Campus France"
+        "metaTitle": "Visa de Estudiante en Francia 2026: Campus France",
+        "metaDescription": "Guía completa de la visa de estudiante en Francia 2026: proceso Campus France, fondos mensuales exigidos, documentos consulares y validación del VLS-TS."
       },
       "roadmapTitle": "Roadmap: de la candidatura a la visa",
       "milestones": [
@@ -960,7 +963,8 @@
         "subtitle": "La guía que todo latinoamericano debería leer antes de aterrizar en Francia.",
         "category": "Conectividad y Tecnología",
         "readTime": "8 min de lectura",
-        "metaTitle": "eSIM para Francia y Europa 2026: Guía y Comparativa"
+        "metaTitle": "eSIM para Francia y Europa 2026: Guía y Comparativa",
+        "metaDescription": "Comparativa de las mejores eSIM y tarjetas SIM en Francia y Europa 2026 para latinoamericanos: precios de Free, Orange y Holafly para tener internet al llegar."
       },
       "intro": "Una eSIM (embedded SIM) es una tarjeta SIM digital integrada directamente en el chip del teléfono, que permite activar un plan de datos o llamadas sin necesidad de insertar una tarjeta física. Se activa en minutos mediante un código QR, puede almacenar varios perfiles de operador simultáneamente, y es especialmente útil para viajeros, trabajadores internacionales e inmigrantes porque permite tener conectividad activa desde el momento en que aterrizas en un nuevo país, sin filas, sin esperas y sin depender de una tienda de telefonía.",
       "section1": {
@@ -1064,7 +1068,8 @@
         "subtitle": "¿Cuál es la mejor opción para inmigrantes?",
         "category": "Finanzas para Inmigrantes",
         "readTime": "12 min de lectura",
-        "metaTitle": "Bancos Físicos vs Virtuales en Francia 2026: Guía"
+        "metaTitle": "Bancos Físicos vs Virtuales en Francia 2026: Guía",
+        "metaDescription": "Comparativa de bancos físicos y virtuales en Francia 2026 para inmigrantes y estudiantes: requisitos para abrir cuenta con RIB francés, comisiones y ventajas."
       },
       "intro": {
         "p1": "Si estás llegando a Francia como inmigrante y te preguntás qué banco abrir, la respuesta corta es: un banco virtual es casi siempre la mejor opción para empezar. Los bancos virtuales en Francia como Wise, Revolut y Qonto ofrecen apertura de cuenta 100% en línea, sin necesidad de un domicilio francés consolidado ni de un contrato de trabajo previo, con tarifas mucho más bajas que los bancos tradicionales y con interfaces disponibles en varios idiomas.",
@@ -1298,7 +1303,8 @@
         "title": "Visa Saisonnier y Salarié en Francia 2026: Requisitos y Cómo Tramitarla",
         "subtitle": "Cómo conseguir un contrato temporal, preparar tu dossier y presentar la visa sin cometer los errores que más rechazos generan.",
         "category": "Visas de Trabajo",
-        "metaTitle": "Visa Saisonnier y Salarié en Francia 2026: Requisitos"
+        "metaTitle": "Visa Saisonnier y Salarié en Francia 2026: Requisitos",
+        "metaDescription": "Guía Visa Saisonnier y Salarié en Francia 2026: cómo conseguir contrato, autorización de trabajo DREETS, armar tu dossier y evitar rechazos consulares."
       },
       "section1": {
         "title": "¿Qué cubre la visa saisonnier / Salarié?",
@@ -1371,7 +1377,8 @@
         "title": "Cómo conseguir trabajo en Francia desde América Latina (sin estar allá)",
         "subtitle": "Estrategias y plataformas para encontrar empleador desde tu país y asegurar tu visa Salarié o Saisonnier.",
         "category": "Trabajo",
-        "metaTitle": "Cómo Conseguir Trabajo en Francia desde Latinoamérica"
+        "metaTitle": "Cómo Conseguir Trabajo en Francia desde Latinoamérica",
+        "metaDescription": "Estrategias, portales de empleo y consejos prácticos para conseguir contrato de trabajo en Francia desde Latinoamérica en 2026 con visa Salarié o Saisonnier."
       },
       "section1": {
         "title": "Por qué es importante tener trabajo antes de viajar",
@@ -1440,7 +1447,8 @@
         "subtitle": "La guía completa para latinoamericanos que quieren vivir legalmente en Francia más allá de los 90 días.",
         "category": "Trámites Migratorios",
         "readTime": "10 min de lectura",
-        "metaTitle": "Titre de Séjour en Francia 2026: Tipos y Cómo Tramitar"
+        "metaTitle": "Titre de Séjour en Francia 2026: Tipos y Cómo Tramitar",
+        "metaDescription": "Guía completa del Titre de Séjour en Francia 2026 para latinoamericanos: qué es, tipos de permiso (Salarié, Étudiant, Visiteur), requisitos y trámite ANEF."
       },
       "intro": {
         "p1": "El Titre de Séjour (permiso de residencia) es el documento que te permite vivir y, según el tipo, trabajar legalmente en Francia más allá de los 90 días. Es el siguiente paso después de ingresar con una visa de larga duración, y entender cómo funciona es fundamental para cualquier latinoamericano que quiera construir su proyecto de vida en Francia.",
@@ -1539,7 +1547,8 @@
         "title": "Cuánto cuesta vivir en Francia: presupuesto real para latinoamericanos en 2026",
         "subtitle": "Un desglose detallado de gastos: alquiler, alimentación, transporte y consejos para ahorrar mientras te adaptás a tu nueva vida.",
         "category": "Vida en Francia",
-        "metaTitle": "Cuánto Cuesta Vivir en Francia en 2026: Presupuesto"
+        "metaTitle": "Cuánto Cuesta Vivir en Francia en 2026: Presupuesto",
+        "metaDescription": "Presupuesto real para vivir en Francia en 2026 siendo latinoamericano: costos de alquiler en París y Lyon, comida, transporte, salud y consejos de ahorro."
       },
       "intro": "Una de las preguntas más frecuentes que recibimos es: '¿Cuánto dinero necesito para vivir en Francia?' La respuesta depende de la ciudad, tu estilo de vida y tu situación migratoria. En este artículo te compartimos cifras reales basadas en la experiencia de los cientos de latinoamericanos que hemos acompañado.",
       "section1": {
@@ -1617,7 +1626,7 @@
     "renovar-titre-de-sejour-2026": {
       "seo": {
         "metaTitle": "Renovar el titre de séjour en 2026: plazos y ANEF",
-        "metaDescription": "Cuándo renovar tu titre de séjour, cómo hacerlo en la ANEF y qué hacer si no llega la attestation de prolongation d'instruction. Guía 2026.",
+        "metaDescription": "Cuándo renovar tu titre de séjour en Francia, cómo hacer el trámite en la ANEF y qué hacer si no llega la attestation de prolongation. Guía completa 2026.",
         "keywords": [
           "renovar titre de séjour",
           "renovación titre de séjour ANEF",
@@ -3427,7 +3436,7 @@
       ],
       "name": "Uruguay",
       "seoTitle": "Working Holiday Francia Uruguayos 2026: Guía Completa",
-      "seoDescription": "Working Holiday Francia para uruguayos: requisitos, documentación y proceso paso a paso. Accedé también a Reino Unido y Australia."
+      "seoDescription": "Working Holiday Francia para uruguayos 2026: requisitos, seguro médico, fondos y trámite paso a paso. Accedé también a Reino Unido y Australia con expertos."
     },
     "mx": {
       "heroTitle": "Working Holiday para Mexicanos",
@@ -3454,7 +3463,7 @@
       ],
       "name": "México",
       "seoTitle": "Working Holiday Francia Mexicanos 2026: Requisitos",
-      "seoDescription": "Working Holiday Francia para mexicanos: requisitos actualizados, documentación y asesoría profesional. Tu oportunidad de vivir en Francia."
+      "seoDescription": "Working Holiday Francia para mexicanos 2026: requisitos actualizados, solvencia económica, seguro médico y asesoría profesional para vivir en Francia."
     },
     "ec": {
       "heroTitle": "Working Holiday para Ecuatorianos",
@@ -3476,7 +3485,7 @@
       ],
       "name": "Ecuador",
       "seoTitle": "Working Holiday Francia Ecuatorianos 2026: Requisitos",
-      "seoDescription": "Working Holiday Francia y Australia para ecuatorianos: requisitos específicos, nivel de inglés y proceso de aplicación con expertos."
+      "seoDescription": "Working Holiday Francia y Australia para ecuatorianos 2026: requisitos específicos, seguro médico, fondos y proceso completo de postulación con expertos."
     },
     "co": {
       "heroTitle": "Working Holiday para Colombianos",
@@ -3500,7 +3509,7 @@
       ],
       "name": "Colombia",
       "seoTitle": "Working Holiday Francia Colombianos 2026: Requisitos",
-      "seoDescription": "Working Holiday Francia para colombianos: 400 cupos, requisitos, fechas de apertura y acompañamiento profesional. Tu puerta a Europa."
+      "seoDescription": "Working Holiday Francia para colombianos 2026: 400 cupos anuales, requisitos, fechas de apertura, seguro médico y acompañamiento profesional paso a paso."
     },
     "pe": {
       "heroTitle": "Working Holiday para Peruanos",
@@ -3529,7 +3538,7 @@
       ],
       "name": "Perú",
       "seoTitle": "Working Holiday Francia Peruanos 2026: Requisitos",
-      "seoDescription": "Working Holiday Francia y Australia para peruanos: 1.500 cupos Australia, requisitos y proceso completo con asesoría experta."
+      "seoDescription": "Working Holiday Francia y Australia para peruanos 2026: 1.500 cupos Australia, requisitos, seguro médico y proceso completo de solicitud con expertos."
     }
   },
   "NotFound": {
@@ -3670,7 +3679,7 @@
   "AuthorPage": {
     "meta": {
       "title": "Jio, fundador de Allée France",
-      "description": "Jio es el fundador de Allée France, gestoría con sede en Lyon especializada en trámites migratorios y administrativos para latinoamericanos que quieren vivir, trabajar o estudiar en Francia."
+      "description": "Jio es el fundador de Allée France en Lyon, especialista en trámites migratorios, visas de trabajo, estudio y residencia para latinoamericanos en Francia."
     },
     "jobTitle": "Gerente y propietario",
     "subtitle": "Gerente y propietario de Allée France",
@@ -3712,7 +3721,7 @@
     "duration": "{minutes} minutos",
     "select": {
       "metaTitle": "Agenda tu asesoría | Allée France",
-      "metaDescription": "Elige tu asesoría migratoria con Allée France, paga en línea con PayPal y coordina el horario por WhatsApp.",
+      "metaDescription": "Reserva tu asesoría migratoria con Allée France: elige tu consulta de visa o residencia en Francia, paga en línea con PayPal y agenda tu cita por WhatsApp.",
       "eyebrow": "Paso 1 de 2",
       "title": "Elige tu asesoría",
       "choose": "Elegir",
