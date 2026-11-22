@@ -30,11 +30,11 @@
     },
     "privacy": {
       "title": "Privacy Policy",
-      "description": "Privacy policy of Allée France. Learn how we collect, use, and protect your personal information."
+      "description": "Privacy policy of Allée France. Learn how we collect, use, store, and protect your personal data in compliance with European GDPR regulations in France."
     },
     "terms": {
       "title": "Terms and Conditions",
-      "description": "Terms and conditions of use for Allée France. Legal aspects, responsibilities, and proper use of the platform."
+      "description": "Terms and conditions of use for Allée France. Review the legal framework, responsibilities, and scope of our French immigration advisory services."
     }
   },
   "LocaleLayout": {
@@ -760,7 +760,8 @@
         "title": "Learn French to Move to France: Resources & B1/B2 Study Plan (2026)",
         "subtitle": "An actionable plan to reach the level required by French visas, even if you start from scratch.",
         "category": "Language and Culture",
-        "metaTitle": "Learn French to Move to France: B1/B2 Guide (2026)"
+        "metaTitle": "Learn French to Move to France: B1/B2 Guide (2026)",
+        "metaDescription": "Actionable study plan to learn French from scratch and reach the A2, B1, or B2 level required by French visas, universities, and residence permits in 2026."
       },
       "pillarsTitle": "The 3 pillars to progress",
       "pillars": [
@@ -834,7 +835,8 @@
         "title": "Working Holiday France 2026: Requirements, Quotas & Step-by-Step Checklist",
         "subtitle": "Opening dates, mandatory documents and financial plan so you arrive in France with everything sorted out.",
         "category": "Working Holiday",
-        "metaTitle": "Working Holiday France 2026: Requirements & Quotas"
+        "metaTitle": "Working Holiday France 2026: Requirements & Quotas",
+        "metaDescription": "Working Holiday France 2026 guide: opening dates, quotas by country, proof of funds, mandatory travel insurance, and step-by-step application checklist."
       },
       "section1": {
         "title": "Quotas and strategy to get an appointment",
@@ -900,7 +902,8 @@
         "title": "Student Visa in France 2026: Requirements, Campus France & Steps",
         "subtitle": "We break down the process from program search to the validation of your VLS-TS Étudiant in France.",
         "category": "Student Visas",
-        "metaTitle": "Student Visa in France 2026: Campus France & Steps"
+        "metaTitle": "Student Visa in France 2026: Campus France & Steps",
+        "metaDescription": "Complete guide to the France student visa in 2026: Campus France steps, monthly financial requirements, consular interview tips, and VLS-TS validation."
       },
       "roadmapTitle": "Roadmap: from application to visa",
       "milestones": [
@@ -960,7 +963,8 @@
         "subtitle": "The guide every Latin American should read before landing in France.",
         "category": "Connectivity and Technology",
         "readTime": "8 min read",
-        "metaTitle": "Best eSIM for France & Europe 2026: Traveler Guide"
+        "metaTitle": "Best eSIM for France & Europe 2026: Traveler Guide",
+        "metaDescription": "Compare the best eSIM and SIM cards for France and Europe in 2026: Free Mobile, Orange, and Holafly plans so Latin American travelers land with mobile data."
       },
       "intro": "An eSIM (embedded SIM) is a digital SIM card embedded directly into the phone's chip, which allows you to activate a data or call plan without the need to insert a physical card. It is activated in minutes using a QR code, can store several operator profiles simultaneously, and is especially useful for travelers, international workers, and immigrants because it allows you to have active connectivity from the moment you land in a new country, without queues, without waiting, and without depending on a phone store.",
       "section1": {
@@ -1064,7 +1068,8 @@
         "subtitle": "What is the best option for immigrants?",
         "category": "Finances for Immigrants",
         "readTime": "12 min read",
-        "metaTitle": "Physical vs. Virtual Banks in France 2026: Guide"
+        "metaTitle": "Physical vs. Virtual Banks in France 2026: Guide",
+        "metaDescription": "Physical vs. virtual banks in France 2026 for immigrants and students: requirements to open a French bank account with RIB, monthly fees, and best options."
       },
       "intro": {
         "p1": "If you are arriving in France as an immigrant and wondering which bank to open, the short answer is: a virtual bank is almost always the best option to start with. Virtual banks in France like Wise, Revolut, and Qonto offer 100% online account opening, without the need for an established French address or a prior employment contract, with much lower fees than traditional banks and interfaces available in multiple languages.",
@@ -1298,7 +1303,8 @@
         "title": "Saisonnier & Salarié Work Visa in France 2026: Requirements & How to Apply",
         "subtitle": "How to get a temporary contract, prepare your dossier and present the visa without making the mistakes that generate the most rejections.",
         "category": "Work Visas",
-        "metaTitle": "Saisonnier & Salarié Work Visa in France 2026: Guide"
+        "metaTitle": "Saisonnier & Salarié Work Visa in France 2026: Guide",
+        "metaDescription": "Saisonnier and Salarié work visa guide for France 2026: how to secure a job offer, obtain the DREETS work permit, prepare your dossier, and avoid rejections."
       },
       "section1": {
         "title": "What does the saisonnier / Salarié visa cover?",
@@ -1371,7 +1377,8 @@
         "title": "How to find a job in France from Latin America (without being there)",
         "subtitle": "Strategies and platforms to find an employer from your country and secure your Salarié or Saisonnier visa.",
         "category": "Work",
-        "metaTitle": "How to Find a Job in France from Latin America (2026)"
+        "metaTitle": "How to Find a Job in France from Latin America (2026)",
+        "metaDescription": "Proven strategies, job boards, and practical tips to find an employer in France from Latin America in 2026 and secure your Salarié or Saisonnier work visa."
       },
       "section1": {
         "title": "Why it's important to have a job before traveling",
@@ -1440,7 +1447,8 @@
         "subtitle": "The complete guide for Latin Americans who want to legally live in France beyond 90 days.",
         "category": "Immigration Paperwork",
         "readTime": "10 min read",
-        "metaTitle": "Titre de Séjour in France 2026: Types & How to Apply"
+        "metaTitle": "Titre de Séjour in France 2026: Types & How to Apply",
+        "metaDescription": "Complete guide to the Titre de Séjour in France 2026 for Latin Americans: permit types (Salarié, Étudiant, Visiteur), requirements, and ANEF application."
       },
       "intro": {
         "p1": "The Titre de Séjour (residence permit) is the document that allows you to live and, depending on the type, work legally in France beyond 90 days. It is the next step after entering with a long-stay visa, and understanding how it works is essential for any Latin American who wants to build their life project in France.",
@@ -1539,7 +1547,8 @@
         "title": "How much it costs to live in France: real budget for Latin Americans in 2026",
         "subtitle": "A detailed breakdown of expenses: rent, food, transportation, and tips for saving money as you adapt to your new life.",
         "category": "Life in France",
-        "metaTitle": "Cost of Living in France 2026: Real Monthly Budget"
+        "metaTitle": "Cost of Living in France 2026: Real Monthly Budget",
+        "metaDescription": "Real cost of living in France in 2026 for Latin Americans: detailed monthly budget covering rent in Paris and Lyon, groceries, transport, and saving tips."
       },
       "intro": "One of the most frequently asked questions we receive is: 'How much money do I need to live in France?' The answer depends on the city, your lifestyle, and your immigration status. In this article, we share real figures based on the experience of the hundreds of Latin Americans we have accompanied.",
       "section1": {
@@ -3359,7 +3368,7 @@
       ],
       "name": "Argentina",
       "seoTitle": "Working Holiday France Argentinians 2026: Guide",
-      "seoDescription": "Working Holiday France for Argentinians: requirements, proof of funds, and complete process. +900 successful cases. Personalized advisory."
+      "seoDescription": "Working Holiday France for Argentinians 2026: requirements, proof of funds, medical insurance, and full process. +900 successful cases and expert advisory."
     },
     "cl": {
       "heroTitle": "Working Holiday for Chileans",
@@ -3397,7 +3406,7 @@
       ],
       "name": "Chile",
       "seoTitle": "Working Holiday France Chileans 2026: Requirements",
-      "seoDescription": "Working Holiday France for Chileans: 400 annual spots, requirements, documents, and opening dates. Expert advisory to secure your spot."
+      "seoDescription": "Working Holiday France for Chileans 2026: 400 annual spots, requirements, mandatory documents, opening dates, and expert advisory to secure your visa."
     },
     "uy": {
       "heroTitle": "Working Holiday for Uruguayans",
@@ -3427,7 +3436,7 @@
       ],
       "name": "Uruguay",
       "seoTitle": "Working Holiday France Uruguayans 2026: Complete Guide",
-      "seoDescription": "Working Holiday France for Uruguayans: requirements, documents, and step-by-step process. Also access UK and Australia options."
+      "seoDescription": "Working Holiday France for Uruguayans 2026: requirements, mandatory documents, and step-by-step application process. Also explore UK and Australia options."
     },
     "mx": {
       "heroTitle": "Working Holiday for Mexicans",
@@ -3454,7 +3463,7 @@
       ],
       "name": "Mexico",
       "seoTitle": "Working Holiday France Mexicans 2026: Requirements",
-      "seoDescription": "Working Holiday France for Mexicans: updated requirements, documentation, and professional advisory. Your opportunity to live in France."
+      "seoDescription": "Working Holiday France for Mexicans 2026: updated requirements, financial proof, mandatory health insurance, and professional advisory to live in France."
     },
     "ec": {
       "heroTitle": "Working Holiday for Ecuadorians",
@@ -3476,7 +3485,7 @@
       ],
       "name": "Ecuador",
       "seoTitle": "Working Holiday France Ecuadorians 2026: Requirements",
-      "seoDescription": "Working Holiday France and Australia for Ecuadorians: specific requirements, English level, and application process with experts."
+      "seoDescription": "Working Holiday France and Australia for Ecuadorians 2026: specific requirements, English level, health insurance, and application process with experts."
     },
     "co": {
       "heroTitle": "Working Holiday for Colombians",
@@ -3500,7 +3509,7 @@
       ],
       "name": "Colombia",
       "seoTitle": "Working Holiday France Colombians 2026: Requirements",
-      "seoDescription": "Working Holiday France for Colombians: 400 spots, requirements, opening dates, and professional support. Your gateway to Europe."
+      "seoDescription": "Working Holiday France for Colombians 2026: 400 annual spots, requirements, opening dates, mandatory insurance, and professional support for your visa."
     },
     "pe": {
       "heroTitle": "Working Holiday for Peruvians",
@@ -3529,7 +3538,7 @@
       ],
       "name": "Peru",
       "seoTitle": "Working Holiday France Peruvians 2026: Requirements",
-      "seoDescription": "Working Holiday France and Australia for Peruvians: 1,500 Australia spots, requirements, and full process with expert advisory."
+      "seoDescription": "Working Holiday France and Australia for Peruvians 2026: 1,500 Australia spots, requirements, mandatory insurance, and full process with expert advisory."
     }
   },
   "NotFound": {
@@ -3670,7 +3679,7 @@
   "AuthorPage": {
     "meta": {
       "title": "Jio, founder of Allée France",
-      "description": "Jio is the founder of Allée France, a Lyon-based gestoría specialized in immigration and administrative procedures for Latin Americans who want to live, work or study in France."
+      "description": "Jio is the founder of Allée France in Lyon, specializing in French immigration, work visas, student permits, and residence procedures for Latin Americans."
     },
     "jobTitle": "Manager and Owner",
     "subtitle": "Manager and Owner of Allée France",
@@ -3712,7 +3721,7 @@
     "duration": "{minutes} minutes",
     "select": {
       "metaTitle": "Book your consultation | Allée France",
-      "metaDescription": "Choose your immigration consultation with Allée France, pay online with PayPal, and schedule it on WhatsApp.",
+      "metaDescription": "Book your French immigration consultation with Allée France: select your visa or residence session, pay securely online with PayPal, and schedule on WhatsApp.",
       "eyebrow": "Step 1 of 2",
       "title": "Choose your consultation",
       "choose": "Choose",

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     locale: p.locale,
     path: `/blog/${SLUG}`,
     title: t("metaTitle"),
-    description: t("subtitle"),
+    description: t("metaDescription"),
     type: "article",
     article: articleOpenGraph(p.locale, SLUG),
     image: { url: heroImage, alt: t("title") },

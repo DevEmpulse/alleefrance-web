@@ -144,7 +144,8 @@ for (const p of pages) {
   const metaDesc = tags(html, "meta")
     .map(parseAttrs)
     .filter((a) => a.name?.toLowerCase() === "description");
-  assert("2", page, metaDesc.length >= 1 && !!metaDesc[0].content?.trim(), "meta description non-empty", `found ${metaDesc.length}`);
+  const descText = metaDesc[0]?.content?.trim() ?? "";
+  assert("2", page, metaDesc.length >= 1 && descText.length >= 120 && descText.length <= 165, "meta description 120-165 chars", `len=${descText.length}; text=\"${descText}\"` );
 
   // 3 canonical
   const links = tags(html, "link").map(parseAttrs);
