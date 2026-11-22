@@ -40,7 +40,7 @@ export function Footer() {
                 <Image
                   src="/logo-AF.webp"
                   alt="Allée France - Asesoría Migratoria Francia para Latinoamericanos"
-                  width={140}
+                  width={70}
                   height={56}
                   className="h-full w-auto object-contain"
                   loading="lazy"

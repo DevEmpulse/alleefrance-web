@@ -118,6 +118,8 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       className={`${montserrat.variable} ${openSans.variable} scroll-smooth`}
+      // Lets Next.js turn smooth scrolling off during route transitions.
+      data-scroll-behavior="smooth"
     >
       <head>
         <meta
