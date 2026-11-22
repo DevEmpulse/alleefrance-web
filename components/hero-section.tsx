@@ -8,8 +8,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
-import { BOOKING_PATH } from "@/data/consultations";
-import { BOOKING_CTA_ATTRIBUTE } from "@/components/booking/floating-booking-button";
+import { BOOKING_CTA_ATTRIBUTE, BOOKING_PATH } from "@/data/consultations";
 
 function AnimatedCounter({
   end,

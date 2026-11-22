@@ -6,8 +6,7 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
-import { BOOKING_PATH } from "@/data/consultations";
-import { BOOKING_CTA_ATTRIBUTE } from "@/components/booking/floating-booking-button";
+import { BOOKING_CTA_ATTRIBUTE, BOOKING_PATH } from "@/data/consultations";
 
 export function BlogCTASections() {
   const locale = useLocale();

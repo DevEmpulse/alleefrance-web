@@ -4,10 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { BOOKING_PATH } from "@/data/consultations";
-
-/** Marks an inline "Agenda tu asesoría" button; the floating one hides while any of these is on screen. */
-export const BOOKING_CTA_ATTRIBUTE = "data-booking-cta";
+import { BOOKING_CTA_ATTRIBUTE, BOOKING_PATH } from "@/data/consultations";
 
 /**
  * Mobile-only floating "Agenda tu asesoría" button. It stays hidden while an inline booking

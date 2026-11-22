@@ -23,6 +23,9 @@ export const CONSULTATIONS: Consultation[] = [
 /** Locale-relative path of the "Elige tu asesoría" page. */
 export const BOOKING_PATH = "/agenda";
 
+/** Marks an inline "Agenda tu asesoría" button; the mobile floating one hides while any of these is on screen. */
+export const BOOKING_CTA_ATTRIBUTE = "data-booking-cta";
+
 /** Confirmation page for one consultation; the id travels as `?servicio=` so the page stays static. */
 export function buildConfirmHref(locale: string, id: ConsultationId) {
   return `/${locale}${BOOKING_PATH}/confirmar/?servicio=${id}`;

@@ -26,6 +26,7 @@ import { WORK_VISAS_FAQ_SECTION } from "@/lib/faq-sections";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 
 export default function VisasTrabajoPage() {
 
@@ -92,7 +93,7 @@ export default function VisasTrabajoPage() {
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
+              <Link href={`/${locale}${BOOKING_PATH}/`}>
                 <Calendar className="mr-2 h-5 w-5" />
                 {t("hero.advisorCta")}
               </Link>

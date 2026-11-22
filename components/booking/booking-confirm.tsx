@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Check } from "lucide-react";
+import { Check, Receipt } from "lucide-react";
 import { SiPaypal, SiWhatsapp } from "react-icons/si";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -169,6 +169,16 @@ export function BookingConfirm() {
           {fieldError("summary")}
         </div>
       </form>
+
+      <div
+        className="flex gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950"
+        role="note"
+      >
+        <Receipt className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" aria-hidden />
+        <p>
+          <span className="font-bold">{t("confirm.receiptTitle")}</span> {t("confirm.receiptText")}
+        </p>
+      </div>
 
       <div className="flex flex-col gap-2">
         <p className="text-sm font-bold" style={{ color: "#002654" }}>

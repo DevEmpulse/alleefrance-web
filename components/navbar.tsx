@@ -55,22 +55,22 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-2">
-        <div className="flex items-center justify-between min-h-14 lg:min-h-16 py-2">
+        <div className="flex items-center justify-between gap-4 xl:gap-6 min-h-14 lg:min-h-16 py-2">
           {/* Logo */}
-          <div className="flex lg:flex-1 justify-start">
-            <Link href={localizedHomeHref} className="inline-flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
-              <div className="relative h-10 lg:h-12 w-auto flex items-center">
+          <div className="flex lg:flex-1 lg:min-w-max justify-start">
+            <Link href={localizedHomeHref} className="inline-flex shrink-0 items-center gap-3 group transition-transform duration-300 hover:scale-105">
+              <div className="relative h-10 lg:h-12 w-auto shrink-0 flex items-center">
                 <Image
                   src="/logo-AF.webp"
                   alt="Allée France"
-                  width={70}
-                  height={70}
+                  width={60}
+                  height={48}
                   className="h-full w-auto object-contain drop-shadow-md"
                   priority
                 />
               </div>
               <span
-                className={`hidden lg:block text-base lg:text-lg font-black uppercase tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
+                className={`hidden xl:block whitespace-nowrap text-sm 2xl:text-lg font-black uppercase tracking-[0.08em] 2xl:tracking-[0.1em] transition-colors duration-300 mt-0.5 ${
                   isScrolled || isOpen 
                     ? "text-[#002654] group-hover:text-[#2563EB]" 
                     : "text-white group-hover:text-blue-300"
@@ -100,29 +100,11 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex justify-center">
-            <div className="flex items-center gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
-                    isScrolled
-                      ? "text-gray-800 hover:text-[#2563EB]"
-                      : "text-white hover:text-blue-300"
-                  }`}
-                >
-                  {link.label}
-                  <span
-                    className={`absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover/link:w-full ${
-                      isScrolled ? "bg-[#2563EB]" : "bg-blue-300"
-                    }`}
-                  ></span>
-                </Link>
-              ))}
-
+            {/* "Nosotros" (navLinks) stays in the mobile menu only, so the desktop bar fits the logo name and the booking button. */}
+            <div className="flex items-center gap-2.5 xl:gap-4 text-sm xl:text-base">
               <Link
                 href={`${localizedHomeHref}/servicios/`}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                className={`relative cursor-pointer whitespace-nowrap font-medium transition-all duration-300 group/link ${
                   isScrolled
                     ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
@@ -138,7 +120,7 @@ export function Navbar() {
 
               <Link
                 href={otherLinks[0].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                className={`relative cursor-pointer whitespace-nowrap font-medium transition-all duration-300 group/link ${
                   isScrolled
                     ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
@@ -154,7 +136,7 @@ export function Navbar() {
 
               <Link
                 href={otherLinks[1].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                className={`relative cursor-pointer whitespace-nowrap font-medium transition-all duration-300 group/link ${
                   isScrolled
                     ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
@@ -170,7 +152,7 @@ export function Navbar() {
 
               <Link
                 href={otherLinks[2].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                className={`relative cursor-pointer whitespace-nowrap font-medium transition-all duration-300 group/link ${
                   isScrolled
                     ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
@@ -186,7 +168,7 @@ export function Navbar() {
 
               <Link
                 href={otherLinks[3].href}
-                className={`relative cursor-pointer font-medium transition-all duration-300 group/link ${
+                className={`relative cursor-pointer whitespace-nowrap font-medium transition-all duration-300 group/link ${
                   isScrolled
                     ? "text-gray-800 hover:text-[#2563EB]"
                     : "text-white hover:text-blue-300"
@@ -202,27 +184,29 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="hidden lg:flex lg:flex-1 items-center justify-end gap-4">
+          <div className="hidden lg:flex lg:flex-1 lg:min-w-max items-center justify-end gap-3">
             <LanguageSwitcher isScrolled={isScrolled} />
             <Button
               asChild
               variant="outline"
-              className="font-bold bg-transparent border-2 transition-all duration-300 hover:scale-105 active:scale-95 group"
-              style={{
-                borderColor: isScrolled ? "#002654" : "#FFFFFF",
-                color: isScrolled ? "#002654" : "#FFFFFF",
-              }}
+              // Hover inverts the colors (filled background, contrasting icon) instead of the outline
+              // variant's light accent, which left a white icon on a white button.
+              className={`font-bold bg-transparent border-2 transition-all duration-300 hover:scale-105 active:scale-95 group ${
+                isScrolled
+                  ? "border-[#002654] text-[#002654] hover:bg-[#002654] hover:text-white"
+                  : "border-white text-white hover:bg-white hover:text-[#002654]"
+              }`}
             >
               <a
                 href="https://www.goassistance.com/afiliados/alleefrancelyongo"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={t("quoteInsurance")}
-                className="flex items-center gap-2"
+                title={t("quoteInsurance")}
+                className="flex items-center"
               >
+                {/* Icon only, so the logo and the booking button keep their room. */}
                 <HiShieldCheck className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" />
-                {/* Icon only on narrower desktops so the booking button keeps its room. */}
-                <span className="hidden xl:inline">{t("quoteInsurance")}</span>
               </a>
             </Button>
             <Button

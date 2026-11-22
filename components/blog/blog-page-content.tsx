@@ -11,6 +11,7 @@ import { motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
 import type { BlogCard } from "@/lib/blog-cards";
+import { BOOKING_PATH } from "@/data/consultations";
 
 
 type BlogPageContentProps = {
@@ -208,7 +209,7 @@ export function BlogPageContent({ posts, categories }: BlogPageContentProps) {
                 style={{ borderColor: "#002654", color: "#002654" }}
                 asChild
               >
-                <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
+                <Link href={`/${locale}${BOOKING_PATH}/`}>
                   {t("ctaBook")}
                 </Link>
               </Button>

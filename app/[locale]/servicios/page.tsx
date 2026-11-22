@@ -83,7 +83,7 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
 
                 {/* Botones principales */}
                 <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-                  {/* CTA principal: Reservar asesoría */}
+                  {/* CTA principal: Agenda tu asesoría */}
                   <Button
                     size="lg"
                     className="text-white font-semibold tracking-wide px-8 py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
