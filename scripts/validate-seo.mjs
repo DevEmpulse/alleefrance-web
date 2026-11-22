@@ -123,6 +123,7 @@ const sitemapLocs = fs.existsSync(sitemapPath)
   : [];
 
 // ---------- per-page checks ----------
+const noindexUrls = new Set();
 for (const p of pages) {
   const html = fs.readFileSync(p.file, "utf8");
   const page = p.rel;
@@ -220,8 +221,16 @@ for (const p of pages) {
   const noAlt = tags(html, "img").filter((t) => !("alt" in parseAttrs(t)));
   assert("11", page, noAlt.length === 0, "every <img> has alt", `${noAlt.length} without alt, e.g. ${noAlt[0]?.slice(0, 140)}`);
 
-  // 13 in sitemap
-  assert("13", page, sitemapLocs.includes(p.url), "page listed in sitemap.xml", `${p.url} not in sitemap`);
+  // 13 in sitemap; a noindex page (a per-visitor step such as the booking confirmation) must stay out of it
+  const noindex = tags(html, "meta")
+    .map(parseAttrs)
+    .some((a) => a.name?.toLowerCase() === "robots" && /noindex/i.test(a.content ?? ""));
+  if (noindex) {
+    noindexUrls.add(p.url);
+    assert("13", page, !sitemapLocs.includes(p.url), "noindex page left out of sitemap.xml", `${p.url} is noindex but listed`);
+  } else {
+    assert("13", page, sitemapLocs.includes(p.url), "page listed in sitemap.xml", `${p.url} not in sitemap`);
+  }
 
   // author name rule (visible text + JSON-LD; href values excluded)
   const haystack = visibleText(html) + " " + ldRaw.join(" ");
@@ -276,14 +285,15 @@ for (const l of LOCALES) {
 }
 
 // page count
-const perLocale = Object.fromEntries(LOCALES.map((l) => [l, pages.filter((p) => p.locale === l).length]));
+const indexedPages = pages.filter((p) => !noindexUrls.has(p.url));
+const perLocale = Object.fromEntries(LOCALES.map((l) => [l, indexedPages.filter((p) => p.locale === l).length]));
 // Scheduled blog articles change the total, so the expected count comes from the sitemap.
 assert(
   "0",
   "out/",
-  pages.length === sitemapLocs.length && LOCALES.every((l) => perLocale[l] === pages.length / LOCALES.length),
-  `${sitemapLocs.length} pages (one per sitemap entry, same count per locale)`,
-  JSON.stringify({ total: pages.length, sitemap: sitemapLocs.length, ...perLocale }),
+  indexedPages.length === sitemapLocs.length && LOCALES.every((l) => perLocale[l] === indexedPages.length / LOCALES.length),
+  `${sitemapLocs.length} indexable pages (one per sitemap entry, same count per locale)`,
+  JSON.stringify({ total: pages.length, noindex: noindexUrls.size, sitemap: sitemapLocs.length, ...perLocale }),
 );
 
 // ---------- report ----------

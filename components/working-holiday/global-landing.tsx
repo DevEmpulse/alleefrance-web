@@ -25,6 +25,7 @@ import {
   Plane,
 } from "lucide-react";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 
 const workingHolidayFaqCategories =
   WORKING_HOLIDAY_FAQ_SECTION.allowedCategories ?? [];
@@ -394,7 +395,7 @@ export function WorkingHolidayGlobalLanding() {
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href={`/${locale}/#contacto`}>{t("cta.ctaSecondary")}</Link>
+                <Link href={`/${locale}${BOOKING_PATH}/`}>{t("cta.ctaSecondary")}</Link>
               </Button>
             </div>
           </div>

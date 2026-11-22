@@ -10,6 +10,7 @@ import { articleOpenGraph, getBlogPost } from "@/lib/blog-posts";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 
 const SLUG = "renovar-titre-de-sejour-2026";
 const heroImage = getBlogPost(SLUG).image;
@@ -302,7 +303,7 @@ export default async function RenovarTitreSejourPage({ params }: { params: Promi
                   {t("cta.whatsappButton")}
                 </a>
                 <a
-                  href={`/${locale}/#contacto`}
+                  href={`/${locale}${BOOKING_PATH}/`}
                   className="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-white transition-opacity hover:opacity-90"
                   style={{ backgroundColor: "#002654" }}
                 >

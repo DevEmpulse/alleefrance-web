@@ -16,6 +16,7 @@ import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import { notFound } from "next/navigation";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 
 // Shared template of the block articles (content/blog). Page articles keep their own folders.
 // Only articles published at build time get a page.
@@ -150,7 +151,7 @@ function ArticleBlock({ block, locale, labels }: {
               {labels.whatsappButton}
             </a>
             <a
-              href={`/${locale}/#contacto`}
+              href={`/${locale}${BOOKING_PATH}/`}
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: NAVY }}
             >

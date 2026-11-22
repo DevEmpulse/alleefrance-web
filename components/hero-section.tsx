@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_CTA_ATTRIBUTE, BOOKING_PATH } from "@/data/consultations";
 
 function AnimatedCounter({
   end,
@@ -49,6 +50,7 @@ function AnimatedCounter({
 
 export function HeroSection() {
   const t = useTranslations("Hero");
+  const tBooking = useTranslations("Booking");
   const locale = useLocale();
 
   return (
@@ -121,6 +123,19 @@ export function HeroSection() {
                 asChild
               >
                 <Link href={`/${locale}/servicios/`}>{t("servicesCta")}</Link>
+              </Button>
+            </div>
+
+            <div className="mt-4 flex justify-center">
+              <Button
+                size="lg"
+                className="text-white font-bold tracking-wide text-sm sm:text-base px-8 sm:px-10 py-5 sm:py-6 rounded-full hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 shadow-xl w-full sm:w-auto"
+                style={{ backgroundColor: "#DC1F2E" }}
+                asChild
+              >
+                <Link href={`/${locale}${BOOKING_PATH}/`} {...{ [BOOKING_CTA_ATTRIBUTE]: "" }}>
+                  {tBooking("cta")}
+                </Link>
               </Button>
             </div>
 

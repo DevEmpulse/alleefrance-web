@@ -33,6 +33,7 @@ import {
 } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 import {
   getDestinationImage,
   normalizeDestinationName,
@@ -128,7 +129,7 @@ export function WorkingHolidayCountryPage({
                 className="bg-white text-[#002654] font-semibold hover:bg-gray-100"
                 asChild
               >
-                <Link href={`/${locale}/#contacto`}>
+                <Link href={`/${locale}${BOOKING_PATH}/`}>
                   <Calendar className="w-5 h-5 mr-2" />
                   {t("advisoryBtn")}
                 </Link>

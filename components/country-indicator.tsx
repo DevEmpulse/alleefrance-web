@@ -11,7 +11,8 @@ export function CountryIndicator() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-90">
+    // On mobile it sits above the floating "Agenda tu asesoría" button.
+    <div className="fixed bottom-24 lg:bottom-6 right-6 z-90">
       <Button
         type="button"
         variant="outline"

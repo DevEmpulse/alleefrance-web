@@ -17,6 +17,7 @@ import { SiWhatsapp } from "react-icons/si";
 import { buildWhatsAppLink } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { BOOKING_PATH } from "@/data/consultations";
 
 export function generateStaticParams() {
   return [{ locale: "es" }, { locale: "en" }, { locale: "fr" }];
@@ -81,7 +82,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}/#contacto`}>
+              <Link href={`/${locale}${BOOKING_PATH}/`}>
                 <Calendar className="mr-2 h-5 w-5" />
                 {t("hero.advisorCta")}
               </Link>

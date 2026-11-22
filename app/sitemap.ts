@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { localizedUrl } from "@/lib/seo";
 import { PUBLISHED_BLOG_POSTS } from "@/lib/blog-posts";
 import { AUTHOR_PATH } from "@/lib/author";
+import { BOOKING_PATH } from "@/data/consultations";
 
 type ChangeFrequency = "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
 
@@ -58,6 +59,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/working-holiday", changeFrequency: "weekly", priority: 0.9, lastModified: SITE_LAST_MODIFIED },
     { path: "/blog", changeFrequency: "weekly", priority: 0.7, lastModified: SITE_LAST_MODIFIED },
     { path: AUTHOR_PATH, changeFrequency: "yearly", priority: 0.5, lastModified: SITE_LAST_MODIFIED },
+    { path: BOOKING_PATH, changeFrequency: "monthly", priority: 0.8, lastModified: SITE_LAST_MODIFIED },
   ];
 
   const whPaths: PathEntry[] = PUBLIC_WORKING_HOLIDAY_COUNTRY_CODES.map((code) => ({

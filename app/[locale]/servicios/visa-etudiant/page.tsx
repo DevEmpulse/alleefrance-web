@@ -29,6 +29,7 @@ import { getFaqsByCategories } from "@/data/faqs";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { buildWhatsAppLink } from "@/lib/utils";
+import { BOOKING_PATH } from "@/data/consultations";
 
 export default function VisaEtudiantPage() {
 
@@ -90,7 +91,7 @@ export default function VisaEtudiantPage() {
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}/#contacto`} rel="noopener noreferrer">
+              <Link href={`/${locale}${BOOKING_PATH}/`}>
                 <Calendar className="mr-2 h-5 w-5" />
                 {t("hero.advisorCta")}
               </Link>

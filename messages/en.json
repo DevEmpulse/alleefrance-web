@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Visas & French Immigration Advisory for Latin Americans",
-      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Get a free consultation."
+      "description": "Experts in French visas: Salarié, Saisonnier, Working Holiday, and Student. +900 successful cases. Comprehensive support from LATAM. Book your consultation."
     },
     "services": {
       "title": "French Immigration Advisory | Visas & Procedures",
@@ -58,7 +58,7 @@
     "title": "Your project in France, with professional accompaniment",
     "subtitle": "We guide you step by step: Salarié/Saisonnier, VVT, Titres de séjour and personalized consultations.",
     "workingHolidayCta": "Working Holiday Visa (VVT)",
-    "whatsappCta": "Schedule a consultation",
+    "whatsappCta": "Message us on WhatsApp",
     "statsTitle": "Market Leader",
     "statsSubtitle": "for over 2 years",
     "statsLabel": "processes",
@@ -229,7 +229,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "intro": "Ready to start your immigration process? Fill out the form and we will contact you for a free initial consultation.",
+    "intro": "Ready to start your immigration process? Fill out the form and we will contact you to guide you through the next steps.",
     "namePlaceholder": "Full Name",
     "emailPlaceholder": "Email",
     "countryLabel": "Select your country",
@@ -528,12 +528,11 @@
     "title": "Services Catalog",
     "subtitle": "Allée France Lyon Agency – Complete solutions for your immigration and administrative process in France.",
     "helpText": "Don't know where to start? We recommend scheduling a consultation.",
-    "bookConsulting": "Book consultation",
+    "bookConsulting": "Book your consultation",
     "whatsappConsulting": "Consult via WhatsApp",
     "responseTime": "We reply in less than 24 hours.",
     "notFoundTitle": "Can't find the service you need?",
     "notFoundDesc": "Contact us for a personalized consultation. Our team of experts is ready to help you with any immigration or administrative process in France.",
-    "freeConsulting": "Free consultation via WhatsApp",
     "contactForm": "Contact form"
   },
   "PrivacyPolicy": {
@@ -642,7 +641,7 @@
     "ctaTitle": "Do You Need Personalized Advice?",
     "ctaSubtitle": "Our team is ready to help you with your immigration process to France",
     "ctaWhatsapp": "Consult via WhatsApp",
-    "ctaBook": "Schedule Consultation"
+    "ctaBook": "Book your consultation"
   },
   "BlogNewsletter": {
     "title": "Exclusive alerts and resources",
@@ -657,7 +656,7 @@
     "title": "Need help with your visa?",
     "description": "Our team can review your case, prepare your dossier, and accompany you to the consular appointment.",
     "whatsapp": "Write via WhatsApp",
-    "book": "Book a consultation"
+    "book": "Book your consultation"
   },
   "Blog": {
     "index": {
@@ -1764,7 +1763,7 @@
         "body": "At Gestoría Allée France Lyon, we prepare your file, submit it through ANEF, and follow up until you receive your card. More than 900 people have already completed their process with us.",
         "whatsappButton": "Message Us on WhatsApp",
         "whatsappMessage": "Hi, I need help renewing my titre de séjour.",
-        "bookLabel": "Book a Consultation"
+        "bookLabel": "Book your consultation"
       },
       "legal": "This article is for informational purposes only and does not replace legal advice from a lawyer. Each case may require individual review.",
       "sources": {
@@ -2689,7 +2688,7 @@
       "title": "Student Visa for France",
       "subtitle": "Essential information for international students",
       "whatsappCta": "CONSULT BY WHATSAPP",
-      "advisorCta": "SCHEDULE CONSULTATION"
+      "advisorCta": "BOOK YOUR CONSULTATION"
     },
     "intro": "The student visa allows non-European citizens to live and study in France. Obtaining it involves an official process with various French state agencies. This section summarizes key information to prepare your application.",
     "organismos": {
@@ -2802,7 +2801,7 @@
       "title": "Work Visas in France",
       "subtitle": "Discover the two main pathways to work legally: \n Visa Salarié (Long-term stability) and Visa Saisonnier (Seasonal work).",
       "whatsappCta": "CONSULT BY WHATSAPP",
-      "advisorCta": "SCHEDULE A CONSULTATION",
+      "advisorCta": "BOOK YOUR CONSULTATION",
       "communityCta": "Join the Salarié / Saisonnier Community"
     },
     "comparison": {
@@ -2924,7 +2923,7 @@
       "title": "Titre de Séjour - Residence Permits in France",
       "subtitle": "Need to renew or apply for your Titre de Séjour? We accompany you through the entire process to regularize your stay in France.",
       "whatsappCta": "Consult via WhatsApp",
-      "advisorCta": "Schedule a consultation"
+      "advisorCta": "Book your consultation"
     },
     "types": {
       "title": "Types of Titre de Séjour",
@@ -3158,13 +3157,13 @@
         "title": "Ready to start your Working Holiday plan?",
         "description": "Let's schedule a session to review your profile, confirm requirements, and define the next steps clearly.",
         "ctaPrimary": "Chat on WhatsApp",
-        "ctaSecondary": "Book consultation"
+        "ctaSecondary": "Book your consultation"
       },
       "faqLoading": "Loading FAQs..."
     },
     "country": {
       "whatsappBtn": "Consult on WhatsApp",
-      "advisoryBtn": "Book Consultation",
+      "advisoryBtn": "Book your consultation",
       "quotaNote": "Limited spots per country · Our team helps you arrive ready regardless of your departure from {country}.",
       "quotaFallback": "Official quota to be confirmed",
       "quotaEyebrow": "Estimated quota · {label}",
@@ -3539,8 +3538,8 @@
     "backHome": "Back to home",
     "contactUs": "Go to contact",
     "helpTitle": "Need help getting your migration project back on track?",
-    "helpDescription": "Schedule a free call and receive personalized guidance from our team of French advisors. We are here to accompany you every step of the way.",
-    "scheduleBtn": "Schedule advisory",
+    "helpDescription": "Book your consultation and receive personalized guidance from our team of French advisors. We are here to accompany you every step of the way.",
+    "scheduleBtn": "Book your consultation",
     "whatsappBtn": "Send us a WhatsApp"
   },
   "StructuredData": {
@@ -3699,6 +3698,129 @@
     "cardReadTime": "{minutes} min",
     "sourcesLabel": "Sources:",
     "whatsappButton": "Message Us on WhatsApp",
-    "bookLabel": "Book a Consultation"
+    "bookLabel": "Book your consultation"
+  },
+  "Booking": {
+    "cta": "Book your consultation",
+    "consultations": {
+      "express": "Express Consultation",
+      "standard": "Standard Consultation",
+      "vie-privee": "Full Vie Privée et Familiale Consultation",
+      "work-visas": "Work Visa Consultation",
+      "students": "Student Consultation"
+    },
+    "duration": "{minutes} minutes",
+    "select": {
+      "metaTitle": "Book your consultation | Allée France",
+      "metaDescription": "Choose your immigration consultation with Allée France, pay online with PayPal, and schedule it on WhatsApp.",
+      "eyebrow": "Step 1 of 2",
+      "title": "Choose your consultation",
+      "choose": "Choose",
+      "back": "Back",
+      "subtitle": "A personalized session with Jio to understand your case and know exactly what to do.",
+      "includes": "Includes",
+      "showMore": "Show {count} more",
+      "showLess": "Show less",
+      "stepsTitle": "How it works",
+      "steps": [
+        {
+          "title": "Choose your consultation",
+          "text": "And tell us briefly about your case."
+        },
+        {
+          "title": "Pay with PayPal",
+          "text": "The exact amount in euros, in a secure tab."
+        },
+        {
+          "title": "Schedule on WhatsApp",
+          "text": "Jio confirms the day and time."
+        }
+      ],
+      "trustTitle": "Pay with peace of mind",
+      "trust": [
+        {
+          "title": "Secure payment with PayPal",
+          "text": "We never see or store your card details."
+        },
+        {
+          "title": "Fixed price in euros",
+          "text": "You pay the amount you see, with no extra fees from Allée France."
+        },
+        {
+          "title": "Reply within 24 hours",
+          "text": "Jio confirms your time slot on WhatsApp."
+        }
+      ]
+    },
+    "confirm": {
+      "metaTitle": "Confirm your consultation | Allée France",
+      "eyebrow": "Step 2 of 2",
+      "title": "Confirm your consultation",
+      "change": "Change",
+      "nameLabel": "Name",
+      "countryLabel": "Country",
+      "caseLabel": "Short description of your case",
+      "required": "This field is required",
+      "receiptTitle": "Important:",
+      "receiptText": "after paying, keep your PayPal receipt. You will need to send it to Jio on WhatsApp to confirm your consultation and agree on a time.",
+      "payStep": "Step 1 · Pay with PayPal",
+      "payButton": "Pay €{amount} with PayPal",
+      "payHint": "Opens in a new tab.",
+      "payDone": "PayPal opened in another tab",
+      "payAgain": "Didn't open? Open PayPal again",
+      "whatsappStep": "Step 2 · Schedule on WhatsApp",
+      "whatsappButton": "Confirm time on WhatsApp",
+      "whatsappLocked": "Available after opening PayPal.",
+      "whatsappHint": "Attach the PayPal receipt in the chat and we will agree on a day and time."
+    },
+    "whatsappMessage": "Hi Jio, I just paid for the {consultation} (€{amount}) via PayPal.\n\nName: {name}\nCountry: {country}\nMy case: {summary}\n\nI'm attaching the payment receipt. What day and time are you available?",
+    "details": {
+      "express": {
+        "ideal": "For a specific question",
+        "includes": [
+          "15-minute session with Jio",
+          "Answer to one specific question",
+          "A clear next step for your process",
+          "Profile assessment",
+          "Answers to your doubts and questions",
+          "Guide and summary of the consultation"
+        ]
+      },
+      "standard": {
+        "ideal": "To review your situation",
+        "includes": [
+          "30-minute session with Jio",
+          "Analysis of your case and visa options",
+          "List of documents to prepare",
+          "Profile assessment",
+          "Answers to your doubts and questions",
+          "Guide and summary of the consultation"
+        ]
+      },
+      "vie-privee": {
+        "ideal": "If you have a partner or family in France",
+        "includes": [
+          "Review of your eligibility",
+          "Dossier strategy and documents",
+          "Guidance for the prefecture"
+        ]
+      },
+      "work-visas": {
+        "ideal": "Salarié and Saisonnier",
+        "includes": [
+          "Which visa fits your job offer",
+          "Work authorization (ANEF / DREETS)",
+          "Dossier checklist for the embassy"
+        ]
+      },
+      "students": {
+        "ideal": "To study in France",
+        "includes": [
+          "Campus France process and enrollment",
+          "Dossier for the embassy",
+          "Financial resources and housing"
+        ]
+      }
+    }
   }
 }

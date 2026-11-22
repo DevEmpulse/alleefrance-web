@@ -43,6 +43,8 @@ export default function NotFound() {
   const minimalMessages = {
     Navbar: messages.Navbar,
     Footer: messages.Footer,
+    // The navbar's "Agenda tu asesoría" button reads Booking.cta.
+    Booking: { cta: messages.Booking.cta },
   };
 
   return (

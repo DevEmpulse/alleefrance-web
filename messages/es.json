@@ -2,7 +2,7 @@
   "Metadata": {
     "home": {
       "title": "Allée France | Visas y Asesoría Migratoria en Francia",
-      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +900 casos exitosos. Acompañamiento integral desde LATAM. Consultá gratis."
+      "description": "Expertos en visas Francia: Salarié, Saisonnier, Working Holiday y Estudiante. +900 casos exitosos. Acompañamiento integral desde LATAM. Agenda tu asesoría."
     },
     "services": {
       "title": "Asesoría Migratoria en Francia | Visas y Trámites",
@@ -58,7 +58,7 @@
     "title": "Tu proyecto en Francia, con acompañamiento profesional",
     "subtitle": "Te acompañamos paso a paso: Salarié/Saisonnier, VVT, Titres de séjour y asesorías personalizadas.",
     "workingHolidayCta": "Visa Working Holiday (VVT)",
-    "whatsappCta": "Agenda una asesoría",
+    "whatsappCta": "Escríbenos por WhatsApp",
     "statsTitle": "Líder en el Mercado",
     "statsSubtitle": "por más de 2 años",
     "statsLabel": "procesos",
@@ -229,7 +229,7 @@
   },
   "Contact": {
     "title": "CONTACTO",
-    "intro": "¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos pondremos en contacto contigo para una consulta inicial gratuita.",
+    "intro": "¿Listo para comenzar tu proceso migratorio? Completa el formulario y nos pondremos en contacto contigo para orientarte sobre los próximos pasos.",
     "namePlaceholder": "Nombres y apellidos",
     "emailPlaceholder": "Email",
     "countryLabel": "Selecciona tu país",
@@ -528,12 +528,11 @@
     "title": "Catálogo de Servicios",
     "subtitle": "Gestoría Allée France Lyon – Soluciones completas para tu proceso migratorio y administrativo en Francia.",
     "helpText": "¿No sabés por dónde empezar? Te recomendamos agendar una asesoría.",
-    "bookConsulting": "Reservar asesoría",
+    "bookConsulting": "Agenda tu asesoría",
     "whatsappConsulting": "Consultar por WhatsApp",
     "responseTime": "Respondemos en menos de 24 hs.",
     "notFoundTitle": "¿No encuentras el servicio que necesitas?",
     "notFoundDesc": "Contáctanos para una consulta personalizada. Nuestro equipo de expertos está listo para ayudarte con cualquier trámite migratorio o administrativo en Francia.",
-    "freeConsulting": "Consulta gratis por WhatsApp",
     "contactForm": "Formulario de contacto"
   },
   "PrivacyPolicy": {
@@ -642,7 +641,7 @@
     "ctaTitle": "¿Necesitás Asesoría Personalizada?",
     "ctaSubtitle": "Nuestro equipo está listo para ayudarte con tu proceso de migración a Francia",
     "ctaWhatsapp": "Consultar por WhatsApp",
-    "ctaBook": "Agendar Asesoría"
+    "ctaBook": "Agenda tu asesoría"
   },
   "BlogNewsletter": {
     "title": "Alertas y recursos exclusivos",
@@ -657,7 +656,7 @@
     "title": "¿Necesitás ayuda con tu visa?",
     "description": "Nuestro equipo puede revisar tu caso, preparar tu dossier y acompañarte hasta la cita consular.",
     "whatsapp": "Escribir por WhatsApp",
-    "book": "Reservar asesoría"
+    "book": "Agenda tu asesoría"
   },
   "Blog": {
     "index": {
@@ -1764,7 +1763,7 @@
         "body": "En Gestoría Allée France Lyon preparamos tu expediente, lo presentamos en la ANEF y hacemos el seguimiento hasta que recibes tu tarjeta. Más de 900 personas ya han hecho su trámite con nosotros.",
         "whatsappButton": "Escribir por WhatsApp",
         "whatsappMessage": "Hola, necesito ayuda para renovar mi titre de séjour.",
-        "bookLabel": "Agendar asesoría"
+        "bookLabel": "Agenda tu asesoría"
       },
       "legal": "Este artículo es informativo y no sustituye el asesoramiento de un abogado. Cada caso puede requerir revisión.",
       "sources": {
@@ -2689,7 +2688,7 @@
       "title": "Visa de Estudiante para Francia",
       "subtitle": "Información esencial para estudiantes internacionales",
       "whatsappCta": "CONSULTAR POR WHATSAPP",
-      "advisorCta": "AGENDAR ASESORÍA"
+      "advisorCta": "AGENDA TU ASESORÍA"
     },
     "intro": "La visa de estudiante permite a ciudadanos no europeos vivir y estudiar en Francia. Su obtención implica un proceso oficial con diversos organismos del Estado francés. Esta sección resume información clave para preparar tu solicitud.",
     "organismos": {
@@ -2802,7 +2801,7 @@
       "title": "Visas de Trabajo en Francia",
       "subtitle": "Descubre las dos vías principales para trabajar legalmente: \n Visa Salarié (Estabilidad a largo plazo) y Visa Saisonnier (Trabajo por temporadas).",
       "whatsappCta": "CONSULTAR POR WHATSAPP",
-      "advisorCta": "AGENDAR ASESORÍA",
+      "advisorCta": "AGENDA TU ASESORÍA",
       "communityCta": "Únete a la Comunidad Salarié / Saisonnier"
     },
     "comparison": {
@@ -2924,7 +2923,7 @@
       "title": "Titre de Séjour - Permisos de Residencia en Francia",
       "subtitle": "¿Necesitas renovar o solicitar tu Titre de Séjour? Te acompañamos en todo el proceso para regularizar tu estancia en Francia.",
       "whatsappCta": "Consultar por WhatsApp",
-      "advisorCta": "Agendar asesoría"
+      "advisorCta": "Agenda tu asesoría"
     },
     "types": {
       "title": "Tipos de Titre de Séjour",
@@ -3158,13 +3157,13 @@
         "title": "¿Listo para empezar tu plan Working Holiday?",
         "description": "Coordinemos una sesión para revisar tu perfil, confirmar requisitos y definir los próximos pasos con claridad.",
         "ctaPrimary": "Hablar por WhatsApp",
-        "ctaSecondary": "Reservar asesoría"
+        "ctaSecondary": "Agenda tu asesoría"
       },
       "faqLoading": "Cargando preguntas frecuentes..."
     },
     "country": {
       "whatsappBtn": "Consultar por WhatsApp",
-      "advisoryBtn": "Reservar Asesoría",
+      "advisoryBtn": "Agenda tu asesoría",
       "quotaNote": "Cupos limitados por país · Nuestro equipo te ayuda a llegar con todo listo sin importar que partas desde {country}.",
       "quotaFallback": "Cupo oficial a confirmar",
       "quotaEyebrow": "Cupo estimado · {label}",
@@ -3539,8 +3538,8 @@
     "backHome": "Volver al inicio",
     "contactUs": "Ir a contacto",
     "helpTitle": "¿Te ayudamos a retomar tu proyecto migratorio?",
-    "helpDescription": "Agenda una llamada gratuita y recibe orientación personalizada de nuestro equipo de consejeros franceses. Estamos aquí para acompañarte en cada paso.",
-    "scheduleBtn": "Agendar asesoría",
+    "helpDescription": "Agenda tu asesoría y recibe orientación personalizada de nuestro equipo de consejeros franceses. Estamos aquí para acompañarte en cada paso.",
+    "scheduleBtn": "Agenda tu asesoría",
     "whatsappBtn": "Envíanos un WhatsApp"
   },
   "StructuredData": {
@@ -3699,6 +3698,129 @@
     "cardReadTime": "{minutes} min",
     "sourcesLabel": "Fuentes:",
     "whatsappButton": "Escribir por WhatsApp",
-    "bookLabel": "Agendar asesoría"
+    "bookLabel": "Agenda tu asesoría"
+  },
+  "Booking": {
+    "cta": "Agenda tu asesoría",
+    "consultations": {
+      "express": "Asesoría Exprés",
+      "standard": "Asesoría Común",
+      "vie-privee": "Asesoría Completa Vie Privée et Familiale",
+      "work-visas": "Asesoría Visas de Trabajo",
+      "students": "Asesoría Estudiantes"
+    },
+    "duration": "{minutes} minutos",
+    "select": {
+      "metaTitle": "Agenda tu asesoría | Allée France",
+      "metaDescription": "Elige tu asesoría migratoria con Allée France, paga en línea con PayPal y coordina el horario por WhatsApp.",
+      "eyebrow": "Paso 1 de 2",
+      "title": "Elige tu asesoría",
+      "choose": "Elegir",
+      "back": "Volver",
+      "subtitle": "Una sesión personalizada con Jio para entender tu caso y saber exactamente qué hacer.",
+      "includes": "Incluye",
+      "showMore": "Ver {count} más",
+      "showLess": "Ver menos",
+      "stepsTitle": "Cómo funciona",
+      "steps": [
+        {
+          "title": "Elige tu asesoría",
+          "text": "Y cuéntanos brevemente tu caso."
+        },
+        {
+          "title": "Paga con PayPal",
+          "text": "El monto exacto en euros, en una pestaña segura."
+        },
+        {
+          "title": "Coordina por WhatsApp",
+          "text": "Jio te confirma día y hora."
+        }
+      ],
+      "trustTitle": "Paga con tranquilidad",
+      "trust": [
+        {
+          "title": "Pago seguro con PayPal",
+          "text": "Nunca vemos ni guardamos los datos de tu tarjeta."
+        },
+        {
+          "title": "Precio cerrado en euros",
+          "text": "Pagas el monto que ves, sin cargos extra de Allée France."
+        },
+        {
+          "title": "Respuesta en menos de 24 h",
+          "text": "Jio confirma tu horario por WhatsApp."
+        }
+      ]
+    },
+    "confirm": {
+      "metaTitle": "Confirma tu asesoría | Allée France",
+      "eyebrow": "Paso 2 de 2",
+      "title": "Confirma tu asesoría",
+      "change": "Cambiar",
+      "nameLabel": "Nombre",
+      "countryLabel": "País",
+      "caseLabel": "Breve descripción de tu caso",
+      "required": "Este campo es obligatorio",
+      "receiptTitle": "Importante:",
+      "receiptText": "después de pagar, guarda el comprobante de PayPal. Tendrás que enviarlo por WhatsApp a Jio para confirmar tu asesoría y acordar el horario.",
+      "payStep": "Paso 1 · Paga en PayPal",
+      "payButton": "Pagar {amount} € con PayPal",
+      "payHint": "Se abre en una pestaña nueva.",
+      "payDone": "PayPal abierto en otra pestaña",
+      "payAgain": "¿No se abrió? Volver a abrir PayPal",
+      "whatsappStep": "Paso 2 · Coordina por WhatsApp",
+      "whatsappButton": "Confirmar horario por WhatsApp",
+      "whatsappLocked": "Se activa después de abrir PayPal.",
+      "whatsappHint": "Adjunta el comprobante de PayPal en el chat y acordamos día y hora."
+    },
+    "whatsappMessage": "Hola Jio, acabo de pagar la {consultation} ({amount} €) por PayPal.\n\nNombre: {name}\nPaís: {country}\nMi caso: {summary}\n\nTe adjunto el comprobante de pago. ¿Qué día y hora tienes disponible?",
+    "details": {
+      "express": {
+        "ideal": "Para una duda puntual",
+        "includes": [
+          "Sesión de 15 minutos con Jio",
+          "Respuesta a una consulta concreta",
+          "Próximo paso claro para tu trámite",
+          "Perfilamiento",
+          "Resolución de dudas y preguntas",
+          "Guía y resumen de la asesoría"
+        ]
+      },
+      "standard": {
+        "ideal": "Para revisar tu situación",
+        "includes": [
+          "Sesión de 30 minutos con Jio",
+          "Análisis de tu caso y opciones de visa",
+          "Lista de documentos a preparar",
+          "Perfilamiento",
+          "Resolución de dudas y preguntas",
+          "Guía y resumen de la asesoría"
+        ]
+      },
+      "vie-privee": {
+        "ideal": "Si tienes pareja o familia en Francia",
+        "includes": [
+          "Revisión de tu elegibilidad",
+          "Estrategia y documentos del dossier",
+          "Orientación para la prefectura"
+        ]
+      },
+      "work-visas": {
+        "ideal": "Salarié y Saisonnier",
+        "includes": [
+          "Qué visa te corresponde según tu oferta",
+          "Autorización de trabajo (ANEF / DREETS)",
+          "Checklist del dossier para la embajada"
+        ]
+      },
+      "students": {
+        "ideal": "Para estudiar en Francia",
+        "includes": [
+          "Proceso Campus France e inscripción",
+          "Dossier para la embajada",
+          "Recursos económicos y alojamiento"
+        ]
+      }
+    }
   }
 }

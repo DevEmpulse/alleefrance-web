@@ -58,7 +58,7 @@
     "title": "Votre projet en France, avec un accompagnement professionnel",
     "subtitle": "Nous vous accompagnons étape par étape : Salarié/Saisonnier, PVT, Titres de séjour et conseils personnalisés.",
     "workingHolidayCta": "Visa Vacances Travail (PVT)",
-    "whatsappCta": "Planifier une consultation",
+    "whatsappCta": "Écrivez-nous sur WhatsApp",
     "statsTitle": "Leader du marché",
     "statsSubtitle": "depuis plus de 2 ans",
     "statsLabel": "dossiers",
@@ -229,7 +229,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "intro": "Prêt à commencer votre processus d'immigration ? Remplissez le formulaire et nous vous contacterons pour une consultation initiale gratuite.",
+    "intro": "Prêt à commencer votre processus d'immigration ? Remplissez le formulaire et nous vous contacterons pour vous orienter sur les prochaines étapes.",
     "namePlaceholder": "Nom et prénom",
     "emailPlaceholder": "Email",
     "countryLabel": "Sélectionnez votre pays",
@@ -528,12 +528,11 @@
     "title": "Catalogue de Services",
     "subtitle": "Agence Allée France Lyon – Des solutions complètes pour votre processus d'immigration et administratif en France.",
     "helpText": "Vous ne savez pas par où commencer ? Nous vous recommandons de planifier une consultation.",
-    "bookConsulting": "Réserver une consultation",
+    "bookConsulting": "Réservez votre consultation",
     "whatsappConsulting": "Consulter via WhatsApp",
     "responseTime": "Nous répondons en moins de 24 heures.",
     "notFoundTitle": "Vous ne trouvez pas le service dont vous avez besoin ?",
     "notFoundDesc": "Contactez-nous pour une consultation personnalisée. Notre équipe d'experts est prête à vous aider pour toute démarche d'immigration ou administrative en France.",
-    "freeConsulting": "Consultation gratuite via WhatsApp",
     "contactForm": "Formulaire de contact"
   },
   "PrivacyPolicy": {
@@ -642,7 +641,7 @@
     "ctaTitle": "Besoin de conseils personnalisés ?",
     "ctaSubtitle": "Notre équipe est prête à vous aider dans votre processus d'immigration en France",
     "ctaWhatsapp": "Consulter via WhatsApp",
-    "ctaBook": "Planifier une consultation"
+    "ctaBook": "Réservez votre consultation"
   },
   "BlogNewsletter": {
     "title": "Alertes et ressources exclusives",
@@ -657,7 +656,7 @@
     "title": "Besoin d'aide avec votre visa ?",
     "description": "Notre équipe peut examiner votre dossier, le préparer et vous accompagner jusqu'au rendez-vous consulaire.",
     "whatsapp": "Écrire par WhatsApp",
-    "book": "Réserver une consultation"
+    "book": "Réservez votre consultation"
   },
   "Blog": {
     "index": {
@@ -1764,7 +1763,7 @@
         "body": "Chez Gestoría Allée France Lyon, nous préparons votre dossier, le déposons sur l'ANEF et assurons le suivi jusqu'à la réception de votre carte. Plus de 900 personnes ont déjà réalisé leur démarche avec nous.",
         "whatsappButton": "Nous écrire sur WhatsApp",
         "whatsappMessage": "Bonjour, j'ai besoin d'aide pour renouveler mon titre de séjour.",
-        "bookLabel": "Réserver une consultation"
+        "bookLabel": "Réservez votre consultation"
       },
       "legal": "Cet article est fourni à titre informatif et ne remplace pas les conseils d'un avocat. Chaque situation peut nécessiter un examen particulier.",
       "sources": {
@@ -2689,7 +2688,7 @@
       "title": "Visa Étudiant pour la France",
       "subtitle": "Informations essentielles pour les étudiants internationaux",
       "whatsappCta": "CONSULTER PAR WHATSAPP",
-      "advisorCta": "PLANIFIER UN CONSEIL"
+      "advisorCta": "RÉSERVEZ VOTRE CONSULTATION"
     },
     "intro": "Le visa étudiant permet aux citoyens non européens de vivre et d'étudier en France. Son obtention implique un processus officiel auprès de divers organismes de l'État français. Cette section résume les informations clés pour préparer votre demande.",
     "organismos": {
@@ -2802,7 +2801,7 @@
       "title": "Visas de Travail en France",
       "subtitle": "Découvrez les deux voies principales pour travailler légalement : \n Visa Salarié (Stabilité à long terme) et Visa Saisonnier (Travail saisonnier).",
       "whatsappCta": "CONSULTER PAR WHATSAPP",
-      "advisorCta": "PRENDRE RENDEZ-VOUS",
+      "advisorCta": "RÉSERVEZ VOTRE CONSULTATION",
       "communityCta": "Rejoindre la Communauté Salarié / Saisonnier"
     },
     "comparison": {
@@ -2924,7 +2923,7 @@
       "title": "Titre de Séjour - Permis de séjour en France",
       "subtitle": "Besoin de renouveler ou de demander votre Titre de Séjour ? Nous vous accompagnons tout au long du processus pour régulariser votre séjour en France.",
       "whatsappCta": "Consulter par WhatsApp",
-      "advisorCta": "Planifier un conseil"
+      "advisorCta": "Réservez votre consultation"
     },
     "types": {
       "title": "Types de Titre de Séjour",
@@ -3158,13 +3157,13 @@
         "title": "Prêt à démarrer votre plan Working Holiday ?",
         "description": "Planifions une session pour examiner votre profil, confirmer les conditions et définir clairement les prochaines étapes.",
         "ctaPrimary": "Discuter sur WhatsApp",
-        "ctaSecondary": "Réserver un conseil"
+        "ctaSecondary": "Réservez votre consultation"
       },
       "faqLoading": "Chargement des questions fréquentes..."
     },
     "country": {
       "whatsappBtn": "Contacter sur WhatsApp",
-      "advisoryBtn": "Réserver un Conseil",
+      "advisoryBtn": "Réservez votre consultation",
       "quotaNote": "Places limitées par pays · Notre équipe vous aide à arriver prêt quel que soit votre départ depuis {country}.",
       "quotaFallback": "Quota officiel à confirmer",
       "quotaEyebrow": "Quota estimé · {label}",
@@ -3539,8 +3538,8 @@
     "backHome": "Retour à l'accueil",
     "contactUs": "Aller au contact",
     "helpTitle": "Pouvons-nous vous aider à reprendre votre projet migratoire ?",
-    "helpDescription": "Planifiez un appel gratuit et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
-    "scheduleBtn": "Planifier une consultation",
+    "helpDescription": "Réservez votre consultation et recevez des conseils personnalisés de notre équipe de conseillers français. Nous sommes là pour vous accompagner à chaque étape.",
+    "scheduleBtn": "Réservez votre consultation",
     "whatsappBtn": "Envoyez-nous un WhatsApp"
   },
   "StructuredData": {
@@ -3699,6 +3698,129 @@
     "cardReadTime": "{minutes} min",
     "sourcesLabel": "Sources :",
     "whatsappButton": "Nous écrire sur WhatsApp",
-    "bookLabel": "Réserver une consultation"
+    "bookLabel": "Réservez votre consultation"
+  },
+  "Booking": {
+    "cta": "Réservez votre consultation",
+    "consultations": {
+      "express": "Consultation Express",
+      "standard": "Consultation Standard",
+      "vie-privee": "Consultation complète Vie Privée et Familiale",
+      "work-visas": "Consultation Visas de Travail",
+      "students": "Consultation Étudiants"
+    },
+    "duration": "{minutes} minutes",
+    "select": {
+      "metaTitle": "Réservez votre consultation | Allée France",
+      "metaDescription": "Choisissez votre consultation en immigration avec Allée France, payez en ligne avec PayPal et fixez l'horaire sur WhatsApp.",
+      "eyebrow": "Étape 1 sur 2",
+      "title": "Choisissez votre consultation",
+      "choose": "Choisir",
+      "back": "Retour",
+      "subtitle": "Une séance personnalisée avec Jio pour comprendre votre situation et savoir exactement quoi faire.",
+      "includes": "Inclus",
+      "showMore": "Voir {count} de plus",
+      "showLess": "Voir moins",
+      "stepsTitle": "Comment ça marche",
+      "steps": [
+        {
+          "title": "Choisissez votre consultation",
+          "text": "Et décrivez brièvement votre situation."
+        },
+        {
+          "title": "Payez avec PayPal",
+          "text": "Le montant exact en euros, dans un onglet sécurisé."
+        },
+        {
+          "title": "Fixez l'horaire sur WhatsApp",
+          "text": "Jio vous confirme le jour et l'heure."
+        }
+      ],
+      "trustTitle": "Payez en toute sérénité",
+      "trust": [
+        {
+          "title": "Paiement sécurisé avec PayPal",
+          "text": "Nous ne voyons ni ne conservons jamais les données de votre carte."
+        },
+        {
+          "title": "Prix fixe en euros",
+          "text": "Vous payez le montant affiché, sans frais supplémentaires d'Allée France."
+        },
+        {
+          "title": "Réponse en moins de 24 h",
+          "text": "Jio confirme votre créneau sur WhatsApp."
+        }
+      ]
+    },
+    "confirm": {
+      "metaTitle": "Confirmez votre consultation | Allée France",
+      "eyebrow": "Étape 2 sur 2",
+      "title": "Confirmez votre consultation",
+      "change": "Modifier",
+      "nameLabel": "Nom",
+      "countryLabel": "Pays",
+      "caseLabel": "Brève description de votre situation",
+      "required": "Ce champ est obligatoire",
+      "receiptTitle": "Important :",
+      "receiptText": "après le paiement, conservez votre reçu PayPal. Vous devrez l'envoyer à Jio sur WhatsApp pour confirmer votre consultation et fixer l'horaire.",
+      "payStep": "Étape 1 · Payez avec PayPal",
+      "payButton": "Payer {amount} € avec PayPal",
+      "payHint": "S'ouvre dans un nouvel onglet.",
+      "payDone": "PayPal ouvert dans un autre onglet",
+      "payAgain": "Il ne s'est pas ouvert ? Rouvrir PayPal",
+      "whatsappStep": "Étape 2 · Fixez l'horaire sur WhatsApp",
+      "whatsappButton": "Confirmer l'horaire sur WhatsApp",
+      "whatsappLocked": "Disponible après l'ouverture de PayPal.",
+      "whatsappHint": "Joignez le reçu PayPal dans le chat et nous fixerons le jour et l'heure."
+    },
+    "whatsappMessage": "Bonjour Jio, je viens de payer la {consultation} ({amount} €) par PayPal.\n\nNom : {name}\nPays : {country}\nMa situation : {summary}\n\nJe joins le reçu de paiement. Quel jour et quelle heure vous conviennent ?",
+    "details": {
+      "express": {
+        "ideal": "Pour une question ponctuelle",
+        "includes": [
+          "Séance de 15 minutes avec Jio",
+          "Réponse à une question précise",
+          "Une prochaine étape claire pour votre démarche",
+          "Analyse de votre profil",
+          "Réponses à vos doutes et questions",
+          "Guide et résumé de la consultation"
+        ]
+      },
+      "standard": {
+        "ideal": "Pour faire le point sur votre situation",
+        "includes": [
+          "Séance de 30 minutes avec Jio",
+          "Analyse de votre cas et des options de visa",
+          "Liste des documents à préparer",
+          "Analyse de votre profil",
+          "Réponses à vos doutes et questions",
+          "Guide et résumé de la consultation"
+        ]
+      },
+      "vie-privee": {
+        "ideal": "Si vous avez un conjoint ou de la famille en France",
+        "includes": [
+          "Vérification de votre éligibilité",
+          "Stratégie et documents du dossier",
+          "Accompagnement pour la préfecture"
+        ]
+      },
+      "work-visas": {
+        "ideal": "Salarié et Saisonnier",
+        "includes": [
+          "Le visa adapté à votre offre d'emploi",
+          "Autorisation de travail (ANEF / DREETS)",
+          "Checklist du dossier pour l'ambassade"
+        ]
+      },
+      "students": {
+        "ideal": "Pour étudier en France",
+        "includes": [
+          "Procédure Campus France et inscription",
+          "Dossier pour l'ambassade",
+          "Ressources financières et logement"
+        ]
+      }
+    }
   }
 }
