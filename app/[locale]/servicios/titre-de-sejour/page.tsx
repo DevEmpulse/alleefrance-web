@@ -81,7 +81,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}#contacto`}>
+              <Link href={`/${locale}/#contacto`}>
                 <Calendar className="mr-2 h-5 w-5" />
                 {t("hero.advisorCta")}
               </Link>
@@ -382,7 +382,7 @@ export default async function TitreDeSejourPage({ params }: { params: Promise<{ 
               style={{ color: "#002654" }}
               asChild
             >
-              <Link href={`/${locale}/servicios`}>{t("cta.moreServices")}</Link>
+              <Link href={`/${locale}/servicios/`}>{t("cta.moreServices")}</Link>
             </Button>
           </div>
         </div>

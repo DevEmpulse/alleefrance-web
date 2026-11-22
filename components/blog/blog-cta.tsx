@@ -58,7 +58,7 @@ export function BlogCTASections() {
                 style={{ borderColor: "#002654", color: "#002654" }}
                 asChild
               >
-                <Link href={`/${locale}#contacto`} target="_blank" rel="noopener noreferrer">
+                <Link href={`/${locale}/#contacto`} target="_blank" rel="noopener noreferrer">
                   {tCTA("book")}
                 </Link>
               </Button>

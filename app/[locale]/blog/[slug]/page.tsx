@@ -150,7 +150,7 @@ function ArticleBlock({ block, locale, labels }: {
               {labels.whatsappButton}
             </a>
             <a
-              href={`/${locale}#contacto`}
+              href={`/${locale}/#contacto`}
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl font-semibold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: NAVY }}
             >

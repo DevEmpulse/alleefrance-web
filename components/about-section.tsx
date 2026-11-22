@@ -85,7 +85,7 @@ export function AboutSection() {
                   size="lg"
                   className="group rounded-full px-7 py-6 text-sm font-semibold shadow-lg hover:shadow-xl bg-[#ED2939] hover:bg-[#d12432] text-white transition-all duration-300 hover:-translate-y-0.5"
                 >
-                  <Link href={`/${locale}/servicios`} className="flex items-center gap-2">
+                  <Link href={`/${locale}/servicios/`} className="flex items-center gap-2">
                     {t("servicesCta")}
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                   </Link>
@@ -96,7 +96,7 @@ export function AboutSection() {
                   variant="outline"
                   className="group rounded-full px-7 py-6 text-sm font-semibold border-2 border-[#002654] text-[#002654] bg-white hover:bg-[#002654] hover:text-white shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5"
                 >
-                  <Link href={`/${locale}#contacto`} className="flex items-center gap-2">
+                  <Link href={`/${locale}/#contacto`} className="flex items-center gap-2">
                     {t("contactCta")}
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                   </Link>
