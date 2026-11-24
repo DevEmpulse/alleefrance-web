@@ -19,7 +19,8 @@ import { BOOKING_PATH, buildPayPalLink, findConsultation } from "@/data/consulta
 const STORAGE_KEY = "alleefrance-booking";
 
 const formSchema = z.object({
-  name: z.string().trim().min(1),
+  // First and last name: at least two words.
+  name: z.string().trim().regex(/\S+\s+\S+/),
   country: z.string().trim().min(1),
   summary: z.string().trim().min(1),
 });
@@ -125,7 +126,7 @@ export function BookingConfirm() {
   const fieldError = (field: keyof BookingForm) =>
     errors[field] ? (
       <p className="text-sm text-red-700" role="alert">
-        {t("confirm.required")}
+        {field === "name" ? t("confirm.fullNameRequired") : t("confirm.required")}
       </p>
     ) : null;
 

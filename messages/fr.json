@@ -3766,7 +3766,7 @@
       "eyebrow": "Étape 2 sur 2",
       "title": "Confirmez votre consultation",
       "change": "Modifier",
-      "nameLabel": "Nom",
+      "nameLabel": "Nom et prénom",
       "countryLabel": "Pays",
       "caseLabel": "Brève description de votre situation",
       "required": "Ce champ est obligatoire",
@@ -3780,9 +3780,10 @@
       "whatsappStep": "Étape 2 · Fixez l'horaire sur WhatsApp",
       "whatsappButton": "Confirmer l'horaire sur WhatsApp",
       "whatsappLocked": "Disponible après l'ouverture de PayPal.",
-      "whatsappHint": "Joignez le reçu PayPal dans le chat et nous fixerons le jour et l'heure."
+      "whatsappHint": "Joignez le reçu PayPal dans le chat et nous fixerons le jour et l'heure.",
+      "fullNameRequired": "Indiquez votre nom et votre prénom"
     },
-    "whatsappMessage": "Bonjour Jio, je viens de payer la {consultation} ({amount} €) par PayPal.\n\nNom : {name}\nPays : {country}\nMa situation : {summary}\n\nJe joins le reçu de paiement. Quel jour et quelle heure vous conviennent ?",
+    "whatsappMessage": "Bonjour Jio, je viens de payer la {consultation} ({amount} €) par PayPal.\n\nNom et prénom : {name}\nPays : {country}\nMa situation : {summary}\n\nJe joins le reçu de paiement. Quel jour et quelle heure vous conviennent ?",
     "details": {
       "express": {
         "ideal": "Pour une question ponctuelle",
