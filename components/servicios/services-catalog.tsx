@@ -20,7 +20,6 @@ import {
   HeartPulse,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { AnimateOnScroll } from "@/components/animate-on-scroll";
 import type {
@@ -30,8 +29,8 @@ import type {
   ServiceCard,
 } from "@/lib/services-data";
 import type { LucideIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
-import { buildWhatsAppLink as buildBaseWhatsAppLink } from "@/lib/utils";
+import { useLocale, useTranslations } from "next-intl";
+import { BOOKING_PATH } from "@/data/consultations";
 
 type ServicesCatalogProps = {
   personas: Persona[];
@@ -76,13 +75,10 @@ const iconMap: Record<IconName, LucideIcon> = {
   HeartPulse,
 };
 
-const buildWhatsAppLink = (serviceTitle: string) => {
-  const message = `Hola, me interesa el servicio "${serviceTitle}" y quiero recibir más información.`;
-  return buildBaseWhatsAppLink(message);
-};
-
 export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
   const t = useTranslations("ServicesCatalog");
+  const tBooking = useTranslations("Booking");
+  const locale = useLocale();
   const defaultPersona = personas[0]?.id ?? "general";
   const [selectedPersona, setSelectedPersona] =
     useState<PersonaId>(defaultPersona);
@@ -163,9 +159,6 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
         >
           {filteredServices.map((service) => {
             const Icon = iconMap[service.icon];
-            const whatsappLink = buildWhatsAppLink(service.title);
-            const ctaLink = service.link || whatsappLink;
-            const isExternal = ctaLink.startsWith("http");
             return (
               <motion.div
                 key={service.id}
@@ -180,20 +173,12 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
                              hover:-translate-y-1 hover:shadow-xl"
                 >
                   <div className="relative flex h-full flex-col space-y-5">
-                    {/* Icono + precio */}
-                    <div className="flex items-start justify-between">
-                      <div
-                        className="flex h-12 w-12 items-center justify-center rounded-full
-                                   bg-[rgba(237,41,57,0.08)] text-[#ED2939]"
-                      >
-                        <Icon className="h-6 w-6 stroke-2" strokeWidth={2} />
-                      </div>
-                      <Badge
-                        className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium
-                                   text-slate-700 shadow-sm"
-                      >
-                        {service.price}
-                      </Badge>
+                    {/* Icono */}
+                    <div
+                      className="flex h-12 w-12 items-center justify-center rounded-full
+                                 bg-[rgba(237,41,57,0.08)] text-[#ED2939]"
+                    >
+                      <Icon className="h-6 w-6 stroke-2" strokeWidth={2} />
                     </div>
 
                     {/* Título + descripción */}
@@ -226,13 +211,7 @@ export function ServicesCatalog({ personas, services }: ServicesCatalogProps) {
                         className="w-full rounded-full bg-[#ED2939] font-semibold text-white
                                    shadow-md transition-all hover:bg-[#d42032] hover:shadow-lg"
                       >
-                        {isExternal ? (
-                          <a href={ctaLink} target="_blank" rel="noopener noreferrer">
-                            {t("requestService")}
-                          </a>
-                        ) : (
-                          <Link href={ctaLink}>{t("requestService")}</Link>
-                        )}
+                        <Link href={`/${locale}${BOOKING_PATH}/`}>{tBooking("cta")}</Link>
                       </Button>
                     </div>
                   </div>

@@ -32,9 +32,6 @@ export type ServiceCard = {
   title: string;
   description: string;
   details: string[];
-  price: string;
-  duration: string;
-  link: string;
   personas: PersonaId[];
 };
 
@@ -46,21 +43,8 @@ export const getPersonas = (t: any): Persona[] => [
   { id: "general", label: t("personas.general.label"), helper: t("personas.general.helper") },
 ];
 
+// "Asesorías Personalizadas" (service_1) is not listed: consultations are sold on /agenda.
 export const getServices = (t: any): ServiceCard[] => [
-  {
-    id: 1,
-    icon: "MessageCircle",
-    title: t("items.service_1.title"),
-    description: t("items.service_1.description"),
-    details: [
-      t("items.service_1.details.0"),
-      t("items.service_1.details.1")
-    ],
-    price: t("items.service_1.price"),
-    duration: t("items.service_1.duration"),
-    link: "/#contacto",
-    personas: ["students","workers","families","settled","general"]
-  },
   {
     id: 2,
     icon: "FileText",
@@ -72,9 +56,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_2.details.2"),
       t("items.service_2.details.3")
     ],
-    price: t("items.service_2.price"),
-    duration: t("items.service_2.duration"),
-    link: "/#contacto",
     personas: ["workers","settled"]
   },
   {
@@ -90,9 +71,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_3.details.4"),
       t("items.service_3.details.5")
     ],
-    price: t("items.service_3.price"),
-    duration: t("items.service_3.duration"),
-    link: "/servicios/visas-trabajo",
     personas: ["workers"]
   },
   {
@@ -106,9 +84,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_4.details.2"),
       t("items.service_4.details.3")
     ],
-    price: t("items.service_4.price"),
-    duration: t("items.service_4.duration"),
-    link: "https://www.goassistance.com/afiliados/alleefrancelyongo",
     personas: ["students","families","general"]
   },
   {
@@ -122,9 +97,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_5.details.2"),
       t("items.service_5.details.3")
     ],
-    price: t("items.service_5.price"),
-    duration: t("items.service_5.duration"),
-    link: "/#contacto",
     personas: ["families"]
   },
   {
@@ -138,9 +110,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_6.details.2"),
       t("items.service_6.details.3")
     ],
-    price: t("items.service_6.price"),
-    duration: t("items.service_6.duration"),
-    link: "/#contacto",
     personas: ["settled"]
   },
   {
@@ -155,9 +124,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_7.details.3"),
       t("items.service_7.details.4")
     ],
-    price: t("items.service_7.price"),
-    duration: t("items.service_7.duration"),
-    link: "/servicios/visa-etudiant",
     personas: ["students"]
   },
   {
@@ -171,9 +137,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_8.details.2"),
       t("items.service_8.details.3")
     ],
-    price: t("items.service_8.price"),
-    duration: t("items.service_8.duration"),
-    link: "/#contacto",
     personas: ["families"]
   },
   {
@@ -187,9 +150,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_9.details.2"),
       t("items.service_9.details.3")
     ],
-    price: t("items.service_9.price"),
-    duration: t("items.service_9.duration"),
-    link: "/#contacto",
     personas: ["workers","settled"]
   },
   {
@@ -202,9 +162,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_10.details.1"),
       t("items.service_10.details.2")
     ],
-    price: t("items.service_10.price"),
-    duration: t("items.service_10.duration"),
-    link: "/#contacto",
     personas: ["students","workers","settled"]
   },
   {
@@ -219,9 +176,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_11.details.3"),
       t("items.service_11.details.4")
     ],
-    price: t("items.service_11.price"),
-    duration: t("items.service_11.duration"),
-    link: "/#contacto",
     personas: ["students","workers","settled"]
   },
   {
@@ -238,9 +192,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_12.details.5"),
       t("items.service_12.details.6")
     ],
-    price: t("items.service_12.price"),
-    duration: t("items.service_12.duration"),
-    link: "/#contacto",
     personas: ["workers"]
   },
   {
@@ -255,9 +206,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_13.details.3"),
       t("items.service_13.details.4")
     ],
-    price: t("items.service_13.price"),
-    duration: t("items.service_13.duration"),
-    link: "/#contacto",
     personas: ["workers","settled"]
   },
   {
@@ -272,9 +220,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_14.details.3"),
       t("items.service_14.details.4")
     ],
-    price: t("items.service_14.price"),
-    duration: t("items.service_14.duration"),
-    link: "/#contacto",
     personas: ["students","families","general"]
   },
   {
@@ -288,9 +233,6 @@ export const getServices = (t: any): ServiceCard[] => [
       t("items.service_15.details.2"),
       t("items.service_15.details.3")
     ],
-    price: t("items.service_15.price"),
-    duration: t("items.service_15.duration"),
-    link: "/#contacto",
     personas: ["students","workers","families","settled"]
   },
 ];

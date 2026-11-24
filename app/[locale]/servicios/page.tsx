@@ -138,9 +138,10 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
                   {tPage("notFoundDesc")}
                 </p>
                 <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+                  {/* Same fixed size for both; the transparent border keeps heights equal. */}
                   <Button
                     asChild
-                    className="font-semibold text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
+                    className="h-12 w-full sm:w-64 border-2 border-transparent font-semibold text-white rounded-full shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all"
                     style={{ backgroundColor: "#ED2939" }}
                   >
                     <Link href={`/${p.locale}${BOOKING_PATH}/`}>{tBooking("cta")}</Link>
@@ -148,10 +149,12 @@ export default async function ServiciosPage({ params }: { params: Promise<{ loca
                   <Button
                     asChild
                     variant="outline"
-                    className="border-2 bg-white font-semibold text-[#002654] px-8 py-6 rounded-full hover:bg-gray-50 transition-colors"
-                    style={{ borderColor: "#002654" }}
+                    className="h-12 w-full sm:w-64 gap-2 border-2 border-[#002654] bg-white font-semibold text-[#002654] rounded-full transition-all hover:scale-[1.02] hover:border-[#25D366] hover:bg-[#25D366] hover:text-[#002654] hover:shadow-lg"
                   >
-                    <Link href={`/${p.locale}#contacto`}>{tPage("contactForm")}</Link>
+                    <a href={buildWhatsAppLink()} target="_blank" rel="noopener noreferrer">
+                      <SiWhatsapp className="w-5 h-5" />
+                      {tPage("whatsappConsulting")}
+                    </a>
                   </Button>
                 </div>
               </Card>
