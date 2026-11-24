@@ -3766,7 +3766,7 @@
       "eyebrow": "Step 2 of 2",
       "title": "Confirm your consultation",
       "change": "Change",
-      "nameLabel": "Name",
+      "nameLabel": "Full name",
       "countryLabel": "Country",
       "caseLabel": "Short description of your case",
       "required": "This field is required",
@@ -3780,9 +3780,10 @@
       "whatsappStep": "Step 2 · Schedule on WhatsApp",
       "whatsappButton": "Confirm time on WhatsApp",
       "whatsappLocked": "Available after opening PayPal.",
-      "whatsappHint": "Attach the PayPal receipt in the chat and we will agree on a day and time."
+      "whatsappHint": "Attach the PayPal receipt in the chat and we will agree on a day and time.",
+      "fullNameRequired": "Enter your first and last name"
     },
-    "whatsappMessage": "Hi Jio, I just paid for the {consultation} (€{amount}) via PayPal.\n\nName: {name}\nCountry: {country}\nMy case: {summary}\n\nI'm attaching the payment receipt. What day and time are you available?",
+    "whatsappMessage": "Hi Jio, I just paid for the {consultation} (€{amount}) via PayPal.\n\nFull name: {name}\nCountry: {country}\nMy case: {summary}\n\nI'm attaching the payment receipt. What day and time are you available?",
     "details": {
       "express": {
         "ideal": "For a specific question",

@@ -6,7 +6,7 @@
     },
     "services": {
       "title": "Asesoría Migratoria en Francia | Visas y Trámites",
-      "description": "Catálogo de servicios migratorios en Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday y Titre de Séjour. +900 casos exitosos. Consultá gratis."
+      "description": "Catálogo de servicios migratorios en Francia: Visa Salarié, Saisonnier, Estudiante, Working Holiday y Titre de Séjour. +900 casos exitosos. Agenda tu asesoría."
     },
     "blog": {
       "title": "Blog de Migración a Francia | Guías y Visas 2026",
@@ -3766,7 +3766,7 @@
       "eyebrow": "Paso 2 de 2",
       "title": "Confirma tu asesoría",
       "change": "Cambiar",
-      "nameLabel": "Nombre",
+      "nameLabel": "Nombre y apellido",
       "countryLabel": "País",
       "caseLabel": "Breve descripción de tu caso",
       "required": "Este campo es obligatorio",
@@ -3780,9 +3780,10 @@
       "whatsappStep": "Paso 2 · Coordina por WhatsApp",
       "whatsappButton": "Confirmar horario por WhatsApp",
       "whatsappLocked": "Se activa después de abrir PayPal.",
-      "whatsappHint": "Adjunta el comprobante de PayPal en el chat y acordamos día y hora."
+      "whatsappHint": "Adjunta el comprobante de PayPal en el chat y acordamos día y hora.",
+      "fullNameRequired": "Escribe tu nombre y apellido"
     },
-    "whatsappMessage": "Hola Jio, acabo de pagar la {consultation} ({amount} €) por PayPal.\n\nNombre: {name}\nPaís: {country}\nMi caso: {summary}\n\nTe adjunto el comprobante de pago. ¿Qué día y hora tienes disponible?",
+    "whatsappMessage": "Hola Jio, acabo de pagar la {consultation} ({amount} €) por PayPal.\n\nNombre y apellido: {name}\nPaís: {country}\nMi caso: {summary}\n\nTe adjunto el comprobante de pago. ¿Qué día y hora tienes disponible?",
     "details": {
       "express": {
         "ideal": "Para una duda puntual",
