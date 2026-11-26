@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 export const GA_MEASUREMENT_ID = "G-NW4M4QZYXS";
+export const GTM_CONTAINER_ID = "GTM-TLLX2PPM";
 
 declare global {
   interface Window {
