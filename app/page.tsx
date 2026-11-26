@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_VERIFICATION } from "@/lib/site-verification";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
+import { GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/components/google-analytics";
 import esMessages from "@/messages/es.json";
 
 // Search engines verify ownership and audit the bare domain, which redirects to /es/.
@@ -20,6 +21,19 @@ export default function Home() {
   return (
     <html lang="es">
       <head>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtm.js?id=${GTM_CONTAINER_ID}`}
+        />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{transport_type:'beacon'});`,
+          }}
+        />
         <meta httpEquiv="refresh" content="0;url=/es/" />
       </head>
       <body>
