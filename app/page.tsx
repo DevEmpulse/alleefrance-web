@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SITE_VERIFICATION } from "@/lib/site-verification";
 import { buildMetadata, SITE_URL } from "@/lib/seo";
-import { GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/components/google-analytics";
+import { GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/lib/analytics";
 import esMessages from "@/messages/es.json";
 
 // Search engines verify ownership and audit the bare domain, which redirects to /es/.
