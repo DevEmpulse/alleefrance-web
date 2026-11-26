@@ -2,9 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import { GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/lib/analytics";
 
-export const GA_MEASUREMENT_ID = "G-NW4M4QZYXS";
-export const GTM_CONTAINER_ID = "GTM-TLLX2PPM";
+export { GA_MEASUREMENT_ID, GTM_CONTAINER_ID };
 
 declare global {
   interface Window {

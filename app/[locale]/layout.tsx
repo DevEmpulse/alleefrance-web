@@ -1,7 +1,8 @@
 import type React from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { FloatingBookingButton } from "@/components/booking/floating-booking-button";
-import { GoogleAnalytics, GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/components/google-analytics";
+import { GoogleAnalytics } from "@/components/google-analytics";
+import { GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/lib/analytics";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { isLocale, routing } from "@/i18n/routing";
