@@ -1,7 +1,7 @@
 import type React from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { FloatingBookingButton } from "@/components/booking/floating-booking-button";
-import { GoogleAnalytics } from "@/components/google-analytics";
+import { GoogleAnalytics, GA_MEASUREMENT_ID } from "@/components/google-analytics";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { isLocale, routing } from "@/i18n/routing";
@@ -135,6 +135,15 @@ export default async function LocaleLayout({
         />
         <meta name="geo.region" content="FR-ARA" />
         <meta name="geo.placename" content="Lyon" />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{transport_type:'beacon'});`,
+          }}
+        />
         <JsonLd data={buildOrganizationSchema(locale)} />
         <JsonLd data={buildProfessionalServiceSchema()} />
         <JsonLd data={buildWebSiteSchema(locale)} />
