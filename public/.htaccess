@@ -40,7 +40,15 @@
   Header set Cache-Control "public, max-age=2592000"
 </FilesMatch>
 
-# --- Habilitar el módulo de headers si no está activo ---
+# ============================================================
+#  Security headers - Alleefrance Web
+#  "always" also applies them to redirects and error responses.
+#  HSTS has no "preload" on purpose: it is hard to revert.
+# ============================================================
 <IfModule mod_headers.c>
-  # Ya incluido arriba, esto asegura compatibilidad
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
 </IfModule>
